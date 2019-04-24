@@ -515,6 +515,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB99200"
 		prestige = -25
+		set_global_flag = anglo_persian_war
 	}
 }
 

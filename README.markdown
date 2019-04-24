@@ -18,3 +18,12 @@ Based on [HFM 1.27F Beta].
 - Make colonial railroading an option decision ([HFM/#157])
 
 [HFM/#157]: https://github.com/SighPie/HFM/pull/157
+
+### Ported bugfixes
+
+- [HFM/#141]\:
+
+  > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to signify the crisis has
+  > occurred, otherwise the event will continuously spawn.
+
+[HFM/#141]: https://github.com/SighPie/HFM/pull/141
