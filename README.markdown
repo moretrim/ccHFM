@@ -19,6 +19,14 @@ Based on [HFM 1.27F Beta].
 
 [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
+### Bugfixes
+
+- (Partial) An uncivilized country can only lose one port per unequal treaty they've been forced to sign.
+
+  This can result in races, e.g. if two countries fighting the same uncivilized target peace out in quick succession. AI
+  countries should be prompt enough that nothing unexpected happens. Human players finding themselves in such a
+  situation are advised to pause when they win the war and to pick their port as soon as possible.
+
 ### Ported bugfixes
 
 - [HFM/#141]\:
