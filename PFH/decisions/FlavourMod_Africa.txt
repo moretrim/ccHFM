@@ -15,6 +15,7 @@ political_decisions = {
 				exists = yes
 				neighbour = THIS
 			}
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -83,6 +84,7 @@ political_decisions = {
 				government = prussian_constitutionalism
 			}
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -147,6 +149,7 @@ political_decisions = {
 				government = prussian_constitutionalism
 			}
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -232,6 +235,7 @@ political_decisions = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
 			}
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -282,6 +286,7 @@ political_decisions = {
 				civilized = no
 				war = no
 			}
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -326,6 +331,7 @@ political_decisions = {
 			is_greater_power = yes
 			has_country_flag = treaty_of_heligoland_success
 			NOT = { has_country_flag = zanzibar_protectorate }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -360,6 +366,7 @@ political_decisions = {
 				}
 			}
 			NOT = { has_country_flag = british_east_africa }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -413,6 +420,7 @@ political_decisions = {
 					vassal_of = THIS
 				}
 			}
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -447,6 +455,7 @@ political_decisions = {
 			NOT = { has_country_flag = british_sierra_leone }
 			owns = 1884
 			1885 = { empty = yes }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -493,6 +502,7 @@ political_decisions = {
 				}
 			}
 			NOT = { has_country_flag = brazzas_expedition }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -519,6 +529,7 @@ political_decisions = {
 			capital = 425
 			has_global_flag = berlin_conference
 			NOT = { has_global_flag = ai_french_west_africa }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -781,6 +792,7 @@ political_decisions = {
 			NOT = { owns = 1879 }
 			1879 = { owner = { civilized = no ai = yes } }
 			has_country_flag = faidherbe_ambitions
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -867,6 +879,7 @@ political_decisions = {
 			FRA_1783 = { owned_by = THIS }
 			1791 = { owner = { OR = { civilized = no tag = THIS } } }
 			1795 = { owner = { OR = { civilized = no tag = THIS } } }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -945,6 +958,7 @@ political_decisions = {
 			is_greater_power = yes
 			1919 = { owner = { civilized = no ai = yes } }
 			nationalism_n_imperialism = 1
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -987,6 +1001,7 @@ political_decisions = {
 			year = 1845
 			NOT = { has_country_flag = faidherbe_ambitions }
 			WOL = { exists = yes ai = yes owns = 2573 }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1113,6 +1128,7 @@ political_decisions = {
 			}
 			owns = 1894
 			1972 = { empty = yes }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1353,6 +1369,7 @@ political_decisions = {
 			is_greater_power = yes
 			capital = 425
 			exists = MAD
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1460,6 +1477,7 @@ political_decisions = {
 				}
 			}
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1507,6 +1525,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = east_africa_company }
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1573,6 +1592,7 @@ political_decisions = {
 			has_country_flag = east_africa_company
 			NOT = { has_country_flag = purchase_lindi }
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1624,6 +1644,7 @@ political_decisions = {
 			NOT = { has_country_flag = german_west_africa }
 			1956 = { empty = yes }
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1681,6 +1702,7 @@ political_decisions = {
 			year = 1850
 			slavery = no_slavery
 			NOT = { invention = the_dark_continent }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1733,6 +1755,7 @@ political_decisions = {
 			slavery = no_slavery
 			NOT = { has_global_flag = togo_organized }
 			has_global_flag = berlin_conference
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {
@@ -1962,6 +1985,7 @@ political_decisions = {
 			owns = 2060
 			has_global_flag = berlin_conference
 			NOT = { has_country_flag = ai_portugal_east_africa }
+			NOT = { has_global_flag = colonial_railroading_disabled }
 		}
 		
 		allow = {

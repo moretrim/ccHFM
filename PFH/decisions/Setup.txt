@@ -34,6 +34,20 @@ political_decisions = {
 			clr_country_flag = country_looking_through_options
 		}
 	}
+
+	option_disable_colonial_railroading = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = colonial_railroading_disabled }
+		}
+		allow = {}
+		effect = {
+			set_global_flag = colonial_railroading_disabled
+		}
+	}
 	
 	option_disable_anarcho_liberals = {
 		alert = no
