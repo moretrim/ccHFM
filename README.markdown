@@ -27,3 +27,7 @@ Based on [HFM 1.27F Beta].
   > occurred, otherwise the event will continuously spawn.
 
 [HFM/#141]: https://github.com/SighPie/HFM/pull/141
+
+- Fix conflicting Treaty Port event triggers ([HFM/#117])
+
+[HFM/#117]: https://github.com/SighPie/HFM/pull/117
