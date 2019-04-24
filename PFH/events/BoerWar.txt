@@ -1447,6 +1447,7 @@ country_event = {
 	trigger = {
 		is_greater_power = yes
 		NOT = { has_country_flag = boer_accepted }
+		NOT = { has_country_flag = ignored_the_witwatersrand_gold_rush }
 		any_neighbor_country = {
 			OR = {
 				has_country_modifier = witwatersrand_gold_rush
@@ -1461,13 +1462,14 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 24
 	}
 	
 	option = {
 		name = "EVT98235OPTA"
-		random_country = {
+		any_country = {
 			limit = {
+				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1486,8 +1488,9 @@ country_event = {
 			}
 		}
 		
-		random_country = {
+		any_country = {
 			limit = {
+				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1508,13 +1511,22 @@ country_event = {
 			}
 		}
 		
-		random_country = {
+		any_country = {
 			limit = { has_country_modifier = witwatersrand_gold_rush }
 			relation = {
 				who = THIS
 				value = -100
 			}
 			remove_country_modifier = witwatersrand_gold_rush
+		}
+	}
+
+	option = {
+		name = "EVT98235OPTB"
+		set_country_flag = ignored_the_witwatersrand_gold_rush
+
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
