@@ -20,6 +20,12 @@ few flag tweaks as well the following:
 0.1.1-dev (in development)
 --------------------------
 
+Based on [HFM 1.27F Beta].
+
+### Tweaks
+
+- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#1]).
+
 ### Bugfixes
 
 - An uncivilized country can only lose one port per unequal treaty they've been forced to sign.

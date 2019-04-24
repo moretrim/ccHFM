@@ -1446,7 +1446,10 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		NOT = { has_country_flag = boer_accepted }
+		NOT = {
+			has_country_flag = boer_accepted
+			has_country_flag = turned_down_the_witwatersrand_gold_rush
+		}
 		any_neighbor_country = {
 			OR = {
 				has_country_modifier = witwatersrand_gold_rush
@@ -1455,8 +1458,18 @@ country_event = {
 					2106 = { trade_goods = precious_metal }
 				}
 			}
-			part_of_sphere = no
+			NOT = {
+				vassal_of = THIS
+				in_sphere = THIS
+				war_with = THIS
+			}
 			is_greater_power = no
+			OR = {
+				part_of_sphere = no
+				sphere_owner = {
+					NOT = { war_with = THIS }
+				}
+			}
 		}
 	}
 	
@@ -1466,8 +1479,9 @@ country_event = {
 	
 	option = {
 		name = "EVT98235OPTA"
-		random_country = {
+		any_country = {
 			limit = {
+				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1475,8 +1489,12 @@ country_event = {
 						2106 = { trade_goods = precious_metal }
 					}
 				}
+				NOT = {
+					vassal_of = THIS
+					in_sphere = THIS
+					war_with = THIS
+				}
 				is_greater_power = no
-				is_vassal = no
 				part_of_sphere = no
 			}
 			add_casus_belli = {
@@ -1486,8 +1504,9 @@ country_event = {
 			}
 		}
 		
-		random_country = {
+		any_country = {
 			limit = {
+				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1495,8 +1514,12 @@ country_event = {
 						2106 = { trade_goods = precious_metal }
 					}
 				}
+				NOT = {
+					vassal_of = THIS
+					in_sphere = THIS
+					war_with = THIS
+				}
 				is_greater_power = no
-				is_vassal = no
 				part_of_sphere = yes
 			}
 			sphere_owner = {
@@ -1508,13 +1531,22 @@ country_event = {
 			}
 		}
 		
-		random_country = {
+		any_country = {
 			limit = { has_country_modifier = witwatersrand_gold_rush }
 			relation = {
 				who = THIS
 				value = -100
 			}
 			remove_country_modifier = witwatersrand_gold_rush
+		}
+	}
+
+	option = {
+		name = "EVT98235OPTB"
+		set_country_flag = turned_down_the_witwatersrand_gold_rush
+
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
