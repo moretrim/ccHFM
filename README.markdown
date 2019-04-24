@@ -12,3 +12,12 @@ Release history
 Based on [HFM 1.27F Beta].
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
+
+### Ported bugfixes
+
+- [HFM/#141]\:
+
+  > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to signify the crisis has
+  > occurred, otherwise the event will continuously spawn.
+
+[HFM/#141]: https://github.com/SighPie/HFM/pull/141
