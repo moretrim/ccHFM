@@ -3,6 +3,10 @@ Piggy Flavoured HFM
 
 A custom-tailored HFM.
 
+[Obtain the 0.1.0 release here.][RELEASE]
+
+[RELEASE]: https://github.com/moretrim/PFH/releases/tag/v0.1.0
+
 Release history
 ===============
 
