@@ -41,6 +41,11 @@ colonial_policy = no_colonies
 
 set_country_flag = animist_country
 
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
+
 ruling_party = DAH_conservative
 upper_house = {
 	fascist = 0
