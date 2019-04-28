@@ -10,10 +10,12 @@ A custom-tailored HFM.
 Release history
 ===============
 
+The 0.1.x series of releases is based on [HFM 1.27F Beta]. It comes with a few flag tweaks as well the following:
+
+[HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
+
 0.1.1-dev (in development)
 --------------------------
-
-Based on [HFM 1.27F Beta].
 
 ### Bugfixes
 
@@ -32,8 +34,6 @@ Based on [HFM 1.27F Beta].
 0.1.0
 -----
 
-Based on [HFM 1.27F Beta].
-
 ### Ported features
 
 - Make colonial railroading an option decision ([HFM/#157])
@@ -48,6 +48,3 @@ Based on [HFM 1.27F Beta].
   > occurred, otherwise the event will continuously spawn.
 
 [HFM/#141]: https://github.com/SighPie/HFM/pull/141
-
-<!-- HFM release references -->
-[HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
