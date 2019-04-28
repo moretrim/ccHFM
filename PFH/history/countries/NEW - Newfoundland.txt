@@ -42,11 +42,6 @@ set_country_flag = catholic_country
 set_country_flag = existing_country
 set_country_flag = new_world_nation
 
-govt_flag = {
-	government = dominion
-	flag = absolute_monarchy
-}
-
 ruling_party = NEW_conservative
 upper_house = {
 	fascist = 0
