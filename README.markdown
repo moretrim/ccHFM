@@ -5,9 +5,9 @@ A custom-tailored [HFM].
 
 [HFM]: https://github.com/SighPie/HFM
 
-[Obtain the latest release here.][RELEASE]
+[Obtain the 0.1.1 release here.][RELEASE]
 
-[RELEASE]: https://github.com/moretrim/PFH/releases/latest
+[RELEASE]: https://github.com/moretrim/PFH/releases/tag/v0.1.1
 
 Release history
 ===============
@@ -17,8 +17,8 @@ few flag tweaks as well the following changes:
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
-0.1.1-dev (in development)
---------------------------
+0.1.1
+-----
 
 ### Tweaks
 
