@@ -648,8 +648,8 @@ north_coalition = {
 	icon = 16
 }
 
-the_big_army = {
-	mobilisation_size = 0.2
+the_big_army = {    #rbx note-mobilisation size bonus is increased because Entre Rios does not annex Corrientes. If it does by previous event, then the big army would arguably rightfully be larger
+	mobilisation_size = 5.0
 	land_organisation = 0.2
 	supply_consumption = -0.2
 	org_regain = 0.2
