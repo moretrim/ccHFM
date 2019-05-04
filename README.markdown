@@ -13,18 +13,16 @@ Release history
 ===============
 
 The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
-few flag tweaks as well the following:
+few flag tweaks as well the following changes:
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
 0.1.1-dev (in development)
 --------------------------
 
-Based on [HFM 1.27F Beta].
-
 ### Tweaks
 
-- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#1]).
+- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
 
 0.1.0
 -----
