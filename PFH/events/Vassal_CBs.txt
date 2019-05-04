@@ -1,0 +1,32 @@
+country_event = {
+	id = 210000
+	title = "EVTNAME210000"
+	desc = "EVTDESC210000"
+	picture = "february_manifesto_russia"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT210000OPTA"
+
+		set_global_flag = vassal_cbs_enabled
+	}
+
+	option = {
+		name = "EVT210000OPTB"
+
+		clr_global_flag = vassal_cbs_enabled
+	}
+
+	option = {
+		name = "EVT210000OPTC"
+
+		set_global_flag = ai_vassal_cbs_unrestricted
+	}
+
+	option = {
+		name = "EVT210000OPTD"
+
+		clr_global_flag = ai_vassal_cbs_unrestricted
+	}
+}

@@ -12,9 +12,17 @@ A custom-tailored [HFM].
 Release history
 ===============
 
-The 0.1.x series of releases is based on [HFM 1.27F Beta]. It comes with a few flag tweaks as well the following:
+The 0.x.y series of releases is based on [HFM 1.27F Beta]. It comes with a few flag tweaks as well the following:
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
+
+0.2.0-dev (in development)
+--------------------------
+
+### New features
+
+- Add support for CBs targeting vassal countries. By default these CBs are disabled and restricted to only be available
+  to player countries. These settings can be changed by decision at any point in the game.
 
 0.1.1-dev (in development)
 --------------------------

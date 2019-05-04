@@ -1,0 +1,14 @@
+political_decisions = {
+	review_vassal_cbs_settings = {
+		alert = no
+		potential = {
+			ai = no
+		}
+
+		allow = {}
+
+		effect = {
+			country_event = 210000
+		}
+	}
+}
