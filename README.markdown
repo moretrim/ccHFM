@@ -1,7 +1,9 @@
 Piggy Flavoured HFM
 ===================
 
-A custom-tailored HFM.
+A custom-tailored [HFM].
+
+[HFM]: https://github.com/SighPie/HFM
 
 [Obtain the latest release here.][RELEASE]
 
