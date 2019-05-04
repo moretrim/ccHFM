@@ -561,7 +561,7 @@ country_event = {
 
 country_event = {
 	id = 97091
-	title = "EVTNAME97091" #Transferring Sovereignty
+	title = "EVTNAME97091" #Transferring Sovereignty #rbx note-I removed the section that removes cores of Corrientes, Entre Rios, and Buenos Aires becuase this does not make sense in an externally formed Argentina
 	desc = "EVTDESC97091"
 	picture = "danishgovernment"
 	
@@ -585,11 +585,6 @@ country_event = {
 				}
 				secede_province = THIS
 			}
-		}
-		any_owned = {
-			remove_core = CRT
-			remove_core = ENT
-			remove_core = SBA
 		}
 	}
 }

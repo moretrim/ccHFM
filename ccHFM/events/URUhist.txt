@@ -252,7 +252,18 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		CRT = { exists = yes war = no }
+		CRT = { exists = yes 
+				war = no 
+		}
+		URU {
+			ruling_party_ideology = liberal
+			war = no
+		}
+		ARC = {
+			NOT = {
+				ruling_party_ideology = liberal
+			}
+		}
 		NOT = { year = 1860 }
 		tag = URU
 		OR = {
@@ -285,45 +296,41 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Corrientes gets Uruguay support-rbx note-war declaration removed, because it would normally be insanity for Corrientes to go to war without Uruguay support and Uruguay has only a 50 percent chance of supporting them-600063 does this better
 	id = 600062
-	title = "EVTNAME600062" #Corrientes gets Uruguay support
+	title = "EVTNAME600062"
 	desc = "EVTDESC600062"
 	picture = "rosistas"
-	
-	
+		
 	is_triggered_only = yes
 
 	mean_time_to_happen = { days = 5 }
 
 	option = {
 		name = "EVTOPT600062A"
-		any_country = {
-			limit = {
-				war_with = THIS
-			}
-			end_war = THIS
-		}
 		add_country_modifier = { name = small_country_draft duration = 365 }
 		add_country_modifier = { name = unrecognized_country duration = 3650 }
 		relation = { who = ARC value = -400 }
 		relation = { who = ENT value = -400 }
-		ARC = {
-			release_vassal = CRT 
-			war = {
-				target = CRT
-				attacker_goal = { casus_belli = annex_core_country }
-				defender_goal = { casus_belli = status_quo }
-				call_ally = no
-			}
-		}
 		URU = { set_country_flag = corrientes_is_ready_for_war clr_country_flag = incite_rebellion }
+		ai_chance = {
+			factor = 0.99
+		}
+	}
+	
+	option = {
+		name = "EVTOPT600062B"
+		relation = { who = URU value = -100 }
+		leave_alliance = URU
+		ai_chance = {
+			factor = 0.01
+		}
 	}
 }
 
-country_event = {
+country_event = { #Rivera declares war on Rosas
 	id = 600063
-	title = "EVTNAME600063" #Rivera declares war on Rosas
+	title = "EVTNAME600063" 
 	desc = "EVTDESC600063"
 	picture = "guerra_grande"
 	
@@ -345,18 +352,25 @@ country_event = {
 	mean_time_to_happen = { months = 6 }
 
 	
-	option = {
-		name = "EVTOPT600063A"      #TO WAR
+	option = {        #TO WAR rbx note-Potential declaration of the Big War
+		name = "EVTOPT600063A"      
 		random_country = { 
 		limit = {
 			exists = yes
 			tag = CRT
 		}
+		release_vassal = CRT
 		create_alliance = URU
+		leave_alliance = ENT
+		leave_alliance = ARC
 		relation = {
 			who = URU
 			value = 400
 			}
+		relation = {
+			who = ARC
+			value = -400
+		}
 		}
 		ARC = { country_event = 600065 	}
 		set_country_flag = war_on_rosas
@@ -368,13 +382,25 @@ country_event = {
 			name = small_country_draft
 			duration = 365
 				}
-		war = {
-			target = ARC
-			attacker_goal = { casus_belli = humiliate }
-			defender_goal = { casus_belli = humiliate }
-			call_ally = yes
+						
+		CRT = {
+			war = {
+				target = ARC
+				attacker_goal = { casus_belli = humiliate }
+				defender_goal = { casus_belli = make_puppet }
+				call_ally = yes       #rbx note-Usually one side or the other would refuse to join but this forces the matter-both sides had to agree to get here-no pulling out now-yes two wars means more punishment but things would have gone badly for ARC if it had lost anyway-maybe a more elegant war goal against Uruguay could be found
+			}
 		}
-			
+		
+		URU = {
+			war = {
+				target = ARC
+				attacker_goal = { casus_belli = install_democracy }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
+		}
+		
 		ENG = {
 			casus_belli = {
 				target = ARC
@@ -392,6 +418,7 @@ country_event = {
 				}
 			}
 		}	
+		
 		random_owned = {
 			limit = { exists = BOR }
 			BOR = {
@@ -401,8 +428,8 @@ country_event = {
 					months = 6
 				}
 			}
-		}	
-		
+		}
+
 		ai_chance = { factor = 0.5 }
 	}
 	
@@ -463,6 +490,16 @@ country_event = {
 		ai_chance = { factor = 0.4 }
 	}
 }
+
+		ARC = {
+			release_vassal = CRT 
+			war = {
+				target = CRT
+				attacker_goal = { casus_belli = annex_core_country }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
 	
 country_event = {
 	id = 600064
