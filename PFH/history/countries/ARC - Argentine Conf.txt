@@ -40,12 +40,12 @@ colonial_policy = no_colonies
 
 set_country_flag = catholic_country
 
-ruling_party = ARG_conservative
+ruling_party = ARG_reactionary
 upper_house = {
 	fascist = 0
-	liberal = 20
+	liberal = 0
 	conservative = 70
-	reactionary = 10
+	reactionary = 30
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -53,6 +53,7 @@ upper_house = {
 
 set_country_flag = new_world_nation
 decision = ARC_1836_setup 
+decision = grant_the_buenos_aires_customs_monopoly
 
 # Technologies
 post_napoleonic_thought = 1

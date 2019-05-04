@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# the output of General.markdown is manually spliced into Argentina.markdown, with help from lossy roundtrip shenanigans
+pandoc -so fragment.General.markdown --to gfm --filter pandoc-citeproc General.markdown
+pandoc -o fragment.General.markdown --from gfm fragment.General.markdown
+
+# autogenerate bibliographical sections
+for fragment in Elections.markdown Parties.markdown ; do
+    pandoc -so "fragment.${fragment%.markdown}.json" --filter pandoc-citeproc "$fragment"
+done
+
+# main doc
+pandoc -so Argentina.json --filter pandoc-citeproc Argentina.markdown
+
+# assemble
+pandoc -so bibliography.html              --filter pandoc-citeproc Argentina.json fragment.*.json
+pandoc -so bibliography.markdown --to gfm --filter pandoc-citeproc Argentina.json fragment.*.json

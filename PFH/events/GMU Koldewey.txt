@@ -114,7 +114,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPT201003"
+		name = "EVTOPT201003OPTA"
 		plurality = 1
 		money = 10000
 		FROM = { country_event = 201004 }

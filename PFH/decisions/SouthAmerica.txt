@@ -105,12 +105,12 @@ political_decisions = {
 				tag = ARC
 			}
 			NOT = { has_country_flag = 1420_passed }
-			NOT = { school_reforms = low_schools }
+			school_reforms = no_schools
 		}
 		allow = {
-			phenomenology_n_hermeneutic = 1
+			analytic_philosophy = 1
 			ruling_party_ideology = conservative
-			NOT = { school_reforms = low_schools }
+			school_reforms = no_schools
 		}
 		effect = {
 			social_reform = low_schools
@@ -688,5 +688,42 @@ political_decisions = {
 		}
 		
 		ai_will_do = { factor = 1 }
+	}
+
+
+	corrientes_province_fix = {
+		picture = chile_bolivia_peru_borders
+		potential = {
+			ai = yes
+			OR = {
+				tag = ADO
+				tag = CRT
+				tag = ECU
+			}
+			CRT = {
+				owns = 2357
+				NOT = {
+					owns = 2358
+				}
+			}
+		}
+
+		allow = {
+			CRT = {
+	            AND = {
+	                owns = 2357
+	                NOT = {
+	                    owns = 2358
+	                    owns = 2356
+	                }
+	            }
+	        }
+		}
+
+		effect = {
+			UTI = {
+				country_event = 250044
+			}
+		}
 	}
 }

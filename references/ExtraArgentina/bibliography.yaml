@@ -1,0 +1,131 @@
+---
+references:
+
+  - id: reader
+    type: book
+    title: "The Argentina reader: history, culture, politics"
+    title-short: The Argentina reader
+    editor:
+      - family: Nouzeilles
+        given: Gabriela
+      - family: Montaldo
+        given: Graciela
+    publisher: Duke University Press
+    issued:
+      year: 2002
+    isbn: 978-0822329145
+    URL: https://www.dukeupress.edu/the-argentina-reader
+
+  - id: rosas
+    type: book
+    title: "Argentine caudillo: Juan Manuel de Rosas (Latin American Silhouettes)"
+    title-short: Argentine caudillo
+    author:
+      - family: Lynch
+        given: John
+    publisher: Rowman & Littlefield
+    issued:
+      year: 2001
+    isbn: 978-0842028981
+    URL: https://rowman.com/isbn/0842028986
+
+  - id: immigration
+    type: article
+    title: "Prologue I : L’immigration européenne en Argentine, un phénomène controversé"
+    language: fr-FR
+    author:
+      - family: Bénard
+        given: Claire
+      - family: Martin-Prével
+        given: Alice
+      - family: Prost
+        given: Marie-Aimée
+    publisher: Observatoire Politique de l’Amérique latine et des Caraïbes, Sciences Po.
+    URL: https://www.sciencespo.fr/opalc/content/prologue-i-l-immigration-europeenne-en-argentine-un-phenomene-controverse-0
+
+  - id: nationalism
+    type: article-journal
+    title: The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism during the Década Infame
+    author:
+      - family: Cedla
+        given: [Marcus, Klein]
+    publisher: The Sverdlin Institute for Latin American History and Culture, Tel Aviv University
+    container-title: Estudios Interdisciplinarios de América Latina y el Caribe
+    volume: 13
+    issue: 2
+    issued:
+      year: 2017
+    URL: https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977
+
+  - id: ar-elections
+    type: entry-encyclopedia
+    title: Categoría:Elecciones presidenciales de Argentina
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_presidenciales_de_Argentina
+
+  - id: ent-elections
+    type: entry-encyclopedia
+    title: Categoría:Elecciones en la provincia de Entre Ríos
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Entre_R%C3%ADos
+
+  - id: crt-elections
+    type: entry-encyclopedia
+    title: Categoría:Elecciones en la provincia de Corrientes
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Corrientes
+
+  - id: ba-elections
+    type: entry-encyclopedia
+    title: Categoría:Elecciones en la provincia de Buenos Aires
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Buenos_Aires
+
+  - id: ar-presidents
+    type: entry-encyclopedia
+    title: Anexo:Presidentes de la Nación Argentina
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina
+
+  - id: ent-governors
+    type: entry-encyclopedia
+    title: Anexo:Gobernadores de la provincia de Entre Ríos
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Entre_R%C3%ADos
+
+  - id: crt-governors
+    type: entry-encyclopedia
+    title: Anexo:Gobernadores de la provincia de Corrientes
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Corrientes
+
+  - id: ba-governors
+    type: entry-encyclopedia
+    title: Anexo:Gobernadores de la provincia de Buenos Aires
+    language: es
+    container-title: Wikipedia, La enciclopedia libre
+    issued:
+      year: 2019
+    URL: https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Buenos_Aires
+...

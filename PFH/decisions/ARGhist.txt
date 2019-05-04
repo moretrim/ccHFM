@@ -296,79 +296,6 @@ political_decisions = {
 		}
 	}
 	
-	entre_rios_independent = {
-		picture = entre_rios_independent
-		potential = {
-			tag = ENT
-			exists = yes
-			has_global_flag = entre_rios_rebellion
-			NOT = { has_country_flag = called_for_recruits }
-		}
-		
-		allow = {
-			OR = {
-				war_with = ARG
-				war_with = ARC
-				}
-			NOT = { has_country_modifier = small_country_draft }
-		}
-		
-		effect = {
-			set_country_flag = called_for_recruits
-			money = 50000
-			add_country_modifier = {
-				name = small_country_draft
-				duration = 365
-			}
-			
-			ARC = {
-				any_pop = {
-					scaled_militancy = {
-						ideology = liberal
-						factor = 6
-					}
-				}
-			}
-					
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	make_buenos_aires_capital = {
-		picture = buenos_aires_capital
-		potential = {
-			OR = {
-				tag = ARC
-				tag = ARG
-				tag = VLP
-			}
-			owns = 2348
-			2348 = { is_capital = no }
-			year = 1860
-			ENT = { exists = no }
-			CRT = { exists = no }
-			SBA = { exists = no }
-		}
-		
-		allow = {
-			war = no
-			owns = 2348
-			2348 = { is_capital = no }
-		}
-		
-		effect = {
-			all_core = { remove_core = ENT }
-			all_core = { remove_core = CRT }
-			all_core = { remove_core = SBA }
-			capital = 2348
-			2348 = { rich_strata = { militancy = -4 } middle_strata = { militancy = -2 } poor_strata = { militancy = -1 } }
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	rename_the_falklands = {
 		picture = falklands_map
 		potential = {
@@ -529,6 +456,9 @@ political_decisions = {
 		potential = {
 			primary_culture = platinean
 			NOT = { has_global_flag = la_plata_founded }
+			NOT = {
+				has_global_flag = no_la_plata
+			}
 			owns = 2351
 			capital = 2348
 			realism = 1
@@ -537,7 +467,7 @@ political_decisions = {
 		allow = {
 			war = no
 			money = 5000
-			analytic_philosophy = 1
+			phenomenology_n_hermeneutic = 1
 		}
 
 		effect = {
