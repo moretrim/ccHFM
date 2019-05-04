@@ -57,6 +57,7 @@ unification_casus_belli
 civil_war
 unification_annex_casus_belli
 annex_core_country
+acquire_all_vassal_cores
 unification_add_to_sphere
 add_to_sphere
 unification_GP_humiliate
@@ -443,8 +444,7 @@ acquire_core_state = {
 	}
 }
 
-
-# Acquire All Core States
+# acquire all core states in target's own hands
 acquire_all_cores = {
 	sprite_index = 5
 	is_triggered_only = yes
@@ -1186,6 +1186,92 @@ annex_core_country = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+}
+
+# acquire all core states in the hands of the target's vassals
+acquire_all_vassal_cores = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+	crisis = yes
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		is_vassal = no
+		NOT = { has_country_modifier = neutrality }
+		THIS = {
+			NOT = {
+				has_country_modifier = neutrality
+				AND = {
+					war_policy = pacifism
+					war = no
+				}
+			}
+		}
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = punitive_effects } }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+
+		num_of_vassals = 1
+		THIS = {
+			OR = {
+				ai = no
+				has_global_flag = ai_vassal_cbs_unrestricted
+			}
+		}
+		has_global_flag = vassal_cbs_enabled
+	}
+
+	# THIS:  attacker
+	# FROM:  (pseudo) candidate wargoal country
+	# scope: defender
+	#
+	# This pseudo-wargoal really acts to limit which countries are valid targets.
+	allowed_countries = {
+		is_our_vassal = FROM
+		is_releasable_vassal = FROM
+		FROM = {
+			any_owned_province = {
+				is_core = THIS
+			}
+		}
+	}
+
+	war_name = WAR_ALL_VASSAL_CORES_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+
+	# Perform actual transfer of core states.
+	on_po_accepted = {
+		country_event = 210001
 	}
 }
 

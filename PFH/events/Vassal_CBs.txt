@@ -30,3 +30,57 @@ country_event = {
 		clr_global_flag = ai_vassal_cbs_unrestricted
 	}
 }
+
+country_event = {
+	id = 210001
+	title = "EVTNAME210001"
+	desc = "EVTDESC210001"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT210001OPTA"
+
+		any_country = {
+			limit = {
+					vassal_of = THIS
+					is_releasable_vassal = THIS
+					any_owned_province = {
+						is_core = FROM
+					}
+					any_owned_province = {
+						NOT = { is_core = FROM }
+					}
+			}
+
+			any_state = {
+				limit = {
+					any_owned_province = {
+						is_core = FROM
+					}
+				}
+
+				any_owned = {
+					# HACK: otherwise the province just won't be seceded to FROM
+					secede_province = THIS
+					secede_province = FROM
+					change_controller = FROM
+				}
+			}
+		}
+
+		any_country = {
+			limit = {
+					vassal_of = THIS
+					is_releasable_vassal = THIS
+					NOT = {
+						any_owned_province = {
+							NOT = { is_core = FROM }
+						}
+					}
+			}
+
+			annex_to = FROM
+		}
+	}
+}

@@ -23,6 +23,7 @@ The 0.x.y series of releases is based on [HFM 1.27F Beta]. It comes with a few f
 
 - Add support for CBs targeting vassal countries. By default these CBs are disabled and restricted to only be available
   to player countries. These settings can be changed by decision at any point in the game.
+- Add vassal CB to return cores from all vassals.
 
 0.1.1-dev (in development)
 --------------------------
