@@ -12,7 +12,8 @@ A custom-tailored [HFM].
 Release history
 ===============
 
-The 0.1.x series of releases is based on [HFM 1.27F Beta]. It comes with a few flag tweaks as well the following:
+The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
+few flag tweaks as well the following:
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
