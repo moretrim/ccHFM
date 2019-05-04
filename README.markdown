@@ -34,12 +34,6 @@ Based on [HFM 1.27F Beta].
   countries should be prompt enough that nothing unexpected happens. Human players finding themselves in such a
   situation are advised to pause when they win the war and to pick their port as soon as possible.
 
-### Ported bugfixes
-
-- Fix conflicting Treaty Port event triggers ([HFM/#117])
-
-[HFM/#117]: https://github.com/SighPie/HFM/pull/117
-
 0.1.0
 -----
 
