@@ -459,7 +459,7 @@ country_event = { #Rivera declares war on Rosas
 	}
 		
 	option = {
-		name = "EVTOPT600063C"		#bid our time
+		name = "EVTOPT600063C"		#bide our time
 		random_country = { 
 			limit = { 
 				exists = yes
