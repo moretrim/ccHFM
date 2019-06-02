@@ -1192,6 +1192,22 @@ promote_to = {
 				soldiers = 0.05
 			}
 		}
+		
+		modifier = {
+			factor = 1.0
+			pop_majority_ideology = conservative
+			country = {
+				has_country_flag = federalist_campaign
+			}
+		}
+		
+		modifier = {
+			factor = 1.0
+			pop_majority_ideology = liberal
+			country = {
+				has_country_flag = unitarian_campaign
+			}
+		}
 	}
 	clerks = {
 		factor = 0.01

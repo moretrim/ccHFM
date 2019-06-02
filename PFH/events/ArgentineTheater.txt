@@ -1,0 +1,684 @@
+# Political campaigns
+
+## Setup
+
+# N.b. country flag teardown happens through an AI decision.
+
+country_event = {
+    id = 112000
+    title = "Rosas Repression Campaign"                       # "EVTNAME112000"
+    desc  = "Rosas wages a campaign of political repression." # "EVTDESC112000"
+    picture = "entente"
+
+    is_triggered_only = yes
+
+    trigger = {}
+
+    immediate = {
+        clr_country_flag = rosas_repression
+        clr_country_flag = federalist_campaign
+        clr_country_flag = unitarian_campaign
+
+        any_owned = {
+            remove_province_modifier = rosas_repression
+            remove_province_modifier = federalist_campaign
+            remove_province_modifier = unitarian_campaign
+        }
+    }
+
+    option = {
+        name = "Death to the Savage Unitarians!" # "EVTOPTA112000"
+
+        set_country_flag = rosas_repression
+
+        any_owned = {
+            limit = {
+                is_colonial = no
+            }
+
+            add_province_modifier = {
+                name = rosas_repression
+                duration = 1825
+            }
+
+            any_pop = {
+                scaled_militancy = {
+                    factor = 4
+                    issue = free_trade
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    issue = protectionism
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    issue = free_trade
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 112001
+    title = "Federalist Campaign"                         # "EVTNAME112001"
+    desc  = "The Federalists begin a political campaign." # "EVTDESC112001"
+    picture = "entente"
+
+    is_triggered_only = yes
+
+    trigger = {}
+
+    immediate = {
+        clr_country_flag = rosas_repression
+        clr_country_flag = federalist_campaign
+        clr_country_flag = unitarian_campaign
+
+        any_owned = {
+            remove_province_modifier = rosas_repression
+            remove_province_modifier = federalist_campaign
+            remove_province_modifier = unitarian_campaign
+        }
+    }
+
+    option = {
+        name = "Death to the enemies of national organisation!" # "EVTOPTA112001"
+
+        set_country_flag = federalist_campaign
+
+        any_owned = {
+            limit = {
+                is_colonial = no
+            }
+
+            add_province_modifier = {
+                name = federalist_campaign
+                duration = 1825
+            }
+
+            any_pop = {
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = reactionary
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 112002
+    title = "Unitarian Campaign"                         # "EVTNAME112002"
+    desc  = "The Unitarians begin a political campaign." # "EVTDESC112002"
+    picture = "entente"
+
+    is_triggered_only = yes
+
+    trigger = {}
+
+    immediate = {
+        clr_country_flag = rosas_repression
+        clr_country_flag = federalist_campaign
+        clr_country_flag = unitarian_campaign
+
+        any_owned = {
+            remove_province_modifier = rosas_repression
+            remove_province_modifier = federalist_campaign
+            remove_province_modifier = unitarian_campaign
+        }
+    }
+
+    option = {
+        name = "Death to the enemies of national organisation!" # "EVTOPTA112002"
+
+        set_country_flag = unitarian_campaign
+
+        any_owned = {
+            limit = {
+                is_colonial = no
+            }
+
+            add_province_modifier = {
+                name = unitarian_campaign
+                duration = 1825
+            }
+
+            any_pop = {
+                scaled_militancy = {
+                    factor = 4
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = reactionary
+                }
+            }
+        }
+    }
+}
+
+## Campaign events
+
+# Like 3.04 election events these are country events masquerading as province events. They really affect up to three
+# eligible provinces, at a ratio of one in four compared to the absolute total (i.e. irrespective of elegibility).
+#
+# The MTTH is set to correspond to about 6 events per five-year campaign, with some room to spare. Vassal countries get
+# more events (to spice up that substate life), countries at war get less.
+
+# Repression
+country_event = {
+    id = 112003
+    title = "Rosas Repression Event"        # "EVTNAME112003"
+    desc  = "The Mazorca is out for blood." # "EVTDESC112003"
+    picture = "entente"
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+            has_province_modifier = rosas_repression
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+    }
+
+    option = {
+        name = "Brutally repress." # "EVTOPTA112003"
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+                has_province_modifier = rosas_repression
+            }
+
+            any_pop = {
+                limit = {
+                    pop_majority_ideology = liberal
+                }
+
+                reduce_pop = 0.99
+
+                scaled_militancy = {
+                    factor = -4
+                    ideology = liberal
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = liberal
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    NOT = { pop_majority_ideology = liberal }
+                }
+
+                dominant_issue = {
+                    factor = -0.3
+                    value = free_trade
+                }
+
+                militancy = -1
+                consciousness = -1
+            }
+        }
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+                has_province_modifier = rosas_repression
+                owner = { num_of_cities = 5 }
+            }
+
+            any_pop = {
+                limit = {
+                    pop_majority_ideology = liberal
+                }
+
+                reduce_pop = 0.99
+
+                scaled_militancy = {
+                    factor = -4
+                    ideology = liberal
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = liberal
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    NOT = { pop_majority_ideology = liberal }
+                }
+
+                dominant_issue = {
+                    factor = -0.3
+                    value = free_trade
+                }
+
+                militancy = -1
+                consciousness = -1
+            }
+        }
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+                has_province_modifier = rosas_repression
+                owner = { num_of_cities = 9 }
+            }
+
+            any_pop = {
+                limit = {
+                    pop_majority_ideology = liberal
+                }
+
+                reduce_pop = 0.99
+
+                scaled_militancy = {
+                    factor = -4
+                    ideology = liberal
+                }
+
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = liberal
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    NOT = { pop_majority_ideology = liberal }
+                }
+
+                dominant_issue = {
+                    factor = -0.3
+                    value = free_trade
+                }
+
+                militancy = -1
+                consciousness = -1
+            }
+        }
+    }
+
+    option = {
+        name = "Intimidate." # "EVTOPTB112003"
+
+        any_pop = {
+            dominant_issue = {
+                factor = -0.15
+                value = free_trade
+            }
+
+            scaled_consciousness = {
+                factor = 2
+                issue = free_trade
+            }
+        }
+    }
+
+    option = {
+        name = "Placate." # "EVTOPTC112003"
+
+        any_pop = {
+            militancy = -1
+            consciousness = 2
+        }
+    }
+}
+
+# The Buenos Aires Customs Debate (revoke)
+country_event = {
+    id = 112005
+    title = "The Buenos Aires Customs Debate"               # "EVTNAME112005"
+    desc  = "Should the Buenos Aires customs be abolished?" # "EVTDESC112005"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_campaign
+            }
+
+            NOT = {
+                # Buenos Aires province
+                province_id = 2348
+            }
+        }
+
+        # Buenos Aires province
+        2348 = {
+            has_province_modifier = buenos_aires_customs_benefits
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+    }
+
+    option = {
+        name = "Portenos interests should prevail." # "EVTOPTA112005"
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+
+                OR = {
+                    has_province_modifier = rosas_repression
+                    has_province_modifier = federalist_campaign
+                }
+
+                NOT = {
+                    # Buenos Aires province
+                    province_id = 2348
+                }
+            }
+
+            # Pop political shift
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = free_trade
+                }
+
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+
+                OR = {
+                    has_province_modifier = rosas_repression
+                    has_province_modifier = federalist_campaign
+                }
+
+                NOT = {
+                    # Buenos Aires province
+                    province_id = 2348
+                }
+
+                num_of_cities = 5
+            }
+
+            # Pop political shift
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = free_trade
+                }
+
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                is_colonial = no
+
+                OR = {
+                    has_province_modifier = rosas_repression
+                    has_province_modifier = federalist_campaign
+                }
+
+                NOT = {
+                    # Buenos Aires province
+                    province_id = 2348
+                }
+
+                num_of_cities = 9
+            }
+
+            # Pop political shift
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = free_trade
+                }
+
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        # Buenos Aires province
+        2348 = {
+            rich_strata = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+            }
+
+            middle_strata = {
+                dominant_issue = {
+                    factor = 0.20
+                    value = free_trade
+                }
+            }
+
+            poor_strata = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+
+            any_pop = {
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        # Diplomatic shift
+        random_country = {
+            limit = {
+                # Buenos Aires province
+                owns = 2348
+
+                NOT = { tag = THIS }
+            }
+
+            relation = {
+                who = THIS
+                value = 50
+            }
+        }
+    }
+
+    option = {
+        name = "This revenue belongs to the nation." # "EVTOPTB112005"
+
+        # TBD
+    }
+}
+
+# The Buenos Aires Customs Debate (establish)
+country_event = {
+    id = 112006
+    title = "The Buenos Aires Customs Debate"                                # "EVTNAME112006"
+    desc  = "Should Buenos Aires get all of the monies, or only some of it?" # "EVTDESC112006"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+            has_province_modifier = unitarian_campaign
+            # Buenos Aires province
+            NOT = { province_id = 2348 }
+        }
+
+        # Buenos Aires province
+        2348 = {
+            NOT = {
+                has_province_modifier = buenos_aires_customs_benefits
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+    }
+
+    option = {
+        name = "Portenos interests should prevail." # "EVTOPTA112006"
+
+        random_owned ={
+            limit = {
+                is_colonial = no
+                has_province_modifier = unitarian_campaign
+                # Buenos Aires province
+                NOT = { province_id = 2348 }
+            }
+
+            # Pop political shift
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = free_trade
+                }
+
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        # Buenos Aires province
+        2348 = {
+            rich_strata = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+            }
+
+            middle_strata = {
+                dominant_issue = {
+                    factor = 0.20
+                    value = free_trade
+                }
+            }
+
+            poor = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+
+            any_pop = {
+                scaled_militancy = {
+                    factor = 2
+                    ideology = reactionary
+                }
+
+                scaled_consciousness = {
+                    factor = 2
+                    issue = protectionism
+                }
+            }
+        }
+
+        # Diplomatic shift
+        random_country = {
+            limit = {
+                # Buenos Aires province
+                owns = 2348
+                NOT = { tag = THIS }
+            }
+
+            # Buenos Aires province
+            relation = {
+                who = THIS
+                value = 50
+            }
+        }
+    }
+
+    option = {
+        name = "We must not upset the caudillos." # "EVTOPTB112006"
+    }
+}
