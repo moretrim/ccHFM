@@ -3276,9 +3276,42 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
+#### Extra Argentina ####
+
 #rbx note - intended to cause occasional non-liberal rebels in outlying provinces of Argentina to simulate occasional civil wars
 argentine_civil_wars = {
 	pop_consciousness_modifier = 0.2
 	pop_militancy_modifier = 0.55
 	icon = 4
+}
+
+## Political campaigns
+
+rosas_repression = {
+	pop_consciousness_modifier = -0.01
+	icon = 17
+}
+
+federalist_efforts = {
+	pop_consciousness_modifier = 0.05
+	icon = 17
+}
+
+unitarian_efforts = {
+	pop_consciousness_modifier = 0.05
+	icon = 17
+}
+
+### Buenos Aires customs
+
+buenos_aires_customs_monopoly = {
+	farm_rgo_eff = -0.15
+    pop_consciousness_modifier = 0.05
+	icon = 12
+}
+
+buenos_aires_customs_income = {
+	farm_rgo_eff = 0.25
+    local_ruling_party_support = 0.5
+	icon = 11
 }

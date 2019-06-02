@@ -53,6 +53,7 @@ upper_house = {
 
 set_country_flag = new_world_nation
 decision = ARC_1836_setup 
+decision = grant_the_buenos_aires_customs_monopoly
 
 # Technologies
 post_napoleonic_thought = 1

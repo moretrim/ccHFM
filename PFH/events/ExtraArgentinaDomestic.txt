@@ -1,0 +1,1697 @@
+# Political campaigns #
+
+## Setup ##
+
+# N.b. country flag teardown happens through an AI decision.
+
+country_event = {
+    id = 252000
+    title = "EVTNAME252000" # Rosista Terror in $COUNTRY$
+    desc  = "EVTDESC252000"
+    picture = "TBD Rosas Repression Campaign"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA252000" # Death to the Savage Unitarians!
+
+        clr_country_flag = federalist_efforts
+        clr_country_flag = unitarian_efforts
+
+        any_owned = {
+            remove_province_modifier = federalist_efforts
+            remove_province_modifier = unitarian_efforts
+        }
+    }
+}
+
+country_event = {
+    id = 252001
+    title = "EVTNAME252001" # Federalists Redouble Efforts in $COUNTRY$
+    desc  = "EVTDESC252001"
+    picture = "TBD Federalist Efforts"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA252001" # Death to the enemies of national organisation!
+
+        clr_country_flag = rosas_repression
+        clr_country_flag = unitarian_efforts
+
+        any_owned = {
+            remove_province_modifier = rosas_repression
+            remove_province_modifier = unitarian_efforts
+        }
+    }
+}
+
+country_event = {
+    id = 252002
+    title = "EVTNAME252002" # Unitarians Redouble Efforts in $COUNTRY$
+    desc  = "EVTDESC252002"
+    picture = "TBD Unitarian Efforts"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA252002" # Death to the enemies of national organisation!
+
+        clr_country_flag = rosas_repression
+        clr_country_flag = federalist_efforts
+
+        any_owned = {
+            remove_province_modifier = rosas_repression
+            remove_province_modifier = federalist_efforts
+        }
+    }
+}
+
+## Campaign events ##
+
+# Some notes:
+#
+# - vassals have reduced MTTH to spice up the substate life
+# - countries at war have reduced frequency of internal events
+# - some types of event or debate have a topic frequency
+# - the political parties, press rights, and public meetings types of reforms affect event frequency
+# - some events such as debates are intended to target states, in which case the frequency for those that are
+#   implemented as province events is fuzzed down to a quarter reflecting a very rough average of 4 province per state
+# - similarly the frequency of state-targeting country events scales proportionally to the overall number of states
+# - state-targeting country events should take care to consistently open their `random_state` scopes (with identical
+#   limits) at the same point (typically it's the very first thing) across their options for RNG consistency purposes
+# - the AI is set to neglect militancy-lowering options in times of high infamy
+
+# Repression
+province_event = {
+    id = 252010
+    title = "EVTNAME252010" # A Letter from Concerned Citizens
+    desc  = "EVTDESC252010"
+    picture = "TBD Rosas Repression"
+
+    trigger = {
+        is_colonial = no
+        has_province_modifier = rosas_repression
+    }
+
+    mean_time_to_happen = {
+        # state-targeting, quarter as frequent
+        months = 36
+
+        modifier = {
+            factor = 1.5
+            country = { war = yes }
+        }
+
+        modifier = {
+            factor = 0.5
+            country = { is_vassal = yes }
+        }
+
+        # topic frequency: Unitarian support
+
+        modifier = {
+            factor = 0.8
+            state_scope = {
+                liberal = 15
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            state_scope = {
+                liberal = 20
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            state_scope = {
+                liberal = 25
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252010" # We must organise. Hold a meeting of the Restorers.
+
+        state_scope = {
+            any_pop = {
+                limit = {
+                    OR = {
+                        pop_majority_ideology = conservative
+                        pop_majority_ideology = reactionary
+                    }
+                }
+
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 60
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252010" # Take to the streets to revive the Federalist spirit.
+
+        state_scope = {
+            any_pop = {
+                dominant_issue = {
+                    factor = -0.1
+                    value = free_trade
+                }
+
+                consciousness = -2
+            }
+        }
+
+        ai_chance = {
+            factor = 25
+
+            modifier = {
+                factor = 2
+                state_scope = {
+                    average_consciousness = 5
+                }
+            }
+
+            modifier = {
+                factor = 2
+                state_scope = {
+                    free_trade = 30
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252010" # Fret not. The Mazorca will be paying a visit to the troublemakers.
+
+        state_scope = {
+            any_pop = {
+                limit = {
+                    pop_majority_ideology = liberal
+                }
+
+                reduce_pop = 0.999
+            }
+
+            any_pop = {
+                scaled_militancy = {
+                    factor = -6
+                    ideology = liberal
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 15
+
+            modifier = {
+                factor = 2
+
+                state_scope = {
+                    liberal = 15
+                    average_militancy = 5
+                }
+            }
+
+            modifier = {
+                factor = 2
+
+                state_scope = {
+                    liberal = 20
+                    average_militancy = 7
+                }
+            }
+
+            modifier = {
+                factor = 2
+
+                state_scope = {
+                    liberal = 25
+                    average_militancy = 9
+                }
+            }
+
+            # AI infamy behaviour
+
+            modifier = {
+                factor = 0.75
+                country = { badboy = 0.2 }
+            }
+
+            modifier = {
+                factor = 0.5625
+                country = { badboy = 0.4 }
+            }
+
+            modifier = {
+                factor = 0
+                country = { badboy = 0.6 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 252020
+    title = "EVTNAME252020" # The Buenos Aires Customs Debate (Buenos Aires)
+    desc  = "EVTDESC252020"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+
+            # Buenos Aires province
+            NOT = { province_id = 2348 }
+        }
+
+        # Buenos Aires province
+        2348 = { has_province_modifier = buenos_aires_customs_income }
+
+        owns = 2348
+
+        OR = {
+            ruling_party_ideology = reactionary
+            ruling_party_ideology = conservative
+            ruling_party_ideology = liberal
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # topic frequency: life needs
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { poor_strata_life_needs = 0.5 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { middle_strata_life_needs = 0.6 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { rich_strata_life_needs = 0.7 }
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+
+        # state-targeting country event frequency
+
+        modifier = {
+            factor = 0.5
+            number_of_states = 2
+        }
+
+        modifier = {
+            factor = 0.67
+            number_of_states = 3
+        }
+
+        modifier = {
+            factor = 0.75
+            number_of_states = 4
+        }
+
+        modifier = {
+            factor = 0.8
+            number_of_states = 5
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252020" # Insist that Porteno interests should prevail.
+
+        # the hinterland reacts
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    location = {
+                        # Buenos Aires
+                        NOT = { province_id = 2348 }
+                    }
+                }
+
+                dominant_issue = {
+                    factor = 0.1
+                    value = protectionism
+                }
+
+                consciousness = 2
+            }
+        }
+
+        # Buenos Aires province becomes more loyal
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = reactionary
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = reactionary
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = conservative
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = conservative
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = liberal
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = liberal
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252020" # This revenue belongs to the nation. (protectionism)
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252020" # This revenue belongs to the nation. (free trade)
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTD252020" # TBD opt out?
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 252021
+    title = "EVTNAME252021" # The Buenos Aires Customs Debate (hinterland)
+    desc  = "EVTDESC252021"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+
+            # Buenos Aires province
+            NOT = { province_id = 2348 }
+        }
+
+        # Buenos Aires province
+        2348 = { has_province_modifier = buenos_aires_customs_income }
+
+        NOT = { owns = 2348 }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # topic frequency: life needs
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { poor_strata_life_needs = 0.5 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { middle_strata_life_needs = 0.6 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { rich_strata_life_needs = 0.7 }
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+
+        # state-targeting country event frequency
+
+        modifier = {
+            factor = 0.5
+            number_of_states = 2
+        }
+
+        modifier = {
+            factor = 0.67
+            number_of_states = 3
+        }
+
+        modifier = {
+            factor = 0.75
+            number_of_states = 4
+        }
+
+        modifier = {
+            factor = 0.8
+            number_of_states = 5
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252021" # Insist that Porteno interests should prevail.
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.1
+                    value = free_trade
+                }
+
+                consciousness = 2
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252021" # This revenue belongs to the nation. (protectionism)
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252021" # This revenue belongs to the nation. (free trade)
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTD252021"
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 252030
+    title = "EVTNAME252030" # Commerce on the Rivers (Buenos Aires)
+    desc  = "EVTDESC252030"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+        }
+
+        owns = 2348
+
+        OR = {
+            ruling_party_ideology = reactionary
+            ruling_party_ideology = conservative
+            ruling_party_ideology = liberal
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # topic frequency: life needs
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { poor_strata_life_needs = 0.5 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { middle_strata_life_needs = 0.6 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { rich_strata_life_needs = 0.7 }
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+
+        # state-targeting country event frequency
+
+        modifier = {
+            factor = 0.5
+            number_of_states = 2
+        }
+
+        modifier = {
+            factor = 0.67
+            number_of_states = 3
+        }
+
+        modifier = {
+            factor = 0.75
+            number_of_states = 4
+        }
+
+        modifier = {
+            factor = 0.8
+            number_of_states = 5
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252030" # Insist that Porteno interests should prevail.
+
+        # the hinterland reacts
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    location = {
+                        # Buenos Aires
+                        NOT = { province_id = 2348 }
+                    }
+                }
+
+                dominant_issue = {
+                    factor = 0.1
+                    value = free_trade
+                }
+
+                consciousness = 2
+            }
+        }
+
+        # Buenos Aires province becomes more loyal
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = reactionary
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = reactionary
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = conservative
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = conservative
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = liberal
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = liberal
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252030" # This revenue belongs to the nation. (protectionism)
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252030" # This revenue belongs to the nation. (free trade)
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTD252030" # TBD opt out?
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 252031
+    title = "EVTNAME252031" # Commerce on the Rivers (hinterland)
+    desc  = "EVTDESC252031"
+
+    election = yes
+    issue_group = trade_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+        }
+
+        owns = 2348
+
+        OR = {
+            ruling_party_ideology = reactionary
+            ruling_party_ideology = conservative
+            ruling_party_ideology = liberal
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # topic frequency: life needs
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { poor_strata_life_needs = 0.5 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { middle_strata_life_needs = 0.6 }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_state = {
+                NOT = { rich_strata_life_needs = 0.7 }
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+
+        # state-targeting country event frequency
+
+        modifier = {
+            factor = 0.5
+            number_of_states = 2
+        }
+
+        modifier = {
+            factor = 0.67
+            number_of_states = 3
+        }
+
+        modifier = {
+            factor = 0.75
+            number_of_states = 4
+        }
+
+        modifier = {
+            factor = 0.8
+            number_of_states = 5
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252031" # Natural monopoly of Buenos Aires
+
+        # the hinterland reacts
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            any_pop = {
+                limit = {
+                    location = {
+                        # Buenos Aires
+                        NOT = { province_id = 2348 }
+                    }
+                }
+
+                dominant_issue = {
+                    factor = 0.1
+                    value = protectionism
+                }
+
+                consciousness = 2
+            }
+        }
+
+        # Buenos Aires province becomes more loyal
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = reactionary
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = reactionary
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = conservative
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = conservative
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    ruling_party_ideology = liberal
+                }
+            }
+
+            owner = {
+                party_loyalty = {
+                    province_id = 2348
+                    ideology = liberal
+                    loyalty_value = 1
+                }
+            }
+
+            2348 = {
+                any_pop = {
+                    consciousness = -2
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252031" # Emphasise province autonomy
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252031" # Open international navigation
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTD252031" # TBD opt out?
+
+        # TBD
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 252040
+    title = "EVTNAME252040" # The role of the church
+    desc  = "EVTDESC252040"
+
+    election = yes
+    issue_group = religious_policy
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # no topic frequency
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+
+        # state-targeting country event frequency
+
+        modifier = {
+            factor = 0.5
+            number_of_states = 2
+        }
+
+        modifier = {
+            factor = 0.67
+            number_of_states = 3
+        }
+
+        modifier = {
+            factor = 0.75
+            number_of_states = 4
+        }
+
+        modifier = {
+            factor = 0.8
+            number_of_states = 5
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252040" # la Santa Causa de la Federacion
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            aristocrats = {
+                dominant_issue = {
+                    factor = 0.1
+                    value = residency
+                }
+            }
+
+            poor_strata = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = moralism
+                }
+
+                consciousness = -1
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+
+            modifier = {
+                factor = 4
+                ruling_party_ideology = reactionary
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB252040" # We are Catholic
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.1
+                    value = moralism
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+
+            modifier = {
+                factor = 4
+                ruling_party_ideology = conservative
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTC252040" # We don't want them to become Atheists, do we?
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            rich_strata = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
+            }
+
+            middle_strata = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = pluralism
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+
+            modifier = {
+                factor = 2
+                ruling_party_ideology = liberal
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTD252040" # Separation of church and state
+
+        random_state = {
+            limit = {
+                any_owned_province = {
+                    is_colonial = no
+
+                    OR = {
+                        has_province_modifier = rosas_repression
+                        has_province_modifier = federalist_efforts
+                        has_province_modifier = unitarian_efforts
+                    }
+                }
+            }
+
+            rich_strata = {
+                dominant_issue = {
+                    factor = 0.1
+                    value = full_citizenship
+                }
+            }
+
+            middle_strata = {
+                dominant_issue = {
+                    factor = 0.2
+                    value = pluralism
+                }
+
+                dominant_issue = {
+                    factor = 0.2
+                    value = secularized
+                }
+            }
+
+            poor_strata = {
+                militancy = 1
+            }
+        }
+
+        ai_chance = {
+            factor = 5
+
+            modifier = {
+                factor = 0
+                NOT = {
+                    OR = {
+                        ruling_party_ideology = liberal
+                        ruling_party_ideology = anarcho_liberal
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 252100
+    title = "EVTNAME252100" # Search for support (Argentina)
+    desc  = "EVTDESC252100"
+    picture = "TBD search for support"
+
+    trigger = {
+        any_owned_province = {
+            is_colonial = no
+
+            OR = {
+                has_province_modifier = rosas_repression
+                has_province_modifier = federalist_efforts
+                has_province_modifier = unitarian_efforts
+            }
+        }
+
+        OR = {
+            ruling_party_ideology = reactionary
+            ruling_party_ideology = conservative
+            ruling_party_ideology = liberal
+        }
+
+        # TODO
+        any_country = {
+            OR = {
+                tag = ARC
+                tag = ENT
+                tag = CRT
+                tag = SBA
+            }
+
+            NOT = { tag = THIS }
+            NOT = { is_our_vassal = THIS }
+            NOT = { vassal_of = THIS }
+
+            # same ideology
+
+            OR = {
+                AND = {
+                    THIS = { ruling_party_ideology = reactionary }
+                    ruling_party_ideology = reactionary
+                }
+
+                AND = {
+                    THIS = { ruling_party_ideology = conservative }
+                    ruling_party_ideology = conservative
+                }
+
+                AND = {
+                    THIS = { ruling_party_ideology = liberal }
+                    ruling_party_ideology = liberal
+                }
+            }
+
+            NOT = {
+                relation = {
+                    who = THIS
+                    value = 180
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            is_vassal = yes
+        }
+
+        # topic frequency: any Argentine ally?
+
+        modifier = {
+            factor = 0.8
+
+            NOT = {
+                any_country = {
+                    limit = {
+                        OR = {
+                            tag = ARC
+                            tag = ENT
+                            tag = CRT
+                            tag = SBA
+                        }
+
+                        NOT = { tag = THIS }
+                        NOT = { is_our_vassal = THIS }
+                        NOT = { vassal_of = THIS }
+                    }
+
+                    alliance_with = THIS
+                }
+            }
+        }
+
+        # rights frequency
+
+        modifier = {
+            factor = 1.44
+            country = {
+                NOT = { political_parties = harassment }
+                NOT = { political_parties = underground_parties }
+            }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { public_meetings = no_meeting } }
+        }
+
+        modifier = {
+            factor = 1.44
+            country = { NOT = { press_rights = state_press } }
+        }
+    }
+
+    option = {
+        name = "EVTOPTA252100" #
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+}

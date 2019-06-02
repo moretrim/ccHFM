@@ -1,0 +1,871 @@
+political_decisions = {
+    authorise_the_sociedad_popular_restauradora = {
+        alert = no
+        picture = "TBD sociedad popular restauradora"
+
+        potential = {
+            OR = {
+                tag = ARC
+                tag = ARG
+                tag = LPL
+                tag = ENT
+                tag = CRT
+                tag = SBA
+            }
+
+            centralization = confederalism
+
+            any_owned_province = {
+                is_colonial = no
+            }
+        }
+
+        allow = {
+            money = 10001
+
+            ruling_party_ideology = reactionary
+
+            NOT = { has_country_flag = rosas_repression }
+            NOT = { has_country_flag = federalist_efforts }
+        }
+
+        effect = {
+            treasury = -10000
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { political_parties = underground_parties }
+                        NOT = { political_parties = harassment }
+                    }
+                }
+
+                owner = {
+                    political_reform = harassment
+
+                    any_pop = {
+                        scaled_militancy = {
+                            factor = -4
+                            issue = underground_parties
+                        }
+
+                        scaled_militancy = {
+                            factor = -8
+                            issue = harassment
+                        }
+
+                        scaled_militancy = {
+                            factor = 4
+                            issue = gerrymandering
+                        }
+
+                        scaled_militancy = {
+                            factor = 6
+                            issue = non_secret_ballots
+                        }
+
+                        scaled_militancy = {
+                            factor = 8
+                            issue = secret_ballots
+                        }
+
+                        scaled_militancy = {
+                            factor = 2
+                            ideology = conservative
+                        }
+
+                        scaled_militancy = {
+                            factor = 2
+                            ideology = liberal
+                        }
+                    }
+                }
+            }
+
+            set_country_flag = rosas_repression
+
+            any_owned = {
+                limit = {
+                    is_colonial = no
+                }
+
+                add_province_modifier = {
+                    name = rosas_repression
+                    duration = 1825
+                }
+            }
+
+            # cleanup performed in follow-up event to unclutter tooltip
+            country_event = 252000
+        }
+
+        ai_will_do = {
+            factor = 0.01
+        }
+    }
+
+    begin_federalist_efforts = {
+        alert = no
+        picture = "TBD federalist efforts"
+
+        potential = {
+            OR = {
+                tag = ARC
+                tag = ARG
+                tag = LPL
+                tag = ENT
+                tag = CRT
+                tag = SBA
+            }
+
+            centralization = confederalism
+
+            any_owned_province = {
+                is_colonial = no
+            }
+        }
+
+        allow = {
+            money = 10001
+
+            trade_policy = protectionism
+
+            NOT = { has_country_flag = rosas_repression }
+            NOT = { has_country_flag = federalist_efforts }
+        }
+
+        effect = {
+            treasury = -10000
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { political_parties = underground_parties }
+                        NOT = { political_parties = harassment }
+                    }
+                }
+
+                owner = {
+                    political_reform = harassment
+
+                    any_pop = {
+                        scaled_militancy = {
+                            factor = -4
+                            issue = underground_parties
+                        }
+
+                        scaled_militancy = {
+                            factor = -8
+                            issue = harassment
+                        }
+
+                        scaled_militancy = {
+                            factor = 4
+                            issue = gerrymandering
+                        }
+
+                        scaled_militancy = {
+                            factor = 6
+                            issue = non_secret_ballots
+                        }
+
+                        scaled_militancy = {
+                            factor = 8
+                            issue = secret_ballots
+                        }
+
+                        scaled_consciousness = {
+                            factor = 4
+                            ideology = liberal
+                        }
+                    }
+                }
+            }
+
+            set_country_flag = federalist_efforts
+
+            any_owned = {
+                limit = {
+                    is_colonial = no
+                }
+
+                add_province_modifier = {
+                    name = federalist_efforts
+                    duration = 1825
+                }
+            }
+
+            # cleanup performed in follow-up event to unclutter tooltip
+            country_event = 252001
+        }
+
+        ai_will_do = {
+            factor = 0.01
+        }
+    }
+
+    begin_unitarian_efforts = {
+        alert = no
+        picture = "TBD unitarian efforts"
+
+        potential = {
+            OR = {
+                tag = ARC
+                tag = ARG
+                tag = LPL
+                tag = ENT
+                tag = CRT
+                tag = SBA
+            }
+
+            centralization = confederalism
+
+            any_owned_province = {
+                is_colonial = no
+            }
+        }
+
+        allow = {
+            money = 10001
+
+            trade_policy = free_trade
+
+            NOT = { has_country_flag = rosas_repression }
+            NOT = { has_country_flag = unitarian_efforts }
+        }
+
+        effect = {
+            treasury = -10000
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { political_parties = underground_parties }
+                        NOT = { political_parties = harassment }
+                    }
+                }
+
+                owner = {
+                    political_reform = harassment
+
+                    any_pop = {
+                        scaled_militancy = {
+                            factor = -4
+                            issue = underground_parties
+                        }
+
+                        scaled_militancy = {
+                            factor = -8
+                            issue = harassment
+                        }
+
+                        scaled_militancy = {
+                            factor = 4
+                            issue = gerrymandering
+                        }
+
+                        scaled_militancy = {
+                            factor = 6
+                            issue = non_secret_ballots
+                        }
+
+                        scaled_militancy = {
+                            factor = 8
+                            issue = secret_ballots
+                        }
+
+                        scaled_militancy = {
+                            factor = 4
+                            ideology = reactionary
+                        }
+
+                        scaled_consciousness = {
+                            factor = 4
+                            ideology = conservative
+                        }
+                    }
+                }
+            }
+
+            set_country_flag = unitarian_efforts
+
+            any_owned = {
+                limit = {
+                    is_colonial = no
+                }
+
+                add_province_modifier = {
+                    name = unitarian_efforts
+                    duration = 1825
+                }
+            }
+
+            # cleanup performed in follow-up event to unclutter tooltip
+            country_event = 252002
+        }
+
+        ai_will_do = {
+            factor = 0.01
+        }
+    }
+
+    # political campaign teardown (country flag setup happens in the campaign events)
+    argentine_campaign_has_ended = {
+        potential = {
+            ai = yes
+        }
+
+        allow = {
+            OR = {
+                ARC = {
+                    OR = {
+                        has_country_flag = rosas_repression
+                        has_country_flag = federalist_efforts
+                        has_country_flag = unitarian_efforts
+                    }
+
+                    NOT = {
+                        any_owned_province = {
+                            OR = {
+                                has_province_modifier = rosas_repression
+                                has_province_modifier = federalist_efforts
+                                has_province_modifier = unitarian_efforts
+                            }
+                        }
+                    }
+                }
+
+                ARG = {
+                    OR = {
+                        has_country_flag = rosas_repression
+                        has_country_flag = federalist_efforts
+                        has_country_flag = unitarian_efforts
+                    }
+
+                    NOT = {
+                        any_owned_province = {
+                            OR = {
+                                has_province_modifier = rosas_repression
+                                has_province_modifier = federalist_efforts
+                                has_province_modifier = unitarian_efforts
+                            }
+                        }
+                    }
+                }
+
+                LPL = {
+                    OR = {
+                        has_country_flag = rosas_repression
+                        has_country_flag = federalist_efforts
+                        has_country_flag = unitarian_efforts
+                    }
+
+                    NOT = {
+                        any_owned_province = {
+                            OR = {
+                                has_province_modifier = rosas_repression
+                                has_province_modifier = federalist_efforts
+                                has_province_modifier = unitarian_efforts
+                            }
+                        }
+                    }
+                }
+
+                CRT = {
+                    OR = {
+                        has_country_flag = rosas_repression
+                        has_country_flag = federalist_efforts
+                        has_country_flag = unitarian_efforts
+                    }
+
+                    NOT = {
+                        any_owned_province = {
+                            OR = {
+                                has_province_modifier = rosas_repression
+                                has_province_modifier = federalist_efforts
+                                has_province_modifier = unitarian_efforts
+                            }
+                        }
+                    }
+                }
+
+                SBA = {
+                    OR = {
+                        has_country_flag = rosas_repression
+                        has_country_flag = federalist_efforts
+                        has_country_flag = unitarian_efforts
+                    }
+
+                    NOT = {
+                        any_owned_province = {
+                            OR = {
+                                has_province_modifier = rosas_repression
+                                has_province_modifier = federalist_efforts
+                                has_province_modifier = unitarian_efforts
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            random_owned = {
+                limit = {
+                    ARC = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                ARC = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    ARG = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                ARG = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    LPL = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                LPL = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    ENT = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                ENT = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    CRT = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                CRT = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    SBA = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    has_province_modifier = rosas_repression
+                                    has_province_modifier = federalist_efforts
+                                    has_province_modifier = unitarian_efforts
+                                }
+                            }
+                        }
+                    }
+                }
+
+                SBA = {
+                    clr_country_flag = rosas_repression
+                    clr_country_flag = federalist_efforts
+                    clr_country_flag = unitarian_efforts
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # Buenos Aires customs
+
+    nationalise_the_buenos_aires_customs = {
+        picture = "TBD Buenos Aires customs"
+
+        potential = {
+            2348 = {
+                has_province_modifier = buenos_aires_customs_income
+            }
+
+            OR = {
+                tag = ARC
+                tag = ARG
+                tag = LPL
+                tag = ENT
+                tag = CRT
+                tag = SBA
+
+                # in case Buenos Aires is conquered or puppeted by a non-Argentine country
+                AND = {
+                    2348 = {
+                        OR = {
+                            owned_by = THIS
+                            owner = { vassal_of = THIS }
+                        }
+                    }
+
+                    year = 1870
+                }
+            }
+        }
+
+        allow = {
+            is_vassal = no
+            state_n_government = 1
+
+            2348 = {
+                OR = {
+                    owned_by = THIS
+                    owner = { vassal_of = THIS }
+                }
+            }
+        }
+
+        effect = {
+            # Buenos Aires province
+            2348 = {
+                remove_province_modifier = buenos_aires_customs_income
+            }
+
+            # TODO this generates a questionable decision tooltip, investigate an event
+
+            # Buenos Aires state
+            ARG_2355 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Santa Fe
+            ARG_2363 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Entre Rios
+            ARG_2360 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Jujuy
+            ARG_2368 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Catamarca
+            ARG_2374 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Chaco
+            ARG_2377 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Cordoba de Argentina
+            ARG_2384 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Tucuman
+            ARG_2387 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Patagonia Septentrional
+            ARG_2391 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # La Pampa
+            ARG_2393 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+
+            # Patagonia Meridional
+            ARG_2398 = {
+                remove_province_modifier = buenos_aires_customs_monopoly
+            }
+        }
+
+        ai_will_do = {
+            factor = 0.005
+
+            modifier = {
+                factor = 0
+
+                tag = SBA
+                NOT = { year = 1900 }
+            }
+
+            modifier = {
+                factor = 4
+
+                OR = {
+                    tag = ARG
+                    tag = LPL
+                }
+            }
+        }
+    }
+
+    grant_the_buenos_aires_customs_monopoly = {
+        picture = "TBD Buenos Aires customs"
+        alert = no
+
+        potential = {
+            2348 = {
+                NOT = { has_province_modifier = buenos_aires_customs_income }
+            }
+
+            OR = {
+                tag = ARC
+                tag = ARG
+                tag = LPL
+                tag = ENT
+                tag = CRT
+                tag = SBA
+            }
+        }
+
+        allow = {
+            is_vassal = no
+            trade_policy = protectionism
+
+            2348 = {
+                OR = {
+                    owned_by = THIS
+                    owner = { vassal_of = THIS }
+                }
+            }
+        }
+
+        effect = {
+            # Buenos Aires province
+            2348 = {
+                add_province_modifier = {
+                    name = buenos_aires_customs_income
+                    duration = -1
+                }
+            }
+
+            # Buenos Aires state
+            ARG_2355 = {
+                limit = {
+                    produces = cattle
+                    # Buenos Aires province
+                    NOT = { province_id = 2348 }
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Santa Fe
+            ARG_2363 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Entre Rios
+            ARG_2360 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Jujuy
+            ARG_2368 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Catamarca
+            ARG_2374 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Chaco
+            ARG_2377 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Cordoba de Argentina
+            ARG_2384 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Tucuman
+            ARG_2387 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Patagonia Septentrional
+            ARG_2391 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # La Pampa
+            ARG_2393 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+
+            # Patagonia Meridional
+            ARG_2398 = {
+                limit = {
+                    produces = cattle
+                }
+
+                add_province_modifier = {
+                    name = buenos_aires_customs_monopoly
+                    duration = -1
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 0.005
+
+            modifier = {
+                factor = 8
+
+                # Rosas and his supporters
+                OR = {
+                    ruling_party = ARG_reactionary
+                    ruling_party = ENT_reactionary
+                    ruling_party = CRT_reactionary
+                    ruling_party = SBA_reactionary
+                }
+            }
+        }
+    }
+}
