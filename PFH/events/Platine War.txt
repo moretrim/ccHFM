@@ -294,6 +294,15 @@ country_event = {     #The Constitutional Demand - rbx note core removal does no
 	
 	is_triggered_only = yes
 		
+	option = {   #rbx note-Argentine Confederation says no to Entre Rios
+		name = "EVTOPT46610B"    
+		political_reform = regionalism
+		ENT = { set_country_flag = rosas_refused_to_step_down }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
 	option = { #rbx note Argentine Confderation becomes a puppet and player continues as ENT
 		name = "EVTOPT46610A"	
 		any_country = {
@@ -310,7 +319,6 @@ country_event = {     #The Constitutional Demand - rbx note core removal does no
 			owner = { political_reform = no_slavery }
 		}
 
-		ENT = { create_vassal = ARC }
 		ARC = { capital = 2361 #rbx note I moved this to Santa Fe Sancti Spiritu because it cannot be at Parana while ENT is separate
 			any_pop = {
 				scaled_militancy = {
@@ -337,17 +345,12 @@ country_event = {     #The Constitutional Demand - rbx note core removal does no
 			add_country_modifier = { name = national_confusion duration = 365 }
 			set_country_flag = argentine_constitution
 		}
+		ENT = { 
+			create_vassal = ARC 
+			country_event = 4662020
+		}
 		ai_chance = {
 			factor = 10
-		}
-	}
-		
-	option = {   #rbx note-Argentine Confederation says no to Entre Rios
-		name = "EVTOPT46610B"    
-		political_reform = regionalism
-		ENT = { set_country_flag = rosas_refused_to_step_down }
-		ai_chance = {
-			factor = 90
 		}
 	}
 	
@@ -569,7 +572,7 @@ country_event = {   #ENT gets the answer from ARC
 	}
 	
 	mean_time_to_happen = {
-		months = 7
+		days = 15
 	}
 		
 	option = {   #war between ENT and ARC
@@ -662,13 +665,14 @@ country_event = {    #Urquiza Victory
 	fire_only_once = yes
 	
 	trigger = {   #rbx note-this should trigger when ENT wins the rebellion
-		exists = yes
-		AND = {
-			tag = ENT
-			war = no
-			is_vassal = no
-			has_global_flag = entre_rios_rebellion
-			has_country_flag = platine_war
+		tag = ENT
+		ENT = {
+			exists = yes
+			AND = {
+				war = no
+				is_vassal = no
+				has_global_flag = entre_rios_rebellion
+				has_country_flag = platine_war
 			}
 		}
 	}
@@ -702,20 +706,13 @@ country_event = {  #The Argentine Constitution - Urquiza Victory
 		capital = 2360
 		clr_global_flag = entre_rios_rebellion
 		set_country_flag = entre_rios_has_happened
+		
 		ENT = {
 			relation = {
 				{ who = ARC value = 200 }
 			}
-			create alliance = ARC
-		}
-		prestige = 2
-		
-		CRT = {
-			country_event = 4662018
-		}
-		
-		ENT = {
 			create_vassal = ARC
+			create_alliance = ARC
 		}
 		
 		random_list = {
@@ -797,6 +794,10 @@ country_event = {  #The Argentine Constitution - Urquiza Victory
 					}
 				}
 			}
+		}
+		
+		CRT = {
+			country_event = 4662018
 		}
 		
 		ARG_2355 = {
@@ -1033,11 +1034,9 @@ country_event = {   #Rosas Win
 		OR = {
 			AND = {
 				ENT = { exists = no }
-				CRT = { exists = no }
 			}
 			AND = {
 				ENT = { is_vassal = yes }
-				CRT = { is_vassal = yes }
 			}
 		}
 		has_global_flag = entre_rios_rebellion
@@ -2300,4 +2299,16 @@ country_event = { #rbx note - Warn ARC player that a presidential dictatorship w
 		ai_chance = { factor = 0 }
 	}
 	
+}
+
+country_event = { #rbx note - ARC has decided to become a satellite of ENT without a fight
+	name = "EVTOPT4662020"
+	desc = "EVTDESC4662020"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPT4662020A"		
+	}
 }
