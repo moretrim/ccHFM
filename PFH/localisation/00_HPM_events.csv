@@ -4993,3 +4993,6 @@ EVTNAME4662019;Increasing opposition from all sides;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
 EVTDESC4662019;Liberal sentiment has been increasing in Buenos Aires, even though circumstances have not been right for granting voting rights to the people. We have also gained some powerful enemies in attempting to exert control over northern provinces that are rightfully ours. There are rumors of a Northern Coalition forming against us, and increasingly dangerous traitors are in our midst. Perhaps it is time to grant controlled voting rights to the unprepared people of the Confederation, before the Northern Coalition attempts to force the matter through bloodshed.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTOPT4662019A;The people would only harm themselves with democracy at this time.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTOPT4662019B;If democracy is necessary to preserve the Confederation, so be it.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME4662020;The Argentine Confederation submits
+EVTDESC4662020;Rosas has voluntarily left office rather than fight a losing war against us. He has gone into exile overseas in the United Kingdom. The Argentine Confederation government will temporarily be in the hands of General Urquiza until a new constitution can be drafted.
+EVTOPT4662020A;Let the Constitution be drafted!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
