@@ -36,16 +36,14 @@ country_event = {    #Urquiza's Statement
 		ARC = {
 			country_event = 46610
 		}
-		immediate = {
-			BRZ = {
-				country_event = 46605
-			}
-			CRT = {
-				country_event = 46605
-			}
-			URU = {
-				country_event = 46605
-			}
+		BRZ = {
+			country_event = 46605
+		}
+		CRT = {
+			country_event = 46605
+		}
+		URU = {
+			country_event = 46605
 		}
 	}
 	
@@ -805,19 +803,17 @@ country_event = {  #The Argentine Constitution - Urquiza Victory
 		name = "EVTOPTA46611B"
 		clr_global_flag = entre_rios_rebellion
 		
-		immediate = {
-			ARC = {
-				set_country_flag = entre_rios_has_happened
-				remove_country_modifier = north_coalition
-				inherit = ENT 
-				capital = 2360
-				relation = {
-					{ who = CRT value = 100 }
-				}
-				country_event = 4662021
+		ARC = {
+			set_country_flag = entre_rios_has_happened
+			remove_country_modifier = north_coalition
+			inherit = ENT 
+			capital = 2360
+			relation = {
+				{ who = CRT value = 100 }
 			}
+			country_event = 4662021
 		}
-			
+					
 		random_owned = { limit = { owner = { tag = ENT } } owner = { change_tag_no_core_switch = ARC } }
 		
 		random_list = {
