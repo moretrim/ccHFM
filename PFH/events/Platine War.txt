@@ -1108,15 +1108,10 @@ country_event = {   #Rosas Win
 	
 	trigger = {
 		tag = ARC
-		owns = 2360
 		war = no
 		OR = {
-			AND = {
 				ENT = { exists = no }
-			}
-			AND = {
 				ENT = { is_vassal = yes }
-			}
 		}
 		has_global_flag = entre_rios_rebellion
 		NOT = { has_country_flag = rosas_victory_new_regime }
@@ -1130,11 +1125,11 @@ country_event = {   #Rosas Win
 		name = "EVTOPT46612B"		#Continue as Federation
 		prestige = 2
 		political_reform = federalism
-		random_owned = {
+		random_country = {
 			limit = { tag = CRT exists = yes is_vassal = no }
 			ARC = { country_event = 4662018 }
 		}
-		random_owned = {
+		random_country = {
 			limit = { tag = ENT exists = yes }
 			ARC = { create_vassal = ENT }
 		}
