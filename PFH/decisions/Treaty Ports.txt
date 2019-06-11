@@ -11,7 +11,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1695 = { secede_province = THIS change_controller = THIS }
+			1695 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1695 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -30,7 +38,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1071 = { secede_province = THIS change_controller = THIS }
+			1071 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1071 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -86,7 +102,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1498 = { secede_province = THIS change_controller = THIS }
+			1498 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1498 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -136,7 +160,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1496 = { secede_province = THIS change_controller = THIS }
+			1496 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1496 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 		}
@@ -173,7 +205,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1538 = { secede_province = THIS change_controller = THIS }
+			1538 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1538 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -228,7 +268,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1566 = { secede_province = THIS change_controller = THIS }
+			1566 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1566 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -285,7 +333,19 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1481 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			1481 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1481 = {
+				secede_province = THIS
+				change_controller = THIS
+				add_province_modifier = {
+					name = treaty_port
+					duration = -1
+				}
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -335,7 +395,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1569 = { secede_province = THIS change_controller = THIS }
+			1569 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1569 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -387,7 +455,19 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1606 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			1606 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1606 = {
+				secede_province = THIS
+				change_controller = THIS
+				add_province_modifier = {
+					name = treaty_port
+					duration = -1
+				}
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -451,10 +531,42 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			2406 = { secede_province = THIS change_controller = THIS }
-			1485 = { secede_province = THIS change_controller = THIS }
-			2562 = { secede_province = THIS change_controller = THIS }
-			2681 = { secede_province = THIS change_controller = THIS }
+			2406 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2406 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
+			1485 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1485 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
+			2562 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2562 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
+			2681 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2681 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -502,7 +614,19 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1499 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			1499 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1499 = {
+				secede_province = THIS
+				change_controller = THIS
+				add_province_modifier = {
+					name = treaty_port
+					duration = -1
+				}
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -562,7 +686,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			2632 = { secede_province = THIS change_controller = THIS }
+			2632 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2632 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -619,7 +751,19 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1608 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			1608 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1608 = {
+				secede_province = THIS
+				change_controller = THIS
+				add_province_modifier = {
+					name = treaty_port
+					duration = -1
+				}
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -671,7 +815,19 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			3249 = { secede_province = THIS change_controller = THIS add_province_modifier = { name = treaty_port duration = -1 } }
+			3249 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			3249 = {
+				secede_province = THIS
+				change_controller = THIS
+				add_province_modifier = {
+					name = treaty_port
+					duration = -1
+				}
+			}
 			add_country_modifier = { name = chinese_treaty_port duration = 1095 }
 			1493 = { remove_province_modifier = canton_system }
 			random_country = { limit = { tag = QNG exists = yes } set_variable = { which = china_destablization value = 1 } }
@@ -727,7 +883,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			2640 = { secede_province = THIS change_controller = THIS }
+			2640 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2640 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -745,7 +909,13 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1177 = { secede_province = THIS change_controller = THIS }
+			1177 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -763,7 +933,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			2048 = { secede_province = THIS change_controller = THIS }
+			2048 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2048 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -781,7 +959,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			1637 = { secede_province = THIS change_controller = THIS }
+			1637 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			1637 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -798,7 +984,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			2589 = { secede_province = THIS change_controller = THIS }
+			2589 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			2589 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -815,7 +1009,15 @@ political_decisions = {
 		
 		effect = {
 			remove_country_modifier = negotiating_treaty
-			3260 = { secede_province = THIS change_controller = THIS }
+			3260 = {
+				owner = {
+					remove_country_modifier = negotiating_unequal_treaty
+				}
+			}
+			3260 = {
+				secede_province = THIS
+				change_controller = THIS
+			}
 		}
 		
 		ai_will_do = { factor = 1 }
