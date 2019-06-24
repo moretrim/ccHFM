@@ -67,6 +67,12 @@ AGRESSION_WAR_RESTORE_ORDER_NAME_KUK_HUN;The 2nd Hungarian Revolution;;;;;;;;;;;
 NORMAL_WAR_RESTORE_ORDER_NAME_KUK_HUN;The 2nd Hungarian Revolution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 AGRESSION_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;x,,,
 NORMAL_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;x,,,
+AGRESSION_WAR_HUMILIATE_NAME_CRT_ARC;The Corrientes Revolt;;;;;;;;;;;x,,,
+NORMAL_WAR_HUMILIATE_NAME_CRT_ARC;The Corrientes Revolt;;;;;;;;;;;x,,,
+AGRESSION_WAR_UNIFICATION_NAME_SBA_ENT;Argentine Civil War;;;;;;;;;;;x,,,
+NORMAL_WAR_UNIFICATION_NAME_SBA_ENT;Argentine Civil War;;;;;;;;;;;x,,,
+AGRESSION_WAR_UNIFICATION_NAME_SBA_ARC;Argentine Civil War;;;;;;;;;;;x,,,
+NORMAL_WAR_UNIFICATION_NAME_SBA_ARC;Argentine Civil War;;;;;;;;;;;x,,,
 NORMAL_WAR_CONQUEST_NAME_SAR_PAP;The Expedition of the Thousand;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 AGRESSION_WAR_CONQUEST_NAME_SAR_PAP;The Expedition of the Thousand;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 NORMAL_WAR_CONQUEST_ANY_NAME_SAR_PAP;The Expedition of the Thousand;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
