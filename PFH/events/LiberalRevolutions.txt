@@ -4771,3 +4771,73 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #frequent civil wars in Argentina - these are treated as civil wars but liberal rebellions are treated elsewhere - this is placed here because the code structure is similar
+	id = 466100001
+	title = "EVTNAME466100001"
+	desc = "EVTDESC466100001"
+	picture = "Rosas"
+	
+	trigger = {
+		civilized = yes
+		capital_scope = { continent = south_america }
+		OR = {
+			tag = ARC
+			tag = ARG
+		}
+		year = 1837
+		NOT = {
+			OR = {
+				has_country_flag = argentine_civil_wars_in_progress
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA466100001"
+		add_country_modifier = {
+			name = argentine_civil_wars
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+				location = { 
+					is_colonial = no 
+					NOT = {
+						province_id = 2348
+					}
+				}
+			}
+			ideology = {
+				value = conservative
+				factor = 0.05
+			}
+			scaled_consciousness = {
+				ideology = conservative
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 2
+			}
+		}
+		set_global_flag = argentine_civil_wars_happening
+		set_country_flag = argentine_civil_wars_in_progress
+	}
+}

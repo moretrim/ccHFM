@@ -312,7 +312,10 @@ country_event = { #Corrientes gets Uruguay support-rbx note-war declaration remo
 		add_country_modifier = { name = unrecognized_country duration = 3650 }
 		relation = { who = ARC value = -400 }
 		relation = { who = ENT value = -400 }
-		URU = { set_country_flag = corrientes_is_ready_for_war clr_country_flag = incite_rebellion }
+		URU = { 
+			set_country_flag = corrientes_is_ready_for_war 
+			clr_country_flag = incite_rebellion 
+		}
 		ai_chance = {
 			factor = 0.99
 		}
