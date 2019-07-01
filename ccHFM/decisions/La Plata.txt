@@ -125,6 +125,7 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 							province_id = 2131
 						}
 					}
@@ -140,6 +141,7 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 							province_id = 2131
 							}
 						}
@@ -172,6 +174,9 @@ political_decisions = {
 					ai = yes
 				}
 				THIS = { inherit = ARG }
+			}
+			LPL = {
+				remove_country_modifier = argentine_civil_wars
 			}
 			random_country = {
 				limit = {

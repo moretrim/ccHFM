@@ -456,6 +456,9 @@ political_decisions = {
 		potential = {
 			primary_culture = platinean
 			NOT = { has_global_flag = la_plata_founded }
+			NOT = {
+				has_global_flag = no_la_plata
+			}
 			owns = 2351
 			capital = 2348
 			realism = 1
@@ -464,7 +467,7 @@ political_decisions = {
 		allow = {
 			war = no
 			money = 5000
-			analytic_philosophy = 1
+			phenomenology_n_hermeneutic = 1
 		}
 
 		effect = {
