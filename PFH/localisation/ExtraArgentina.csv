@@ -1,0 +1,147 @@
+### Events ###;;;;;;;;;;;;;;x
+EVTNAME250000;Argentine Civil Wars;;;;;;;;;;;;;x
+EVTDESC250000;Under the dictatorial rule of Juan Manuel de Rosas, the caudillos, military leaders, of outlying provinces of Argentina were frequently at war with one another or in rebellion against the Argentine Confederation. This was agitated by oppressive economic policies in Buenos Aires, the only deep water port in Argentina. Heavy trade duties placed on incoming cargo inspired strong feelings against the 'porteños' or port-city dwellers. However, some respected Rosas himself due to his military successes and strong rule.;;;;;;;;;;;;;x
+EVTOPTA250000;These uprisings will be put down!;;;;;;;;;;;;;x
+EVTNAME250010;Brazil responds;;;;;;;;;;;;;x
+EVTDESC250010;Brazil has responded favorably to our request for aid against the tyranny of Rosas, sending much-needed artillery and troops!;;;;;;;;;;;;;x
+EVTOPTA250010;Rosas will fall!;;;;;;;;;;;;;x
+EVTNAME250011;Uruguay responds;;;;;;;;;;;;;x
+EVTDESC250011;The Colorados, Uruguay's liberal party, have joined our cause against Rosas. This comes as no surprise, given his persistent aid of their enemies, the Blancos.;;;;;;;;;;;;;x
+EVTOPTA250011;Rosas will fall!;;;;;;;;;;;;;x
+EVTNAME250012;Corrientes responds;;;;;;;;;;;;;x
+EVTDESC250012;Corrientes has responded favorably to our request to join us in uprising against the tyranny of Rosas!;;;;;;;;;;;;;x
+EVTOPTA250012;Rosas will fall!;;;;;;;;;;;;;x
+EVTNAME250020;;;;;;;;;;;;;x
+EVTDESC250020;General Urquiza's victory dealt  a serious blow to the hopes of unitarians. Urquiza sought a federalist Argentina with increased power for individual states, while predominantly upper class liberal unitarians in Buenos Aires supported increased power for their own city. They furthermore feared that Urquiza would become a dictator little different from Juan Manuel de Rosas. Unitarians in Buenos Aires led a tense but peaceful revolution during a temporary absence of Urquiza from the city. The State of Buenos Aires therefore seceded, although this was not recognized by other nations. There was talk of making the secession permanent, instituting the Republic of the Rio de La Plata, but prominent leaders wished to leverage the federalists into agreeing to a united Argentina with strong centralized rule.;;;;;;;;;;;;;x
+EVTOPTA250020;Damn!;;;;;;;;;;;;;x
+EVTNAME250030;Rejoining the Argentine Confederation;;;;;;;;;;;;;x
+EVTDESC250030;Now that the Platine War has concluded, we may ask them to rejoin the Confederation.;;;;;;;;;;;;;x
+EVTOPTA250030;We welcome Corrientes back!;;;;;;;;;;;;;x
+EVTOPTB250030;They are not welcome here!;;;;;;;;;;;;;x
+EVTNAME250040;The Corrientes Question;;;;;;;;;;;;;x
+EVTDESC250040;Now that the Platine War has concluded, we may ask them to agree to the new Constitution and rejoin the Confederation.;;;;;;;;;;;;;x
+EVTOPTA250040;We welcome Corrientes back!;;;;;;;;;;;;;x
+EVTOPTB250040;They are not welcome here!;;;;;;;;;;;;;x
+EVTNAME250041;The Corrientes Question;;;;;;;;;;;;;x
+EVTDESC250041;We have been asked to rejoin the Argentine Confederation now that the Platine War has finished.;;;;;;;;;;;;;x
+EVTOPTA250041;Long live the Argentine Confederation!;;;;;;;;;;;;;x
+EVTOPTB250041;Long live independent Corrientes!;;;;;;;;;;;;;x
+EVTNAME250042;The Corrientes Question;;;;;;;;;;;;;x
+EVTDESC250042;Corrientes has agreed to rejoin us!;;;;;;;;;;;;;x
+EVTOPTA250042;As it should be!;;;;;;;;;;;;;x
+EVTNAME250043;The Corrientes Question;;;;;;;;;;;;;x
+EVTDESC250043;Corrientes has refused to rejoin us!;;;;;;;;;;;;;x
+EVTOPTA250043;This betrayal will not be forgotten!;;;;;;;;;;;;;x
+EVTNAME250050;Entre Rios rejoins the Argentine Confederation!;;;;;;;;;;;;;x
+EVTDESC250050;Now that we have won the Platine War, Entre Rios has become an integral part of the Urquiza-led Argentine Confederation, with its new capital in Paraná.;;;;;;;;;;;;;x
+EVTOPTA250050;Long live the Argentine Confederation!;;;;;;;;;;;;;x
+EVTNAME250060;Negotiations with the Confederation;;;;;;;;;;;;;x
+EVTDESC250060;Our country has been torn for too long. There's even talk by some porteños that we should make our independence official and become forever separated from the Confederation.\n\nPresident Urquiza of the Argentine Confederation approached the government of Buenos Aires and offers to reunite the country by making some amendments in the constitution to benefit us, but the porteños aren't happy with only these and threaten to become rebellious in case we accept Urquiza's offer. On the other hand, Urquiza and the Confederation threaten to force us to accept the new constitution in case this secession goes on for too long.;;;;;;;;;;;;;x
+EVTOPTA250060;We will have the country united OUR way.;;;;;;;;;;;;;x
+EVTOPTB250060;We do not accept the constitution, but will not take action right now.;;;;;;;;;;;;;x
+EVTOPTC250060;Accept the offer.;;;;;;;;;;;;;x
+EVTNAME250061;The Argentine Civil War;;;;;;;;;;;;;x
+EVTDESC250061;The porteños in Buenos Aires have finally attacked us to force their disastrous liberal views upon our nation.;;;;;;;;;;;;;x
+EVTOPTA250061;To arms!;;;;;;;;;;;;;x
+EVTNAME250062;Buenos Aires stands down;;;;;;;;;;;;;x
+EVTDESC250062;The porteños in Buenos Aires finally acknowledged good sense and have agreed to abide by our perfectly reasonable Constitution.;;;;;;;;;;;;;x
+EVTOPTA250062;We welcome them back!;;;;;;;;;;;;;x
+EVTNAME250070;Negotiations with Entre Ríos;;;;;;;;;;;;;x
+EVTDESC250070;Our country has been torn for too long. There's even talk by some porteños that we should make our independence official and become forever separated from the Confederation.\n\nPresident Urquiza of the Argentine Confederation approached the government of Buenos Aires and offers to reunite the country by making some amendments in the constitution to benefit us, but the porteños aren't happy with only these and threaten to become rebellious in case we accept Urquiza's offer. On the other hand, Urquiza and the Confederation threaten to force us to accept the new constitution in case this secession goes on for too long.;;;;;;;;;;;;;x
+EVTOPTA250070;We will have the country united OUR way.;;;;;;;;;;;;;x
+EVTOPTB250070;We do not accept the constitution, but will not take action right now.;;;;;;;;;;;;;x
+EVTOPTC250070;Accept the offer.;;;;;;;;;;;;;x
+EVTNAME250071;The Argentine Civil War;;;;;;;;;;;;;x
+EVTDESC250071;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250071;To arms!;;;;;;;;;;;;;x
+EVTNAME250080;A federalist Argentine Republic!;;;;;;;;;;;;;x
+EVTDESC250080;Finally, the federalists stand triumphant over the unitarians! Buenos Aires has no choice but to grant rightfully deserved power to the provinces. A united federalist Argentina is now within our grasp!;;;;;;;;;;;;;x
+EVTOPTA250080;Long live Argentina!;;;;;;;;;;;;;x
+EVTOPTB250080;There is no need to proclaim a republic. Long live the Argentine Confederation!;;;;;;;;;;;;;x
+EVTNAME250090;Argentina has formed;;;;;;;;;;;;;x
+EVTDESC250090;Now that Argentina has formed we should decide if we wish to join them.;;;;;;;;;;;;;x
+EVTOPTA250090;Yes, we will join Argentina!;;;;;;;;;;;;;x
+EVTOPTB250090;No, we do not wish to be part of a united Argentina.;;;;;;;;;;;;;x
+EVTNAME250091;Corrientes has asked to join us!;;;;;;;;;;;;;x
+EVTDESC250091;Corrientes has requested to become part of our united Argentina.;;;;;;;;;;;;;x
+EVTOPTA250091;Yes, they may join.;;;;;;;;;;;;;x
+EVTOPTB250091;No, we will have none of their filthy rebellious kind here!;;;;;;;;;;;;;x
+EVTNAME250092;Argentina has approved our membership!;;;;;;;;;;;;;x
+EVTDESC250092;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250092;Long live Argentina!;;;;;;;;;;;;;x
+EVTNAME250093;Corrientes is now part of a united Argentina!;;;;;;;;;;;;;x
+EVTDESC250093;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250093;Play as Argentina;;;;;;;;;;;;;x
+EVTNAME250094;Argentina has denied our membership!;;;;;;;;;;;;;x
+EVTDESC250094;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250094;We must forge our own path...;;;;;;;;;;;;;x
+EVTNAME250100;Argentina has formed;;;;;;;;;;;;;x
+EVTDESC250100;Now that Argentina has formed we should decide if we wish to join them.;;;;;;;;;;;;;x
+EVTOPTA250100;Yes, we will join Argentina!;;;;;;;;;;;;;x
+EVTOPTB250100;No, we do not wish to be part of a united Argentina.;;;;;;;;;;;;;x
+EVTNAME250101;Entre Rios has asked to join us!;;;;;;;;;;;;;x
+EVTDESC250101;Entre Rios has requested to become part of our united Argentina.;;;;;;;;;;;;;x
+EVTOPTA250101;Yes, they may join.;;;;;;;;;;;;;x
+EVTOPTB250101;No, we will have none of their filthy rebellious kind here!;;;;;;;;;;;;;x
+EVTNAME250102;Argentina has approved our membership!;;;;;;;;;;;;;x
+EVTDESC250102;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250102;Long live Argentina!;;;;;;;;;;;;;x
+EVTNAME250103;Entre Rios is now part of a united Argentina!;;;;;;;;;;;;;x
+EVTDESC250103;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250103;Play as Argentina;;;;;;;;;;;;;x
+EVTNAME250104;Argentina has denied our membership!;;;;;;;;;;;;;x
+EVTDESC250104;TODO write this up.;;;;;;;;;;;;;x
+EVTOPTA250104;We must forge our own path...;;;;;;;;;;;;;x
+EVTNAME250110;Increasing opposition from all sides;;;;;;;;;;;;;x
+EVTDESC250110;Liberal sentiment has been increasing in Buenos Aires, even though circumstances have not been right for granting voting rights to the people. We have also gained some powerful enemies in attempting to exert control over northern provinces that are rightfully ours. There are rumors of a Northern Coalition forming against us, and increasingly dangerous traitors are in our midst. Perhaps it is time to grant controlled voting rights to the unprepared people of the Confederation, before the Northern Coalition attempts to force the matter through bloodshed.;;;;;;;;;;;;;x
+EVTOPTA250110;The people would only harm themselves with democracy at this time.;;;;;;;;;;;;;x
+EVTOPTB250110;If democracy is necessary to preserve the Confederation, so be it.;;;;;;;;;;;;;x
+EVTNAME250120;The Argentine Confederation submits;;;;;;;;;;;;;x
+EVTDESC250120;Rosas has voluntarily left office rather than fight a losing war against us. He has gone into exile overseas in the United Kingdom. The Argentine Confederation government will temporarily be in the hands of General Urquiza until a new constitution can be drafted.;;;;;;;;;;;;;x
+EVTOPTA250120;Let the Constitution be drafted!;;;;;;;;;;;;;x
+EVTNAME250130;Argentina has formed!;;;;;;;;;;;;;x
+EVTDESC250130;The provinces of the Argentine Confederation have enjoyed limited self rule for decades. Now that Argentina has been formed, we must decide whether we wish to acknowledge its existence and join as member states. While we would lose autonomy, we could benefit from a stronger centralized government.;;;;;;;;;;;;;x
+EVTOPTA250130;Yes, we wish to join.;;;;;;;;;;;;;x
+EVTOPTB250130;No, we will not join them.;;;;;;;;;;;;;x
+EVTNAME250131;The Argentine Confederation has asked to join us!;;;;;;;;;;;;;x
+EVTDESC250131;The provinces of the Argentine Confederation have requested to become part of our united Argentina.;;;;;;;;;;;;;x
+EVTOPTA250131;Viva Argentina!;;;;;;;;;;;;;x
+EVTOPTB250131;No, we will have none of their filthy kind here!;;;;;;;;;;;;;x
+EVTNAME250132;The Argentine Confederation is now part of a united Argentina!;;;;;;;;;;;;;x
+EVTDESC250132;We have been accepted as part of united Argentina!;;;;;;;;;;;;;x
+EVTOPTA250132;Play as Argentina;;;;;;;;;;;;;x
+EVTNAME250133;Argentina has denied our membership!;;;;;;;;;;;;;x
+EVTDESC250133;Argentina has rejected our application for memebership!;;;;;;;;;;;;;x
+EVTOPTA250133;We must forge our own path...;;;;;;;;;;;;;x
+EVTNAME250134;The Argentine Confederation is now part of a united Argentina!;;;;;;;;;;;;;x
+EVTDESC250134;We are now part of a united Argentina!;;;;;;;;;;;;;x
+EVTOPTA250134;Play as Argentina;;;;;;;;;;;;;x
+EVTNAME250140;The Argentine Centennial!;;;;;;;;;;;;;x
+EVTDESC250140;This year we celebrate 100 years of freedom from colonial rule! Shall we acknowledge the strength of our common Platinean cultural bonds by forming a united Argentina?;;;;;;;;;;;;;x
+EVTOPTA250140;Viva Argentina!;;;;;;;;;;;;;x
+EVTOPTB250140;No, it would be unwise to make this change.;;;;;;;;;;;;;x
+EVTNAME250150;The Rebellion of 1880;;;;;;;;;;;;;x
+EVTDESC250150;Federalization of Buenos Aires as the official capital of our country, separate from Buenos Aires province, has been a point of conflict for decades. The porteños wish to exercise complete control over the surrounding area, but outlying provinces prefer a federalized separate national capital. The liberal candidate Carlos Tejedor has lost a campaign for the presidency on an anti-federalization platform. In response, he has led an armed rebellion against our country!;;;;;;;;;;;;;x
+EVTOPTA250150;Force them to submit!;;;;;;;;;;;;;x
+EVTOPTB250150;We do not want federalization that badly.;;;;;;;;;;;;;x
+EVTNAME250160;Buenos Aires Victory;;;;;;;;;;;;;x
+EVTDESC250160;Tejedor and the porteños have enforced their demands, and federalism cannot be the law of the land.;;;;;;;;;;;;;x
+EVTOPTA250160;Damn!;;;;;;;;;;;;;x
+EVTNAME250170;Buenos Aires Defeat;;;;;;;;;;;;;x
+EVTDESC250170;We have put down the porteño rebellion, and now Buenos Aires will be enforced in the Constitution as the official federalized capital! This victory consolidates Buenos Aires as an integral part of our country without unfair advantages over outlying provinces!;;;;;;;;;;;;;x
+EVTOPTA250170;I hope they have learned their lesson!;;;;;;;;;;;;;x
+EVTNAME250180;The Argentine Centennial!;;;;;;;;;;;;;x
+EVTDESC250180;This year we celebrate 100 years of freedom from colonial rule! After many long and bloody struggles, Argentina has solidified its place as a nation, and is no longer a collection of warring provinces with separate national identities. Our substates have the option of joining us, and we are sure that they will accept.;;;;;;;;;;;;;x
+EVTOPTA250180;Viva Argentina!;;;;;;;;;;;;;x
+### Modifiers ###;;;;;;;;;;;;;;x
+argentine_civil_wars;Argentine Civil Wars;;;;;;;;;;;;;x
+desc_argentine_civil_wars;The caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;x
+### Wars ###;;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;;;x
+AGRESSION_WAR_HUMILIATE_NAME_CRT_ARC;The Corrientes Revolt;;;;;;;;;;;;;x
+NORMAL_WAR_HUMILIATE_NAME_CRT_ARC;The Corrientes Revolt;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_SBA_ENT;Argentine Civil War;;;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_SBA_ENT;Argentine Civil War;;;;;;;;;;;;;x
+AGRESSION_WAR_UNIFICATION_NAME_SBA_ARC;Argentine Civil War;;;;;;;;;;;;;x
+NORMAL_WAR_UNIFICATION_NAME_SBA_ARC;Argentine Civil War;;;;;;;;;;;;;x
