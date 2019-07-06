@@ -296,9 +296,9 @@ country_event = {
 	}
 }
 
-country_event = { #Corrientes gets Uruguay support-rbx note-war declaration removed, because it would normally be insanity for Corrientes to go to war without Uruguay support and Uruguay has only a 50 percent chance of supporting them-600063 does this better
+country_event = {
 	id = 600062
-	title = "EVTNAME600062"
+	title = "EVTNAME600062" #Corrientes gets Uruguay support
 	desc = "EVTDESC600062"
 	picture = "rosistas"
 		
@@ -308,6 +308,7 @@ country_event = { #Corrientes gets Uruguay support-rbx note-war declaration remo
 
 	option = {
 		name = "EVTOPT600062A"
+		#rbx note-war declaration removed, because it would normally be insanity for Corrientes to go to war without Uruguay support and Uruguay has only a 50 percent chance of supporting them-600063 does this better
 		add_country_modifier = { name = small_country_draft duration = 365 }
 		add_country_modifier = { name = unrecognized_country duration = 3650 }
 		relation = { who = ARC value = -400 }
@@ -331,9 +332,9 @@ country_event = { #Corrientes gets Uruguay support-rbx note-war declaration remo
 	}
 }
 
-country_event = { #Rivera declares war on Rosas
+country_event = {
 	id = 600063
-	title = "EVTNAME600063" 
+	title = "EVTNAME600063" #Rivera declares war on Rosas
 	desc = "EVTDESC600063"
 	picture = "guerra_grande"
 	
@@ -355,8 +356,9 @@ country_event = { #Rivera declares war on Rosas
 	mean_time_to_happen = { months = 6 }
 
 	
-	option = {        #TO WAR rbx note-Potential declaration of the Big War
-		name = "EVTOPT600063A"      
+	option = {
+		name = "EVTOPT600063A"      #TO WAR
+		#rbx note-Potential declaration of the Big War
 		random_country = { 
 		limit = {
 			exists = yes
