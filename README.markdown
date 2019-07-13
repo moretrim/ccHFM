@@ -30,6 +30,8 @@ few flag tweaks as well the following changes:
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
 
+[#7]: https://github.com/moretrim/PFH/pull/7
+
 0.1.0
 -----
 
