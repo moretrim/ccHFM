@@ -1,0 +1,109 @@
+os:
+  - linux
+
+language:
+  - minimal
+
+services:
+  - docker
+
+# Container setup.
+before_install:
+  - |
+    docker build -t perl6-ci - <<EOF
+      FROM jjmerelo/test-perl6
+      RUN apk add --no-cache bash
+      # skip here-document terminator due to Travis silliness; produces a warning
+  - docker images
+
+# Environment setup.
+install:
+  # Download PFH-Tools
+  - wget -O PFH-Tools.zip https://github.com/moretrim/PFH-Tools/archive/0.1.0-alpha+20191407.zip
+  - unzip PFH-Tools.zip
+
+jobs:
+  include:
+    -
+      if: type = pull_request
+      name: "Merge Check"
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --env TRAVIS_COMMIT_RANGE          \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Compute difference.
+            readarray -d "" pr_files < <(git diff --name-only -z --diff-filter=AM "$TRAVIS_COMMIT_RANGE" -- PFH/)
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+            echo   "## PR: fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+          '
+
+    -
+      if: type = push
+      name: "Commit Check"
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Compute difference.
+            readarray -d "" pr_files < <(git diff --name-only -z --diff-filter=AM @^ -- PFH/)
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+            echo   "## Commit: fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+          '
+
+    -
+      if: type = push
+      name: "Branch Check"
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            shopt -s extglob globstar
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" \
+                     PFH/{common,decisions,events,history,inventions,poptypes,technologies,units}/**/*.txt
+          '
