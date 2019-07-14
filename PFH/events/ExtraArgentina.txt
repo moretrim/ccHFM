@@ -45,33 +45,11 @@ country_event = {
                 }
             }
 
-            ideology = {
-                value = conservative
-                factor = 0.05
-            }
-
             scaled_consciousness = {
-                ideology = conservative
                 factor = 4
             }
 
             scaled_militancy = {
-                ideology = conservative
-                factor = 2
-            }
-
-            ideology = {
-                value = reactionary
-                factor = 0.05
-            }
-
-            scaled_consciousness = {
-                ideology = reactionary
-                factor = 4
-            }
-
-            scaled_militancy = {
-                ideology = reactionary
                 factor = 2
             }
         }
@@ -283,7 +261,7 @@ country_event = {
 
             add_country_modifier = {
                 name = no_more_war
-                duration = 365
+                duration = 730
             }
         }
 
@@ -300,6 +278,11 @@ country_event = {
 
             add_country_modifier = {
                 name = unrecognized_country
+                duration = 3650
+            }
+
+            add_country_modifier = {
+                name = america_new_world
                 duration = 3650
             }
 
@@ -406,29 +389,6 @@ country_event = {
                 }
 
                 owner = { political_reform = gerrymandering }
-            }
-
-            add_country_modifier = {
-                name = unrecognized_country
-                duration = 3650
-            }
-
-            add_country_modifier = {
-                name = caudillo_leaders
-                duration = 3650
-            }
-
-            add_country_modifier = {
-                name = america_new_world
-                duration = 3650
-            }
-
-            any_country = {
-                limit = {
-                    capital_scope = { continent = south_america }
-                }
-
-                relation = { who = SBA value = -110 }
             }
         }
 
@@ -660,7 +620,7 @@ country_event = {
         tag = SBA
         war = no
         is_vassal = no
-        year = 1855
+        year = 1852
         exists = yes
 
         OR = {
@@ -789,18 +749,20 @@ country_event = {
     title = "EVTNAME25070" # Negotiation between SBA and Entre Rios-dominated Confederation
     desc = "EVTDESC25070"
     picture = "san_nicolas"
-    tag = SBA
 
     fire_only_once = yes
 
-    trigger = {  # rbx note-See above-In this case ENT is an overlord
+    trigger = {  # rbx note-See event 250060-In this case ENT is an overlord
+
+    	tag = SBA
+
         SBA = {
             war = no
             is_vassal = no
             exists = yes
         }
 
-        year = 1855
+        year = 1852
 
         ENT = {
             exists = yes
@@ -908,10 +870,8 @@ country_event = {
         tag = ENT
 
         SBA = {
-            exists = no
-            war = no
-            has_country_flag = sba_attacks_for_uniting_argentina
-            has_recently_lost_war = yes
+			war = no
+			has_recently_lost_war = yes
         }
 
         ENT = {
@@ -1398,7 +1358,6 @@ country_event = {
     option = {
         name = "EVTOPTA250104"
 
-        # cleanup to make sure that the player can tag switch from ENT to ARG
         ENT = { all_core = { remove_core = ARG } }
     }
 }
@@ -1684,7 +1643,8 @@ country_event = {
     tag = ARG
 
     trigger = {
-        year = 1916
+        year = 1906
+        month = 5
 
         OR = {
             tag = ARC
@@ -1701,13 +1661,13 @@ country_event = {
         NOT = {
             OR = {
                 has_global_flag = argentina_has_formed
-                year = 1917
+                year = 1907
             }
         }
     }
 
     mean_time_to_happen = {
-        months = 1
+        days = 25
     }
 
     fire_only_once = yes
@@ -1791,6 +1751,10 @@ country_event = {
                 ruling_party_ideology = liberal
             }
         }
+
+        2348 = {
+			is_core = SBA
+		}
 
         SBA = {
             exists = no
@@ -2047,14 +2011,15 @@ country_event = {
 
 country_event = {
     id = 250180
-    title = "EVTNAME250180" # The Argentine Centennial!
+    title = "EVTNAME250180" # The Argentine Centennial! when ARG or LPL already exists
     desc = "EVTDESC250180"
     tag = ARG
 
     fire_only_once = yes
 
     trigger = {
-        year = 1916
+        year = 1906
+        month = 5
 
         OR = {
             tag = ARG
@@ -2084,7 +2049,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 1
+        days = 25
     }
 
     option = {
