@@ -95,7 +95,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPT46605A"
-		#rbx note - This should cause firing 422015 422016 422017 for the respective valid nations
+		#rbx note - This should cause firing 250010 250011 250012 for the respective valid nations
 		set_country_flag = will_support_entre_rios
 		any_pop = {
 			scaled_militancy = {
@@ -415,7 +415,7 @@ country_event = {
 	}
 }
 
-#ENT changes to ARC - Urquiza Victory
+#Urquiza Victory-this leads to decisions on ENT and ARC arrangement
 country_event = {
 	id = 4661002
 	title = "EVTNAME4661003" 
@@ -960,7 +960,7 @@ country_event = {
 		name = "EVTOPT4661013A" 
 		2348 = { add_province_modifier = { name = gateway_to_harbor duration = 1825 } }
 		SBA = {
-			all_core = { add_core = ARG remove_core = SBA remove_core = ARC }
+			all_core = { add_core = ARG remove_core = ARC }
 			inherit = ARG
 			change_tag = ARG
 		}
@@ -1042,10 +1042,7 @@ country_event = {
 			is_vassal = no
 		}
 		SBA = {
-			is_vassal = no
 			war = no
-			exists = no
-			has_country_flag = sba_attacks_for_uniting_argentina
 			has_recently_lost_war = yes
 		}
 		year = 1853
@@ -1055,6 +1052,7 @@ country_event = {
 		name = "EVTOPT4661014A"
 		#rbx note here and as with ENT I do not remove SBA cores
 		2348 = { add_province_modifier = { name = gateway_to_harbor duration = 1825 } }
+		ARC = { set_country_flag = argentine_constitution }
 		CRT = {
 			all_core = { add_core = ARC remove_core = ENT }
 			nationalvalue = nv_order
@@ -1075,24 +1073,22 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		year = 1853
 		tag = ARC
-		ENT = { exists = no }
-		CRT = { exists = no }
-		SBA = { exists = no }
 		is_vassal = no
 		owns = 2348
 		OR = {
+			has_country_flag = argentine_constitution
+			has_country_flag = argentina_united_externally
 			AND = {
 				NOT = { has_country_flag = rosas_victory_new_regime }
 				NOT = { has_country_flag = entre_rios_has_happened }
 				NOT = { has_country_flag = urquiza_victorious }
 			}
-			has_country_flag = argentine_constitution
-			has_country_flag = argentina_united_externally
 		}
 	}
 	
-	mean_time_to_happen = { months = 8 }
+	mean_time_to_happen = { days = 7 }
 	
 	
 	option = {
