@@ -22,6 +22,12 @@ Release history
 The 0.2.x series of releases is based on [HFM 1.27F Beta]. It is **not** backward compatible with it. This series comes
 with a few flag tweaks as well the following changes:
 
+#### Bugfixes
+
+- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#22]).
+
+[#22]: http://github.com/moretrim/PFH/pull/22
+
 ### 0.1.1
 
 The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
