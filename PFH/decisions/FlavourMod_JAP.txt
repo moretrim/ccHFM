@@ -388,6 +388,7 @@ political_decisions = {
 	establish_karafuto_prefecture = {
 		picture = japanese_sakhalin
 		potential = {
+			NOT = { has_country_flag = established_the_karafuto_prefecture }
 			primary_culture = japanese
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
@@ -408,10 +409,12 @@ political_decisions = {
 			colonial_policy = settlement
 			OR = { 
 				AND = { 
+					# Ootomari/Toyohara
 					owns = 1087
 					1087 = { NOT = { total_pops = 75000 } }
 				}
 				AND = { 
+					# Pogobi/Sagaren
 					owns = 1086
 					1086 = { NOT = { culture = japanese } }
 				}
@@ -419,6 +422,8 @@ political_decisions = {
 		}
 		
 		effect = {
+			set_country_flag = established_the_karafuto_prefecture
+
 			random_owned = {
 				limit = {
 					province_id = 1087
