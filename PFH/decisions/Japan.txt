@@ -1714,6 +1714,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = establish_the_kaitakushi
+			set_country_flag = establish_karafuto_prefecture
 			remove_country_modifier = uncivilized_isolationism
 			1643 = { change_province_name = "Sapporo" life_rating = 25 }
 			1644 = { change_province_name = "Nemuro" life_rating = 25 }

@@ -402,17 +402,18 @@ political_decisions = {
 				}
 			}
 			has_country_flag = establish_the_kaitakushi
+			has_country_flag = establish_karafuto_prefecture
 		}
 		
 		allow = {
 			colonial_policy = settlement
 			OR = { 
 				AND = { 
-					owns = 1087
+					owns = 1087  #rbx note - Otomari
 					1087 = { NOT = { total_pops = 75000 } }
 				}
 				AND = { 
-					owns = 1086
+					owns = 1086  #rbx note - Pogobi
 					1086 = { NOT = { culture = japanese } }
 				}
 			}
@@ -465,6 +466,8 @@ political_decisions = {
 				}
 				1086 = { add_province_modifier = { name = population_resettlement duration = 1095 } }
 			}
+
+			clr_country_flag = establish_karafuto_prefecture
 		}
 		
 		ai_will_do = { factor = 1 }
