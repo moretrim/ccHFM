@@ -10,38 +10,35 @@ A custom-tailored [HFM].
 [RELEASE]: https://github.com/moretrim/PFH/releases/latest
 
 Release history
-===============
+---------------
 
-0.2.0-dev (in development)
---------------------------
+### 0.2.0-dev (in development)
 
 The 0.2.x series of releases is based on [HFM 1.27F Beta]. It is **not** backward compatible with it. This series comes
 with a few flag tweaks as well the following changes:
 
-0.1.1
------
+### 0.1.1
 
 The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
 few flag tweaks as well the following changes:
 
 [HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
-### Tweaks
+#### Tweaks
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
 
 [#7]: https://github.com/moretrim/PFH/pull/7
 
-0.1.0
------
+### 0.1.0
 
-### Ported features
+#### Ported features
 
 - Make colonial railroading an option decision ([HFM/#157])
 
 [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
-### Ported bugfixes
+#### Ported bugfixes
 
 - [HFM/#141]\:
 
