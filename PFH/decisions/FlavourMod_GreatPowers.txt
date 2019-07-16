@@ -75,6 +75,7 @@ political_decisions = {
 		allow = {
 			any_neighbor_country = { 
 				government = proletarian_dictatorship 	
+				capital_scope = { continent = south_america }
 				is_vassal = no
 				NOT = { truce_with = THIS }
 			}
