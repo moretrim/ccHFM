@@ -9,6 +9,7 @@ services:
 
 # Container setup.
 before_install:
+  #- git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*" && git fetch
   - |
     docker build -t perl6-ci - <<EOF
       FROM jjmerelo/test-perl6
@@ -22,23 +23,58 @@ install:
   - wget -O PFH-Tools.zip https://github.com/moretrim/PFH-Tools/archive/0.1.0-alpha+20191407.zip
   - unzip PFH-Tools.zip
 
-# Run the tests.
-script: |
-  docker run -t \
-    --name container-env \
-    --volume "$TRAVIS_BUILD_DIR":/test \
-    --entrypoint bash \
-    perl6-ci -c '
-      # fail on first error
-      set -e
+jobs:
+  include:
+    # Merge test.
+    -
+      if: type = pull_request
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --env TRAVIS_COMMIT_RANGE          \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # Compute difference.
+            git diff --name-only -z --diff-filter=AM "$TRAVIS_COMMIT_RANGE" -- PFH/ | readarray -d '' pr_files
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+            echo   "## PR fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
 
-      # Install PFH-Tools.
-      pushd PFH-Tools-*
-      zef install --/test .
-      popd
+            # fail on first error
+            set -Eeuo pipefail
 
-      # Run the tools.
-      shopt -s extglob
-      perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" \
-                PFH/{common,decisions,events,history,inventions,poptypes,technologies,units}/**/*.txt
-    '
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+          '
+
+    # Full test.
+    -
+      if: type = push
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            shopt -s extglob
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" \
+                      PFH/{common,decisions,events,history,inventions,poptypes,technologies,units}/**/*.txt
+          '
