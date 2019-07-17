@@ -24,9 +24,9 @@ install:
 
 jobs:
   include:
-    # Merge test.
     -
       if: type = pull_request
+      name: "Merge Check"
       script: |
         docker run -t                        \
           --name container-env               \
@@ -43,7 +43,7 @@ jobs:
               echo "No mod files to test."
               exit
             fi
-            echo   "## PR fresh mod files ##"
+            echo   "## PR: fresh mod files ##"
             printf "    %q\n" "${pr_files[@]}"
 
             # Install PFH-Tools.
@@ -55,9 +55,39 @@ jobs:
             perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
           '
 
-    # Full test.
     -
       if: type = push
+      name: "Commit Check"
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Compute difference.
+            readarray -d "" pr_files < <(git diff --name-only -z --diff-filter=AM @^ -- PFH/)
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+            echo   "## Commit: fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+          '
+
+    -
+      if: type = push
+      name: "Branch Check"
       script: |
         docker run -t                        \
           --name container-env               \
