@@ -55,6 +55,37 @@ jobs:
             perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
           '
 
+    # Ancestor test.
+    -
+      if: type = push
+      script: |
+        docker run -t                        \
+          --name container-env               \
+          --env TRAVIS_COMMIT_RANGE          \
+          --volume "$TRAVIS_BUILD_DIR":/test \
+          --entrypoint bash                  \
+          perl6-ci -c '
+            # fail on first error
+            set -Eeuo pipefail
+
+            # Compute difference.
+            readarray -d "" pr_files < <(git diff --name-only -z --diff-filter=AM "$TRAVIS_COMMIT_RANGE" -- PFH/)
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+            echo   "## Commit fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
+
+            # Install PFH-Tools.
+            pushd PFH-Tools-*
+            zef install --/test .
+            popd
+
+            # Run the tools.
+            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+          '
+
     # Full test.
     -
       if: type = push
