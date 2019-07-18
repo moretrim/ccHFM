@@ -26,7 +26,7 @@ with a few flag tweaks as well the following changes:
 
 - Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28]).
 
-[#28]: http://github.com/moretrim/PFH/pull/28
+  [#28]: https://github.com/moretrim/PFH/pull/28
 
 ### 0.1.1
 
@@ -39,7 +39,7 @@ few flag tweaks as well the following changes:
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
 
-[#7]: https://github.com/moretrim/PFH/pull/7
+  [#7]: https://github.com/moretrim/PFH/pull/7
 
 ### 0.1.0
 
@@ -47,7 +47,7 @@ few flag tweaks as well the following changes:
 
 - Make colonial railroading an option decision ([HFM/#157])
 
-[HFM/#157]: https://github.com/SighPie/HFM/pull/157
+  [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
 #### Ported bugfixes
 
@@ -56,4 +56,4 @@ few flag tweaks as well the following changes:
   > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to signify the crisis has
   > occurred, otherwise the event will continuously spawn.
 
-[HFM/#141]: https://github.com/SighPie/HFM/pull/141
+  [HFM/#141]: https://github.com/SighPie/HFM/pull/141
