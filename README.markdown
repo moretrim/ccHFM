@@ -24,9 +24,9 @@ with a few flag tweaks as well the following changes:
 
 #### Bugfixes
 
-- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#22]).
+- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28]).
 
-[#22]: http://github.com/moretrim/PFH/pull/22
+[#28]: http://github.com/moretrim/PFH/pull/28
 
 ### 0.1.1
 
