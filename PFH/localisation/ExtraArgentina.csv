@@ -1,3 +1,20 @@
+### Parties ###;;;;;;;;;;;;;;x
+ARG_liberal;Partido Unitario;;;;;;;;;;;;;x
+ARG_liberal_2;Partido Nacionalista;;;;;;;;;;;;;x
+ARG_liberal_3;Uníon Cívica;;;;;;;;;;;;;x
+ARG_liberal_4;Uníon Cívica Radical;;;;;;;;;;;;;x
+ARG_liberal_5;Partido Demócrata Progresista;;;;;;;;;;;;;x
+ARG_conservative;Partido Federal;;;;;;;;;;;;;x
+ARG_conservative_2;Partido Autonomista;;;;;;;;;;;;;x
+ARG_conservative_3;Partido Nacional;;;;;;;;;;;;;x
+ARG_conservative_4;Partido Autonomista Nacional;;;;;;;;;;;;;x
+ARG_conservative_5;Uníon Cívica Nacional;;;;;;;;;;;;;x
+ARG_conservative_6;Partido Conservador;;;;;;;;;;;;;x
+ARG_socialist;Partido Socialista;;;;;;;;;;;;;x
+ARG_reactionary;Los rosistas;;;;;;;;;;;;;x
+ARG_reactionary_2;Los nacionalistas;;;;;;;;;;;;;x
+ARG_anarcho_liberal;Radicales antipersonalistas;;;;;;;;;;;;;x
+ARG_fascist;Legión Cívica Argentina;;;;;;;;;;;;;x
 ### Events ###;;;;;;;;;;;;;;x
 EVTNAME250000;Argentine Civil Wars;;;;;;;;;;;;;x
 EVTDESC250000;Under the dictatorial rule of Juan Manuel de Rosas, the caudillos, military leaders, of outlying provinces of Argentina were frequently at war with one another or in rebellion against the Argentine Confederation. This was agitated by oppressive economic policies in Buenos Aires, the only deep water port in Argentina. Heavy trade duties placed on incoming cargo inspired strong feelings against the 'porteños' or port-city dwellers. However, some respected Rosas himself due to his military successes and strong rule.;;;;;;;;;;;;;x
