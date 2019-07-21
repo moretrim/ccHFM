@@ -11,6 +11,22 @@ ARC = {
 	value = 400
 }
 
+army = {
+	name = "Ejército de Buenos Aires"
+	location = 2348
+	regiment = {
+		name= "1. División de Infantería"
+		type = infantry
+		home = 2348
+	}
+}
 
+leader = {
+   name = "Bartolomé Mitre"
+   type = land
+   date = 1850.1.1
+   background = cavalry_school
+   personality = resolute
+	}
 
 	
