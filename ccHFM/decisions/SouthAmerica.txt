@@ -105,12 +105,12 @@ political_decisions = {
 				tag = ARC
 			}
 			NOT = { has_country_flag = 1420_passed }
-			NOT = { school_reforms = low_schools }
+			school_reforms = no_schools
 		}
 		allow = {
-			phenomenology_n_hermeneutic = 1
+			analytic_philosophy = 1
 			ruling_party_ideology = conservative
-			NOT = { school_reforms = low_schools }
+			school_reforms = no_schools
 		}
 		effect = {
 			social_reform = low_schools
