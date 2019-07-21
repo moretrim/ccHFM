@@ -522,7 +522,7 @@ country_event = {
     is_triggered_only = yes
 
     mean_time_to_happen = {
-        days = 2
+        days = 4
     }
 
     option = {
@@ -538,25 +538,11 @@ country_event = {
                     tag = ARC
                 }
             }
+            create_vassal = CRT
         }
 
-        create_vassal = CRT
-        prestige = 10
-
-        random_owned = {
-            limit = {
-                is_core = CRT
-            }
-
-            secede_province = CRT
-        }
-
-        random_owned = {
-            limit = {
-                is_core = CRT
-            }
-
-            secede_province = CRT
+        UTI = {
+            country_event = 250044
         }
     }
 }
@@ -593,6 +579,23 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = 250044
+    #rbx note - for some unknown reason Corrientes loses provinces when it becomes a puppet of ARC
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        2358 = { secede_province = UTI }
+        2356 = { secede_province = UTI }
+
+        CRT = { inherit = UTI }
+    }
+}
+    
 
 country_event = {
     id = 250050
