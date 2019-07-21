@@ -11,7 +11,7 @@ EVTOPTA250011;Rosas will fall!;;;;;;;;;;;;;x
 EVTNAME250012;Corrientes responds;;;;;;;;;;;;;x
 EVTDESC250012;Corrientes has responded favorably to our request to join us in uprising against the tyranny of Rosas!;;;;;;;;;;;;;x
 EVTOPTA250012;Rosas will fall!;;;;;;;;;;;;;x
-EVTNAME250020;;;;;;;;;;;;;x
+EVTNAME250020;The secession of Buenos Aires;;;;;;;;;;;;x
 EVTDESC250020;General Urquiza's victory dealt  a serious blow to the hopes of unitarians. Urquiza sought a federalist Argentina with increased power for individual states, while predominantly upper class liberal unitarians in Buenos Aires supported increased power for their own city. They furthermore feared that Urquiza would become a dictator little different from Juan Manuel de Rosas. Unitarians in Buenos Aires led a tense but peaceful revolution during a temporary absence of Urquiza from the city. The State of Buenos Aires therefore seceded, although this was not recognized by other nations. There was talk of making the secession permanent, instituting the Republic of the Rio de La Plata, but prominent leaders wished to leverage the federalists into agreeing to a united Argentina with strong centralized rule.;;;;;;;;;;;;;x
 EVTOPTA250020;Damn!;;;;;;;;;;;;;x
 EVTNAME250030;Rejoining the Argentine Confederation;;;;;;;;;;;;;x
@@ -52,8 +52,11 @@ EVTOPTA250070;We will have the country united OUR way.;;;;;;;;;;;;;x
 EVTOPTB250070;We do not accept the constitution, but will not take action right now.;;;;;;;;;;;;;x
 EVTOPTC250070;Accept the offer.;;;;;;;;;;;;;x
 EVTNAME250071;The Argentine Civil War;;;;;;;;;;;;;x
-EVTDESC250071;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250071;The porteños in Buenos Aires have finally attacked us to force their disastrous liberal views upon our nation.;;;;;;;;;;;;;x
 EVTOPTA250071;To arms!;;;;;;;;;;;;;x
+EVTNAME250072;The secession of Buenos Aires;;;;;;;;;;;;x
+EVTDESC250072;General Urquiza's victory dealt  a serious blow to the hopes of unitarians. Urquiza sought a federalist Argentina with increased power for individual states, while predominantly upper class liberal unitarians in Buenos Aires supported increased power for their own city. They furthermore feared that Urquiza would become a dictator little different from Juan Manuel de Rosas. Unitarians in Buenos Aires led a tense but peaceful revolution during a temporary absence of Urquiza from the city. The State of Buenos Aires therefore seceded, although this was not recognized by other nations. There was talk of making the secession permanent, instituting the Republic of the Rio de La Plata, but prominent leaders wished to leverage the federalists into agreeing to a united Argentina with strong centralized rule.;;;;;;;;;;;;;x
+EVTOPTA250072;Damn!;;;;;;;;;;;;;x
 EVTNAME250080;A federalist Argentine Republic!;;;;;;;;;;;;;x
 EVTDESC250080;Finally, the federalists stand triumphant over the unitarians! Buenos Aires has no choice but to grant rightfully deserved power to the provinces. A united federalist Argentina is now within our grasp!;;;;;;;;;;;;;x
 EVTOPTA250080;Long live Argentina!;;;;;;;;;;;;;x
@@ -67,13 +70,13 @@ EVTDESC250091;Corrientes has requested to become part of our united Argentina.;;
 EVTOPTA250091;Yes, they may join.;;;;;;;;;;;;;x
 EVTOPTB250091;No, we will have none of their filthy rebellious kind here!;;;;;;;;;;;;;x
 EVTNAME250092;Argentina has approved our membership!;;;;;;;;;;;;;x
-EVTDESC250092;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250092;Argentina has approved our request to join them!;;;;;;;;;;;;;x
 EVTOPTA250092;Long live Argentina!;;;;;;;;;;;;;x
 EVTNAME250093;Corrientes is now part of a united Argentina!;;;;;;;;;;;;;x
-EVTDESC250093;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250093;Corrientes has joined Argentina!;;;;;;;;;;;;;x
 EVTOPTA250093;Play as Argentina;;;;;;;;;;;;;x
 EVTNAME250094;Argentina has denied our membership!;;;;;;;;;;;;;x
-EVTDESC250094;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250094;Argentina has denied our request to join them. This will not be forgiven!;;;;;;;;;;;;;x
 EVTOPTA250094;We must forge our own path...;;;;;;;;;;;;;x
 EVTNAME250100;Argentina has formed;;;;;;;;;;;;;x
 EVTDESC250100;Now that Argentina has formed we should decide if we wish to join them.;;;;;;;;;;;;;x
@@ -84,13 +87,13 @@ EVTDESC250101;Entre Rios has requested to become part of our united Argentina.;;
 EVTOPTA250101;Yes, they may join.;;;;;;;;;;;;;x
 EVTOPTB250101;No, we will have none of their filthy rebellious kind here!;;;;;;;;;;;;;x
 EVTNAME250102;Argentina has approved our membership!;;;;;;;;;;;;;x
-EVTDESC250102;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250102;Argentina has approved our request to join them!;;;;;;;;;;;;;x
 EVTOPTA250102;Long live Argentina!;;;;;;;;;;;;;x
 EVTNAME250103;Entre Rios is now part of a united Argentina!;;;;;;;;;;;;;x
-EVTDESC250103;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250103;Entre Rios has joined Argentina!;;;;;;;;;;;;;x
 EVTOPTA250103;Play as Argentina;;;;;;;;;;;;;x
 EVTNAME250104;Argentina has denied our membership!;;;;;;;;;;;;;x
-EVTDESC250104;TODO write this up.;;;;;;;;;;;;;x
+EVTDESC250104;Argentina has denied our request to join them. This will not be forgiven!;;;;;;;;;;;;;x
 EVTOPTA250104;We must forge our own path...;;;;;;;;;;;;;x
 EVTNAME250110;Increasing opposition from all sides;;;;;;;;;;;;;x
 EVTDESC250110;Liberal sentiment has been increasing in Buenos Aires, even though circumstances have not been right for granting voting rights to the people. We have also gained some powerful enemies in attempting to exert control over northern provinces that are rightfully ours. There are rumors of a Northern Coalition forming against us, and increasingly dangerous traitors are in our midst. Perhaps it is time to grant controlled voting rights to the unprepared people of the Confederation, before the Northern Coalition attempts to force the matter through bloodshed.;;;;;;;;;;;;;x
