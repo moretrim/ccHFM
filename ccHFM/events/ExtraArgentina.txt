@@ -45,13 +45,9 @@ country_event = {
                 }
             }
 
-            scaled_consciousness = {
-                factor = 4
-            }
+            consciousness = 4
 
-            scaled_militancy = {
-                factor = 2
-            }
+            militancy = 2
         }
 
         set_global_flag = argentine_civil_wars_happening
@@ -265,6 +261,19 @@ country_event = {
             }
         }
 
+        random_country = { 
+            limit = {
+                OR = {
+                    tag = ENT
+                    tag = URU
+                    tag = PRG
+                    tag = CRT
+                }
+                is_our_vassal = ARC
+            }
+            country_event = 250190
+        }
+
         relation = {
             who = SBA
             value = -400
@@ -464,7 +473,6 @@ country_event = {
 
             CRT = {
                 all_core = { remove_core = ARC }
-                all_core = { remove_core = ENT }
             }
         }
 
@@ -487,7 +495,7 @@ country_event = {
     option = {
         name = "EVTOPTA250041" # Join
 
-        ARC = {
+        ENT = {
             country_event = 250042
         }
 
@@ -497,7 +505,7 @@ country_event = {
     option = {
         name = "EVTOPTB250041" # Remain independent
 
-        ARC = {
+        ENT = {
             country_event = 250043
         }
 
@@ -620,19 +628,13 @@ country_event = {
         tag = SBA
         war = no
         is_vassal = no
-        year = 1852
+        year = 1853
         exists = yes
 
         OR = {
             ARC = {
                 exists = yes
                 is_vassal = no
-            }
-
-            ENT = {
-                exists = yes
-                is_vassal = no
-                is_our_vassal = ARC
             }
 
             CRT = {
@@ -652,16 +654,39 @@ country_event = {
             set_country_flag = sba_attacks_for_uniting_argentina
         }
 
-        ARC = {
+        random_country = {
+            limit = {
+                tag = ARC
+                is_vassal = no
+            }
             war = {
                 target = SBA
                 attacker_goal = { casus_belli = civil_war }
                 defender_goal = { casus_belli = civil_war }
                 call_ally = no
             }
-
             country_event = 250061
-        }
+            }
+
+        random_country = {
+            limit = {
+                OR = {
+                    tag = ENT
+                    tag = CRT
+                    tag = PRG
+                    tag = URU
+                }
+                is_vassal = no
+                is_our_vassal = ARC
+            }
+            war = {
+                target = SBA
+                attacker_goal = { casus_belli = humiliate }
+                defender_goal = { casus_belli = humiliate }
+                call_ally = no
+            }
+            country_event = 250061
+            }
 
         ai_chance = { factor = 95 }
     }
@@ -720,7 +745,6 @@ country_event = {
     id = 250061
     title = "EVTNAME250061" # The Argentine Civil War
     desc = "EVTDESC250061"
-    tag = ARC
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -734,7 +758,6 @@ country_event = {
     id = 250062
     title = "EVTNAME250062" # Buenos Aires stands down
     desc = "EVTDESC250062"
-    tag = ENT
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -746,13 +769,13 @@ country_event = {
 
 country_event = {
     id = 250070
-    title = "EVTNAME25070" # Negotiation between SBA and Entre Rios-dominated Confederation
-    desc = "EVTDESC25070"
+    title = "EVTNAME250070" # Negotiation between SBA and Entre Rios-dominated Confederation or of any platine overlord of ARC
+    desc = "EVTDESC250070"
     picture = "san_nicolas"
 
     fire_only_once = yes
 
-    trigger = {  # rbx note-See event 250060-In this case ENT is an overlord
+    trigger = {  # rbx note-See event 250060-In this case ENT is intended to be the overlord
 
     	tag = SBA
 
@@ -764,31 +787,54 @@ country_event = {
 
         year = 1852
 
-        ENT = {
-            exists = yes
-            is_vassal = no
-            is_our_vassal = ARC
+        OR = {
+            ENT = {
+                is_our_vassal = ARC
+                is_vassal = no
+            }
+            CRT = {
+                is_our_vassal = ARC
+                is_vassal = no
+            }
+            URU = {
+                is_our_vassal = ARC
+                is_vassal = no
+            }
+            PRG = {
+                is_our_vassal = ARC
+                is_vassal = no
+            }
         }
     }
 
     mean_time_to_happen = { months = 12 }
 
     option = {
-        name = "EVTOPTA250070" # Attack Entre Rios
+        name = "EVTOPTA250070" # Attack overlord of ARC
 
         SBA = {
             set_country_flag = sba_attacks_for_uniting_argentina
         }
 
-        ENT = {
+        random_country = {
+            limit = {
+                OR = {
+                    tag = ENT
+                    tag = CRT
+                    tag = PRG
+                    tag = URU
+                }
+                is_vassal = no
+                is_our_vassal = ARC
+            }
             war = {
                 target = SBA
-                attacker_goal = { casus_belli = free_allied_cores }
-                defender_goal = { casus_belli = civil_war }
+                attacker_goal = { casus_belli = humiliate }
+                defender_goal = { casus_belli = humiliate }
                 call_ally = no
-                country_event = 250071
             }
-        }
+            country_event = 250061
+            }
 
         ai_chance = { factor = 95 }
     }
@@ -806,6 +852,17 @@ country_event = {
             casus_belli = {
                 target = SBA
                 type = civil_war
+                months = 72
+            }
+        }
+
+        random_country = {
+            limit = {
+                is_our_vassal = ARC
+            }
+            casus_belli = {
+                target = SBA
+                type = free_allied_cores
                 months = 72
             }
         }
@@ -846,9 +903,8 @@ country_event = {
 
 country_event = {
     id = 250071
-    title = "EVTNAME250071" # The Argentine Civil War
+    title = "EVTNAME250071" # The Argentine Civil War - This seems to be a leftover from an attempt to make a duplicate event for overlords of ARC
     desc = "EVTDESC250071"
-    tag = ENT
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -859,8 +915,22 @@ country_event = {
 }
 
 country_event = {
+    id = 250072
+    title = "EVTNAME250072" #this retools the SBA release event text to notify an overlord of ARC that SBA has released
+    desc = "EVTDESC250072"
+    picture = "mitre_urquiza"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA250072"
+    }
+}
+
+country_event = {
     id = 250080
-    title = "EVTNAME250080" # Entre Rios victory
+    title = "EVTNAME250080" #ENT overlord defeats SBA
     desc = "EVTDESC250080"
     picture = "battle_pavon"
 
@@ -869,24 +939,31 @@ country_event = {
     trigger = {
         tag = ENT
 
+        THIS = {
+            is_vassal = no
+            is_our_vassal = ARC
+        }
+
         SBA = {
 			war = no
 			has_recently_lost_war = yes
-        }
-
-        ENT = {
-            exists = yes
-            is_vassal = no
+            truce_with = ENT
         }
 
         year = 1853
+
+        NOT = {
+            year = 1879
+        }
     }
 
     option = {
         name = "EVTOPTA250080" # Become Argentina
 
-        prestige = 20
-        all_core = { add_core = ARG remove_core = ARC }
+       THIS = {
+            prestige = 20
+        }
+
         2348 = {
             add_province_modifier = {
                 name = gateway_to_harbor duration = 1825
@@ -902,33 +979,30 @@ country_event = {
             nationalvalue = nv_order
         }
 
-        ENT = {
-            all_core = {
-                add_core = ARG
-                remove_core = ENT
-            }
-
-            inherit = ARG
-            change_tag = ARG
-            nationalvalue = nv_order
-        }
-
         ARC = {
             all_core = {
                 add_core = ARG
                 remove_core = ARC
             }
-
-            annex_to = ARG
-            nationalvalue = nv_order
         }
 
         SBA = {
             all_core = {
                 add_core = ARG
             }
+        }
 
-            annex_to = ARG
+       ENT = {
+            all_core = {
+                add_core = ARG
+                remove_core = ENT
+            }
+            inherit = ARC
+            inherit = SBA
+            inherit = ARG
+            change_tag = ARG
+            nationalvalue = nv_order
+            capital = 2348
         }
 
         ARG = {
@@ -964,8 +1038,127 @@ country_event = {
     option = {
         name = "EVTOPTB250080" # Preserve the Confederation
 
-        all_core = { add_core = ARG }
-        ARC = { nationalvalue = nv_order }
+        SBA = { annex_to = ARC }
+        ARC = { 
+            nationalvalue = nv_order
+        }
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = 250081
+    title = "EVTNAME250080" #CRT overlord defeats SBA - this recycles localisation from 250080
+    desc = "EVTDESC250080"
+    picture = "battle_pavon"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CRT
+
+        THIS = {
+            is_vassal = no
+            is_our_vassal = ARC
+        }
+
+        SBA = {
+            war = no
+            has_recently_lost_war = yes
+            truce_with = CRT            
+        }
+
+        year = 1853
+
+        NOT = {
+            year = 1879
+        }
+    }
+
+    option = {
+        name = "EVTOPTA2500810" # Become Argentina
+
+       THIS = {
+            prestige = 20
+        }
+
+        2348 = {
+            add_province_modifier = {
+                name = gateway_to_harbor duration = 1825
+            }
+        }
+
+        ARC = {
+            all_core = {
+                add_core = ARG
+                remove_core = ARC
+            }
+        }
+
+        SBA = {
+            all_core = {
+                add_core = ARG
+            }
+        }
+
+        CRT = {
+            all_core = {
+                add_core = ARG
+                remove_core = ENT
+            }
+            inherit = ARC
+            inherit = SBA
+            inherit = ARG
+            change_tag = ARG
+            capital = 2348
+            nationalvalue = nv_order
+        }
+
+       ENT = {
+            all_core = {
+                add_core = ARG
+                remove_core = ENT
+            }
+            nationalvalue = nv_order
+        }
+
+        ARG = {
+            nationalvalue = nv_order
+
+            add_country_modifier = {
+                name = small_immigration_boom
+                duration = 1825
+            }
+
+            random_owned = {
+                limit = {
+                    NOT = { owner = { slavery = no_slavery } }
+                }
+
+                owner = { political_reform = no_slavery }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+                }
+
+                owner = { political_reform = landed_voting }
+            }
+        }
+
+        set_global_flag = argentina_has_formed
+
+        ai_chance = { factor = 99 }
+    }
+
+    option = {
+        name = "EVTOPTB250080" # Preserve the Confederation
+
+        SBA = { annex_to = ARC }
+        ARC = { 
+            nationalvalue = nv_order
+        }
         ai_chance = { factor = 1 }
     }
 }
@@ -1654,7 +1847,6 @@ country_event = {
         }
 
         THIS = {
-            nationalism_n_imperialism = 1
             is_vassal = no
         }
 
@@ -1943,6 +2135,7 @@ country_event = {
             ruling_party_ideology = liberal
             political_reform = regionalism
             prestige = -20
+            capital = 2348
         }
 
         ARC = {
