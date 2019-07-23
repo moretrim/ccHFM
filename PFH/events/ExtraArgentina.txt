@@ -1505,7 +1505,7 @@ country_event = {
 country_event = {
     id = 250102
     title = "EVTNAME250102" # Argentina says yes to Entre Rios
-    desc = # "EVTDESC250102"
+    desc = "EVTDESC250102"
     tag = ENT
 
     fire_only_once = yes
