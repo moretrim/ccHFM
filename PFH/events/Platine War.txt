@@ -953,7 +953,7 @@ country_event = {
 			war = no
 			exists = yes
 			is_vassal = no
-			year = 1855
+			year = 1852
 			has_country_flag = sba_attacks_for_uniting_argentina
 			has_recently_lost_war = no
 		}
@@ -1093,7 +1093,7 @@ country_event = {
 			has_country_flag = argentina_united_externally
 			AND = {
 				NOT = { has_country_flag = rosas_victory_new_regime }
-				NOT = { has_country_flag = entre_rios_has_happened }
+				has_country_flag = entre_rios_has_happened
 				NOT = { has_country_flag = urquiza_victorious }
 			}
 		}
