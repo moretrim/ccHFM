@@ -96,7 +96,7 @@ EVTNAME250104;Argentina has denied our membership!;;;;;;;;;;;;;x
 EVTDESC250104;Argentina has denied our request to join them. This will not be forgiven!;;;;;;;;;;;;;x
 EVTOPTA250104;We must forge our own path...;;;;;;;;;;;;;x
 EVTNAME250110;Increasing opposition from all sides;;;;;;;;;;;;;x
-EVTDESC250110;Liberal sentiment has been increasing in Buenos Aires, even though circumstances have not been right for granting voting rights to the people. We have also gained some powerful enemies in attempting to exert control over northern provinces that are rightfully ours. There are rumors of a Northern Coalition forming against us, and increasingly dangerous traitors are in our midst. Perhaps it is time to grant controlled voting rights to the unprepared people of the Confederation, before the Northern Coalition attempts to force the matter through bloodshed.;;;;;;;;;;;;;x
+EVTDESC250110;Liberal sentiment has been increasing in Buenos Aires, even though circumstances have not been right for granting voting rights to the people. We have also gained some powerful enemies in attempting to exert control over northern provinces that are rightfully ours. There are rumors of a Northern Coalition forming against us, and increasingly dangerous traitors are in our midst. Matters are so serious that President Juan Manuel de Rosas is increasingly afraid to leave his home for fear of assassins. Perhaps it is time to grant controlled voting rights to the unprepared people of the Confederation, before our enemies force the matter through bloodshed.;;;;;;;;;;;;;x
 EVTOPTA250110;The people would only harm themselves with democracy at this time.;;;;;;;;;;;;;x
 EVTOPTB250110;If democracy is necessary to preserve the Confederation, so be it.;;;;;;;;;;;;;x
 EVTNAME250120;The Argentine Confederation submits;;;;;;;;;;;;;x
@@ -136,6 +136,14 @@ EVTOPTA250170;I hope they have learned their lesson!;;;;;;;;;;;;;x
 EVTNAME250180;The Argentine Centennial!;;;;;;;;;;;;;x
 EVTDESC250180;This year we celebrate 100 years of freedom from colonial rule! After many long and bloody struggles, Argentina has solidified its place as a nation, and is no longer a collection of warring provinces with separate national identities. Our substates have the option of joining us, and we are sure that they will accept.;;;;;;;;;;;;;x
 EVTOPTA250180;Viva Argentina!;;;;;;;;;;;;;x
+EVTNAME250190;Treaty of Friendship, Trade and Navigation;;;;;;;;;;;;;x
+EVTDESC250190;Soon after its formation, Argentina agreed to a treaty to promote trade with Brazil along the La Plata River. This ensured a time of welcome security for Argentina, and helped serve as a foil against economic domination by the Great Powers.;;;;;;;;;;;;;x
+EVTOPTA250190;This is a welcome treaty;;;;;;;;;;;;;x
+EVTOPTB250190;We do not want this;;;;;;;;;;;;;x
+EVTNAME250191;Treaty of Friendship, Trade and Navigation;;;;;;;;;;;;;x
+EVTDESC250191;Soon after its formation, Argentina agreed to a treaty to promote trade with Brazil along the La Plata River. This ensured a measure of welcome security for the new nation, and helped serve as a foil against economic domination by the Great Powers.;;;;;;;;;;;;;x
+EVTOPTA250191;This is a welcome treaty;;;;;;;;;;;;;x
+EVTOPTB250191;We do not want this;;;;;;;;;;;;;x
 ### Modifiers ###;;;;;;;;;;;;;;x
 argentine_civil_wars;Argentine Civil Wars;;;;;;;;;;;;;x
 desc_argentine_civil_wars;The caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;x
