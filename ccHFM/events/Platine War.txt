@@ -504,6 +504,7 @@ country_event = {
 		ENT = {
 			set_country_flag = entre_rios_has_happened
 			change_tag = ARC
+			government = democracy
 		}
 
 		ARC = {
@@ -513,6 +514,33 @@ country_event = {
 			country_event = 250040
 			relation = { who = URU value = 200 }
 			relation = { who = BRZ value = 200 }
+			government = democracy
+			ruling_party_ideology = conservative
+		}
+		ai_chance = { factor = 90 }
+	}
+
+	option = {
+		name = "EVTOPT46611C"
+		#rbx note -- ENT joins ARC but as a presidential dictatorship
+		
+		clr_global_flag = entre_rios_rebellion
+
+		ENT = {
+			set_country_flag = entre_rios_has_happened
+			change_tag = ARC
+			government = democracy
+		}
+
+		ARC = {
+			capital = 2360
+			set_country_flag = entre_rios_won_platine
+			country_event = 250050
+			country_event = 250040
+			relation = { who = URU value = 200 }
+			relation = { who = BRZ value = 200 }
+			government = presidential_dictatorship
+			ruling_party_ideology = conservative
 		}
 		ai_chance = { factor = 90 }
 	}
