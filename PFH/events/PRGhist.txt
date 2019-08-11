@@ -541,13 +541,69 @@ country_event = {
 
 	
 	option = {
-		name = "EVTOPT700010A"	
+		name = "EVTOPT700010A"
 		relation = {
 			who = PRG
 			value = -50
-				}
+		}
+	}
+
+	option = {
+		name = "EVTOPT700010B"
+
+		2554 = {
+			add_core = CRT
+		}
+
+		random_country = { 
+			limit = {
+				tag = ARC
+				exists = yes
+				is_vassal = no
 			}
 		}
+        casus_belli = {
+            target = PRG
+            type = liberate_country country = CRT }
+        }
+
+		random_country = {
+			limit = {
+				tag = ENT
+				exists = yes
+				is_vassal = no
+				owns = 2356
+			}
+		}
+        casus_belli = {
+            target = PRG
+            type = acquire_all_cores }
+        }
+
+        random_country = {
+			limit = {
+				tag = ENT
+				exists = yes
+				is_vassal = no
+				NOT = { owns = 2356 }
+			}
+		}
+        casus_belli = {
+            target = PRG
+            type = liberate_country country = CRT }
+        }
+
+		random_country = { 
+			limit = {
+				tag = CRT
+			}
+		}
+        casus_belli = {
+            target = PRG
+            type = acquire_all_cores }
+        }
+	}
+}
 
 country_event = {
 	id = 700011

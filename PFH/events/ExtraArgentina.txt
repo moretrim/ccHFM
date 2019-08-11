@@ -280,6 +280,12 @@ country_event = {
         }
 
         SBA = {
+            define_general = {
+                name = "Bartolomé Mitre"
+                background = cavalry_school
+                personality = resolute
+            }
+
             add_country_modifier = {
                 name = caudillo_leaders
                 duration = 3650
@@ -2344,5 +2350,31 @@ country_event = {
         name = "EVTOPTB250190"
 
         ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 250192
+    title = "EVTNAME250192" # fires when SBA released without Buenos Aires city
+    desc = "EVTDESC250192"
+
+    trigger = {
+        tag = SBA
+        SBA = {
+            exists = yes
+            owns = 2349
+            NOT = {
+                owns = 2348
+            }        
+        }
+    }
+
+    option = {
+        name = "EVTOPTA250192"
+
+        2348 = { secede_province = SBA }
+        SBA = {
+            capital = 2348
+        }
     }
 }
