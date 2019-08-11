@@ -192,6 +192,12 @@ country_event = {
 		#rbx note I moved this to Santa Fe Sancti Spiritu because it cannot be at Parana while ENT is separate
 		ARC = { capital = 2361
 			government = democracy
+			random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+                }
+            owner = { political_reform = landed_voting }
+            }
 			any_pop = {
 				scaled_militancy = {
 					ideology = reactionary
@@ -492,6 +498,13 @@ country_event = {
 		ARC = {
 			capital = 2361
 			set_country_flag = entre_rios_won_platine
+			government = democracy
+			random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+            }
+            owner = { political_reform = landed_voting }
+            }
 		}
 	}
 	
@@ -505,6 +518,13 @@ country_event = {
 			set_country_flag = entre_rios_has_happened
 			change_tag = ARC
 			government = democracy
+			random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+                }
+
+            owner = { political_reform = landed_voting }
+            }
 		}
 
 		ARC = {
@@ -516,6 +536,14 @@ country_event = {
 			relation = { who = BRZ value = 200 }
 			government = democracy
 			ruling_party_ideology = conservative
+						government = democracy
+			random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+                }
+
+            owner = { political_reform = landed_voting }
+            }
 		}
 		ai_chance = { factor = 90 }
 	}
@@ -529,7 +557,8 @@ country_event = {
 		ENT = {
 			set_country_flag = entre_rios_has_happened
 			change_tag = ARC
-			government = democracy
+			government = presidential_dictatorship
+			ruling_party_ideology = conservative
 		}
 
 		ARC = {
