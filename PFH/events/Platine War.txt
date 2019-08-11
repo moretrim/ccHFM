@@ -282,6 +282,11 @@ country_event = {
 		relation = { who = SBA value = -400 }
 		SBA = {
 			#rbx note-all these changes and reforms rightfully belong to SBA instead of ARC
+			define_general = {
+                name = "Bartolomé Mitre"
+                background = cavalry_school
+                personality = resolute
+            }
 			government = democracy
 			nationalvalue = nv_liberty
 			ruling_party_ideology = liberal
