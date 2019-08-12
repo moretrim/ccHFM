@@ -147,6 +147,16 @@ EVTOPTB250191;We do not want this;;;;;;;;;;;;;x
 EVTNAME250192;Buenos Aires is part of...Buenos Aires!;;;;;;;;;;;;;x
 EVTDESC250192;In keeping with the recent treaty, the city of Buenos Aires must also secede and join its eponymous province.;;;;;;;;;;;;;x
 EVTOPTA250192;As it should be!;;;;;;;;;;;;;x
+EVTNAME250193;Buenos Aires demands that we give up our freedom;;;;;;;;;;;;;x
+EVTDESC250193;Corrientes was part of the Argentine Confederation before the war. The Porteños in Buenos Aires now demands that we should become their puppets as well.;;;;;;;;;;;;;x
+EVTOPTA250193;We will not resist.;;;;;;;;;;;;;x
+EVTOPTB250193;Of course, this means war!;;;;;;;;;;;;;x
+EVTNAME250194;Corrientes agrees to our demand;;;;;;;;;;;;;x
+EVTDESC250194;Corrientes has agreed, and is now our puppet.;;;;;;;;;;;;;x
+EVTOPTA250194;As it should be!;;;;;;;;;;;;;x
+EVTNAME250195;Corrientes refuses our demand;;;;;;;;;;;;;x
+EVTDESC250195;Corrientes has refused our perfectly reasonable request to become our puppet!;;;;;;;;;;;;;x
+EVTOPTA250195;This will not be forgiven!;;;;;;;;;;;;;x
 ### Modifiers ###;;;;;;;;;;;;;;x
 argentine_civil_wars;Argentine Civil Wars;;;;;;;;;;;;;x
 desc_argentine_civil_wars;The caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;x
