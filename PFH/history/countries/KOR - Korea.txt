@@ -51,9 +51,6 @@ upper_house = {
 govt_flag = {
 	government = hms_government
 	flag = democracy
-	
-	government = prussian_constitutionalism
-	flag = democracy
 }
 
 foreign_weapons = yes_foreign_weapons

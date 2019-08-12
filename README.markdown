@@ -28,6 +28,12 @@ with a few flag tweaks as well the following changes:
 
   [#28]: https://github.com/moretrim/PFH/pull/28
 
+#### Tweaks
+
+- Flag tweak for Korea as part of [#34]
+
+  [#34]: https://github.com/moretrim/PFH/issues/34
+
 ### 0.1.1
 
 The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
