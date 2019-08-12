@@ -40,12 +40,12 @@ colonial_policy = no_colonies
 
 set_country_flag = catholic_country
 
-ruling_party = ARG_conservative
+ruling_party = ARG_reactionary
 upper_house = {
 	fascist = 0
-	liberal = 20
+	liberal = 0
 	conservative = 70
-	reactionary = 10
+	reactionary = 30
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

@@ -43,7 +43,7 @@ set_country_flag = catholic_country
 
 oob = "CRT_oob.txt"
 
-ruling_party = ENT_conservative_2
+ruling_party = CRT_conservative
 upper_house = {
 	fascist = 0
 	liberal = 31
