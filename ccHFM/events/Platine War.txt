@@ -195,7 +195,7 @@ country_event = {
 			random_owned = {
                 limit = {
                     owner = { vote_franschise = none_voting }
-                }
+            }
             owner = { political_reform = landed_voting }
             }
 			any_pop = {
@@ -1089,6 +1089,57 @@ country_event = {
 			ENT = { country_event = 250100 }
 		}
 		set_global_flag = argentina_has_formed
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+	name = "EVTOPT4661013B" 
+	#rbx note - Remain separate
+
+		ARC = { capital = 2361
+			government = democracy
+			random_owned = {
+                limit = {
+                    owner = { vote_franschise = none_voting }
+            }
+            owner = { political_reform = landed_voting }
+            }
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -8
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = -4
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = -2
+				}
+			}
+			add_country_modifier = { name = national_confusion duration = 365 }
+		}
+
+		SBA = {
+			create_vassal = ARC
+			create_vassal = ENT
+		}
+
+		CRT = {
+			country_event = 250193
+		}
+
+		ai_chance = { factor = 0 }
 	}
 }
 

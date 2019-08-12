@@ -706,14 +706,26 @@ country_event = {
         casus_belli = {
             target = ARC
             type = civil_war
-            months = 72
         }
 
         ARC = {
             casus_belli = {
                 target = SBA
                 type = civil_war
-                months = 72
+            }
+        }
+
+        ENT = {
+            casus_belli = {
+                target = SBA
+                type = civil_war
+            }
+        }
+
+        CRT = {
+            casus_belli = {
+                target = SBA
+                type = civil_war
             }
         }
 
@@ -721,7 +733,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTC250060" # Agreed to their demands
+        name = "EVTOPTC250060" # Agree to their demands
 
         random_owned = {
             limit = { owner = { ai = no } }
@@ -854,14 +866,12 @@ country_event = {
         casus_belli = {
             target = ENT
             type = civil_war
-            months = 72
         }
 
         ARC = {
             casus_belli = {
                 target = SBA
                 type = civil_war
-                months = 72
             }
         }
 
@@ -872,7 +882,6 @@ country_event = {
             casus_belli = {
                 target = SBA
                 type = free_allied_cores
-                months = 72
             }
         }
 
@@ -2376,5 +2385,62 @@ country_event = {
         SBA = {
             capital = 2348
         }
+    }
+}
+
+country_event = {
+    id = 250193
+    title = "EVTNAME250193" #Corrientes may or may not join player Buenos Aires after Pavon
+    desc = "EVTDESC250193"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA250193"
+
+        SBA = {
+            country_event = 250194
+            create_vassal = CRT
+        }
+    }
+
+    option = {
+        name = "EVTOPTB250193"
+
+        SBA = {
+            country_event = 250195
+            casus_belli = {
+                target = CRT
+                type = make_puppet
+                months = 72
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 250194
+    title = "EVTNAME250194" #Corrientes has agreed to SBA's demand
+    desc = "EVTDESC250194"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA250194"
+    }
+}
+
+country_event = {
+    id = 250195
+    title = "EVTNAME250195" #Corrientes refuses SBA's demand
+    desc = "EVTDESC250195"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA250195"
     }
 }
