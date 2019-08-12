@@ -1283,6 +1283,10 @@ country_event = {
             }
         }
 
+        ARG = {
+            release_vassal = CRT
+        }
+
         ai_chance = {
             factor = 10
         }
@@ -1474,6 +1478,10 @@ country_event = {
                     factor = 2
                 }
             }
+        }
+
+        ARG = {
+            release_vassal = ENT
         }
 
         ai_chance = {
@@ -1742,6 +1750,10 @@ country_event = {
                 ideology = socialist
                 factor = 2
             }
+        }
+
+        ARG = {
+            release_vassal = ARC
         }
 
         ai_chance = {
