@@ -611,6 +611,7 @@ country_event = {
 		NOT = {
 			has_country_flag = angry_rioters_victorious
 			has_country_flag = tonghak_rebellion_happened
+			has_country_flag = tonghak_rebellion_alternative
 		}
 	}
 	
@@ -678,6 +679,34 @@ country_event = {
 		any_greater_power = {
 			diplomatic_influence = { who = THIS value = -200 }
 		}
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "EVT85020OPTB"
+		set_country_flag = tonghak_rebellion_alternative
+
+		any_owned = {
+			limit = {
+				region = KOR_1624
+			}
+			add_province_modifier = {
+				name = peasant_revolt
+				duration = 1460
+			}
+		}
+
+		poor_strata = {
+			limit = {
+				is_primary_culture = yes
+				location = { is_core = KOR }
+			}
+			militancy = 5
+			consciousness = 5
+		}
+
+		ai_chance = { factor = 0 }
 	}
 }
 
