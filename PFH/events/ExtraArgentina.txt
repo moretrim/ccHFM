@@ -595,6 +595,7 @@ country_event = {
     option = {
         2358 = { secede_province = UTI }
         2356 = { secede_province = UTI }
+        2357 = { secede_province = UTI }
 
         CRT = { 
             inherit = UTI 
