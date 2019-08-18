@@ -689,4 +689,41 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+
+
+	corrientes_province_fix = {
+		picture = chile_bolivia_peru_borders
+		potential = {
+			ai = yes
+			OR = {
+				tag = ADO
+				tag = CRT
+				tag = ECU
+			}
+			CRT = {
+				owns = 2357
+				NOT = {
+					owns = 2358
+				}
+			}
+		}
+
+		allow = {
+			CRT = {
+	            AND = {
+	                owns = 2357
+	                NOT = {
+	                    owns = 2358
+	                    owns = 2356
+	                }
+	            }
+	        }
+		}
+
+		effect = {
+			UTI = {
+				country_event = 250044
+			}
+		}
+	}
 }
