@@ -425,7 +425,7 @@ country_event = {
         name = "EVTOPTA250030" # Invite
 
         CRT = {
-            country_event = 250041
+            country_event = 250045
         }
 
         ai_chance { factor = 100}
@@ -534,16 +534,7 @@ country_event = {
     option = {
         name = "EVTOPTA250042"
 
-        random_country = {
-            limit = {
-                exists = yes
-                is_vassal = no
-
-                OR = {
-                    tag = ENT
-                    tag = ARC
-                }
-            }
+        ENT = {
             create_vassal = CRT
         }
 
@@ -597,13 +588,70 @@ country_event = {
         2356 = { secede_province = UTI }
         2357 = { secede_province = UTI }
 
-        CRT = { 
-            inherit = UTI 
+        CRT = {
+            inherit = UTI
             capital = 2356
         }
     }
 }
-    
+
+country_event = {
+    id = 250045
+    title = "EVTNAME250041" # rbx note - Corrientes responds to request to join ARC after ARC wins Platine War
+    desc = "EVTDESC250041"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    option = {
+        name = "EVTOPTA250041" # Join
+
+        ARC = {
+            country_event = 250046
+        }
+
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = "EVTOPTB250041" # Remain independent
+
+        ARC = {
+            country_event = 250043
+        }
+
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 250046
+    title = "EVTNAME250042" # rbx note - CRT agrees to join
+    desc = "EVTDESC250042"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 4
+    }
+
+    option = {
+        name = "EVTOPTA250042"
+
+        ARC = {
+            create_vassal = CRT
+        }
+
+        UTI = {
+            country_event = 250044
+        }
+    }
+}
 
 country_event = {
     id = 250050
