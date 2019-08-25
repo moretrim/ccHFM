@@ -1032,6 +1032,19 @@ country_event = {
 		ENT = {
 			add_country_modifier = { name = small_immigration_boom duration = 1825 }
 			all_core = { add_core = ARG }
+			random_owned = {
+				limit = {
+					owner = { war_with = ENT }
+				}
+				owner = { end_war = ENT }
+				any_country = {
+					limit = {
+						alliance_with = ARC
+						war_with = ENT
+					}
+					end_war = ENT
+				}
+			}
 			annex_to = ARG
 		}
 		CRT = {
@@ -1040,6 +1053,19 @@ country_event = {
 		}
 		ARC = {
 			all_core = { add_core = ARG remove_core = ARC }
+			random_owned = {
+				limit = {
+					owner = { war_with = ARC }
+				}
+				owner = { end_war = ARC }
+				any_country = {
+					limit = {
+						alliance_with = ENT
+						war_with = ARC
+					}
+					end_war = ARC
+				}
+			}
 			annex_to = ARG
 		}
 		ARG = {
