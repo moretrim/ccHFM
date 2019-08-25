@@ -130,6 +130,6 @@ unit_names = {
 	steam_transport = { 
 	}
 	commerce_raider = {
-		"Bartolomeu Dias" "Estefânia" "Duque da Terceira" "Sá da Bandeira" "Rainha de Portugal" "Mindelo";
+		"Bartolomeu Dias" "Estefânia" "Duque da Terceira" "Sá da Bandeira" "Rainha de Portugal" "Mindelo"
 	}
 }
