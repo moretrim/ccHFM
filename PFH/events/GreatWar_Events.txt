@@ -5842,7 +5842,6 @@ country_event = {
 				is_core = ALD
 				is_colonial = no
 				}
-			}
 			secede_province = ALD
 			remove_core = FRA
 		}
@@ -5853,7 +5852,6 @@ country_event = {
 				is_core = GUY
 				is_colonial = no
 				}
-			}
 			secede_province = GUY
 		}
 	}
