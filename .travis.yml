@@ -18,9 +18,9 @@ before_install:
 
 # Environment setup.
 install:
-  # download pds-guide
-  - wget -O pds-guide.zip https://github.com/moretrim/pds-guide/archive/0.1.0-alpha+20191407.zip
-  - unzip pds-guide.zip
+  # download pds-companion
+  - wget -O pds-companion.zip https://github.com/moretrim/pds-companion/archive/0.1.0-alpha+20191407.zip
+  - unzip pds-companion.zip
 
 matrix:
   include:
@@ -44,8 +44,8 @@ matrix:
               exit
             fi
 
-            # install pds-guide
-            pushd pds-guide-*
+            # install pds-companion
+            pushd pds-companion-*
             zef install --/test .
             popd
 
@@ -75,8 +75,8 @@ matrix:
               exit
             fi
 
-            # install pds-guide
-            pushd pds-guide-*
+            # install pds-companion
+            pushd pds-companion-*
             zef install --/test .
             popd
 
@@ -99,8 +99,8 @@ matrix:
             # fail on first error
             set -Eeuo pipefail
 
-            # install pds-guide
-            pushd pds-guide-*
+            # install pds-companion
+            pushd pds-companion-*
             zef install --/test .
             popd
 
