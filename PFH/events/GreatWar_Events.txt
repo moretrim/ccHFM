@@ -5853,6 +5853,7 @@ country_event = {
 				is_colonial = no
 				}
 			secede_province = GUY
+			remove_core = FRA
 		}
 	}
 }
