@@ -1,0 +1,10 @@
+### Confederalism ###;;;;;;;;;;;;;;x
+EVTNAME251000;Bound By The Federal Pact;;;;;;;;;;;;;x
+EVTDESC251000;Article 3 of the Federal Pact of 4 January 1831:\n\n“The provinces are bound and constitute an offensive and defensive alliance against any aggression or preparation by any of the other provinces of the Republic that would, God forbid, threaten the integrity and independence of their respective territories.”\n\nIt is time to for us to honour this eminent commitment and for things to return to normal. Naturally we shall appoint the appropriate people to the task.;;;;;;;;;;;;;x
+EVTOPTA251000;It is only constitutionally right after all.;;;;;;;;;;;;;x
+EVTNAME251001;Domestic Matters Return To $COUNTRY_ADJ$ Hands;;;;;;;;;;;;;x
+EVTDESC251001;The provisional $FROMCOUNTRY_ADJ$ administration of our lands is finally over and they are turning things over to us.;;;;;;;;;;;;;x
+EVTOPTA251001;At last.;;;;;;;;;;;;;x
+EVTNAME251002;$COUNTRY$ Returns To Normalcy;;;;;;;;;;;;;x
+EVTDESC251002;The provisional $FROMCOUNTRY_ADJ$ administration of some of our lands is finally over and they are turning things over to us.;;;;;;;;;;;;;x
+EVTOPTA251002;Good.;;;;;;;;;;;;;x

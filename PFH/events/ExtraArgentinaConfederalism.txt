@@ -1,0 +1,1811 @@
+# Argentine countries with confederalism active are not allowed to directly manage other Platine countries and instead
+# have to release them as vassals---and getting rid of confederalism in the first place is the subject of the Argentine
+# Civil Wars.
+#
+# (In these matters SBA is considered a revolt tag of ARC/ARG where the former should not be released from the latter
+# and vice versa.)
+#
+# As the rightful confederation master, the Argentine Confederation is supposed to have cores over all of Argentina
+# proper, e.g. in case a neighbouring Brazil, Chile, etc. gets any funny ideas. However during the course of the Civil
+# Wars it is possible for the Confederation to fight another Argentine country in order to reassert overlordship e.g.
+# with a puppet CB. In general Victoria 2 does not cope well when a country attempts to puppet territory on which it has
+# cores: some, but not all core provinces formerly held by the newly made vassal are usually transferred to the
+# overlord, which tends to lead to disastrous bordergore.
+#
+# Consequently the confederalism system has two main tasks:
+#
+# - ensure independent Argentine countries with confederalism active release Platine vassals
+# - return overlapping cores to the correct vassal, and fix capitals if required
+
+country_event = {
+    id = 251000
+    title = "EVTNAME251000" # Bound By The Federal Pact
+    desc = "EVTDESC251000"
+    picture = "TBD Federal Pact"
+
+    trigger = {
+        OR = {
+            tag = ARC
+            tag = ARG
+            tag = ENT
+            tag = CRT
+        }
+
+        is_vassal = no
+        war = no
+        centralization = confederalism
+
+        any_owned_province = {
+            # account for overlapping ARC/ARG cores
+            OR = {
+                THIS = {
+                    OR = {
+                        tag = ARC
+                        tag = ARG
+                    }
+                }
+
+                NOT = { is_core = THIS }
+            }
+
+            any_core = {
+                NOT = { tag = THIS }
+
+                OR = {
+                    tag = ARC
+                    tag = ARG
+                    tag = ENT
+                    tag = CRT
+                    tag = URU
+                    tag = PRG
+                }
+
+                OR = {
+                    AND = {
+                        exists = no
+                        capital_scope = {
+                            owned_by = THIS
+                        }
+                    }
+
+                    AND = {
+                        exists = yes
+                        vassal_of = THIS
+                    }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTA251000" # It is only constitutionally right after all.
+
+        # expand all candidate countries to provide a better tooltip
+
+        random_owned = {
+            limit = {
+                ENT = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            ENT = {
+                country_event = 251001
+            }
+
+            # enforce reform, elections, & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        ENT = {
+                            NOT = { centralization = confederalism }
+                        }
+                    }
+
+                    ENT = {
+                        political_reform = confederalism
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    ENT = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    ENT = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    ENT = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                ENT = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            ENT = { country_event = 251002 }
+        }
+
+        random_owned = {
+            limit = {
+                CRT = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            CRT = {
+                country_event = 251001
+            }
+
+            # enforce reform, elections, & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        CRT = {
+                            NOT = { centralization = confederalism }
+                        }
+                    }
+
+                    CRT = {
+                        political_reform = confederalism
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    CRT = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    CRT = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    CRT = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                CRT = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            CRT = { country_event = 251002 }
+        }
+
+        random_owned = {
+            limit = {
+                URU = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            URU = {
+                country_event = 251001
+            }
+
+            # enforce elections & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    URU = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    URU = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    URU = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                URU = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            URU = { country_event = 251002 }
+        }
+
+        random_owned = {
+            limit = {
+                PRG = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            PRG = {
+                country_event = 251001
+            }
+
+            # enforce elections & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    PRG = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    PRG = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    PRG = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                PRG = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            PRG = { country_event = 251002 }
+        }
+
+        random_owned = {
+            limit = {
+                ARC = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            ARC = {
+                country_event = 251001
+            }
+
+            # enforce reform, elections, & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        ARC = {
+                            NOT = { centralization = confederalism }
+                        }
+                    }
+
+                    ARC = {
+                        political_reform = confederalism
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    ARC = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    ARC = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    ARC = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                ARC = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            ARC = { country_event = 251002 }
+        }
+
+        random_owned = {
+            limit = {
+                ARG = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = no
+                    capital_scope = {
+                        owned_by = THIS
+                    }
+                }
+            }
+
+            # release
+            ARG = {
+                country_event = 251001
+            }
+
+            # enforce reform, elections, & ideology
+            # (not part of 251001 for tooltip purposes)
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        ARG = {
+                            NOT = { centralization = confederalism }
+                        }
+                    }
+
+                    ARG = {
+                        political_reform = confederalism
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                government = absolute_monarchy
+                                government = prussian_constitutionalism
+                                government = hms_government
+                            }
+                        }
+                    }
+
+                    ARG = {
+                        government = prussian_constitutionalism
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            NOT = {
+                                OR = {
+                                    government = absolute_monarchy
+                                    government = prussian_constitutionalism
+                                    government = hms_government
+                                }
+                            }
+                        }
+                    }
+
+                    ARG = {
+                        government = democracy
+                    }
+                }
+            }
+
+            owner = {
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = liberal
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = anarcho_liberal
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = anarcho_liberal
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = anarcho_liberal
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = conservative
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = conservative
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = conservative
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = reactionary
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = reactionary
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = reactionary
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = socialist
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = socialist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = socialist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = communist
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = communist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = communist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        owner = {
+                            ruling_party_ideology = fascist
+                        }
+                    }
+
+                    ARG = {
+                        ruling_party_ideology = fascist
+
+                        any_pop = {
+                            scaled_militancy = {
+                                ideology = fascist
+                                factor = -4
+                            }
+                        }
+                    }
+                }
+            }
+
+            # partially refund the cost of a conquest
+            owner = { badboy = -10 }
+        }
+
+        random_owned = {
+            limit = {
+                ARG = {
+                    NOT = { tag = THIS }
+
+                    any_core = {
+                        # account for overlapping ARC/ARG cores
+                        OR = {
+                            THIS = {
+                                OR = {
+                                    tag = ARC
+                                    tag = ARG
+                                }
+                            }
+
+                            NOT = { is_core = THIS }
+                        }
+
+                        owned_by = THIS
+                    }
+
+                    exists = yes
+                    vassal_of = THIS
+                }
+            }
+
+            ARG = { country_event = 251002 }
+        }
+    }
+}
+
+country_event = {
+    id = 251001
+    title = "EVTNAME251001" # Domestic Matters Return To $COUNTRY_ADJ$ Hands
+    desc = "EVTDESC251001"
+    picture = "TBD Federal Pact"
+
+    is_triggered_only = yes
+
+    immediate = {
+        FROM = {
+            # temporarily remove overlapping cores to avoid vassalisation nonsense
+            random_owned = {
+                limit = {
+                    owner = {
+                        OR = {
+                            tag = ENT
+                            tag = CRT
+                        }
+                    }
+
+                    THIS = {
+                        OR = {
+                            tag = ARC
+                            tag = ARG
+                        }
+                    }
+                }
+
+                FROM = {
+                    all_core = {
+                        remove_core = THIS
+                    }
+                }
+            }
+
+            release_vassal = THIS
+
+            # restore cores
+            random_owned = {
+                limit = {
+                    owner = {
+                        OR = {
+                            tag = ENT
+                            tag = CRT
+                        }
+                    }
+
+                    THIS = {
+                        OR = {
+                            tag = ARC
+                            tag = ARG
+                        }
+                    }
+                }
+
+                FROM = {
+                    all_core = {
+                        add_core = THIS
+                    }
+                }
+            }
+
+            relation = {
+                who = THIS
+                value = 100
+            }
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        is_greater_power = yes
+                    }
+                }
+
+                owner = {
+                    diplomatic_influence = {
+                        who = THIS
+                        value = 400
+                    }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTA251001" # At last.
+
+        add_country_modifier = {
+            name = national_confusion
+            duration = 365
+        }
+
+        # reforms that don't need to appear in the tooltip of 251000
+
+        random_owned = {
+            limit = {
+                owner = {
+                    vote_franschise = none_voting
+                }
+            }
+
+            owner = {
+                political_reform = landed_voting
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    political_parties = underground_parties
+                }
+            }
+
+            owner = {
+                political_reform = harassment
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    upper_house_composition = party_appointed
+                }
+            }
+
+            owner = {
+                political_reform = appointed
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 251002
+    title = "EVTNAME251002" # $COUNTRY$ Returns To Normalcy
+    desc = "EVTDESC251002"
+    picture = "TBD Federal Pact"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA251002" # Good.
+
+        all_core = {
+            limit = {
+                owned_by = FROM
+
+                OR = {
+                    FROM = {
+                        OR = {
+                            tag = ARC
+                            tag = ARG
+                        }
+                    }
+
+                    NOT = { is_core = FROM }
+                }
+            }
+
+            secede_province = THIS
+        }
+
+        # fix capitals
+
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = ENT
+                    owns = 2360
+                    capital_scope = {
+                        NOT = { province_id = 2360 }
+                    }
+                }
+            }
+
+            owner = {
+                capital = 2360
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = CRT
+                    owns = 2356
+                    capital_scope = {
+                        NOT = { province_id = 2356 }
+                    }
+                }
+            }
+
+            owner = {
+                capital = 2356
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = URU
+                    owns = 2344
+                    capital_scope = {
+                        NOT = { province_id = 2344 }
+                    }
+                }
+            }
+
+            owner = {
+                capital = 2344
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = PRG
+                    owns = 2339
+                    capital_scope = {
+                        NOT = { province_id = 2339 }
+                    }
+                }
+            }
+
+            owner = {
+                capital = 2339
+            }
+        }
+    }
+}
