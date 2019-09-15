@@ -534,7 +534,7 @@ country_event = {
     option = {
         name = "EVTOPTA250042"
 
-        ENT = {
+        ARC = {
             create_vassal = CRT
         }
 
