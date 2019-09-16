@@ -59,6 +59,7 @@ country_event = {
     id = 250010
     title = "EVTNAME250010" # rbx note - Response from Brazil if supporting Entre Rios
     desc = "EVTDESC250010"
+    picture = "rosas_urquiza"
 
     fire_only_once = yes
 
@@ -109,6 +110,7 @@ country_event = {
     id = 250011
     title = "EVTNAME250011" # rbx note - Response from Uruguay if supporting Entre Rios
     desc = "EVTDESC250011"
+    picture = "rosas_urquiza"
 
     fire_only_once = yes
 
@@ -162,6 +164,7 @@ country_event = {
     id = 250012
     title = "EVTNAME250012" # rbx note - Response from Corrientes if supporting Entre Rios
     desc = "EVTDESC250012"
+    picture = "rosas_urquiza"
 
     fire_only_once = yes
 
@@ -816,6 +819,7 @@ country_event = {
     id = 250061
     title = "EVTNAME250061" # The Argentine Civil War
     desc = "EVTDESC250061"
+    picture = "mitre_urquiza"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -973,6 +977,7 @@ country_event = {
     id = 250071
     title = "EVTNAME250071" # The Argentine Civil War - This seems to be a leftover from an attempt to make a duplicate event for overlords of ARC
     desc = "EVTDESC250071"
+    picture = "mitre_urquiza"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1629,6 +1634,8 @@ country_event = {
     id = 250110
     title = "EVTNAME250110" # Warning to the Confederation
     desc = "EVTDESC250110"
+    picture = "rosas"
+
 
     fire_only_once = yes
 
@@ -1695,6 +1702,7 @@ country_event = {
     id = 250120
     title = "EVTNAME250120" # The Confederation submits
     desc = "EVTDESC250120"
+    picture = "battle_pavon"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -1911,6 +1919,7 @@ country_event = {
     id = 250140
     title = "EVTNAME250140" # The Argentine Centennial
     desc = "EVTDESC250140"
+    picture = "argentine_centennial"
 
     trigger = {
         year = 1906
@@ -2000,6 +2009,8 @@ country_event = {
     id = 250150
     title = "EVTNAME250150" # The Rebellion of 1880
     desc = "EVTDESC250150"
+    picture = "los_corrales"
+
 
     fire_only_once = yes
 
@@ -2178,6 +2189,7 @@ country_event = {
     id = 250160
     title = "EVTNAME250160" # Buenos Aires Victory
     desc = "EVTDESC250160"
+    picture = "los_corrales"
 
     trigger = {
         OR = {
@@ -2229,6 +2241,7 @@ country_event = {
     id = 250170
     title = "EVTNAME250170" # Buenos Aires Defeat
     desc = "EVTDESC250170"
+    picture = "los_corrales"
 
     trigger = {
         OR = {
@@ -2283,6 +2296,7 @@ country_event = {
     id = 250180
     title = "EVTNAME250180" # The Argentine Centennial! when ARG or LPL already exists
     desc = "EVTDESC250180"
+    picture = "argentine_centennial"
 
     fire_only_once = yes
 
@@ -2409,9 +2423,8 @@ country_event = {
         ARG = {
             relation = {
                 who = BRZ
-                value = 400
+                value = 100
             }
-            create_alliance = BRZ
         }
 
         ai_chance = { factor = 10 }
@@ -2504,5 +2517,68 @@ country_event = {
 
     option = {
         name = "EVTOPTA250195"
+    }
+}
+
+country_event = {
+    id = 250196
+    title = "EVTNAME250196" # Chile - Argentina treaty - CHL side
+    desc = "EVTDESC250196"
+
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    trigger = {
+        tag = CHL
+        year = 1855
+        ARG = {
+            exists = yes
+        }
+    }
+
+    option = {
+        name = "EVTOPTA250196"
+
+        ARG = {
+            country_event = 250197
+        }
+
+        ai_chance = { factor = 10 }
+    }
+
+    option = {
+        name = "EVTOPTB250196"
+
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 250197
+    title = "EVTNAME250197" # Chile - Argentina treaty - ARG side
+    desc = "EVTDESC250197"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA250197"
+
+        ARG = {
+            relation = {
+                who = CHL
+                value = 50
+            }
+        }
+
+        ai_chance = { factor = 10 }
+    }
+
+    option = {
+        name = "EVTOPTB250197"
+
+        ai_chance = { factor = 0 }
     }
 }
