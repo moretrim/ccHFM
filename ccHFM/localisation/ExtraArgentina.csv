@@ -157,6 +157,14 @@ EVTOPTA250194;As it should be!;;;;;;;;;;;;;x
 EVTNAME250195;Corrientes refuses our demand;;;;;;;;;;;;;x
 EVTDESC250195;Corrientes has refused our perfectly reasonable request to become our puppet!;;;;;;;;;;;;;x
 EVTOPTA250195;This will not be forgiven!;;;;;;;;;;;;;x
+EVTNAME250196;Treaty of Peace, Friendship, Commerce and Navigation;;;;;;;;;;;;;x
+EVTDESC250196;A few years after Urquiza's victory, the Argentine Confederation and Chile agreed to a treaty to establish borders of the two nations based on what they possessed before their wars of independence from Spain. This treaty helped establish stability for the new nations for a time.;;;;;;;;;;;;;x
+EVTOPTA250196;This is a welcome treaty;;;;;;;;;;;;;x
+EVTOPTB250196;We do not want this;;;;;;;;;;;;;x
+EVTNAME250197;Treaty of Peace, Friendship, Commerce and Navigation;;;;;;;;;;;;;x
+EVTDESC250197;A few years after Urquiza's victory, the Argentine Confederation and Chile agreed to a treaty to establish borders of the two nations based on what they possessed before their wars of independence from Spain. This treaty helped establish stability for the new nations for a time.;;;;;;;;;;;;;x
+EVTOPTA250197;This is a welcome treaty;;;;;;;;;;;;;x
+EVTOPTB250197;We do not want this;;;;;;;;;;;;;x
 ### Modifiers ###;;;;;;;;;;;;;;x
 argentine_civil_wars;Argentine Civil Wars;;;;;;;;;;;;;x
 desc_argentine_civil_wars;The caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;x
