@@ -1,0 +1,93 @@
+political_decisions = {
+	cleanup_war_country_disappears = {
+		#this is based in part on cleanup_war_with_non_existing_country - it ends war with nations that have been annexed by another country - this generally happens with parts of a country to be unified such as Harar for Ethiopia or Corrientes for Argentina - I would like to do this for any_country but that seems to break allow statements
+
+		potential = {
+			exists = yes
+			ai = yes
+		}
+
+        allow = {
+            war = yes
+            OR = {
+                ARC = { exists = no war_with = THIS }
+                CRT = { exists = no war_with = THIS }
+                ENT = { exists = no war_with = THIS }
+                SBA = { exists = no war_with = THIS }
+                AWS = { exists = no war_with = THIS }
+                GON = { exists = no war_with = THIS }
+                HAR = { exists = no war_with = THIS }
+                KAF = { exists = no war_with = THIS }
+                SHK = { exists = no war_with = THIS }
+                SHW = { exists = no war_with = THIS }
+                TIG = { exists = no war_with = THIS }
+        	}
+        }
+
+
+		effect = {
+			any_country = {
+				limit = {
+					exists = no
+					war_with = THIS
+				}
+				end_war = THIS
+			}
+		}
+	}
+
+	cleanup_puppet_of_nobody = {
+		#this allows a puppet to free itself when the overlord ceases to exist
+
+		potential = {
+			ai = yes
+			exists = yes
+			is_vassal = yes
+			overlord = {
+				exists = no
+			}
+		}
+
+		allow = {
+			exists = yes
+			is_vassal = yes
+			overlord = {
+				exists = no
+			}
+		}
+
+		effect = {
+			release_vassal = THIS
+		}
+	}
+
+	cleanup_puppet_of_puppet = {
+		#this makes any puppets of puppets only a first degree puppet
+
+		potential = {
+			ai = yes
+			exists = yes
+			is_vassal = yes
+			overlord = {
+				is_vassal = yes
+			}
+		}
+
+		allow = {
+			exists = yes
+			is_vassal = yes
+			overlord = {
+				is_vassal = yes
+			}
+		}
+
+		effect = {
+			any_country = {
+				is_our_vassal = THIS
+			}
+			overlord = {
+				create_vassal = THIS
+			}
+		}
+	}
+}
