@@ -1,3 +1,64 @@
+### Parties ###;;;;;;;;;;;;;;x
+ARG_liberal;Partido Unitario;;;;;;;;;;;;;x
+ARG_liberal_2;Partido Nacionalista;;;;;;;;;;;;;x
+ARG_liberal_3;Uníon Cívica;;;;;;;;;;;;;x
+ARG_liberal_4;Uníon Cívica Radical;;;;;;;;;;;;;x
+ARG_liberal_5;Partido Demócrata Progresista;;;;;;;;;;;;;x
+ARG_conservative;Partido Federal;;;;;;;;;;;;;x
+ARG_conservative_2;Partido Autonomista;;;;;;;;;;;;;x
+ARG_conservative_3;Partido Nacional;;;;;;;;;;;;;x
+ARG_conservative_4;Partido Autonomista Nacional;;;;;;;;;;;;;x
+ARG_conservative_5;Uníon Cívica Nacional;;;;;;;;;;;;;x
+ARG_conservative_6;Partido Conservador;;;;;;;;;;;;;x
+ARG_socialist;Partido Socialista;;;;;;;;;;;;;x
+ARG_reactionary;Los rosistas;;;;;;;;;;;;;x
+ARG_reactionary_2;Los nacionalistas;;;;;;;;;;;;;x
+ARG_anarcho_liberal;Radicales antipersonalistas;;;;;;;;;;;;;x
+ARG_fascist;Legión Cívica Argentina;;;;;;;;;;;;;x
+CRT_liberal;Partido Unitario;;;;;;;;;;;;;x
+CRT_liberal_2;Partido Liberal de Corrientes;;;;;;;;;;;;;x
+CRT_liberal_3;PLC (mitristas);;;;;;;;;;;;;x
+CRT_liberal_4;PLC (fusionistas);;;;;;;;;;;;;x
+CRT_conservative;Partido Federal de Corrientes;;;;;;;;;;;;;x
+CRT_conservative_2;Partido Autonomista de Corrientes;;;;;;;;;;;;;x
+CRT_socialist;Partido Socialista;;;;;;;;;;;;;x
+CRT_reactionary;Los rosistas;;;;;;;;;;;;;x
+CRT_reactionary_2;Los nacionalistas;;;;;;;;;;;;;x
+CRT_anarcho_liberal;Radicales antipersonalistas;;;;;;;;;;;;;x
+CRT_communist;Partido Comunista;;;;;;;;;;;;;x
+CRT_fascist;Legión Cívica Argentina;;;;;;;;;;;;;x
+ENT_liberal;Partido Unitario;;;;;;;;;;;;;x
+ENT_liberal_2;Partido Liberal;;;;;;;;;;;;;x
+ENT_liberal_3;Uníon Cívica Radical;;;;;;;;;;;;;x
+ENT_liberal_4;UCR (yrigoyenistas);;;;;;;;;;;;;x
+ENT_liberal_5;UCR-A (antipersonalistas);;;;;;;;;;;;;x
+ENT_conservative;Partido Federal;;;;;;;;;;;;;x
+ENT_conservative_2;Partido Demócrata;;;;;;;;;;;;;x
+ENT_conservative_3;Partido Conservador;;;;;;;;;;;;;x
+ENT_socialist;Partido Socialista;;;;;;;;;;;;;x
+ENT_reactionary;Los rosistas;;;;;;;;;;;;;x
+ENT_reactionary_2;Los nacionalistas;;;;;;;;;;;;;x
+ENT_anarcho_liberal;Radicales antipersonalistas;;;;;;;;;;;;;x
+ENT_communist;Partido Comunista;;;;;;;;;;;;;x
+ENT_fascist;Legión Cívica Argentina;;;;;;;;;;;;;x
+SBA_liberal;Partido Unitario;;;;;;;;;;;;;x
+SBA_liberal_2;Unitarios (autonomistas);;;;;;;;;;;;;x
+SBA_liberal_3;Unitarios (nacionalistas);;;;;;;;;;;;;x
+SBA_liberal_4;Partido Nacionalista;;;;;;;;;;;;;x
+SBA_liberal_5;Uníon Cívica Radical;;;;;;;;;;;;;x
+SBA_liberal_6;Partido Demócrata Progresista;;;;;;;;;;;;;x
+SBA_conservative;Partido Federal;;;;;;;;;;;;;x
+SBA_conservative_2;Partido Federal;;;;;;;;;;;;;x
+SBA_conservative_3;Partido Autonomista;;;;;;;;;;;;;x
+SBA_conservative_4;Partido Autonomista Nacional;;;;;;;;;;;;;x
+SBA_conservative_5;Uníon Cívica Nacional;;;;;;;;;;;;;x
+SBA_conservative_6;Partido Conservador;;;;;;;;;;;;;x
+SBA_socialist;Partido Socialista;;;;;;;;;;;;;x
+SBA_reactionary;Los rosistas;;;;;;;;;;;;;x
+SBA_reactionary_2;Los nacionalistas;;;;;;;;;;;;;x
+SBA_anarcho_liberal;Radicales antipersonalistas;;;;;;;;;;;;;x
+SBA_communist;Partido Comunista;;;;;;;;;;;;;x
+SBA_fascist;Legión Cívica Argentina;;;;;;;;;;;;;x
 ### Events ###;;;;;;;;;;;;;;x
 EVTNAME250000;Argentine Civil Wars;;;;;;;;;;;;;x
 EVTDESC250000;Under the dictatorial rule of Juan Manuel de Rosas, the caudillos, military leaders, of outlying provinces of Argentina were frequently at war with one another or in rebellion against the Argentine Confederation. This was agitated by oppressive economic policies in Buenos Aires, the only deep water port in Argentina. Heavy trade duties placed on incoming cargo inspired strong feelings against the 'porteños' or port-city dwellers. However, some respected Rosas himself due to his military successes and strong rule.;;;;;;;;;;;;;x
