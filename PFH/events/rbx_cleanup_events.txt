@@ -1,0 +1,65 @@
+#These events set up a mean time to happen for the rbx_cleanup decisions, such that they do not impair debugging. That is: you will have time to notice the cleaned situations before they are removed by the cleanup decisions.
+
+country_event = {
+	id = 6030000  #this numbering is based in digits and location on the CleanUp.txt events in HFM
+	title = "Our opponent no longer exists"
+	desc = "Our opponent in this war no longer exists. We should end this war."
+
+	trigger = {
+		exists = yes
+		ai = yes
+		war = yes
+	    OR = {
+	        ARC = { exists = no war_with = THIS }
+	        CRT = { exists = no war_with = THIS }
+	        ENT = { exists = no war_with = THIS }
+	        SBA = { exists = no war_with = THIS }
+	        AWS = { exists = no war_with = THIS }
+	        GON = { exists = no war_with = THIS }
+	        HAR = { exists = no war_with = THIS }
+	        KAF = { exists = no war_with = THIS }
+	        SHK = { exists = no war_with = THIS }
+	        SHW = { exists = no war_with = THIS }
+	        TIG = { exists = no war_with = THIS }
+		}
+		NOT = {
+			has_country_flag = zombie_war
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "End this war."
+		set_country_flag = "zombie_war"
+	}
+}
+
+country_event = {
+	id = 6030001  #this numbering is based in digits and location on the CleanUp.txt events in HFM
+	title = "Our overlord no longer exists"
+	desc = "Our overlord no longer exists. We should become independent."
+
+	trigger = {
+		ai = yes
+		exists = yes
+		is_vassal = yes
+		overlord = {
+			exists = no
+		}
+		NOT = {
+			has_country_flag = zombie_overlord
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "We should become independent."
+		set_country_flag = "zombie_overlord"
+	}
+}
