@@ -9,6 +9,7 @@ political_decisions = {
 
         allow = {
             war = yes
+            has_country_flag = zombie_war
             OR = {
                 ARC = { exists = no war_with = THIS }
                 CRT = { exists = no war_with = THIS }
@@ -26,6 +27,7 @@ political_decisions = {
 
 
 		effect = {
+			clr_country_flag = zombie_war
 			any_country = {
 				limit = {
 					exists = no
@@ -50,6 +52,7 @@ political_decisions = {
 
 		allow = {
 			exists = yes
+			has_country_flag = zombie_overlord
 			is_vassal = yes
 			overlord = {
 				exists = no
@@ -58,36 +61,7 @@ political_decisions = {
 
 		effect = {
 			release_vassal = THIS
-		}
-	}
-
-	cleanup_puppet_of_puppet = {
-		#this makes any puppets of puppets only a first degree puppet
-
-		potential = {
-			ai = yes
-			exists = yes
-			is_vassal = yes
-			overlord = {
-				is_vassal = yes
-			}
-		}
-
-		allow = {
-			exists = yes
-			is_vassal = yes
-			overlord = {
-				is_vassal = yes
-			}
-		}
-
-		effect = {
-			any_country = {
-				is_our_vassal = THIS
-			}
-			overlord = {
-				create_vassal = THIS
-			}
+			clr_country_flag = zombie_overlord
 		}
 	}
 }
