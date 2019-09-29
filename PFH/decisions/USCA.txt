@@ -448,7 +448,6 @@ political_decisions = {
 			MSK = {
 				OR = {
 					vassal_of = THIS
-					is_vassal = no
 				}
 			}
 		}
@@ -489,6 +488,44 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
-}
 
+	miskito_too_big_to_annex = {
+		picture = moskito_coast_reserve
+		potential = {
+			2200 = { NOT = { owned_by = THIS } }
+			MSK = { exists = yes }
+			2197 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+						war = no
+					}
+				}
+			}
+			OR = {
+				year = 1895
+				ai = no
+			}
+			NOT = { has_global_flag = miskito_crisis }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			set_global_flag = miskito_crisis
+			THIS = {
+				casus_belli = {
+					target = MSK
+					type = conquest_any
+					months = 36
+				}
+			}
+		}
+	}
+}
