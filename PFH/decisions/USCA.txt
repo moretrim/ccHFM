@@ -424,7 +424,6 @@ political_decisions = {
 						in_sphere = THIS
 						vassal_of = THIS
 						war = no
-						is_greater_power = no
 					}
 				}
 			}
@@ -434,20 +433,23 @@ political_decisions = {
 				primary_culture = mayan
 				primary_culture = spanish
 			}
-			OR = {
-				year = 1895
-				ai = no
-			}
 			NOT = { has_global_flag = miskito_crisis }
 		}
 		
 		allow = {
+			OR = {
+				year = 1895
+				ai = no
+			}
 			war = no
 			is_vassal = no
 			revolution_n_counterrevolution = 1
 			MSK = {
 				OR = {
 					vassal_of = THIS
+					NOT = {
+						number_of_states = 2
+					}
 				}
 			}
 		}
