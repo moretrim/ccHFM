@@ -5713,6 +5713,23 @@ country_event = {
 			}
 			country_event = 96092
 		}
+
+		#rbx note - remove France cores from Algerian and Guyanan colonies before giving colonies to GP's
+		any_owned = {
+			limit = {
+				is_core = ALD
+				is_colonial = yes
+				}
+			remove_core = FRA
+		}
+
+		any_owned = {
+			limit = {
+				is_core = GUY
+				is_colonial = yes
+				}
+			remove_core = FRA
+		}
 		
 		#give colonies without cores to truce GP's
 		random_owned = {
@@ -5837,6 +5854,7 @@ country_event = {
 		}
 
 		#rbx release Algeria if owned and take away French cores
+
 		any_owned = {
 			limit = {
 				is_core = ALD
