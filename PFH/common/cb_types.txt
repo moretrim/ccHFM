@@ -6872,6 +6872,7 @@ colonial_conquest = {
 			}
 		}
 		is_vassal = no
+		civilized = no
 		neighbour = THIS
 		NOT = { has_country_modifier = neutrality }
 		NOT = { in_sphere = THIS }
