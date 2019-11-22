@@ -19,7 +19,7 @@ before_install:
 # Environment setup.
 install:
   # download pds-companion
-  - wget -O pds-companion.zip https://github.com/moretrim/pds-companion/archive/0.1.0-alpha+20191407.zip
+  - wget -O pds-companion.zip https://github.com/moretrim/pds-companion/archive/0.2.0-alpha+20191122.zip
   - unzip pds-companion.zip
 
 matrix:
@@ -44,6 +44,9 @@ matrix:
               exit
             fi
 
+            # install optional requirement for colour
+            zef install --/test Terminal::ANSIColor
+
             # install pds-companion
             pushd pds-companion-*
             zef install --/test .
@@ -52,8 +55,8 @@ matrix:
             echo   "## PR: fresh mod files ##"
             printf "    %q\n" "${pr_files[@]}"
 
-            # run the tools
-            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${pr_files[@]}"
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion --base=PFH "${pr_files[@]/PFH\//}"
           '
 
     -
@@ -75,6 +78,9 @@ matrix:
               exit
             fi
 
+            # install optional requirement for colour
+            zef install --/test Terminal::ANSIColor
+
             # install pds-companion
             pushd pds-companion-*
             zef install --/test .
@@ -83,8 +89,8 @@ matrix:
             echo   "## Commit: fresh mod files ##"
             printf "    %q\n" "${commit_files[@]}"
 
-            # run the tools
-            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" "${commit_files[@]}"
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion --base=PFH "${commit_files[@]/PFH\//}"
           '
 
     -
@@ -99,13 +105,14 @@ matrix:
             # fail on first error
             set -Eeuo pipefail
 
+            # install optional requirement for colour
+            zef install --/test Terminal::ANSIColor
+
             # install pds-companion
             pushd pds-companion-*
             zef install --/test .
             popd
 
-            # run the tools
-            shopt -s extglob globstar
-            perl6 -e "use PDS; for @*ARGS { PDS::lint(PDS::Grammar, \$_) }" \
-                     PFH/{common,decisions,events,history,inventions,poptypes,technologies,units}/**/*.txt
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist --base=PFH .
           '
