@@ -24,9 +24,10 @@ with a few flag tweaks as well the following changes:
 
 #### Bugfixes
 
-- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28]).
+- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28], [HFM/#164]).
 
   [#28]: https://github.com/moretrim/PFH/pull/28
+  [HFM/#164]: https://github.com/SighPie/HFM/pull/164
 
 - Restrict 'Restore Democracy in South America' decision ([#42], [HFM/#168]).
 
