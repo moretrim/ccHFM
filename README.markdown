@@ -28,7 +28,7 @@ with a few flag tweaks as well the following changes:
 
   [#28]: https://github.com/moretrim/PFH/pull/28
 
-- Restrict 'Restore Democracy in South America' ([#42], [HFM/#168]).
+- Restrict 'Restore Democracy in South America' decision ([#42], [HFM/#168]).
 
   [#42]: https://github.com/moretrim/PFH/pull/42
   [HFM/#168]: https://github.com/SighPie/HFM/pull/168
