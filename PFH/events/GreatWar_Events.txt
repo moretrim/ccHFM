@@ -4360,7 +4360,7 @@ country_event = {
 			country_event = 96018
 		}
 
-		#If California does not exist, release it as an ally (with Oregon} 
+		#If California does not exist, release it as an ally (with Oregon)
 		any_country = {
 			limit = {
 				tag = CAL
@@ -5621,7 +5621,7 @@ country_event = {
 				}
 			}
 			relation = { who = THIS value = 200 }
-		}	
+		}
 
 		#release all cores to anyone with a truce
 		any_country = {
@@ -5712,23 +5712,6 @@ country_event = {
 				NOT = { tag = BOR }
 			}
 			country_event = 96092
-		}
-
-		#rbx note - remove France cores from Algerian and Guyanan colonies before giving colonies to GP's
-		any_owned = {
-			limit = {
-				is_core = ALD
-				is_colonial = yes
-				}
-			remove_core = FRA
-		}
-
-		any_owned = {
-			limit = {
-				is_core = GUY
-				is_colonial = yes
-				}
-			remove_core = FRA
 		}
 		
 		#give colonies without cores to truce GP's
@@ -5858,20 +5841,27 @@ country_event = {
 		any_owned = {
 			limit = {
 				is_core = ALD
+				is_colonial = yes
+			}
+			remove_core = THIS
+		}
+
+		any_owned = {
+			limit = {
+				is_core = ALD
 				is_colonial = no
-				}
+			}
+			remove_core = THIS
 			secede_province = ALD
-			remove_core = FRA
 		}
 
 		#rbx release French Guiana if owned and a state
 		any_owned = {
 			limit = {
 				is_core = GUY
-				is_colonial = no
-				}
+			}
+			remove_core = THIS
 			secede_province = GUY
-			remove_core = FRA
 		}
 	}
 }
