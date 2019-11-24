@@ -33,6 +33,11 @@ with a few flag tweaks as well the following changes:
   [#42]: https://github.com/moretrim/PFH/pull/42
   [HFM/#168]: https://github.com/SighPie/HFM/pull/168
 
+- Leave Ryukyu independent during Meiji Restoration ([#51], [HFM/#169]).
+
+  [#51]: https://github.com/moretrim/PFH/pull/51
+  [HFM/#169]: https://github.com/SighPie/HFM/pull/169
+
 #### Tweaks
 
 - Flag tweak for Korea as part of [#34]
