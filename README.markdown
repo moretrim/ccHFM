@@ -41,9 +41,10 @@ with a few flag tweaks as well the following changes:
 
 #### Tweaks
 
-- Flag tweak for Korea as part of [#34]
+- Flag tweak for Korea as part of [#34] ([HFM/#166]).
 
   [#34]: https://github.com/moretrim/PFH/issues/34
+  [HFM/#166]: https://github.com/SighPie/HFM/pull/166
 
 ### 0.1.1
 
