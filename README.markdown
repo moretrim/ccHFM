@@ -24,24 +24,24 @@ with a few flag tweaks as well the following changes:
 
 #### Bugfixes
 
-- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28], [HFM/#164]).
+- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28], pending [HFM/#164]).
 
   [#28]: https://github.com/moretrim/PFH/pull/28
   [HFM/#164]: https://github.com/SighPie/HFM/pull/164
 
-- Restrict 'Restore Democracy in South America' decision ([#42], [HFM/#168]).
+- Restrict 'Restore Democracy in South America' decision ([#42], pending [HFM/#168]).
 
   [#42]: https://github.com/moretrim/PFH/pull/42
   [HFM/#168]: https://github.com/SighPie/HFM/pull/168
 
-- Leave Ryukyu independent during Meiji Restoration ([#51], [HFM/#169]).
+- Leave Ryukyu independent during Meiji Restoration ([#51], pending [HFM/#169]).
 
   [#51]: https://github.com/moretrim/PFH/pull/51
   [HFM/#169]: https://github.com/SighPie/HFM/pull/169
 
 #### Tweaks
 
-- Flag tweak for Korea as part of [#34] ([HFM/#166]).
+- Flag tweak for Korea as part of [#34] (pending [HFM/#166]).
 
   [#34]: https://github.com/moretrim/PFH/issues/34
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
@@ -55,7 +55,7 @@ few flag tweaks as well the following changes:
 
 #### Tweaks
 
-- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7], [HFM/#162]).
+- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7], pending [HFM/#162]).
 
   [#7]: https://github.com/moretrim/PFH/pull/7
   [HFM/#162]: https://github.com/SighPie/HFM/pull/162
@@ -64,13 +64,13 @@ few flag tweaks as well the following changes:
 
 #### Ported features
 
-- Make colonial railroading an option decision ([HFM/#157])
+- Make colonial railroading an option decision (PR [HFM/#157])
 
   [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
 #### Ported bugfixes
 
-- [HFM/#141]\:
+- PR [HFM/#141]\:
 
   > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to signify the crisis has
   > occurred, otherwise the event will continuously spawn.
