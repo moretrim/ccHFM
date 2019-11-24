@@ -19,7 +19,7 @@ Release history
 
 ### 0.2.0-dev (in development)
 
-The 0.2.x series of releases is based on [HFM 1.27F Beta]. It is **not** backward compatible with it. This series comes
+The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it. This series comes
 with a few flag tweaks as well the following changes:
 
 #### Bugfixes
@@ -47,10 +47,10 @@ with a few flag tweaks as well the following changes:
 
 ### 0.1.1
 
-The 0.1.x series of releases is based on [HFM 1.27F Beta] and is backward compatible with it. This series comes with a
+The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series comes with a
 few flag tweaks as well the following changes:
 
-[HFM 1.27F Beta]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
+[HFM 1.27I]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
 #### Tweaks
 
