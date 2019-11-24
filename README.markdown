@@ -55,9 +55,10 @@ few flag tweaks as well the following changes:
 
 #### Tweaks
 
-- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
+- Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7], [HFM/#162]).
 
   [#7]: https://github.com/moretrim/PFH/pull/7
+  [HFM/#162]: https://github.com/SighPie/HFM/pull/162
 
 ### 0.1.0
 
