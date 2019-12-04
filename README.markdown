@@ -19,8 +19,8 @@ Release history
 
 ### 0.2.0-dev (in development)
 
-The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it. This series comes
-with a few flag tweaks as well the following changes:
+The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it. This series comes with
+the following changes:
 
 #### Bugfixes
 
@@ -41,9 +41,9 @@ with a few flag tweaks as well the following changes:
 
 #### Tweaks
 
-- Flag tweak for Korea as part of [#34] (pending [HFM/#166]).
+- Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
 
-  [#34]: https://github.com/moretrim/PFH/issues/34
+  [4f0f02]: https://github.com/moretrim/PFH/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
 
 - Text fixes for the France minimod, German Namibia, and a couple other things ([906735], pending [HFM/#170]).
@@ -53,8 +53,8 @@ with a few flag tweaks as well the following changes:
 
 ### 0.1.1
 
-The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series comes with a
-few flag tweaks as well the following changes:
+The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series comes with the
+following changes:
 
 [HFM 1.27I]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
@@ -64,6 +64,14 @@ few flag tweaks as well the following changes:
 
   [#7]: https://github.com/moretrim/PFH/pull/7
   [HFM/#162]: https://github.com/SighPie/HFM/pull/162
+
+- Flag tweaks:
+
+  * enable the flag of the British dominion of Newfoundland ([#5])
+  * use the correct flag for uncivilised or absolute Dahomey ([#6])
+
+  [#5]: https://github.com/moretrim/PFH/pull/5
+  [#6]: https://github.com/moretrim/PFH/pull/6
 
 ### 0.1.0
 
