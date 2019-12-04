@@ -120,7 +120,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	build_the_st_petersburg_moscow_railway = { #Saint Petersburgâ€“Moscow Railway
+	build_the_st_petersburg_moscow_railway = { #Saint Petersburg–Moscow Railway
 		picture = whistlestop_tour
 		potential = {
 			tag = RUS
