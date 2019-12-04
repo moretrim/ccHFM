@@ -46,6 +46,11 @@ with a few flag tweaks as well the following changes:
   [#34]: https://github.com/moretrim/PFH/issues/34
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
 
+- Text fixes for the France minimod, German Namibia, and a couple other things ([906735], pending [HFM/#170]).
+
+  [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
+  [HFM/#170]: https://github.com/SighPie/HFM/pull/170
+
 ### 0.1.1
 
 The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series comes with a
