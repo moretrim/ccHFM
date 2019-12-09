@@ -39,6 +39,15 @@ the following changes:
   [#51]: https://github.com/moretrim/PFH/pull/51
   [HFM/#169]: https://github.com/SighPie/HFM/pull/169
 
+- Prevent the Papal States (aka Lazio aka the Roman Republic) from being outright annexed when Italy forms by event (“Il
+  Risorgimento”). They instead get a say into the matter, and can challenge Italy ([#19], [HPM/#3] + [HPM/93c5ca],
+  pending [HFM/#163]).
+
+  [#19]: https://github.com/moretrim/PFH/issues/19
+  [HPM/#3]: https://github.com/arkhometha/Historical-Project-Mod/pull/3
+  [HPM/93c5ca]: https://github.com/arkhometha/Historical-Project-Mod/commit/93c5ca17481d738a3dba84581be258b28343ffda
+  [HFM/#163]: https://github.com/SighPie/HFM/pull/163
+
 #### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
