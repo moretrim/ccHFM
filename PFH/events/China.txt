@@ -28,11 +28,19 @@ country_event = {
 			owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
 		}
 		remove_country_modifier = missionary_activity
-		religion = mahayana
-		set_country_flag = mahayana_country
-		clr_country_flag = protestant_country
-		clr_country_flag = change_to_protestant
 		clr_country_flag = missionary_activity
+		QNG = {
+			clr_country_flag = protestant_country
+			clr_country_flag = change_to_protestant
+		}
+		CHI = {
+			clr_country_flag = protestant_country
+			clr_country_flag = change_to_protestant
+		}
+		TPG = {
+			set_country_flag = protestant_country
+			set_country_flag = change_to_protestant
+		}
 		MCK = { all_core = { add_core = CHI } }
 		XBI = { all_core = { add_core = CHI } }
 		XIN = { all_core = { add_core = CHI } }
