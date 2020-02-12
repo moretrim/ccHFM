@@ -19,12 +19,13 @@ Release history
 
 ### 0.2.0-dev (in development)
 
-The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it. This series comes with
-the following changes:
+The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it.
+This series comes with the following changes:
 
 #### Bugfixes
 
-- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28], pending [HFM/#164]).
+- Add a guard condition to the 'Establish the Karafuto Prefecture' decision ([#28], pending
+  [HFM/#164]).
 
   [#28]: https://github.com/moretrim/PFH/pull/28
   [HFM/#164]: https://github.com/SighPie/HFM/pull/164
@@ -39,9 +40,9 @@ the following changes:
   [#51]: https://github.com/moretrim/PFH/pull/51
   [HFM/#169]: https://github.com/SighPie/HFM/pull/169
 
-- Prevent the Papal States (aka Lazio aka the Roman Republic) from being outright annexed when Italy forms by event (“Il
-  Risorgimento”). They instead get a say into the matter, and can challenge Italy ([#19], [HPM/#3] + [HPM/93c5ca],
-  pending [HFM/#163]).
+- Prevent the Papal States (aka Lazio aka the Roman Republic) from being outright annexed when Italy
+  forms by event (“Il Risorgimento”). They instead get a say into the matter, and can challenge
+  Italy ([#19], [HPM/#3] + [HPM/93c5ca], pending [HFM/#163]).
 
   [#19]: https://github.com/moretrim/PFH/issues/19
   [HPM/#3]: https://github.com/arkhometha/Historical-Project-Mod/pull/3
@@ -55,15 +56,16 @@ the following changes:
   [4f0f02]: https://github.com/moretrim/PFH/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
 
-- Text fixes for the France minimod, German Namibia, and a couple other things ([906735], pending [HFM/#170]).
+- Text fixes for the France minimod, German Namibia, and a couple other things ([906735], pending
+  [HFM/#170]).
 
   [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
   [HFM/#170]: https://github.com/SighPie/HFM/pull/170
 
 ### 0.1.1
 
-The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series comes with the
-following changes:
+The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series
+comes with the following changes:
 
 [HFM 1.27I]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
 
@@ -94,7 +96,7 @@ following changes:
 
 - PR [HFM/#141]\:
 
-  > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to signify the crisis has
-  > occurred, otherwise the event will continuously spawn.
+  > At line 518 (ENG choice to not intervene) I've added `set_global_flag = anglo_persian_war` to
+  > signify the crisis has occurred, otherwise the event will continuously spawn.
 
   [HFM/#141]: https://github.com/SighPie/HFM/pull/141
