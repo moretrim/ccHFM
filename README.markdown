@@ -49,6 +49,12 @@ This series comes with the following changes:
   [HPM/93c5ca]: https://github.com/arkhometha/Historical-Project-Mod/commit/93c5ca17481d738a3dba84581be258b28343ffda
   [HFM/#163]: https://github.com/SighPie/HFM/pull/163
 
+- Preserve the state religion of the Heavenly Kingdom upon Westernisation ([#40], pending
+  [HFM/#172]).
+
+  [#40]: https://github.com/moretrim/PFH/issues/40
+  [HFM/#172]: https://github.com/SighPie/HFM/pull/172
+
 #### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
