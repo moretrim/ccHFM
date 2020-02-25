@@ -55,6 +55,11 @@ This series comes with the following changes:
   [#40]: https://github.com/moretrim/PFH/issues/40
   [HFM/#172]: https://github.com/SighPie/HFM/pull/172
 
+- Remove correct Basotho cores in Mfecane Matabele ([HFM/#171], [HPM/#131]).
+
+  [HFM/#171]: https://github.com/SighPie/HFM/pull/171
+  [HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
+
 #### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
