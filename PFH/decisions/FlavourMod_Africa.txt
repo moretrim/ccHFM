@@ -674,6 +674,7 @@ political_decisions = {
 					1980 = { empty = yes } #Congo
 				}
 				AND = {
+					invention = the_dark_continent
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 				}	
