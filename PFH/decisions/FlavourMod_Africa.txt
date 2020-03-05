@@ -658,9 +658,9 @@ political_decisions = {
 		allow = {
 			NOT = { any_greater_power = { war_with = THIS } }
 			NOT = { has_global_flag = congo_failed }
-			invention = colonial_negotiations
 			OR = {
 				AND = {
+					invention = colonial_negotiations
 					owns = 1972
 					1976 = { empty = yes } #Gabon
 				}
@@ -669,11 +669,13 @@ political_decisions = {
 						has_global_flag = called_congo_conference
 						1962 = { empty = no }
 					}
-					owns = 1977 
+					invention = colonial_negotiations
+					owns = 1977
 					1976 = { empty = no } #Gabon
 					1980 = { empty = yes } #Congo
 				}
 				AND = {
+					invention = the_dark_continent
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 				}	
@@ -703,11 +705,11 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 1977	
+						owns = 1977
 						1976 = { empty = no } #Gabon
 						1980 = { empty = yes } #Congo
 						invention = colonial_negotiations
-						OR = { 
+						OR = {
 							has_global_flag = called_congo_conference
 							1962 = { empty = no }
 						}
