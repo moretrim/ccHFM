@@ -17,12 +17,16 @@ A custom-tailored [HFM].
 Release history
 ---------------
 
-### 0.2.0-dev (in development)
+Releases are save compatible across patch releases for a given minor version. For instance 0.2.0,
+0.2.1, and 0.2.4 would all be save compatible with one another.
 
-The 0.2.x series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it.
-This series comes with the following changes:
+### 0.2
 
-#### Bugfixes
+The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it.
+
+#### 0.2.0-dev (in development)
+
+##### Bugfixes
 
 - Add a guard condition to the “Establish the Karafuto Prefecture“ decision ([#28], pending
   [HFM/#164]).
@@ -66,7 +70,7 @@ This series comes with the following changes:
   [#26]: https://github.com/moretrim/PFH/issues/26
   [HFM/#174]: https://github.com/SighPie/HFM/pull/174
 
-#### Tweaks
+##### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
 
@@ -79,14 +83,13 @@ This series comes with the following changes:
   [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
   [HFM/#170]: https://github.com/SighPie/HFM/pull/170
 
-### 0.1.1
+### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
 
-The 0.1.x series of releases is based on [HFM 1.27I] and is backward compatible with it. This series
-comes with the following changes:
+The 0.1 series of releases is based on [HFM 1.27I] and is backward compatible with it.
 
-[HFM 1.27I]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
+#### [0.1.1](https://github.com/moretrim/PFH/tree/v0.1.1)
 
-#### Tweaks
+##### Tweaks
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7], pending [HFM/#162]).
 
@@ -101,15 +104,15 @@ comes with the following changes:
   [#5]: https://github.com/moretrim/PFH/pull/5
   [#6]: https://github.com/moretrim/PFH/pull/6
 
-### 0.1.0
+#### [0.1.0](https://github.com/moretrim/PFH/tree/v0.1.0)
 
-#### Ported features
+##### Ported features
 
 - Make colonial railroading an option decision (PR [HFM/#157])
 
   [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
-#### Ported bugfixes
+##### Ported bugfixes
 
 - PR [HFM/#141]\:
 
@@ -117,3 +120,5 @@ comes with the following changes:
   > signify the crisis has occurred, otherwise the event will continuously spawn.
 
   [HFM/#141]: https://github.com/SighPie/HFM/pull/141
+
+[HFM 1.27I]: https://github.com/SighPie/HFM/tree/38ca75c40063e08cbf696140e0ea68d76e6ace9d
