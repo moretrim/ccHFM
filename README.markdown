@@ -60,6 +60,12 @@ This series comes with the following changes:
   [HFM/#171]: https://github.com/SighPie/HFM/pull/171
   [HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
 
+- Correct requirements of the “Occupation of the Congo Basin” decision, resolving ineffective use
+  ([#26], pending [HFM/#174]).
+
+  [#26]: https://github.com/moretrim/PFH/issues/26
+  [HFM/#174]: https://github.com/SighPie/HFM/pull/174
+
 #### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
