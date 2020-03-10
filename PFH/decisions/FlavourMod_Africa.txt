@@ -633,7 +633,6 @@ political_decisions = {
 			has_global_flag = berlin_conference
 			NOT = { has_global_flag = congo_failed }
 			is_greater_power = yes
-			exists = yes
 			OR = {
 				AND = {
 					owns = 1972
@@ -665,18 +664,19 @@ political_decisions = {
 					1976 = { empty = yes } #Gabon
 				}
 				AND = {
-					OR = { 
+					OR = {
 						has_global_flag = called_congo_conference
 						1962 = { empty = no }
 					}
-					owns = 1977 
+					owns = 1977
 					1976 = { empty = no } #Gabon
 					1980 = { empty = yes } #Congo
 				}
 				AND = {
+					invention = the_dark_continent
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
-				}	
+				}
 				AND = {
 					invention = the_dark_continent
 					owns = 1967
@@ -690,9 +690,8 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 1972 #Libreville
-						1974 = { empty = yes } #Gabon
-						invention = colonial_negotiations
+						owns = 1972
+						1976 = { empty = yes } #Gabon
 					}
 				}
 				1974 = { secede_province = THIS any_pop = { literacy = -0.99 } }
@@ -703,14 +702,13 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 1977	
-						1976 = { empty = no } #Gabon
-						1980 = { empty = yes } #Congo
-						invention = colonial_negotiations
-						OR = { 
+						OR = {
 							has_global_flag = called_congo_conference
 							1962 = { empty = no }
 						}
+						owns = 1977
+						1976 = { empty = no } #Gabon
+						1980 = { empty = yes } #Congo
 					}
 				}
 				1980 = { secede_province = THIS any_pop = { literacy = -0.99 } }
@@ -721,10 +719,9 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 1981	
-						1966 = { empty = yes } #Ubangi-Shari
-						1962 = { empty = no } #Cameroon
 						invention = the_dark_continent
+						owns = 1981
+						1966 = { empty = yes } #Ubangi-Shari
 					}
 				}
 				1965 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
@@ -740,9 +737,9 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 1967	
-						1819 = { empty = yes }
 						invention = the_dark_continent
+						owns = 1967
+						1819 = { empty = yes }
 					}
 				}
 				1818 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
