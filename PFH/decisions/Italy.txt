@@ -630,7 +630,7 @@ political_decisions = {
 						ai = no
 						mass_politics = 1
 						great_wars_enabled = yes
-						721 = { #Trient
+						721 = { #Aosta
 							owner = {
 								NOT = { is_culture_group = italian }
 								OR = {
@@ -674,7 +674,12 @@ political_decisions = {
 			invention = national_fraternity
 			is_greater_power = yes
 			OR = {
-				729 = { NOT = { is_core = ITA } } #Venice
+				AND = {
+					729 = { NOT = { is_core = ITA } } #Venice
+					owns = 727 #Lombardy
+					NOT = { has_global_flag = italian_claimed_venetia}
+				}
+				
 				AND = {
 					736 = { NOT = { is_core = ITA } } #Triest
 					734 = { NOT = { is_core = ITA } } #Trient
@@ -700,10 +705,12 @@ political_decisions = {
 							}
 						}
 					}
+					NOT = {has_global_flag = italian_claimed_south_tirol}
 				}
+				
 				AND = {
+					465 = { NOT = { is_core = ITA } } #Savoia
 					THIS = {
-						is_culture_group = italian
 						OR = {
 							NOT = { has_global_flag = plombieres }
 							has_global_flag = the_treaty_of_milan
@@ -719,18 +726,17 @@ political_decisions = {
 							truce_with = BOR
 						}	
 					}
-					465 = { NOT = { is_core = ITA } } #Savoia
 				}
+				
 				AND = {
+					721 = { NOT = { is_core = ITA } } #Aosta
 					THIS = {
-						is_culture_group = italian
 						has_global_flag = the_treaty_of_milan
 						NOT = { 
 							truce_with = FRA
 							truce_with = BOR
 						}	
 					}
-					721 = { NOT = { is_core = ITA } } #Aosta
 				}
 			}
 		}
@@ -773,7 +779,7 @@ political_decisions = {
 				}
 				734 = { add_core = ITA remove_core = TST }
 				736 = { add_core = ITA }
-				owner = { set_global_flag = italian_claimed_venetia 
+				owner = { set_global_flag = italian_claimed_south_tirol 
 				}
 			}
 			
@@ -801,6 +807,8 @@ political_decisions = {
 				465 = { add_core = ITA }
 				466 = { add_core = ITA }
 				472 = { add_core = ITA }
+				owner = { set_global_flag = italian_claimed_savoia 
+				}
 			}
 			
 			#Claim Aosta
@@ -816,6 +824,8 @@ political_decisions = {
 					}
 				}
 				721 = { add_core = ITA }
+				owner = { set_global_flag = italian_claimed_aosta 
+				}
 			}
 		}
 		
