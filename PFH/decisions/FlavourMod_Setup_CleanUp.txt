@@ -162,6 +162,11 @@ political_decisions = {
 					exists = yes
 				}
 			}
+			OR = {
+				involved_in_crisis = no
+				NOT = { has_global_flag = revolution_n_counter_researched }
+				has_global_flag = great_wars_enabled
+			}
 		}
 		
 		allow = { 
