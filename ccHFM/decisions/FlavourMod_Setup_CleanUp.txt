@@ -162,6 +162,19 @@ political_decisions = {
 					exists = yes
 				}
 			}
+			OR = {
+				NOT = { has_global_flag = revolution_n_counter_researched }
+				has_global_flag = great_wars_enabled
+				AND = {
+					has_global_flag = revolution_n_counter_researched
+					NOT = { has_global_flag = great_wars_enabled }
+					ENG = {
+						NOT = {
+							has_country_modifier = stop_spam_uk
+						}
+					}
+				}
+			}
 		}
 		
 		allow = { 
@@ -215,11 +228,17 @@ political_decisions = {
 		}
 		
 		effect = {
+			ENG = {
+				add_country_modifier = {
+					name = stop_spam_uk
+					duration = 30
+				}
+			}
 			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
 				   attacker_goal = {  casus_belli = call_allies_cb  }
 				   call_ally = yes
 			   }
-		}
+			}
 	}
 	
 	cleanup_morocco = {
