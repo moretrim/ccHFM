@@ -130,6 +130,24 @@ political_decisions = {
 					exists = yes
 				}
 			}
+			OR = {
+				NOT = {
+					# There's a critical time period...
+					AND = {
+						# ...after crises are unlocked...
+						has_global_flag = revolution_n_counter_researched
+
+						# ...but before Great Wars are enabled...
+						NOT = { has_global_flag = great_wars_enabled }
+					}
+
+					# ...where the UK might be involved in a crisis war---in which case no ally
+					# may join. This time period implies...
+				}
+
+				# ...that a call to arms may not be issued if one was already performed recently.
+				NOT = { has_country_modifier = cch.recent-call-to-arms }
+			}
 		}
 		
 		allow = { 
@@ -183,10 +201,16 @@ political_decisions = {
 		}
 		
 		effect = {
-			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
-				   attacker_goal = {  casus_belli = call_allies_cb  }
-				   call_ally = yes
-			   }
+			add_country_modifier = {
+				name = cch.recent-call-to-arms
+				duration = 30
+			}
+
+			# Audax Validator "." Ignore_NEXT
+			war = {
+				attacker_goal = { casus_belli = call_allies_cb }
+				call_ally = yes
+			}
 		}
 	}
 	

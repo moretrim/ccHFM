@@ -3303,3 +3303,8 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
+# CCH
+
+cch.recent-call-to-arms = {
+    icon = 15
+}
