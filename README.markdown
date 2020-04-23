@@ -20,6 +20,8 @@ Release history
 Releases are save compatible across patch releases for a given minor version. For instance 0.2.0,
 0.2.1, and 0.2.4 would all be save compatible with one another.
 
+[The history of editorial changes is collated separately.](./Editorial.markdown#history)
+
 ### 0.2
 
 The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it.
