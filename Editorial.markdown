@@ -22,6 +22,7 @@ History
 
 #### 0.2.0-dev (in development)
 
-- Fix copy/paste error in Russian names of Alaskan culture. ([HPM/#15])
+- Fix copy/paste error in Russian names of Alaskan culture. ([#23], [HPM/#15])
 
+  [#23]: https://github.com/moretrim/PFH/pull/23
   [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
