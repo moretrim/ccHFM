@@ -72,6 +72,11 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [#26]: https://github.com/moretrim/PFH/issues/26
   [HFM/#174]: https://github.com/SighPie/HFM/pull/174
 
+- Really release Ezo when choosing to play as them (pending [HFM/#176], [HPM/#161]).
+
+  [HFM/#176]: https://github.com/SighPie/HFM/pull/176
+  [HPM/#161]: https://github.com/arkhometha/Historical-Project-Mod/pull/161
+
 ##### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
