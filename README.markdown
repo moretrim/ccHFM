@@ -63,7 +63,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 - Remove correct Basotho cores in Mfecane Matabele ([HFM/#171], [HPM/#131]).
 
-  [HFM/#171]: https://github.com/SighPie/HFM/pull/171
+  [HFM/#171]: https://github.com/SighPie/HFM/issues/171
   [HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
 
 - Correct requirements of the “Occupation of the Congo Basin” decision, resolving ineffective use
