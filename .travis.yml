@@ -71,7 +71,7 @@ matrix:
             set -Eeuo pipefail
 
             # compute difference
-            readarray -d "" commit_files < <(git diff-tree --no-commit-id --name-only -z --diff-filter=AM -r HEAD^ -- PFH/)
+            readarray -d "" commit_files < <(git diff-tree --no-commit-id --name-only -z --diff-filter=AM -r HEAD -- PFH/)
             if (( "${#commit_files[@]}" == 0 )) ; then
               echo "No mod files to test."
               exit
