@@ -1,0 +1,6 @@
+### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+### Casus Belli ###;;;;;;;;;;;;;;
+restore_democracy;Restore Democracy;;;;;;;;;;;;;
+restore_democracy_desc;Reinstate a §Yfriendly democracy§W in the country’s capital to prevent a “Domino Effect” and strangle the red threat in its cradle.;;;;;;;;;;;;;
+restore_democracy_short;Reinstate a friendly democracy in $RECIPIENT$;;;;;;;;;;;;;
+restore_democracy_setup;Reinstate a friendly democracy in $RECIPIENT$;;;;;;;;;;;;;

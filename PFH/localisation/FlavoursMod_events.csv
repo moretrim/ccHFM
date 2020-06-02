@@ -120,9 +120,6 @@ EVT99952OPTA;The Northern Seas Fleet will be grand!;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME99953;Beiyang Fleet Ships Completed!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99953;The ships of the Beiyang Fleet have been completed and delivered to our Navy, this is a glorious day for the Qing Empire!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVT99953OPTA;May they serve us well in battle.;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTNAME99956;$FROMCOUNTRY$ Has Declared War!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC99956;$FROMCOUNTRY$ has declared war in an attempt to restore the deposed Republician government. This will be a fight to the death for our socialist revolution!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT99956OPTA;Defend the Revolution!;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME99957;The End of Splendid Isolation;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99957;The balance of power in Europe has been upset, remaining isolationalist will no longer beneficial to Great Britain and her empire. We must quickly search for an alliance with other great powers and restore the balance of power in the continent.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVT99957OPTA;Pax Britannica is over..?;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -183,25 +183,3 @@ country_event = {
 		ai_chance = { factor = 0.95 }
 	}
 }
-
-#Restore Democracy
-country_event = {
-	id = 99956
-	title = "EVTNAME99956"
-	desc = "EVTDESC99956"
-	picture = "statue_of_liberty"
-	is_triggered_only = yes
-
-	option = {
-		name = "EVT99956OPTA"
-		prestige = 10
-		FROM = {
-			war = {
-				target = THIS
-				attacker_goal = { casus_belli = install_democracy }
-				defender_goal = { casus_belli = make_puppet }
-				call_ally = yes
-			}
-		}
-	}
-}

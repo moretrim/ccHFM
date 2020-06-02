@@ -28,6 +28,25 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 #### 0.2.0-dev (in development)
 
+##### Changes
+
+- **(Experimental)** Turn the “Restore Democracy in South America” decision into a casus belli. As a
+  decision, it had several flaws:
+
+  - It had a hidden infamy cost.
+  - Its requirement were not strict enough, leading to unintended wars e.g. against a communist
+    European power with land in South America.
+  - Even if the above were taken care of, a decision cannot accurately check that all conditions for
+    a valid war are met. This is generally the case for all decisions or events that start wars, but
+    is more prominent for a decision that is not a one-shot button.
+  - The communist defender of the war received a free “Make Puppet” counter-CB. This lead to all
+    kinds of oddities.
+
+  The intent behind the decision is better reflected as a proper casus belli. This change is still
+  labelled as experimental because it does get rid of the counter-CB of the original approach
+  altogether. As a result communist governements in South America are in perpetual danger from their
+  democratic neighbours.
+
 ##### Bugfixes
 
 - Add a guard condition to the “Establish the Karafuto Prefecture“ decision ([#28], pending
@@ -35,11 +54,6 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [#28]: https://github.com/moretrim/PFH/pull/28
   [HFM/#164]: https://github.com/SighPie/HFM/pull/164
-
-- Restrict “Restore Democracy in South America“ decision ([#42], pending [HFM/#168]).
-
-  [#42]: https://github.com/moretrim/PFH/pull/42
-  [HFM/#168]: https://github.com/SighPie/HFM/pull/168
 
 - Leave Ryukyu independent during Meiji Restoration ([#51], pending [HFM/#169]).
 
