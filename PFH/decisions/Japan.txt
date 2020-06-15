@@ -638,21 +638,26 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	annex_korea = {
 		potential = {
 			OR = {
 				tag = JAP
 				tag = TKG
 			}
-			has_country_modifier = fukoku_kyohei
-			is_greater_power = yes
-			NOT = { has_country_flag = annexed_korea }
 			exists = KOR
+			OR = {
+				has_country_modifier = fukoku_kyohei
+				any_owned_province = { is_core = KOR }
+			}
+			OR = {
+				NOT = { has_country_flag = annexed_korea }
+				ai = yes
+			}
 		}
-		
+
 		allow = {
-			NOT = { war_with = KOR	}
+			war = no
 			NOT = { truce_with = KOR }
 			OR = {
 				AND = {
@@ -673,7 +678,7 @@ political_decisions = {
 				owns = 1619
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = annexed_korea
 			badboy = 5
@@ -685,52 +690,34 @@ political_decisions = {
 				leave_alliance = THIS
 				relation = { who = THIS value = -100 }
 			}
-			random_country = {
-				limit = {
-					tag = KOR
-					ai = yes
-					civilized = no
-				}
-				annex_to = THIS
-			}
 			
 			random_country = {
 				limit = {
 					tag = KOR
 					ai = yes
-					civilized = yes
 				}
 				civilized = no
 				annex_to = THIS
-			}
-			
-			random_country = {
-				limit = {
-					tag = KOR
-					exists = no
-				}
 				civilized = yes
 			}
 			
-			random_country = {
+			random_owned = {
 				limit = {
-					tag = KOR
-					ai = no
+					KOR = { ai = no }
 				}
-				casus_belli = {
-					target = THIS
-					type = become_independent
-					months = 12
-				}
-				war = {
-					target = THIS
-					attacker_goal = {
-						casus_belli = become_independent
+				
+				owner = {
+					release_vassal = KOR
+					leave_alliance = KOR
+					war = {
+						target = KOR
+						attacker_goal = { casus_belli = conquest_any }
+						defender_goal = { casus_belli = become_independent }
 					}
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -739,7 +726,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	claim_korea = {
 		picture = annex_korea
 		potential = {

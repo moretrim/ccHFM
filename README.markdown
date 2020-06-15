@@ -91,6 +91,14 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#176]: https://github.com/SighPie/HFM/pull/176
   [HPM/#161]: https://github.com/arkhometha/Historical-Project-Mod/pull/161
 
+- Fixes to the “Annex Korea” decision, aiming to resolve the following two situations (pending
+  [HFM/#177], [HPM/#189]):
+  * late game liberation crises that would fizzle when going to war over Korea
+  * Japanese conquest of Korea against the player
+
+  [HFM/#177]: https://github.com/SighPie/HFM/pull/177
+  [HPM/#189]: https://github.com/arkhometha/Historical-Project-Mod/pull/189
+
 ##### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
