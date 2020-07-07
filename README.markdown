@@ -99,6 +99,11 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#177]: https://github.com/SighPie/HFM/pull/177
   [HPM/#189]: https://github.com/arkhometha/Historical-Project-Mod/pull/189
 
+- Improve the Boer War call to arms to be infamy neutral (it was deducting 3 extra), and make it AI
+  only. The player now gets notified of the new alliance. (pending [HFM/#179])
+
+  [HFM/#179]: https://github.com/SighPie/HFM/pull/179
+
 ##### Tweaks
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
