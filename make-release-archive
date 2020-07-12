@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+project=PFH
+
+function bail {
+    echo >&2 "$0: $@"
+    exit 1
+}
+
+function usage {
+    echo >&2 "\
+Usage: $0 tag
+Creates a project archive ready for release.
+  • tag looks like e.g. “1.0” or “1.0-prerelease”
+  • a tag that contains ‘prerelease’ will result in a final filename with semver-style build metadata information"
+  exit 1
+}
+
+if [[ $# -lt 1 || "$1" == --help ]]; then
+    usage
+fi
+
+tag="$1"
+
+mkdir -p releases || bail "could not figure out ‘releases’ output directory."
+
+if [[ ! -d "$project" ]]; then
+    bail "could not understand project structure: ‘$project’ not found."
+fi
+
+modfile="${project//-/_}".mod
+if [[ ! -r "$modfile" ]]; then
+    bail "could not find mod file ‘$modfile’"
+fi
+
+if [[ "$tag" =~ prerelease ]]; then
+    semver="$tag.$(date +'%G%m%d')"
+else
+    semver="$tag"
+fi
+
+output="releases/$project-$semver.zip"
+
+zip -r --filesync "$output" "$project" "$modfile" || bail "could not prepare archive"
