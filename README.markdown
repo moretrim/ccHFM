@@ -100,9 +100,15 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HPM/#189]: https://github.com/arkhometha/Historical-Project-Mod/pull/189
 
 - Improve the Boer War call to arms to be infamy neutral (it was deducting 3 extra), and make it AI
-  only. The player now gets notified of the new alliance. (pending [HFM/#179])
+  only. The player now gets notified of the new alliance (pending [HFM/#179]).
 
   [HFM/#179]: https://github.com/SighPie/HFM/pull/179
+
+##### Ported bugfixes
+
+- Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).
+
+  [HFM/#175]: https://github.com/SighPie/HFM/pull/175
 
 ##### Tweaks
 
