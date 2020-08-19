@@ -13,18 +13,22 @@ before_install:
     docker build -t ci-image - <<EOF
       FROM jjmerelo/alpine-raku
 
+      USER root
       RUN ["apk", "add", "--no-cache", "bash"]
 
-      # Install vic2-companion & optional dependency
-      RUN curl --output vic2-companion.zip -L 'https://github.com/moretrim/pds-companion/archive/0.2.0-alpha+20191122.zip' \
-          && unzip vic2-companion.zip                                                                                      \
-          && zef install --/test Terminal::ANSIColor                                                                       \
-          && cd pds-companion-*                                                                                            \
+      # Install pds-companion & optional dependency
+      RUN curl --output pds-companion.zip -L 'https://github.com/moretrim/pds-companion/archive/0.2.0-alpha+20200612.zip' \
+          && unzip pds-companion.zip                                                                                      \
+          && zef install --/test Terminal::ANSIColor                                                                      \
+          && cd pds-companion-*                                                                                           \
           && zef install --/test .
 
-      RUN mkdir /ci-root
-      VOLUME /ci-root
-      WORKDIR /ci-root
+      RUN addgroup -S ci-runner && adduser -S ci-runner -G ci-runner
+      RUN mkdir /build && chown ci-runner: /build
+      VOLUME /build
+
+      USER ci-runner
+      WORKDIR /build
 
       # skip here-document terminator due to Travis silliness; produces a warning
   - docker images
@@ -35,11 +39,11 @@ matrix:
       if: type = pull_request
       name: "Merge Check"
       script: |
-        docker run -t                           \
-          --name container-env                  \
-          --env TRAVIS_COMMIT_RANGE             \
-          --volume "$TRAVIS_BUILD_DIR":/ci-root \
-          --entrypoint bash                     \
+        docker run -t                         \
+          --name container-env                \
+          --env TRAVIS_COMMIT_RANGE           \
+          --volume "$TRAVIS_BUILD_DIR":/build \
+          --entrypoint bash                   \
           ci-image -c '
             # fail on first error
             set -Eeuo pipefail
@@ -62,10 +66,10 @@ matrix:
       if: type = push
       name: "Commit Check"
       script: |
-        docker run -t                           \
-          --name container-env                  \
-          --volume "$TRAVIS_BUILD_DIR":/ci-root \
-          --entrypoint bash                     \
+        docker run -t                         \
+          --name container-env                \
+          --volume "$TRAVIS_BUILD_DIR":/build \
+          --entrypoint bash                   \
           ci-image -c '
             # fail on first error
             set -Eeuo pipefail
@@ -88,10 +92,10 @@ matrix:
       if: type = push
       name: "Branch Check"
       script: |
-        docker run -t                           \
-          --name container-env                  \
-          --volume "$TRAVIS_BUILD_DIR":/ci-root \
-          --entrypoint bash                     \
+        docker run -t                         \
+          --name container-env                \
+          --volume "$TRAVIS_BUILD_DIR":/build \
+          --entrypoint bash                   \
           ci-image -c '
             # fail on first error
             set -Eeuo pipefail
