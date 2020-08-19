@@ -931,7 +931,7 @@ country_event = {
 		any_pop = { militancy = 4 }
 		random_owned = {
 			limit = {
-				owner = { NOT = { has_global_flag = malaya_formed } }
+				owner = { NOT = { has_global_flag = malaya_formed } tag = JOH }
 			}
 			owner = {
 				1389 = { secede_province = FROM remove_core = THIS }
@@ -939,6 +939,19 @@ country_event = {
 				1391 = { secede_province = FROM remove_core = THIS }
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
+			}
+		}
+		
+		random_owned = {
+			limit = {
+				owner = { NOT = { has_global_flag = malaya_formed } NOT = { tag = JOH }}
+			}
+			owner = {
+				1389 = { secede_province = FROM remove_core = THIS add_core = PRK remove_core = JOH }
+				1388 = { remove_core = THIS add_core = FROM remove_core = PRK }
+				1391 = { secede_province = FROM remove_core = THIS add_core = PHG remove_core = JOH }
+				1390 = { remove_core = THIS add_core = FROM }
+				2575 = { remove_core = THIS add_core = FROM }
 			}
 		}
 		
