@@ -1,5 +1,4 @@
 ---
-title: General materials section
 bibliography: bibliography.yaml
 citation-style: styles/chicago-fullnote-bibliography.csl
 link-citations: true
