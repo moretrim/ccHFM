@@ -105,7 +105,9 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#179]: https://github.com/SighPie/HFM/pull/179
 
 - Prevent follow-up event to “The Mysterious Lands of Guatemala” archaeological chain from granting
-  prestige to non-existing countries.
+  prestige to non-existing countries ([8c3aa2]).
+
+  [8c3aa2]: https://github.com/moretrim/PFH/commit/8c3aa2bed5bebfb7369cc7c5f7836304edf79a85
 
 ##### Ported bugfixes
 
@@ -125,10 +127,11 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   * France minimod, German Namibia, and a couple other things: restore mangled text ([906735],
     pending [HFM/#170]).
   * Gott Mit Uns: restore missing text in follow-up event to “The Mysterious Lands of Guatemala”
-    archaeological chain.
+    archaeological chain ([fb131a]).
 
   [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
   [HFM/#170]: https://github.com/SighPie/HFM/pull/170
+  [fb131a]: https://github.com/moretrim/PFH/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
 
 ### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
 
