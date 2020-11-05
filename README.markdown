@@ -17,10 +17,12 @@ A custom-tailored [HFM].
 Release history
 ---------------
 
+[The history of editorial changes is collated separately.][editorial]
+
+[editorial]: Editorial.markdown
+
 Releases are save compatible across patch releases for a given minor version. For instance 0.2.0,
 0.2.1, and 0.2.4 would all be save compatible with one another.
-
-[The history of editorial changes is collated separately.](./Editorial.markdown)
 
 * [0.2](#02)
 * [0.1](#01)
@@ -124,6 +126,10 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [4f0f02]: https://github.com/moretrim/PFH/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
+
+##### Other
+
+- 3 [editorial][] changes.
 
 ### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
 
