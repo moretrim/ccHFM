@@ -20,7 +20,10 @@ Release history
 Releases are save compatible across patch releases for a given minor version. For instance 0.2.0,
 0.2.1, and 0.2.4 would all be save compatible with one another.
 
-[The history of editorial changes is collated separately.](./Editorial.markdown#history)
+[The history of editorial changes is collated separately.](./Editorial.markdown)
+
+* [0.2](#02)
+* [0.1](#01)
 
 ### 0.2
 
@@ -121,17 +124,6 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [4f0f02]: https://github.com/moretrim/PFH/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
-
-- Text fixes:
-
-  * France minimod, German Namibia, and a couple other things: restore mangled text ([906735],
-    pending [HFM/#170]).
-  * Gott Mit Uns: restore missing text in follow-up event to “The Mysterious Lands of Guatemala”
-    archaeological chain ([fb131a]).
-
-  [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
-  [HFM/#170]: https://github.com/SighPie/HFM/pull/170
-  [fb131a]: https://github.com/moretrim/PFH/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
 
 ### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
 

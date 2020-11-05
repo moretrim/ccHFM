@@ -1,28 +1,24 @@
-Editorial Changes
-=================
+History of editorial changes
+============================
 
-Policy
-------
+* [0.2](#02)
 
-Editorial changes are submitted upstream to [HPM] whenever applicable.
+## 0.2
 
-Since they can often clash with other kinds of PRs, and since the development of [HFM] is presently
-on indefinite hiatus we however do not submit purely editorial changes there. We do track these
-changes in the [editorial-changes] branch of this repo. This makes it easy to roll out patches as
-required, or even submit PRs should development resume.
-
-[HPM]: https://github.com/arkhometha/Historical-Project-Mod
-[HFM]: https://github.com/SighPie/HFM
-[editorial-changes]: https://github.com/moretrim/PFH/tree/editorial-changes
-
-History
--------
-
-### 0.2
-
-#### 0.2.0-dev (in development)
+### 0.2.0-dev (in development)
 
 - Fix copy/paste error in Russian names of Alaskan culture. ([#23], [HPM/#15])
 
   [#23]: https://github.com/moretrim/PFH/pull/23
   [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
+
+- France minimod, German Namibia, and a couple other things: restore mangled text ([906735], pending
+  [HFM/#170]).
+
+  [906735]: https://github.com/moretrim/PFH/commit/9067354d70610e4f12644ef68f479ac109827172
+  [HFM/#170]: https://github.com/SighPie/HFM/pull/170
+
+- Gott Mit Uns: restore missing text in follow-up event to “The Mysterious Lands of Guatemala”
+  archaeological chain ([fb131a]).
+
+  [fb131a]: https://github.com/moretrim/PFH/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
