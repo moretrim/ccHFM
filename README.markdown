@@ -104,6 +104,9 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [HFM/#179]: https://github.com/SighPie/HFM/pull/179
 
+- Prevent follow-up event to “The Mysterious Lands of Guatemala” archaeological chain from granting
+  prestige to non-existing countries.
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).

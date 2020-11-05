@@ -62,6 +62,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
+				exists = yes
 				is_secondary_power = yes
 				NOT = { tag = THIS }
 			}
