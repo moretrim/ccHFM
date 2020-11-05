@@ -22,3 +22,5 @@ History of editorial changes
   archaeological chain ([fb131a]).
 
   [fb131a]: https://github.com/moretrim/PFH/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
+
+- Restore missing description of Gendarmerie invention.

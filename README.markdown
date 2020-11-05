@@ -129,7 +129,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 ##### Other
 
-- 3 [editorial][] changes.
+- 4 [editorial][] changes.
 
 ### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
 
