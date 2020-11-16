@@ -1,7 +1,8 @@
+# frequent civil wars in Argentina - these are treated as civil wars but liberal rebellions are treated elsewhere - this is placed here because the code structure is similar
 country_event = {
-    id = 250000
-    title = "EVTNAME250000" # frequent civil wars in Argentina - these are treated as civil wars but liberal rebellions are treated elsewhere - this is placed here because the code structure is similar
-    desc = "EVTDESC250000"
+    id      = 250000
+    title   = "EVTNAME250000"
+    desc    = "EVTDESC250000"
     picture = "Rosas"
 
     trigger = {
@@ -55,10 +56,11 @@ country_event = {
     }
 }
 
+# rbx note - Response from Brazil if supporting Entre Rios
 country_event = {
-    id = 250010
-    title = "EVTNAME250010" # rbx note - Response from Brazil if supporting Entre Rios
-    desc = "EVTDESC250010"
+    id      = 250010
+    title   = "EVTNAME250010"
+    desc    = "EVTDESC250010"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -106,10 +108,11 @@ country_event = {
     }
 }
 
+# rbx note - Response from Uruguay if supporting Entre Rios
 country_event = {
-    id = 250011
-    title = "EVTNAME250011" # rbx note - Response from Uruguay if supporting Entre Rios
-    desc = "EVTDESC250011"
+    id      = 250011
+    title   = "EVTNAME250011"
+    desc    = "EVTDESC250011"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -160,10 +163,11 @@ country_event = {
     }
 }
 
+# rbx note - Response from Corrientes if supporting Entre Rios
 country_event = {
-    id = 250012
-    title = "EVTNAME250012" # rbx note - Response from Corrientes if supporting Entre Rios
-    desc = "EVTDESC250012"
+    id      = 250012
+    title   = "EVTNAME250012"
+    desc    = "EVTDESC250012"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -214,10 +218,11 @@ country_event = {
     }
 }
 
+# SBA secedes-this should occur in opposition to federalist power such as Entre Rios winning its war-otherwise they possibly would have waited until Rosas died
 country_event = {
-    id = 250020
-    title = "EVTNAME250020" # SBA secedes-this should occur in opposition to federalist power such as Entre Rios winning its war-otherwise they possibly would have waited until Rosas died
-    desc = "EVTDESC250020"
+    id      = 250020
+    title   = "EVTNAME250020"
+    desc    = "EVTDESC250020"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
@@ -414,10 +419,11 @@ country_event = {
     }
 }
 
+# rbx note - Ask CRT to join ARC after ARC wins the war - AI will accept
 country_event = {
-    id = 250030
-    title = "EVTNAME250030" # rbx note - Ask CRT to join ARC after ARC wins the war - AI will accept
-    desc = "EVTDESC250030"
+    id    = 250030
+    title = "EVTNAME250030"
+    desc  = "EVTDESC250030"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -453,10 +459,11 @@ country_event = {
     }
 }
 
+# rbx note - Ask CRT to join ARC after ENT wins the war - AI will accept
 country_event = {
-    id = 250040
-    title = "EVTNAME250040" # rbx note - Ask CRT to join ARC after ENT wins the war - AI will accept
-    desc = "EVTDESC250040"
+    id    = 250040
+    title = "EVTNAME250040"
+    desc  = "EVTDESC250040"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -489,10 +496,11 @@ country_event = {
     }
 }
 
+# rbx note - Corrientes responds to request to join ARC after Platine War
 country_event = {
-    id = 250041
-    title = "EVTNAME250041" # rbx note - Corrientes responds to request to join ARC after Platine War
-    desc = "EVTDESC250041"
+    id    = 250041
+    title = "EVTNAME250041"
+    desc  = "EVTDESC250041"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -522,10 +530,11 @@ country_event = {
     }
 }
 
+# rbx note - CRT agrees to join
 country_event = {
-    id = 250042
-    title = "EVTNAME250042" # rbx note - CRT agrees to join
-    desc = "EVTDESC250042"
+    id    = 250042
+    title = "EVTNAME250042"
+    desc  = "EVTDESC250042"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -547,10 +556,11 @@ country_event = {
     }
 }
 
+# rbx note - CRT refuses to join
 country_event = {
-    id = 250043
-    title = "EVTNAME250043" # rbx note - CRT refuses to join
-    desc = "EVTDESC250043"
+    id    = 250043
+    title = "EVTNAME250043"
+    desc  = "EVTDESC250043"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -598,10 +608,11 @@ country_event = {
     }
 }
 
+# rbx note - Corrientes responds to request to join ARC after ARC wins Platine War
 country_event = {
-    id = 250045
-    title = "EVTNAME250041" # rbx note - Corrientes responds to request to join ARC after ARC wins Platine War
-    desc = "EVTDESC250041"
+    id    = 250045
+    title = "EVTNAME250041"
+    desc  = "EVTDESC250041"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -631,10 +642,11 @@ country_event = {
     }
 }
 
+# rbx note - CRT agrees to join
 country_event = {
-    id = 250046
-    title = "EVTNAME250042" # rbx note - CRT agrees to join
-    desc = "EVTDESC250042"
+    id    = 250046
+    title = "EVTNAME250042"
+    desc  = "EVTDESC250042"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -656,10 +668,11 @@ country_event = {
     }
 }
 
+# rbx note-because game wants to end when inheriting ENT
 country_event = {
-    id = 250050
-    title = "EVTNAME250050" # rbx note-because game wants to end when inheriting ENT
-    desc = "EVTDESC250050"
+    id    = 250050
+    title = "EVTNAME250050"
+    desc  = "EVTDESC250050"
 
     fire_only_once = 1
     is_triggered_only = yes
@@ -678,10 +691,11 @@ country_event = {
     }
 }
 
+# Negotiation between SBA and the Confederation
 country_event = {
-    id = 250060
-    title = "EVTNAME250060" # Negotiation between SBA and the Confederation
-    desc = "EVTDESC250060"
+    id      = 250060
+    title   = "EVTNAME250060"
+    desc    = "EVTDESC250060"
     picture = "san_nicolas"
 
     fire_only_once = yes
@@ -815,10 +829,11 @@ country_event = {
     }
 }
 
+# The Argentine Civil War
 country_event = {
-    id = 250061
-    title = "EVTNAME250061" # The Argentine Civil War
-    desc = "EVTDESC250061"
+    id      = 250061
+    title   = "EVTNAME250061"
+    desc    = "EVTDESC250061"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
@@ -829,10 +844,11 @@ country_event = {
     }
 }
 
+# Buenos Aires stands down
 country_event = {
-    id = 250062
-    title = "EVTNAME250062" # Buenos Aires stands down
-    desc = "EVTDESC250062"
+    id    = 250062
+    title = "EVTNAME250062"
+    desc  = "EVTDESC250062"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -842,10 +858,11 @@ country_event = {
     }
 }
 
+# Negotiation between SBA and Entre Rios-dominated Confederation or of any platine overlord of ARC
 country_event = {
-    id = 250070
-    title = "EVTNAME250070" # Negotiation between SBA and Entre Rios-dominated Confederation or of any platine overlord of ARC
-    desc = "EVTDESC250070"
+    id      = 250070
+    title   = "EVTNAME250070"
+    desc    = "EVTDESC250070"
     picture = "san_nicolas"
 
     fire_only_once = yes
@@ -973,10 +990,11 @@ country_event = {
     }
 }
 
+# The Argentine Civil War - This seems to be a leftover from an attempt to make a duplicate event for overlords of ARC
 country_event = {
-    id = 250071
-    title = "EVTNAME250071" # The Argentine Civil War - This seems to be a leftover from an attempt to make a duplicate event for overlords of ARC
-    desc = "EVTDESC250071"
+    id      = 250071
+    title   = "EVTNAME250071"
+    desc    = "EVTDESC250071"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
@@ -987,10 +1005,11 @@ country_event = {
     }
 }
 
+#this retools the SBA release event text to notify an overlord of ARC that SBA has released
 country_event = {
-    id = 250072
-    title = "EVTNAME250072" #this retools the SBA release event text to notify an overlord of ARC that SBA has released
-    desc = "EVTDESC250072"
+    id      = 250072
+    title   = "EVTNAME250072"
+    desc    = "EVTDESC250072"
     picture = "mitre_urquiza"
 
     is_triggered_only = yes
@@ -1001,10 +1020,11 @@ country_event = {
     }
 }
 
+#ENT overlord defeats SBA
 country_event = {
-    id = 250080
-    title = "EVTNAME250080" #ENT overlord defeats SBA
-    desc = "EVTDESC250080"
+    id      = 250080
+    title   = "EVTNAME250080"
+    desc    = "EVTDESC250080"
     picture = "battle_pavon"
 
     fire_only_once = yes
@@ -1119,10 +1139,11 @@ country_event = {
     }
 }
 
+#CRT overlord defeats SBA - this recycles localisation from 250080
 country_event = {
-    id = 250081
-    title = "EVTNAME250080" #CRT overlord defeats SBA - this recycles localisation from 250080
-    desc = "EVTDESC250080"
+    id      = 250081
+    title   = "EVTNAME250080"
+    desc    = "EVTDESC250080"
     picture = "battle_pavon"
 
     fire_only_once = yes
@@ -1236,10 +1257,11 @@ country_event = {
     }
 }
 
+# Corrientes has an option to join Argentina without a war
 country_event = {
-    id = 250090
-    title = "EVTNAME250090" # Corrientes has an option to join Argentina without a war
-    desc = "EVTDESC250090"
+    id    = 250090
+    title = "EVTNAME250090"
+    desc  = "EVTDESC250090"
 
     fire_only_once = yes
 
@@ -1348,10 +1370,11 @@ country_event = {
     }
 }
 
+# Corrientes has asked to join Argentina
 country_event = {
-    id = 250091
-    title = "EVTNAME250091" # Corrientes has asked to join Argentina
-    desc = "EVTDESC250091"
+    id    = 250091
+    title = "EVTNAME250091"
+    desc  = "EVTDESC250091"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1379,10 +1402,11 @@ country_event = {
     }
 }
 
+# Argentina says yes to Corrientes
 country_event = {
-    id = 250092
-    title = "EVTNAME250092" # Argentina says yes to Corrientes
-    desc = "EVTDESC250092"
+    id    = 250092
+    title = "EVTNAME250092"
+    desc  = "EVTDESC250092"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1397,10 +1421,11 @@ country_event = {
     }
 }
 
+# Argentina absorbs Corrientes
 country_event = {
-    id = 250093
-    title = "EVTNAME250093" # Argentina absorbs Corrientes
-    desc = "EVTDESC250093"
+    id    = 250093
+    title = "EVTNAME250093"
+    desc  = "EVTDESC250093"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -1414,10 +1439,11 @@ country_event = {
     }
 }
 
+# Argentina says no to Corrientes
 country_event = {
-    id = 250094
-    title = "EVTNAME250094" # Argentina says no to Corrientes
-    desc = "EVTDESC250094"
+    id    = 250094
+    title = "EVTNAME250094"
+    desc  = "EVTDESC250094"
 
     fire_only_once = yes
 
@@ -1433,10 +1459,11 @@ country_event = {
     }
 }
 
+# Entre Rios has an option to join Argentina without a war just in case things are wacky
 country_event = {
-    id = 250100
-    title = "EVTNAME250100" # Entre Rios has an option to join Argentina without a war just in case things are wacky
-    desc = "EVTDESC250100"
+    id    = 250100
+    title = "EVTNAME250100"
+    desc  = "EVTDESC250100"
 
     fire_only_once = yes
 
@@ -1545,10 +1572,11 @@ country_event = {
     }
 }
 
+# Entre Rios has asked to join Argentina
 country_event = {
-    id = 250101
-    title = "EVTNAME250101" # Entre Rios has asked to join Argentina
-    desc = "EVTDESC250101"
+    id    = 250101
+    title = "EVTNAME250101"
+    desc  = "EVTDESC250101"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1576,10 +1604,11 @@ country_event = {
     }
 }
 
+# Argentina says yes to Entre Rios
 country_event = {
-    id = 250102
-    title = "EVTNAME250102" # Argentina says yes to Entre Rios
-    desc = "EVTDESC250102"
+    id    = 250102
+    title = "EVTNAME250102"
+    desc  = "EVTDESC250102"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1594,10 +1623,11 @@ country_event = {
     }
 }
 
+# Argentina absorbs Entre Rios
 country_event = {
-    id = 250103
-    title = "EVTNAME250103" # Argentina absorbs Entre Rios
-    desc = "EVTDESC250103"
+    id    = 250103
+    title = "EVTNAME250103"
+    desc  = "EVTDESC250103"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -1611,10 +1641,11 @@ country_event = {
     }
 }
 
+# Argentina does not absorb Entre Rios
 country_event = {
-    id = 250104
-    title = "EVTNAME250104" # Argentina does not absorb Entre Rios
-    desc = "EVTDESC250104"
+    id    = 250104
+    title = "EVTNAME250104"
+    desc  = "EVTDESC250104"
 
     fire_only_once = yes
 
@@ -1630,10 +1661,11 @@ country_event = {
     }
 }
 
+# Warning to the Confederation
 country_event = {
-    id = 250110
-    title = "EVTNAME250110" # Warning to the Confederation
-    desc = "EVTDESC250110"
+    id      = 250110
+    title   = "EVTNAME250110"
+    desc    = "EVTDESC250110"
     picture = "rosas"
 
 
@@ -1698,10 +1730,11 @@ country_event = {
     }
 }
 
+# The Confederation submits
 country_event = {
-    id = 250120
-    title = "EVTNAME250120" # The Confederation submits
-    desc = "EVTDESC250120"
+    id      = 250120
+    title   = "EVTNAME250120"
+    desc    = "EVTDESC250120"
     picture = "battle_pavon"
 
     is_triggered_only = yes
@@ -1712,10 +1745,11 @@ country_event = {
     }
 }
 
+# Player Argentine Confederation to join declared ARG
 country_event = {
-    id = 250130
-    title = "EVTNAME250130" # Player Argentine Confederation to join declared ARG
-    desc = "EVTDESC250130"
+    id    = 250130
+    title = "EVTNAME250130"
+    desc  = "EVTDESC250130"
 
     fire_only_once = yes
 
@@ -1820,10 +1854,11 @@ country_event = {
     }
 }
 
+# Argentine Confederation acknowledges creation of Argentina
 country_event = {
-    id = 250131
-    title = "EVTNAME250131" # Argentine Confederation acknowledges creation of Argentina
-    desc = "EVTDESC250131"
+    id    = 250131
+    title = "EVTNAME250131"
+    desc  = "EVTDESC250131"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1855,10 +1890,11 @@ country_event = {
     }
 }
 
+# ARC can join Argentina
 country_event = {
-    id = 250132
-    title = "EVTNAME250132" # ARC can join Argentina
-    desc = "EVTDESC250132"
+    id    = 250132
+    title = "EVTNAME250132"
+    desc  = "EVTDESC250132"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1877,10 +1913,11 @@ country_event = {
     }
 }
 
+# ARC cannot join Argentina
 country_event = {
-    id = 250133
-    title = "EVTNAME250133" # ARC cannot join Argentina
-    desc = "EVTDESC250133"
+    id    = 250133
+    title = "EVTNAME250133"
+    desc  = "EVTDESC250133"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1894,10 +1931,11 @@ country_event = {
     }
 }
 
+# Argentina absorbs the Confederation
 country_event = {
-    id = 250134
-    title = "EVTNAME250134" # Argentina absorbs the Confederation
-    desc = "EVTDESC250134"
+    id    = 250134
+    title = "EVTNAME250134"
+    desc  = "EVTDESC250134"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -1915,10 +1953,11 @@ country_event = {
     }
 }
 
+# The Argentine Centennial
 country_event = {
-    id = 250140
-    title = "EVTNAME250140" # The Argentine Centennial
-    desc = "EVTDESC250140"
+    id      = 250140
+    title   = "EVTNAME250140"
+    desc    = "EVTDESC250140"
     picture = "argentine_centennial"
 
     trigger = {
@@ -2005,10 +2044,11 @@ country_event = {
     }
 }
 
+# The Rebellion of 1880
 country_event = {
-    id = 250150
-    title = "EVTNAME250150" # The Rebellion of 1880
-    desc = "EVTDESC250150"
+    id      = 250150
+    title   = "EVTNAME250150"
+    desc    = "EVTDESC250150"
     picture = "los_corrales"
 
 
@@ -2185,10 +2225,11 @@ country_event = {
     }
 }
 
+# Buenos Aires Victory
 country_event = {
-    id = 250160
-    title = "EVTNAME250160" # Buenos Aires Victory
-    desc = "EVTDESC250160"
+    id      = 250160
+    title   = "EVTNAME250160"
+    desc    = "EVTDESC250160"
     picture = "los_corrales"
 
     trigger = {
@@ -2237,10 +2278,11 @@ country_event = {
     }
 }
 
+# Buenos Aires Defeat
 country_event = {
-    id = 250170
-    title = "EVTNAME250170" # Buenos Aires Defeat
-    desc = "EVTDESC250170"
+    id      = 250170
+    title   = "EVTNAME250170"
+    desc    = "EVTDESC250170"
     picture = "los_corrales"
 
     trigger = {
@@ -2292,10 +2334,11 @@ country_event = {
     }
 }
 
+# The Argentine Centennial! when ARG or LPL already exists
 country_event = {
-    id = 250180
-    title = "EVTNAME250180" # The Argentine Centennial! when ARG or LPL already exists
-    desc = "EVTDESC250180"
+    id      = 250180
+    title   = "EVTNAME250180"
+    desc    = "EVTDESC250180"
     picture = "argentine_centennial"
 
     fire_only_once = yes
@@ -2374,10 +2417,11 @@ country_event = {
     }
 }
 
+# Brazil - Argentina treaty - BRZ side
 country_event = {
-    id = 250190
-    title = "EVTNAME250190" # Brazil - Argentina treaty - BRZ side
-    desc = "EVTDESC250190"
+    id    = 250190
+    title = "EVTNAME250190"
+    desc  = "EVTDESC250190"
 
     fire_only_once = yes
     mean_time_to_happen = {
@@ -2409,10 +2453,11 @@ country_event = {
     }
 }
 
+# Brazil - Argentina treaty - ARG side
 country_event = {
-    id = 250191
-    title = "EVTNAME250191" # Brazil - Argentina treaty - ARG side
-    desc = "EVTDESC250191"
+    id    = 250191
+    title = "EVTNAME250191"
+    desc  = "EVTDESC250191"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -2437,10 +2482,11 @@ country_event = {
     }
 }
 
+# fires when SBA released without Buenos Aires city
 country_event = {
-    id = 250192
-    title = "EVTNAME250192" # fires when SBA released without Buenos Aires city
-    desc = "EVTDESC250192"
+    id    = 250192
+    title = "EVTNAME250192"
+    desc  = "EVTDESC250192"
 
     trigger = {
         tag = SBA
@@ -2463,10 +2509,11 @@ country_event = {
     }
 }
 
+#Corrientes may or may not join player Buenos Aires after Pavon
 country_event = {
-    id = 250193
-    title = "EVTNAME250193" #Corrientes may or may not join player Buenos Aires after Pavon
-    desc = "EVTDESC250193"
+    id    = 250193
+    title = "EVTNAME250193"
+    desc  = "EVTDESC250193"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -2494,10 +2541,11 @@ country_event = {
     }
 }
 
+#Corrientes has agreed to SBA's demand
 country_event = {
-    id = 250194
-    title = "EVTNAME250194" #Corrientes has agreed to SBA's demand
-    desc = "EVTDESC250194"
+    id    = 250194
+    title = "EVTNAME250194"
+    desc  = "EVTDESC250194"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -2507,10 +2555,11 @@ country_event = {
     }
 }
 
+#Corrientes refuses SBA's demand
 country_event = {
-    id = 250195
-    title = "EVTNAME250195" #Corrientes refuses SBA's demand
-    desc = "EVTDESC250195"
+    id    = 250195
+    title = "EVTNAME250195"
+    desc  = "EVTDESC250195"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -2520,10 +2569,11 @@ country_event = {
     }
 }
 
+# Chile - Argentina treaty - CHL side
 country_event = {
-    id = 250196
-    title = "EVTNAME250196" # Chile - Argentina treaty - CHL side
-    desc = "EVTDESC250196"
+    id    = 250196
+    title = "EVTNAME250196"
+    desc  = "EVTDESC250196"
 
     fire_only_once = yes
     mean_time_to_happen = {
@@ -2555,10 +2605,11 @@ country_event = {
     }
 }
 
+# Chile - Argentina treaty - ARG side
 country_event = {
-    id = 250197
-    title = "EVTNAME250197" # Chile - Argentina treaty - ARG side
-    desc = "EVTDESC250197"
+    id    = 250197
+    title = "EVTNAME250197"
+    desc  = "EVTDESC250197"
 
     fire_only_once = yes
     is_triggered_only = yes
