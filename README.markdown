@@ -114,6 +114,12 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [8c3aa2]: https://github.com/moretrim/PFH/commit/8c3aa2bed5bebfb7369cc7c5f7836304edf79a85
 
+- Extend player protection of Neuchâtel crisis ([#76]). Note that there still are extant
+  event-driven annexations of Neuchâtel, and as such it should still be considered an advanced start
+  for dedicated players.
+
+  [#76]: https://github.com/moretrim/PFH/issues/76
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).

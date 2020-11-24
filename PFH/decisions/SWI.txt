@@ -1,5 +1,4 @@
 political_decisions = {
-
     integrate_neuchatel = {
         picture = declare_republic_of_neuchatel
         potential = {
@@ -117,7 +116,10 @@ political_decisions = {
                 NOT = { has_country_flag = neuchatel_crisis_escalated }
                 year = 1860
             }
-            NCT = { exists = yes }
+            NCT = {
+                exists = yes
+                ai = yes
+            }
         }
 
         allow = {
