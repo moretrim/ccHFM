@@ -27,11 +27,11 @@ AWS = {
 }
 
 leader = {
-   name = "Sahle Selassie"
-   type = land
-   date = 1836.1.1
-   background = gifted_administrator
-   personality = bootlicker
+    name = "Sahle Selassie"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = bootlickerxgifted_administrator
 }
 
 army = {

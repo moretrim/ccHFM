@@ -1,19 +1,19 @@
 leader = {
-	name = "Prinz Karl von H-D"
-	date = 1861.1.1 #1836
-	type = land
-	personality = indifferent
-	background = aristocrat
-	prestige = 0.2
+    name = "Prinz Karl von H-D"
+    date = 1861.1.1 #1836
+    type = land
+    personality = unit_personality
+    background = indifferentxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ludwig IV"
-	date = 1861.1.1 
-	type = land
-	personality = openminded
-	background = aristocrat
-	prestige = 0.5
+    name = "Ludwig IV"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = openmindedxaristocrat
+    prestige = 0.5
 }
 
 army = {

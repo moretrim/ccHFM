@@ -20,11 +20,11 @@ XHO = {
 }
 
 leader = {
-   name = "Soshangane"
-   type = land
-   date = 1836.1.1
-   background = natural_born_leader
-   personality = brutish
+    name = "Soshangane"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = brutishxnatural_born_leader
 }
 
 army = {

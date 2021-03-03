@@ -1,37 +1,37 @@
 leader = {
-	name = "Fredrich Wilhelm"
-	date = 1819.1.1
-	type = land
-	personality = impetuous
-	background = cavalry_school
-	prestige = 0.2
+    name = "Fredrich Wilhelm"
+    date = 1819.1.1
+    type = land
+    personality = unit_personality
+    background = impetuousxcavalry_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ferdinand Gottleb"
-	date = 1820.1.1
-	type = land
-	personality = indifferent
-	background = powerful_friends
-	prestige = 0.2
+    name = "Ferdinand Gottleb"
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = indifferentxpowerful_friends
+    prestige = 0.2
 }
 
 leader = {
-	name = "Wilhelm I"
-	date = 1812.1.1
-	type = land
-	personality = able
-	background = aristocrat
-	prestige = 0.5
+    name = "Wilhelm I"
+    date = 1812.1.1
+    type = land
+    personality = unit_personality
+    background = ablexaristocrat
+    prestige = 0.5
 }
 
 leader = {
-	name = "Prince Friedrich"
-	date = 1829.1.1
-	type = land
-	personality = mediocre
-	background = politician
-	prestige = 0.1
+    name = "Prince Friedrich"
+    date = 1829.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexpolitician
+    prestige = 0.1
 }
 
 army = {

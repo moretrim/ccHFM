@@ -1,84 +1,83 @@
 
 leader = {
-	name = "Marquês do Herval"
-	date = 1840.1.1
-	type = land
-	personality = relentless
-	background = cavalry_school
-	prestige = 0.2
+    name = "Marquês do Herval"
+    date = 1840.1.1
+    type = land
+    personality = unit_personality
+    background = relentlessxcavalry_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Luis Alves,Duque de Caxias"
-	date = 1841.1.1
-	type = land
-	personality = brilliant
-	background = innovative_tactician
-	prestige = 0.2
+    name = "Luis Alves,Duque de Caxias"
+    date = 1841.1.1
+    type = land
+    personality = unit_personality
+    background = brilliantxinnovative_tactician
+    prestige = 0.2
 }
 
 leader = {
-	name = "José Maria Wandenkolk"
-	date = 1843.1.1
-	type = land
-	personality = coolminded
-	background = generals_aide
-	prestige = 0.2
-}
-
-
-leader = {
-	name = "de Surui"
-	date = 1845.1.1 
-	type = land
-	personality = imperious
-	background = powerful_friends
-	prestige = 0.2
+    name = "José Maria Wandenkolk"
+    date = 1843.1.1
+    type = land
+    personality = unit_personality
+    background = coolmindedxgenerals_aide
+    prestige = 0.2
 }
 
 leader = {
-	name = "Marquês de Tamandaré"
-	date = 1847.1.1
-	type = sea
-	personality = audacious
-	background = natural_born_leader
-	prestige = 0.2
+    name = "de Surui"
+    date = 1845.1.1
+    type = land
+    personality = unit_personality
+    background = imperiousxpowerful_friends
+    prestige = 0.2
 }
 
 leader = {
-	name = "Marques de Souza III"
-	date = 1850.1.1
-	type = land
-	personality = efficient
-	background = aristocrat
-	prestige = 0.2
+    name = "Marquês de Tamandaré"
+    date = 1847.1.1
+    type = sea
+    personality = unit_personality
+    background = audaciousxnatural_born_leader
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jesuíno Lamego da Costa"
-	date = 1851.1.1
-	type = land
-	personality = active_p
-	background = armchair_general
-	prestige = 0.2
+    name = "Marques de Souza III"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = efficientxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "de Itapevi"
-	date = 1861.1.1 #1851
-	type = land
-	personality = efficient
-	background = old_school
-	prestige = 0.2
+    name = "Jesuíno Lamego da Costa"
+    date = 1851.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxarmchair_general
+    prestige = 0.2
 }
 
 leader = {
-	name = "F. Manuel Barroso"
-	date = 1852.1.1
-	type = sea
-	personality = heroic
-	background = school_of_defense
-	prestige = 0.2
+    name = "de Itapevi"
+    date = 1861.1.1 #1851
+    type = land
+    personality = unit_personality
+    background = efficientxold_school
+    prestige = 0.2
+}
+
+leader = {
+    name = "F. Manuel Barroso"
+    date = 1852.1.1
+    type = sea
+    personality = unit_personality
+    background = heroicxschool_of_defense
+    prestige = 0.2
 }
 
 army = {

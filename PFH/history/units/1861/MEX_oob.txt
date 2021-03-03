@@ -1,19 +1,19 @@
 leader = {
-	name = "Juan Álvarez"
-	type = land
-	date="1836.1.1"
-	personality = skilled
-	background = elderly
-	prestige = 0.3
+    name = "Juan Álvarez"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxelderly
+    prestige = 0.3
 }
 
 leader = {
-	name = "Miguel Mirámon"
-	type = land
-	date="1858.1.1"
-	personality = fanatic
-	background = uncommonly_young
-	prestige = 0.1
+    name = "Miguel Mirámon"
+    date = 1858.1.1
+    type = land
+    personality = unit_personality
+    background = fanaticxuncommonly_young
+    prestige = 0.1
 }
 
 army = {

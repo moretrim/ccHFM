@@ -115,12 +115,10 @@ army = {
 }
 
 leader = {
-	name = "Sultan Abd al-Rahman"
-	type = land
-	date = 1820.1.1
-	background = gifted_administrator
-	personality = harsh
-	prestige = 0.1
-	}
-	
-	
+    name = "Sultan Abd al-Rahman"
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = harshxgifted_administrator
+    prestige = 0.1
+}

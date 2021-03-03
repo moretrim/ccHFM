@@ -1,64 +1,64 @@
 leader = {
-	name = "Prins Willem Frederik"
-	date = 1825.1.1
-	type = land
-	personality = active_p
-	background = drillmaster
-	prestige = 0.3
+    name = "Prins Willem Frederik"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxdrillmaster
+    prestige = 0.3
 }
 
 leader = {
-	name = "Baron Nepveu"
-	date = 1836.1.1
-	type = land
-	personality = bigoted
-	background = powerful_friends
-	prestige = 0.3
+    name = "Baron Nepveu"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = bigotedxpowerful_friends
+    prestige = 0.3
 }
 
 leader = {
-	name = "Hendrik Coops"
-	date = 1850.1.1
-	type = sea
-	personality = diplomatic
-	background = cartographer
-	prestige = 0.2
+    name = "Hendrik Coops"
+    date = 1850.1.1
+    type = sea
+    personality = unit_personality
+    background = diplomaticxcartographer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jan van Swieten"
-	date = 1853.1.1
-	type = land
-	personality = able
-	background = rising_star
-	prestige = 0.2
+    name = "Jan van Swieten"
+    date = 1853.1.1
+    type = land
+    personality = unit_personality
+    background = ablexrising_star
+    prestige = 0.2
 }
 
 leader = {
-	name = "Alexander Gregory"
-	date = 1860.1.1
-	type = sea
-	personality = polite
-	background = armchair_general
-	prestige = 0.1
+    name = "Alexander Gregory"
+    date = 1860.1.1
+    type = sea
+    personality = unit_personality
+    background = politexarmchair_general
+    prestige = 0.1
 }
 
 leader = {
-	name = "Köhler"
-	date = 1860.1.1
-	type = land
-	personality = inept
-	background = unqualified
-	prestige = 0.1
+    name = "Köhler"
+    date = 1860.1.1
+    type = land
+    personality = unit_personality
+    background = ineptxunqualified
+    prestige = 0.1
 }
 
 leader = {
-	name = "de Casembroot"
-	date = 1860.1.1
-	type = land
-	personality = indifferent
-	background = powerful_friends
-	prestige = 0.1
+    name = "de Casembroot"
+    date = 1860.1.1
+    type = land
+    personality = unit_personality
+    background = indifferentxpowerful_friends
+    prestige = 0.1
 }
 
 army = {

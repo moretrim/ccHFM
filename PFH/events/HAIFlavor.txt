@@ -197,7 +197,11 @@ country_event = {
 			secede_province = DOM
 		}
 		DOM = {
-			define_general = { name = "Pedro Santana" personality = implacable background = nationalist } 
+			define_general = {
+				name = "Pedro Santana"
+				personality = unit_personality
+				background = implacablexnationalist
+			}
 			add_country_modifier = { name = unrecognized_country duration = 3650 }
 		}
 		relation = { who = DOM value = -400 }
@@ -220,7 +224,12 @@ country_event = {
 			secede_province = DOM
 		}
 		DOM = {
-			define_general = { name = "Pedro Santana" personality = implacable background = nationalist } }
+			define_general = {
+				name = "Pedro Santana"
+				personality = unit_personality
+				background = implacablexnationalist
+			}
+		}
 		relation = { who = DOM value = -400 }
 		war = {
 			target = DOM

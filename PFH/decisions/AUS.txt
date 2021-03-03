@@ -258,8 +258,8 @@ political_decisions = {
 			leadership = 40
 			define_general = {
 				name = "Józef Bem"
-				personality = intelligent
-				background = natural_born_leader
+				personality = unit_personality
+				background = intelligentxnatural_born_leader
 			}
 			add_country_modifier = {
 				name = begin_revolution

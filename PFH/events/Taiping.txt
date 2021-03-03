@@ -153,26 +153,26 @@ country_event = {
 			
 			define_general = {
 				name = "Li Xiucheng"
-				personality = stout
-				background = innovative_tactician
+				personality = unit_personality
+				background = stoutxinnovative_tactician
 			}
 			
 			define_general = {
 				name = "Feng Yunshan"
-				personality = spirited
-				background = gifted_administrator
+				personality = unit_personality
+				background = spiritedxgifted_administrator
 			}
 			
 			define_general = {
 				name = "Xiao Chaogui"
-				personality = deeply_religious
-				background = incompetent
+				personality = unit_personality
+				background = deeply_religiousxincompetent
 			}
 			
 			define_general = {
 				name = "Shi Dakai"
-				personality = audacious
-				background = expert_raider
+				personality = unit_personality
+				background = audaciousxexpert_raider
 			}
 		}
 		
@@ -382,26 +382,26 @@ country_event = {
 			
 			define_general = {
 				name = "Li Xiucheng"
-				personality = stout
-				background = innovative_tactician
+				personality = unit_personality
+				background = stoutxinnovative_tactician
 			}
 			
 			define_general = {
 				name = "Feng Yunshan"
-				personality = spirited
-				background = gifted_administrator
+				personality = unit_personality
+				background = spiritedxgifted_administrator
 			}
 			
 			define_general = {
 				name = "Xiao Chaogui"
-				personality = deeply_religious
-				background = incompetent
+				personality = unit_personality
+				background = deeply_religiousxincompetent
 			}
 			
 			define_general = {
 				name = "Shi Dakai"
-				personality = audacious
-				background = expert_raider
+				personality = unit_personality
+				background = audaciousxexpert_raider
 			}
 		}
 		

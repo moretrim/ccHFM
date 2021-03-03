@@ -60,11 +60,9 @@ army = {
 
 }
 leader = {
-	name = "Domingo Francisco Sánchez"
-	type = land
-	date = 1836.1.1
-	background = school_of_the_bayonet
-	personality = impetuous
+    name = "Domingo Francisco Sánchez"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = impetuousxschool_of_the_bayonet
 }
-
-

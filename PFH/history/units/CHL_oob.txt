@@ -36,22 +36,22 @@ army = {
 }
 	
 leader = {
-	name = "José Joaquín Prieto"
-	type = land
-	date = 1820.8.20
-	background = rising_star
-	personality = bold
-	prestige = 0.01
-	}
-	
+    name = "José Joaquín Prieto"
+    date = 1820.8.20
+    type = land
+    personality = unit_personality
+    background = boldxrising_star
+    prestige = 0.01
+}
+
 leader = {
-	name = "Robert Winthrop Simpson"
-	type = sea
-	date = 1820.12.14
-	background = school_of_defense
-	personality = au_fait
-	}
-	
+    name = "Robert Winthrop Simpson"
+    date = 1820.12.14
+    type = sea
+    personality = unit_personality
+    background = au_faitxschool_of_defense
+}
+
 navy = {
 	name = "Chilean Navy"
 	location = 2325

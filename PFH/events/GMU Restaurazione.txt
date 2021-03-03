@@ -140,8 +140,8 @@ country_event = {
 		}
 		define_general = {
 			name = "Josef Wenzel Radetzky"
-			personality = brilliant
-			background = old_school
+			personality = unit_personality
+			background = brilliantxold_school
 		}
 		ai_chance = {
 			factor = 99
@@ -790,8 +790,8 @@ country_event = {
 			}
 		define_general = {
 				name = "Julius von Haynau"
-				personality = coolminded
-				background = war_college
+				personality = unit_personality
+				background = coolmindedxwar_college
 		}
 		ai_chance = {
 			factor = 99
@@ -1969,8 +1969,8 @@ country_event = {
 		war_exhaustion = -10
 		define_general = {
 			name = "Guglielmo Pepe"
-			personality = romantic
-			background = adventurer
+			personality = unit_personality
+			background = romanticxadventurer
 		}                
 		relation = {
 				who = SIC

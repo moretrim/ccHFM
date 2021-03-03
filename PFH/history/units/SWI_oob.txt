@@ -9,21 +9,21 @@ NCT = {
 }
 
 leader = {
-	name = "de Kalbermatten"
-	date = 1815.1.1
-	type = land
-	personality = tactful
-	background = exranker
-	prestige = 0.2
+    name = "de Kalbermatten"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = tactfulxexranker
+    prestige = 0.2
 }
 
 leader = {
-	name = "Henri Dufour"
-	date = 1831.1.1
-	type = land
-	personality = intelligent
-	background = cartographer
-	prestige = 0.1
+    name = "Henri Dufour"
+    date = 1831.1.1
+    type = land
+    personality = unit_personality
+    background = intelligentxcartographer
+    prestige = 0.1
 }
 
 army = {

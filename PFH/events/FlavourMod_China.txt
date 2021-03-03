@@ -264,8 +264,8 @@ country_event = {
 		HQJ = {
 			define_general = {
 				name = "Liu Yongfu"
-				personality = implacable
-				background = natural_born_leader
+				personality = unit_personality
+				background = implacablexnatural_born_leader
 			}
 			small_arms = 250
 			canned_food = 350

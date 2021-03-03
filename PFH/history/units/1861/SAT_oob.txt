@@ -3,19 +3,19 @@ SUL = { value = 100 }
 BRU = { value = 100 }
 
 leader = {
-	name = "Saigo Takamori"
-	type = land
-	date = 1836.1.1
-	personality = inspiring
-	background = gifted_administrator
+    name = "Saigo Takamori"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = inspiringxgifted_administrator
 }
 
 leader = {
-	name = "Kuroda Kiyotaka"
-	type = land
-	date = 1836.1.1
-	personality = merciless
-	background = rising_star
+    name = "Kuroda Kiyotaka"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxrising_star
 }
 
 army = {

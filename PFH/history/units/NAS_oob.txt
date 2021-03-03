@@ -22,12 +22,11 @@ army = {
 }
 
 leader = {
-	name = "Adolf Wilhelm Friedrich"
-	picture = european_general_12
-	date = 1836.1.1
-	type = land
-	personality = gallant
-	background = aristocrat
-	prestige = 0.2
+    name = "Adolf Wilhelm Friedrich"
+    picture = european_general_12
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = gallantxaristocrat
+    prestige = 0.2
 }
-

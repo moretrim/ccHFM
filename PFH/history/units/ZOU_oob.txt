@@ -11,11 +11,11 @@ USA = {
 }
 
 leader = {
-   name = "Hendrik Potgieter"
-   type = land
-   date = 1836.1.1
-   background = expert_raider
-   personality = resolute
+    name = "Hendrik Potgieter"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = resolutexexpert_raider
 }
 
 army = {

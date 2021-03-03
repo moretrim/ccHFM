@@ -5,11 +5,11 @@ MAT = { value = 50 }
 GAZ = { value = -70 }
 
 leader = {
-   name = "Maqoma"
-   type = land
-   date = 1836.1.1
-   background = expert_raider
-   personality = merciless
+    name = "Maqoma"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxexpert_raider
 }
 
 army = {

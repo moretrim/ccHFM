@@ -19,11 +19,11 @@ VNZ = {
 
 
 leader = {
-	name = "Jose Ballivián"
-	type = land
-	date = 1836.1.1
-	background = generals_aide
-	personality = bold
+    name = "Jose Ballivián"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = boldxgenerals_aide
 }
 
 army = {
@@ -43,13 +43,13 @@ army = {
 }
 
 leader = {
-	name = "Juan Blanchet"
-	type = sea
-	date = 1794.12.14
-	background = amateur
-	personality = pisspoor
-	}
-	
+    name = "Juan Blanchet"
+    date = 1794.12.14
+    type = sea
+    personality = unit_personality
+    background = pisspoorxamateur
+}
+
 navy = {
 	name = "French Corsairs"
 	location = 2305

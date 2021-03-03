@@ -1,10 +1,10 @@
 leader = {
-	name = "Tomas de Mosquera"
-	date = 1840.1.1
-	type = land
-	personality = resourceful
-	background = politician
-	prestige = 0.2
+    name = "Tomas de Mosquera"
+    date = 1840.1.1
+    type = land
+    personality = unit_personality
+    background = resourcefulxpolitician
+    prestige = 0.2
 }
 
 army = {

@@ -1,28 +1,28 @@
 leader = {
-	name = "de Urquiza"
-	date = 1837.1.1
-	type = land
-	personality = inefficient
-	background = powerful_friends
-	prestige = 0.2
+    name = "de Urquiza"
+    date = 1837.1.1
+    type = land
+    personality = unit_personality
+    background = inefficientxpowerful_friends
+    prestige = 0.2
 }
 
 leader = {
-	name = "Bartolomé Mitre"
-	date = 1853.1.1
-	type = land
-	personality = efficient
-	background = politician
-	prestige = 0.2
+    name = "Bartolomé Mitre"
+    date = 1853.1.1
+    type = land
+    personality = unit_personality
+    background = efficientxpolitician
+    prestige = 0.2
 }
 
 leader = {
-	name = "Julio Roca"
-	date = 1861.1.1 #1853
-	type = land
-	personality = brilliant
-	background = war_college
-	prestige = 0.2
+    name = "Julio Roca"
+    date = 1861.1.1 #1853
+    type = land
+    personality = unit_personality
+    background = brilliantxwar_college
+    prestige = 0.2
 }
 
 army = {

@@ -27,10 +27,10 @@ army = {
 }
 
 leader = {
-	name = "Carl Magnus von der Pahlen"
-	picture = european_general_25
-	date = 1814.1.1
-	type = land
-	personality = daring
-	background = gifted_administrator
+    name = "Carl Magnus von der Pahlen"
+    picture = european_general_25
+    date = 1814.1.1
+    type = land
+    personality = unit_personality
+    background = daringxgifted_administrator
 }

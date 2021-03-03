@@ -246,13 +246,13 @@ political_decisions = {
 			set_global_flag = ever_victorious_army 		
 			define_general = {
 				name = "Frederick Townsend Ward"
-				personality = sharp
-				background = adventurer
+				personality = unit_personality
+				background = sharpxadventurer
 			}
 			define_general = {
 				name = "Charles George Gordon"
-				personality = intelligent
-				background = gifted_administrator
+				personality = unit_personality
+				background = intelligentxgifted_administrator
 			}
 			random_owned = {
 				limit = { owner = { ai = yes } }
@@ -303,8 +303,8 @@ political_decisions = {
 			}
 			define_general = {
 				name = "Zeng Guofan"
-				personality = implacable
-				background = gifted_administrator
+				personality = unit_personality
+				background = implacablexgifted_administrator
 			}
 			set_global_flag = the_xiang_army 	
 			random_owned = { limit = { owner = { ai = yes } }
@@ -1167,8 +1167,8 @@ political_decisions = {
 			treasury = -35000
 			define_general = {
 				name = "Dong Fuxiang"
-				personality = brilliant
-				background = natural_born_leader
+				personality = unit_personality
+				background = brilliantxnatural_born_leader
 			}
 			any_pop = {
 				limit = {

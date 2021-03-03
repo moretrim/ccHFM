@@ -6,44 +6,44 @@ SPA = {
 }
 
 leader = {
-	name = "Martin de Cos"
-	type = land
-	date="1836.1.1"
-	personality = impulsive
-	background = aristocrat
-	prestige = 0.1
+    name = "Martin de Cos"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = impulsivexaristocrat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Nicolas Bravo"
-	type = land
-	date="1836.1.1"
-	personality = heroic
-	background = politician
+    name = "Nicolas Bravo"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = heroicxpolitician
 }
 
 leader = {
-	name = "Mariano Arista"
-	type = land
-	date="1836.1.1"
-	personality = skilled
-	background = war_college
+    name = "Mariano Arista"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxwar_college
 }
 
 leader = {
-	name = "Juan Álvarez"
-	type = land
-	date="1836.1.1"
-	personality = skilled
-	background = elderly
+    name = "Juan Álvarez"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxelderly
 }
 
 leader = {
-	name = "José de Herrera"
-	type = land
-	date="1836.1.1"
-	personality = soldierly
-	background = exranker
+    name = "José de Herrera"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = soldierlyxexranker
 }
 
 army = {

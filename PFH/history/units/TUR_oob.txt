@@ -553,82 +553,82 @@ navy = {
 }
 
 leader = {
-	name = "Omer Vrioni"
-	type = land
-	date = 1820.1.1
-	background = rising_star
-	personality = skilled
-	prestige = 0.1
-	}
-
-leader = {
-	name = "Husrev Pasha"
-	type = sea
-	date = 1820.1.1
-	background = politician
-	personality = smart_p
-	prestige = 0.15
-	}
-
-leader = {
-	name = "Resid Mehmed Pasha"
-	date = 1809.1.1
-	type = land
-	personality = inefficient
-	background = elderly
-	prestige = 0.2
+    name = "Omer Vrioni"
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxrising_star
+    prestige = 0.1
 }
 
 leader = {
-	name = "Wojciech Chrzanowski"
-	date = 1836.1.1
-	type = land
-	personality = romantic
-	background = cartographer
-	prestige = 0.1
+    name = "Husrev Pasha"
+    date = 1820.1.1
+    type = sea
+    personality = unit_personality
+    background = smart_pxpolitician
+    prestige = 0.15
 }
 
 leader = {
-	name = "Abdi Pasha"
-	date = 1836.1.1
-	type = land
-	personality = merciless
-	background = old_school
-	prestige = 0.0
+    name = "Resid Mehmed Pasha"
+    date = 1809.1.1
+    type = land
+    personality = unit_personality
+    background = inefficientxelderly
+    prestige = 0.2
 }
 
 leader = {
-	name = "Hafiz Osman Pasha"
-	date = 1836.1.1
-	type = land
-	personality = inept
-	background = yesman
-	prestige = 0.0
+    name = "Wojciech Chrzanowski"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = romanticxcartographer
+    prestige = 0.1
 }
 
 leader = {
-	name = "Namik Pasha"
-	date = 1836.1.1
-	type = land
-	personality = expert
-	background = diplomat
-	prestige = 0.0
+    name = "Abdi Pasha"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxold_school
+    prestige = 0.0
 }
 
 leader = {
-	name = "Abdülkerim Pasha"
-	date = 1836.1.1
-	type = land
-	personality = active_p
-	background = war_college
-	prestige = 0.0
+    name = "Hafiz Osman Pasha"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = ineptxyesman
+    prestige = 0.0
 }
 
 leader = {
-	name = "Yaver Pasha"
-	date = 1836.1.1
-	type = sea
-	personality = diplomatic
-	background = gifted_administrator
-	prestige = 0.1
+    name = "Namik Pasha"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = expertxdiplomat
+    prestige = 0.0
+}
+
+leader = {
+    name = "Abdülkerim Pasha"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxwar_college
+    prestige = 0.0
+}
+
+leader = {
+    name = "Yaver Pasha"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = diplomaticxgifted_administrator
+    prestige = 0.1
 }

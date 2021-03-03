@@ -1990,8 +1990,8 @@ country_event = {
 			any_pop = { limit = { has_pop_religion = yazidi } reduce_pop = 0.97 }
 			define_general = {
 				name = "Bedr Khan"
-				personality = relentless
-				background = uncommonly_young
+				personality = unit_personality
+				background = relentlessxuncommonly_young
 			}
 		}
 		war = {
@@ -2074,8 +2074,8 @@ country_event = {
 			any_pop = { limit = { has_pop_religion = yazidi } reduce_pop = 0.97 }
 			define_general = {
 				name = "Bedr Khan"
-				personality = relentless
-				background = uncommonly_young
+				personality = unit_personality
+				background = relentlessxuncommonly_young
 			}
 		}
 
@@ -2122,8 +2122,8 @@ country_event = {
 			any_pop = { limit = { has_pop_religion = yazidi } reduce_pop = 0.97 }
 			define_general = {
 				name = "Bedr Khan"
-				personality = relentless
-				background = uncommonly_young
+				personality = unit_personality
+				background = relentlessxuncommonly_young
 			}
 		}
 		PER = { relation = { who = BHT value = -400 } }		

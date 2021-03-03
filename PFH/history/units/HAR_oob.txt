@@ -27,11 +27,11 @@ MAJ = {
 }
 
 leader = {
-   name = "Emir Abu Bakr II"
-   type = land
-   date = 1836.1.1
-   background = expert_raider
-   personality = glory_hound
+    name = "Emir Abu Bakr II"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = glory_houndxexpert_raider
 }
 
 army = {

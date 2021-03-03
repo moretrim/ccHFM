@@ -60,10 +60,9 @@ regiment = {
 }
 
 leader = {
-	name = "Da Diarra"
-	type = land
-	date = 1820.12.14
-	background = unqualified
-	personality = stout
+    name = "Da Diarra"
+    date = 1820.12.14
+    type = land
+    personality = unit_personality
+    background = stoutxunqualified
 }
-

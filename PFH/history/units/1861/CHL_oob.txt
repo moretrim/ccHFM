@@ -1,10 +1,10 @@
 leader = {
-	name = "Justo Arteaga"
-	date = 1851.1.1
-	type = land
-	personality = careful
-	background = elderly
-	prestige = 0.2
+    name = "Justo Arteaga"
+    date = 1851.1.1
+    type = land
+    personality = unit_personality
+    background = carefulxelderly
+    prestige = 0.2
 }
 
 army = {

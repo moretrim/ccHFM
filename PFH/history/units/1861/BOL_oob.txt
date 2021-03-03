@@ -1,10 +1,10 @@
 leader = {
-	name = "Valencia Melgarejo"
-	date = 1860.1.1
-	type = land
-	personality = bastard
-	background = corrupt
-	prestige = 0.1
+    name = "Valencia Melgarejo"
+    date = 1860.1.1
+    type = land
+    personality = unit_personality
+    background = bastardxcorrupt
+    prestige = 0.1
 }
 
 army = {

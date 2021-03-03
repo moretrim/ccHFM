@@ -24,10 +24,9 @@ army = {
 }
 
 leader = {
-	name = "Mohammad Murad Beg"
-	type = land
-	date = 1825.8.20
-	background = aristocrat
-	personality = merciless
+    name = "Mohammad Murad Beg"
+    date = 1825.8.20
+    type = land
+    personality = unit_personality
+    background = mercilessxaristocrat
 }
-

@@ -60,145 +60,145 @@ USA = {
 #Leaders
 
 leader = {
-	name = "A.E. Ramsay"
-	date = 1828.1.1
-	type = land
-	personality = steadfast
-	background = uncommonly_young
-	prestige = 0.3
+    name = "A.E. Ramsay"
+    date = 1828.1.1
+    type = land
+    personality = unit_personality
+    background = steadfastxuncommonly_young
+    prestige = 0.3
 }
 
 leader = {
-	name = "Fedor von Berg"
-	date = 1828.1.1
-	type = land
-	personality = sharp
-	background = cartographer
-	prestige = 0.3
+    name = "Fedor von Berg"
+    date = 1828.1.1
+    type = land
+    personality = unit_personality
+    background = sharpxcartographer
+    prestige = 0.3
 }
 
 leader = {
-	name = "Ferdinand Wrangel"
-	date = 1836.1.1
-	type = sea
-	personality = active_p
-	background = cartographer
-	prestige = 0.3
+    name = "Ferdinand Wrangel"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = active_pxcartographer
+    prestige = 0.3
 }
 
 leader = {
-	name = "Pavel Grabbe"
-	date = 1838.1.1
-	type = land
-	personality = keen
-	background = school_of_firepower
-	prestige = 0.3
+    name = "Pavel Grabbe"
+    date = 1838.1.1
+    type = land
+    personality = unit_personality
+    background = keenxschool_of_firepower
+    prestige = 0.3
 }
 
 leader = {
-	name = "Grand Duke Mikhail"
-	date = 1852.1.1
-	type = land
-	personality = able
-	background = aristocrat
-	prestige = 0.2
+    name = "Grand Duke Mikhail"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = ablexaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ivan Blaramberg"
-	date = 1852.1.1
-	type = land
-	personality = openminded
-	background = cartographer
-	prestige = 0.2
+    name = "Ivan Blaramberg"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = openmindedxcartographer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Karl Belgard"
-	date = 1852.1.1
-	type = land
-	personality = able
-	background = drillmaster
-	prestige = 0.2
+    name = "Karl Belgard"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = ablexdrillmaster
+    prestige = 0.2
 }
 
 leader = {
-	name = "Yakov Baklanov"
-	date = 1852.1.1
-	type = land
-	personality = merciless
-	background = expert_raider
-	prestige = 0.2
+    name = "Yakov Baklanov"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxexpert_raider
+    prestige = 0.2
 }
 
 leader = {
-	name = "Eduard Totleben"
-	date = 1854.1.1
-	type = land
-	personality = clever
-	background = engineer
-	prestige = 0.2
+    name = "Eduard Totleben"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = cleverxengineer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Grigory Butakov"
-	date = 1855.1.1
-	type = sea
-	personality = efficient
-	background = innovative_tactician
-	prestige = 0.1
+    name = "Grigory Butakov"
+    date = 1855.1.1
+    type = sea
+    personality = unit_personality
+    background = efficientxinnovative_tactician
+    prestige = 0.1
 }
 
 leader = {
-	name = "Dimitry Milyutin"
-	date = 1861.1.1 #1856
-	type = land
-	personality = openminded
-	background = gifted_administrator
-	prestige = 0.1
+    name = "Dimitry Milyutin"
+    date = 1861.1.1 #1856
+    type = land
+    personality = unit_personality
+    background = openmindedxgifted_administrator
+    prestige = 0.1
 }
 
 leader = {
-	name = "Grand Duke Nikolay"
-	date = 1856.1.1
-	type = land
-	personality = lackluster
-	background = womanizer
-	prestige = 0.2
+    name = "Grand Duke Nikolay"
+    date = 1856.1.1
+    type = land
+    personality = unit_personality
+    background = lacklusterxwomanizer
+    prestige = 0.2
 }
 
 leader = {
-	name = "von Kaufman"
-	date = 1861.1.1 #1858
-	type = land
-	personality = charismatic
-	background = expert_raider
-	prestige = 0.2
+    name = "von Kaufman"
+    date = 1861.1.1 #1858
+    type = land
+    personality = unit_personality
+    background = charismaticxexpert_raider
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ivan Lazarev"
-	date = 1860.1.1
-	type = land
-	personality = clever
-	background = exranker
-	prestige = 0.1
+    name = "Ivan Lazarev"
+    date = 1860.1.1
+    type = land
+    personality = unit_personality
+    background = cleverxexranker
+    prestige = 0.1
 }
 
 leader = {
-	name = "Andrey Popov"
-	date = 1861.1.1
-	type = sea
-	personality = strange
-	background = armchair_general
+    name = "Andrey Popov"
+    date = 1861.1.1
+    type = sea
+    personality = unit_personality
+    background = strangexarmchair_general
 }
 
 leader = {
-	name = "Kolpakovsky"
-	date = 1861.1.1
-	type = land
-	personality = soldierly
-	background = exranker
+    name = "Kolpakovsky"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = soldierlyxexranker
 }
 
 army = {

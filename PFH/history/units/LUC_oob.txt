@@ -1,10 +1,10 @@
 leader = {
-	name = "Carlo di Borbone-Parma"
-	date = 1815.1.1
-	type = land
-	personality = polite
-	background = cursed_luck
-	prestige = 0.5
+    name = "Carlo di Borbone-Parma"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = politexcursed_luck
+    prestige = 0.5
 }
 
 army = {

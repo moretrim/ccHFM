@@ -68,65 +68,64 @@ army = {
 }
 
 leader = {
-	name = "Pierre Labatut"
-	date = 1824.1.1
-	type = land
-	personality = arrogant
-	background = adventurer
-	prestige = 0.1
+    name = "Pierre Labatut"
+    date = 1824.1.1
+    type = land
+    personality = unit_personality
+    background = arrogantxadventurer
+    prestige = 0.1
 }
 
 leader = {
-	name = "Sebastião Pinto"
-	date = 1825.1.1
-	type = land
-	personality = perverse
-	background = unfit
-	prestige = 0.0
+    name = "Sebastião Pinto"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = perversexunfit
+    prestige = 0.0
 }
 
 leader = {
-	name = "Barão de Tramandaí"
-	date = 1830.1.1
-	type = land
-	personality = cautious
-	background = politician
-	prestige = 0.0
+    name = "Barão de Tramandaí"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = cautiousxpolitician
+    prestige = 0.0
 }
 
 leader = {
-	name = "de Lajes"
-	date = 1830.1.1
-	type = land
-	personality = romantic
-	background = politician
-	prestige = 0.0
+    name = "de Lajes"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = romanticxpolitician
+    prestige = 0.0
 }
 
 leader = {
-	name = "Bellegarde"
-	date = 1833.1.1
-	type = land
-	personality = reserved
-	background = professor
-	prestige = 0.0
+    name = "Bellegarde"
+    date = 1833.1.1
+    type = land
+    personality = unit_personality
+    background = reservedxprofessor
+    prestige = 0.0
 }
 
 leader = {
-	name = "John Grenfell"
-	date = 1822.1.1
-	type = sea
-	personality = brash
-	background = butcher
-	prestige = 0.1
+    name = "John Grenfell"
+    date = 1822.1.1
+    type = sea
+    personality = unit_personality
+    background = brashxbutcher
+    prestige = 0.1
 }
 
 leader = {
-	name = "Luís Alves de Lima e Silva"
-	picture = southamerican_general_6
-	date = 1836.1.1
-	type = land
-	personality = gutsy
-	background = war_college
+    name = "Luís Alves de Lima e Silva"
+    picture = southamerican_general_6
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = gutsyxwar_college
 }
-

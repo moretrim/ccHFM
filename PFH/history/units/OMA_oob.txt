@@ -50,11 +50,9 @@ navy = {
 }
 
 leader = {
-	name = "Said bin Sultan"
-	type = land
-	date = 1807.12.12
-	background = aristocrat
-	personality = aggressive
-	}
-
-
+    name = "Said bin Sultan"
+    date = 1807.12.12
+    type = land
+    personality = unit_personality
+    background = aggressivexaristocrat
+}

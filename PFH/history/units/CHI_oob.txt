@@ -731,60 +731,60 @@ navy = {
 }
 
 leader = {
-	name = "Guan Tianpei"
-	picture = asian_admiral_4
-	date = 1820.1.1
-	type = sea
-	personality = chivalrous
-	background = elderly
+    name = "Guan Tianpei"
+    picture = asian_admiral_4
+    date = 1820.1.1
+    type = sea
+    personality = unit_personality
+    background = chivalrousxelderly
 }
 
 leader = {
-	name = "Lin Zexu"
-	picture = asian_admiral_1
-	date = 1820.1.1
-	type = sea
-	personality = charismatic
-	background = elderly
+    name = "Lin Zexu"
+    picture = asian_admiral_1
+    date = 1820.1.1
+    type = sea
+    personality = unit_personality
+    background = charismaticxelderly
 }
 
 leader = {
-	name = "Daoguang Emperor"
-	picture = asian_general_3
-	date = 1820.1.1
-	type = land
-	personality = inefficient
-	background = aristocrat
+    name = "Daoguang Emperor"
+    picture = asian_general_3
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = inefficientxaristocrat
 }
 
 leader = {
-	name = "Qishan"
-	date = 1830.1.1
-	type = land
-	personality = gutsy
-	background = old_school
+    name = "Qishan"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = gutsyxold_school
 }
 
 leader = {
-	name = "Yishan"
-	date = 1830.1.1
-	type = land
-	personality = impetuous
-	background = aristocrat
+    name = "Yishan"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = impetuousxaristocrat
 }
 
 leader = {
-	name = "Yijing"
-	date = 1830.1.1
-	type = land
-	personality = spirited
-	background = aristocrat
+    name = "Yijing"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = spiritedxaristocrat
 }
 
 leader = {
-	name = "Yang Fang"
-	date = 1820.1.1
-	type = land
-	personality = brash
-	background = school_of_offense
+    name = "Yang Fang"
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = brashxschool_of_offense
 }

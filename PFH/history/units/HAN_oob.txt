@@ -1,37 +1,37 @@
 leader = {
-	name = "von Alten"
-	date = 1810.1.1
-	type = land
-	personality = stout
-	background = gifted_administrator
-	prestige = 0.3
+    name = "von Alten"
+    date = 1810.1.1
+    type = land
+    personality = unit_personality
+    background = stoutxgifted_administrator
+    prestige = 0.3
 }
 
 leader = {
-	name = "Victor von Prott"
-	date = 1815.1.1
-	type = land
-	personality = intelligent
-	background = engineer
-	prestige = 0.3
+    name = "Victor von Prott"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = intelligentxengineer
+    prestige = 0.3
 }
 
 leader = {
-	name = "Julius von Hartmann"
-	date = 1825.1.1
-	type = land
-	personality = spirited
-	background = artillerist
-	prestige = 0.2
+    name = "Julius von Hartmann"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = spiritedxartillerist
+    prestige = 0.2
 }
 
 leader = {
-	name = "Hugh Halkett"
-	date = 1834.1.1
-	type = land
-	personality = heroic
-	background = school_of_offense
-	prestige = 0.1
+    name = "Hugh Halkett"
+    date = 1834.1.1
+    type = land
+    personality = unit_personality
+    background = heroicxschool_of_offense
+    prestige = 0.1
 }
 
 army = {

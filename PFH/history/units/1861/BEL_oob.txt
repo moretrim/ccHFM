@@ -1,72 +1,72 @@
 leader = {
-	name = "Albert Prisse"
-	date = 1834.1.1
-	type = land
-	personality = smart_p
-	background = diplomat
-	prestige = 0.3
+    name = "Albert Prisse"
+    date = 1834.1.1
+    type = land
+    personality = unit_personality
+    background = smart_pxdiplomat
+    prestige = 0.3
 }
 
 leader = {
-	name = "Pierre Chazal"
-	date = 1842.1.1
-	type = land
-	personality = balanced_p
-	background = corrupt
-	prestige = 0.2
+    name = "Pierre Chazal"
+    date = 1842.1.1
+    type = land
+    personality = unit_personality
+    background = balanced_pxcorrupt
+    prestige = 0.2
 }
 
 leader = {
-	name = "Léonard Greindl"
-	date = 1845.1.1
-	type = land
-	personality = imperious
-	background = artillerist
-	prestige = 0.2
+    name = "Léonard Greindl"
+    date = 1845.1.1
+    type = land
+    personality = unit_personality
+    background = imperiousxartillerist
+    prestige = 0.2
 }
 
 leader = {
-	name = "L.M. Brialmont"
-	date = 1849.1.1
-	type = land
-	personality = doughty
-	background = exranker
-	prestige = 0.2
+    name = "L.M. Brialmont"
+    date = 1849.1.1
+    type = land
+    personality = unit_personality
+    background = doughtyxexranker
+    prestige = 0.2
 }
 
 leader = {
-	name = "Bruno Renard"
-	date = 1854.1.1
-	type = land
-	personality = inspiring
-	background = professor
-	prestige = 0.2
+    name = "Bruno Renard"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = inspiringxprofessor
+    prestige = 0.2
 }
 
 leader = {
-	name = "Van der Linden"
-	date = 1859.1.1
-	type = land
-	personality = imperious
-	background = yesman
-	prestige = 0.1
+    name = "Van der Linden"
+    date = 1859.1.1
+    type = land
+    personality = unit_personality
+    background = imperiousxyesman
+    prestige = 0.1
 }
 
 leader = {
-	name = "Auguste Goethals"
-	date = 1859.1.1
-	type = land
-	personality = diplomatic
-	background = exranker
-	prestige = 0.1
+    name = "Auguste Goethals"
+    date = 1859.1.1
+    type = land
+    personality = unit_personality
+    background = diplomaticxexranker
+    prestige = 0.1
 }
 
 leader = {
-	name = "Fleury-Duray"
-	date = 1861.1.1
-	type = land
-	personality = meticulous
-	background = war_college
+    name = "Fleury-Duray"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = meticulousxwar_college
 }
 
 army = {

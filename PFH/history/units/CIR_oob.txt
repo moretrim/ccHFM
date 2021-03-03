@@ -1,6 +1,6 @@
 
 army = {
-	name = "Circassian Army"
+    name = "Circassian Army"
 	location = 1051
 	
 
@@ -35,12 +35,11 @@ army = {
 	}
 
 	leader = {
-		name = "Tuguzhuko Kyzbech"
-		picture = arab_general_4
-		type = land
-		date = 1836.1.1
-		background = cursed_luck
-		personality = resolute
-	}
+        name = "Tuguzhuko Kyzbech"
+        picture = arab_general_4
+        date = 1836.1.1
+        type = land
+        personality = unit_personality
+        background = resolutexcursed_luck
+    }
 }
-

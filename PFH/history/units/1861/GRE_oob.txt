@@ -1,36 +1,36 @@
 leader = {
-	name = "Ioannis Kolokotronis"
-	date = 1833.1.1
-	type = land
-	personality = aweless
-	background = powerful_friends
-	prestige = 0.3
+    name = "Ioannis Kolokotronis"
+    date = 1833.1.1
+    type = land
+    personality = unit_personality
+    background = awelessxpowerful_friends
+    prestige = 0.3
 }
 
 leader = {
-	name = "Antonios Kriezis"
-	date = 1844.1.1
-	type = sea
-	personality = audacious
-	background = expert_raider
-	prestige = 0.2
+    name = "Antonios Kriezis"
+    date = 1844.1.1
+    type = sea
+    personality = unit_personality
+    background = audaciousxexpert_raider
+    prestige = 0.2
 }
 
 leader = {
-	name = "Skarlatos Soutsos"
-	date = 1854.1.1
-	type = land
-	personality = impulsive
-	background = corrupt
-	prestige = 0.1
+    name = "Skarlatos Soutsos"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = impulsivexcorrupt
+    prestige = 0.1
 }
 
 leader = {
-	name = "Papadiamantopoulos"
-	date = 1861.1.1
-	type = land
-	personality = unruly
-	background = generals_aide
+    name = "Papadiamantopoulos"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = unrulyxgenerals_aide
 }
 
 army = {

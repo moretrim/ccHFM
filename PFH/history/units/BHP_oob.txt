@@ -13,10 +13,9 @@ army = {
 }
 
 leader = {
-	name = "Nawab Mohammad Abbasi"
-	type = land
-	date = 1800.12.14
-	background = aristocrat
-	personality = inspiring
+    name = "Nawab Mohammad Abbasi"
+    date = 1800.12.14
+    type = land
+    personality = unit_personality
+    background = inspiringxaristocrat
 }
-

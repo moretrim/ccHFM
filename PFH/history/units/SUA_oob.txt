@@ -27,11 +27,11 @@ ENG = {
 }
 
 leader = {
-   name = "Sobhuza I"
-   type = land
-   date = 1836.1.1
-   background = clueless
-   personality = mediocre
+    name = "Sobhuza I"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexclueless
 }
 
 army = {

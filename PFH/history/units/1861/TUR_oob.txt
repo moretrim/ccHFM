@@ -56,74 +56,74 @@ HAL = {
 #Leaders
 
 leader = {
-	name = "Abdi Pasha"
-	date = 1861.1.1 #1840
-	type = land
-	personality = merciless
-	background = old_school
-	prestige = 0.2
+    name = "Abdi Pasha"
+    date = 1861.1.1 #1840
+    type = land
+    personality = unit_personality
+    background = mercilessxold_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Abdülkerim Pasha"
-	date = 1861.1.1 #1846
-	type = land
-	personality = unruly
-	background = rising_star
-	prestige = 0.2
+    name = "Abdülkerim Pasha"
+    date = 1861.1.1 #1846
+    type = land
+    personality = unit_personality
+    background = unrulyxrising_star
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ismail Pasha"
-	date = 1850.1.1
-	type = land
-	personality = balanced_p
-	background = adventurer
-	prestige = 0.2
+    name = "Ismail Pasha"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = balanced_pxadventurer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Omer Pasha"
-	date = 1850.1.1
-	type = land
-	personality = skilled
-	background = powerful_friends
-	prestige = 0.2
+    name = "Omer Pasha"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxpowerful_friends
+    prestige = 0.2
 }
 
 leader = {
-	name = "Mehmet Sadik Pasha"
-	date = 1850.1.1
-	type = land
-	personality = gallant
-	background = adventurer
-	prestige = 0.2
+    name = "Mehmet Sadik Pasha"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = gallantxadventurer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Musavir Pasha"
-	date = 1850.1.1
-	type = sea
-	personality = romantic
-	background = cartographer
-	prestige = 0.2
+    name = "Musavir Pasha"
+    date = 1850.1.1
+    type = sea
+    personality = unit_personality
+    background = romanticxcartographer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Hüseyin Avni Pasha"
-	date = 1856.1.1
-	type = land
-	personality = disorderly
-	background = politician
-	prestige = 0.1
+    name = "Hüseyin Avni Pasha"
+    date = 1856.1.1
+    type = land
+    personality = unit_personality
+    background = disorderlyxpolitician
+    prestige = 0.1
 }
 
 leader = {
-	name = "Mehmet Ali Pasha"
-	date = 1861.1.1
-	type = land
-	personality = able
-	background = cursed_luck
+    name = "Mehmet Ali Pasha"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = ablexcursed_luck
 }
 
 army = {

@@ -1,9 +1,9 @@
 leader = {
-	name = "Francisco Morazán"
-	type = land
-	date = 1836.1.1
-	personality = stout
-	background = generals_aide
+    name = "Francisco Morazán"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = stoutxgenerals_aide
 }
 
 army = {

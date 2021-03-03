@@ -63,81 +63,81 @@ RUS = {
 #Leaders
 
 leader = {
-	name = "Erzerhog Albrecht"
-	date = 1861.1.1 #1840
-	type = land
-	personality = intelligent
-	background = aristocrat
-	prestige = 0.2
+    name = "Erzerhog Albrecht"
+    date = 1861.1.1 #1840
+    type = land
+    personality = unit_personality
+    background = intelligentxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Eduard von Clam-Gallas"
-	date = 1852.1.1
-	type = land
-	personality = calm
-	background = cavalry_school
-	prestige = 0.2
+    name = "Eduard von Clam-Gallas"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = calmxcavalry_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ludwig von Benedek"
-	date = 1849.1.1
-	type = land
-	personality = steadfast
-	background = unqualified
-	prestige = 0.2
+    name = "Ludwig von Benedek"
+    date = 1849.1.1
+    type = land
+    personality = unit_personality
+    background = steadfastxunqualified
+    prestige = 0.2
 }
 
 leader = {
-	name = "von Gablenz"
-	date = 1854.1.1
-	type = land
-	personality = bold
-	background = cavalry_school
-	prestige = 0.2
+    name = "von Gablenz"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = boldxcavalry_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Ramming von Riedkirchen"
-	date = 1854.1.1
-	type = land
-	personality = brash
-	background = unfit
-	prestige = 0.2
+    name = "Ramming von Riedkirchen"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = brashxunfit
+    prestige = 0.2
 }
 
 leader = {
-	name = "Joseph Philippovic"
-	date = 1859.1.1
-	type = land
-	personality = relentless
-	background = school_of_offense
-	prestige = 0.1
+    name = "Joseph Philippovic"
+    date = 1859.1.1
+    type = land
+    personality = unit_personality
+    background = relentlessxschool_of_offense
+    prestige = 0.1
 }
 
 leader = {
-	name = "Franz von John"
-	date = 1861.1.1
-	type = land
-	personality = competent
-	background = generals_aide
+    name = "Franz von John"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = competentxgenerals_aide
 }
 
 leader = {
-	name = "Kuhn von Khunenfeld"
-	date = 1861.1.1
-	type = land
-	personality = arrogant
-	background = professor
+    name = "Kuhn von Khunenfeld"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = arrogantxprofessor
 }
 
 leader = {
-	name = "von Tegethoff"
-	date = 1861.1.1
-	type = sea
-	personality = daring
-	background = school_of_offense
+    name = "von Tegethoff"
+    date = 1861.1.1
+    type = sea
+    personality = unit_personality
+    background = daringxschool_of_offense
 }
 
 army = {

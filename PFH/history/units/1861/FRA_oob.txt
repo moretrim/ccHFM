@@ -48,156 +48,156 @@ DAH = {
 #Leaders
 
 leader = {
-	name = "Bernard Pierre Magnan"
-	date = 1835.1.1
-	type = land
-	personality = disorderly
-	background = bootlicker
-	prestige = 0.3
+    name = "Bernard Pierre Magnan"
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = disorderlyxbootlicker
+    prestige = 0.3
 }
 
 leader = {
-	name = "Baraguey d'Hilliers"
-	date = 1836.1.1
-	type = land
-	personality = active_p
-	background = drillmaster
-	prestige = 0.3
+    name = "Baraguey d'Hilliers"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxdrillmaster
+    prestige = 0.3
 }
 
 leader = {
-	name = "Auguste Regnaud"
-	date = 1848.1.1
-	type = land
-	personality = manful
-	background = aristocrat
-	prestige = 0.2
+    name = "Auguste Regnaud"
+    date = 1848.1.1
+    type = land
+    personality = unit_personality
+    background = manfulxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Frédéric Forey"
-	date = 1848.1.1
-	type = land
-	personality = choleric
-	background = warmonger
-	prestige = 0.2
+    name = "Frédéric Forey"
+    date = 1848.1.1
+    type = land
+    personality = unit_personality
+    background = cholericxwarmonger
+    prestige = 0.2
 }
 
 leader = {
-	name = "Paul de Ladmirault"
-	date = 1858.1.1 #1848
-	type = land
-	personality = resolute
-	background = colonial_b
-	prestige = 0.2
+    name = "Paul de Ladmirault"
+    date = 1858.1.1 #1848
+    type = land
+    personality = unit_personality
+    background = resolutexcolonial_b
+    prestige = 0.2
 }
 
 leader = {
-	name = "de Canrobert"
-	date = 1861.1.1 #1850
-	type = land
-	personality = dauntless
-	background = generals_aide
-	prestige = 0.2
+    name = "de Canrobert"
+    date = 1861.1.1 #1850
+    type = land
+    personality = unit_personality
+    background = dauntlessxgenerals_aide
+    prestige = 0.2
 }
 
 leader = {
-	name = "Comte de Palikao"
-	date = 1851.1.1
-	type = land
-	personality = impulsive
-	background = cavalry_school
-	prestige = 0.2
+    name = "Comte de Palikao"
+    date = 1851.1.1
+    type = land
+    personality = unit_personality
+    background = impulsivexcavalry_school
+    prestige = 0.2
 }
 
 leader = {
-	name = "Patrice de Mac-Mahon"
-	date = 1852.1.1
-	type = land
-	personality = skilled
-	background = war_college
-	prestige = 0.2
+    name = "Patrice de Mac-Mahon"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxwar_college
+    prestige = 0.2
 }
 
 leader = {
-	name = "Adolphe Niel"
-	date = 1852.1.1
-	type = land
-	personality = calm
-	background = engineer
-	prestige = 0.2
+    name = "Adolphe Niel"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = calmxengineer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jurien de la Gravière"
-	date = 1853.1.1
-	type = sea
-	personality = competent
-	background = drillmaster
-	prestige = 0.2
+    name = "Jurien de la Gravière"
+    date = 1853.1.1
+    type = sea
+    personality = unit_personality
+    background = competentxdrillmaster
+    prestige = 0.2
 }
 
 leader = {
-	name = "Bouet Willaumez"
-	date = 1853.1.1
-	type = sea
-	personality = ballsy
-	background = adventurer
-	prestige = 0.2
+    name = "Bouet Willaumez"
+    date = 1853.1.1
+    type = sea
+    personality = unit_personality
+    background = ballsyxadventurer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Achille Bazaine"
-	date = 1854.1.1
-	type = land
-	personality = harsh
-	background = school_of_offense
-	prestige = 0.2
+    name = "Achille Bazaine"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = harshxschool_of_offense
+    prestige = 0.2
 }
 
 leader = {
-	name = "Edmond Lebouef"
-	date = 1854.1.1
-	type = land
-	personality = vainglorious
-	background = artillerist
-	prestige = 0.2
+    name = "Edmond Lebouef"
+    date = 1854.1.1
+    type = land
+    personality = unit_personality
+    background = vaingloriousxartillerist
+    prestige = 0.2
 }
 
 leader = {
-	name = "Rigault de Genouilly"
-	date = 1854.1.1
-	type = sea
-	personality = brash
-	background = warmonger
-	prestige = 0.2
+    name = "Rigault de Genouilly"
+    date = 1854.1.1
+    type = sea
+    personality = unit_personality
+    background = brashxwarmonger
+    prestige = 0.2
 }
 
 leader = {
-	name = "Frossard"
-	date = 1855.1.1
-	type = land
-	personality = clever
-	background = school_of_defense
-	prestige = 0.1
+    name = "Frossard"
+    date = 1855.1.1
+    type = land
+    personality = unit_personality
+    background = cleverxschool_of_defense
+    prestige = 0.1
 }
 
 leader = {
-	name = "d’Aurelle de Paladines"
-	date = 1855.1.1
-	type = land
-	personality = indifferent
-	background = bureaucrat_speed
-	prestige = 0.1
+    name = "d’Aurelle de Paladines"
+    date = 1855.1.1
+    type = land
+    personality = unit_personality
+    background = indifferentxbureaucrat_speed
+    prestige = 0.1
 }
 
 leader = {
-	name = "Charles Bourbaki"
-	date = 1859.1.1
-	type = land
-	personality = impetuous
-	background = adventurer
-	prestige = 0.1
+    name = "Charles Bourbaki"
+    date = 1859.1.1
+    type = land
+    personality = unit_personality
+    background = impetuousxadventurer
+    prestige = 0.1
 }
 
 army = {

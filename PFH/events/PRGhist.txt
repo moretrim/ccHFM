@@ -656,8 +656,8 @@ country_event = {
 		artillery = 10
 		define_general = {
 				name = "Francisco Solano Lopez"
-				personality = audacious
-				background = unqualified
+				personality = unit_personality
+				background = audaciousxunqualified
 			}
 		}
 	}

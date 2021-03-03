@@ -95,14 +95,14 @@ country_event = {
 	
 			define_general = {
 				name = "Stanislaw Brzóska"
-				personality = spirited
-				background = nationalist
+				personality = unit_personality
+				background = spiritedxnationalist
 			}
 			
 			define_general = {
 				name = "Aleksander Waszkowski"
-				personality = stouthearted
-				background = nationalist
+				personality = unit_personality
+				background = stoutheartedxnationalist
 			}
 				
 			add_country_modifier = { name = polish_uprising_mobilization duration = 2920 }
@@ -212,14 +212,14 @@ country_event = {
 	
 			define_general = {
 				name = "Stanislaw Brzóska"
-				personality = spirited
-				background = nationalist
+				personality = unit_personality
+				background = spiritedxnationalist
 			}
 			
 			define_general = {
 				name = "Aleksander Waszkowski"
-				personality = stouthearted
-				background = nationalist
+				personality = unit_personality
+				background = stoutheartedxnationalist
 			}
 				
 			add_country_modifier = { name = small_country_draft duration = 720 }

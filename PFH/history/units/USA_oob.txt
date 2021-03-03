@@ -517,84 +517,84 @@ EGY = {
 }
 
 leader = {
-	name = "Winfield Scott"
-	date = 1836.1.1
-	type = land
-	personality = steadfast
-	background = school_of_firepower
-	prestige = 0.3
+    name = "Winfield Scott"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = steadfastxschool_of_firepower
+    prestige = 0.3
 }
 
 leader = {
-	name = "Zachary Taylor"
-	date = 1836.1.1
-	type = land
-	personality = intuitive
-	background = school_of_offense
-	prestige = 0.1
+    name = "Zachary Taylor"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = intuitivexschool_of_offense
+    prestige = 0.1
 }
 
 leader = {
-	name = "Thomas Jesup"
-	date = 1836.1.1
-	type = land
-	personality = meticulous
-	background = toady
-	prestige = 0.1
+    name = "Thomas Jesup"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = meticulousxtoady
+    prestige = 0.1
 }
 
 leader = {
-	name = "Edmund P. Gaines"
-	date = 1828.1.1
-	type = land
-	personality = soldierly
-	background = drillmaster
-	prestige = 0.1
+    name = "Edmund P. Gaines"
+    date = 1828.1.1
+    type = land
+    personality = unit_personality
+    background = soldierlyxdrillmaster
+    prestige = 0.1
 }
 
 leader = {
-	name = "Alexander Macomb"
-	date = 1812.1.1
-	type = land
-	personality = heroic
-	background = engineer
-	prestige = 0.3
+    name = "Alexander Macomb"
+    date = 1812.1.1
+    type = land
+    personality = unit_personality
+    background = heroicxengineer
+    prestige = 0.3
 }
 
 leader = {
-	name = "Isaac Hull"
-	date = 1810.1.1
-	type = sea
-	personality = skilled
-	background = elderly
-	prestige = 0.2
+    name = "Isaac Hull"
+    date = 1810.1.1
+    type = sea
+    personality = unit_personality
+    background = skilledxelderly
+    prestige = 0.2
 }
 
 leader = {
-	name = "William B. Shubrick"
-	date = 1836.1.1
-	type = sea
-	personality = efficient
-	background = school_of_offense
-	prestige = 0.1
+    name = "William B. Shubrick"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = efficientxschool_of_offense
+    prestige = 0.1
 }
 
 leader = {
-	name = "James Biddle"
-	date = 1830.1.1
-	type = sea
-	personality = tactful
-	background = diplomat
-	prestige = 0.1
+    name = "James Biddle"
+    date = 1830.1.1
+    type = sea
+    personality = unit_personality
+    background = tactfulxdiplomat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Matthew C. Perry"
-	date = 1836.1.1
-	type = sea
-	personality = openminded
-	background = war_college
-	prestige = 0.1
+    name = "Matthew C. Perry"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = openmindedxwar_college
+    prestige = 0.1
 }
 
 army = {

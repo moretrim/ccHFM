@@ -1,19 +1,19 @@
 leader = {
-	name = "Leon Cordero"
-	date = 1850.1.1
-	type = land
-	personality = resourceful
-	background = professor
-	prestige = 0.2
+    name = "Leon Cordero"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = resourcefulxprofessor
+    prestige = 0.2
 }
 
 leader = {
-	name = "Juan Falcón"
-	date = 1857.1.1
-	type = land
-	personality = balanced_p
-	background = corrupt
-	prestige = 0.1
+    name = "Juan Falcón"
+    date = 1857.1.1
+    type = land
+    personality = unit_personality
+    background = balanced_pxcorrupt
+    prestige = 0.1
 }
 
 army = {

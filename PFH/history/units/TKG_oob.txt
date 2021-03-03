@@ -5,13 +5,13 @@ USA = { value = 0 }
 RUS = { value = 75 }
 
 leader = {
-	name = "Tokugawa Nariaki"
-	date = 1836.1.1
-	type = land
-	personality = disciplined
-	background = old_school
-	prestige = 0.1
- }
+    name = "Tokugawa Nariaki"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = disciplinedxold_school
+    prestige = 0.1
+}
 
 army = {
 	name = "Army of the Tokugawa Shogunate"

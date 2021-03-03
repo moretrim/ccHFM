@@ -1,10 +1,10 @@
 leader = {
-	name = "Zubayr Pasha"
-	date = 1855.1.1
-	type = land
-	personality = charismatic
-	background = immoral
-	prestige = 0.1
+    name = "Zubayr Pasha"
+    date = 1855.1.1
+    type = land
+    personality = unit_personality
+    background = charismaticximmoral
+    prestige = 0.1
 }
 
 navy = {

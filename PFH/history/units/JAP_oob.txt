@@ -4,56 +4,56 @@ BRU = { value = 100 }
 USA = { value = 0 }
 
 leader = {
-	name = "Sakuma Shozan"
-	date = 1836.1.1
-	type = land
-	personality = clever
-	background = politician
-	prestige = 0.1
+    name = "Sakuma Shozan"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = cleverxpolitician
+    prestige = 0.1
 }
 
 leader = {
-	name = "Takashima Shuhan"
-	date = 1836.1.1
-	type = land
-	personality = defiant
-	background = innovative_tactician
-	prestige = 0.1
+    name = "Takashima Shuhan"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = defiantxinnovative_tactician
+    prestige = 0.1
 }
 
 leader = {
-	name = "Watanabe Kazan"
-	date = 1836.1.1
-	type = land
-	personality = strange
-	background = aristocrat
-	prestige = 0.1
+    name = "Watanabe Kazan"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = strangexaristocrat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Takano Choei"
-	date = 1836.1.1
-	type = land
-	personality = bold
-	background = aristocrat
-	prestige = 0.1
+    name = "Takano Choei"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = boldxaristocrat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Prince Fushimi Kuniie"
-	date = 1836.1.1
-	type = land
-	personality = efficient
-	background = adventurer
-	prestige = 0.1
+    name = "Prince Fushimi Kuniie"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = efficientxadventurer
+    prestige = 0.1
 }
 
 leader = {
-	name = "Prince Fushimi Sadanori"
-	date = 1836.1.1
-	type = land
-	personality = spirited
-	background = rising_star
+    name = "Prince Fushimi Sadanori"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = spiritedxrising_star
 }
 
 army = {

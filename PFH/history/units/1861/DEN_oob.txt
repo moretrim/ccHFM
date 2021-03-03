@@ -6,39 +6,39 @@ PRU = {
 
 #Leaders
 leader = {
-	name = "Christian de Meza"
-	date = 1850.1.1
-	type = land
-	personality = ballsy
-	background = war_college
-	prestige = 0.2
+    name = "Christian de Meza"
+    date = 1850.1.1
+    type = land
+    personality = unit_personality
+    background = ballsyxwar_college
+    prestige = 0.2
 }
 
 leader = {
-	name = "Niels Christian Lunding"
-	date = 1852.1.1
-	type = land
-	personality = resourceful
-	background = engineer
-	prestige = 0.2
+    name = "Niels Christian Lunding"
+    date = 1852.1.1
+    type = land
+    personality = unit_personality
+    background = resourcefulxengineer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Edouard Suenson"
-	date = 1852.1.1
-	type = sea
-	personality = competent
-	background = war_college
-	prestige = 0.2
+    name = "Edouard Suenson"
+    date = 1852.1.1
+    type = sea
+    personality = unit_personality
+    background = competentxwar_college
+    prestige = 0.2
 }
 
 leader = {
-	name = "Georg Gerlach"
-	date = 1858.1.1
-	type = land
-	personality = able
-	background = generals_aide
-	prestige = 0.2
+    name = "Georg Gerlach"
+    date = 1858.1.1
+    type = land
+    personality = unit_personality
+    background = ablexgenerals_aide
+    prestige = 0.2
 }
 
 navy = {

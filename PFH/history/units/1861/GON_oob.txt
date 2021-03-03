@@ -27,11 +27,11 @@ AWS = {
 }
 
 leader = {
-   name = "Ras Ali II of Yejju"
-   type = land
-   date = 1836.1.1
-   background = warmonger
-   personality = competent
+    name = "Ras Ali II of Yejju"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = competentxwarmonger
 }
 
 army = {

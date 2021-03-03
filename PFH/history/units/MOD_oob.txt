@@ -1,10 +1,10 @@
 leader = {
-	name = "Francesco IV"
-	date = 1815.1.1
-	type = land
-	personality = arrogant
-	background = hated
-	prestige = 0.5
+    name = "Francesco IV"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = arrogantxhated
+    prestige = 0.5
 }
 
 army = {

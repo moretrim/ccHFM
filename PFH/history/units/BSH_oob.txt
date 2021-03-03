@@ -23,11 +23,11 @@ ENG = {
 }
 
 leader = {
-   name = "Moshoeshoe I"
-   type = land
-   date = 1836.1.1
-   background = adventurer
-   personality = skilled
+    name = "Moshoeshoe I"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxadventurer
 }
 
 army = {

@@ -362,23 +362,23 @@ country_event = {
 			}
 			define_general = {
 				name = "Li Zhang Lexing"
-				personality = stout
-				background = innovative_tactician
+				personality = unit_personality
+				background = stoutxinnovative_tactician
 			}
 			define_general = {
 				name = "Lai Wenguang"
-				personality = spirited
-				background = gifted_administrator
+				personality = unit_personality
+				background = spiritedxgifted_administrator
 			}
 			define_general = {
 				name = "Zhang Zongyu"
-				personality = stout
-				background = incompetent
+				personality = unit_personality
+				background = stoutxincompetent
 			}
 			define_general = {
 				name = "Ren Zhu"
-				personality = audacious
-				background = expert_raider
+				personality = unit_personality
+				background = audaciousxexpert_raider
 			}
 		}
 		random_owned = { limit = { owner = { land_reform = yes_land_reform } } NIA = { economic_reform = yes_land_reform } }
@@ -414,8 +414,8 @@ country_event = {
 		plurality = -1
 		define_general = {
 			name = "Sengge Rinchen"
-			personality = brilliant
-			background = expert_raider
+			personality = unit_personality
+			background = brilliantxexpert_raider
 		}
 		war = {
 			target = NIA

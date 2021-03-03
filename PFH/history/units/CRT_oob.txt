@@ -13,10 +13,9 @@ army = {
 }
 
 leader = {
-   name = "Genaro Berón de Astrada"
-   type = land
-   date = 1835.12.12
-   background = drillmaster
-   personality = audacious
-	}
-
+    name = "Genaro Berón de Astrada"
+    date = 1835.12.12
+    type = land
+    personality = unit_personality
+    background = audaciousxdrillmaster
+}

@@ -1,35 +1,35 @@
 leader = {
-	name = "von Heideck"
-	type = land
-	date="1833.1.1"
-	personality = romantic
-	background = poet
-	prestige = 0.1
+    name = "von Heideck"
+    date = 1833.1.1
+    type = land
+    personality = unit_personality
+    background = romanticxpoet
+    prestige = 0.1
 }
 
 leader = {
-	name = "Demetrios Kalergis"
-	type = land
-	date="1836.1.1"
-	personality = impetuous
-	background = cavalry_school
+    name = "Demetrios Kalergis"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = impetuousxcavalry_school
 }
 
 leader = {
-	name = "Ioannis Kolokotronis"
-	type = land
-	date="1833.1.1"
-	personality = aweless
-	background = powerful_friends
-	prestige = 0.1
+    name = "Ioannis Kolokotronis"
+    date = 1833.1.1
+    type = land
+    personality = unit_personality
+    background = awelessxpowerful_friends
+    prestige = 0.1
 }
 
 leader = {
-	name = "Antonios Kriezis"
-	type = sea
-	date="1836.1.1"
-	personality = audacious
-	background = expert_raider
+    name = "Antonios Kriezis"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = audaciousxexpert_raider
 }
 
 army = {

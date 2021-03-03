@@ -1,28 +1,28 @@
 leader = {
-	name = "Paul Ziegler"
-	date = 1847.1.1
-	type = land
-	personality = active_p
-	background = politician
-	prestige = 0.2
+    name = "Paul Ziegler"
+    date = 1847.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxpolitician
+    prestige = 0.2
 }
 
 leader = {
-	name = "Augusto Fogliardi"
-	date = 1855.1.1
-	type = land
-	personality = active_p
-	background = debutante
-	prestige = 0.1
+    name = "Augusto Fogliardi"
+    date = 1855.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxdebutante
+    prestige = 0.1
 }
 
 leader = {
-	name = "Hans Herzog"
-	date = 1861.1.1
-	type = land
-	personality = polite
-	background = armchair_general
-	prestige = 0.1
+    name = "Hans Herzog"
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = politexarmchair_general
+    prestige = 0.1
 }
 
 army = {

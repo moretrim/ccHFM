@@ -35,10 +35,9 @@ army = {
 }
 
 leader = {
-	name = "Ali II Karamanli"
-	type = land
-	date = 1836.1.1
-	background = cavalry_school
-	personality = resolute
+    name = "Ali II Karamanli"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = resolutexcavalry_school
 }
-	

@@ -9,10 +9,9 @@ army = {
 	}
 
 leader = {
-	name = "Sultan Facharudin"
-	date = 1836.1.1
-	type = land
-	personality = coward
-	background = aristocrat
+    name = "Sultan Facharudin"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = cowardxaristocrat
 }
-

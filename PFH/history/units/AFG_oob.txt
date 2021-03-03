@@ -8,30 +8,30 @@ KHI = { value = 400 }
 
 
 leader = {
-	name = "Dost Mohammed"
-	type = land
-	date = 1836.1.1
-	personality = stalwart
-	background = debutante
-	prestige = 0.2
+    name = "Dost Mohammed"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = stalwartxdebutante
+    prestige = 0.2
 }
 
 leader = {
-	name = "Yar Mohammed"
-	type = land
-	date = 1836.1.1
-	personality = intuitive 
-	background = aristocrat
-	prestige = 0.2
+    name = "Yar Mohammed"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = intuitivexaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Akbar Khan"
-	type = land
-	date = 1836.1.1
-	personality = intuitive 
-	background = aristocrat
-	prestige = 0.2
+    name = "Akbar Khan"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = intuitivexaristocrat
+    prestige = 0.2
 }
 
 army = {

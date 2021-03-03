@@ -1,19 +1,19 @@
 leader = {
-	name = "von Leysser"
-	date = 1829.1.1
-	type = land
-	personality = tactful
-	background = elderly
-	prestige = 0.1
+    name = "von Leysser"
+    date = 1829.1.1
+    type = land
+    personality = unit_personality
+    background = tactfulxelderly
+    prestige = 0.1
 }
 
 leader = {
-	name = "von Zezschwitz"
-	date = 1817.1.1
-	type = land
-	personality = cautious
-	background = school_of_defense
-	prestige = 0.2
+    name = "von Zezschwitz"
+    date = 1817.1.1
+    type = land
+    personality = unit_personality
+    background = cautiousxschool_of_defense
+    prestige = 0.2
 }
 
 army = {

@@ -315,107 +315,113 @@ navy = {
 }
 
 leader = {
-	name = "Crown Prince Frederik"
-	picture = net_gen_prinsfrederik
-	date = 1836.1.1
-	type = land
-	personality = active_p
-	background = drillmaster
-	prestige = 0.1	
-}
-leader = {
-	name = "Hendrik Duycker"
-	picture = net_gen_duycker
-	date = 1827.1.1
-	type = land
-	personality = mediocre
-	background = old_school
-	prestige = 0.1
-}
-leader = {
-	name = "Frans David Cochius"
-	picture = net_gen_cochius
-	date = 1830.1.1
-	type = land
-	personality = aggressive
-	background = colonial_b
-	prestige = 0.1
-}
-leader = {
-	name = "Fredrik Karel List"
-	picture = net_gen_list
-	date = 1830.1.1
-	type = land
-	personality = arrogant
-	background = old_school
-}
-leader = {
-	name = "Engelbertus Lucas"
-	picture = net_adm_lucas
-	date = 1830.1.1
-	type = sea
-	personality = indifferent
-	background = politician
-	prestige = 0.1
-}
-leader = {
-	name = "Charles Nepveu"
-	picture = net_gen_nepveu
-	date = 1831.1.1
-	type = land
-	personality = bigoted
-	background = powerful_friends
-}
-leader = {
-	name = "Julius Constantijn Rijk"
-	picture = net_adm_rijk
-	date = 1836.1.1
-	type = sea
-	personality = able
-	background = exranker
+    name = "Crown Prince Frederik"
+    picture = net_gen_prinsfrederik
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxdrillmaster
+    prestige = 0.1
 }
 
 leader = {
-	name = "David Chassé"
-	date = 1806.1.1
-	type = land
-	personality = timid
-	background = school_of_defense
-	prestige = 0.3
+    name = "Hendrik Duycker"
+    picture = net_gen_duycker
+    date = 1827.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexold_school
+    prestige = 0.1
 }
 
 leader = {
-	name = "Hendrik de Kock"
-	date = 1807.1.1
-	type = land
-	personality = stout
-	background = colonial_b
-	prestige = 0.3
+    name = "Frans David Cochius"
+    picture = net_gen_cochius
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = aggressivexcolonial_b
+    prestige = 0.1
 }
 
 leader = {
-	name = "van den Bosch"
-	date = 1827.1.1
-	type = land
-	personality = openminded
-	background = powerful_friends
-	prestige = 0.1
+    name = "Fredrik Karel List"
+    picture = net_gen_list
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = arrogantxold_school
 }
 
 leader = {
-	name = "Dominique de Eerens"
-	date = 1815.1.1
-	type = land
-	personality = soldierly
-	background = exranker
-	prestige = 0.2
+    name = "Engelbertus Lucas"
+    picture = net_adm_lucas
+    date = 1830.1.1
+    type = sea
+    personality = unit_personality
+    background = indifferentxpolitician
+    prestige = 0.1
 }
 
 leader = {
-	name = "Karel Bernhard van Saksen-Weimar"
-	date = 1815.1.1
-	type = land
-	personality = smart_p
-	background = uncommonly_young
-	prestige = 0.2
+    name = "Charles Nepveu"
+    picture = net_gen_nepveu
+    date = 1831.1.1
+    type = land
+    personality = unit_personality
+    background = bigotedxpowerful_friends
+}
+
+leader = {
+    name = "Julius Constantijn Rijk"
+    picture = net_adm_rijk
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = ablexexranker
+}
+
+leader = {
+    name = "David Chassé"
+    date = 1806.1.1
+    type = land
+    personality = unit_personality
+    background = timidxschool_of_defense
+    prestige = 0.3
+}
+
+leader = {
+    name = "Hendrik de Kock"
+    date = 1807.1.1
+    type = land
+    personality = unit_personality
+    background = stoutxcolonial_b
+    prestige = 0.3
+}
+
+leader = {
+    name = "van den Bosch"
+    date = 1827.1.1
+    type = land
+    personality = unit_personality
+    background = openmindedxpowerful_friends
+    prestige = 0.1
+}
+
+leader = {
+    name = "Dominique de Eerens"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = soldierlyxexranker
+    prestige = 0.2
+}
+
+leader = {
+    name = "Karel Bernhard van Saksen-Weimar"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = smart_pxuncommonly_young
+    prestige = 0.2
 }

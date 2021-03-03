@@ -13,9 +13,9 @@ army = {
 }
 
 leader = {
-	name = "Mohammed bin Thani"
-	type = land
-	date = 1836.1.1
-		background = aristocrat
-		personality = spirited
-	}
+    name = "Mohammed bin Thani"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = spiritedxaristocrat
+}

@@ -3,11 +3,11 @@ AFG = { value = 400 }
 PER = { value = 100 }
 
 leader = {
-	name = "Muhammad Rahim Quli"
-	type = land
-	date = 1825.1.1
-	personality = resourceful
-	background = aristocrat
+    name = "Muhammad Rahim Quli"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = resourcefulxaristocrat
 }
 
 army = {

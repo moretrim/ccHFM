@@ -1,10 +1,10 @@
 leader = {
-	name = "Paul Kruger"
-	date = 1848.1.1
-	type = land
-	personality = competent
-	background = diplomat
-	prestige = 0.5
+    name = "Paul Kruger"
+    date = 1848.1.1
+    type = land
+    personality = unit_personality
+    background = competentxdiplomat
+    prestige = 0.5
 }
 
 army = {

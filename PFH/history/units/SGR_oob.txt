@@ -12,11 +12,11 @@ army = {
 }
 
 leader = {
-	name = "Karl Hohenzollern-Sigmaringen"
-	picture = european_general_36
-	date = 1830.1.1
-	type = land
-	personality = soldierly
-	background = aristocrat
-	prestige = 0.1
+    name = "Karl Hohenzollern-Sigmaringen"
+    picture = european_general_36
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = soldierlyxaristocrat
+    prestige = 0.1
 }

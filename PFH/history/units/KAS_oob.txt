@@ -1,17 +1,17 @@
 leader = {
-	name = "Zovawar Singh"
-	type = land
-	date = 1836.1.1
-	personality = sharp
-	background = spoiled
+    name = "Zovawar Singh"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = sharpxspoiled
 }
 
 leader = {
-	name = "Gulub Singh"
-	type = land
-	date = 1836.1.1
-	personality = competent
-	background = aristocrat
+    name = "Gulub Singh"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = competentxaristocrat
 }
 
 army = {

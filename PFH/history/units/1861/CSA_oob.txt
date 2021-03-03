@@ -1,67 +1,67 @@
 leader = {
-	name = "Joseph E. Johnston"
-	type = land
-	date="1861.1.1"
-	prestige = 0.2
-	personality = balanced_p
-	background = engineer
-	picture="european_general_37"
+    name = "Joseph E. Johnston"
+    picture = european_general_37
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = balanced_pxengineer
+    prestige = 0.2
 }
 
 leader = {
-	name = "Robert E.Lee"
-	type = land
-	date="1821.1.1"
-	prestige = 0.2
-	personality = audacious
-	background = war_college
-	picture="european_general_38"
+    name = "Robert E.Lee"
+    picture = european_general_38
+    date = 1821.1.1
+    type = land
+    personality = unit_personality
+    background = audaciousxwar_college
+    prestige = 0.2
 }
 
 leader = {
-	name = "E. Kirby Smith"
-	type = land
-	date="1861.1.1"
-	prestige = 0.2
-	personality = resourceful
-	background = gifted_administrator
-	picture="european_general_23"
+    name = "E. Kirby Smith"
+    picture = european_general_23
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = resourcefulxgifted_administrator
+    prestige = 0.2
 }
 
 leader = {
-	name = "James Longstreet"
-	type = land
-	date="1861.1.1"
-	prestige = 0.2
-	personality = disciplined
-	background = school_of_firepower
-	picture="european_general_19"
+    name = "James Longstreet"
+    picture = european_general_19
+    date = 1861.1.1
+    type = land
+    personality = unit_personality
+    background = disciplinedxschool_of_firepower
+    prestige = 0.2
 }
 
 leader = {
-	name = "Raphael Semmes"
-	type = sea
-	date="1861.1.1"
-	personality = heroic
-	background = expert_raider
-	picture="european_admiral_26"
+    name = "Raphael Semmes"
+    picture = european_admiral_26
+    date = 1861.1.1
+    type = sea
+    personality = unit_personality
+    background = heroicxexpert_raider
 }
-	
+
 army = {
-	name = "Army of Northern Virginia"
+    name = "Army of Northern Virginia"
 	location = 212
 
 	leader = {
-		name = "P.G.T. Beauregard"
-		type = land
-		date="1836.1.1"
-		prestige = 0.2
-		personality = reserved
-		background = engineer
-		picture="european_general_18"
-	}
+        name = "P.G.T. Beauregard"
+        picture = european_general_18
+        date = 1836.1.1
+        type = land
+        personality = unit_personality
+        background = reservedxengineer
+        prestige = 0.2
+    }
 
-	regiment = {
+    regiment = {
 		name= "1st VA Artillery"
 		type = artillery
 		home = 211
@@ -124,18 +124,18 @@ army = {
 }
 
 army = {
-	name = "Army of the Shenandoah"
+    name = "Army of the Shenandoah"
 	
 	leader = {
-		name = "Thomas Jackson"
-		type = land
-		date="1836.1.1"
-		personality = audacious
-		background = eccentric_genius
-		picture="european_general_29"
-	}
-	
-	location = 215
+        name = "Thomas Jackson"
+        picture = european_general_29
+        date = 1836.1.1
+        type = land
+        personality = unit_personality
+        background = audaciousxeccentric_genius
+    }
+
+    location = 215
 	regiment = {
 		name= "2nd VA. Cavalry"
 		type = dragoon
@@ -169,18 +169,18 @@ army = {
 }
 
 army = {
-	name = "Army of Tennessee"
+    name = "Army of Tennessee"
 	
 	leader = {
-		name = "Albert Sidney Johnston"
-		type = land
-		date="1821.1.1"
-		personality = brilliant
-		background = natural_born_leader
-		picture="european_general_41"
-	}
-	
-	location = 188
+        name = "Albert Sidney Johnston"
+        picture = european_general_41
+        date = 1821.1.1
+        type = land
+        personality = unit_personality
+        background = brilliantxnatural_born_leader
+    }
+
+    location = 188
 	regiment = {
 		name= "1st TN Artillery"
 		type = artillery
@@ -213,18 +213,18 @@ army = {
 }
 
 army = {
-	name = "Army of the West"
+    name = "Army of the West"
 	
 	leader = {
-		name = "Earl Van Dorn"
-		type = land
-		date="1861.1.1"
-		personality = soft
-		background = womanizer
-		picture="european_general_0"
-	}
-	
-	location = 145
+        name = "Earl Van Dorn"
+        picture = european_general_0
+        date = 1861.1.1
+        type = land
+        personality = unit_personality
+        background = softxwomanizer
+    }
+
+    location = 145
 	regiment = {
 		name= "1st TX Cavalry"
 		type = dragoon
@@ -246,18 +246,18 @@ army = {
 }
 
 army = {
-	name = "Army of the Mississpi"
+    name = "Army of the Mississpi"
 	
 	leader = {
-		name = "Braxton Bragg"
-		type = land
-		date="1821.1.1"
-		personality = glory_hound
-		background = armchair_general
-		picture="european_general_27"
-	}
-	
-	location = 189
+        name = "Braxton Bragg"
+        picture = european_general_27
+        date = 1821.1.1
+        type = land
+        personality = unit_personality
+        background = glory_houndxarmchair_general
+    }
+
+    location = 189
 	regiment = {
 		name= "1st MS Cavalry"
 		type = infantry
@@ -290,18 +290,18 @@ army = {
 }
 
 army = {
-	name = "Army of Virginia"
+    name = "Army of Virginia"
 
 	leader = {
-		name = "J.E.B. Stuart"
-		type = land
-		date="1836.1.1"
-		personality = daring
-		background = expert_raider
-		picture="european_general_11"
-	}
+        name = "J.E.B. Stuart"
+        picture = european_general_11
+        date = 1836.1.1
+        type = land
+        personality = unit_personality
+        background = daringxexpert_raider
+    }
 
-	location = 213
+    location = 213
 	regiment = {
 		name= "1st VA Cavalry"
 		type = hussar

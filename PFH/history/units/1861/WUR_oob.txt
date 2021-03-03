@@ -1,19 +1,19 @@
 leader = {
-	name = "von Neipperg"
-	date = 1840.1.1
-	type = land
-	personality = arrogant
-	background = powerful_friends
-	prestige = 0.2
+    name = "von Neipperg"
+    date = 1840.1.1
+    type = land
+    personality = unit_personality
+    background = arrogantxpowerful_friends
+    prestige = 0.2
 }
 
 leader = {
-	name = "Prinz Hermann van Saksen-Weimar"
-	date = 1859.1.1
-	type = land
-	personality = harsh
-	background = cavalry_school
-	prestige = 0.1
+    name = "Prinz Hermann van Saksen-Weimar"
+    date = 1859.1.1
+    type = land
+    personality = unit_personality
+    background = harshxcavalry_school
+    prestige = 0.1
 }
 
 army = {

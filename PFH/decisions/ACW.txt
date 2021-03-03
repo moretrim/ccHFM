@@ -913,39 +913,39 @@ political_decisions = {
 
 			define_general = {
 				name = "Robert E. Lee"
-				personality = audacious
-				background = war_college
+				personality = unit_personality
+				background = audaciousxwar_college
 			}
 
 			define_general = {
 				name = "Thomas Jackson"
-				personality = coolminded
-				background = school_of_defense
+				personality = unit_personality
+				background = coolmindedxschool_of_defense
 			}
 			define_general = {
 				name = "J.E.B. Stuart"
-				personality = brilliant
-				background = aristocrat
+				personality = unit_personality
+				background = brilliantxaristocrat
 			}
 			define_general = {
 				name = "James Longstreet"
-				personality = efficient
-				background = armchair_general
+				personality = unit_personality
+				background = efficientxarmchair_general
 			}
 			define_general = {
 				name = "Pierre Beauregard"
-				personality = expert
-				background = gifted_administrator
+				personality = unit_personality
+				background = expertxgifted_administrator
 			}
 			define_admiral = {
 				name = "Franklin Buchanan"
-				personality = balanced_p
-				background = nationalist
+				personality = unit_personality
+				background = balanced_pxnationalist
 			}
 			define_admiral = {
 				name = "Catesby ap Roger Jones"
-				personality = skilled
-				background = rising_star
+				personality = unit_personality
+				background = skilledxrising_star
 			}
 			
 			small_arms = 100

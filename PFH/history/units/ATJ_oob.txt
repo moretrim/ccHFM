@@ -22,10 +22,9 @@ army = {
 }
 
 leader = {
-	name = "Sultan Alauddin Syah"
-	date = 1836.1.1
-	type = land
-	personality = bigoted
-	background = powerful_friends
+    name = "Sultan Alauddin Syah"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = bigotedxpowerful_friends
 }
-

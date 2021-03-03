@@ -36,12 +36,13 @@ MOS = { value = -200 }
 ASH = { value = -200 }
 
 leader = {
-	name = "Seku Amadu"
-	type = land
-	date="1836.1.1"
-	personality = charismatic
-	background = innovative_tactician
+    name = "Seku Amadu"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = charismaticxinnovative_tactician
 }
+
 army = {
 	name = "Army of the Massina Jihad"
 	location = 1804

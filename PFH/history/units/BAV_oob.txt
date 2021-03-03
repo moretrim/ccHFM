@@ -1,37 +1,37 @@
 leader = {
-	name = "Pappenheim"
-	date = 1815.1.1
-	type = land
-	personality = careful
-	background = elderly
-	prestige = 0.3
+    name = "Pappenheim"
+    date = 1815.1.1
+    type = land
+    personality = unit_personality
+    background = carefulxelderly
+    prestige = 0.3
 }
 
 leader = {
-	name = "von Washington"
-	date = 1825.1.1
-	type = land
-	personality = gallant
-	background = powerful_friends
-	prestige = 0.1
+    name = "von Washington"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = gallantxpowerful_friends
+    prestige = 0.1
 }
 
 leader = {
-	name = "Karl von Heideck"
-	date = 1832.1.1
-	type = land
-	personality = polite
-	background = poet
-	prestige = 0.1
+    name = "Karl von Heideck"
+    date = 1832.1.1
+    type = land
+    personality = unit_personality
+    background = politexpoet
+    prestige = 0.1
 }
 
 leader = {
-	name = "Prinz Karl"
-	date = 1825.1.1
-	type = land
-	personality = mediocre
-	background = aristocrat
-	prestige = 0.1
+    name = "Prinz Karl"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexaristocrat
+    prestige = 0.1
 }
 
 army = {

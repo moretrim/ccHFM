@@ -1645,8 +1645,8 @@ political_decisions = {
 			leadership = 20
 			define_general = {
 				name = "Saigo Takamori"
-				personality = skilled
-				background = old_school
+				personality = unit_personality
+				background = skilledxold_school
 			}
 			add_country_modifier = {
 				name = taiping_draft

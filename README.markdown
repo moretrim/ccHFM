@@ -39,6 +39,66 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 ##### Changes
 
+- Leaders now display their personality & background all at once, together with a stat summary with
+  highlights. This makes it vastly simpler for the player to figure out at a glance how good or bad
+  a leader is:
+
+  <figure>
+
+  [![Leader selection screen][leader-selection-screen]][leader-selection-picture]
+
+  [leader-selection-screen]:
+    media/leader-selection.png?raw=true
+    "Selecting a general for Austria’s third army from among many candidates"
+  [leader-selection-picture]:
+    media/leader-selection.png?raw=true
+
+    <figcaption>
+
+    Selecting a general for Austria’s third army from among many candidates. From higher up to lower
+    down the list, some of the leaders that stand out:
+
+    - Alois von Grünne: the speediest hellbent armchair general there is with +50% speed
+    - Werner von Hötzendorf: a decent all-rounder with +2 attack +1 defence and a little bit extra
+      as indicated by the green ‘?’ question mark (in his case, a small bonus to morale)
+    - Alfons Remmele (highlighted, with tooltip): this defiant cartographer is an ever present rock
+      at +3 defence and +40% speed, with some extras (in this case, small bonuses to morale and
+      organisation)
+    - Ludwig Held (immediately after Alois Eisner, name hidden): while he could be considered for
+      the post for defence, he should not be employed on the offence due to a disappointing -2
+      attack
+
+    </figcaption
+  </figure>
+
+  The stat summary consists of the following, with appropriate colour coding:
+
+    * **attack score, defence score, speed modifier, extras**
+
+  Extras, if present, denote one or two remarkable modifier to organisation and/or morale—think of
+  it as a tiebreaker for generals with otherwise similar stats. Leader prestige, indicated by the
+  column to the left of the portrait, plays a similar role. Extras are displayed as one of the
+  following from best to worst: ‘!!!’, ‘?’, blank when unremarkable, ‘¿’, ‘¡¡¡’.
+
+  A stat is displayed as blank when neutral (e.g. no bonus to attack, no speed modifier) or
+  unremarkable. Great care has been taken that stat summaries have pixel-perfect alignment with one
+  another at all times in the leader selection panel, and you can think of all aggregate stats as
+  being displayed in columns (e.g. for attack) as well as in leader rows.
+
+  This change has been achieved by storing the formerly separate personalities & backgrounds of
+  leaders as a single trait under the hood, which acts as a combination of the two. This does *not*
+  affect how powerful generals or admirals can be, or how unlikely it is to roll e.g. a +5 attack/+5
+  defence general.
+
+  Known limitations include:
+  - An inability to sort leaders in any useful order when clicking on the “Personality & Background”
+    column header. Unfortunately this appears to be a base game limitation.
+  - The leader list in the military country screen “leaks” tooltips to the areas just under it. This
+    is a little bit disorientating when trying to use the UI elements in this area: the Create
+    General/Admiral buttons, as well as the leader management checkboxes. This however doesn’t
+    prevent their normal use or displaying their own tooltips. This also appears to be a base game
+    limitation, when trying to fit the longer unified trait descriptions in the leader list.
+
 - **(Experimental)** Turn the “Restore Democracy in South America” decision into a casus belli. As a
   decision, it had several flaws:
 

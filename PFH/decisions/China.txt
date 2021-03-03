@@ -983,8 +983,8 @@ political_decisions = {
 			leadership = 20
 			define_general = {
 				name = "Yaqub Beg"
-				personality = charismatic
-				background = adventurer
+				personality = unit_personality
+				background = charismaticxadventurer
 			}
 			add_country_modifier = {
 				name = small_country_draft
@@ -1029,8 +1029,8 @@ political_decisions = {
 			leadership = 20
 			define_general = {
 				name = "Du Wenxiu"
-				personality = deeply_religious
-				background = natural_born_leader
+				personality = unit_personality
+				background = deeply_religiousxnatural_born_leader
 			}
 			add_country_modifier = {
 				name = small_country_draft

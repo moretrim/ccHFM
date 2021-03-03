@@ -282,18 +282,18 @@ army = {
 }
 
 army = {
-	name = "Armée d'Algerie"
+    name = "Armée d'Algerie"
 	
 	leader = {
-		name = "Bertrand Clauzel"
-		date = 1803.1.1
-		type = land
-		personality = inefficient
-		background = elderly
-		prestige = 0.1
-	}
-	
-	location = 1700
+        name = "Bertrand Clauzel"
+        date = 1803.1.1
+        type = land
+        personality = unit_personality
+        background = inefficientxelderly
+        prestige = 0.1
+    }
+
+    location = 1700
 	regiment = {
 		name= "1.4ème Division d'Infanterie"
 		type = infantry
@@ -348,7 +348,6 @@ army = {
 		home = 429
 	}
 }
-
 
 army = {
 	name = "1ère Division de cavalerie"
@@ -846,111 +845,109 @@ navy = {
 }
 
 leader = {
-	name = "de la Piconnerie"
-	date = 1836.1.1
-	type = land
-	personality = confident
-	background = professor
-	prestige = 0.1
+    name = "de la Piconnerie"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = confidentxprofessor
+    prestige = 0.1
 }
 
 leader = {
-	name = "Jean-Isidore Harispe"
-	date = 1830.1.1
-	type = land
-	personality = heroic
-	background = natural_born_leader
-	prestige = 0.3
+    name = "Jean-Isidore Harispe"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = heroicxnatural_born_leader
+    prestige = 0.3
 }
 
 leader = {
-	name = "Guy-Victor Duperré"
-	date = 1811.1.1
-	type = sea
-	personality = au_fait
-	background = natural_born_leader
-	prestige = 0.3
+    name = "Guy-Victor Duperré"
+    date = 1811.1.1
+    type = sea
+    personality = unit_personality
+    background = au_faitxnatural_born_leader
+    prestige = 0.3
 }
 
 leader = {
-	name = "Comte de Castelanne"
-	date = 1823.1.1
-	type = land
-	personality = incapable
-	background = aristocrat
-	prestige = 0.2
+    name = "Comte de Castelanne"
+    date = 1823.1.1
+    type = land
+    personality = unit_personality
+    background = incapablexaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jacques Achard"
-	date = 1823.1.1
-	type = land
-	personality = relentless
-	background = elderly
-	prestige = 0.2
+    name = "Jacques Achard"
+    date = 1823.1.1
+    type = land
+    personality = unit_personality
+    background = relentlessxelderly
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jean-Baptiste Vaillant"
-	date = 1832.1.1
-	type = land
-	personality = lackluster
-	background = engineer
-	prestige = 0.1
+    name = "Jean-Baptiste Vaillant"
+    date = 1832.1.1
+    type = land
+    personality = unit_personality
+    background = lacklusterxengineer
+    prestige = 0.1
 }
 
 leader = {
-	name = "Bernand Pierre Magnan"
-	date = 1835.1.1
-	type = land
-	personality = disorderly
-	background = bootlicker
-	prestige = 0.1
+    name = "Bernand Pierre Magnan"
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = disorderlyxbootlicker
+    prestige = 0.1
 }
 
 leader = {
-	name = "Baraguey d'Hilliers"
-	date = 1836.1.1
-	type = land
-	personality = active_p
-	background = drillmaster
-	prestige = 0.1
+    name = "Baraguey d'Hilliers"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = active_pxdrillmaster
+    prestige = 0.1
 }
 
 leader = {
-	name = "Comte de Randon"
-	date = 1835.1.1
-	type = land
-	personality = indifferent
-	background = old_school
-	prestige = 0.1
+    name = "Comte de Randon"
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = indifferentxold_school
+    prestige = 0.1
 }
 
 leader = {
-	name = "Charles Baudin"
-	date = 1836.1.1
-	type = sea
-	personality = stouthearted
-	background = unfit
-	prestige = 0.1
+    name = "Charles Baudin"
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = stoutheartedxunfit
+    prestige = 0.1
 }
 
 leader = {
-	name = "Reille"
-	date = 1836.1.1
-	type = land
-	personality = gallant
-	background = generals_aide
-	prestige = 0.0
+    name = "Reille"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = gallantxgenerals_aide
+    prestige = 0.0
 }
 
 leader = {
-	name = "de la Brunerie"
-	date = 1836.1.1
-	type = land
-	personality = stouthearted
-	background = unfit
-	prestige = 0.0
+    name = "de la Brunerie"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = stoutheartedxunfit
+    prestige = 0.0
 }
-	
-	

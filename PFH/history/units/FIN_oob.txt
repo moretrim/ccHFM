@@ -36,10 +36,10 @@ navy = {
 
 
 leader = {
-	name = "Alexander Sergeyevich Menshikov"
-	picture = european_general_24
-	date = 1810.1.1
-	type = land
-	personality = inept
-	background = incompetent
+    name = "Alexander Sergeyevich Menshikov"
+    picture = european_general_24
+    date = 1810.1.1
+    type = land
+    personality = unit_personality
+    background = ineptxincompetent
 }

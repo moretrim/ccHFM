@@ -957,214 +957,212 @@ navy = {
 }
 
 leader = {
-	name = "Prince Vasilchikov"
-	picture = rus_gen_vasilchikov
-	date = 1801.1.1
-	type = land
-	personality = competent
-	background = powerful_friends
-	prestige = 0.4
+    name = "Prince Vasilchikov"
+    picture = rus_gen_vasilchikov
+    date = 1801.1.1
+    type = land
+    personality = unit_personality
+    background = competentxpowerful_friends
+    prestige = 0.4
 }
 
 leader = {
-	name = "Prince Mikhail Vorontsov"
-	picture = rus_gen_vorontsov
-	date = 1814.1.1
-	type = land
-	personality = daring
-	background = gifted_administrator
-	prestige = 0.3
+    name = "Prince Mikhail Vorontsov"
+    picture = rus_gen_vorontsov
+    date = 1814.1.1
+    type = land
+    personality = unit_personality
+    background = daringxgifted_administrator
+    prestige = 0.3
 }
 
 leader = {
-	name = "Pyotr Chicherin"
-	picture = rus_gen_chicherin
-	date = 1835.1.1
-	type = land
-	personality = earnest
-	background = cavalry_school
-	prestige = 0.1
+    name = "Pyotr Chicherin"
+    picture = rus_gen_chicherin
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = earnestxcavalry_school
+    prestige = 0.1
 }
 
 leader = {
-	name = "Alexander Chernyshev"
-	picture = rus_gen_chernyshev
-	date = 1821.1.1
-	type = land
-	personality = intelligent
-	background = diplomat
-	prestige = 0.1
+    name = "Alexander Chernyshev"
+    picture = rus_gen_chernyshev
+    date = 1821.1.1
+    type = land
+    personality = unit_personality
+    background = intelligentxdiplomat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Prince Menshikov"
-	picture = rus_adm_menshikov
-	date = 1833.1.1
-	type = sea
-	personality = lackluster
-	background = clueless
-	prestige = 0.1
+    name = "Prince Menshikov"
+    picture = rus_adm_menshikov
+    date = 1833.1.1
+    type = sea
+    personality = unit_personality
+    background = lacklusterxclueless
+    prestige = 0.1
 }
 
 leader = {
-	name = "Ivan Paskevich"
-	picture = rus_gen_paskevich
-	date = 1812.1.1
-	type = land
-	personality = merciless
-	background = school_of_offense
-	prestige = 0.3
+    name = "Ivan Paskevich"
+    picture = rus_gen_paskevich
+    date = 1812.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxschool_of_offense
+    prestige = 0.3
 }
 
 leader = {
-	name = "Matvey Khrapovitsky"
-	picture = rus_gen_khrapovitsky
-	date = 1835.1.1
-	type = land
-	personality = able
-	background = war_college
-	prestige = 0.1
+    name = "Matvey Khrapovitsky"
+    picture = rus_gen_khrapovitsky
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = ablexwar_college
+    prestige = 0.1
 }
 
 leader = {
-	name = "Mikhail Lazarev"
-	picture = rus_adm_lazarev
-	date = 1827.1.1
-	type = sea
-	personality = au_fait
-	background = innovative_tactician
-	prestige = 0.2
+    name = "Mikhail Lazarev"
+    picture = rus_adm_lazarev
+    date = 1827.1.1
+    type = sea
+    personality = unit_personality
+    background = au_faitxinnovative_tactician
+    prestige = 0.2
 }
 
 leader = {
-	name = "Nikolai Muraviev-Karsky"
-	picture = rus_gen_muravievkarsky
-	date = 1827.1.1
-	type = land
-	personality = defiant
-	background = natural_born_leader
-	prestige = 0.1
+    name = "Nikolai Muraviev-Karsky"
+    picture = rus_gen_muravievkarsky
+    date = 1827.1.1
+    type = land
+    personality = unit_personality
+    background = defiantxnatural_born_leader
+    prestige = 0.1
 }
 
 leader = {
-	name = "Pyotr Volkonsky"
-	picture = rus_gen_volkonsky
-	date = 1812.1.1
-	type = land
-	personality = intelligent
-	background = elderly
-	prestige = 0.3
+    name = "Pyotr Volkonsky"
+    picture = rus_gen_volkonsky
+    date = 1812.1.1
+    type = land
+    personality = unit_personality
+    background = intelligentxelderly
+    prestige = 0.3
 }
 
 leader = {
-	name = "Pavel Grabbe"
-	date = 1836.1.1
-	type = land
-	personality = keen
-	background = school_of_firepower
-	prestige = 0.0
+    name = "Pavel Grabbe"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = keenxschool_of_firepower
+    prestige = 0.0
 }
 
 leader = {
-	name = "Vasily Bebutov"
-	picture = rus_gen_bebutov
-	date = 1825.1.1
-	type = land
-	personality = stout
-	background = generals_aide
-	prestige = 0.1
+    name = "Vasily Bebutov"
+    picture = rus_gen_bebutov
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = stoutxgenerals_aide
+    prestige = 0.1
 }
 
 leader = {
-	name = "Fyodor von Berg"
-	picture = rus_gen_berg
-	date = 1836.1.1
-	type = land
-	personality = sharp
-	background = cartographer
-	prestige = 0.1
+    name = "Fyodor von Berg"
+    picture = rus_gen_berg
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = sharpxcartographer
+    prestige = 0.1
 }
 
 leader = {
-	name = "Ferdinand Wrangel"
-	picture = rus_adm_wrangel
-	date = 1836.1.1
-	type = sea
-	personality = active_p
-	background = cartographer
-	prestige = 0.0
+    name = "Ferdinand Wrangel"
+    picture = rus_adm_wrangel
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = active_pxcartographer
+    prestige = 0.0
 }
 
 leader = {
-	name = "Mikhail Gorchakov"
-	picture = rus_gen_gorchakov
-	date = 1830.1.1
-	type = land
-	personality = spineless
-	background = yesman
+    name = "Mikhail Gorchakov"
+    picture = rus_gen_gorchakov
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = spinelessxyesman
 }
 
 leader = {
-	name = "Pyotr Gorchakov"
-	picture = rus_gen_gorchakovpyotr
-	date = 1820.1.1
-	type = land
-	personality = maladroit
-	background = aristocrat
+    name = "Pyotr Gorchakov"
+    picture = rus_gen_gorchakovpyotr
+    date = 1820.1.1
+    type = land
+    personality = unit_personality
+    background = maladroitxaristocrat
 }
 
 leader = {
-	name = "Dimitry von der Osten-Sacken"
-	picture = rus_gen_ostensacken
-	date = 1824.1.1
-	type = land
-	personality = defiant
-	background = cavalry_school
+    name = "Dimitry von der Osten-Sacken"
+    picture = rus_gen_ostensacken
+    date = 1824.1.1
+    type = land
+    personality = unit_personality
+    background = defiantxcavalry_school
 }
 
 leader = {
-	name = "Vladimir Sievers"
-	picture = rus_gen_sievers
-	date = 1823.1.1
-	type = land
-	personality = bold
-	background = cavalry_school
+    name = "Vladimir Sievers"
+    picture = rus_gen_sievers
+    date = 1823.1.1
+    type = land
+    personality = unit_personality
+    background = boldxcavalry_school
 }
 
 leader = {
-	name = "Alexander von Lüders"
-	picture = rus_gen_lueders
-	date = 1829.1.1
-	type = land
-	personality = harsh
-	background = expert_raider
+    name = "Alexander von Lüders"
+    picture = rus_gen_lueders
+    date = 1829.1.1
+    type = land
+    personality = unit_personality
+    background = harshxexpert_raider
 }
 
 leader = {
-	name = "Nikolay Read"
-	picture = rus_gen_read
-	date = 1835.1.1
-	type = land
-	personality = bold
-	background = cavalry_school
+    name = "Nikolay Read"
+    picture = rus_gen_read
+    date = 1835.1.1
+    type = land
+    personality = unit_personality
+    background = boldxcavalry_school
 }
 
 leader = {
-	name = "Nikokay Sukhozanet"
-	picture = rus_gen_sukhozanet
-	date = 1824.1.1
-	type = land
-	personality = mediocre
-	background = artillerist
+    name = "Nikokay Sukhozanet"
+    picture = rus_gen_sukhozanet
+    date = 1824.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexartillerist
 }
 
 leader = {
-	name = "Fyodor Litke"
-	picture = rus_adm_litke
-	date = 1835.1.1
-	type = sea
-	personality = efficient
-	background = cartographer
+    name = "Fyodor Litke"
+    picture = rus_adm_litke
+    date = 1835.1.1
+    type = sea
+    personality = unit_personality
+    background = efficientxcartographer
 }
-
-

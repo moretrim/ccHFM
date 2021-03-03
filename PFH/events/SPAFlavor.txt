@@ -669,8 +669,8 @@ country_event = {
 		}
 		define_general = {
 			name = "Baldomero Espartero"
-			personality = unflinching
-			background = natural_born_leader
+			personality = unit_personality
+			background = unflinchingxnatural_born_leader
 		}
 		ai_chance = {
 			factor = 100
@@ -759,8 +759,8 @@ country_event = {
 		}
 		define_general = {
 			name = "Tomás de Zumalacárregui"
-			personality = deeply_religious
-			background = innovative_tactician
+			personality = unit_personality
+			background = deeply_religiousxinnovative_tactician
 		}
 		country_event = 37710
 		ai_chance = {
@@ -4004,8 +4004,8 @@ country_event = {
 		}
 		MOR = { define_general = {
 				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
+				personality = unit_personality
+				background = coolmindedxaristocrat
 				}
 			}
 		relation = {
@@ -4057,8 +4057,8 @@ country_event = {
 		}
 		MOR = { define_general = {
 				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
+				personality = unit_personality
+				background = coolmindedxaristocrat
 				}
 			}
 		1689 = { add_province_modifier = {
@@ -4092,8 +4092,8 @@ country_event = {
 		}
 		MOR = { define_general = {
 				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
+				personality = unit_personality
+				background = coolmindedxaristocrat
 				}
 			}
 		relation = {

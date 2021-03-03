@@ -3192,8 +3192,8 @@ country_event = {
 			treasury = 50000
 		define_general = {
 			name = "Hijikata Toshizo"
-			personality = implacable
-			background = school_of_firepower
+			personality = unit_personality
+			background = implacablexschool_of_firepower
 				}
 			}
 		}

@@ -38,166 +38,114 @@ RUS = {
 
 
 leader = {
-
-	name = "Olaf Rye"
-
-	picture = european_general_24
-	date = 1836.1.1
-
-	type = land
-
-	personality = daring
-
-	background = adventurer
-
-	prestige = 0.3
-	}
-
-leader = {
-
-	name = "Frederik af Hessen-Kassel"
-
-	picture = european_general_2
-	date = 1805.1.1
-
-	type = land
-
-	personality = au_fait
-	background = aristocrat
-	prestige = 0.2
-}
-	
-
-leader = {
-	name = "Christian Julius de Meza"
-
-	picture = european_general_17
-	date = 1836.1.1
-
-	type = land
-
-	personality = defiant
-	background = eccentric_genius
-	prestige = 0.4
-}
-
-
-leader = {
-
-	name = "Christoph von Krogh"
-
-	picture = european_general_30
-	date = 1836.1.1
-
-	type = land
-
-	personality = chivalrous
-	background = disgraced
-
-	prestige = 0.3
+    name = "Olaf Rye"
+    picture = european_general_24
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = daringxadventurer
+    prestige = 0.3
 }
 
 leader = {
-
-	name = "Friderich Adolph Schleppegrell"
-
-	picture = european_general_50
-	date = 1836.1.1
-
-	type = land
-
-	personality = heroic
-
-	background = nationalist
-	prestige = 0.3
-}
-	
-
-leader = {
-
-	name = "Frederik Rubeck Henrik Bülow"
-
-	picture = european_general_16
-	date = 1836.1.1
-	type = land
-
-	personality = resolute
-	background = school_of_the_bayonet
-	prestige = 0.3
+    name = "Frederik af Hessen-Kassel"
+    picture = european_general_2
+    date = 1805.1.1
+    type = land
+    personality = unit_personality
+    background = au_faitxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-
-	name = "Hans Hedemann"
-
-	picture = european_general_15
-	date = 1836.1.1
-	type = land
-
-	personality = calm
-	background = school_of_firepower
-	prestige = 0.3
+    name = "Christian Julius de Meza"
+    picture = european_general_17
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = defiantxeccentric_genius
+    prestige = 0.4
 }
 
 leader = {
-
-	name = "Anton Frederik Tscherning"
-
-	picture = european_general_12
-	date = 1836.1.1
-	type = land
-
-	personality = unruly
-	background = gifted_administrator
-	prestige = 0.3
+    name = "Christoph von Krogh"
+    picture = european_general_30
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = chivalrousxdisgraced
+    prestige = 0.3
 }
 
 leader = {
-
-	name = "Edouard Suenson"
-
-	picture = european_general_51
-	date = 1836.1.1
-
-	type = sea
-
-	personality = merciless
-	background = drillmaster
-	prestige = 0.3
+    name = "Friderich Adolph Schleppegrell"
+    picture = european_general_50
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = heroicxnationalist
+    prestige = 0.3
 }
-
 
 leader = {
-
-	name = "Carl Edvard van Dockum"
-
-	picture = european_admiral_7
-	date = 1836.1.1
-
-	type = sea
-
-	personality = imperious
-	background = adventurer
-	prestige = 0.3
+    name = "Frederik Rubeck Henrik Bülow"
+    picture = european_general_16
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = resolutexschool_of_the_bayonet
+    prestige = 0.3
 }
-
 
 leader = {
-
-	name = "Steen Andersen Bille"
-
-	picture = european_admiral_0
-	date = 1836.1.1
-
-	type = sea
-
-	personality = vicious
-	background = aristocrat
-	prestige = 0.3
+    name = "Hans Hedemann"
+    picture = european_general_15
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = calmxschool_of_firepower
+    prestige = 0.3
 }
 
+leader = {
+    name = "Anton Frederik Tscherning"
+    picture = european_general_12
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = unrulyxgifted_administrator
+    prestige = 0.3
+}
 
+leader = {
+    name = "Edouard Suenson"
+    picture = european_general_51
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = mercilessxdrillmaster
+    prestige = 0.3
+}
 
+leader = {
+    name = "Carl Edvard van Dockum"
+    picture = european_admiral_7
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = imperiousxadventurer
+    prestige = 0.3
+}
+
+leader = {
+    name = "Steen Andersen Bille"
+    picture = european_admiral_0
+    date = 1836.1.1
+    type = sea
+    personality = unit_personality
+    background = viciousxaristocrat
+    prestige = 0.3
+}
 
 army = {
 	

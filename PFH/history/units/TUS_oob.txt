@@ -1,11 +1,11 @@
 leader = {
-		name = "Leopoldo II"
-		date = 1824.1.1
-		type = land
-		personality = soft
-		background = gifted_administrator
-		prestige = 0.5
-	}
+    name = "Leopoldo II"
+    date = 1824.1.1
+    type = land
+    personality = unit_personality
+    background = softxgifted_administrator
+    prestige = 0.5
+}
 
 army = {
 	name = "Esercito Toscano"

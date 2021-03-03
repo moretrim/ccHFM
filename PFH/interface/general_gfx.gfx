@@ -102,6 +102,10 @@ spriteTypes = {
 		name = "GFX_sortbutton_292"
 		texturefile = "gfx\\interface\\sortbutton_292.tga"
 	}
+    textSpriteType = {
+        name = "GFX_sortbutton_240"
+        texturefile = "gfx\\interface\\sortbutton_240.tga"
+    }
 	textSpriteType = {
 		name = "GFX_sortbutton_224"
 		texturefile = "gfx\\interface\\sortbutton_224.tga"
@@ -186,6 +190,10 @@ spriteTypes = {
 		name = "GFX_sortbutton_20"
 		texturefile = "gfx\\interface\\sortbutton_20.tga"
 	}
+    textSpriteType = {
+        name = "GFX_sortbutton_1"
+        texturefile = "gfx\\interface\\sortbutton_1.tga"
+    }
 	spriteType = {
 		name = "GFX_sortbutton_percent"
 		texturefile = "gfx\\interface\\sortbutton_percent.tga"

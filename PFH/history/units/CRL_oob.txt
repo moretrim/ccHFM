@@ -26,11 +26,10 @@ army = {
 }
 
 leader = {
-	name = "Shah Afzal II"
-	type = land
-	date = 1836.1.1
-	personality = disciplined
-	background = natural_born_leader
-	prestige = 0.2
+    name = "Shah Afzal II"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = disciplinedxnatural_born_leader
+    prestige = 0.2
 }
-

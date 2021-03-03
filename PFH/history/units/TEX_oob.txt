@@ -3,13 +3,12 @@ USA = {
 }
 
 leader = {
-	name = "Sam Houston"
-	type = land
-	date="1836.1.1"
-	personality = cautious
-	background = school_of_defense
+    name = "Sam Houston"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = cautiousxschool_of_defense
 }
-
 
 army = {
 	name = "Army of Texas"

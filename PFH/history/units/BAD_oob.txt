@@ -1,10 +1,10 @@
 leader = {
-	name = "Leopold of Baden"
-	date = 1830.1.1
-	type = land
-	personality = mediocre
-	background = aristocrat
-	prestige = 0.3
+    name = "Leopold of Baden"
+    date = 1830.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexaristocrat
+    prestige = 0.3
 }
 
 army = {

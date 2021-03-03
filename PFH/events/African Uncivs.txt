@@ -167,8 +167,8 @@ country_event = {
 		capital = 1800
 		define_general = {
 			name = "Umar Tall"
-			personality = implacable
-			background = natural_born_leader
+			personality = unit_personality
+			background = implacablexnatural_born_leader
 		}
 	}
 }

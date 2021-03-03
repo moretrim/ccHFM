@@ -3,11 +3,11 @@ PRG = {
 }
 
 leader = {
-	name = "Bento Gonçalves"
-	type = land
-	date = 1836.1.1
-	personality = charismatic
-	background = expert_raider
+    name = "Bento Gonçalves"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = charismaticxexpert_raider
 }
 
 army = {

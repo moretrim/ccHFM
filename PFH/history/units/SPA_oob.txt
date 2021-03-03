@@ -465,55 +465,55 @@ navy = {
 }
 
 leader = {
-	name = "Francisco Serrano"
-	date = 1833.1.1
-	type = land
-	personality = expert
-	background = war_college
-	prestige = 0.0
+    name = "Francisco Serrano"
+    date = 1833.1.1
+    type = land
+    personality = unit_personality
+    background = expertxwar_college
+    prestige = 0.0
 }
 
 leader = {
-	name = "Leopoldo O'Donnell"
-	date = 1836.1.1
-	type = land
-	personality = efficient
-	background = rising_star
-	prestige = 0.0
+    name = "Leopoldo O'Donnell"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = efficientxrising_star
+    prestige = 0.0
 }
 
 leader = {
-	name = "Narváez"
-	date = 1836.1.1
-	type = land
-	personality = efficient
-	background = powerful_friends
-	prestige = 0.0
+    name = "Narváez"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = efficientxpowerful_friends
+    prestige = 0.0
 }
 
 leader = {
-	name = "Gerónimo Valdés"
-	date = 1836.1.1
-	type = land
-	personality = competent
-	background = generals_aide
-	prestige = 0.0
+    name = "Gerónimo Valdés"
+    date = 1836.1.1
+    type = land
+    personality = unit_personality
+    background = competentxgenerals_aide
+    prestige = 0.0
 }
 
 leader = {
-	name = "Van Halen"
-	date = 1823.1.1
-	type = land
-	personality = merciless
-	background = adventurer
-	prestige = 0.1
+    name = "Van Halen"
+    date = 1823.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxadventurer
+    prestige = 0.1
 }
 
 leader = {
-	name = "José Ramón Rodil"
-	date = 1824.1.1
-	type = land
-	personality = merciless
-	background = adventurer
-	prestige = 0.1
+    name = "José Ramón Rodil"
+    date = 1824.1.1
+    type = land
+    personality = unit_personality
+    background = mercilessxadventurer
+    prestige = 0.1
 }

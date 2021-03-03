@@ -1,46 +1,46 @@
 leader = {
-	name = "Prinz Karl"
-	date = 1825.1.1
-	type = land
-	personality = mediocre
-	background = aristocrat
-	prestige = 0.3
+    name = "Prinz Karl"
+    date = 1825.1.1
+    type = land
+    personality = unit_personality
+    background = mediocrexaristocrat
+    prestige = 0.3
 }
 
 leader = {
-	name = "von Hohenausen"
-	date = 1845.1.1
-	type = land
-	personality = able
-	background = gifted_administrator
-	prestige = 0.2
+    name = "von Hohenausen"
+    date = 1845.1.1
+    type = land
+    personality = unit_personality
+    background = ablexgifted_administrator
+    prestige = 0.2
 }
 
 leader = {
-	name = "Jakob von Hartmann"
-	date = 1849.1.1
-	type = land
-	personality = skilled
-	background = war_college
-	prestige = 0.2
+    name = "Jakob von Hartmann"
+    date = 1849.1.1
+    type = land
+    personality = unit_personality
+    background = skilledxwar_college
+    prestige = 0.2
 }
 
 leader = {
-	name = "Prinz Luitpold"
-	date = 1851.1.1
-	type = land
-	personality = soft
-	background = aristocrat
-	prestige = 0.2
+    name = "Prinz Luitpold"
+    date = 1851.1.1
+    type = land
+    personality = unit_personality
+    background = softxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "von der Tann"
-	date = 1861.1.1 #1855
-	type = land
-	personality = soldierly
-	background = natural_born_leader
-	prestige = 0.2
+    name = "von der Tann"
+    date = 1861.1.1 #1855
+    type = land
+    personality = unit_personality
+    background = soldierlyxnatural_born_leader
+    prestige = 0.2
 }
 
 army = {

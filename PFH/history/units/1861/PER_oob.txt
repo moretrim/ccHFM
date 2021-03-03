@@ -1,19 +1,19 @@
 leader = {
-	name = "Khanzler Mirza"
-	date = 1845.1.1
-	type = land
-	personality = glory_hound
-	background = aristocrat
-	prestige = 0.2
+    name = "Khanzler Mirza"
+    date = 1845.1.1
+    type = land
+    personality = unit_personality
+    background = glory_houndxaristocrat
+    prestige = 0.2
 }
 
 leader = {
-	name = "Nasir ad-Din"
-	date = 1861.1.1 #1848
-	type = land
-	personality = intelligent
-	background = immoral
-	prestige = 0.5
+    name = "Nasir ad-Din"
+    date = 1861.1.1 #1848
+    type = land
+    personality = unit_personality
+    background = intelligentximmoral
+    prestige = 0.5
 }
 
 army = {

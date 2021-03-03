@@ -15,12 +15,12 @@ SUA = {
 }
 
 leader = {
-	name = "Vicente de Mesquita"
-	date = 1840.1.1
-	type = land
-	personality = dauntless
-	background = madman
-	prestige = 0.3
+    name = "Vicente de Mesquita"
+    date = 1840.1.1
+    type = land
+    personality = unit_personality
+    background = dauntlessxmadman
+    prestige = 0.3
 }
 
 army = {
