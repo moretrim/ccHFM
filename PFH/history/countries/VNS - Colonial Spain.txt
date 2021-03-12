@@ -35,7 +35,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = federalism
 colonial_policy = no_colonies 
@@ -145,3 +146,4 @@ oob = "MEX_oob.txt"
 
 #Inventions
 }
+
