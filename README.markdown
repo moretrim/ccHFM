@@ -1,6 +1,15 @@
 Piggy Flavoured HFM
 ===================
 
+Build status:
+[![Github Workflow][github-workflow-badge]][github-workflow-dashboard]
+
+[github-workflow-badge]:
+    https://github.com/moretrim/PFH/actions/workflows/ci-on-push.yaml/badge.svg
+[github-workflow-dashboard]:
+    https://github.com/moretrim/PFH/actions/workflows/ci-on-push.yaml
+    "Github Workflows"
+
 A custom-tailored [HFM].
 
 [HFM]: https://github.com/SighPie/HFM
