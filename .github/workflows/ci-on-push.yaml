@@ -6,6 +6,8 @@ on:
     paths:
       - .github/**
       - PFH/**
+  workflow_dispatch:
+  repository_dispatch:
 
 jobs:
   commit-check:
