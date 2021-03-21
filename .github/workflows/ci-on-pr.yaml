@@ -2,7 +2,7 @@ name: CI (pull request)
 
 on:
   pull_request:
-    branches: ['*']
+    branches: ['**']
     paths:
       - .github/**
       - PFH/**
