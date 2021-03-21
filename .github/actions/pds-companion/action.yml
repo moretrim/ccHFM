@@ -1,0 +1,15 @@
+name: pds-companion on jjmerelo/alpine-raku
+description: Extend jjmerelo/alpine-raku with pds-companion
+
+inputs:
+  script:
+    description: Bash script to run
+    required: true
+
+runs:
+  using: docker
+  image: ./Dockerfile
+  entrypoint: bash
+  args:
+    - -c
+    - ${{ inputs.script }}

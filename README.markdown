@@ -1,11 +1,6 @@
 Piggy Flavoured HFM
 ===================
 
-Build status:
-[![travis-master][travis-master-image]](https://travis-ci.com/moretrim/PFH/branches)
-
-[travis-master-image]: https://travis-ci.com/moretrim/PFH.svg?branch=master
-
 A custom-tailored [HFM].
 
 [HFM]: https://github.com/SighPie/HFM

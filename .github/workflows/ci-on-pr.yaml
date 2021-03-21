@@ -1,0 +1,46 @@
+name: CI (pull request)
+
+on:
+  pull_request:
+    branches: ['*']
+    paths:
+      - .github/**
+      - PFH/**
+
+jobs:
+  merge-check:
+    name: Merge check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # to compute the differences
+
+      - name: Debug dump
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "Where am I: $GITHUB_REF, $GITHUB_SHA"
+          git log
+
+      - name: Run static analysis tool
+        uses: ./.github/actions/pds-companion
+        with:
+          script: |
+            # fail on first error
+            set -Eeuo pipefail
+
+            # compute difference
+            readarray -d "" pr_files < <(git diff-tree -z --no-commit-id --name-only --diff-filter=AM -r HEAD~1 HEAD -- PFH/)
+            if (( "${#pr_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+
+            echo   "## PR: fresh mod files ##"
+            printf "    %q\n" "${pr_files[@]}"
+
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion "${pr_files[@]}"

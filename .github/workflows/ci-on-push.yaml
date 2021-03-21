@@ -1,0 +1,57 @@
+name: CI (push)
+
+on:
+  push:
+    branches: ['*']
+    paths:
+      - .github/**
+      - PFH/**
+
+jobs:
+  commit-check:
+    name: Commit check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # to compute the differences
+
+      - name: Run static analysis tool
+        uses: ./.github/actions/pds-companion
+        with:
+          script: |
+            # fail on first error
+            set -Eeuo pipefail
+
+            # compute difference
+            readarray -d "" commit_files < <(git diff-tree -z --no-commit-id --name-only --diff-filter=AM -r --root HEAD -- PFH/)
+            if (( "${#commit_files[@]}" == 0 )) ; then
+              echo "No mod files to test."
+              exit
+            fi
+
+            echo   "## Commit: fresh mod files ##"
+            printf "    %q\n" "${commit_files[@]}"
+
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion "${commit_files[@]}"
+
+  branch-check:
+    name: Branch check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Run static analysis tool
+        uses: ./.github/actions/pds-companion
+        with:
+          script: |
+            # fail on first error
+            set -Eeuo pipefail
+
+            # run static analysis
+            vic2-companion --color=always --heartbeat --whitelist PFH
