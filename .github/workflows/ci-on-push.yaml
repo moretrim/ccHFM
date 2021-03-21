@@ -37,8 +37,11 @@ jobs:
             echo   "## Commit: fresh mod files ##"
             printf "    %q\n" "${commit_files[@]}"
 
+            # the static analysis tool uses these for finer analysis
+            scaffolding=(PFH/common/cb_types.txt)
+
             # run static analysis
-            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion "${commit_files[@]}"
+            vic2-companion --color=always --heartbeat --whitelist --remarks=opinion "${scaffolding[@]}" "${commit_files[@]}"
 
   branch-check:
     name: Branch check
