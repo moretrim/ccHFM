@@ -5,8 +5,7 @@ out of several fragments.
 
 -->
 
-General materials
------------------
+## General materials
 
 <!--
 
@@ -15,23 +14,23 @@ from the produced fragment so as to allow the addition of remarks.
 
 -->
 
-Nouzeilles, Gabriela, and Graciela Montaldo, eds. *The Argentina Reader: History, Culture, Politics*. Duke University Press, 2002. <a href="https://www.dukeupress.edu/the-argentina-reader" class="uri">https://www.dukeupress.edu/the-argentina-reader</a>.  
+Nouzeilles, Gabriela, and Graciela Montaldo, eds. *The Argentina Reader: History, Culture, Politics*. Duke University Press, 2002. <https://www.dukeupress.edu/the-argentina-reader>.  
 This book proved an indispensable resource for the history of Argentina
 during and around the period of time covered by Victoria 2.
 
 <!-- breather -->
 
-Lynch, John. *Argentine Caudillo: Juan Manuel de Rosas (Latin American Silhouettes)*. Rowman & Littlefield, 2001. <a href="https://rowman.com/isbn/0842028986" class="uri">https://rowman.com/isbn/0842028986</a>.  
+Lynch, John. *Argentine Caudillo: Juan Manuel de Rosas (Latin American Silhouettes)*. Rowman & Littlefield, 2001. <https://rowman.com/isbn/0842028986>.  
 Regarding Argentina under the rule of Rosas.
 
 <!-- breather -->
 
-Bénard, Claire, Alice Martin-Prével, and Marie-Aimée Prost. “Prologue I : L’immigration européenne en Argentine, un phénomène controversé.” Observatoire Politique de l’Amérique latine et des Caraïbes, Sciences Po., n.d. <a href="https://www.sciencespo.fr/opalc/content/prologue-i-l-immigration-europeenne-en-argentine-un-phenomene-controverse-0" class="uri">https://www.sciencespo.fr/opalc/content/prologue-i-l-immigration-europeenne-en-argentine-un-phenomene-controverse-0</a>.  
+Bénard, Claire, Alice Martin-Prével, and Marie-Aimée Prost. “Prologue I : L’immigration européenne en Argentine, un phénomène controversé.” Observatoire Politique de l’Amérique latine et des Caraïbes, Sciences Po., n.d. <https://www.sciencespo.fr/opalc/content/prologue-i-l-immigration-europeenne-en-argentine-un-phenomene-controverse-0>.  
 Regarding the historical trends and policies of immigration.
 
 <!-- breather -->
 
-Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” *Estudios Interdisciplinarios de América Latina Y El Caribe* 13, no. 2 (2017). <a href="https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977" class="uri">https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977</a>.  
+Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” *Estudios Interdisciplinarios de América Latina y El Caribe* 13, no. 2 (2017). <https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977>.  
 Regarding the natures & distinctions among and across the various
 currents of conservatism, reactionary conservatism, and fascism in
 particular after the enactment of male universal suffrage (the Sáenz
@@ -44,12 +43,11 @@ need for manual intervention.
 
 -->
 
-Election data
--------------
+## Election data
 
-<div id="refs" class="references hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
-<div id="ref-ba-elections">
+<div id="ref-ba-elections" class="csl-entry">
 
 “Categoría:Elecciones en la provincia de Buenos Aires.” In *Wikipedia,
 La enciclopedia libre*, 2019.
@@ -57,7 +55,7 @@ La enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-crt-elections">
+<div id="ref-crt-elections" class="csl-entry">
 
 “Categoría:Elecciones en la provincia de Corrientes.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -65,7 +63,7 @@ enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-ent-elections">
+<div id="ref-ent-elections" class="csl-entry">
 
 “Categoría:Elecciones en la provincia de Entre Ríos.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -73,7 +71,7 @@ enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-ar-elections">
+<div id="ref-ar-elections" class="csl-entry">
 
 “Categoría:Elecciones presidenciales de Argentina.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -83,12 +81,11 @@ enciclopedia libre*, 2019.
 
 </div>
 
-Party data
-----------
+## Party data
 
-<div id="refs" class="references hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
-<div id="ref-ba-governors">
+<div id="ref-ba-governors" class="csl-entry">
 
 “Anexo:Gobernadores de la provincia de Buenos Aires.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -96,7 +93,7 @@ enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-crt-governors">
+<div id="ref-crt-governors" class="csl-entry">
 
 “Anexo:Gobernadores de la provincia de Corrientes.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -104,7 +101,7 @@ enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-ent-governors">
+<div id="ref-ent-governors" class="csl-entry">
 
 “Anexo:Gobernadores de la provincia de Entre Ríos.” In *Wikipedia, La
 enciclopedia libre*, 2019.
@@ -112,7 +109,7 @@ enciclopedia libre*, 2019.
 
 </div>
 
-<div id="ref-ar-presidents">
+<div id="ref-ar-presidents" class="csl-entry">
 
 “Anexo:Presidentes de la Nación Argentina.” In *Wikipedia, La
 enciclopedia libre*, 2019.

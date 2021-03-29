@@ -6,6 +6,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Bibliography</title>
   <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -13,6 +143,25 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -54,7 +203,7 @@ from the produced fragment so as to allow the addition of remarks.
 </dl>
 <!-- breather -->
 <dl>
-<dt>Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” <em>Estudios Interdisciplinarios de América Latina Y El Caribe</em> 13, no. 2 (2017). <a href="https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977" class="uri">https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977</a>.</dt>
+<dt>Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” <em>Estudios Interdisciplinarios de América Latina y El Caribe</em> 13, no. 2 (2017). <a href="https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977" class="uri">https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977</a>.</dt>
 <dd>Regarding the natures &amp; distinctions among and across the various currents of conservatism, reactionary conservatism, and fascism in particular after the enactment of male universal suffrage (the Sáenz Peña law) and during the Infamous Decade.
 </dd>
 </dl>
@@ -65,33 +214,33 @@ need for manual intervention.
 
 -->
 <h2 id="election-data">Election data</h2>
-<div id="refs" class="references hanging-indent" role="doc-bibliography">
-<div id="ref-ba-elections">
-<p>“Categoría:Elecciones en la provincia de Buenos Aires.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Buenos_Aires">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Buenos_Aires</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-ba-elections" class="csl-entry" role="doc-biblioentry">
+<span>“Categoría:Elecciones en la provincia de Buenos Aires.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Buenos_Aires">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Buenos_Aires</a>.
 </div>
-<div id="ref-crt-elections">
-<p>“Categoría:Elecciones en la provincia de Corrientes.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Corrientes">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Corrientes</a>.</p>
+<div id="ref-crt-elections" class="csl-entry" role="doc-biblioentry">
+<span>“Categoría:Elecciones en la provincia de Corrientes.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Corrientes">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Corrientes</a>.
 </div>
-<div id="ref-ent-elections">
-<p>“Categoría:Elecciones en la provincia de Entre Ríos.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Entre_R%C3%ADos">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Entre_R%C3%ADos</a>.</p>
+<div id="ref-ent-elections" class="csl-entry" role="doc-biblioentry">
+<span>“Categoría:Elecciones en la provincia de Entre Ríos.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Entre_R%C3%ADos">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_en_la_provincia_de_Entre_R%C3%ADos</a>.
 </div>
-<div id="ref-ar-elections">
-<p>“Categoría:Elecciones presidenciales de Argentina.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_presidenciales_de_Argentina">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_presidenciales_de_Argentina</a>.</p>
+<div id="ref-ar-elections" class="csl-entry" role="doc-biblioentry">
+<span>“Categoría:Elecciones presidenciales de Argentina.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_presidenciales_de_Argentina">https://es.wikipedia.org/wiki/Categor%C3%ADa:Elecciones_presidenciales_de_Argentina</a>.
 </div>
 </div>
 <h2 id="party-data">Party data</h2>
-<div id="refs" class="references hanging-indent" role="doc-bibliography">
-<div id="ref-ba-governors">
-<p>“Anexo:Gobernadores de la provincia de Buenos Aires.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Buenos_Aires">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Buenos_Aires</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-ba-governors" class="csl-entry" role="doc-biblioentry">
+<span>“Anexo:Gobernadores de la provincia de Buenos Aires.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Buenos_Aires">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Buenos_Aires</a>.
 </div>
-<div id="ref-crt-governors">
-<p>“Anexo:Gobernadores de la provincia de Corrientes.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Corrientes">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Corrientes</a>.</p>
+<div id="ref-crt-governors" class="csl-entry" role="doc-biblioentry">
+<span>“Anexo:Gobernadores de la provincia de Corrientes.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Corrientes">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Corrientes</a>.
 </div>
-<div id="ref-ent-governors">
-<p>“Anexo:Gobernadores de la provincia de Entre Ríos.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Entre_R%C3%ADos">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Entre_R%C3%ADos</a>.</p>
+<div id="ref-ent-governors" class="csl-entry" role="doc-biblioentry">
+<span>“Anexo:Gobernadores de la provincia de Entre Ríos.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Entre_R%C3%ADos">https://es.wikipedia.org/wiki/Anexo:Gobernadores_de_la_provincia_de_Entre_R%C3%ADos</a>.
 </div>
-<div id="ref-ar-presidents">
-<p>“Anexo:Presidentes de la Nación Argentina.” In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina">https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina</a>.</p>
+<div id="ref-ar-presidents" class="csl-entry" role="doc-biblioentry">
+<span>“Anexo:Presidentes de la Nación Argentina.”</span> In <em>Wikipedia, La enciclopedia libre</em>, 2019. <a href="https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina">https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina</a>.
 </div>
 </div>
 </body>

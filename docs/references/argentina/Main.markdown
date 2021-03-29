@@ -1,7 +1,7 @@
 ---
 title: Bibliography
 bibliography: bibliography.yaml
-citation-style: ./styles/chicago-fullnote-bibliography.csl
+citation-style: styles/chicago-fullnote-bibliography.csl
 suppress-bibliography: true
 link-citations: true
 ---
@@ -39,7 +39,7 @@ Bénard, Claire, Alice Martin-Prével, and Marie-Aimée Prost. “Prologue I : L
 
 <!-- breather -->
 
-Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” *Estudios Interdisciplinarios de América Latina Y El Caribe* 13, no. 2 (2017). <https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977>.
+Cedla, Marcus Klein. “The Legión Cívica Argentina and the Radicalisation of Argentine Nacionalism During the Década Infame.” *Estudios Interdisciplinarios de América Latina y El Caribe* 13, no. 2 (2017). <https://www7.tau.ac.il/ojs/index.php/eial/article/view/875/977>.
 : Regarding the natures & distinctions among and across the various currents of conservatism, reactionary conservatism,
   and fascism in particular after the enactment of male universal suffrage (the Sáenz Peña law) and during the
   Infamous Decade.
