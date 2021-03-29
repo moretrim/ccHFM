@@ -228,8 +228,8 @@ EVTDESC250197;A few years after the Battle of Caseros, the Argentine Confederati
 EVTOPTA250197;This is a welcome treaty;;;;;;;;;;;;;
 EVTOPTB250197;We do not want this;;;;;;;;;;;;;
 # Modifiers;;;;;;;;;;;;;;
-argentine_civil_wars;Argentine Civil Wars;;;;;;;;;;;;;
-desc_argentine_civil_wars;The caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;
+cch.argentine-civil-wars;The Argentine Civil Wars;;;;;;;;;;;;;
+desc_cch.argentine-civil-wars;Be it for personal gain or one of the causes of federalism or unitarianism, the caudillos in the provinces are fighting amongst themselves and against Buenos Aires.;;;;;;;;;;;;;
 # Wars;;;;;;;;;;;;;;
 AGRESSION_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;;;
 NORMAL_WAR_HUMILIATE_NAME_ENT_ARC;The Platine War;;;;;;;;;;;;;

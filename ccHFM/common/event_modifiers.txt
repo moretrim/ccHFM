@@ -3276,9 +3276,13 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
+# CCH
+
+## Argentina
+
 #rbx note - intended to cause occasional non-liberal rebels in outlying provinces of Argentina to simulate occasional civil wars
-argentine_civil_wars = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.55
-	icon = 4
+cch.argentine-civil-wars = {
+    pop_consciousness_modifier = 0.2
+    pop_militancy_modifier = 0.55
+    icon = 4
 }

@@ -176,7 +176,7 @@ political_decisions = {
 				THIS = { inherit = ARG }
 			}
 			LPL = {
-				remove_country_modifier = argentine_civil_wars
+				remove_country_modifier = cch.argentine-civil-wars
 			}
 			random_country = {
 				limit = {

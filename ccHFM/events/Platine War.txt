@@ -665,7 +665,7 @@ country_event = {
 		capital = 2348
 		government = democracy
 		ruling_party_ideology = conservative
-		remove_country_modifier = argentine_civil_wars
+        remove_country_modifier = cch.argentine-civil-wars
 		random_owned = {
 			limit = { NOT = { owner = { slavery = no_slavery } } }
 			owner = { political_reform = no_slavery }
@@ -1073,7 +1073,7 @@ country_event = {
 			government = democracy
 			nationalvalue = nv_liberty
 			ruling_party_ideology = liberal
-			remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
 			add_country_modifier = { name = small_immigration_boom duration = 1825 }
 			random_owned = {
 				limit = { NOT = { owner = { slavery = no_slavery } } }
@@ -1260,7 +1260,7 @@ country_event = {
 		change_tag = ARG
 		ARG = {
 			nationalvalue = nv_liberty
-			remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
 			capital = 2348
 		}
 		random_country = {
@@ -1368,7 +1368,7 @@ country_event = {
 		}
 		ARG = {
 			inherit = THIS
-			remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
 		}
 		ai_chance = { factor = 100 }
 		set_global_flag = argentina_has_formed

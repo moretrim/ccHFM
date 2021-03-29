@@ -1,0 +1,36 @@
+political_decisions = {
+    cch.argentine-civil-wars-setup = {
+        potential = {
+            always = no
+        }
+
+        allow = {
+            always = no
+        }
+
+        effect = {
+            country_event = 251000
+
+            add_country_modifier = {
+                name = cch.argentine-civil-wars
+                duration = -1
+            }
+
+            any_pop = {
+                limit = {
+                    location = {
+                        is_colonial = no
+
+                        NOT = {
+                            # Buenos Aires
+                            province_id = 2348
+                        }
+                    }
+                }
+
+                consciousness = 4
+                militancy = 2
+            }
+        }
+    }
+}
