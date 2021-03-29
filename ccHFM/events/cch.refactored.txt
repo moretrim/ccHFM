@@ -1,0 +1,106 @@
+# Modelled after 96085 which, amongst other uses, enforces democracy on behalf of the
+# install_democracy CB. The difference is that we avoid a forced peace with all belligerent, which
+# can have unforeseen consequences.
+country_event = {
+    id      = 250100
+    title   = cch.enforced-democracy.name
+    desc    = cch.enforced-democracy.desc
+    picture = unite
+
+    news             = yes
+    news_title       = cch.enforced-democracy.news.title
+    news_desc_long   = cch.enforced-democracy.news.long
+    news_desc_medium = cch.enforced-democracy.news.medium
+    news_desc_short  = cch.enforced-democracy.news.short
+
+    is_triggered_only = yes
+
+    immediate = {
+        government = democracy
+        ruling_party_ideology = liberal
+        political_reform = universal_weighted_voting
+        political_reform = population_equal_weight
+        political_reform = yes_meeting
+        political_reform = free_press
+        political_reform = non_socialist
+        political_reform = gerrymandering
+        political_reform = non_secret_ballots
+        clr_country_flag = communist_gov
+        clr_country_flag = absolute_monarchy_gov
+        clr_country_flag = semi_constitutional_monarchy_gov
+        clr_country_flag = constitutional_monarchy_gov
+        set_country_flag = democracy_gov
+        clr_country_flag = presidential_dictatorship_gov
+        clr_country_flag = fascist_gov
+        clr_country_flag = anarcho_liberal_gov
+    }
+
+    option = {
+        name = cch.enforced-democracy.opt0
+
+        random_country = {
+            limit = {
+                is_sphere_leader_of = THIS
+                NOT = { has_country_flag = friendly_democracy }
+            }
+
+            diplomatic_influence = { who = THIS value = -100 }
+        }
+
+        random_country = {
+            limit = {
+                has_country_flag = friendly_democracy
+                truce_with = THIS
+            }
+
+            relation = { who = THIS value = 400 }
+            random_owned = {
+                limit = {
+                    owner = { is_greater_power = yes }
+                }
+
+                owner = {
+                    diplomatic_influence = { who = THIS value = 100 }
+                }
+            }
+
+            create_alliance = THIS
+            clr_country_flag = friendly_democracy
+        }
+
+        capital_scope = {
+            any_pop = {
+                limit = { literacy = 0.2 }
+
+                ideology = { factor = 0.1 value = liberal }
+                ideology = { factor = -0.5 value = communist }
+            }
+        }
+
+        any_pop = {
+            limit = { location = { is_colonial = no } }
+
+            ideology = { factor = -0.1 value = communist }
+
+            scaled_militancy = {
+                ideology = reactionary
+                factor = 6
+            }
+
+            scaled_militancy = {
+                ideology = communist
+                factor = 6
+            }
+
+            scaled_militancy = {
+                ideology = fascist
+                factor = 6
+            }
+
+            scaled_militancy = {
+                ideology = liberal
+                factor = -4
+            }
+        }
+    }
+}

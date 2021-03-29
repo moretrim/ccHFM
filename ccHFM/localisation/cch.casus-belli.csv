@@ -1,0 +1,20 @@
+### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+# Casus belli #;;;;;;;;;;;;;;
+cch.trig.make_puppet;Make puppet;Créer un pays satellite;Erschafft eine Marionette;;;;;;;;;;;
+cch.trig.make_puppet_desc;Become a puppet;Devenir un satellite;Werdet eine Marionette;;;;;;;;;;;
+cch.trig.make_puppet_setup;$RECIPIENT$ becomes a puppet of $ACTOR$;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;
+cch.trig.make_puppet_short;$RECIPIENT$ becomes a puppet of $ACTOR$;$RECIPIENT$ devient satellite de $ACTOR$;$RECIPIENT$ wird eine Marionette von $ACTOR$;;;;;;;;;;;
+NORMAL_cch.trig.make_puppet.name;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;$ORDER$ guerre de $FIRST$ pour le contrôle de $SECOND_COUNTRY$;$ORDER$ Krieg um die Kontrolle von $FIRST$ über $SECOND_COUNTRY$;;;;;;;;;;;
+AGRESSION_cch.trig.make_puppet.name;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;$ORDER$ guerre de $FIRST$ pour le contrôle de $SECOND_COUNTRY$;$ORDER$ Krieg um die Kontrolle von $FIRST$ über $SECOND_COUNTRY$;;;;;;;;;;;
+cch.trig.humiliate;Humiliate;Humilier;Erniedrigen;;Humillar;;;;;;;;;
+cch.trig.humiliate_desc;Show our military might by humiliating an enemy §Ycountry§W, thus increasing our §Yprestige§W while lowering theirs;Afficher notre puissance militaire en humiliant un §Ypays§W ennemi et en augmentant notre §Yprestige§W tout en réduisant le leur;Zeigen Sie unsere Militärmacht durch Erniedrigung eines feindlichen §YLandes§W, wodurch Sie unser §YPrestige§W steigern und ihres verringern.;;Demostrar nuestro poder militar humillando a un §Ypaís§W enemigo, para aumentar nuestro §Yprestigio§W y reducir el suyo;;;;;;;;;
+cch.trig.humiliate_setup;Humiliate $RECIPIENT$;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;Humillar a $RECIPIENT$;;;;;;;;;
+cch.trig.humiliate_short;Humiliate $RECIPIENT$;Humilier $RECIPIENT$;$RECIPIENT$ erniedrigen;;Humillar a $RECIPIENT$;;;;;;;;;
+NORMAL_cch.trig.humiliate.name;$ORDER$$FIRST$–$SECOND$ War of Honor;$ORDER$ guerre pour l’honneur $FIRST$–$SECOND$;$ORDER$$FIRST$–$SECOND$ Krieg der Ehre;;;;;;;;;;;
+AGRESSION_cch.trig.humiliate.name;$ORDER$$FIRST$ War to Humiliate $SECOND_COUNTRY$;$ORDER$ guerre pour l’honneur $FIRST$–$SECOND$;$ORDER$$FIRST$–$SECOND$ Krieg der Ehre;;;;;;;;;;;
+cch.trig.install_democracy;Install Democracy;Installez la démocratie;Verursachen Sie Demokratie;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+cch.trig.install_democracy_desc;Install a §Yfriendly democracy§W in the country’s capital;Install a §Yfriendly democracy§W in the target country’s capital;Install a §Yfriendly democracy§W in the target country’s capital;;;;;;;;;;;
+cch.trig.install_democracy_setup;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;
+cch.trig.install_democracy_short;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;Install a friendly democracy in $RECIPIENT$;;;;;;;;;;;
+NORMAL_cch.trig.install_democracy.name;$ORDER$$FIRST$ Restoration of $SECOND$ Democracy;;;;;;;;;;;;;
+AGRESSION_cch.trig.install_democracy.name;$ORDER$$FIRST$ Restoration of $SECOND$ Democracy;;;;;;;;;;;;;

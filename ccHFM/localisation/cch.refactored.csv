@@ -1,0 +1,9 @@
+### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+# Refactored functionality #;;;;;;;;;;;;;;
+cch.enforced-democracy.name;The New $COUNTRY_ADJ$ Government;Le Nouveau Gouvernement $COUNTRY_ADJ$;Die Neue $COUNTRY_ADJ$ Regierung;;;;;;;;;;;
+cch.enforced-democracy.desc;As the armies of our former enemy depart $CAPITAL$, they leave behind a newly-installed democratic government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ question whether 'freedom' imposed by a foreign power is truly that.;;;;;;;;;;;;;
+cch.enforced-democracy.opt0;We welcome the new regime.;Nous faisons bon accueil au nouveau régime.;Wir begrüßen das neue Regime.;;;;;;;;;;;
+cch.enforced-democracy.news.title;$COUNTRY_ADJ$ Democracy;;;;;;;;;;;;;
+cch.enforced-democracy.news.long;With elections already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported democratic government is here to stay—at least for the time being. While not everyone in $COUNTRY$ is thrilled at the idea of their freedom being imposed on them by an enemy country, many are nevertheless overjoyed. 'I do not care if $COUNTRY_ADJ$ democracy comes only because $FROMCOUNTRY$ tells us to do it,' one citizen gushed. 'What matters is that now I can vote.';;;;;;;;;;;;;
+cch.enforced-democracy.news.medium;With elections already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported democratic government is here to stay—at least for the time being. While not everyone in $COUNTRY$ is thrilled at the idea of their freedom being imposed, many are nevertheless overjoyed.;;;;;;;;;;;;;
+cch.enforced-democracy.news.short;With elections already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported democratic government is here to stay—at least for the time being.;;;;;;;;;;;;;

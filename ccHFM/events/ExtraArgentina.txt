@@ -1,8 +1,8 @@
 # frequent civil wars in Argentina - these are treated as civil wars but liberal rebellions are treated elsewhere - this is placed here because the code structure is similar
 country_event = {
-    id      = 250000
-    title   = "EVTNAME250000"
-    desc    = "EVTDESC250000"
+    id      = 251000
+    title   = "EVTNAME251000"
+    desc    = "EVTDESC251000"
     picture = "Rosas"
 
     trigger = {
@@ -28,10 +28,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250000"
+        name = "EVTOPTA251000"
 
         add_country_modifier = {
-            name = argentine_civil_wars
+            name = cch.argentine-civil-wars
             duration = -1
         }
 
@@ -58,9 +58,9 @@ country_event = {
 
 # rbx note - Response from Brazil if supporting Entre Rios
 country_event = {
-    id      = 250010
-    title   = "EVTNAME250010"
-    desc    = "EVTDESC250010"
+    id      = 251010
+    title   = "EVTNAME251010"
+    desc    = "EVTDESC251010"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -77,7 +77,7 @@ country_event = {
     mean_time_to_happen = { days = 3 }
 
     option = {
-        name = "EVTOPTA250010"
+        name = "EVTOPTA251010"
 
         any_owned = {
             any_pop = {
@@ -110,9 +110,9 @@ country_event = {
 
 # rbx note - Response from Uruguay if supporting Entre Rios
 country_event = {
-    id      = 250011
-    title   = "EVTNAME250011"
-    desc    = "EVTDESC250011"
+    id      = 251011
+    title   = "EVTNAME251011"
+    desc    = "EVTDESC251011"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -129,7 +129,7 @@ country_event = {
     mean_time_to_happen = { days = 2 }
 
     option = {
-        name = "EVTOPTA250011"
+        name = "EVTOPTA251011"
 
         any_owned = {
             any_pop = {
@@ -165,9 +165,9 @@ country_event = {
 
 # rbx note - Response from Corrientes if supporting Entre Rios
 country_event = {
-    id      = 250012
-    title   = "EVTNAME250012"
-    desc    = "EVTDESC250012"
+    id      = 251012
+    title   = "EVTNAME251012"
+    desc    = "EVTDESC251012"
     picture = "rosas_urquiza"
 
     fire_only_once = yes
@@ -184,7 +184,7 @@ country_event = {
     mean_time_to_happen = { days = 1 }
 
     option = {
-        name = "EVTOPTA250012"
+        name = "EVTOPTA251012"
 
         any_owned = {
             any_pop = {
@@ -220,9 +220,9 @@ country_event = {
 
 # SBA secedes-this should occur in opposition to federalist power such as Entre Rios winning its war-otherwise they possibly would have waited until Rosas died
 country_event = {
-    id      = 250020
-    title   = "EVTNAME250020"
-    desc    = "EVTDESC250020"
+    id      = 251020
+    title   = "EVTNAME251020"
+    desc    = "EVTDESC251020"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
@@ -258,7 +258,7 @@ country_event = {
     mean_time_to_happen = { months = 7 }
 
     option = {
-        name = "EVTOPTA250020"
+        name = "EVTOPTA251020"
 
         ARC = {
             release = SBA
@@ -279,7 +279,7 @@ country_event = {
                 }
                 is_our_vassal = ARC
             }
-            country_event = 250072
+            country_event = 251072
         }
 
         relation = {
@@ -421,9 +421,9 @@ country_event = {
 
 # rbx note - Ask CRT to join ARC after ARC wins the war - AI will accept
 country_event = {
-    id    = 250030
-    title = "EVTNAME250030"
-    desc  = "EVTDESC250030"
+    id    = 251030
+    title = "EVTNAME251030"
+    desc  = "EVTDESC251030"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -431,17 +431,17 @@ country_event = {
     mean_time_to_happen = { days = 2 }
 
     option = {
-        name = "EVTOPTA250030" # Invite
+        name = "EVTOPTA251030" # Invite
 
         CRT = {
-            country_event = 250045
+            country_event = 251045
         }
 
         ai_chance { factor = 100}
     }
 
     option = {
-        name = "EVTOPTB250030" # No invite
+        name = "EVTOPTB251030" # No invite
 
         random_country = {
             limit = {
@@ -461,9 +461,9 @@ country_event = {
 
 # rbx note - Ask CRT to join ARC after ENT wins the war - AI will accept
 country_event = {
-    id    = 250040
-    title = "EVTNAME250040"
-    desc  = "EVTDESC250040"
+    id    = 251040
+    title = "EVTNAME251040"
+    desc  = "EVTDESC251040"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -471,15 +471,15 @@ country_event = {
     mean_time_to_happen = { days = 2 }
 
     option = {
-        name = "EVTOPTA250040" # Invite
+        name = "EVTOPTA251040" # Invite
         CRT = {
-            country_event = 250041
+            country_event = 251041
         }
         ai_chance = { factor = 100 }
     }
 
     option = {
-        name = "EVTOPTB250040" # No invite
+        name = "EVTOPTB251040" # No invite
 
         random_country = {
             limit = {
@@ -498,9 +498,9 @@ country_event = {
 
 # rbx note - Corrientes responds to request to join ARC after Platine War
 country_event = {
-    id    = 250041
-    title = "EVTNAME250041"
-    desc  = "EVTDESC250041"
+    id    = 251041
+    title = "EVTNAME251041"
+    desc  = "EVTDESC251041"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -510,20 +510,20 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250041" # Join
+        name = "EVTOPTA251041" # Join
 
         ENT = {
-            country_event = 250042
+            country_event = 251042
         }
 
         ai_chance = { factor = 100 }
     }
 
     option = {
-        name = "EVTOPTB250041" # Remain independent
+        name = "EVTOPTB251041" # Remain independent
 
         ENT = {
-            country_event = 250043
+            country_event = 251043
         }
 
         ai_chance = { factor = 0 }
@@ -532,9 +532,9 @@ country_event = {
 
 # rbx note - CRT agrees to join
 country_event = {
-    id    = 250042
-    title = "EVTNAME250042"
-    desc  = "EVTDESC250042"
+    id    = 251042
+    title = "EVTNAME251042"
+    desc  = "EVTDESC251042"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -544,7 +544,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250042"
+        name = "EVTOPTA251042"
 
         ARC = {
             create_vassal = CRT
@@ -558,9 +558,9 @@ country_event = {
 
 # rbx note - CRT refuses to join
 country_event = {
-    id    = 250043
-    title = "EVTNAME250043"
-    desc  = "EVTDESC250043"
+    id    = 251043
+    title = "EVTNAME251043"
+    desc  = "EVTDESC251043"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -570,7 +570,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250043"
+        name = "EVTOPTA251043"
 
         ARC = {
             casus_belli = {
@@ -610,9 +610,9 @@ country_event = {
 
 # rbx note - Corrientes responds to request to join ARC after ARC wins Platine War
 country_event = {
-    id    = 250045
-    title = "EVTNAME250041"
-    desc  = "EVTDESC250041"
+    id    = 251045
+    title = "EVTNAME251041"
+    desc  = "EVTDESC251041"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -622,20 +622,20 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250041" # Join
+        name = "EVTOPTA251041" # Join
 
         ARC = {
-            country_event = 250046
+            country_event = 251046
         }
 
         ai_chance = { factor = 100 }
     }
 
     option = {
-        name = "EVTOPTB250041" # Remain independent
+        name = "EVTOPTB251041" # Remain independent
 
         ARC = {
-            country_event = 250043
+            country_event = 251043
         }
 
         ai_chance = { factor = 0 }
@@ -644,9 +644,9 @@ country_event = {
 
 # rbx note - CRT agrees to join
 country_event = {
-    id    = 250046
-    title = "EVTNAME250042"
-    desc  = "EVTDESC250042"
+    id    = 251046
+    title = "EVTNAME251042"
+    desc  = "EVTDESC251042"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -656,7 +656,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250042"
+        name = "EVTOPTA251042"
 
         ARC = {
             create_vassal = CRT
@@ -670,9 +670,9 @@ country_event = {
 
 # rbx note-because game wants to end when inheriting ENT
 country_event = {
-    id    = 250050
-    title = "EVTNAME250050"
-    desc  = "EVTDESC250050"
+    id    = 251050
+    title = "EVTNAME251050"
+    desc  = "EVTDESC251050"
 
     fire_only_once = 1
     is_triggered_only = yes
@@ -680,7 +680,7 @@ country_event = {
     mean_time_to_happen = { days = 2 }
 
     option = {
-        name = "EVTOPTA250050"
+        name = "EVTOPTA251050"
 
         ARC = {
             set_country_flag = entre_rios_has_happened
@@ -693,9 +693,9 @@ country_event = {
 
 # Negotiation between SBA and the Confederation
 country_event = {
-    id      = 250060
-    title   = "EVTNAME250060"
-    desc    = "EVTDESC250060"
+    id      = 251060
+    title   = "EVTNAME251060"
+    desc    = "EVTDESC251060"
     picture = "san_nicolas"
 
     fire_only_once = yes
@@ -724,7 +724,7 @@ country_event = {
     mean_time_to_happen = { months = 12 }
 
     option = {
-        name = "EVTOPTA250060" # Attack the Confederation
+        name = "EVTOPTA251060" # Attack the Confederation
 
         SBA = {
             set_country_flag = sba_attacks_for_uniting_argentina
@@ -741,7 +741,7 @@ country_event = {
                 defender_goal = { casus_belli = civil_war }
                 call_ally = no
             }
-            country_event = 250061
+            country_event = 251061
             }
 
         random_country = {
@@ -761,14 +761,14 @@ country_event = {
                 defender_goal = { casus_belli = humiliate }
                 call_ally = no
             }
-            country_event = 250061
+            country_event = 251061
             }
 
         ai_chance = { factor = 95 }
     }
 
     option = {
-        name = "EVTOPTB250060" # Bide our time
+        name = "EVTOPTB251060" # Bide our time
 
         casus_belli = {
             target = ARC
@@ -800,7 +800,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTC250060" # Agree to their demands
+        name = "EVTOPTC251060" # Agree to their demands
 
         random_owned = {
             limit = { owner = { ai = no } }
@@ -810,7 +810,7 @@ country_event = {
 
         ARC = {
             inherit = SBA
-            country_event = 250062
+            country_event = 251062
         }
 
         any_pop = {
@@ -831,43 +831,43 @@ country_event = {
 
 # The Argentine Civil War
 country_event = {
-    id      = 250061
-    title   = "EVTNAME250061"
-    desc    = "EVTDESC250061"
+    id      = 251061
+    title   = "EVTNAME251061"
+    desc    = "EVTDESC251061"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250061" # To Arms!
+        name = "EVTOPTA251061" # To Arms!
     }
 }
 
 # Buenos Aires stands down
 country_event = {
-    id    = 250062
-    title = "EVTNAME250062"
-    desc  = "EVTDESC250062"
+    id    = 251062
+    title = "EVTNAME251062"
+    desc  = "EVTDESC251062"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250062"
+        name = "EVTOPTA251062"
     }
 }
 
 # Negotiation between SBA and Entre Rios-dominated Confederation or of any platine overlord of ARC
 country_event = {
-    id      = 250070
-    title   = "EVTNAME250070"
-    desc    = "EVTDESC250070"
+    id      = 251070
+    title   = "EVTNAME251070"
+    desc    = "EVTDESC251070"
     picture = "san_nicolas"
 
     fire_only_once = yes
 
-    trigger = {  # rbx note-See event 250060-In this case ENT is intended to be the overlord
+    trigger = {  # rbx note-See event 251060-In this case ENT is intended to be the overlord
 
     	tag = SBA
 
@@ -902,7 +902,7 @@ country_event = {
     mean_time_to_happen = { months = 12 }
 
     option = {
-        name = "EVTOPTA250070" # Attack overlord of ARC
+        name = "EVTOPTA251070" # Attack overlord of ARC
 
         SBA = {
             set_country_flag = sba_attacks_for_uniting_argentina
@@ -925,14 +925,14 @@ country_event = {
                 defender_goal = { casus_belli = humiliate }
                 call_ally = no
             }
-            country_event = 250061
+            country_event = 251061
             }
 
         ai_chance = { factor = 95 }
     }
 
     option = {
-        name = "EVTOPTB250070" # Bide our time
+        name = "EVTOPTB251070" # Bide our time
 
         casus_belli = {
             target = ENT
@@ -960,7 +960,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTC250070" # Agreed to their demands
+        name = "EVTOPTC251070" # Agreed to their demands
 
         SBA = {
             change_tag_no_core_switch = ARC
@@ -971,7 +971,7 @@ country_event = {
         }
 
         ENT = {
-            country_event = 250062
+            country_event = 251062
         }
 
         any_pop = {
@@ -992,39 +992,39 @@ country_event = {
 
 # The Argentine Civil War - This seems to be a leftover from an attempt to make a duplicate event for overlords of ARC
 country_event = {
-    id      = 250071
-    title   = "EVTNAME250071"
-    desc    = "EVTDESC250071"
+    id      = 251071
+    title   = "EVTNAME251071"
+    desc    = "EVTDESC251071"
     picture = "mitre_urquiza"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250071" # To arms!
+        name = "EVTOPTA251071" # To arms!
     }
 }
 
 #this retools the SBA release event text to notify an overlord of ARC that SBA has released
 country_event = {
-    id      = 250072
-    title   = "EVTNAME250072"
-    desc    = "EVTDESC250072"
+    id      = 251072
+    title   = "EVTNAME251072"
+    desc    = "EVTDESC251072"
     picture = "mitre_urquiza"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250072"
+        name = "EVTOPTA251072"
     }
 }
 
 #ENT overlord defeats SBA
 country_event = {
-    id      = 250080
-    title   = "EVTNAME250080"
-    desc    = "EVTDESC250080"
+    id      = 251080
+    title   = "EVTNAME251080"
+    desc    = "EVTDESC251080"
     picture = "battle_pavon"
 
     fire_only_once = yes
@@ -1051,7 +1051,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250080" # Become Argentina
+        name = "EVTOPTA251080" # Become Argentina
 
        THIS = {
             prestige = 20
@@ -1129,7 +1129,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250080" # Preserve the Confederation
+        name = "EVTOPTB251080" # Preserve the Confederation
 
         SBA = { annex_to = ARC }
         ARC = { 
@@ -1141,9 +1141,9 @@ country_event = {
 
 #CRT overlord defeats SBA - this recycles localisation from 250080
 country_event = {
-    id      = 250081
-    title   = "EVTNAME250080"
-    desc    = "EVTDESC250080"
+    id      = 251081
+    title   = "EVTNAME251080"
+    desc    = "EVTDESC251080"
     picture = "battle_pavon"
 
     fire_only_once = yes
@@ -1170,7 +1170,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA2500810" # Become Argentina
+        name = "EVTOPTA2510810" # Become Argentina
 
        THIS = {
             prestige = 20
@@ -1247,7 +1247,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250080" # Preserve the Confederation
+        name = "EVTOPTB251080" # Preserve the Confederation
 
         SBA = { annex_to = ARC }
         ARC = { 
@@ -1259,9 +1259,9 @@ country_event = {
 
 # Corrientes has an option to join Argentina without a war
 country_event = {
-    id    = 250090
-    title = "EVTNAME250090"
-    desc  = "EVTDESC250090"
+    id    = 251090
+    title = "EVTNAME251090"
+    desc  = "EVTDESC251090"
 
     fire_only_once = yes
 
@@ -1288,10 +1288,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250090" # Ask to join
+        name = "EVTOPTA251090" # Ask to join
 
         ARG = {
-            country_event = 250091
+            country_event = 251091
         }
 
         CRT = {
@@ -1329,7 +1329,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250090" # Do not join
+        name = "EVTOPTB251090" # Do not join
 
         CRT = {
             any_pop = {
@@ -1372,18 +1372,18 @@ country_event = {
 
 # Corrientes has asked to join Argentina
 country_event = {
-    id    = 250091
-    title = "EVTNAME250091"
-    desc  = "EVTDESC250091"
+    id    = 251091
+    title = "EVTNAME251091"
+    desc  = "EVTDESC251091"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250091" # Accept them
+        name = "EVTOPTA251091" # Accept them
 
         CRT = { set_country_flag = corrientes_can_join_argentina }
-        CRT = { country_event = 250092 }
+        CRT = { country_event = 251092 }
 
         ai_chance = {
             factor = 100
@@ -1391,10 +1391,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250091" # Refuse them
+        name = "EVTOPTB251091" # Refuse them
 
         CRT = { set_country_flag = corrientes_cannot_join_argentina }
-        CRT = { country_event = 250094 }
+        CRT = { country_event = 251094 }
 
         ai_chance = {
             factor = 0
@@ -1404,34 +1404,34 @@ country_event = {
 
 # Argentina says yes to Corrientes
 country_event = {
-    id    = 250092
-    title = "EVTNAME250092"
-    desc  = "EVTDESC250092"
+    id    = 251092
+    title = "EVTNAME251092"
+    desc  = "EVTDESC251092"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250092"
+        name = "EVTOPTA251092"
 
         CRT = { change_tag_no_core_switch = ARG }
         CRT = { all_core = { remove_core = CRT } }
         ENT = { all_core = { remove_core = CRT } }
-        CRT = { country_event = 250093 }
+        CRT = { country_event = 251093 }
     }
 }
 
 # Argentina absorbs Corrientes
 country_event = {
-    id    = 250093
-    title = "EVTNAME250093"
-    desc  = "EVTDESC250093"
+    id    = 251093
+    title = "EVTNAME251093"
+    desc  = "EVTDESC251093"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250093"
+        name = "EVTOPTA251093"
 
         # cleanup to make sure that the player can tag switch from CRT to ARG
         CRT = { annex_to = ARG }
@@ -1441,9 +1441,9 @@ country_event = {
 
 # Argentina says no to Corrientes
 country_event = {
-    id    = 250094
-    title = "EVTNAME250094"
-    desc  = "EVTDESC250094"
+    id    = 251094
+    title = "EVTNAME251094"
+    desc  = "EVTDESC251094"
 
     fire_only_once = yes
 
@@ -1454,16 +1454,16 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250094"
+        name = "EVTOPTA251094"
         CRT = { all_core = { remove_core = ARG } }
     }
 }
 
 # Entre Rios has an option to join Argentina without a war just in case things are wacky
 country_event = {
-    id    = 250100
-    title = "EVTNAME250100"
-    desc  = "EVTDESC250100"
+    id    = 251100
+    title = "EVTNAME251100"
+    desc  = "EVTDESC251100"
 
     fire_only_once = yes
 
@@ -1490,10 +1490,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250100" # Ask to join
+        name = "EVTOPTA251100" # Ask to join
 
         ARG = {
-            country_event = 250101
+            country_event = 251101
         }
 
         ENT = {
@@ -1531,7 +1531,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250100" # Do not join
+        name = "EVTOPTB251100" # Do not join
 
         ENT = {
             any_pop = {
@@ -1574,18 +1574,18 @@ country_event = {
 
 # Entre Rios has asked to join Argentina
 country_event = {
-    id    = 250101
-    title = "EVTNAME250101"
-    desc  = "EVTDESC250101"
+    id    = 251101
+    title = "EVTNAME251101"
+    desc  = "EVTDESC251101"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250101" # Accept them
+        name = "EVTOPTA251101" # Accept them
 
         ENT = { set_country_flag = entrerios_can_join_argentina }
-        ENT = { country_event = 250102 }
+        ENT = { country_event = 251102 }
 
         ai_chance = {
             factor = 100
@@ -1593,10 +1593,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250101" # Refuse them
+        name = "EVTOPTB251101" # Refuse them
 
         ENT = { set_country_flag = entrerios_cannot_join_argentina }
-        ENT = { country_event = 250104 }
+        ENT = { country_event = 251104 }
 
         ai_chance = {
             factor = 0
@@ -1606,34 +1606,34 @@ country_event = {
 
 # Argentina says yes to Entre Rios
 country_event = {
-    id    = 250102
-    title = "EVTNAME250102"
-    desc  = "EVTDESC250102"
+    id    = 251102
+    title = "EVTNAME251102"
+    desc  = "EVTDESC251102"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250102"
+        name = "EVTOPTA251102"
 
         ENT = { change_tag_no_core_switch = ARG }
         ENT = { all_core = { remove_core = ENT } }
         CRT = { all_core = { remove_core = ENT } }
-        ENT = { country_event = 250103 }
+        ENT = { country_event = 251103 }
     }
 }
 
 # Argentina absorbs Entre Rios
 country_event = {
-    id    = 250103
-    title = "EVTNAME250103"
-    desc  = "EVTDESC250103"
+    id    = 251103
+    title = "EVTNAME251103"
+    desc  = "EVTDESC251103"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250103"
+        name = "EVTOPTA251103"
 
         # cleanup to make sure that the player can tag switch from ENT to ARG
         ENT = { annex_to = ARG }
@@ -1643,9 +1643,9 @@ country_event = {
 
 # Argentina does not absorb Entre Rios
 country_event = {
-    id    = 250104
-    title = "EVTNAME250104"
-    desc  = "EVTDESC250104"
+    id    = 251104
+    title = "EVTNAME251104"
+    desc  = "EVTDESC251104"
 
     fire_only_once = yes
 
@@ -1655,7 +1655,7 @@ country_event = {
         days = 1 }
 
     option = {
-        name = "EVTOPTA250104"
+        name = "EVTOPTA251104"
 
         ENT = { all_core = { remove_core = ARG } }
     }
@@ -1663,9 +1663,9 @@ country_event = {
 
 # Warning to the Confederation
 country_event = {
-    id      = 250110
-    title   = "EVTNAME250110"
-    desc    = "EVTDESC250110"
+    id      = 251110
+    title   = "EVTNAME251110"
+    desc    = "EVTDESC251110"
     picture = "rosas"
 
 
@@ -1683,12 +1683,12 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250110" # Stay the course
+        name = "EVTOPTA251110" # Stay the course
         ai_chance = { factor = 100 }
     }
 
     option = {
-        name = "EVTOPTB250110" # Become republic
+        name = "EVTOPTB251110" # Become republic
 
         ARC = {
             any_pop = {
@@ -1702,7 +1702,7 @@ country_event = {
 
             government = democracy
             ruling_party_ideology = conservative
-            remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
 
             random_owned = {
                 limit = {
@@ -1732,24 +1732,24 @@ country_event = {
 
 # The Confederation submits
 country_event = {
-    id      = 250120
-    title   = "EVTNAME250120"
-    desc    = "EVTDESC250120"
+    id      = 251120
+    title   = "EVTNAME251120"
+    desc    = "EVTDESC251120"
     picture = "battle_pavon"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250120"
+        name = "EVTOPTA251120"
     }
 }
 
 # Player Argentine Confederation to join declared ARG
 country_event = {
-    id    = 250130
-    title = "EVTNAME250130"
-    desc  = "EVTDESC250130"
+    id    = 251130
+    title = "EVTNAME251130"
+    desc  = "EVTDESC251130"
 
     fire_only_once = yes
 
@@ -1774,10 +1774,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250130" # Ask to join
+        name = "EVTOPTA251130" # Ask to join
 
         ARG = {
-            country_event = 250131
+            country_event = 251131
 
             any_pop = {
                 scaled_militancy = {
@@ -1815,7 +1815,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250130" # Do not join
+        name = "EVTOPTB251130" # Do not join
 
         any_pop = {
             scaled_militancy = {
@@ -1856,19 +1856,19 @@ country_event = {
 
 # Argentine Confederation acknowledges creation of Argentina
 country_event = {
-    id    = 250131
-    title = "EVTNAME250131"
-    desc  = "EVTDESC250131"
+    id    = 251131
+    title = "EVTNAME251131"
+    desc  = "EVTDESC251131"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250131" # Accept them
+        name = "EVTOPTA251131" # Accept them
 
         ARC = {
             set_country_flag = arc_can_join_argentina
-            country_event = 250132
+            country_event = 251132
         }
 
         ai_chance = {
@@ -1877,11 +1877,11 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250131" # Refuse them
+        name = "EVTOPTB251131" # Refuse them
 
         ARC = {
             set_country_flag = arc_cannot_join_argentina
-            country_event = 250133
+            country_event = 251133
         }
 
         ai_chance = {
@@ -1892,9 +1892,9 @@ country_event = {
 
 # ARC can join Argentina
 country_event = {
-    id    = 250132
-    title = "EVTNAME250132"
-    desc  = "EVTDESC250132"
+    id    = 251132
+    title = "EVTNAME251132"
+    desc  = "EVTDESC251132"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1904,20 +1904,20 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250132"
+        name = "EVTOPTA251132"
 
         ARC = { change_tag_no_core_switch = ARG }
         ARC = { all_core = { remove_core = ARC } }
         CRT = { all_core = { remove_core = ARC } }
-        ARC = { country_event = 250134 }
+        ARC = { country_event = 251134 }
     }
 }
 
 # ARC cannot join Argentina
 country_event = {
-    id    = 250133
-    title = "EVTNAME250133"
-    desc  = "EVTDESC250133"
+    id    = 251133
+    title = "EVTNAME251133"
+    desc  = "EVTDESC251133"
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1927,15 +1927,15 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250133"
+        name = "EVTOPTA251133"
     }
 }
 
 # Argentina absorbs the Confederation
 country_event = {
-    id    = 250134
-    title = "EVTNAME250134"
-    desc  = "EVTDESC250134"
+    id    = 251134
+    title = "EVTNAME251134"
+    desc  = "EVTDESC251134"
 
     is_triggered_only = yes
     fire_only_once = yes
@@ -1945,7 +1945,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250134"
+        name = "EVTOPTA251134"
 
         # cleanup to make sure that the player can tag switch from ARC to ARG
         ARC = { annex_to = ARG }
@@ -1955,9 +1955,9 @@ country_event = {
 
 # The Argentine Centennial
 country_event = {
-    id      = 250140
-    title   = "EVTNAME250140"
-    desc    = "EVTDESC250140"
+    id      = 251140
+    title   = "EVTNAME251140"
+    desc    = "EVTDESC251140"
     picture = "argentine_centennial"
 
     trigger = {
@@ -1990,7 +1990,7 @@ country_event = {
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250140" # Form Argentina
+        name = "EVTOPTA251140" # Form Argentina
 
         prestige = 10
         THIS = {
@@ -2025,7 +2025,7 @@ country_event = {
             }
 
             change_tag = ARG
-            remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
         }
 
         set_global_flag = argentina_has_formed
@@ -2036,7 +2036,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250140" # Stay the course
+        name = "EVTOPTB251140" # Stay the course
 
         ai_chance = {
             factor = 0.01
@@ -2046,9 +2046,9 @@ country_event = {
 
 # The Rebellion of 1880
 country_event = {
-    id      = 250150
-    title   = "EVTNAME250150"
-    desc    = "EVTDESC250150"
+    id      = 251150
+    title   = "EVTNAME251150"
+    desc    = "EVTDESC251150"
     picture = "los_corrales"
 
 
@@ -2090,7 +2090,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250150" # War
+        name = "EVTOPTA251150" # War
 
         THIS = {
             release = SBA
@@ -2217,7 +2217,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250150" # No war
+        name = "EVTOPTB251150" # No war
 
         ruling_party_ideology = liberal
         political_reform = regionalism
@@ -2227,9 +2227,9 @@ country_event = {
 
 # Buenos Aires Victory
 country_event = {
-    id      = 250160
-    title   = "EVTNAME250160"
-    desc    = "EVTDESC250160"
+    id      = 251160
+    title   = "EVTNAME251160"
+    desc    = "EVTDESC251160"
     picture = "los_corrales"
 
     trigger = {
@@ -2248,7 +2248,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250160" # Damn!
+        name = "EVTOPTA251160" # Damn!
 
         set_global_flag = no_la_plata
 
@@ -2280,9 +2280,9 @@ country_event = {
 
 # Buenos Aires Defeat
 country_event = {
-    id      = 250170
-    title   = "EVTNAME250170"
-    desc    = "EVTDESC250170"
+    id      = 251170
+    title   = "EVTNAME251170"
+    desc    = "EVTDESC251170"
     picture = "los_corrales"
 
     trigger = {
@@ -2303,7 +2303,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250170"
+        name = "EVTOPTA251170"
 
         prestige = 10
 
@@ -2320,7 +2320,7 @@ country_event = {
             political_reform = federalism
             prestige = 5
             capital = 2348
-            remove_country_modifier = argentine_civil_wars
+            remove_country_modifier = cch.argentine-civil-wars
             all_core = { remove_core = SBA }
         }
 
@@ -2336,9 +2336,9 @@ country_event = {
 
 # The Argentine Centennial! when ARG or LPL already exists
 country_event = {
-    id      = 250180
-    title   = "EVTNAME250180"
-    desc    = "EVTDESC250180"
+    id      = 251180
+    title   = "EVTNAME251180"
+    desc    = "EVTDESC251180"
     picture = "argentine_centennial"
 
     fire_only_once = yes
@@ -2379,7 +2379,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250180"
+        name = "EVTOPTA251180"
 
         prestige = 10
 
@@ -2419,9 +2419,9 @@ country_event = {
 
 # Brazil - Argentina treaty - BRZ side
 country_event = {
-    id    = 250190
-    title = "EVTNAME250190"
-    desc  = "EVTDESC250190"
+    id    = 251190
+    title = "EVTNAME251190"
+    desc  = "EVTDESC251190"
 
     fire_only_once = yes
     mean_time_to_happen = {
@@ -2437,17 +2437,17 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250190"
+        name = "EVTOPTA251190"
 
         ARG = {
-            country_event = 250191
+            country_event = 251191
         }
 
         ai_chance = { factor = 10 }
     }
 
     option = {
-        name = "EVTOPTB250190"
+        name = "EVTOPTB251190"
 
         ai_chance = { factor = 0 }
     }
@@ -2455,15 +2455,15 @@ country_event = {
 
 # Brazil - Argentina treaty - ARG side
 country_event = {
-    id    = 250191
-    title = "EVTNAME250191"
-    desc  = "EVTDESC250191"
+    id    = 251191
+    title = "EVTNAME251191"
+    desc  = "EVTDESC251191"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250190"
+        name = "EVTOPTA251190"
 
         ARG = {
             relation = {
@@ -2476,7 +2476,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250190"
+        name = "EVTOPTB251190"
 
         ai_chance = { factor = 0 }
     }
@@ -2484,9 +2484,9 @@ country_event = {
 
 # fires when SBA released without Buenos Aires city
 country_event = {
-    id    = 250192
-    title = "EVTNAME250192"
-    desc  = "EVTDESC250192"
+    id    = 251192
+    title = "EVTNAME251192"
+    desc  = "EVTDESC251192"
 
     trigger = {
         tag = SBA
@@ -2500,7 +2500,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250192"
+        name = "EVTOPTA251192"
 
         2348 = { secede_province = SBA }
         SBA = {
@@ -2511,27 +2511,27 @@ country_event = {
 
 #Corrientes may or may not join player Buenos Aires after Pavon
 country_event = {
-    id    = 250193
-    title = "EVTNAME250193"
-    desc  = "EVTDESC250193"
+    id    = 251193
+    title = "EVTNAME251193"
+    desc  = "EVTDESC251193"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250193"
+        name = "EVTOPTA251193"
 
         SBA = {
-            country_event = 250194
+            country_event = 251194
             create_vassal = CRT
         }
     }
 
     option = {
-        name = "EVTOPTB250193"
+        name = "EVTOPTB251193"
 
         SBA = {
-            country_event = 250195
+            country_event = 251195
             casus_belli = {
                 target = CRT
                 type = make_puppet
@@ -2543,37 +2543,37 @@ country_event = {
 
 #Corrientes has agreed to SBA's demand
 country_event = {
-    id    = 250194
-    title = "EVTNAME250194"
-    desc  = "EVTDESC250194"
+    id    = 251194
+    title = "EVTNAME251194"
+    desc  = "EVTDESC251194"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250194"
+        name = "EVTOPTA251194"
     }
 }
 
 #Corrientes refuses SBA's demand
 country_event = {
-    id    = 250195
-    title = "EVTNAME250195"
-    desc  = "EVTDESC250195"
+    id    = 251195
+    title = "EVTNAME251195"
+    desc  = "EVTDESC251195"
 
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA250195"
+        name = "EVTOPTA251195"
     }
 }
 
 # Chile - Argentina treaty - CHL side
 country_event = {
-    id    = 250196
-    title = "EVTNAME250196"
-    desc  = "EVTDESC250196"
+    id    = 251196
+    title = "EVTNAME251196"
+    desc  = "EVTDESC251196"
 
     fire_only_once = yes
     mean_time_to_happen = {
@@ -2589,17 +2589,17 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA250196"
+        name = "EVTOPTA251196"
 
         ARG = {
-            country_event = 250197
+            country_event = 251197
         }
 
         ai_chance = { factor = 10 }
     }
 
     option = {
-        name = "EVTOPTB250196"
+        name = "EVTOPTB251196"
 
         ai_chance = { factor = 0 }
     }
@@ -2607,15 +2607,15 @@ country_event = {
 
 # Chile - Argentina treaty - ARG side
 country_event = {
-    id    = 250197
-    title = "EVTNAME250197"
-    desc  = "EVTDESC250197"
+    id    = 251197
+    title = "EVTNAME251197"
+    desc  = "EVTDESC251197"
 
     fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA250197"
+        name = "EVTOPTA251197"
 
         ARG = {
             relation = {
@@ -2628,7 +2628,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB250197"
+        name = "EVTOPTB251197"
 
         ai_chance = { factor = 0 }
     }
