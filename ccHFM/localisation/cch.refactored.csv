@@ -1,5 +1,8 @@
 ### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
 # Refactored functionality #;;;;;;;;;;;;;;
+cch.create-vassal.name;TBD create-vassal name;;;;;;;;;;;;;
+cch.create-vassal.desc;TBD create-vassal desc;;;;;;;;;;;;;
+cch.create-vassal.opt0;TBD create-vassal opt0;;;;;;;;;;;;;
 cch.enforced-democracy.name;The New $COUNTRY_ADJ$ Government;Le Nouveau Gouvernement $COUNTRY_ADJ$;Die Neue $COUNTRY_ADJ$ Regierung;;;;;;;;;;;
 cch.enforced-democracy.desc;As the armies of our former enemy depart $CAPITAL$, they leave behind a newly-installed democratic government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ question whether 'freedom' imposed by a foreign power is truly that.;;;;;;;;;;;;;
 cch.enforced-democracy.opt0;We welcome the new regime.;Nous faisons bon accueil au nouveau régime.;Wir begrüßen das neue Regime.;;;;;;;;;;;

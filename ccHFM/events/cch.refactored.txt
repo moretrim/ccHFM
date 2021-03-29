@@ -1,3 +1,55 @@
+# `create_vassal` has a very debilitating shortcoming when making a vassal out of a country which
+# holds core provinces of the new overlord. In such a case, these cores end up ***randomly
+# scrambled*** between vassal and master.
+#
+# To work around the issue, overlord cores are temporarily converted into UTI cores only to be
+# restored after the fact. Unfortunately because `FROM` is not a valid argument to `remove_core`,
+# this workaround cannot be fully refactored and the initial core conversion has to be performed
+# before sending this event (see comment).
+#
+# This shortcut can only be used when `THIS` is the new overlord. Otherwise, the full workaround has
+# to be written in-place.
+country_event = {
+    id      = 250000
+    title   = cch.create-vassal.name
+    desc    = cch.create-vassal.desc
+    picture = TBD
+
+    is_triggered_only = yes
+    allow_multiple_instances = yes
+
+    immediate = {
+        # This would allow a full refactor:
+        #
+        #    FROM = {
+        #        all_core = {
+        #            limit = {
+        #                owned_by = THIS
+        #            }
+        #
+        #            add_core = UTI
+        #            # ==> N.b. the following is not valid! <==
+        #            remove_core = FROM
+        #        }
+        #    }
+        #
+        # Calling code should instead perform the above before sending this event.
+
+        FROM = { create_vassal = THIS }
+
+        UTI = {
+            all_core = {
+                add_core = FROM
+                remove_core = UTI
+            }
+        }
+    }
+
+    option = {
+        name = cch.create-vassal.opt0
+    }
+}
+
 # Modelled after 96085 which, amongst other uses, enforces democracy on behalf of the
 # install_democracy CB. The difference is that we avoid a forced peace with all belligerent, which
 # can have unforeseen consequences.
