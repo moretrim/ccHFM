@@ -547,11 +547,9 @@ country_event = {
         name = "EVTOPTA251042"
 
         ARC = {
-            create_vassal = CRT
-        }
-
-        UTI = {
-            country_event = 250044
+            all_core = { limit = { owned_by = ENT } add_core = UTI remove_core = ARC }
+            create_vassal = ENT
+            UTI = { all_core = { add_core = ARC remove_core = UTI } }
         }
     }
 }
@@ -586,24 +584,6 @@ country_event = {
                 type = make_puppet
                 months = 24
             }
-        }
-    }
-}
-
-country_event = {
-    id = 250044
-    #rbx note - for some unknown reason Corrientes loses provinces when it becomes a puppet of ARC
-
-    is_triggered_only = yes
-
-    option = {
-        2358 = { secede_province = UTI }
-        2356 = { secede_province = UTI }
-        2357 = { secede_province = UTI }
-
-        CRT = {
-            inherit = UTI
-            capital = 2356
         }
     }
 }
@@ -659,11 +639,9 @@ country_event = {
         name = "EVTOPTA251042"
 
         ARC = {
+            all_core = { limit = { owned_by = CRT } add_core = UTI remove_core = ARC }
             create_vassal = CRT
-        }
-
-        UTI = {
-            country_event = 250044
+            UTI = { all_core = { add_core = ARC remove_core = UTI } }
         }
     }
 }
@@ -2523,7 +2501,9 @@ country_event = {
 
         SBA = {
             country_event = 251194
-            create_vassal = CRT
+            all_core = { limit = { owned_by = ENT } add_core = UTI remove_core = SBA }
+            create_vassal = ENT
+            UTI = { all_core = { add_core = SBA remove_core = UTI } }
         }
     }
 
