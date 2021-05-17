@@ -1,0 +1,23 @@
+#These events set up a mean time to happen for the housekeeping, such that they do not impair debugging. That is: you will have time to notice the cleaned situations before they are removed by the events.
+
+country_event = { #clean up wars with tags that no longer exist
+	id = 6030000  #this numbering is based in digits and location on the CleanUp.txt events in HFM
+	title = "Our opponent no longer exists"
+	desc = "Why are we fighting? Who are we fighting? Our opponent in this war no longer exists. I guess we win."
+
+	trigger = {
+		exists = yes
+		ai = yes
+		war = yes
+		war_countries = { exists = no }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "End this war"
+		any_country = { limit = { war_with = THIS exists = no } end_war = THIS }
+	}
+}
