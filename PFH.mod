@@ -1,5 +1,5 @@
 name = "Piggy Flavoured HFM 0.2.0-dev"
-path = "mod/PFH-0.2"
+path = "mod/PFH"
 user_dir = "PFH"
 replace_path = "history/units"
 replace_path = "history/units/1861"
