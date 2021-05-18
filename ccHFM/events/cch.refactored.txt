@@ -156,3 +156,251 @@ country_event = {
         }
     }
 }
+
+# Modelled after e.g. unite_with_greece: when two countries with close affinity merge into one, and
+# it feels fair to extend to a human player an 'out' by having them take over the AI country that
+# would otherwise be inheriting them. In the following "country A swap-unites with country B into C"
+# means:
+#
+# - B is the larger country of the two whereas A is the smaller one: here larger/smaller is really
+#   about the particular kind of affinity between the source countries, e.g. USA inheriting
+#   California or Greece inheriting Crete
+#
+# - the process ends with only C (which can be B, and possibly also A but that would be unusual)
+#
+# Swap-unification goes as follows:
+#
+# - the 'larger' B inherits the 'smaller' A  and becomes C; only if both countries are AI or both
+#   countries are players
+#
+# - A inherits B while also 'copying' it as best as possible, then becomes C; only if A is a
+#   player and B is AI
+#
+# - A petitions B for unification; only if A is an AI and B is a player
+#
+# This last alternative can be a notification event, or can directly lead to inheritance. Conditions
+# on the first and third alternative can be tweaked to turn the petition into a suicide button for
+# A, but only through bilateral rather than unilateral agreement (refer to model unite_with_greece).
+#
+# The last alternative is optional in that it can be merged into the first, by relaxing its
+# condition from equality to implication (i.e. B is a player *or* A is an AI).
+#
+# Note that copying a country can involve the following:
+# - moving A's capital to B's
+# - duplicating the political system
+# - handling primary & accepted cultures
+# - handling behind-the-scenes flags & variables
+#
+# Take also care of Westernisation status as it's not unusual that A should be Westernised e.g. to
+# avoid creating colonial provinces.
+#
+# Recipe for copying the political system of FROM into THIS (which sadly doesn't seem possible to
+# turn into its own event):
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = theocracy }
+#     }
+#
+#     government = theocracy
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+#     set_country_flag = theocratic_government
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = {
+#             government = absolute_monarchy
+#             government = colonial_company
+#         }
+#     }
+#
+#     government = absolute_monarchy
+#     clr_country_flag = communist_gov
+#     set_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = prussian_constitutionalism }
+#     }
+#
+#     government = prussian_constitutionalism
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     set_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = {
+#             OR = {
+#                 government = hms_government
+#                 government = french_bourbon
+#                 government = dominion
+#             }
+#         }
+#     }
+#
+#     government = hms_government
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     set_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = democracy }
+#     }
+#
+#     government = democracy
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     set_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = presidential_dictatorship }
+#     }
+#
+#     government = presidential_dictatorship
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     set_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = proletarian_dictatorship }
+#     }
+#
+#     government = proletarian_dictatorship
+#     set_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = fascist_dictatorship }
+#     }
+#
+#     government = fascist_dictatorship
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     set_country_flag = fascist_gov
+#     clr_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }
+#
+# random_country = {
+#     limit = {
+#         tag = THIS
+#         FROM = { government = bourgeois_dictatorship }
+#     }
+#
+#     government = bourgeois_dictatorship
+#     clr_country_flag = communist_gov
+#     clr_country_flag = absolute_monarchy_gov
+#     clr_country_flag = semi_constitutional_monarchy_gov
+#     clr_country_flag = constitutional_monarchy_gov
+#     clr_country_flag = democracy_gov
+#     clr_country_flag = presidential_dictatorship_gov
+#     clr_country_flag = fascist_gov
+#     set_country_flag = anarcho_liberal_gov
+#     clr_country_flag = everywhere_genocide_only
+#     clr_country_flag = non_colonial_genocide_only
+#     clr_country_flag = colonial_genocide_only
+#     clr_country_flag = preparations_to_kill
+#     remove_country_modifier = preparations_to_kill
+# }

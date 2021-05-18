@@ -3,18 +3,18 @@ primary_culture = platinean
 religion = catholic
 government = presidential_dictatorship
 plurality = 20.0
-nationalvalue = nv_order
+nationalvalue = nv_liberty
 literacy = 0.12
 non_state_culture_literacy = 0.02
 civilized = yes
 is_releasable_vassal = no
 
 # Political reforms
-slavery = freedom_of_womb
-upper_house_composition = appointed
+slavery = no_slavery
+upper_house_composition = party_appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = free_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = harassment
@@ -25,7 +25,7 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 
@@ -37,7 +37,7 @@ child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
-colonial_policy = no_colonies 
+colonial_policy = no_colonies
 
 set_country_flag = catholic_country
 

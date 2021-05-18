@@ -21,7 +21,13 @@ during and around the period of time covered by Victoria 2.
 <!-- breather -->
 
 Lynch, John. *Argentine Caudillo: Juan Manuel de Rosas (Latin American Silhouettes)*. Rowman & Littlefield, 2001. <https://rowman.com/isbn/0842028986>.  
-Regarding Argentina under the rule of Rosas.
+Regarding Argentina under the rule of Rosas. Of particular note, though
+not exhaustive:
+
+-   an account of the strength of the Allied army during the Platine
+    War, pp. 143–147
+-   a description of the crumbling political & military apparatus
+    surrounding Rosas at the end of his rule, pp. 154–155
 
 <!-- breather -->
 

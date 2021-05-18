@@ -33,4 +33,129 @@ political_decisions = {
             }
         }
     }
+
+    cch.integrate-entre-rios = {
+        # TODO picture
+
+        potential = {
+            OR = {
+                AND = {
+                    tag = ARC
+                    has_global_flag = cch.platine-war-won-by-rosas
+                }
+
+                tag = ARG
+                tag = LPL
+            }
+
+            NOT = { has_country_flag = cch.integrated-entre-rios }
+            exists = ENT
+        }
+
+        allow = {
+            ARG = {
+                OR = {
+                    has_country_flag = cch.constitution-of-1853
+                    has_country_flag = cch.national-organisation
+                }
+            }
+            NOT = { centralization = confederalism }
+
+            war = no
+            is_vassal = no
+
+            ENT = {
+                war = no
+
+                OR = {
+                    is_vassal = no
+                    vassal_of = THIS
+                }
+
+                OR = {
+                    NOT = { part_of_sphere = yes }
+                    in_sphere = THIS
+                    sphere_owner = { is_sphere_leader_of = THIS }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = cch.integrated-entre-rios
+
+            ENT = {
+                all_core = { add_core = THIS }
+                country_event = 251041
+            }
+        }
+
+        ai_will_do = {
+            factor = 0.032 # about a month
+        }
+    }
+
+    cch.integrate-corrientes = {
+        # TODO picture
+
+        potential = {
+            OR = {
+                AND = {
+                    tag = ARC
+                    has_global_flag = cch.platine-war-won-by-rosas
+                }
+
+                AND = {
+                    tag = ENT
+                    has_global_flag = cch.platine-war-won-by-urquiza
+                }
+
+                tag = ARG
+                tag = LPL
+            }
+
+            NOT = { has_country_flag = cch.integrated-corrientes }
+            exists = CRT
+        }
+
+        allow = {
+            ARG = {
+                OR = {
+                    has_country_flag = cch.constitution-of-1853
+                    has_country_flag = cch.national-organisation
+                }
+            }
+            NOT = { centralization = confederalism }
+
+            war = no
+            is_vassal = no
+
+            CRT = {
+                war = no
+
+                OR = {
+                    is_vassal = no
+                    vassal_of = THIS
+                }
+
+                OR = {
+                    NOT = { part_of_sphere = yes }
+                    in_sphere = THIS
+                    sphere_owner = { is_sphere_leader_of = THIS }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = cch.integrated-corrientes
+
+            CRT = {
+                all_core = { add_core = THIS }
+                country_event = 251041
+            }
+        }
+
+        ai_will_do = {
+            factor = 0.032 # about a month
+        }
+    }
 }

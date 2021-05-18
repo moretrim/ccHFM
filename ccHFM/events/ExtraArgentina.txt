@@ -1,297 +1,196 @@
+# The stage is as follows:
+# - Rosas' rule is represented by an early-game dictatorship Confederation, or if his party
+#   (reactionaries) is in power
+# - Blanco-led Uruguay is represented by conservatives or reactionaries being in power in Uruguay,
+#   and is treated as the sole regional political ally to Rosas
+# - Colorado-led Uruguay is represented by liberals in power, and is treated as a political enemy of
+#   Rosas
+# - SBA is a revolt tag, normally representing the historical secession of Buenos Aires
+# - Rosas' base of power is Buenos Aires, so SBA should never come up under Rosas
+
 # frequent civil wars in Argentina - these are treated as civil wars but liberal rebellions are treated elsewhere - this is placed here because the code structure is similar
 country_event = {
     id      = 251000
-    title   = "EVTNAME251000"
-    desc    = "EVTDESC251000"
+    title   = cch.argentine-civil-wars-notification.name
+    desc    = cch.argentine-civil-wars-notification.desc
     picture = "Rosas"
 
-    trigger = {
-        civilized = yes
-        capital_scope = { continent = south_america }
+    is_triggered_only = yes
 
-        OR = {
-            tag = ARC
-            tag = ARG
-        }
-
-        year = 1837
-
-        NOT = {
-            OR = {
-                has_country_flag = argentine_civil_wars_in_progress
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA251000"
-
+    immediate = {
+        # TODO this isn't helpful, add a reminder in the event description instead
         add_country_modifier = {
             name = cch.argentine-civil-wars
             duration = -1
         }
+    }
 
-        any_pop = {
-            limit = {
-                location = {
-                    is_colonial = no
+    option = {
+        name = cch.argentine-civil-wars-notification.opt0
 
-                    NOT = {
-                        province_id = 2348
-                    }
-                }
-            }
-
-            consciousness = 4
-
-            militancy = 2
-        }
-
-        set_global_flag = argentine_civil_wars_happening
-        set_country_flag = argentine_civil_wars_in_progress
+        # TODO mention country modifier
     }
 }
 
-# rbx note - Response from Brazil if supporting Entre Rios
 country_event = {
     id      = 251010
-    title   = "EVTNAME251010"
-    desc    = "EVTDESC251010"
+    title   = cch.urquiza-requests-support.name
+    desc    = cch.urquiza-requests-support.desc
     picture = "rosas_urquiza"
 
-    fire_only_once = yes
-
-    trigger = {
-        tag = ENT
-
-        BRZ = {
-            exists = yes
-            has_country_flag = will_support_entre_rios
-        }
-    }
-
-    mean_time_to_happen = { days = 3 }
+    is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA251010"
+        name = cch.urquiza-requests-support.opt0
 
-        any_owned = {
-            any_pop = {
-                limit = {
-                    type = soldiers
+        ## TODO ENT receives a ton of stuff out of thin air right here
+        # Lynch lists Urquiza's original [army] as 15000 strength. Oribe's capitulation from
+        # originally leading 14000 with 5000 tough veterans among them, meant the transfer of all
+        # these troops under Urquiza's command.
+        #
+        # When it comes to the march on Buenos Aires, Brazil's contribution is listed as 12000 in
+        # reserve in Uruguay, 3000 embedded to Urquiza's army--which is listed as 24000 strength at
+        # that point, consistent with the previous numbers. Additional material support consisted
+        # of:
+        # - substantial quantities of arms, artillery, and ammunition
+        # - naval support to cross the Parana
+        # - monthly subsidies
+        #
+        # Returning exiles (among them Sarmiento and Mitre) also joined Urquiza. A number of
+        # defections from among Rosas' supporters also took place after the crossing of the Parana.
+        #
+        # Towards the [end] the political & military apparatus surrounding Rosas crumbled. This is
+        # accounted for in the effects of the "wavering support" country modifier.
+        #
+        # Lynch gives again a breakdown of the Allied army at the battle of [Caseros]:
+        # - total strength of 24000, again consistent with previous numbers
+        # - 3500 Brazilians
+        # - 1500 Uruguayans
+        # - rest Argentines
+        # - 50 pieces of artillery
+        # - many veterans
+        # - modern, professional officer corps
+        #
+        # He also gives a breakdown of Rosistas forces:
+        # - total strength 23000
+        # - 56 pieces of artillery
+        # - recently raised troops
+        # - non-professional 
+        #
+        # [army]: Lynch, pp. 143-147
+        # [end]: Ibid., pp. 154-155
+        # [Caseros]: Ibid., 155-157
 
-                    OR = {
-                        is_primary_culture = yes
-                        is_accepted_culture = yes
-                    }
-                }
+        random_owned = {
+            limit = { FROM = { tag = BRZ } }
 
-                reduce_pop = 2.0
+            owner = {
+                ## 4 artillery brigades' worth
+                # build cost
+                artillery   = 40
+                canned_food = 40
+                liquor      = 40
+
+                # one year's worth of supplies
+                artillery   = 146
+                canned_food = 88
+
+                # one year's worth of wages
+                treasury = 3942
             }
         }
 
-        ## artillery brigades using Roquesort formula
-        # build cost
-        artillery = 40
-        canned_food = 40
-        liquor = 40
+        random_owned = {
+            limit = { FROM = { tag = URU } }
 
-        # supplies
-        artillery = 158
-        canned_food = 88
+            owner = {
+                ## 2 infantry brigades' worth
+                # build cost
+                small_arms      = 20
+                canned_food     = 20
+                regular_clothes = 20
 
-        treasury = 39420
-    }
-}
+                # one year's worth of supplies
+                small_arms      = 9
+                ammunition      = 55
+                canned_food     = 51
+                regular_clothes = 7
 
-# rbx note - Response from Uruguay if supporting Entre Rios
-country_event = {
-    id      = 251011
-    title   = "EVTNAME251011"
-    desc    = "EVTDESC251011"
-    picture = "rosas_urquiza"
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = ENT
-
-        URU = {
-            exists = yes
-            has_country_flag = will_support_entre_rios
-        }
-    }
-
-    mean_time_to_happen = { days = 2 }
-
-    option = {
-        name = "EVTOPTA251011"
-
-        any_owned = {
-            any_pop = {
-                limit = {
-                    type = soldiers
-
-                    OR = {
-                        is_primary_culture = yes
-                        is_accepted_culture = yes
-                    }
-                }
-
-                reduce_pop = 2.0
+                # one year's worth of wages
+                treasury = 1971
             }
         }
 
-        ## infantry brigades using Roquesort formula
-        # build cost
-        small_arms = 20
-        canned_food = 20
-        regular_clothes = 20
+        random_owned = {
+            limit = { FROM = { tag = CRT } }
 
-        # supplies
-        small_arms = 10
-        ammunition = 56
-        canned_food = 52
-        regular_clothes = 8
+            owner = {
+                ## 2 infantry brigades' worth
+                # build cost
+                small_arms      = 20
+                canned_food     = 20
+                regular_clothes = 20
 
-        # rbx note-does not seem realistic to get more cash than this from URU even though math would require it
-        treasury = 9855
-    }
-}
+                # one year's worth of supplies
+                small_arms      = 9
+                ammunition      = 55
+                canned_food     = 51
+                regular_clothes = 7
 
-# rbx note - Response from Corrientes if supporting Entre Rios
-country_event = {
-    id      = 251012
-    title   = "EVTNAME251012"
-    desc    = "EVTDESC251012"
-    picture = "rosas_urquiza"
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = ENT
-
-        CRT = {
-            exists = yes
-            has_country_flag = will_support_entre_rios
-        }
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "EVTOPTA251012"
-
-        any_owned = {
-            any_pop = {
-                limit = {
-                    type = soldiers
-
-                    OR = {
-                        is_primary_culture = yes
-                        is_accepted_culture = yes
-                    }
-                }
-
-                reduce_pop = 2.0
+                # one year's worth of wages
+                treasury = 1971
             }
         }
-
-        ## infantry brigades using Roquesort formula
-        # build cost
-        small_arms = 20
-        canned_food = 20
-        regular_clothes = 20
-
-        # supplies
-        small_arms = 10
-        ammunition = 56
-        canned_food = 52
-        regular_clothes = 8
-
-        # rbx note-does not seem realistic to get more cash than this from CRT even though math would require it
-        treasury = 9855
     }
 }
 
-# SBA secedes-this should occur in opposition to federalist power such as Entre Rios winning its war-otherwise they possibly would have waited until Rosas died
 country_event = {
     id      = 251020
-    title   = "EVTNAME251020"
-    desc    = "EVTDESC251020"
+    title   = cch.secession-of-buenos-aires.name
+    desc    = cch.secession-of-buenos-aires.desc
     picture = "mitre_urquiza"
 
     fire_only_once = yes
 
     trigger = {
-        tag = ARC
+        primary_culture = platinean
+        # Buenos Aires
+        owns = 2348
+        ARG = { has_country_flag = cch.constitution-of-1853 }
+        has_global_flag = cch.buenos-aires-customs-ended
+
         year = 1852
+        war = no
+        SBA = { exists = no }
 
-        SBA = {
-            exists = no
-        }
-
-        ARC = {
-            exists = yes
-
-            OR = {
-                vassal_of = ENT
-                vassal_of = CRT
-                vassal_of = URU
-                vassal_of = PRG
-                ruling_party_ideology = conservative
-                ruling_party_ideology = reactionary
-            }
-
-            NOT = {
-                has_country_flag = rosas_won_platine
-            }
-
-            has_country_flag = entre_rios_won_platine
-        }
+        # TODO possibly needs a negative condition
     }
 
-    mean_time_to_happen = { months = 7 }
+    # Revolution happened in September of 1852
+    mean_time_to_happen = { months = 9 }
 
     option = {
-        name = "EVTOPTA251020"
+        name = cch.secession-of-buenos-aires.opt0
 
-        ARC = {
-            release = SBA
+        ## Secession
 
-            add_country_modifier = {
-                name = no_more_war
-                duration = 730
-            }
-        }
+        release_vassal = SBA
+        release_vassal = SBA
 
-        random_country = { 
-            limit = {
-                OR = {
-                    tag = ENT
-                    tag = URU
-                    tag = PRG
-                    tag = CRT
-                }
-                is_our_vassal = ARC
-            }
-            country_event = 251072
-        }
-
-        relation = {
-            who = SBA
-            value = -400
+        # Buenos Aires
+        random_owned = {
+            limit = { province_id = 2348 }
+            secede_province = SBA
         }
 
         SBA = {
+            # Setup
+            country_event = 251021
+
             define_general = {
                 name = "Bartolomé Mitre"
-                background = cavalry_school
-                personality = resolute
+                personality = unit_personality
+                background = resolutexcavalry_school
             }
 
             add_country_modifier = {
@@ -310,25 +209,12 @@ country_event = {
             }
 
             any_country = {
-                limit = {
-                    capital_scope = { continent = south_america }
-                }
+                limit = { capital_scope = { continent = south_america } }
 
                 relation = {
                     who = SBA
                     value = -110
                 }
-            }
-
-            # rbx note-all these changes and reforms rightfully belong to SBA instead of ARC-The unitarian party should be in charge-liberal-and the nv is changed to hopefully reinforce this
-            government = democracy
-            nationalvalue = nv_liberty
-            ruling_party_ideology = liberal
-
-            # rbx note-upper house will be all liberal but the alternative is to have it be mostly Conservative which would be unacceptable for SBA
-            upper_house = {
-                ideology = liberal
-                value = 0.1
             }
 
             rich_strata = {
@@ -351,258 +237,633 @@ country_event = {
                     factor = 0.3
                 }
             }
+        }
 
-            # rbx note-this is not historical but I change it because of game mechanics to bolster liberal rule in SBA
-            random_owned = {
-                limit = {
-                    NOT = { owner = { slavery = no_slavery } }
-                }
+        # Confederation capital moves to Parana
+        random_owned = {
+            limit = { province_id = 2360 }
+            owner = { capital = 2360 }
+        }
 
-                owner = { political_reform = no_slavery }
+        add_country_modifier = {
+            name = no_more_war
+            duration = 730
+        }
+
+        relation = {
+            who = SBA
+            value = -400
+        }
+
+        # notify overlord
+        random_country = {
+            limit = {
+                primary_culture = platinean
+                is_our_vassal = THIS
             }
 
-            random_owned = {
-                limit = {
-                    owner = { vote_franschise = none_voting }
-                }
+            country_event = 251072
+        }
 
-                owner = { political_reform = landed_voting }
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = cch.secession-of-buenos-aires.opt1
+
+        ## Play as
+
+        release_vassal = SBA
+        release_vassal = SBA
+
+        # Buenos Aires
+        random_owned = {
+            limit = { province_id = 2348 }
+            secede_province = SBA
+        }
+
+        SBA = {
+            # Setup
+            country_event = 251021
+
+            define_general = {
+                name = "Bartolomé Mitre"
+                personality = unit_personality
+                background = resolutexcavalry_school
             }
 
-            random_owned = {
-                limit = {
-                    NOT = { owner = { upper_house_composition = population_equal_weight } }
-                }
-
-                owner = { political_reform = population_equal_weight }
+            add_country_modifier = {
+                name = caudillo_leaders
+                duration = 3650
             }
 
-            random_owned = {
-                limit = {
-                    NOT = { owner = { public_meetings = yes_meeting } }
-                }
-
-                owner = { political_reform = yes_meeting }
+            add_country_modifier = {
+                name = unrecognized_country
+                duration = 3650
             }
 
-            random_owned = {
-                limit = {
-                    NOT = { owner = { press_rights = free_press } }
-                }
-
-                owner = { political_reform = free_press }
+            add_country_modifier = {
+                name = america_new_world
+                duration = 3650
             }
 
-            random_owned = {
-                limit = {
-                    owner = { trade_unions = no_trade_unions }
-                }
+            any_country = {
+                limit = { capital_scope = { continent = south_america } }
 
-                owner = { political_reform = state_controlled }
+                relation = {
+                    who = SBA
+                    value = -110
+                }
             }
 
-            random_owned = {
-                limit = {
+            any_greater_power = {
+                limit = { ruling_party_ideology = liberal }
+                relation = {
+                    who = SBA
+                    value = 50
+                }
+            }
+
+            rich_strata = {
+                ideology = {
+                    value = liberal
+                    factor = 0.9
+                }
+            }
+
+            middle_strata = {
+                ideology = {
+                    value = liberal
+                    factor = 0.5
+                }
+            }
+
+            poor_strata = {
+                ideology = {
+                    value = liberal
+                    factor = 0.3
+                }
+            }
+        }
+
+        # Confederation capital moves to Parana
+        random_owned = {
+            limit = { province_id = 2360 }
+            owner = { capital = 2360 }
+        }
+
+        add_country_modifier = {
+            name = no_more_war
+            duration = 730
+        }
+
+        relation = {
+            who = SBA
+            value = -400
+        }
+
+        # notify overlord
+        random_country = {
+            limit = {
+                primary_culture = platinean
+                is_our_vassal = THIS
+            }
+
+            country_event = 251072
+        }
+
+        change_tag_no_core_switch = SBA
+
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id      = 251021
+    title   = cch.sba-setup.name
+    desc    = cch.sba-setup.desc
+    picture = "mitre_urquiza"
+
+    is_triggered_only = yes
+
+    immediate = {
+        ## Set up with historical data
+
+        # Buenos Aires
+        random_owned = {
+            limit = { province_id = 2348 }
+            owner = { capital = 2348 }
+        }
+
+        random_owned = {
+            limit = { owner = { NOT = { government = presidential_dictatorship } } }
+
+            owner = {
+                government = presidential_dictatorship
+                clr_country_flag = communist_gov
+                clr_country_flag = absolute_monarchy_gov
+                clr_country_flag = semi_constitutional_monarchy_gov
+                clr_country_flag = constitutional_monarchy_gov
+                clr_country_flag = democracy_gov
+                set_country_flag = presidential_dictatorship_gov
+                clr_country_flag = fascist_gov
+                clr_country_flag = anarcho_liberal_gov
+                clr_country_flag = everywhere_genocide_only
+                clr_country_flag = non_colonial_genocide_only
+                clr_country_flag = colonial_genocide_only
+                clr_country_flag = preparations_to_kill
+                remove_country_modifier = preparations_to_kill
+            }
+        }
+
+        ### Political reforms
+
+        # not historical, but a better fit for game mechanics
+        political_reform = no_slavery
+        political_reform = party_appointed
+        political_reform = none_voting
+        political_reform = yes_meeting
+        political_reform = free_press
+        political_reform = no_trade_unions
+        political_reform = jefferson_method
+        political_reform = harassment
+
+        ### Social reforms
+
+        political_reform = no_minimum_wage
+        political_reform = no_work_hour_limit
+        political_reform = no_safety
+        political_reform = no_health_care
+        political_reform = no_subsidies
+        political_reform = no_pensions
+        political_reform = no_schools
+
+        ### New reforms
+
+        political_reform = mandatory_service
+        political_reform = peonage
+        political_reform = capital_punishment
+        political_reform = child_labor_legal
+        political_reform = culture_voting_only
+        political_reform = open_borders
+        political_reform = unitary
+        political_reform = no_colonies
+
+        ### Rest
+
+        ruling_party_ideology = liberal
+
+        party_loyalty = {
+            # Buenos Aires
+            province_id = 2348
+            ideology = liberal
+            # 10 years of loyalty
+            loyalty_value = 18.25
+        }
+
+        # see note on slavery reform
+        any_state = { is_slave = yes }
+    }
+
+    option = {
+        name = cch.sba-setup.opt0
+    }
+}
+
+country_event = {
+    id    = 251041
+    title = cch.integrate-into-argentina.name
+    desc  = cch.integrate-into-argentina.desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = cch.integrate-into-argentina.opt0 # Join
+
+        all_core = {
+            remove_core = THIS
+        }
+
+        # THIS swap-unites with FROM into FROM
+
+        random_owned = {
+            limit = {
+                OR = {
+                    THIS = { ai = yes }
+                    FROM = { ai = no }
+                }
+            }
+
+            FROM = {
+                inherit = THIS
+
+                # notify
+                country_event = 251042
+            }
+        }
+
+        random_owned = {
+            limit = {
+                THIS = { ai = no }
+            }
+
+            THIS = {
+                ## Copy flags
+
+                random_owned = {
+                    limit = { FROM = { has_country_flag = cch.national-organisation } }
+                    owner = { set_country_flag = cch.national-organisation }
+                }
+
+                random_owned = {
+                    limit = { FROM = { has_country_flag = cch.constitution-of-1853 } }
+                    owner = { set_country_flag = cch.constitution-of-1853 }
+                }
+
+                ## Copy government & important reforms
+
+                # TODO: copying doesn't work, changing the country is fiddly
+
+                random_owned = {
+                    limit = { FROM = { government = theocracy } }
+
                     owner = {
-                        OR = {
-                            political_parties = underground_parties
-                            political_parties = harassment
-                        }
+                        government = theocracy
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                        set_country_flag = theocratic_government
                     }
                 }
 
-                owner = { political_reform = gerrymandering }
+                random_owned = {
+                    limit = {
+                        FROM = {
+                            government = absolute_monarchy
+                            government = colonial_company
+                        }
+                    }
+
+                    owner = {
+                        government = absolute_monarchy
+                        clr_country_flag = communist_gov
+                        set_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = prussian_constitutionalism } }
+
+                    owner = {
+                        government = prussian_constitutionalism
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        set_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = {
+                        FROM = {
+                            OR = {
+                                government = hms_government
+                                government = french_bourbon
+                                government = dominion
+                            }
+                        }
+                    }
+
+                    owner = {
+                        government = hms_government
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        set_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = democracy } }
+
+                    owner = {
+                        government = democracy
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        set_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = presidential_dictatorship } }
+
+                    owner = {
+                        government = presidential_dictatorship
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        set_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = proletarian_dictatorship } }
+
+                    owner = {
+                        government = proletarian_dictatorship
+                        set_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = fascist_dictatorship } }
+
+                    owner = {
+                        government = fascist_dictatorship
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        set_country_flag = fascist_gov
+                        clr_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                random_owned = {
+                    limit = { FROM = { government = bourgeois_dictatorship } }
+
+                    owner = {
+                        government = bourgeois_dictatorship
+                        clr_country_flag = communist_gov
+                        clr_country_flag = absolute_monarchy_gov
+                        clr_country_flag = semi_constitutional_monarchy_gov
+                        clr_country_flag = constitutional_monarchy_gov
+                        clr_country_flag = democracy_gov
+                        clr_country_flag = presidential_dictatorship_gov
+                        clr_country_flag = fascist_gov
+                        set_country_flag = anarcho_liberal_gov
+                        clr_country_flag = everywhere_genocide_only
+                        clr_country_flag = non_colonial_genocide_only
+                        clr_country_flag = colonial_genocide_only
+                        clr_country_flag = preparations_to_kill
+                        remove_country_modifier = preparations_to_kill
+                    }
+                }
+
+                ## Change country
+
+                random_country = {
+                    limit = { tag = FROM tag = ARC }
+                    THIS = { set_country_flag = cch.become-ARC }
+                }
+
+                random_country = {
+                    limit = { tag = FROM tag = ARG }
+                    THIS = { set_country_flag = cch.become-ARG }
+                }
+
+                inherit = FROM
+
+                random_country = {
+                    limit = { has_country_flag = cch.become-ARC }
+                    clr_country_flag = cch.become-ARC
+                    change_tag = ARC
+                }
+
+                random_country = {
+                    limit = { has_country_flag = cch.become-ARG }
+                    clr_country_flag = cch.become-ARG
+                    change_tag = ARG
+                }
+
+                random_country = {
+                    limit = { tag = FROM }
+
+                    # Buenos Aires
+                    random_owned = {
+                        limit = { province_id = 2348 }
+                        owner = { capital = 2348 }
+                    }
+                }
             }
         }
 
-        ai_chance = { factor = 100 }
+        ai_chance = { factor = 95 } # likely
+    }
+
+    option = {
+        name = cch.integrate-into-argentina.opt1 # Remain independent
+
+        leave_alliance = FROM
+
+        random_owned = {
+            limit = { owner = { vassal_of = FROM } }
+            FROM = { release_vassal = THIS }
+        }
+
+        relation = {
+            who = FROM
+            value = -400
+        }
+
+        FROM = {
+            country_event = {
+                id = 251043
+                days = 3
+            }
+        }
+
+        ai_chance = {
+            factor = 5 # unlikely
+
+            # dare not defy
+            modifier = {
+                factor = 0
+
+                FROM = { is_greater_power = yes }
+                OR = {
+                    part_of_sphere = no
+                    in_sphere = FROM
+                }
+            }
+        }
     }
 }
 
-# rbx note - Ask CRT to join ARC after ARC wins the war - AI will accept
-country_event = {
-    id    = 251030
-    title = "EVTNAME251030"
-    desc  = "EVTDESC251030"
-
-    fire_only_once = yes
-    is_triggered_only = yes
-
-    mean_time_to_happen = { days = 2 }
-
-    option = {
-        name = "EVTOPTA251030" # Invite
-
-        CRT = {
-            country_event = 251045
-        }
-
-        ai_chance { factor = 100}
-    }
-
-    option = {
-        name = "EVTOPTB251030" # No invite
-
-        random_country = {
-            limit = {
-                tag = CRT
-                exists = yes
-            }
-
-            CRT = {
-                all_core = { remove_core = ARC }
-                all_core = { remove_core = ENT }
-            }
-        }
-
-        ai_chance = { factor = 0 }
-    }
-}
-
-# rbx note - Ask CRT to join ARC after ENT wins the war - AI will accept
-country_event = {
-    id    = 251040
-    title = "EVTNAME251040"
-    desc  = "EVTDESC251040"
-
-    fire_only_once = yes
-    is_triggered_only = yes
-
-    mean_time_to_happen = { days = 2 }
-
-    option = {
-        name = "EVTOPTA251040" # Invite
-        CRT = {
-            country_event = 251041
-        }
-        ai_chance = { factor = 100 }
-    }
-
-    option = {
-        name = "EVTOPTB251040" # No invite
-
-        random_country = {
-            limit = {
-                tag = CRT
-                exists = yes
-            }
-
-            CRT = {
-                all_core = { remove_core = ARC }
-            }
-        }
-
-        ai_chance = { factor = 0 }
-    }
-}
-
-# rbx note - Corrientes responds to request to join ARC after Platine War
-country_event = {
-    id    = 251041
-    title = "EVTNAME251041"
-    desc  = "EVTDESC251041"
-
-    fire_only_once = yes
-    is_triggered_only = yes
-
-    mean_time_to_happen = {
-        days = 2
-    }
-
-    option = {
-        name = "EVTOPTA251041" # Join
-
-        ENT = {
-            country_event = 251042
-        }
-
-        ai_chance = { factor = 100 }
-    }
-
-    option = {
-        name = "EVTOPTB251041" # Remain independent
-
-        ENT = {
-            country_event = 251043
-        }
-
-        ai_chance = { factor = 0 }
-    }
-}
-
-# rbx note - CRT agrees to join
 country_event = {
     id    = 251042
-    title = "EVTNAME251042"
-    desc  = "EVTDESC251042"
+    title = cch.argentina-grows.name
+    desc  = cch.argentina-grows.desc
 
-    fire_only_once = yes
     is_triggered_only = yes
 
-    mean_time_to_happen = {
-        days = 4
-    }
-
     option = {
-        name = "EVTOPTA251042"
-
-        ARC = {
-            all_core = { limit = { owned_by = ENT } add_core = UTI remove_core = ARC }
-            create_vassal = ENT
-            UTI = { all_core = { add_core = ARC remove_core = UTI } }
-        }
+        name = cch.argentina-grows.opt0
     }
 }
 
-# rbx note - CRT refuses to join
 country_event = {
     id    = 251043
-    title = "EVTNAME251043"
-    desc  = "EVTDESC251043"
+    title = cch.integration-refused.name
+    desc  = cch.integration-refused.desc
 
-    fire_only_once = yes
     is_triggered_only = yes
 
-    mean_time_to_happen = {
-        days = 1
+    option = {
+        name = cch.integration-refused.opt0
+
+        casus_belli = {
+            target = FROM
+            type = civil_war
+            months = 24
+        }
+
+        war = {
+            target = FROM
+            attacker_goal = { casus_belli = civil_war }
+            defender_goal = { casus_belli = cch.trig.humiliate }
+            call_ally = no
+        }
+
+        ai_chance = { factor = 95 } # likely
     }
 
     option = {
-        name = "EVTOPTA251043"
+        name = cch.integration-refused.opt1
 
-        ARC = {
-            casus_belli = {
-                target = CRT
-                type = make_puppet
-                months = 24
-            }
-        }
+        prestige = -5
 
-        ENT = {
-            casus_belli = {
-                target = CRT
-                type = make_puppet
-                months = 24
-            }
-        }
+        ai_chance = { factor = 5 } # unlikely
     }
 }
 
 # rbx note - Corrientes responds to request to join ARC after ARC wins Platine War
 country_event = {
     id    = 251045
-    title = "EVTNAME251041"
-    desc  = "EVTDESC251041"
+    title = cch.integrate-into-argentina.name
+    desc  = cch.integrate-into-argentina.desc
 
-    fire_only_once = yes
     is_triggered_only = yes
 
-    mean_time_to_happen = {
-        days = 2
-    }
-
     option = {
-        name = "EVTOPTA251041" # Join
+        name = cch.integrate-into-argentina.opt0 # Join
 
         ARC = {
             country_event = 251046
@@ -612,7 +873,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB251041" # Remain independent
+        name = cch.integrate-into-argentina.opt1 # Remain independent
 
         ARC = {
             country_event = 251043
@@ -625,46 +886,18 @@ country_event = {
 # rbx note - CRT agrees to join
 country_event = {
     id    = 251046
-    title = "EVTNAME251042"
-    desc  = "EVTDESC251042"
+    title = cch.argentina-grows.name
+    desc  = cch.argentina-grows.desc
 
-    fire_only_once = yes
     is_triggered_only = yes
 
-    mean_time_to_happen = {
-        days = 4
-    }
-
     option = {
-        name = "EVTOPTA251042"
+        name = cch.argentina-grows.opt0
 
         ARC = {
             all_core = { limit = { owned_by = CRT } add_core = UTI remove_core = ARC }
             create_vassal = CRT
             UTI = { all_core = { add_core = ARC remove_core = UTI } }
-        }
-    }
-}
-
-# rbx note-because game wants to end when inheriting ENT
-country_event = {
-    id    = 251050
-    title = "EVTNAME251050"
-    desc  = "EVTDESC251050"
-
-    fire_only_once = 1
-    is_triggered_only = yes
-
-    mean_time_to_happen = { days = 2 }
-
-    option = {
-        name = "EVTOPTA251050"
-
-        ARC = {
-            set_country_flag = entre_rios_has_happened
-            remove_country_modifier = north_coalition
-            inherit = ENT
-            capital = 2360
         }
     }
 }
@@ -680,23 +913,15 @@ country_event = {
 
     trigger = {
         tag = SBA
+
+        OR = {
+            has_global_flag = cch.platine-war-won-by-rosas
+            has_global_flag = cch.platine-war-won-by-urquiza
+        }
+
         war = no
         is_vassal = no
         year = 1853
-        exists = yes
-
-        OR = {
-            ARC = {
-                exists = yes
-                is_vassal = no
-            }
-
-            CRT = {
-                exists = yes
-                is_vassal = no
-                is_our_vassal = ARC
-            }
-        }
     }
 
     mean_time_to_happen = { months = 12 }
@@ -814,7 +1039,6 @@ country_event = {
     desc    = "EVTDESC251061"
     picture = "mitre_urquiza"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -828,7 +1052,6 @@ country_event = {
     title = "EVTNAME251062"
     desc  = "EVTDESC251062"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -847,13 +1070,9 @@ country_event = {
 
     trigger = {  # rbx note-See event 251060-In this case ENT is intended to be the overlord
 
-    	tag = SBA
-
-        SBA = {
-            war = no
-            is_vassal = no
-            exists = yes
-        }
+        tag = SBA
+        war = no
+        is_vassal = no
 
         year = 1852
 
@@ -975,7 +1194,6 @@ country_event = {
     desc    = "EVTDESC251071"
     picture = "mitre_urquiza"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -991,7 +1209,6 @@ country_event = {
     picture = "mitre_urquiza"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251072"
@@ -1016,8 +1233,8 @@ country_event = {
         }
 
         SBA = {
-			war = no
-			has_recently_lost_war = yes
+            war = no
+            has_recently_lost_war = yes
             truce_with = ENT
         }
 
@@ -1110,14 +1327,14 @@ country_event = {
         name = "EVTOPTB251080" # Preserve the Confederation
 
         SBA = { annex_to = ARC }
-        ARC = { 
+        ARC = {
             nationalvalue = nv_order
         }
         ai_chance = { factor = 1 }
     }
 }
 
-#CRT overlord defeats SBA - this recycles localisation from 250080
+#CRT overlord defeats SBA - this recycles localisation from 251080
 country_event = {
     id      = 251081
     title   = "EVTNAME251080"
@@ -1137,7 +1354,7 @@ country_event = {
         SBA = {
             war = no
             has_recently_lost_war = yes
-            truce_with = CRT            
+            truce_with = CRT
         }
 
         year = 1853
@@ -1228,7 +1445,7 @@ country_event = {
         name = "EVTOPTB251080" # Preserve the Confederation
 
         SBA = { annex_to = ARC }
-        ARC = { 
+        ARC = {
             nationalvalue = nv_order
         }
         ai_chance = { factor = 1 }
@@ -1354,7 +1571,6 @@ country_event = {
     title = "EVTNAME251091"
     desc  = "EVTDESC251091"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -1386,7 +1602,6 @@ country_event = {
     title = "EVTNAME251092"
     desc  = "EVTDESC251092"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -1406,7 +1621,6 @@ country_event = {
     desc  = "EVTDESC251093"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251093"
@@ -1423,13 +1637,7 @@ country_event = {
     title = "EVTNAME251094"
     desc  = "EVTDESC251094"
 
-    fire_only_once = yes
-
     is_triggered_only = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
 
     option = {
         name = "EVTOPTA251094"
@@ -1556,7 +1764,6 @@ country_event = {
     title = "EVTNAME251101"
     desc  = "EVTDESC251101"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -1588,7 +1795,6 @@ country_event = {
     title = "EVTNAME251102"
     desc  = "EVTDESC251102"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -1608,7 +1814,6 @@ country_event = {
     desc  = "EVTDESC251103"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251103"
@@ -1624,8 +1829,6 @@ country_event = {
     id    = 251104
     title = "EVTNAME251104"
     desc  = "EVTDESC251104"
-
-    fire_only_once = yes
 
     is_triggered_only = yes
 
@@ -1651,13 +1854,9 @@ country_event = {
 
     trigger = {
         tag = ARC
+        is_vassal = no
+        government = presidential_dictatorship
         year = 1849
-
-        ARC = {
-            exists = yes
-            is_vassal = no
-            government = presidential_dictatorship
-        }
     }
 
     option = {
@@ -1716,7 +1915,6 @@ country_event = {
     picture = "battle_pavon"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251120"
@@ -1838,7 +2036,6 @@ country_event = {
     title = "EVTNAME251131"
     desc  = "EVTDESC251131"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -1874,7 +2071,6 @@ country_event = {
     title = "EVTNAME251132"
     desc  = "EVTDESC251132"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     mean_time_to_happen = {
@@ -1897,7 +2093,6 @@ country_event = {
     title = "EVTNAME251133"
     desc  = "EVTDESC251133"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     mean_time_to_happen = {
@@ -1916,7 +2111,6 @@ country_event = {
     desc  = "EVTDESC251134"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     mean_time_to_happen = {
         days = 1
@@ -2038,7 +2232,6 @@ country_event = {
             tag = ARG
         }
 
-        exists = yes
         owns = 2348
         year = 1880
         war = no
@@ -2051,8 +2244,8 @@ country_event = {
         }
 
         2348 = {
-			is_core = SBA
-		}
+            is_core = SBA
+        }
 
         SBA = {
             exists = no
@@ -2232,7 +2425,6 @@ country_event = {
 
         random_country = {
             limit = {
-                exists = yes
                 tag = SBA
             }
 
@@ -2275,7 +2467,8 @@ country_event = {
         SBA = {
             OR = {
                 exists = no
-                is_our_vassal = yes
+                # TODO mmmh...
+                #is_our_vassal = yes
             }
         }
     }
@@ -2287,7 +2480,6 @@ country_event = {
 
         random_country = {
             limit = {
-                exists = yes
                 tag = SBA
             }
 
@@ -2437,7 +2629,6 @@ country_event = {
     title = "EVTNAME251191"
     desc  = "EVTDESC251191"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {
@@ -2468,12 +2659,9 @@ country_event = {
 
     trigger = {
         tag = SBA
-        SBA = {
-            exists = yes
-            owns = 2349
-            NOT = {
-                owns = 2348
-            }        
+        owns = 2349
+        NOT = {
+            owns = 2348
         }
     }
 
@@ -2494,7 +2682,6 @@ country_event = {
     desc  = "EVTDESC251193"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251193"
@@ -2528,7 +2715,6 @@ country_event = {
     desc  = "EVTDESC251194"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251194"
@@ -2542,7 +2728,6 @@ country_event = {
     desc  = "EVTDESC251195"
 
     is_triggered_only = yes
-    fire_only_once = yes
 
     option = {
         name = "EVTOPTA251195"
@@ -2591,7 +2776,6 @@ country_event = {
     title = "EVTNAME251197"
     desc  = "EVTDESC251197"
 
-    fire_only_once = yes
     is_triggered_only = yes
 
     option = {

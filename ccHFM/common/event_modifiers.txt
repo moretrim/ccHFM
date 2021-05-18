@@ -642,20 +642,6 @@ blanco_sympathies = {
 	icon = 18
 }
 
-north_coalition = {
-	mobilisation_size = -0.5
-	org_regain = -0.7
-	icon = 16
-}
-
-the_big_army = {  #rbx note - buffed a bit to compensate for lack of forced CRT annexation
-	mobilisation_size = 0.4
-	land_organisation = 0.4
-	supply_consumption = -0.9
-	org_regain = 0.4
-	icon = 1
-}
-
 caudillo_leaders = {
 	tax_efficiency = 0.3
 	mobilisation_size = 0.02
@@ -3285,4 +3271,18 @@ cch.argentine-civil-wars = {
     pop_consciousness_modifier = 0.2
     pop_militancy_modifier = 0.55
     icon = 4
+}
+
+cch.rosas-wavering-support = {
+    mobilisation_size = -0.5
+    org_regain = -0.7
+    icon = 16
+}
+
+cch.ejercito-grande = {
+    mobilisation_size = 0.4
+    land_organisation = 0.4
+    supply_consumption = -0.9
+    org_regain = 0.4
+    icon = 1
 }
