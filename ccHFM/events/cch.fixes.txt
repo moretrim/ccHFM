@@ -1,0 +1,39 @@
+country_event = {
+    id    = 250200
+    title = cch.they-no-longer-recognise-us.name
+    desc  = cch.they-no-longer-recognise-us.desc
+
+    is_triggered_only = yes
+
+    immediate = {
+        any_country = {
+            end_war = THIS
+        }
+
+        # First of all, `neutrality` as an effect crashes the game often. For instance when applied
+        # to a non-existing country, but also in other hard-to-diagnose situations. We could work
+        # around this, e.g. instead releasing puppets by sending them an event.
+        #
+        # However, even if we did do that the game would not update the vassal count of the
+        # non-existing overlord. This is problematic for the initiating decision, but also
+        # presumably in general. So, we make the country exist if only for the briefest of moments.
+        #
+        # The country is then made to disappear through `cch.end-of-the-country`. This cleanly ends
+        # further unwanted relationships, though this relies on the country pressing the button
+        # quickly.
+
+        random_country = {
+            limit = {
+                THIS = { num_of_vassals = 1 }
+            }
+
+            # Great Slave Lake
+            3227 = { secede_province = THIS }
+            THIS = { set_country_flag = cch.country-must-end }
+        }
+    }
+
+    option = {
+        name = cch.they-no-longer-recognise-us.opt0
+    }
+}

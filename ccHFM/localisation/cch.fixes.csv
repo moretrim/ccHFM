@@ -1,0 +1,10 @@
+### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+# Decisions #;;;;;;;;;;;;;;
+cch.end-of-the-country_title;The End of $COUNTRY$;;;;;;;;;;;;;
+cch.end-of-the-country_desc;Really, this country’s existence was only a brief respite. All things must end.;;;;;;;;;;;;;
+cch.end-of-diplomatic-relations_title;The End of Diplomatic Relations;;;;;;;;;;;;;
+cch.end-of-diplomatic-relations_desc;There’s no use hanging on to hope now. Countries come and go, and it’s time to end some formal diplomatic relationships.\n\n§B(End diplomatic relationships involving non-existing countries.)§!;;;;;;;;;;;;;
+# Events #;;;;;;;;;;;;;;
+cch.they-no-longer-recognise-us.name;The Diplomatic World No Longer Recognises $COUNTRY$;;;;;;;;;;;;;
+cch.they-no-longer-recognise-us.desc;It’s over. Embassies all over the world no longer recognise our government and all our formal diplomatic ties have been severed.;;;;;;;;;;;;;
+cch.they-no-longer-recognise-us.opt0;Damnation!;;;;;;;;;;;;;

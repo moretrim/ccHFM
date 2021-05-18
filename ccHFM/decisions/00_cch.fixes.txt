@@ -1,0 +1,172 @@
+political_decisions = {
+    ## Fixing decisions
+    # Decisions to fix issues as they arise from gameplay. Whenever possible, these should be
+    # AI-only decisions to avoid bothering the player.
+    #
+    # To effectively achieve this, note the uses of any_neighbor_country and any_greater_power to
+    # allow AI countries to monitor player countries. In some cases, any_core within
+    # any_owned_province limited to non-existing countries can be useful (and should be combined
+    # with the previous technique).
+
+    # Put as early as possible for the purpose of AI evaluation order. Likewise for the decision
+    # file name.
+    cch.end-of-the-country = {
+        alert = no
+
+        potential = {
+            ai = yes
+        }
+
+        allow = {
+            has_country_flag = cch.country-must-end
+        }
+
+        effect = {
+            clr_country_flag = cch.country-must-end
+            clr_country_flag = existing_country
+
+            # Upstream manages it somehow, but this is really crashy. Here we rely instead on the
+            # game ending all relationships once the country ends.
+            #neutrality = yes
+
+            # Audax Validator "." Ignore_NEXT
+            FROM = { inherit = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # End problematic relationships involving non-existing countries:
+    #
+    # - wars
+    # - overlordships (i.e. where the non-existing country controls another)
+    #
+    # Relationships involving non-existing countries that the game already handles well or that are
+    # innocuous:
+    #
+    # - vassal relationships (where the non-existing country is the puppet)
+    # - sphere relationships (handled after a save/reload)
+    # - military alliances (on top of that, note that historical alliances would mean generating a
+    #   lot of noise in the log)
+    # - military access
+    #
+    # The use of 3227 (Great Slave Lake) is explained in the associated event.
+    cch.end-of-diplomatic-relations = {
+        alert = no
+
+        potential = {
+            OR = {
+                # normally the AI handles this...
+                ai = yes
+
+                # ...but we still have to cover the case of e.g. a non-GP island country with a
+                # relationship to a non-existing country with no cores
+                AND = {
+                    is_vassal = yes
+                    overlord = { exists = no }
+                    NOT = { any_neighbor_country = { always = yes } }
+                }
+            }
+        }
+
+        allow = {
+            OR = {
+                war_countries = { exists = no }
+
+                AND = {
+                    is_vassal = yes
+                    overlord = { exists = no }
+                }
+
+                any_owned_province = {
+                    any_core = {
+                        exists = no
+
+                        OR = {
+                            war = yes
+
+                            AND = {
+                                num_of_vassals = 1
+                                3227 = { empty = yes }
+                            }
+                        }
+                    }
+                }
+
+                any_neighbor_country = {
+                    ai = no
+
+                    OR = {
+                        war_countries = { exists = no }
+
+                        AND = {
+                            is_vassal = yes
+                            overlord = { exists = no }
+                        }
+
+                        any_owned_province = {
+                            any_core = {
+                                exists = no
+
+                                OR = {
+                                    war = yes
+
+                                    AND = {
+                                        num_of_vassals = 1
+                                        3227 = { empty = yes }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                any_greater_power = {
+                    ai = no
+
+                    OR = {
+                        war_countries = { exists = no }
+
+                        any_owned_province = {
+                            any_core = {
+                                exists = no
+
+                                OR = {
+                                    war = yes
+
+                                    AND = {
+                                        num_of_vassals = 1
+                                        3227 = { empty = yes }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            any_country = {
+                limit = {
+                    exists = no
+
+                    OR = {
+                        war = yes
+
+                        AND = {
+                            num_of_vassals = 1
+                            3227 = { empty = yes }
+                        }
+                    }
+                }
+
+                country_event = 250200
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}
