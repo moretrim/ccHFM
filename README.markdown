@@ -1,22 +1,22 @@
-Piggy Flavoured HFM
-===================
+Community Curated HFM
+=====================
 
 Build status:
 [![Github Workflow][github-workflow-badge]][github-workflow-dashboard]
 
 [github-workflow-badge]:
-    https://github.com/moretrim/PFH/actions/workflows/ci-on-push.yaml/badge.svg
+    https://github.com/moretrim/ccHFM/actions/workflows/ci-on-push.yaml/badge.svg
 [github-workflow-dashboard]:
-    https://github.com/moretrim/PFH/actions/workflows/ci-on-push.yaml
+    https://github.com/moretrim/ccHFM/actions/workflows/ci-on-push.yaml
     "Github Workflows"
 
-A custom-tailored [HFM].
+An unauthorised, unaffiliated effort to maintain [HFM].
 
 [HFM]: https://github.com/SighPie/HFM
 
 [Obtain the latest release here.][RELEASE]
 
-[RELEASE]: https://github.com/moretrim/PFH/releases/latest
+[RELEASE]: https://github.com/moretrim/ccHFM/releases/latest
 
 Release history
 ---------------
@@ -121,19 +121,19 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 - Add a guard condition to the “Establish the Karafuto Prefecture“ decision ([#28], pending
   [HFM/#164]).
 
-  [#28]: https://github.com/moretrim/PFH/pull/28
+  [#28]: https://github.com/moretrim/ccHFM/pull/28
   [HFM/#164]: https://github.com/SighPie/HFM/pull/164
 
 - Leave Ryukyu independent during Meiji Restoration ([#51], pending [HFM/#169]).
 
-  [#51]: https://github.com/moretrim/PFH/pull/51
+  [#51]: https://github.com/moretrim/ccHFM/pull/51
   [HFM/#169]: https://github.com/SighPie/HFM/pull/169
 
 - Prevent the Papal States (aka Lazio aka the Roman Republic) from being outright annexed when Italy
   forms by event (“Il Risorgimento”). They instead get a say into the matter, and can challenge
   Italy ([#19], [HPM/#3] + [HPM/93c5ca], pending [HFM/#163]).
 
-  [#19]: https://github.com/moretrim/PFH/issues/19
+  [#19]: https://github.com/moretrim/ccHFM/issues/19
   [HPM/#3]: https://github.com/arkhometha/Historical-Project-Mod/pull/3
   [HPM/93c5ca]: https://github.com/arkhometha/Historical-Project-Mod/commit/93c5ca17481d738a3dba84581be258b28343ffda
   [HFM/#163]: https://github.com/SighPie/HFM/pull/163
@@ -141,7 +141,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 - Preserve the state religion of the Heavenly Kingdom upon Westernisation ([#40], pending
   [HFM/#172]).
 
-  [#40]: https://github.com/moretrim/PFH/issues/40
+  [#40]: https://github.com/moretrim/ccHFM/issues/40
   [HFM/#172]: https://github.com/SighPie/HFM/pull/172
 
 - Remove correct Basotho cores in Mfecane Matabele ([HFM/#171], [HPM/#131]).
@@ -152,7 +152,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 - Correct requirements of the “Occupation of the Congo Basin” decision, resolving ineffective use
   ([#26], pending [HFM/#174]).
 
-  [#26]: https://github.com/moretrim/PFH/issues/26
+  [#26]: https://github.com/moretrim/ccHFM/issues/26
   [HFM/#174]: https://github.com/SighPie/HFM/pull/174
 
 - Really release Ezo when choosing to play as them (pending [HFM/#176], [HPM/#161]).
@@ -176,13 +176,13 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 - Prevent follow-up event to “The Mysterious Lands of Guatemala” archaeological chain from granting
   prestige to non-existing countries ([8c3aa2]).
 
-  [8c3aa2]: https://github.com/moretrim/PFH/commit/8c3aa2bed5bebfb7369cc7c5f7836304edf79a85
+  [8c3aa2]: https://github.com/moretrim/ccHFM/commit/8c3aa2bed5bebfb7369cc7c5f7836304edf79a85
 
 - Extend player protection of Neuchâtel crisis ([#76]). Note that there still are extant
   event-driven annexations of Neuchâtel, and as such it should still be considered an advanced start
   for dedicated players.
 
-  [#76]: https://github.com/moretrim/PFH/issues/76
+  [#76]: https://github.com/moretrim/ccHFM/issues/76
 
 ##### Ported bugfixes
 
@@ -194,24 +194,24 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 - Flag tweaks for Korea under a monarchy ([4f0f02], pending [HFM/#166]).
 
-  [4f0f02]: https://github.com/moretrim/PFH/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
+  [4f0f02]: https://github.com/moretrim/ccHFM/commit/4f0f02e18710d29ba5d8b98615b186ec98648619
   [HFM/#166]: https://github.com/SighPie/HFM/pull/166
 
 ##### Other
 
 - 4 [editorial][] changes.
 
-### [0.1](https://github.com/moretrim/PFH/tree/v0.1)
+### [0.1](https://github.com/moretrim/ccHFM/tree/v0.1)
 
 The 0.1 series of releases is based on [HFM 1.27I] and is backward compatible with it.
 
-#### [0.1.1](https://github.com/moretrim/PFH/tree/v0.1.1)
+#### [0.1.1](https://github.com/moretrim/ccHFM/tree/v0.1.1)
 
 ##### Tweaks
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7], pending [HFM/#162]).
 
-  [#7]: https://github.com/moretrim/PFH/pull/7
+  [#7]: https://github.com/moretrim/ccHFM/pull/7
   [HFM/#162]: https://github.com/SighPie/HFM/pull/162
 
 - Flag tweaks:
@@ -219,10 +219,10 @@ The 0.1 series of releases is based on [HFM 1.27I] and is backward compatible wi
   * enable the flag of the British dominion of Newfoundland ([#5])
   * use the correct flag for uncivilised or absolute Dahomey ([#6])
 
-  [#5]: https://github.com/moretrim/PFH/pull/5
-  [#6]: https://github.com/moretrim/PFH/pull/6
+  [#5]: https://github.com/moretrim/ccHFM/pull/5
+  [#6]: https://github.com/moretrim/ccHFM/pull/6
 
-#### [0.1.0](https://github.com/moretrim/PFH/tree/v0.1.0)
+#### [0.1.0](https://github.com/moretrim/ccHFM/tree/v0.1.0)
 
 ##### Ported features
 

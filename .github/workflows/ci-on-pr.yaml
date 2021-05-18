@@ -5,7 +5,7 @@ on:
     branches: ['**']
     paths:
       - .github/**
-      - PFH/**
+      - ccHFM/**
   workflow_dispatch:
   repository_dispatch:
 
@@ -35,7 +35,7 @@ jobs:
             set -Eeuo pipefail
 
             # compute difference
-            readarray -d "" pr_files < <(git diff-tree -z --no-commit-id --name-only --diff-filter=AM -r HEAD~1 HEAD -- PFH/)
+            readarray -d "" pr_files < <(git diff-tree -z --no-commit-id --name-only --diff-filter=AM -r HEAD~1 HEAD -- ccHFM/)
             if (( "${#pr_files[@]}" == 0 )) ; then
               echo "No mod files to test."
               exit
@@ -45,7 +45,7 @@ jobs:
             printf "    %q\n" "${pr_files[@]}"
 
             # the static analysis tool uses these for finer analysis
-            scaffolding=(PFH/common/cb_types.txt)
+            scaffolding=(ccHFM/common/cb_types.txt)
 
             # run static analysis
             vic2-companion --color=always --heartbeat --whitelist --remarks=opinion "${scaffolding[@]}" "${pr_files[@]}"

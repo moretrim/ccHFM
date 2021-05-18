@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-project=PFH
+project=ccHFM
 
 function bail {
     echo >&2 "$0: $@"
