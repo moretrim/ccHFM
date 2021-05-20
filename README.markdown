@@ -184,6 +184,9 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [#76]: https://github.com/moretrim/ccHFM/issues/76
 
+- Correct condition on the “Colonial Incorporation” event for Western Sahara. The event incorrectly
+  happened for African countries other than Morocco.
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).

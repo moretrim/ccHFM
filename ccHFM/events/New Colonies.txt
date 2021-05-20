@@ -4031,11 +4031,13 @@ province_event = {
 		owner = {
 			civilized = yes
 			OR = {
-				NOT = { capital_scope = { continent = africa } }
-				NOT = { capital_scope = { continent = west_africa } }
-				NOT = { capital_scope = { continent = east_africa } }
-				NOT = { capital_scope = { continent = central_africa } }
-				NOT = { capital_scope = { continent = south_west_africa } }
+				AND = {
+					NOT = { capital_scope = { continent = africa } }
+					NOT = { capital_scope = { continent = west_africa } }
+					NOT = { capital_scope = { continent = east_africa } }
+					NOT = { capital_scope = { continent = central_africa } }
+					NOT = { capital_scope = { continent = south_west_africa } }
+				}
 				tag = MOR
 			}
 		}
