@@ -2762,16 +2762,8 @@ ASH_anarcho_liberal;Progress Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_socialist;Ghana Congress Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_communist;Convention People's Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_fascist;Popular Front Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_proletarian_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_proletarian_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;x
-ASH_fascist_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_fascist_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;x
-ASH_bourgeois_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_bourgeois_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;x
-ASH_presidential_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_presidential_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;x
-ASH_democracy;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
-ASH_democracy_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;x
+GHN;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;
+GHN_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghanés;;;;;;;;;
 AZA;Azande;Azande;Azande;;Azande;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_ADJ;Zande;Zande;Zande;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;

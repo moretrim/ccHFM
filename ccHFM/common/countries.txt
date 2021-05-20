@@ -69,6 +69,7 @@ VOP		= "countries/Colonial Peru.txt"
 VNS		= "countries/Colonial Spain.txt"
 
 ##HPM
+GHN		="countries/Ghana.txt"
 ATC		="countries/Antillean Confederation.txt"
 ZOU		="countries/Zoutpansberg.txt"
 VLK		="countries/Volkstaat.txt"
