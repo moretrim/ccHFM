@@ -99,7 +99,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
     prevent their normal use or displaying their own tooltips. This also appears to be a base game
     limitation, when trying to fit the longer unified trait descriptions in the leader list.
 
-- **(Experimental)** Turn the “Restore Democracy in South America” decision into a casus belli. As a
+- **(Experimental)** Turn the *Restore Democracy in South America* decision into a casus belli. As a
   decision, it had several flaws:
 
   - It had a hidden infamy cost.
@@ -108,7 +108,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   - Even if the above were taken care of, a decision cannot accurately check that all conditions for
     a valid war are met. This is generally the case for all decisions or events that start wars, but
     is more prominent for a decision that is not a one-shot button.
-  - The communist defender of the war received a free “Make Puppet” counter-CB. This lead to all
+  - The communist defender of the war received a free *Make Puppet* counter-CB. This lead to all
     kinds of oddities.
 
   The intent behind the decision is better reflected as a proper casus belli. This change is still
@@ -118,7 +118,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 ##### Bugfixes
 
-- Add a guard condition to the “Establish the Karafuto Prefecture“ decision ([#28], pending
+- Add a guard condition to the *Establish the Karafuto Prefecture* decision ([#28], pending
   [HFM/#164]).
 
   [#28]: https://github.com/moretrim/ccHFM/pull/28
@@ -130,7 +130,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#169]: https://github.com/SighPie/HFM/pull/169
 
 - Prevent the Papal States (aka Lazio aka the Roman Republic) from being outright annexed when Italy
-  forms by event (“Il Risorgimento”). They instead get a say into the matter, and can challenge
+  forms by event (*Il Risorgimento*). They instead get a say into the matter, and can challenge
   Italy ([#19], [HPM/#3] + [HPM/93c5ca], pending [HFM/#163]).
 
   [#19]: https://github.com/moretrim/ccHFM/issues/19
@@ -149,7 +149,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#171]: https://github.com/SighPie/HFM/issues/171
   [HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
 
-- Correct requirements of the “Occupation of the Congo Basin” decision, resolving ineffective use
+- Correct requirements of the *Occupation of the Congo Basin* decision, resolving ineffective use
   ([#26], pending [HFM/#174]).
 
   [#26]: https://github.com/moretrim/ccHFM/issues/26
@@ -160,7 +160,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   [HFM/#176]: https://github.com/SighPie/HFM/pull/176
   [HPM/#161]: https://github.com/arkhometha/Historical-Project-Mod/pull/161
 
-- Fixes to the “Annex Korea” decision, aiming to resolve the following two situations (pending
+- Fixes to the *Annex Korea* decision, aiming to resolve the following two situations (pending
   [HFM/#177], [HPM/#189]):
   * late game liberation crises that would fizzle when going to war over Korea
   * Japanese conquest of Korea against the player
@@ -173,7 +173,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [HFM/#179]: https://github.com/SighPie/HFM/pull/179
 
-- Prevent follow-up event to “The Mysterious Lands of Guatemala” archaeological chain from granting
+- Prevent follow-up event to *The Mysterious Lands of Guatemala* archaeological chain from granting
   prestige to non-existing countries ([8c3aa2]).
 
   [8c3aa2]: https://github.com/moretrim/ccHFM/commit/8c3aa2bed5bebfb7369cc7c5f7836304edf79a85
@@ -184,7 +184,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
   [#76]: https://github.com/moretrim/ccHFM/issues/76
 
-- Correct condition on the “Colonial Incorporation” event for Western Sahara. The event incorrectly
+- Correct condition on the *Colonial Incorporation* event for Western Sahara. The event incorrectly
   happened for African countries other than Morocco.
 
 ##### Ported bugfixes
