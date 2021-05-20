@@ -24,3 +24,7 @@ History of editorial changes
   [fb131a]: https://github.com/moretrim/ccHFM/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
 
 - Restore missing description of Gendarmerie invention.
+
+- Correct mojibake in French localisation strings in the translation for Fiume. ([HPM/#232])
+
+  [HPM/#232]: https://github.com/arkhometha/Historical-Project-Mod/pull/232
