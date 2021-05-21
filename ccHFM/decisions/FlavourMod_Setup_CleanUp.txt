@@ -238,7 +238,7 @@ political_decisions = {
 				   attacker_goal = {  casus_belli = call_allies_cb  }
 				   call_ally = yes
 			   }
-			}
+		}
 	}
 	
 	cleanup_morocco = {
