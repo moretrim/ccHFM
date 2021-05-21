@@ -77,20 +77,9 @@ political_decisions = {
 		}
 	}	
 	
-	enable_debug_decision = {
-		potential = {
-			ai = no
-			has_global_flag = looking_through_options
-			NOT = { has_country_flag = enable_debug_decision }
-			NOT = { year = 1837 }
-		}
-		
-		allow = { }
-		
-		effect = { set_country_flag = enable_debug_decision }
-	}
-
 	test_dec = {
+		picture = starting_options
+		alert = no
 		potential = {
 			ai = no
 			has_country_flag = enable_debug_decision
@@ -103,27 +92,6 @@ political_decisions = {
 			#QNG = { change_tag = QNG }
 			FRA = { change_tag = FRA }
 			set_country_flag = test_dec
-		}
-	}
-	
-	disable_microstates = {
-		potential = {
-			ai = no
-			has_global_flag = looking_through_options
-			NOT = { has_global_flag = disable_microstates }
-			NOT = { year = 1837 }
-		}
-		allow = { }
-		effect = {
-			set_global_flag = disable_microstates
-			3251 = { remove_core = MNC add_core = SAR add_core = ITA }
-			SAR = { inherit = MNC }
-			3252 = { remove_core = ADO remove_core = CAT add_core = FRA }
-			FRA = { inherit = ADO }
-			3253 = { remove_core = LIE add_core = AUS }
-			AUS = { inherit = LIE }
-			3266 = { remove_core = SMR add_core = PAP add_core = ITA }
-			PAP = { inherit = SMR }
 		}
 	}
 	

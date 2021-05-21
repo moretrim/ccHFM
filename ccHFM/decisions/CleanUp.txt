@@ -512,27 +512,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	enabling_crisis = {
-		potential = {
-			ai = yes
-			exists = yes
-			NOT = { has_global_flag = revolution_n_counter_researched }
-			OR = {
-				revolution_n_counterrevolution = 1
-				any_neighbor_country = { revolution_n_counterrevolution = 1 }
-				any_greater_power = { revolution_n_counterrevolution = 1 }
-			}
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			set_global_flag = revolution_n_counter_researched
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	slave_pop_growth = {
 		potential = {
 			ai = yes
@@ -1609,7 +1588,7 @@ political_decisions = {
 		picture = vassal_payment
 		alert = no
 		potential = {
-			ai = no
+			has_country_flag = government_decisions_on
 			any_neighbor_country = {
 				vassal_of = THIS
 				NOT = { has_country_flag = exempt_from_vassal_contribution }

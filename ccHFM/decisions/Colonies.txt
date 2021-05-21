@@ -3,6 +3,10 @@ political_decisions = {
 	organize_colonial_armies = {
 		picture = begin_line_of_advantage
 		potential = {
+			OR = {
+				has_country_flag = government_decisions_on
+				ai = yes
+			}
 			civilized = yes
 			colonial_nation = yes
 			any_owned_province = { is_colonial = yes is_overseas = yes }

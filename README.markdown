@@ -37,7 +37,7 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 #### 0.2.0-dev (in development)
 
-##### Changes
+##### Features
 
 - Leaders now display their personality & background all at once, together with a stat summary with
   highlights. This makes it vastly simpler for the player to figure out at a glance how good or bad
@@ -115,6 +115,21 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   labelled as experimental because it does get rid of the counter-CB of the original approach
   altogether. As a result communist governements in South America are in perpetual danger from their
   democratic neighbours.
+
+##### Ported Features
+
+- Ported the decision organisation & de-clutter system from HPM 0.4.5 and later. (WIP: currently the
+  colonial organisation decisions are *not* being de-cluttered.) As a side-effect the following
+  option decision was also ported:
+  * *Disable Trade Policy Decisions*: turn off the recurring trade policy decisions from the start
+
+- In preparation for porting the colonial organisation system from HPM, crises now follow the rules
+  of HPM 0.4.5 and later. They are unlocked as soon as a country researches *Revolution &
+  Counterrevolution* **after** 1886, to avoid interfering with the Scramble for Africa.
+
+  Players have access to a new option decision to go by the previous rule: crises unlock as soon as
+  a country researches *Revolution & Counterrevolution*. There is also still the option to unlock
+  crises from the start.
 
 ##### Bugfixes
 

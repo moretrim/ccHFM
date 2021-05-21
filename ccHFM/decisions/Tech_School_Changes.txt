@@ -269,44 +269,4 @@ political_decisions = {
 			prestige = 5
 		}
 	}
-	
-	pick_up_a_tech_school = {
-		alert = no
-		picture = switch_to_order
-		potential = {
-			tech_school = traditional_academic
-			ai = no
-			civilized = yes
-			NOT = { has_country_flag = picking_up_a_tech_school }
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			set_country_flag = picking_up_a_tech_school
-		}
-		
-		ai_will_do = { factor = 0 }
-	}
-	
-	close_pick_up_a_tech_school = {
-		picture = switch_to_productivity
-		alert = no
-		potential = {
-			tech_school = traditional_academic
-			ai = no
-			civilized = yes
-			has_country_flag = picking_up_a_tech_school
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			clr_country_flag = picking_up_a_tech_school
-		}
-		
-		ai_will_do = { factor = 0 }
-	}
 }
