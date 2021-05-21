@@ -104,7 +104,15 @@ political_decisions = {
 			any_owned_province = { is_core = SAF }
 			SAF = { exists = no }
 			NOT = { has_global_flag = south_africa_formed }
-			NOT = { capital_scope = { continent = africa } }
+			NOT = {
+                capital_scope = {
+                    continent = africa
+                    continent = west_africa
+                    continent = central_africa
+                    continent = east_africa
+                    continent = south_west_africa
+                }
+            }
 			civilized = yes
 			revolution_n_counterrevolution = 1
 		}

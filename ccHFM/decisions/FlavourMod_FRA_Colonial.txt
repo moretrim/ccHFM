@@ -1449,9 +1449,7 @@ political_decisions = {
 	organize_algeria_fra = {
 		picture = "organize_french_algeria"
 		potential = {
-			primary_culture = french
-			is_greater_power = yes
-			capital = 425
+			civilized = yes
 			NOT = {
 				exists = ALD
 				has_global_flag = algeria_organized
@@ -1461,13 +1459,15 @@ political_decisions = {
 				capital_scope = { continent = east_africa } 
 				capital_scope = { continent = south_west_africa }
 			}
+			primary_culture = french
+			capital = 425
 			owns = 1700
-			owns = 1721
 		}
 		
 		allow = {
 			war = no
-			revolution_n_counterrevolution = 1
+			machine_guns = 1
+			market_regulations = 1
 			owns = 1700
 			owns = 1721
 		}
@@ -1481,11 +1481,14 @@ political_decisions = {
 			}
 			ALD = {
 				tech_school = unciv_tech_school
+				set_country_flag = post_colonial_country
 				government = colonial_company
-				political_reform = landed_voting
+				political_reform = none_voting
 				capital = 1700
 				primary_culture = french
 				add_accepted_culture = maghrebi
+                add_accepted_culture = berber
+				add_accepted_culture = tuareg
 			}
 			1700 = { 
 				change_province_name = "Alger" 

@@ -3353,7 +3353,7 @@ province_event = {
 					NOT = { is_core = MLI }
 				}
 				add_core = MLI
-				remove_core = MOS
+				remove_core = BKF
 				any_pop = { militancy = -3 }
 			}
 		}
@@ -3407,7 +3407,7 @@ province_event = {
 					NOT = { is_core = MLI }
 				}
 				add_core = MLI
-				remove_core = MOS
+				remove_core = BKF
 				any_pop = { militancy = -3 }
 			}
 		}
@@ -3562,7 +3562,7 @@ province_event = {
 		NOT = {
 			is_core = MLI
 			1901 = { owned_by = THIS }
-			MOS = {
+			BKF = {
 				vassal_of = THIS
 				is_culture_group = THIS
 			}
@@ -3581,7 +3581,7 @@ province_event = {
 					NOT = { is_core = MLI }
 				}
 				add_core = MLI
-				remove_core = MOS
+				remove_core = BKF
 				any_pop = { militancy = -3 }
 			}
 		}
@@ -4154,11 +4154,10 @@ province_event = {
 		owned_by = THIS
 		controlled_by = THIS
 		any_neighbor_province = {
-			is_core = MOS
+			is_core = BKF
 		}
 		owner = {
 			civilized = yes
-			has_global_flag = burkina_faso_organized
 			NOT = { capital_scope = { continent = africa } }
 			NOT = { capital_scope = { continent = west_africa } }
 			NOT = { capital_scope = { continent = east_africa } }
@@ -4168,14 +4167,14 @@ province_event = {
 		OR = {
 			AND = {
 				owner = { owns = 1901 }
-				MOS = { exists = no }
+				BKF = { exists = no }
 			}
-			MOS = {
+			BKF = {
 				vassal_of = THIS
 			}
 		}
 		NOT = {
-			is_core = MOS
+			is_core = BKF
 		}
 	}
 	
@@ -4188,9 +4187,9 @@ province_event = {
 		state_scope = {
 			any_owned = {
 				limit = {
-					NOT = { is_core = MOS }
+					NOT = { is_core = BKF }
 				}
-				add_core = MOS
+				add_core = BKF
 				remove_core = MLI
 				any_pop = { militancy = -3 }
 			}
@@ -4211,11 +4210,10 @@ province_event = {
 		owned_by = THIS
 		controlled_by = THIS
 		any_neighbor_province = {
-			is_core = MOS
+			is_core = BKF
 		}
 		owner = {
 			civilized = yes
-			has_global_flag = burkina_faso_organized
 			NOT = { capital_scope = { continent = africa } }
 			NOT = { capital_scope = { continent = west_africa } }
 			NOT = { capital_scope = { continent = east_africa } }
@@ -4225,9 +4223,9 @@ province_event = {
 		OR = {
 			AND = {
 				owner = { owns = 1901 }
-				MOS = { exists = no }
+				BKF = { exists = no }
 			}
-			MOS = {
+			BKF = {
 				vassal_of = THIS
 			}
 		}
@@ -4250,9 +4248,9 @@ province_event = {
 		state_scope = {
 			any_owned = {
 				limit = {
-					NOT = { is_core = MOS }
+					NOT = { is_core = BKF }
 				}
-				add_core = MOS
+				add_core = BKF
 				remove_core = MLI
 				any_pop = { militancy = -3 }
 			}

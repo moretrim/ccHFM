@@ -1035,7 +1035,11 @@ political_decisions = {
                             continent = east_africa
                             continent = south_west_africa
                         }
-                        primary_culture = french
+                        OR = {
+                            primary_culture = french
+                            # Paris
+                            capital = 425
+                        }
                     }
                     owns = 1700
                 }
@@ -1148,7 +1152,6 @@ political_decisions = {
                         NOT = { is_culture_group = THIS }
                     }
                     NOT = {
-                        # TODO Sudan is irregular
                         has_country_flag = sudan_master
                         capital_scope = {
                             continent = africa
@@ -1268,7 +1271,6 @@ political_decisions = {
                         NOT = { is_culture_group = THIS }
                     }
                     NOT = {
-                        # TODO Dahomey is irregular
                         has_country_flag = dahomey_master
                         capital_scope = {
                             continent = africa
@@ -1442,7 +1444,6 @@ political_decisions = {
                         NOT = { is_culture_group = THIS }
                     }
                     NOT = {
-                        # TODO add missing check
                         has_country_flag = madagascar_master
                         capital_scope = {
                             continent = africa

@@ -118,13 +118,100 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 ##### Ported Features
 
-- Ported the decision organisation & de-clutter system from HPM 0.4.5 and later. (WIP: currently the
-  colonial organisation decisions are *not* being de-cluttered.) As a side-effect the following
-  option decision was also ported:
-  * *Disable Trade Policy Decisions*: turn off the recurring trade policy decisions from the start
+- ***(WIP)*** ~~Ported the dismantlement system from HPM 0.4.5.~~ In order to make this work, a
+  couple other supporting features have also been ported—these are described separately.
 
-- In preparation for porting the colonial organisation system from HPM, crises now follow the rules
-  of HPM 0.4.5 and later. They are unlocked as soon as a country researches *Revolution &
+- Ported the colonial organisation system from HPM 0.4.5 and later. This is ***not*** the colonial
+  casus belli system. Features include:
+
+  * A colonial country for nearly every part of sub-Saharan Africa. As a colonial conqueror from
+    outside Africa, you can supersede and organise native countries into a colonial country that
+    takes on your primary culture and state religion.
+
+    This includes the addition of colonial country Ghana, separate from native country Ashanti which
+    used to pull double duties.
+
+  * Other countries outside of Africa that can also be organised (though not always as a colonial
+    country) include:
+
+    - Indonesia
+    - Timor
+    - Lebanon
+
+  * Re-evaluated colonial organisation conditions. Relative to the older system organisation is a
+    little more free-form now, typically requiring control of half the states that make up a
+    colonial country. In comparison the older system normally required control of set key provinces.
+
+    Likewise whereas the older system required 1870 culture tech *Revolution & Counterrevolution*,
+    organisation now requires 1870 army tech *Machine Guns* and 1850 commerce tech *Market
+    Regulations*.
+
+  * Re-evaluated colonial organisation RGOs. Quoting from the 0.4 HPM patch notes:
+
+    > * "Organizing Colony" decisions now need Machine Guns and Market Regulations. They also will
+    >   change a few RGOs to cash-crop/mining RGOs, making the decisions more worthwhile. Reduced the
+    >   number of cash crops/mining operations in African uncivs and moved them to the "organize"
+    >   decisions—these nations were more focused on subsistence than export-economy.
+    > * Nigeria RGOs redone. The source is (An Economic History of Nigeria 186o-196o Sahistory.org.za
+    >   uploads /r._olufemi_ekundare_an_economic_history_of_nigerbook4you.org_.pdf )
+    > * South Africa got a few more iron and coal provinces. Mostly based on Saimm.co.za and
+    >   Isc.hbs.edu Africa_Iron Ore_2013.pdf
+    > * Indonesia got a few iron provinces that will appear later. Based on Aig.org.au the history of
+    >   coal development in indonesia.pdf
+    > * Mauritania gets an iron province in the north.
+    > * Senegal gets a few cotton provinces. Saint-Louis changed to cotton. Source: Persee.fr pp303
+    >   and "La crise trentenaire de l’économie arachidière" by Mohamed Mbodj pp3
+    > * Upper Volta will produce cotton in the south. Diversified starting RGOs a bit (previously it
+    >   was only grain). Based on Icac.org and Lefaso.net
+    > * Mali will now produce cotton in the south. Diversified starting RGOs and made sure cattle is
+    >   in the cattle zone while fruits/grain start in the south. They will no longer start producing
+    >   cotton either. Based on Fews.net copy.jpg?itok=NA3ukgKa and Haskovi.org
+    > * Ivory Coast has a big cash-crop centered economy once colonized. The south will turn to coffee
+    >   production while the north has cotton and rubber. Based on Legacy.lib.utexas.edu and
+    >   Horizon.documentation.ird.fr
+    > * Sierra Leone gets Coffee in Freetown after they are organized. Based on Universityofmakeni.com
+    > * Guinea has an economy focusing on Rubber. Other productions are fruit (bananas) and a gold
+    >   mine. Source: Persee.fr
+    > * The Gambia is unchanged, as it exported groundnuts for most of its history. Source
+    >   Stclements.edu
+    > * When Guinea-Bissau is organized they will export timber and rubber. Based on En.wikipedia.org
+    > * Niger, when organized, gets a 2 cotton producing provinces. Based on Persee.fr and Persee.fr
+    >   and en.wikipedia.org
+
+    Because the player debt system of HPM was *not* ported, players should take note that they
+    should probably have enough treasury reserves on hand before undertaking the following lucrative
+    investments:
+
+    | Country | Maximum cost |
+    | -------:|:------------ |
+    Nigeria | £200k
+    Indonesia | £200k
+    Sierra Leone | £100k
+    Zambia | £100k
+    Mali | £100k
+    Sudan | £100k
+
+    These amounts are displayed as reminders in the description of their respective colonial
+    organisation decision, before the player is presented with a final choice to make.
+
+    Other colonial RGO decisions have been brought closer in line to HPM in terms of
+    requirements (but rarely effects). This was done for consistency e.g. in the amount of
+    importance that these decisions lend to economic techs, and include:
+
+    - *Economic Reforms in the Uzbek Homeland*
+    - *Economic Reforms in the Kyrgyz Homeland*
+    - *Economic Reforms in the Turkmen Homeland*
+    - *Economic Reforms in the Tajik Homeland*
+    - *Economic Reforms in the Philippines*
+    - *An End to Natural Dyes?*
+
+- Ported the decision organisation & de-clutter system from HPM 0.4.5 and later.
+
+- Ported the *Disable Trade Policy Decisions* option decision: turn off the recurring trade policy
+  decisions from the start.
+
+- To support the ported colonial organisation system from HPM, crises now follow the rules of HPM
+  0.4.5 and later. They are unlocked as soon as a country researches *Revolution &
   Counterrevolution* **after** 1886, to avoid interfering with the Scramble for Africa.
 
   Players have access to a new option decision to go by the previous rule: crises unlock as soon as

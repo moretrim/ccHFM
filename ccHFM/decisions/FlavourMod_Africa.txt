@@ -262,7 +262,7 @@ political_decisions = {
 	}
 	
 	fourth_ashanti_war = {
-		picture = "map_ghana"
+		picture = "map_gold_coast"
 		potential = { 
 			tag = ENG
 			has_global_flag = berlin_conference

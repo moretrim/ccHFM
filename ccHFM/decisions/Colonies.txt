@@ -185,9 +185,14 @@ political_decisions = {
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
+					year = 1880
 					economic_policy = planned_economy
 					modern_central_bank_system = 1
 					investment_banks = 1
+				}
+				AND = {
+					year = 1905
+					business_regulations = 1
 				}
 			}
 		}
@@ -197,6 +202,8 @@ political_decisions = {
 			treasury = -50000
 			1200 = { trade_goods = cotton }
 			1198 = { trade_goods = cotton }
+			1191 = { trade_goods = cotton }
+			29 = { trade_goods = cotton }
 			1195 = { trade_goods = silk }
 			1199 = { trade_goods = silk }
 			1202 = { trade_goods = tobacco } #kokand
@@ -220,9 +227,14 @@ political_decisions = {
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
+					year = 1880
 					economic_policy = planned_economy
 					modern_central_bank_system = 1
 					investment_banks = 1
+				}
+				AND = {
+					year = 1905
+					business_regulations = 1
 				}
 			}
 		}
@@ -252,9 +264,14 @@ political_decisions = {
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
+					year = 1880
 					economic_policy = planned_economy
 					modern_central_bank_system = 1
 					investment_banks = 1
+				}
+				AND = {
+					year = 1905
+					business_regulations = 1
 				}
 			}
 		}
@@ -282,9 +299,14 @@ political_decisions = {
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
+					year = 1880
 					economic_policy = planned_economy
 					modern_central_bank_system = 1
 					investment_banks = 1
+				}
+				AND = {
+					year = 1905
+					business_regulations = 1
 				}
 			}
 		}
@@ -313,9 +335,14 @@ political_decisions = {
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
+					year = 1880
 					economic_policy = planned_economy
 					modern_central_bank_system = 1
 					investment_banks = 1
+				}
+				AND = {
+					year = 1905
+					business_regulations = 1
 				}
 			}
 		}
@@ -397,8 +424,8 @@ political_decisions = {
 			2515 = { change_province_name = "Christchurch" life_rating = 8 }
 			2516 = { change_province_name = "Nelson" life_rating = 2 }
 			#2524 = { change_province_name = "Hamilton" life_rating = 2 }
-			2509 = { life_rating = 8 }
-			2571 = { life_rating = 5 }
+			2509 = { life_rating = 8 } #Auckland
+			2571 = { life_rating = 5 } #Tauranga
 			2514 = { life_rating = 2 }
 			any_pop = { limit = { location = { is_core = NZL } culture = australian } reduce_pop = 2.5 }
 			any_pop = { limit = { location = { is_core = NZL } culture = british strata = poor} reduce_pop = 1.8 }
@@ -575,7 +602,7 @@ political_decisions = {
 		picture = tea_production
 		
 		potential = {
-			AND = {
+			OR = {
 				owns = 2034
 				owns = 2035
 			}
@@ -872,6 +899,7 @@ political_decisions = {
 		effect = {
 			civilized = yes
 			clr_country_flag = lacking_writing_system
+			remove_country_modifier = lacks_writing_system
 			random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
 			random_owned = { 
 				limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
@@ -922,13 +950,26 @@ political_decisions = {
 				overlord = { invention = synthetic_dye }
 				invention = synthetic_dye
 			}
-			any_owned_province = {
-				trade_goods = dye
-				controlled_by = THIS
-				province_control_days = 200
-				unemployment_by_type = { type = farmers value = 0.2 }
+			OR = {
+				any_owned_province = {
+					trade_goods = dye
+					controlled_by = THIS
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
+				}
+				AND = {
+					any_owned_province = { has_building = dye_factory }
+					any_owned_province = {
+						trade_goods = dye
+						controlled_by = THIS
+						owned_by = THIS
+						province_control_days = 730
+						unemployment_by_type = { type = farmers value = 0.4 }
+					}
+				}
 			}
-			year = 1900
+			year = 1870
 		}
 		
 		allow = {
@@ -941,8 +982,9 @@ political_decisions = {
 					province_id = 1310
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -951,8 +993,9 @@ political_decisions = {
 					province_id = 1309 
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = coffee
 			}
@@ -961,8 +1004,9 @@ political_decisions = {
 					province_id = 1254 
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = tropical_wood
 			}
@@ -971,8 +1015,9 @@ political_decisions = {
 					province_id = 1257 
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = tropical_wood
 			}
@@ -981,8 +1026,9 @@ political_decisions = {
 					province_id = 1251  
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -991,8 +1037,9 @@ political_decisions = {
 					province_id = 1241   
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -1001,8 +1048,9 @@ political_decisions = {
 					province_id = 1272   
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -1011,8 +1059,9 @@ political_decisions = {
 					province_id = 1280   
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -1021,8 +1070,9 @@ political_decisions = {
 					province_id = 1277    
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.1 }
 				}
 				trade_goods = fruit
 			}
@@ -1031,8 +1081,9 @@ political_decisions = {
 					province_id = 1276     
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.1 }
 				}
 				trade_goods = fruit
 			}
@@ -1041,8 +1092,9 @@ political_decisions = {
 					province_id = 1275   
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = coal
 			}
@@ -1051,8 +1103,9 @@ political_decisions = {
 					province_id = 1270     
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = iron
 			}
@@ -1061,8 +1114,9 @@ political_decisions = {
 					province_id = 2152     
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = coal
 			}
@@ -1071,8 +1125,9 @@ political_decisions = {
 					province_id = 1273
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			}
@@ -1081,8 +1136,9 @@ political_decisions = {
 					province_id = 1240
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				trade_goods = silk
 			} 
@@ -1090,8 +1146,9 @@ political_decisions = {
 				limit = {
 					trade_goods = dye
 					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
+					owned_by = THIS
+					province_control_days = 730
+					unemployment_by_type = { type = farmers value = 0.5 }
 				}
 				random_list = {
 					25 = { trade_goods = coffee }

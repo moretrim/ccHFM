@@ -240,7 +240,16 @@ political_decisions = {
 	
 	rhodesia_charter = {
 		potential = {
-			tag = ENG
+			primary_culture = british
+            NOT = {
+                capital_scope = {
+                    continent = africa
+                    continent = west_africa
+                    continent = central_africa
+                    continent = east_africa
+                    continent = south_west_africa
+                }
+            }
 			owns = 2068
 			owns = 2069
 			owns = 2070
