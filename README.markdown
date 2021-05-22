@@ -256,6 +256,11 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   a country researches *Revolution & Counterrevolution*. There is also still the option to unlock
   crises from the start.
 
+##### Changes
+
+- Control over the *Splendid Isolation* diplomatic policy of the United Kingdom is now done through
+  an option decision. The policy is active by default, and the option disables it.
+
 ##### Bugfixes
 
 - Add a guard condition to the *Establish the Karafuto Prefecture* decision ([#28], pending

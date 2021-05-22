@@ -1,4 +1,26 @@
 political_decisions = {
+    cch.option-disable-splendid-isolation = {
+        picture = starting_options
+        alert = no
+        potential = {
+            ai = no
+            has_country_flag = country_looking_through_options
+            NOT = { year = 1837 }
+            NOT = { has_global_flag = splendid_isolation_disabled }
+        }
+        allow = {}
+        effect = {
+            set_global_flag = splendid_isolation_disabled
+
+            remove_country_modifier = pax_britannica
+            clr_country_flag = pax_britannica
+
+            any_country = {
+                remove_country_modifier = pax_britannica
+                clr_country_flag = pax_britannica
+            }
+        }
+    }
 
 	option_disable_colonial_railroading = {
 		picture = starting_options

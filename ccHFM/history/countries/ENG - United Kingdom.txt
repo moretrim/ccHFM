@@ -107,6 +107,7 @@ upper_house = {
 schools = naval_tech_school
 
 decision = literacy_ENG
+decision = begin_pax_britannica
 
 govt_flag = {
 	government = presidential_dictatorship
