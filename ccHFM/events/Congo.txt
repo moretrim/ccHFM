@@ -798,6 +798,7 @@ country_event = {
 		CNG = {
 			exists = yes
 			vassal_of = THIS
+            NOT = { has_country_modifier = colony_to_be_annexed }
 		}
 	}
 

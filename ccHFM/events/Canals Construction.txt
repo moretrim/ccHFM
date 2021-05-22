@@ -292,6 +292,7 @@ country_event = {
 				}
 				average_militancy = 7
 			}
+            NOT = { has_country_modifier = colony_to_be_annexed }
 		}
 	}
 	

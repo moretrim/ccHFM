@@ -906,6 +906,7 @@ country_event = {
 			any_owned_province = { is_core = SUD has_province_modifier = fundamentalist_sympathies }
 			owns = 1827
 			exists = yes
+            NOT = { has_country_modifier = colony_to_be_annexed }
 		}
 	}
 	

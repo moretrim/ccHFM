@@ -1132,7 +1132,10 @@ political_decisions = {
 					is_vassal = yes
 				}
 			}
-			NOT = { has_country_flag = civilize_ai_countries }
+			NOT = {
+                has_country_flag = civilize_ai_countries
+                has_country_modifier = colony_to_be_annexed
+            }
 		}
 		
 		allow = {

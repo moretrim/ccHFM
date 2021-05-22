@@ -911,6 +911,7 @@ country_event = {
 			primary_culture = kazak
 		}
 		NOT = { has_country_flag = no_russian_doctrine }
+		NOT = { has_country_modifier = colony_to_be_annexed }
 	}
 	
 	mean_time_to_happen = {

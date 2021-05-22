@@ -3,6 +3,10 @@ unlock_crisis_in_1870_title;Option: Unlock Crisis in 1870;;;;;;;;;;;;;
 unlock_crisis_in_1870_desc;Old HPM standard was to unlock crisis as soon as someone researched Revolution & Counter-revolution. This changed in recent versions to wait until 1886 at least, to avoid Great Wars during the scramble for Africa. If you prefer the old rule, this option will change this system back to that.;;;;;;;;;;;;;
 cleanup_colonial_cores_title;AI: Colonial Core Cleanup;;;;;;;;;;;;;
 cleanup_colonial_cores_desc;AI: Colonial Core Cleanup;;;;;;;;;;;;;
+return_colonies_from_dismantled_tag_title;The Return of Our Colonies;;;;;;;;;;;;;
+return_colonies_from_dismantled_tag_desc;With the recent defeat of a colonial power, our claims to one of our colonies they own are once again at the spotlight. The international community at large agrees that these colonies should be returned to the $COUNTRY_ADJ$ government - we just need to take the necessary steps to get them back.;;;;;;;;;;;;;
+release_colonies_that_werent_annexed_title;Colonial Freedom;;;;;;;;;;;;;
+release_colonies_that_werent_annexed_desc;Our former overlords were defeated and we earned our freedom. Hurrah!;;;;;;;;;;;;;
 free_botswana_title;Release Botswana;;;;;;;;;;;;;
 free_botswana_desc;Now that Rhodesia/Zimbabwe and South Africa are independent, so should be Botswana.;;;;;;;;;;;;;
 turn_on_government_decisions_title;Show 'Government' Decisions;;;;;;;;;;;;;
@@ -1775,3 +1779,5 @@ CLM_1836_setup_title;Token Localization;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 CLM_1836_setup_desc;Token Localization;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 clean_up_crisis_tension_unciv_title;AI: Unciv Tension Cleanup;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 clean_up_crisis_tension_unciv_desc;The world is not ready for a crisis here yet.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+new_round_of_dismantlement_title;New Round of Dismantlement;;;;;;;;;;;;;
+new_round_of_dismantlement_desc;The Dismantlement of our former colonial masters continue.;;;;;;;;;;;;;

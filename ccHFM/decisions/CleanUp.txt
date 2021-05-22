@@ -1679,6 +1679,57 @@ political_decisions = {
 		}
 	}
 	
+	release_colonies_that_werent_annexed = {
+		potential = {
+			exists = yes
+			is_vassal = yes
+			has_country_flag = colony_to_be_annexed_flag
+			NOT = { has_country_modifier = colony_to_be_annexed }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_country_flag = colony_to_be_annexed_flag
+			overlord = { release_vassal = THIS }
+			neutrality = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	new_round_of_dismantlement = {
+		potential = {
+			exists = yes
+			is_vassal = yes
+			has_country_modifier = colony_to_be_annexed
+			ai = yes
+			OR = {
+				any_greater_power = { has_country_modifier = dismantling_country }
+				any_neighbor_country = { has_country_modifier = dismantling_country }	
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = considering_colonial_offer }
+		}
+		
+		effect = {
+			random_list = {
+				17 = { overlord = { country_event = 70005 } }
+				17 = { overlord = { country_event = { id = 70005 days = 1 } } }
+				17 = { overlord = { country_event = { id = 70005 days = 2 } } }
+				17 = { overlord = { country_event = { id = 70005 days = 3 } } }
+				17 = { overlord = { country_event = { id = 70005 days = 4 } } }
+				15 = { overlord = { country_event = { id = 70005 days = 5 } } }
+			}
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	cleanup_colonial_cores = {
 		picture = map_nigeria
 		potential = {

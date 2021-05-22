@@ -118,10 +118,48 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 
 ##### Ported Features
 
-- ***(WIP)*** ~~Ported the dismantlement system from HPM 0.4.5.~~ In order to make this work, a
-  couple other supporting features have also been ported—these are described separately.
+- Port the dismantlement system from HPM 0.4.5. In order to make this work, a couple other
+  supporting features have also been ported—these are described separately.
 
-- Ported the colonial organisation system from HPM 0.4.5 and later. This is ***not*** the colonial
+  Extra fixes:
+
+  * Part of arkhometha/Historical-Project-Mod@104f7a310fbea427e82935a26d8eaf20953d6652:
+
+    > * Increased Infamy from fighting colonies that refuse to submit during a dismantlement. It can
+    >   go now up to an additional 5, depending on how bit the colony is.
+    > * NNM distribution of colonies during dismantlement should now avoid countries that already
+    >   refused to get more colonies.
+    > * Ottoman dismantlement will now try to give Montenegro and Serbia their cores back,
+    >   regardless of truce, and first. That way the region doesn't end controlled by
+    >   Bosnia/Albania. Greece can also get their cores back regardless of truce IF they are not a
+    >   SP/GP or if their sphere master/overlord has a truce with the Ottomans.
+
+  * Part of arkhometha/Historical-Project-Mod@a9984f55990ab54124f0550170ce170a9e92b2e4:
+
+    > * Another attempt at trying to stop the dismantlement event from happening over and over if
+    >   you already decided to not take part anymore. Please let me know if the problem still pops
+    >   up.
+
+  * Part of arkhometha/Historical-Project-Mod@7aab423e9f38d9d5f8d5a957a83532d866d473d2
+
+    > * Fixed NNM event 96065 that could give a dismantle nation CB on a nation you have a truce
+    >   with.
+
+  * Part of arkhometha/Historical-Project-Mod@1209fbbf169fd797749b6e2af060348f5caf1982
+
+- Port the starting year for unlocking Great Wars from HPM: 1890 (same as unmodded), instead of 1900
+  previously. The starting year for World Wars is still 1905, unchanged from both HPM and
+  previously.
+
+  This is not technically part of the dismantlement system, which only allows use of the CB after
+  discovering Mass Politics no earlier than 1900 anyway. However the ten-year lag was being felt
+  acutely when it comes to the power dynamics of the second half of a full campaign.
+
+  Moving up the earliest unlock date makes room for about one extra (dismantlement-less) Great War.
+  This can allow a crafty diplomat to set the stage for momentous dismantlements later down the
+  line, but requires either skill or luck.
+
+- Port the colonial organisation system from HPM 0.4.5 and later. This is ***not*** the colonial
   casus belli system. Features include:
 
   * A colonial country for nearly every part of sub-Saharan Africa. As a colonial conqueror from

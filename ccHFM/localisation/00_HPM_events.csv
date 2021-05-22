@@ -1,4 +1,32 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME961000;$COUNTRY_ADJ$-$FROMCOUNTRY_ADJ$ Colonial Treaty;;;;;;;;;;;;;
+EVTDESC961000;The $FROMCOUNTRY_ADJ$ government lost the war. Their colonial empire crumbled, and our outstanding disputes with them are now solved - in our favour.;;;;;;;;;;;;;
+EVTOPTA961000;These are our rightful lands.;;;;;;;;;;;;;
+EVTNAME9712004;Joining Forces with $FROMCOUNTRY$;;;;;;;;;;;;;
+EVTDESC9712004;$FROMCOUNTRY_ADJ$ envoys arrived today in $CAPITAL$ with an apocalyptic message: They believe the survival of the $FROMCOUNTRY_ADJ$ and $COUNTRY_ADJ$ people and way of life is threatened by foreign powers and the only way to protect it is for us to join forces - therefore they want to renege on their ties to their old masters and join our country.;;;;;;;;;;;;;
+EVT9712004OPTA;We welcome them with open arms.;;;;;;;;;;;;;
+EVTNAME971203;$FROMCOUNTRY$'s Shifting Allegiance;;;;;;;;;;;;;
+EVTDESC971203;$FROMCOUNTRY_ADJ$ envoys arrived today in $CAPITAL$ seeking a protection and friendship deal from the $COUNTRY_ADJ$ government. They are reneging their old allegiances and abandoning their former master to pledge vassalage to the $COUNTRY_ADJ$ $MONARCHTITLE$ - as we are a growing influence and major power in their region of the world, they see no alternative but to come to us to guarantee their continued survival.;;;;;;;;;;;;;
+EVT971203OPTA;We accept their pledge.;;;;;;;;;;;;;
+EVT971203OPTB;Can we really trust someone who betrays their masters so easily?;;;;;;;;;;;;;
+EVTNAME971202;$FROMCOUNTRY$'s Betrayal;;;;;;;;;;;;;
+EVTDESC971202;A $FROMCOUNTRY_ADJ$ envoy arrived today in $CAPITAL$ announcing they renounce their allegiance: they won't be our vassals anymore. This bloodless rebellion is happening due to our waning influence in $FROMCOUNTRY$ and the presence, in their vicinity, of a new Great Power that shook the $FROMCOUNTRY_ADJ$ political establishment. Undoubtedly, they pressured our former vassals into this.;;;;;;;;;;;;;
+EVT971202OPTA;Damn them!;;;;;;;;;;;;;
+EVTNAME971201;A Shift in the Balance of $COUNTRY_ADJ$ Politics;;;;;;;;;;;;;
+EVTDESC971201;For years our overlords held the true power behind the $COUNTRY_ADJ$ $MONARCHTITLE$. They protected us, and we paid them with our respect and the fruits of our toil. But that is soon to change as a momentous shift happened in $YEAR$ that shocked our old allegiances. Our former overlords lost all their influence in $CAPITAL$ and a new power creeped in, little by little, until it overwhelmed our former protectors. Now they are nowhere to be seen and the newcomers are upping the pressure for us to take a stance in the future of the region: should we to shift our allegiance, go alone or something else?;;;;;;;;;;;;;
+EVT971201OPTA;We should look for new overlords.;;;;;;;;;;;;;
+EVT971201OPTB;This is the opportunity we needed to free ourselves from our shackles.;;;;;;;;;;;;;
+EVT971201OPTC;We should join forces with our brethren. §R(Game Over for player)§W;;;;;;;;;;;;;
+EVT971201OPTD;We have faith in our protectors.;;;;;;;;;;;;;
+EVTNAME70006;$COUNTRY_ADJ$ Non-organized Territories;;;;;;;;;;;;;
+EVTNAME96096;$COUNTRY_ADJ$ $FROMCOUNTRY$;;;;;;;;;;;;;
+EVTDESC96096;Our diplomats secured a rounding success today in $CAPITAL$ as they managed to pry the rights to the colony of $FROMCOUNTRY$ during the last round of talks on the dismantlement of the defeated countries. The colony might rebel against our rule and fight for their independence, but our exclusive claim to it is sure to make other powers envious of $COUNTRY_ADJ$ diplomacy.;;;;;;;;;;;;;
+EVTOPTA96096;Let $FROMCOUNTRY$ welcome $COUNTRY_ADJ$ rule.;;;;;;;;;;;;;
+EVTOPTB96096;We will wait for other colonial opportunities.;;;;;;;;;;;;;
+EVTOPTC96096;We are not interested in any more colonies.;;;;;;;;;;;;;
+EVTNAME70005;$COUNTRY_ADJ$ Dismantlement;;;;;;;;;;;;;
+EVTDESC70005;Like vultures, the winners of the last war descended on our colonial possessions. Today in $CAPITAL$ another round of talks begun with the winning nations debating how to properly divide $COUNTRY_ADJ$ colonial territories.;;;;;;;;;;;;;
+EVT70005OPTA;Damn them!;;;;;;;;;;;;;
 EVTNAME199068;Production in $COUNTRY_ADJ$ Rwanda-Burundi;;;;;;;;;;;;;
 EVTDESC199068;$COUNTRY_ADJ$ Rwanda-Burundi has just been declared a colony. The $COUNTRY_ADJ$ government commissioned charters and maps to assess the economic potential of the colony and in $CAPITAL$ several companies expressed their interest in opening new plantations as new territories are charted. Now with the charters almost complete and with the new colonial organization in place, the $COUNTRY_ADJ$ companies interested in developing new business are drawing plans to expand their business.\nIn Rwanda-Burundi there's potential for tobacco, coffee and tea production potential, as well forestry products. We can leave the companies with their own plans or we can choose to guide them to better serve the interests of the people of $COUNTRY$.;;;;;;;;;;;;;
 EVTOPTB199068;Focus on tea and tobacco.;;;;;;;;;;;;;
@@ -78,6 +106,20 @@ EVTNAME199041;Production in $COUNTRY_ADJ$ Sierra Leone;;;;;;;;;;;;;
 EVTDESC199041;$COUNTRY_ADJ$ Sierra Leone has just been declared a colony in the capital city of Freetown. The $COUNTRY_ADJ$ government commissioned charters and maps to assess the economic potential of the colony and in $CAPITAL$ several companies expressed their interest in opening new plantations as territories are charted. Now with the charters almost complete and with the new colonial organization in place, the $COUNTRY_ADJ$ companies interested in developing new business are drawing plans to expand their business.\nSierra Leone has potential for coffee or cotton plantations, while geologists tell us there's potential for great mineral richness far away from the coast. We can leave the companies with their own plans or we can choose to guide them to better serve the interests of the people of $COUNTRY$.;;;;;;;;;;;;;
 EVTOPTC199041;A mix of cotton and coffee production could be good.;;;;;;;;;;;;;
 EVTOPTD199041;If there's mineral richness, we are willing to invest in it. §R(Pay or owe 100,000¤)§W;;;;;;;;;;;;;
+EVTNAME96098;Colonial Dismantlement;;;;;;;;;;;;;
+EVTDESC96098;The bastards that are forcing the humiliating dismantlement of our colonial empire are still not done with it. We can only watch as our colonial possessions are torn away.;;;;;;;;;;;;;
+EVTOPTA96098;Vultures!;;;;;;;;;;;;;
+EVTNAME96099;$FROMCOUNTRY$'s Refusal;;;;;;;;;;;;;
+EVTDESC96099;The colonial partition of our enemy was proceeding according to plan. The defeated nation agreed to our demands and its colonies are being claimed by the victors. The $FROMCOUNTRY_ADJ$, however, refuse to cooperate. They claim a right to self rule and say they will not be exploited again. Our envoys returned to $CAPITAL$ with the negative answer and it seems the only way we will get $FROMCOUNTRY$ as a colony is through war.;;;;;;;;;;;;;
+EVTOPTA96099;If they want war, they will have war.;;;;;;;;;;;;;
+EVTOPTB96099;They are not worth the trouble.;;;;;;;;;;;;;
+EVTNAME96097;The $FROMCOUNTRY_ADJ$ Ultimatum;;;;;;;;;;;;;
+EVTDESC96097;Our self-rule period has the possibility of ending sooner rather than never. The $FROMCOUNTRY_ADJ$ government sent and envoy to $CAPITAL$ with an ultimatum: as part of their peace deal with our former overlords, our nation is to be annexed as a colony of the $FROMCOUNTRY_ADJ$ empire.;;;;;;;;;;;;;
+EVTOPTA96097;We have no choice but to submit.;;;;;;;;;;;;;
+EVTOPTB96097;They will never take our freedom!;;;;;;;;;;;;;
+EVTNAME96095;The Fate of $COUNTRY$;;;;;;;;;;;;;
+EVTDESC96095;As the $FROMCOUNTRY_ADJ$ empire crumbles, the victorious nations divide the spoils. $COUNTRY$ was released as one of the former colonies and promised self-rule. Other Great Powers, however, already set their eyes on us.;;;;;;;;;;;;;
+EVT96095OPTA;Will freedom last?;;;;;;;;;;;;;
 EVTNAME199040;Production in $COUNTRY_ADJ$ Ivory Coast;;;;;;;;;;;;;
 EVTDESC199040;$COUNTRY_ADJ$ Ivory Coast has just been declared a colony in the capital city of Grand Bassam. The $COUNTRY_ADJ$ government commissioned charters and maps to assess the economic potential of the colony and in $CAPITAL$ several companies expressed their interest in opening new plantations as territories are charted. Now with the charters almost complete and with the new colonial organization in place, the $COUNTRY_ADJ$ companies interested in developing new business are drawing plans to expand their business.\nThe Ivory Coast has potential for cotton, rubber and tropical wood production in the north as well as coffee and tobacco in the Ivory Coast. We can leave the companies with their own plans or we can choose to guide them to better serve the interests of the people of $COUNTRY$.;;;;;;;;;;;;;
 EVTOPTC199040;We need wood for our furnaces.;;;;;;;;;;;;;
@@ -1229,8 +1271,8 @@ EVTNAME443025;Fascist Demonstrations in $FROMCOUNTRY$;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESC443025;Fascists sympathetic to our government march in $FROMCOUNTRY$ capital, in a demonstration of support to our new revolutionary government. With tensions between the conservative government and the fascists on the rise in $FROMCOUNTRY$, the leaders of the $FROMCOUNTRY_ADJ$ Fascist Party approached our government to ask for help in a coup to install a fascist dictatorship. This could mean we can establish a puppet government aligned with us, but it could also escalate to war.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVT443025OPTA;Arm them and get the secret police to undermine the $FROMCOUNTRY_ADJ$ government.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVT443025OPTB;We are not interested in $FROMCOUNTRY_ADJ$ internal affairs.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTNAME96093;The French Border;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTDESC96093;As a result of losing the Great War and per the Treaty of Paris of $YEAR$, the French are being punished by being forced to cede several territories with a Picard population or that share a border with us.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME96093;The French Border;;;;;;;;;;;;;
+EVTDESC96093;As a result of losing the Great War and per the Treaty of Paris of $YEAR$, the French are being punished by being forced to cede several territories with a Picard population or that share a border with us.;;;;;;;;;;;;;
 EVT96093OPTA;Well deserved.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTNAME15100;Landowners Incite The Peasantry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTDESC15100;'So take arms! Impoverished, starved and hungry brethren of $PROVINCENAME$. In name of our Lord and in defense of eternal rights, let us drive the occupiers out of our native land!' Local landowners in $PROVINCENAME$ are arguing revolution against our rule. We could confront them now, but then again it might be better to wait for another opportunity.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
@@ -1245,8 +1287,8 @@ EVTDESC90954;"In this part are the ten main markets, though besides these there 
 EVTOPTA90954;Excellent.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTDESC90955;With our administration of $PROVINCENAME$, we abolished opium trade and expelled the old foreign administration. As a result of these harsh policies, trade fell considerably and many Europeans vessels don't stop in $PROVINCENAME$ anymore.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTOPTA90955;We didn't need them anyway.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTNAME96092;Saint Pierre & Miquelon;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTDESC96092;Saint Pierre & Miquelon is being offered to us as a result of the last Great War and the dismantlement of France. Since we own the closest land to it, the Great Powers argue it should be under our administration.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME96092;Saint Pierre & Miquelon;;;;;;;;;;;;;
+EVTDESC96092;Saint Pierre & Miquelon is being offered to us as a result of the last Great War and the dismantlement of France. Since we own the closest land to it, the Great Powers argue it should be under our administration.;;;;;;;;;;;;;
 EVT96092OPTA;We will govern the island.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTNAME37239;The Loss of Alsace-Lorraine;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTDESC37239;Alsace-Lorraine was lost to the Germans in a fateful war. They become stronger by the day, fueled by a military-industrial complex that feeds their war machine with weapons and ammunition while their society is geared for the training and recruitment of soldiers  for their armies. Some voices in our government argue that if we are to ever take our lands back, we need our own military-industrial complex and our own military reforms.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
@@ -1389,8 +1431,8 @@ EVT325104OPTB;Try to stop the collateral damage. We recognize their struggle.;;;
 EVTNAME32535;The $YEAR$ Rebellion in $PROVINCENAME$;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTDESC32535;In $YEAR$, without regard to local conditions, the $COUNTRY_ADJ$ government ordered $PROVINCENAME$ peasants to cultivate potatoes and to pay their taxes in $COUNTRY_ADJ$ cash. $PROVINCENAME$ still maintained a primarily natural economy based on corn and millet. Rumors began to spread among the peasants that money payments would soon be required and that peasants would be drafted into the army. When the tax collections began, the peasants of the community resisted and took to arms. The disturbances spread through all $PROVINCENAME$ and soon the rebels had almost 7,200 men in their ranks. They took control of most fortified points in the province and blocked roads leading to the key cities.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVT32535OPTA;Damn these peasants.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTNAME96091;Eupen-Malmedy goes to $COUNTRY$;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
-EVTDESC96091;The last great war ended and $FROMCOUNTRY$ was dismantled. As a punitive measure, the province of Eupen-Malmedy is being ceded to us.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME96091;Eupen-Malmedy goes to $COUNTRY$;;;;;;;;;;;;;
+EVTDESC96091;The last great war ended and $FROMCOUNTRY$ was dismantled. As a punitive measure, the province of Eupen-Malmedy is being ceded to us.;;;;;;;;;;;;;
 EVT96091OPTA;Rightful Punishment.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTNAME32534;End of the Tzar's Rule;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,
 EVTDESC32534;The Grand Duchy of Finland is no longer under a personal union with the Tzar of Russia and the provisional government has been working to keep stability on the newly independent Finland. However, The question arose what kind of government shall the independent country have.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,

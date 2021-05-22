@@ -1,4 +1,14 @@
 ;;;;;;;;;;;;;;;;;;;;x,,,,,
+loyal_vassal;Loyal Vassal;;;;;;;;;;;;;
+loyal_vassal_desc;We will stand by our protectors.;;;;;;;;;;;;;
+considering_colonial_offer;Considering Colonial Offer;;;;;;;;;;;;;
+considering_colonial_offer_desc;We are currently discussing one colonial possibility of a recently dismantled country.;;;;;;;;;;;;;
+dismantling_country;Dismantling Country;;;;;;;;;;;;;
+dismantling_country_desc;Our diplomatic efforts are currently centred in the dismantlement of another country.;;;;;;;;;;;;;
+being_dismantled;Under Dismantlement;;;;;;;;;;;;;
+being_dismantled_desc;Our country has lost and its empire is being divided by the winners.;;;;;;;;;;;;;
+colony_to_be_annexed;Colonial Negotiations;;;;;;;;;;;;;
+colony_to_be_annexed_desc;Our former overlord lost a war and now we, as their former colony, are in the negotiation table.;;;;;;;;;;;;;
 smithian_school;Smithianism;;;;;;;;;;;;;;;;;;;;x,,,,,
 smithian_school_desc;Laissez-faire philosophies, such as minimizing the role of government intervention and taxation in the free markets, and the idea that an "invisible hand" guides supply and demand are among the key ideas Adam Smith's writing is responsible for promoting. Our trade policies are largely inspired by him.;;;;;;;;;;;;;;;;;;;;x,,,,,
 french_liberal_school;Orthodox Liberal School;;;;;;;;;;;;;;;;;;;;x,,,,,
@@ -239,8 +249,8 @@ chinese_treaty_port;Chinese Treaty Port;;;;;;;;;;;;;;;;;;;;;;;x
 chinese_treaty_port_desc;We negotiated a treaty with the Chinese and acquired the rights over a Chinese port and city.;;;;;;;;;;;;;;;;;;;;;;;x
 negotiating_unequal_treaty;Unequal Treaty;;;;;;;;;;;;;;;;;;;;;;;x
 negotiating_unequal_treaty_desc;We have lost a war and like vultures, the westerners descended upon us imposing their conditions including the opening of our country, monetary reparations and even the secession of territory.;;;;;;;;;;;;;;;;;;;;;;;x
-negotiating_treaty;Negotiating Treaty;;;;;;;;;;;;;;;;;;;;;;;x
-negotiating_treaty_desc;Our diplomats are negotiating a treaty with a defeated nation.;;;;;;;;;;;;;;;;;;;;;;;x
+negotiating_treaty;Negotiating Treaty;;;;;;;;;;;;;
+negotiating_treaty_desc;Our diplomats are negotiating a treaty with a defeated nation.;;;;;;;;;;;;;
 lacks_writing_system;Lacks Writing System;;;;;;;;;;;;;;;;;;;;;;;x
 lacks_writing_system_desc;Our society lacks a writing system. Without this the written word, the organizational structures of the government will always be simple.;;;;;;;;;;;;;;;;;;;;;;;x
 penal_colony;Penal Colony;;;;;;;;;;;;;;;;;;;;;;;x
