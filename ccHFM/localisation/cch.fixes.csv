@@ -8,3 +8,9 @@ cch.end-of-diplomatic-relations_desc;There’s no use hanging on to hope now. Coun
 cch.they-no-longer-recognise-us.name;The Diplomatic World No Longer Recognises $COUNTRY$;;;;;;;;;;;;;
 cch.they-no-longer-recognise-us.desc;It’s over. Embassies all over the world no longer recognise our government and all our formal diplomatic ties have been severed.;;;;;;;;;;;;;
 cch.they-no-longer-recognise-us.opt0;Damnation!;;;;;;;;;;;;;
+# TODO find the right place for these #;;;;;;;;;;;;;;
+AGRESSION_CALL_TO_ARMS_NAME;$ORDER$$FIRST$ Call to Arms;;;;;;;;;;;;;
+call_allies_cb;Call Allies to Arms;;;;;;;;;;;;;
+call_allies_cb_desc;Call allies to join ongoing wars;;;;;;;;;;;;;
+call_allies_cb_setup;Call allies to join your ongoing wars;;;;;;;;;;;;;
+call_allies_cb_short;Call allies to join ongoing wars;;;;;;;;;;;;;

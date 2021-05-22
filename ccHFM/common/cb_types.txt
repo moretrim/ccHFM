@@ -6477,7 +6477,7 @@ dismantle_forts = {
 
 #Placeholder for calling allies
 call_allies_cb = {
-	sprite_index = 11
+	sprite_index = 9
 	is_triggered_only = yes
 	months = 1
 	constructing_cb = no
@@ -6504,7 +6504,7 @@ call_allies_cb = {
 
 	po_remove_prestige = yes
 	
-	war_name = WAR_NAME
+	war_name = CALL_TO_ARMS_NAME
 	
 	on_add = {
 	}

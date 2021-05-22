@@ -331,6 +331,14 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   incorrectly allowed it to be available under certain circumstances when colonial railroading was
   disabled.
 
+- Add a name and improved information to call-to-arms wars. They will now be called e.g. *7th
+  British Call to Arms* while the associated casus belli sports a more fitting icon. A missing
+  translation string in the description of the latter has also been added.
+
+  These wars used to fall back to a generic name e.g. *7th War of British Aggression*. Combined with
+  their unusual appearance this made them rather confusing at first glance. (Call to arms have no
+  actual defender and feature the placeholder rebel flag on that side.)
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).
