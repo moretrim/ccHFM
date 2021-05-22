@@ -327,6 +327,10 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
 - Correct condition on the *Colonial Incorporation* event for Western Sahara. The event incorrectly
   happened for African countries other than Morocco.
 
+- Correct typo in condition of the *Found the International African Association* decision that
+  incorrectly allowed it to be available under certain circumstances when colonial railroading was
+  disabled.
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).
