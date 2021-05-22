@@ -33,7 +33,10 @@ Releases are save compatible across patch releases for a given minor version. Fo
 
 ### 1.0
 
-The first public release, it is based on [HFM 1.27I]. It is **not** backward compatible with it.
+The first public release, it is based on [HFM 1.27I]. It is **not** backward compatible with it. It
+also includes the de-railroading system of [HFM Derailroaded].
+
+[HFM Derailroaded]: https://github.com/donovan/off-the-rails
 
 #### 1.0.0-prerelease (release in progress)
 
