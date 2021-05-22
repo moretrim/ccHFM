@@ -336,6 +336,10 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   incorrectly allowed it to be available under certain circumstances when colonial railroading was
   disabled.
 
+- Add 31 days of cooldown to *AI: Call Allies to War* (when AI United Kingdom is at war) in certain
+  circumstances. This is to prevent adverse impact on performance, without hindering British
+  military power too much. There is no cooldown when performance cannot be affected.
+
 - Add a name and improved information to call-to-arms wars. They will now be called e.g. *7th
   British Call to Arms* while the associated casus belli sports a more fitting icon. A missing
   translation string in the description of the latter has also been added.
