@@ -339,6 +339,22 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   their unusual appearance this made them rather confusing at first glance. (Call to arms have no
   actual defender and feature the placeholder rebel flag on that side.)
 
+- Simplify *Italia Irredenta*. The decision has an over-complicated design, leading to two flaws:
+
+  * Non obvious hidden conditions, potentially confusing the player as to when the decision is
+    available, and for which purpose.
+  * Conditions & effects were out of sync. In some circumstances, this led to Italy repeatedly
+    activating the decision with ruinous consequences on game performance.
+
+  The simplification only mitigates the latter aspect by turning the decision into a more typical
+  claiming button—though with multiple stages same as before. A knock-on consequence is that the
+  decision is now somewhat less powerful than before, though some of the things it allowed before
+  (e.g. granting claims while at war) were of dubious value.
+
+  The decision might be revisited again in the future ([#39]).
+
+  [#39]: https://github.com/moretrim/ccHFM/issues/39
+
 ##### Ported bugfixes
 
 - Fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define (pending [HFM/#175]).
