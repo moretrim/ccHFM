@@ -25,19 +25,19 @@ Release history
 
 [editorial]: Editorial.markdown
 
-Releases are save compatible across patch releases for a given minor version. For instance 0.2.0,
-0.2.1, and 0.2.4 would all be save compatible with one another.
+Releases are save compatible across patch releases for a given minor version. For instance 1.0.0,
+1.2.1, and 1.2.4 would all be save compatible with one another.
 
-* [0.2](#02)
+* [1.0](#10)
 * [0.1](#01)
 
-### 0.2
+### 1.0
 
-The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compatible with it.
+The first public release, it is based on [HFM 1.27I]. It is **not** backward compatible with it.
 
-#### 0.2.0-dev (in development)
+#### 1.0.0-prerelease (release in progress)
 
-##### Features
+##### Flagship Features & Bugfixes
 
 - Leaders now display their personality & background all at once, together with a stat summary with
   highlights. This makes it vastly simpler for the player to figure out at a glance how good or bad
@@ -71,7 +71,56 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
     </figcaption
   </figure>
 
-  The stat summary consists of the following, with appropriate colour coding:
+  (Details further below.)
+
+- Port the dismantlement system from HPM 0.4.5. In order to make this work, a couple other
+  supporting features have also been ported—these are described separately.
+
+  The dismantlement system is a great tool to transform a *good* campaign into a **great** campaign
+  in the later parts of the game, or just to put the finishing touches on your favourite project.
+  Unfortunately the version used by HFM was showing its age, and came with very frustrating
+  drawbacks:
+
+  * Unreliability: players had little to no control over who benefits from the spoils of
+    dismantlement.
+  * Unreliability again, but in the colonies: the system handed out colonial provinces at the region
+    level. This compounds with the previous point: countries would take random turns to receive
+    random regions. The results were rarely pretty.
+  * Incompleteness: some parts of the world were not covered at all. India and Indonesia are the two
+    big standouts in this respect, often ending safely independent despite being prized colonial
+    possessions.
+
+  HPM improves on all these points from 0.4 on:
+
+  * Improved control: countries that have lost a war in the past 5 years are excluded from receiving
+    spoils of dismantlement. A crafty player can take advantage of this new rule to be the sole
+    dismantlement recipient.
+  * Integration with the colonial system means that most colonial possessions are now handed out on
+    a country scale rather than piecemeal. Colonial powers get special access to recover their
+    claims during dismantlement.
+  * For unclaimed possessions a priority system gives first pick to eligible player Great Powers,
+    followed by AI Great Powers, and finally secondary powers. Vassal countries are excluded (modulo
+    [HPM/#133], rarely and with limited impact).
+  * Colonial Indonesia is now part of the colonial system, and gets handed out as such during
+    dismantlement. India also gets handed out as a whole and Indian puppets will gradually shift
+    their allegiance to the new colonial overlord, if there is any.
+
+  [HPM/#133]: https://github.com/arkhometha/Historical-Project-Mod/issues/133
+
+  In order to make this work, a couple other HPM features have been ported as well. Details further
+  below.
+
+- Some pathological decisions had incorrectly set up conditions, ruining performance when AI
+  countries would endlessly activate them. They have been mitigated and are briefly listed here, but
+  are detailed in their respective sections:
+
+  - *Italia Irredenta*
+  - *Establish the Karafuto Prefecture* (not new in 1.0)
+  - *AI: Call Allies to War* (when AI United Kingdom is at war)
+
+##### Features
+
+- Leader stat summary explained. It consists of the following, with appropriate colour coding:
 
     * **attack score, defence score, speed modifier, extras**
 
@@ -99,31 +148,10 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
     prevent their normal use or displaying their own tooltips. This also appears to be a base game
     limitation, when trying to fit the longer unified trait descriptions in the leader list.
 
-- **(Experimental)** Turn the *Restore Democracy in South America* decision into a casus belli. As a
-  decision, it had several flaws:
+- Ported dismantlement system details. It is based on HPM 0.4.5.2, but also includes the following
+  later fixes:
 
-  - It had a hidden infamy cost.
-  - Its requirement were not strict enough, leading to unintended wars e.g. against a communist
-    European power with land in South America.
-  - Even if the above were taken care of, a decision cannot accurately check that all conditions for
-    a valid war are met. This is generally the case for all decisions or events that start wars, but
-    is more prominent for a decision that is not a one-shot button.
-  - The communist defender of the war received a free *Make Puppet* counter-CB. This lead to all
-    kinds of oddities.
-
-  The intent behind the decision is better reflected as a proper casus belli. This change is still
-  labelled as experimental because it does get rid of the counter-CB of the original approach
-  altogether. As a result communist governements in South America are in perpetual danger from their
-  democratic neighbours.
-
-##### Ported Features
-
-- Port the dismantlement system from HPM 0.4.5. In order to make this work, a couple other
-  supporting features have also been ported—these are described separately.
-
-  Extra fixes:
-
-  * Part of arkhometha/Historical-Project-Mod@104f7a310fbea427e82935a26d8eaf20953d6652:
+  * Part of [HPM/104f7a31]:
 
     > * Increased Infamy from fighting colonies that refuse to submit during a dismantlement. It can
     >   go now up to an additional 5, depending on how bit the colony is.
@@ -134,11 +162,15 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
     >   Bosnia/Albania. Greece can also get their cores back regardless of truce IF they are not a
     >   SP/GP or if their sphere master/overlord has a truce with the Ottomans.
 
-  * Part of arkhometha/Historical-Project-Mod@a9984f55990ab54124f0550170ce170a9e92b2e4:
+    [HPM/104f7a31]: https://github.com/arkhometha/Historical-Project-Mod/commit/104f7a310fbea427e82935a26d8eaf20953d6652
+
+  * Part of [HPM/a9984f5]:
 
     > * Another attempt at trying to stop the dismantlement event from happening over and over if
     >   you already decided to not take part anymore. Please let me know if the problem still pops
     >   up.
+
+    [HPM/a9984f5]: https://github.com/arkhometha/Historical-Project-Mod/commit/a9984f55990ab54124f0550170ce170a9e92b2e4
 
   * Part of arkhometha/Historical-Project-Mod@7aab423e9f38d9d5f8d5a957a83532d866d473d2
 
@@ -158,6 +190,25 @@ The 0.2 series of releases is based on [HFM 1.27I]. It is **not** backward compa
   Moving up the earliest unlock date makes room for about one extra (dismantlement-less) Great War.
   This can allow a crafty diplomat to set the stage for momentous dismantlements later down the
   line, but requires either skill or luck.
+
+- **(Experimental)** Turn the *Restore Democracy in South America* decision into a casus belli. As a
+  decision, it had several flaws:
+
+  - It had a hidden infamy cost.
+  - Its requirement were not strict enough, leading to unintended wars e.g. against a communist
+    European power with land in South America.
+  - Even if the above were taken care of, a decision cannot accurately check that all conditions for
+    a valid war are met. This is generally the case for all decisions or events that start wars, but
+    is more prominent for a decision that is not a one-shot button.
+  - The communist defender of the war received a free *Make Puppet* counter-CB. This lead to all
+    kinds of oddities.
+
+  The intent behind the decision is better reflected as a proper casus belli. This change is still
+  labelled as experimental because it does get rid of the counter-CB of the original approach
+  altogether. As a result communist governements in South America are in perpetual danger from their
+  democratic neighbours.
+
+##### Ported Features
 
 - Port the colonial organisation system from HPM 0.4.5 and later. This is ***not*** the colonial
   casus belli system. Features include:

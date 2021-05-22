@@ -1,11 +1,11 @@
 History of editorial changes
 ============================
 
-* [0.2](#02)
+* [1.0](#02)
 
-## 0.2
+## 1.0
 
-### 0.2.0-dev (in development)
+### 1.0.0-prerelease (release in progress)
 
 - Fix copy/paste error in Russian names of Alaskan culture. ([#23], [HPM/#15])
 
