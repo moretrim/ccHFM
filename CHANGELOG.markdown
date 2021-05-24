@@ -347,6 +347,17 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
   [#26]: https://github.com/moretrim/ccHFM/issues/26
 
+  In addition, the decision has been relaxed and no longer requires that the occupying power be a
+  Great Power. This constraint was too strict, regularly leading to games where the country in
+  control of the lower Congo (often Spain or Portugal) would never come close to being a GP. This
+  would leave a large empty streak of uncontrolled land in the middle of Africa.
+
+  There is no longer a rank requirement. To prevent the colonial power immediately gaining control
+  of all Chad lands, Ubangi-shari and Waddai are now only available after 1890 and 1895
+  respectively. This roughly matches historical dates. (#86)
+
+  [#86]: https://github.com/moretrim/ccHFM/issues/86
+
 - Really release Ezo when choosing to play as them ([HPM/#161]).
 
   [HPM/#161]: https://github.com/arkhometha/Historical-Project-Mod/pull/161

@@ -310,12 +310,29 @@ Africa
 ### [1.0] and earlier
 
 - Remove correct Basotho cores in Mfecane Matabele ([HPM/#131]).
+
 - Correct requirements of the *Occupation of the Congo Basin* decision, resolving ineffective use
   ([#26]).
+
+  [#26]: https://github.com/moretrim/ccHFM/issues/26
+
+  In addition, the decision has been relaxed and no longer requires that the occupying power be a
+  Great Power. This constraint was too strict, regularly leading to games where the country in
+  control of the lower Congo (often Spain or Portugal) would never come close to being a GP. This
+  would leave a large empty streak of uncontrolled land in the middle of Africa.
+
+  There is no longer a rank requirement. To prevent the colonial power immediately gaining control
+  of all Chad lands, Ubangi-shari and Waddai are now only available after 1890 and 1895
+  respectively. This roughly matches historical dates. (#86)
+
+  [#86]: https://github.com/moretrim/ccHFM/issues/86
+
 - Improve the Boer War call to arms to be infamy neutral (it was deducting 3 extra), and make it AI
   only. The player now gets notified of the new alliance.
+
 - Correct condition on the *Colonial Incorporation* event for Western Sahara. The event incorrectly
   happened for African countries other than Morocco.
+
 - Colonial de-railroading: cherry-pick [off-the-rails/#3], restoring parity with [HFM
   Derailroaded][].
 

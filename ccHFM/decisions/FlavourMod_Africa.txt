@@ -632,61 +632,72 @@ political_decisions = {
 		potential = {
 			has_global_flag = berlin_conference
 			NOT = { has_global_flag = congo_failed }
-			is_greater_power = yes
+
 			OR = {
 				AND = {
 					owns = 1972
 					1976 = { empty = yes } #Gabon
 				}
+
 				AND = {
 					owns = 1977
 					1980 = { empty = yes } #Congo
 				}
+
 				AND = {
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 					1962 = { empty = no } #Cameroon
-				}	
+				}
+
 				AND = {
 					owns = 1967
 					1819 = { empty = yes } #Waddai
 				}
 			}
 		}
-		
+
 		allow = {
 			NOT = { any_greater_power = { war_with = THIS } }
-			NOT = { has_global_flag = congo_failed }
 			invention = colonial_negotiations
+
 			OR = {
 				AND = {
 					owns = 1972
 					1976 = { empty = yes } #Gabon
 				}
+
 				AND = {
 					OR = {
 						has_global_flag = called_congo_conference
 						1962 = { empty = no }
 					}
+
 					owns = 1977
 					1976 = { empty = no } #Gabon
+
 					1980 = { empty = yes } #Congo
 				}
+
 				AND = {
+					year = 1890
 					invention = the_dark_continent
+
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 				}
+
 				AND = {
+					year = 1895
 					invention = the_dark_continent
 					owns = 1967
+
 					1819 = { empty = yes } #Waddai
 				}
 			}
 		}
-		
+
 		effect = {
-			###GABON##
 			random_owned = {
 				limit = {
 					owner = {
@@ -694,11 +705,12 @@ political_decisions = {
 						1976 = { empty = yes } #Gabon
 					}
 				}
+
 				1974 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 				1975 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 				1976 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			}
-			###CONGO###
+
 			random_owned = {
 				limit = {
 					owner = {
@@ -706,24 +718,31 @@ political_decisions = {
 							has_global_flag = called_congo_conference
 							1962 = { empty = no }
 						}
+
 						owns = 1977
 						1976 = { empty = no } #Gabon
+
 						1980 = { empty = yes } #Congo
 					}
 				}
+
 				1980 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 				1981 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+
 				owner = { prestige = 5 }
 			}
-			###UBANGI-SHARI###
+
 			random_owned = {
 				limit = {
 					owner = {
+						year = 1890
 						invention = the_dark_continent
+
 						owns = 1981
 						1966 = { empty = yes } #Ubangi-Shari
 					}
 				}
+
 				1965 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1966 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1967 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
@@ -731,25 +750,31 @@ political_decisions = {
 				1969 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1970 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1971 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+
 				owner = { prestige = 5 }
 			}
-			###WADDAI###
+
 			random_owned = {
 				limit = {
 					owner = {
+						year = 1895
 						invention = the_dark_continent
+
 						owns = 1967
-						1819 = { empty = yes }
+						1819 = { empty = yes } #Waddai
 					}
 				}
+
 				1818 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1819 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1820 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1822 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1823 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+
 				owner = { prestige = 5 }
 			}
 		}
+
 		ai_will_do = { factor = 1 }
 	}
 	
