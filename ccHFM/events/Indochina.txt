@@ -65,8 +65,8 @@ country_event = {
 		random_country = {
 			limit = {
 				primary_culture = french
+				capital = 425
 				is_greater_power = yes
-				exists = yes
 			}
 			country_event = 95640
 		}

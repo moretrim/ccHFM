@@ -910,6 +910,7 @@ country_event = {
 			limit = {
 				owner = {
 					primary_culture = french
+					capital = 425
 					NOT = { has_country_flag = 2nd_republic }
 					OR = {
 						has_country_modifier = springtime_of_nations
@@ -924,6 +925,7 @@ country_event = {
 			limit = {
 				owner = {
 					primary_culture = french
+					capital = 425
 					has_country_flag = 2nd_republic
 					NOT = { has_country_flag = 3rd_republic }
 				}
@@ -2600,7 +2602,10 @@ country_event = {
 				factor = 0
 				OR = {
 					tag = AUS
-					primary_culture = french
+					AND = {
+						primary_culture = french
+						capital = 425
+					}
 				}
 				FROM = { is_culture_group = italian }
 			}

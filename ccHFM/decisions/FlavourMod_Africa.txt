@@ -1111,10 +1111,10 @@ political_decisions = {
 		picture = dreams_of_empire
 		potential = {
 			primary_culture = french
+			capital_scope = { continent = europe }
 			slavery = no_slavery
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
-			capital_scope = { continent = europe }
 			any_owned_province = { has_building = naval_base }
 			OR = { 
 				any_owned_province = { continent = africa } 

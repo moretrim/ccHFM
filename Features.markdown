@@ -398,3 +398,8 @@ Europe
   The decision might be revisited again in the future ([#39]).
 
   [#39]: https://github.com/moretrim/ccHFM/issues/39
+
+- Prevent French countries other than France from accessing or benefiting from decisions, events,
+  and other effects meant to be exclusive to France (part of [#87]).
+
+  [#87]: https://github.com/moretrim/ccHFM/issues/87

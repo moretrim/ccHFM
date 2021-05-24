@@ -539,8 +539,8 @@ political_decisions = {
 			random_country = {
 				limit = {
 					primary_culture = french
+					capital = 425
 					is_greater_power = yes
-					exists = yes
 				}
 				country_event = 99994
 			}
@@ -570,8 +570,8 @@ political_decisions = {
 			random_country = {
 				limit = {
 					primary_culture = french
+					capital = 425
 					is_greater_power = yes
-					exists = yes
 				}
 				country_event = 99993
 			}

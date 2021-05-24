@@ -117,6 +117,7 @@ political_decisions = {
 			OR = {
 				AND = {
 					primary_culture = french
+					capital = 425
 					year = 1858
 				}
 				AND = {

@@ -358,7 +358,7 @@ political_decisions = {
 				limit = {
 					primary_culture = french
 					is_greater_power = yes
-					exists = yes
+					capital = 425
 					has_country_flag = arrow_incident
 				}
 				country_event = { id = 99946 days = 1 }

@@ -978,7 +978,7 @@ country_event = {
 			limit = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
-				NOT = { primary_culture = french }
+				NOT = { AND = { primary_culture = french capital = 425 } }
 				NOT = { tag = ENG }
 				NOT = { tag = THIS }
 				relation = { who = SWI value = 50 }

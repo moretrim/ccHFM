@@ -402,6 +402,10 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
   [#39]: https://github.com/moretrim/ccHFM/issues/39
 
+- Prevent French countries other than France from accessing or benefiting from decisions, events,
+  and other effects meant to be exclusive to France (part of [#87]).
+
+  [#87]: https://github.com/moretrim/ccHFM/issues/87
 ##### Ported bugfixes
 
 - Cherry-pick [HFM/#175]: fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define.

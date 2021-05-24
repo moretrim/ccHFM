@@ -219,7 +219,7 @@ political_decisions = {
 			capital_scope = { continent = europe }
 			is_greater_power = yes
 			has_global_flag = tangier_protocol_succeeded
-			NOT = { primary_culture = french }
+			NOT = { AND = { primary_culture = french capital = 425 } }
 			NOT = { tag = SPA }
 			NOT = { tag = IBR }
 			NOT = { tag = SPC }
