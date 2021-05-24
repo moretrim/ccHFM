@@ -632,24 +632,20 @@ political_decisions = {
 		potential = {
 			has_global_flag = berlin_conference
 			NOT = { has_global_flag = congo_failed }
-			is_greater_power = yes
 			OR = {
 				AND = {
-					owns = 1972
 					1976 = { empty = yes } #Gabon
 				}
 				AND = {
-					owns = 1977
 					1980 = { empty = yes } #Congo
 				}
 				AND = {
-					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 					1962 = { empty = no } #Cameroon
 				}	
 				AND = {
-					owns = 1967
 					1819 = { empty = yes } #Waddai
+					1967 = { empty = no }
 				}
 			}
 		}
@@ -673,11 +669,13 @@ political_decisions = {
 					1980 = { empty = yes } #Congo
 				}
 				AND = {
+					year = 1890
 					invention = the_dark_continent
 					owns = 1981
 					1966 = { empty = yes } #Ubangi-Shari
 				}
 				AND = {
+					year = 1895
 					invention = the_dark_continent
 					owns = 1967
 					1819 = { empty = yes } #Waddai
@@ -737,6 +735,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
+						year = 1895
 						invention = the_dark_continent
 						owns = 1967
 						1819 = { empty = yes }
