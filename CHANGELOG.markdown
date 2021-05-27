@@ -290,6 +290,10 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
     - *Economic Reforms in the Philippines*
     - *An End to Natural Dyes?*
 
+  Includes fixes to restore parity between player and AI countries (pending [HPM/#235]).
+
+  [HPM/#235]: https://github.com/arkhometha/Historical-Project-Mod/pull/235
+
 - Port the decision organisation & de-clutter system from HPM 0.4.5 and later.
 
 - Port the *Disable Trade Policy Decisions* option decision: turn off the recurring trade policy

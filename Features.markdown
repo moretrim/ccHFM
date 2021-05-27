@@ -296,6 +296,10 @@ Colonisation
     - *Economic Reforms in the Philippines*
     - *An End to Natural Dyes?*
 
+  Includes fixes to restore parity between player and AI countries (pending [HPM/#235]).
+
+  [HPM/#235]: https://github.com/arkhometha/Historical-Project-Mod/pull/235
+
 - Make colonial railroading an option decision (PR [HFM/#157]).
 
   [HFM/#157]: https://github.com/SighPie/HFM/pull/157
