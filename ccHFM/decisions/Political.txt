@@ -1018,12 +1018,14 @@ political_decisions = {
 				AND = { tag = MLI owns = 1794 NOT = { capital = 1794 } }
 				AND = { tag = ASH civilized = yes owns = 1907 NOT = { capital = 1907 } }
 				AND = { tag = SUD owns = 1827 NOT = { capital = 1827 } }
+				AND = { tag = RHO civilized = yes owns = 2068 NOT = { capital = 2068 } }
 			}
 		}
 		
 		allow = { war = no }
 		
 		effect = {
+			random_owned = { limit = { owner = { tag = RHO } } owner = { capital = 2068 } }
 			random_owned = { limit = { owner = { tag = ASH } } owner = { capital = 1907 } }
 			random_owned = { limit = { owner = { tag = MLI } } owner = { capital = 1794 } }
 			random_owned = { limit = { owner = { tag = KAZ } } owner = { capital = 1181 } }
