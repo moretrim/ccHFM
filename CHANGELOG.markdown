@@ -4,6 +4,8 @@ Release history
 Releases are save compatible across patch releases for a given minor version. For instance 1.0.0,
 1.2.1, and 1.2.4 would all be save compatible with one another.
 
+[editorial]: Editorial.markdown
+
 ### 1.0
 
 #### 1.0.0-prerelease (release in progress)
@@ -314,7 +316,7 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 - Control over the *Splendid Isolation* diplomatic policy of the United Kingdom is now done through
   an option decision. The policy is active by default, and the option disables it.
 
-##### Bugfixes
+##### Bug fixes
 
 - Add a guard condition to the *Establish the Karafuto Prefecture* decision ([#28]).
 
@@ -416,7 +418,7 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
   [HPM/#236]: https://github.com/arkhometha/Historical-Project-Mod/issues/236
 
-##### Ported bugfixes
+##### Ported bug fixes
 
 - Cherry-pick [HFM/#175]: fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define.
 
@@ -457,7 +459,7 @@ included here for completeness.
 
   [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
-##### Ported bugfixes
+##### Ported bug fixes
 
 - PR [HFM/#141]\:
 
