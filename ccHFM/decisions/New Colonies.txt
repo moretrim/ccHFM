@@ -55,12 +55,15 @@ political_decisions = {
             OR = {
                 invention = the_dark_continent
                 AND = {
-                    capital_scope = { continent = africa }
-                    capital_scope = { continent = west_africa }
-                    capital_scope = { continent = east_africa }
-                    capital_scope = { continent = south_west_africa }
-                    capital_scope = { continent = central_africa }
+                    OR = {
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = south_west_africa }
+                    }
                     civilized = yes
+                    revolution_n_counterrevolution = 1
                 }
                 AND = {
                     owns = 1741 #Libya
@@ -109,11 +112,13 @@ political_decisions = {
                         OR = {
                             invention = the_dark_continent
                             AND = {
-                                capital_scope = { continent = africa }
-                                capital_scope = { continent = central_africa }
-                                 capital_scope = { continent = west_africa }
-                                 capital_scope = { continent = east_africa }
-                                 capital_scope = { continent = south_west_africa }
+                                OR = {
+                                    capital_scope = { continent = africa }
+                                    capital_scope = { continent = west_africa }
+                                    capital_scope = { continent = east_africa }
+                                    capital_scope = { continent = central_africa }
+                                    capital_scope = { continent = south_west_africa }
+                                }
                                 civilized = yes
                             }
                         }
@@ -134,11 +139,13 @@ political_decisions = {
                         OR = {
                             invention = the_dark_continent
                             AND = {
-                                capital_scope = { continent = africa }
-                                capital_scope = { continent = central_africa }
-                                 capital_scope = { continent = west_africa }
-                                 capital_scope = { continent = east_africa }
-                                 capital_scope = { continent = south_west_africa }
+                                OR = {
+                                    capital_scope = { continent = africa }
+                                    capital_scope = { continent = west_africa }
+                                    capital_scope = { continent = east_africa }
+                                    capital_scope = { continent = central_africa }
+                                    capital_scope = { continent = south_west_africa }
+                                }
                                 civilized = yes
                             }
                         }
@@ -159,11 +166,13 @@ political_decisions = {
                         OR = {
                             invention = the_dark_continent
                             AND = {
-                                capital_scope = { continent = africa }
-                                capital_scope = { continent = central_africa }
-                                 capital_scope = { continent = west_africa }
-                                 capital_scope = { continent = east_africa }
-                                 capital_scope = { continent = south_west_africa }
+                                OR = {
+                                    capital_scope = { continent = africa }
+                                    capital_scope = { continent = west_africa }
+                                    capital_scope = { continent = east_africa }
+                                    capital_scope = { continent = central_africa }
+                                    capital_scope = { continent = south_west_africa }
+                                }
                                 civilized = yes
                             }
                         }
@@ -182,11 +191,13 @@ political_decisions = {
                         OR = {
                             invention = the_dark_continent
                             AND = {
-                                capital_scope = { continent = africa }
-                                 capital_scope = { continent = west_africa }
-                                 capital_scope = { continent = central_africa }
-                                 capital_scope = { continent = east_africa }
-                                 capital_scope = { continent = south_west_africa }
+                                OR = {
+                                    capital_scope = { continent = africa }
+                                    capital_scope = { continent = west_africa }
+                                    capital_scope = { continent = east_africa }
+                                    capital_scope = { continent = central_africa }
+                                    capital_scope = { continent = south_west_africa }
+                                }
                                 civilized = yes
                             }
                         }
