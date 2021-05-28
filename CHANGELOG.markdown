@@ -296,7 +296,10 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
   [HPM/#235]: https://github.com/arkhometha/Historical-Project-Mod/pull/235
 
-- Port the decision organisation & de-clutter system from HPM 0.4.5 and later.
+- Port the decision organisation & de-clutter system from HPM 0.4.5 and later. Includes some fixes
+  (pending [HPM/#237]).
+
+  [HPM/#237]: https://github.com/arkhometha/Historical-Project-Mod/pull/237
 
 - Port the *Disable Trade Policy Decisions* option decision: turn off the recurring trade policy
   decisions from the start.

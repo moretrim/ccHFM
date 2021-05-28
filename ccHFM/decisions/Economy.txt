@@ -3,13 +3,18 @@ political_decisions = {
 	specific_trade_policy = {
 		picture = specific_trade_policy
 		potential = {
-			NOT = { has_country_flag = trade_policy_choosing_disabled }
+            OR = {
+                has_country_flag = government_decisions_on
+                ai = yes
+            }
 			exists = yes
 			OR = {
 				civilized = yes
 				NOT = { finance_reform = no_finance_reform }
 			}
 			NOT = {
+                has_country_flag = trade_policy_choosing_disabled
+                has_global_flag = trade_policy_globally_disabled
 				has_country_modifier = mercantilism
 				has_country_modifier = economic_nationalism
 				has_country_modifier = french_liberal_school
@@ -20,6 +25,7 @@ political_decisions = {
 		
 		allow = {
 			election = no
+            is_vassal = no
 			OR = {
 				AND = {
 					trade_policy = protectionism
@@ -80,7 +86,59 @@ political_decisions = {
 			}
 		}
 
-		ai_will_do = { factor = 1 }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                money = 3000000
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = europe }
+                NOT = { month = 2 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = asia }
+                NOT = { month = 3 }
+            }
+            modifier = {
+                factor = 0
+                OR = {
+                    capital_scope = { continent = africa }
+                    capital_scope = { continent = west_africa }
+                    capital_scope = { continent = east_africa }
+                    capital_scope = { continent = central_africa }
+                    capital_scope = { continent = south_west_africa }
+                }
+                NOT = { month = 4 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = north_america }
+                NOT = { month = 5 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = south_america }
+                NOT = { month = 6 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = oceania }
+                NOT = { month = 7 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = australia_new_zealand }
+                NOT = { month = 8 }
+            }
+            modifier = {
+                factor = 0
+                capital_scope = { continent = polynesia }
+                NOT = { month = 9 }
+            }
+        }
 	}
 	
 	rescind_trade_policy = {
@@ -88,6 +146,7 @@ political_decisions = {
 		potential = {
 			ai = yes
 			exists = yes
+            year = 1846
 			OR = {
 				AND = {
 					OR = {

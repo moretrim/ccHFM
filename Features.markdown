@@ -101,7 +101,10 @@ Interface
   generals tend to take over their otherwise comparable colleagues when merging armies together, or
   even worse when joining a battle.
 
-- Port the decision organisation & de-clutter system from HPM 0.4.5 and later.
+- Port the decision organisation & de-clutter system from HPM 0.4.5 and later. Includes some fixes
+  (pending [HPM/#237]).
+
+  [HPM/#237]: https://github.com/arkhometha/Historical-Project-Mod/pull/237
 
 - Control over the *Splendid Isolation* diplomatic policy of the United Kingdom is now done through
   an option decision. The policy is active by default, and the option disables it.
