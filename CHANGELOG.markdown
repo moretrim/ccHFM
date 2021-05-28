@@ -410,6 +410,12 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
   and other effects meant to be exclusive to France (part of [#87]).
 
   [#87]: https://github.com/moretrim/ccHFM/issues/87
+
+- Prevent the Arab Union (which acts as a quasi-cultural union) from losing Mashriqi culture from
+  independence movements (pending [HPM/#236]).
+
+  [HPM/#236]: https://github.com/arkhometha/Historical-Project-Mod/issues/236
+
 ##### Ported bugfixes
 
 - Cherry-pick [HFM/#175]: fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define.
