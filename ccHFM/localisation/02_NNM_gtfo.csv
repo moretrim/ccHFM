@@ -5,6 +5,8 @@ gtfo_off_title;Disable 'Release Vassal' decisions;;;;;;;;;;;;x,,
 gtfo_off_desc;Your decision list will now be uncluttered!;;;;;;;;;;;;x,,
 gtfo_disabled_title;Deactivate 'Release Vassal' decisions;;;;;;;;;;;;x,,
 gtfo_disabled_desc;The 'Release Vassal' decisions will disappear from this game session and won't reappear again. You won't be able to use these decisions again for this game.;;;;;;;;;;;;x,,
+gtfo_GHN_title;Grant Ghana Independence;;;;;;;;;;;;x,,
+gtfo_GHN_desc;We've had a good run, but it's time to end our rulership of Ghana: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_MNP_title;Grant Manipur Independence;;;;;;;;;;;;x,,
 gtfo_MNP_desc;We've had a good run, but it's time to end our rulership of Manipur: if you love something, let it go!;;;;;;;;;;;;x
 gtfo_BDK_title;Grant Badakhshan Independence;;;;;;;;;;;;x,,

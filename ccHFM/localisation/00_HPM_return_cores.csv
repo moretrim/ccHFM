@@ -5,6 +5,8 @@ return_core_off_title;Disable 'Return Cores' decisions;;;;;;;;;;;;x,,
 return_core_off_desc;Your decision list will now be uncluttered.;;;;;;;;;;;;x,,
 return_core_disabled_title;Deactivate 'Return Cores' decisions;;;;;;;;;;;;x,,
 return_core_disabled_desc;The 'Return Cores' decisions will disappear from this game session and won't reappear again. You won't be able to use these decisions again for this game.;;;;;;;;;;;;x,,
+return_cores_GHN_title;Return cores to Ghana;;;;;;;;;;;;;;;;;;;;x,,
+return_cores_GHN_desc;We hold provinces that Ghana has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_MNP_title;Return cores to Manipur;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_MNP_desc;We hold provinces that Manipur has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_BDK_title;Return cores to Badakhshan;;;;;;;;;;;;;;;;;;;;x,,
