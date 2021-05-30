@@ -90,7 +90,7 @@ country_event = {
 		diplomatic_influence = { who = ITA value = -100 }
 		any_pop = { dominant_issue = { value = jingoism	factor = 0.05 }	}
 		734 = { change_province_name = "Trient" }
-		735 = { state_scope = {	change_region_name = "Sudtirol"	} }
+		735 = { state_scope = { change_region_name = "Südtirol" } }
 	}
 }
 
