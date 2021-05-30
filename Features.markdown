@@ -427,3 +427,13 @@ Europe
   and other effects meant to be exclusive to France (part of [#87]).
 
   [#87]: https://github.com/moretrim/ccHFM/issues/87
+
+Middle East
+-----------
+
+### [1.0] and earlier
+
+- Prevent the Arab Union (which acts as a quasi-cultural union) from losing Mashriqi culture from
+  independence movements (pending [HPM/#236]).
+
+  [HPM/#236]: https://github.com/arkhometha/Historical-Project-Mod/issues/236
