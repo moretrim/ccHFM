@@ -432,6 +432,15 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
   [HPM/#236]: https://github.com/arkhometha/Historical-Project-Mod/issues/236
 
+- Give more robust port requirements to casus belli. This sidesteps a quirk of the game which appears to
+  rely on pathfinding to count ports in a country—resulting in inconsistent results when ongoing
+  sieges (not occupations!) block off path computations. (Documented at [HPM/#114].)
+
+  While the quirk also affects other things, reducing the frequency of CB invalidation was given
+  priority.
+
+  [HPM/#114]: https://github.com/arkhometha/Historical-Project-Mod/issues/114
+
 ##### Ported bug fixes
 
 - Cherry-pick [HFM/#175]: fix typo in `PEACE_TIME_FACTOR_NO_GOALS` define.
