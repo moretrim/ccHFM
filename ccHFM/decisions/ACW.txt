@@ -1820,7 +1820,7 @@ political_decisions = {
 			43 = { change_province_name = "Dallas" life_rating = 5 }
 			134 = { change_province_name = "Abilene" }
 			135 = { change_province_name = "Lubbock" }
-			92 = { change_province_name = "Coeur D'Alene" }
+			92 = { change_province_name = "Coeur d'Alene" }
 			93 = { change_province_name = "Pocatello" }
 			111 = { change_province_name = "Rock Springs" }
 			130 = { change_province_name = "Tahlequah" }

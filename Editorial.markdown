@@ -47,6 +47,14 @@ History of editorial changes
   * *Cap**e** Verde* in a couple places
   * Saints, unabbreviated: *Saint-Brieuc*, *Saint Petersburg*
   * St., with a period: *St. Louis*, *St. Augustine*
+- French and French-derived names: *Faustin Soulouque* in events (was *Faustan Soulique*),
+  *L**é**gion d'honneur* in events, *Parti **n**ationalist**e*** (reactionary party of Quebec &
+  Martinique), a couple Haitian parties, Haitian ship names, *Leb**œu**f*, *É**t**ie**nn**e*,
+  *d'Orl**é**ans*
+- French and French-derived place names: *Neuchâtel* in events, *R**é**union*, *M**â**con*,
+  *Besan**ç**on*, *Sarre et Mont**-**Tonnerre*, *Fréjus*, *C**ô**te d'Argent* & *C**ô**te d'Azur*,
+  *Coast of Bri**tt**a**n**y*, *Cap-Haïtien*, *Orléans*, *Coeur **d**'Alene*,
+  *Saint-Pierre-et-Miquelon*, *Saint**-É**tienne*, *Port **a**ux Basques*
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15

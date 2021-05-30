@@ -523,12 +523,12 @@ FRA_reactionary_2;Droite Nationaliste;;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 FRA_anarcho_liberal;Républicain Radical;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 GER_fascist;NSDAP;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 POL_fascist;ONR-Falanga;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_conservative;Parti National;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_liberal;Parti Liberal;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_reactionary;Haitien Nationaliste Parti;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_anarcho_liberal;Parti Radical;;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_socialist;Parti Socialiste;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
-HAI_communist;Parti Communiste Haitien;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_conservative;Parti national;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_liberal;Parti libéral;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_reactionary;Parti nationaliste haïtien;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_anarcho_liberal;Parti radical;;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_socialist;Parti socialiste;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
+HAI_communist;Parti communiste haïtien;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 HAI_fascist;Parti Fasciste;;;;;;;;;;;;;;;;;;;;x;;;;
 CHK;Champassak;Champassak;Champassak;Champasak;Champasak;Champassak;Champassak;Champassak;;;;;;x;
 CHK_ADJ;Champassaki;champassak;Champassaki;Champasak;Champassak;Champassaki;Champassakijský;;;;;;x;

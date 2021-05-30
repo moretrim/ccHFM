@@ -803,7 +803,7 @@ political_decisions = {
 				limit = { province_id = 574 }
 				574 = { 
 					change_province_name = "Coblence"
-					state_scope = { change_region_name = "Sarre et Mont Tonnerre"  }
+					state_scope = { change_region_name = "Sarre et Mont-Tonnerre"  }
 				}
 				573 = { change_province_name = "Sarrebruck" }
 				owner = { set_global_flag = france_rename_prussian_pfalz }

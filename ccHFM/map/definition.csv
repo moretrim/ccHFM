@@ -75,7 +75,7 @@
 74;209;215;159;Saint Johns;x
 75;16;160;0;Millertown;x
 76;0;96;192;Hopedale;x
-77;74;146;55;St Pierre & Miquelon;x
+77;74;146;55;Saint-Pierre-et-Miquelon;x
 78;0;160;0;Seattle;x
 79;32;192;192;Spokane;x
 80;160;64;192;Walla Walla;x
@@ -90,7 +90,7 @@
 89;208;0;0;Los Angeles;x
 90;80;128;0;San Diego;x
 91;115;85;191;Boise;x
-92;64;32;128;Coeur D'Alene;x
+92;64;32;128;Coeur d'Alene;x
 93;208;0;128;Pocatello;x
 94;109;100;92;Carson City;x
 95;16;192;0;Elko;x
@@ -429,14 +429,14 @@
 428;240;128;96;Dijon;x
 429;112;0;224;Auxerre;x
 430;240;128;224;Moulins;x
-431;109;120;150;Macon;x
-432;240;0;96;Besancon;x
+431;109;120;150;Mâcon;x
+432;240;0;96;Besançon;x
 433;112;128;96;Lons;x
 434;80;160;64;Angers;x
 435;48;224;128;Laval;x
 436;176;224;128;Le Mans;x
 437;63;116;175;La Roche;x
-438;16;223;0;Orleans;x
+438;16;223;0;Orléans;x
 439;144;224;0;Bourges;x
 440;136;98;119;Blois;x
 441;208;32;64;Tours;x
@@ -450,14 +450,14 @@
 449;240;192;96;Aurillac;x
 450;48;224;0;Cahors;x
 451;176;64;96;Lyon;x
-452;239;64;96;St Etienne;x
+452;239;64;96;Saint-Étienne;x
 453;112;64;96;Valence;x
 454;48;192;96;Grenoble;x
 455;48;96;128;Toulouse;x
 456;176;224;0;Montauban;x
 457;16;96;64;Foix;x
 458;240;160;128;Bordeaux;x
-459;112;160;128;Mont de Marsan;x
+459;112;160;128;Mont-de-Marsan;x
 460;240;32;128;Pau;x
 461;144;96;128;Montpellier;x
 462;16;96;128;Rodez;x
@@ -469,7 +469,7 @@
 468;176;192;224;Avignon;x
 469;176;64;224;Digne;x
 470;48;64;224;Toulon;x
-471;176;192;96;Frejus;x
+471;176;192;96;Fréjus;x
 472;80;128;224;Nice;x
 473;239;64;32;Corsica;x
 474;208;224;64;La Coruna;x
@@ -606,7 +606,7 @@
 605;80;128;96;Bern;x
 606;208;1;97;Lucern;x
 607;208;128;96;Geneva;x
-608;17;127;224;Neuchatel;x
+608;17;127;224;Neuchâtel;x
 609;144;65;224;Sitten;x
 610;166;238;251;Ponape;x
 611;144;192;224;Chur;x
@@ -2211,9 +2211,9 @@
 2210;82;147;151;Jagua;x
 2211;176;49;1;Camaguey;x
 2212;48;176;1;Santiago de Cuba;x
-2213;198;198;99;Port Au Prince;x
+2213;198;198;99;Port-au-Prince;x
 2214;49;112;128;Santo Domingo;x
-2215;176;176;1;Cap Haitien;x
+2215;176;176;1;Cap-Haïtien;x
 2216;135;127;144;La Vega;x
 2217;112;112;184;Jamaica;x
 2218;30;118;30;Cayman Islands;x
@@ -2725,9 +2725,9 @@
 2724;22;200;250;Straits of Dover;x
 2725;23;220;250;The Channel;x
 2726;24;250;250;Lands End;x
-2727;25;200;200;Coast of Britanny;x
+2727;25;200;200;Coast of Brittany;x
 2728;26;200;250;Quiberon Bay;x
-2729;27;220;250;Cote D'Argent;x
+2729;27;220;250;Côte d'Argent;x
 2730;28;250;250;Bay of Biscay;x
 2731;29;200;200;Cantabrian Sea;x
 2732;30;200;250;Tyne;x
@@ -2748,7 +2748,7 @@
 2747;45;200;200;Gulf of Almeira;x
 2748;46;200;250;Gulf of Valencia;x
 2749;47;220;250;Gulf of Lion;x
-2750;48;250;250;Cote D'Azur;x
+2750;48;250;250;Côte d'Azur;x
 2751;49;200;200;Ligurian Sea;x
 2752;50;200;250;Gulf of Mallocra;x
 2753;51;220;250;Western Mediterranean;x

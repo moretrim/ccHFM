@@ -226,7 +226,7 @@ country_event = {
 			}
 			relation = { who = THIS value = 200 }
 		}
-		2126 = { change_province_name = "Reunion" }
+		2126 = { change_province_name = "Réunion" }
 	}
 }
 

@@ -156,7 +156,7 @@ leader = {
 }
 
 leader = {
-    name = "Edmond Lebouef"
+    name = "Edmond Lebœuf"
     date = 1854.1.1
     type = land
     personality = unit_personality
