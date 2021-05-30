@@ -29,10 +29,10 @@ History of editorial changes
 - the capital province of Liechtenstein is now called *Vaduz* rather than bearing the name of the
   microstate
 - countries:
-  * *Luxemb**o**urg* instead of *Luxemburg* (though the latter is attested in English it is less
+  * _Luxemb**o**urg_ instead of *Luxemburg* (though the latter is attested in English it is less
     common—this is more of a matter of consistency)
-  * *Neuch**â**tel*
-  * *C**ô**te d'Ivoire*
+  * _Neuch**â**tel_
+  * _C**ô**te d'Ivoire_
 - country adjectives:
   * Luxembourg: *Luxembourgish* instead of *Luxemburgian*
   * *Neuchâtelois* instead of *Neuchateli*
@@ -44,23 +44,22 @@ History of editorial changes
   * New Zealand: *Kiwi* instead of *New Zealand*
   * Liechtenstein: *Liechtensteiner* instead of *Liechtensteinen*
 - fix typographical errors:
-  * Swedish leader surname: *Chr**is**terson*
-  * Cushitic and Sudanese leader given name: *Abbas **S**aid*
-  * Boer Republic event: *This isn't ou**r** fight.*
-  * *Cap**e** Verde* in a couple places
+  * Swedish leader surname: _Chr**is**terson_
+  * Cushitic and Sudanese leader given name: _Abbas **S**aid_
+  * Boer Republic event: _This isn't ou**r** fight._
   * Saints, unabbreviated: *Saint-Brieuc*, *Saint Petersburg*
   * St., with a period: *St. Louis*, *St. Augustine*
 - French and French-derived names: *Faustin Soulouque* in events (was *Faustan Soulique*),
-  *L**é**gion d'honneur* in events, *Parti **n**ationalist**e*** (reactionary party of Quebec &
-  Martinique), a couple Haitian parties, Haitian ship names, *Leb**œu**f*, *É**t**ie**nn**e*,
-  *d'Orl**é**ans*
-- French and French-derived place names: *Neuchâtel* in events, *R**é**union*, *M**â**con*,
-  *Besan**ç**on*, *Sarre et Mont**-**Tonnerre*, *Fréjus*, *C**ô**te d'Argent* & *C**ô**te d'Azur*,
-  *Coast of Bri**tt**a**n**y*, *Cap-Haïtien*, *Orléans*, *Coeur **d**'Alene*,
-  *Saint-Pierre-et-Miquelon*, *Saint**-É**tienne*, *Port **a**ux Basques*
+  _L**é**gion d'honneur_ in events, _Parti **n**ationalist**e**_ (reactionary party of Quebec &
+  Martinique), a couple Haitian parties, Haitian ship names, _Leb**œu**f_, _É**t**ie**nn**e_,
+  _d'Orl**é**ans_
+- French and French-derived place names: _Neuch**â**tel_ in events, _R**é**union_, _M**â**con_,
+  _Besan**ç**on_, *Sarre et Mont-Tonnerre*, _Fr**é**jus_, _C**ô**te **d**'Argent_ & _C**ô**te
+  **d**'Azur_, _Coast of Bri**tt**a**n**y_, _Cap-Haïtien_, _Orl**é**ans_, _Coeur **d**'Alene_,
+  _Saint-Pierre-et-Miquelon_, _Saint-**É**tienne_, _Port **a**ux Basques_
 - German place names: *Südtirol*
 - Italian place names: *Trentino-Alto Adige*
-- Portuguese-derived place names: *Cura**ç**ao*
+- Portuguese-derived place names: _Cura**ç**ao_
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
