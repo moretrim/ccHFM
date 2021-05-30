@@ -11,8 +11,13 @@ Releases are save compatible across patch releases for a given minor version. Fo
 #### 1.0.0-prerelease (release in progress)
 
 The first public release, it is based on [HFM 1.27I][]. It is **not** backward compatible with it.
-It also includes the colonial de-railroading system first seen in PR [HFM/#157], later the basis for
-[HFM Derailroaded][].
+
+It also includes the colonial de-railroading system first seen in PR [HFM/#157] (later the basis for
+[HFM Derailroaded][]) though the option has been flipped around: the additional historical colonial
+conquest events are *disabled* by default, and there is the option to enable it.
+
+We realise this last change is opinionated and that many users would prefer the other default. A
+system for customising defaults is planned, but did not make the cut for 1.0.
 
 [HFM Derailroaded]: https://github.com/addonovan/off-the-rails
 
@@ -319,8 +324,6 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
 
 ##### Changes
 
-- 4 [editorial][] changes.
-
 - Control over the *Splendid Isolation* diplomatic policy of the United Kingdom is now done through
   an option decision. The policy is active by default, and the option disables it.
 
@@ -398,6 +401,8 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
   Derailroaded][].
 
   [off-the-rails/#3]: https://github.com/addonovan/off-the-rails/pull/3
+
+- Colonial de-railroading: change the default behaviour to disabled, with the option to re-enable.
 
 - Add 31 days of cooldown to *AI: Call Allies to War* (when AI United Kingdom is at war) in certain
   circumstances. This is to prevent adverse impact on performance, without hindering British

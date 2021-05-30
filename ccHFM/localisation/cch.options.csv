@@ -2,3 +2,5 @@
 # Extra options #;;;;;;;;;;;;;;
 cch.option-disable-splendid-isolation_title;Option: Disable Splendid Isolation;;;;;;;;;;;;;
 cch.option-disable-splendid-isolation_desc;This tweak will disable the historical isolationist diplomatic policy of the United Kingdom.\n\nWhile Splendid Isolation is active, the UK will break alliances with any Great Power except for Portugal, the Ottomans, Belgium or Japan. The policy will end when the balance of power is upset in Europe, or after 1890.;;;;;;;;;;;;;
+cch.option-enable-extra-colonial-conquests_title;Option: Enable Additional Historical Colonial Conquests;;;;;;;;;;;;;
+cch.option-enable-extra-colonial-conquests_desc;This tweak will enable additional colonial conquest events in Africa.;;;;;;;;;;;;;

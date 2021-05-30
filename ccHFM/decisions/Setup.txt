@@ -1,18 +1,18 @@
 political_decisions = {
-	option_disable_colonial_railroading = {
-		picture = starting_options
-		alert = no
-		potential = {
-			ai = no
-			has_country_flag = country_looking_through_options
-			NOT = { year = 1837 }
-			NOT = { has_global_flag = colonial_railroading_disabled }
-		}
-		allow = {}
-		effect = {
-			set_global_flag = colonial_railroading_disabled
-		}
-	}
+    cch.option-enable-extra-colonial-conquests = {
+        picture = starting_options
+        alert = no
+        potential = {
+            ai = no
+            has_country_flag = country_looking_through_options
+            NOT = { year = 1837 }
+            has_global_flag = colonial_railroading_disabled
+        }
+        allow = {}
+        effect = {
+            clr_global_flag = colonial_railroading_disabled
+        }
+    }
 
     cch.option-disable-splendid-isolation = {
         picture = starting_options

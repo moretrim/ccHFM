@@ -12,6 +12,8 @@ political_decisions = {
                 duration = 19710
             }
             set_country_flag = pax_britannica
+
+            set_global_flag = colonial_railroading_disabled
         }
     }
 

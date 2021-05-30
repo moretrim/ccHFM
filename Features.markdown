@@ -321,6 +321,14 @@ Colonisation
 
   [HFM/#157]: https://github.com/SighPie/HFM/pull/157
 
+- Colonial de-railroading: cherry-pick [off-the-rails/#3], restoring parity with [HFM
+  Derailroaded][].
+
+  [off-the-rails/#3]: https://github.com/addonovan/off-the-rails/pull/3
+  [HFM Derailroaded]: https://github.com/addonovan/off-the-rails
+
+- Colonial de-railroading: change the default behaviour to disabled, with the option to re-enable.
+
 Africa
 ------
 
@@ -328,10 +336,10 @@ Africa
 
 - Remove correct Basotho cores in Mfecane Matabele ([HPM/#131]).
 
+  [HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
+
 - Correct requirements of the *Occupation of the Congo Basin* decision, resolving ineffective use
   ([#26]).
-
-  [#26]: https://github.com/moretrim/ccHFM/issues/26
 
   In addition, the decision has been relaxed and no longer requires that the occupying power be a
   Great Power. This constraint was too strict, regularly leading to games where the country in
@@ -342,6 +350,7 @@ Africa
   of all Chad lands, Ubangi-shari and Waddai are now only available after 1890 and 1895
   respectively. This roughly matches historical dates. (#86)
 
+  [#26]: https://github.com/moretrim/ccHFM/issues/26
   [#86]: https://github.com/moretrim/ccHFM/issues/86
 
 - Improve the Boer War call to arms to be infamy neutral (it was deducting 3 extra), and make it AI
@@ -349,13 +358,6 @@ Africa
 
 - Correct condition on the *Colonial Incorporation* event for Western Sahara. The event incorrectly
   happened for African countries other than Morocco.
-
-- Colonial de-railroading: cherry-pick [off-the-rails/#3], restoring parity with [HFM
-  Derailroaded][].
-
-[HPM/#131]: https://github.com/arkhometha/Historical-Project-Mod/pull/131
-[#26]: https://github.com/moretrim/ccHFM/issues/26
-[off-the-rails/#3]: https://github.com/addonovan/off-the-rails/pull/3
 
 - Reduce the amount of notifications from the Witwatersrand Gold Rush ([#7]).
 
