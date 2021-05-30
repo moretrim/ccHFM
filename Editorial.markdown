@@ -25,6 +25,11 @@ History of editorial changes
 - port the tweaked ship names: *Troopship* (was *Steam Transport*), *Steam Frigate* (was *Commerce
   Raider*)
 - port tooltip fixes: brigade comparison, religion/culture check
+- countries:
+  * *Luxemb**o**urg* instead of *Luxemburg* (though the latter is attested in English it is less
+    common—this is more of a matter of consistency)
+  * *Neuch**â**tel*
+  * *C**ô**te d'Ivoire*
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15

@@ -27,8 +27,8 @@ return_cores_PHG_title;Return cores to Pahang;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_PHG_desc;We hold provinces that Pahang has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_FRO_title;Return cores to Faroe;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_FRO_desc;We hold provinces that Faroe has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
-return_cores_NCT_title;Return cores to Neuchatel;;;;;;;;;;;;;;;;;;;;x,,
-return_cores_NCT_desc;We hold provinces that Neuchatel has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
+return_cores_NCT_title;Return cores to Neuchâtel;;;;;;;;;;;;;;;;;;;;x,,
+return_cores_NCT_desc;We hold provinces that Neuchâtel has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_HBY_title;Return cores to Hobyo;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_HBY_desc;We hold provinces that Hobyo has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_QAT_title;Return cores to Qatar;;;;;;;;;;;;;;;;;;;;x,,
@@ -591,8 +591,8 @@ return_cores_LIP_title;Return cores to Lippe-Detmold;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_LIP_desc;We hold provinces that Lippe-Detmold has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_LUB_title;Return cores to Lubeck;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_LUB_desc;We hold provinces that Lubeck has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
-return_cores_LUX_title;Return cores to Luxemburg;;;;;;;;;;;;;;;;;;;;x,,
-return_cores_LUX_desc;We hold provinces that Luxemburg has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
+return_cores_LUX_title;Return cores to Luxembourg;;;;;;;;;;;;;;;;;;;;x,,
+return_cores_LUX_desc;We hold provinces that Luxembourg has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_MEC_title;Return cores to Mecklenburg;;;;;;;;;;;;;;;;;;;;x,,
 return_cores_MEC_desc;We hold provinces that Mecklenburg has claims on. Returning these provinces, as an act of good faith, would surely bolster our relations.;;;;;;;;;;;;x
 return_cores_MEI_title;Return cores to Saxe-Meiningen;;;;;;;;;;;;;;;;;;;;x,,
