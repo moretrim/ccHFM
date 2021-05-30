@@ -11,6 +11,3 @@ cch.they-no-longer-recognise-us.opt0;Damnation!;;;;;;;;;;;;;
 # Modifiers #;;;;;;;;;;;;;;
 cch.recent-call-to-arms;Recent Call to Arms;;;;;;;;;;;;;
 cch.recent-call-to-arms_desc;Our country has recently called upon all her allies to join our ongoing wars.;;;;;;;;;;;;;
-# Tooltips #;;;;;;;;;;;;;;
-BRIGADES_COMPARE_GREATER;Brigades comparison factor of two countries is at least §Y$VAL$§!\n;;;;;;;;;;;;;
-BRIGADES_COMPARE_SMALLER;Brigades comparison factor of two countries is less than §Y$VAL$§!\n;;;;;;;;;;;;;

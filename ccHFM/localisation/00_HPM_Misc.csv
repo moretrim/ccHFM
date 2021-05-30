@@ -1,4 +1,24 @@
 ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+AND_TRIGGER_STARTS;§f All of the below§W;;;;;;;;;;;;;
+OR;§m or§W;;;;;;;;;;;;;
+OR_TRIGGER_STARTS;§V One of the following must be true§W;;;;;;;;;;;;;
+IS_NOT_RELIGION;The state religion is NOT;;;;;;;;;;;;;
+IS_RELIGION;The state religion is;;;;;;;;;;;;;
+CULTURE_IS_NOT;Culture is NOT accepted:;;;;;;;;;;;;;
+CULTURE_IS;Culture is accepted:;;;;;;;;;;;;;
+steam_transport;Troopship;;;;;;;;;;;;;
+commerce_raider;Steam Frigate;;;;;;;;;;;;;
+oceanic;Pacific Islander;;;;;;;;;;;;;
+levantine;Greco-Caucasian;;;;;;;;;;;;;
+turko_semitic;Turkic;;;;;;;;;;;;;
+polish_culture_group;Western Slavic;;;;;;;;;;;;;
+BRIGADES_COMPARE_GREATER;Brigades comparison factor of two countries is at least §Y$VAL$§!\n;;;;;;;;;;;;;
+BRIGADES_COMPARE_SMALLER;Brigades comparison factor of two countries is less than §Y$VAL$§!\n;;;;;;;;;;;;;
+jewish_group;Jewish;;;;;;;;;;;;;
+muslim;Muslim;;;;;;;;;;;;;
+christian;Christian;;;;;;;;;;;;;
+eastern;Eastern Religions;;;;;;;;;;;;;
+pagan;Pagans;;;;;;;;;;;;;
 jefferson_method_desc;The Jefferson Method is a highest averages method for allocating seats, and is thus a type of party-list proportional representation. Proportional representation systems aim to allocate seats to parties approximately in proportion to the number of votes received. For example, if a party wins one-third of the votes then it should gain about one-third of the seats. In general, exact proportionality is not possible because these divisions produce fractional numbers of seats. As a result, several methods have been devised which ensure that the parties' seat allocations, which are of course whole numbers, are as proportional as possible. In comparison with the Sainte-Lague method, §Ythe Jefferson Method slightly favours large parties and coalitions over scattered small parties§W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_goods;Precious Goods;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_goods_RGO_SIZE;Precious Goods Market Size;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;

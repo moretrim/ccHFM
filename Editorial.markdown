@@ -19,6 +19,12 @@ History of editorial changes
 - add missing adjectives for Südtirol (the country): *Tyrolean*, *Südtiroler*
 - restore missing line break in tooltip for brigade comparison (ported from HPM)
 - port the additional text colours of HPM ([HPM/#163])
+- port the colour hints that improve the readability of e.g. decision condition tooltips.
+- port the additional and tweaked names of culture groups
+- port the names of religious groups
+- port the tweaked ship names: *Troopship* (was *Steam Transport*), *Steam Frigate* (was *Commerce
+  Raider*)
+- port tooltip fixes: brigade comparison, religion/culture check
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
