@@ -193,7 +193,7 @@ political_decisions = {
 			735 = {
 				change_province_name = "Bolzano"
 				state_scope = {
-					change_region_name = "Trentino Alto-Adige"
+					change_region_name = "Trentino-Alto Adige"
 				}
 			}
 

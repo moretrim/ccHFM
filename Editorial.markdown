@@ -56,6 +56,7 @@ History of editorial changes
   *Coast of Bri**tt**a**n**y*, *Cap-Haïtien*, *Orléans*, *Coeur **d**'Alene*,
   *Saint-Pierre-et-Miquelon*, *Saint**-É**tienne*, *Port **a**ux Basques*
 - German place names: *Südtirol*
+- Italian place names: *Trentino-Alto Adige*
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
