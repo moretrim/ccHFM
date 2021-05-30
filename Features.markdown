@@ -109,6 +109,11 @@ Interface
 - Control over the *Splendid Isolation* diplomatic policy of the United Kingdom is now done through
   an option decision. The policy is active by default, and the option disables it.
 
+- Port the additional text colours of HPM ([HPM/#163]). Also port the colour hints that improve the
+  readability of e.g. decision condition tooltips.
+
+  [HPM/#163]: https://github.com/arkhometha/Historical-Project-Mod/pull/163
+
 Flags
 -----
 

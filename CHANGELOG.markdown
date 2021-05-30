@@ -312,6 +312,11 @@ It also includes the colonial de-railroading system first seen in PR [HFM/#157],
   a country researches *Revolution & Counterrevolution*. There is still also the option to unlock
   crises from the start.
 
+- Port the additional text colours of HPM ([HPM/#163]). Also port the colour hints that improve the
+  readability of e.g. decision condition tooltips.
+
+  [HPM/#163]: https://github.com/arkhometha/Historical-Project-Mod/pull/163
+
 ##### Changes
 
 - 4 [editorial][] changes.

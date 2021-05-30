@@ -18,9 +18,11 @@ History of editorial changes
 - restore missing text for *Retreat to Formosa* after a Taiping victory
 - add missing adjectives for Südtirol (the country): *Tyrolean*, *Südtiroler*
 - restore missing line break in tooltip for brigade comparison (ported from HPM)
+- port the additional text colours of HPM ([HPM/#163])
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
 [906735]: https://github.com/moretrim/ccHFM/commit/9067354d70610e4f12644ef68f479ac109827172
 [fb131a]: https://github.com/moretrim/ccHFM/commit/fb131aeb6e1ba26715e06e8059acc446a29eea94
 [HPM/#233]: https://github.com/arkhometha/Historical-Project-Mod/pull/233
+[HPM/#163]: https://github.com/arkhometha/Historical-Project-Mod/pull/163
