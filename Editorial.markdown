@@ -25,6 +25,7 @@ History of editorial changes
 - port the tweaked ship names: *Troopship* (was *Steam Transport*), *Steam Frigate* (was *Commerce
   Raider*)
 - port tooltip fixes: brigade comparison, religion/culture check
+- use *Romani* instead of *Gypsy*
 - countries:
   * *Luxemb**o**urg* instead of *Luxemburg* (though the latter is attested in English it is less
     common—this is more of a matter of consistency)
