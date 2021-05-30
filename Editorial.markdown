@@ -40,6 +40,13 @@ History of editorial changes
   * Newfoundland: *Newfoundland* instead of *Newfoundlander*
   * New Zealand: *Kiwi* instead of *New Zealand*
   * Liechtenstein: *Liechtensteiner* instead of *Liechtensteinen*
+- fix typographical errors:
+  * Swedish leader surname: *Chr**is**terson*
+  * Cushitic and Sudanese leader given name: *Abbas **S**aid*
+  * Boer Republic event: *This isn't ou**r** fight.*
+  * *Cap**e** Verde* in a couple places
+  * Saints, unabbreviated: *Saint-Brieuc*, *Saint Petersburg*
+  * St., with a period: *St. Louis*, *St. Augustine*
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15

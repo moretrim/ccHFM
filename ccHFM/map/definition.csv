@@ -144,7 +144,7 @@
 143;192;240;0;Little Rock;x
 144;64;112;128;Hot Springs;x
 145;64;240;0;Fayetteville;x
-146;208;0;64;St Louis;x
+146;208;0;64;St. Louis;x
 147;208;64;128;Joplin;x
 148;80;192;128;Malden;x
 149;80;128;64;Jefferson City;x
@@ -197,7 +197,7 @@
 196;0;240;0;Tuscaloosa;x
 197;128;112;0;Mobile;x
 198;160;48;0;Tallahassee;x
-199;192;240;64;St Augustine;x
+199;192;240;64;St. Augustine;x
 200;64;112;192;Tampa;x
 201;64;112;64;Atlanta;x
 202;192;112;64;Valdosta;x
@@ -419,7 +419,7 @@
 418;144;160;64;Caen;x
 419;183;142;84;Channel Islands;x
 420;208;224;128;Brest;x
-421;85;96;126;St Brieuc;x
+421;85;96;126;Saint-Brieuc;x
 422;144;32;64;Vannes;x
 423;112;96;0;Nantes;x
 424;16;160;64;Rennes;x
@@ -992,7 +992,7 @@
 991;224;192;128;Uglich;x
 992;64;32;223;Belozersk;x
 993;160;128;0;Vyterga;x
-994;1;160;224;St Petersburg;x
+994;1;160;224;Saint Petersburg;x
 995;108;110;122;Petrozavorsk;x
 996;128;160;224;Luga;x
 997;143;121;233;Gdov;x
@@ -3030,7 +3030,7 @@
 3029;71;222;252;Guiana Basin;x
 3030;72;252;252;Southern Guiana Basin;x
 3031;73;202;202;Canary Approach;x
-3032;74;202;252;Cap Verde Approach;x
+3032;74;202;252;Cape Verde Approach;x
 3033;75;222;252;Central Atlantic #1;x
 3034;76;252;252;Central Atlantic #2;x
 3035;77;202;202;Central Atlantic #3;x

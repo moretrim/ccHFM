@@ -270,7 +270,7 @@ scandinavian = {
 		Jakob Jesper Johan Julius Knut Lars Ludvig Magnus Michael Nikolaus
 		Nils Olof Oscar Per Rudolf Sten Theodor Verner Viktor Vilhelm }
 		
-		last_names = { Abelin Bernardotte Bildt Björnstjerna Brahe Brakenhielm Breitholtz Chrsiterson Crusebjörn Dyrssen
+		last_names = { Abelin Bernardotte Bildt Björnstjerna Brahe Brakenhielm Breitholtz Christerson Crusebjörn Dyrssen
 		Ehnemark Ehrenstam Gyllengranat Gyndestolpe Ingelman Leijonhufvud Lindman Mörner Nordenskiöld "Palanger af Vega"
 		Palmstierna Peyron Rappe Reuterskiöld Rosensvärd Ryding Sprengtportem Ström Taube Tawast
 		Thörnell Thulstrup Tingsten Ulner Virgin "von Essen" "von Hohenhausen" "von Otter" "von Platen" Weidenhielm }
@@ -1186,7 +1186,7 @@ arab = {
 	}
 	sudanese = {
 		color = {241 241 78}
-		first_names = { "Ibn Muhammad" Abdullah "Abbas said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
+		first_names = { "Ibn Muhammad" Abdullah "Abbas Said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
 		}
 
 		last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
@@ -2932,7 +2932,7 @@ east_african = {
 	}
 	cushitic = {
 		color = {201 101 39}
-		first_names = { "Ibn Muhammad" Abdullah "Abbas said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
+		first_names = { "Ibn Muhammad" Abdullah "Abbas Said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
 		}
 
 		last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
