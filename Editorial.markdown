@@ -8,13 +8,16 @@ History of editorial changes
 
 - fix copy/paste error in Russian names of Alaskan culture ([#23], [HPM/#15])
 - France minimod, German Namibia, and a couple other things: restore mangled text ([906735])
-- Gott Mit Uns: restore missing text in follow-up event to “The Mysterious Lands of Guatemala”
+- Gott Mit Uns: restore missing text in follow-up event to *The Mysterious Lands of Guatemala*
   archaeological chain ([fb131a])
 - restore missing description of *Gendarmerie* invention
 - correct mojibake in French localisation strings in the translation for Fiume (pending [HPM/#233])
 - wars of conquest now follow the template *1st American Conquest of Canada* instead of *1st
   American Conquest of Canadan War*
 - use the spelling *Brothers’ War* for the Austro-Prussian war
+- restore missing text for *Retreat to Formosa* after a Taiping victory
+- add missing adjectives for Südtirol (the country): *Tyrolean*, *Südtiroler*
+- restore missing line break in tooltip for brigade comparison (ported from HPM)
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
