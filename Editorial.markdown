@@ -26,6 +26,8 @@ History of editorial changes
   Raider*)
 - port tooltip fixes: brigade comparison, religion/culture check
 - use *Romani* instead of *Gypsy*
+- the capital province of Liechtenstein is now called *Vaduz* rather than bearing the name of the
+  microstate
 - countries:
   * *Luxemb**o**urg* instead of *Luxemburg* (though the latter is attested in English it is less
     common—this is more of a matter of consistency)
