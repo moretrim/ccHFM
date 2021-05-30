@@ -1,0 +1,9 @@
+### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+# Wars #;;;;;;;;;;;;;;
+NORMAL_WAR_CONQUEST_NAME;$ORDER$$FIRST$ Conquest of $SECOND_COUNTRY$;$ORDER$conquête $FIRST$ de $SECOND_COUNTRY$;$ORDER$$FIRST$ Eroberung von $SECOND_COUNTRY$;;$ORDER$$FIRST$ Conquista de $SECOND_COUNTRY$;;;;;;;;;
+AGRESSION_CALL_TO_ARMS_NAME;$ORDER$$FIRST$ Call to Arms;;;;;;;;;;;;;
+# Casus belli #;;;;;;;;;;;;;;
+call_allies_cb;Call Allies to Arms;;;;;;;;;;;;;
+call_allies_cb_desc;Call allies to join ongoing wars;;;;;;;;;;;;;
+call_allies_cb_setup;Call allies to join your ongoing wars;;;;;;;;;;;;;
+call_allies_cb_short;Call allies to join ongoing wars;;;;;;;;;;;;;
