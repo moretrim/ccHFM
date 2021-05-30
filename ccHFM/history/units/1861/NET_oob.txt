@@ -240,7 +240,7 @@ navy = {
 	}
 
 	ship = {
-		name= "Curacao"
+		name= "Curaçao"
 		type = frigate
 	}
 
