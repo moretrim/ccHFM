@@ -10,9 +10,9 @@ Build status:
 Community Curated HFM
 ---------------------
 
-[Obtain the latest pre-release here.][RELEASE]
+[Obtain the latest release here.][RELEASE]
 
-[RELEASE]: https://github.com/moretrim/ccHFM/releases/
+[RELEASE]: https://github.com/moretrim/ccHFM/releases/tag/v1.0.0
 
 An unauthorised, unaffiliated effort to maintain the [Historical Flavour Mod][HFM] for Victoria II.
 HFM development was [discontinued in 2020][discontinued], but this ambitious overhaul mod keeps a
