@@ -66,7 +66,8 @@ ZAM_dominion;Northern Rhodesia;;;;;;;;;;;;x
 ZAM_colonial_company;Northern Rhodesia;;;;;;;;;;;;;x,
 #AFG_prussian_constitutionalism;The Kingdom of Afghanistan;;;;;;;;;;;;;;x
 #AFG_hms_government;The Kingdom of Afghanistan;;;;;;;;;;;;;;x
-ITA_theocracy;The Papal Kingdom;;;;;;;;;;;;;;x
+ITA_theocracy;The Papal Kingdom;;;;;;;;;;;;;
+ITA_theocracy_ADJ;Papal;;;;;;;;;;;;;
 MTQ_ADJ;Martiniquan;;;;;;;;;;;;x
 MTQ;Martinique;;;;;;;;;;;;x
 SGP_dominion;The Straits Settlement;;;;;;;;;;;;x
@@ -113,9 +114,8 @@ IOT_prussian_constitutionalism;British Indian Ocean Territory;;;;;;;;;;;;x
 IOT_dominion;British Indian Ocean Territory;;;;;;;;;;;;x
 IOT_colonial_company;British Indian Ocean Territory;;;;;;;;;;;;;x,
 IOT_hms_government;British Indian Ocean Territory;;;;;;;;;;;;;x,
-IOT_ADJ;British;;;;;;;;;;;;x
+IOT_ADJ;Chagossian;;;;;;;;;;;;;
 IOT;Chagos Islands;;;;;;;;;;;;x
-IOT_democracy_ADJ;Chagossian;;;;;;;;;;;;x
 MAU;Mauritius;;;;;;;;;;;;x
 MAU_ADJ;Mauritian;;;;;;;;;;;;x
 MAU_liberal;Mauritius People's Progressive Front ;;;;;;;;;;;;x
@@ -407,7 +407,7 @@ LEG_presidential_dictatorship;The Legation Cities;;;;;;;;;;;;;;x
 GUI_ADJ;Guizhou;;;;;;;;;;;;;x
 ATB;Saxe-Altenburg;;;;;;;;;;;;;x,
 ATB_ADJ;Saxon;Saxon;Saxon;;;;;;;;;;;x,
-MNC_ADJ;Monegasc;Monegasc;Monegasc;;;;;;;;;;;x;
+MNC_ADJ;Monégasque;Monégasque;Monegassisch;;;;;;;;;;;x;
 MNC;Monaco;Monaco;Monaco;;;;;;;;;;;x;
 MNC_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
 MNC_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;
@@ -421,7 +421,7 @@ MNC_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;
 ADO;Andorra;x;;;;;;;;;;;x;
 ADO_ADJ;Andorran;x;;;;;;;;;;;x;
 LIE;Liechtenstein;x;;;;;;;;;;;x;
-LIE_ADJ;Liechtensteinen;x;;;;;;;;;;;x;
+LIE_ADJ;Liechtensteiner;;;;;;;;;;;;;
 SCL;Schaumburg-Lippe;;;;;;;;;;;;;x,
 SCL_ADJ;Schaumburgen;;;;;;;;;;;;;x,
 REU;Reuss;;;;;;;;;;;;;x,

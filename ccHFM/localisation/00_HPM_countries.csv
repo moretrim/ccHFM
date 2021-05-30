@@ -238,7 +238,7 @@ FRO_communist;Kommunistiski Flokkur Føroya;;;;;;;;;;;;;;;;;;;;;;;;;;X,,,,,,,,,,,
 FRO_fascist;Loysingarflokkurin;;;;;;;;;;;;;;;;;;;;;;;;;;X,,,,,,,,,,,,,,,,
 RUS_proletarian_dictatorship;The Soviet Union;;;;;;;;;;;;;;;;;;;x
 NCT;Neuchâtel;;;;;;;;;;;;;;;;;;;;;;x;;;;
-NCT_ADJ;Neuchateli;;;;;;;;;;;;;;;;;;;;;;x;;;;
+NCT_ADJ;Neuchâtelois;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD;The United Baltic Provinces;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD_democracy;The Baltic Union;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD_proletarian_dictatorship;The Baltic Worker's Union;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -3172,7 +3172,7 @@ XHO_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;
 XHO_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_democracy;Xhosaland;;;;;;;;;;;;;;x
 AGC;Angoche;;;;;;;;;;;;x
-AGC_ADJ;Angochen;;;;;;;;;;;;x
+AGC_ADJ;Angochean;;;;;;;;;;;;;
 AGC_conservative;Sultan's Faction;;;;;;;;;;;;x
 AGC_liberal;Reform Faction;;;;;;;;;;;;x
 AGC_reactionary;Islamic faction;;;;;;;;;;;;x

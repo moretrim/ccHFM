@@ -2306,15 +2306,6 @@ XHO_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;
 XHO_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_democracy;Xhosaland;;;;;;;;;;;;;;x
-AGC;Angoche;;;;;;;;;;;;x
-AGC_ADJ;Angochen;;;;;;;;;;;;x
-AGC_conservative;Sultan's Faction;;;;;;;;;;;;x
-AGC_liberal;Reform Faction;;;;;;;;;;;;x
-AGC_reactionary;Islamic faction;;;;;;;;;;;;x
-AGC_anarcho_liberal;Radical Faction;;;;;;;;;;;;x
-AGC_socialist;Socialist Party;;;;;;;;;;;;x
-AGC_communist;Communist Party;;;;;;;;;;;;x
-AGC_fascist;Fascist Faction;;;;;;;;;;;;x
 GAZ;Gaza;;;;;;;;;;;;x
 GAZ_ADJ;Nguni;;;;;;;;;;;;x
 GAZ_conservative;King's Faction;;;;;;;;;;;;x

@@ -30,6 +30,16 @@ History of editorial changes
     common—this is more of a matter of consistency)
   * *Neuch**â**tel*
   * *C**ô**te d'Ivoire*
+- country adjectives:
+  * Luxembourg: *Luxembourgish* instead of *Luxemburgian*
+  * *Neuchâtelois* instead of *Neuchateli*
+  * Papal Kingdom (theocratic Italy): *Papal* instead of *Italian*
+  * British Indian Ocean Territory: *Chagossian* instead of *British*
+  * Angoche: *Angochean* instead of *Angochen*
+  * Monaco: *Monégasque* instead of *Monegasc*
+  * Newfoundland: *Newfoundland* instead of *Newfoundlander*
+  * New Zealand: *Kiwi* instead of *New Zealand*
+  * Liechtenstein: *Liechtensteiner* instead of *Liechtensteinen*
 
 [#23]: https://github.com/moretrim/ccHFM/pull/23
 [HPM/#15]: https://github.com/arkhometha/Historical-Project-Mod/pull/15
