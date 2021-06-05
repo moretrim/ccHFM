@@ -52,7 +52,7 @@ system for customising defaults is planned, but did not make the cut for 1.0.
       the post for defence, he should not be employed on the offence due to a disappointing -2
       attack
 
-    </figcaption
+    </figcaption>
   </figure>
 
   (Details further below.)
@@ -119,7 +119,7 @@ system for customising defaults is planned, but did not make the cut for 1.0.
     <figcaption>
 
     **attack score, defence score, speed modifier, extras**
-    </figcaption
+    </figcaption>
   </figure>
 
   Extras, if present, denote one or two remarkable modifier to organisation and/or morale—think of

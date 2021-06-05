@@ -69,7 +69,7 @@ Interface
     <figcaption>
 
     **attack score, defence score, speed modifier, extras**
-    </figcaption
+    </figcaption>
   </figure>
 
   Extras, if present, denote one or two remarkable modifier to organisation and/or morale—think of
