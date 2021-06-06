@@ -397,6 +397,7 @@ political_decisions = {
 			NOT = { tag = TUR }
 			TUR = {
 				NOT = { has_country_flag = arab_revolt }
+				is_greater_power = no
 				any_owned_province = {
 					any_core = {
 						OR = {
