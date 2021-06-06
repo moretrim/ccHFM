@@ -1442,15 +1442,6 @@ country_event = {
 			limit = {
 				tag = RPL
 				exists = yes
-				vassal_of = FROM
-			}
-			all_core = { remove_core = RPL }
-			annex_to = CAN
-		}
-		random_country = {
-			limit = {
-				tag = RPL
-				exists = yes
 				NOT = { vassal_of = FROM }
 			}
 			any_owned = {
@@ -1479,6 +1470,26 @@ country_event = {
 				any_pop = { militancy = -6 }
 				secede_province = CAN
 			}
+		}
+		random_country = {
+			limit = {
+				tag = RPL
+				vassal_of = FROM
+				ai = no
+			}
+			all_core = { remove_core = RPL }
+			change_tag = CAN
+		}
+		random_country = {
+			limit = {
+				tag = RPL
+				vassal_of = FROM
+				ai = yes
+			}
+			all_core = { remove_core = RPL }
+		}
+		CAN = {
+			inherit = RPL
 		}
 		ai_chance = {
 			factor = 100
