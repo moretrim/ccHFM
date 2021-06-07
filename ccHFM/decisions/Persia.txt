@@ -155,7 +155,8 @@ revoke_kurdish_autonomy = {
 		}
 		
 		allow = {
-			civilization_progress = 0.25
+			civilization_progress = 0.5
+			has_country_flag = cch.bedr-khan-defeated
 		}
 		
 		effect = {

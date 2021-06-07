@@ -2228,6 +2228,7 @@ country_event = {
 	option = {
 		name = "EVT986505OPTA"
 		clr_country_flag = return_persian_lands_on_finish
+		PER = { set_country_flag = cch.bedr-khan-defeated }
 		any_owned = {
 			limit = {
 			OR = {
