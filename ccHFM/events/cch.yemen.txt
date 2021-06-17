@@ -1,0 +1,643 @@
+country_event = {
+	id = 300000
+	title = "cch.deria-dowlat.name"
+	desc = "cch.deria-dowlat.desc"
+	picture = "cch.tomb-sheikh-othman-near-aden"
+	
+	trigger = {
+		tag = ENG
+		NOT = { owns = 1412 }
+		year = 1839
+		OR = {
+			owns = 1297                              #Bombay
+			1297 = {
+				owner = {
+					in_sphere = THIS
+				}
+			}
+		}
+		1412 = {                                     #Aden
+			owner = {
+				is_vassal = no
+				civilized = no
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days = 8 }
+	fire_only_once = yes
+	
+	option = {
+		name = "cch.deria-dowlat.opta"
+		1412 = {
+			owner = { 
+				country_event = { id = 300001 days = 5 }
+			}
+		}
+		ai_chance = {
+			factor = 0.75
+			modifier = {
+				factor = 0.9
+				1412 = {
+					owner = {
+						ai = no 
+					}
+				}
+			}
+			modifier = {
+				factor = 0.01
+				1412 = {
+					owner = {
+						part_of_sphere = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300001
+	title = "cch.deria-dowlat-diplo.name"
+	desc = "cch.deria-dowlat-diplo.desc"
+	picture = "cch.tomb-sheikh-othman-near-aden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.deria-dowlat-diplo.opta"
+		ENG = {
+			relation = {
+				who = THIS
+				value = 150
+			}
+		}
+		treasury = 100
+		ENG = {
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+			treasury = -100
+			country_event = { id = 300002 days = 5 }
+		}
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+	option = {
+		name = "cch.deria-dowlat-diplo.optb"
+		prestige = 10
+		ENG = {
+			relation = {
+				who = THIS
+				value = -150
+			}
+			country_event = { id = 300003 days = 5}
+		}
+		ai_chance = {
+			factor = 0.9
+		}
+	}
+}
+
+country_event = {
+	id = 300002
+	title = "cch.deria-dowlat-diplo-agreed.name"
+	desc = "cch.deria-dowlat-diplo-agreed.desc"
+	picture = "cch.tomb-sheikh-othman-near-aden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.deria-dowlat-diplo-agreed.opta"
+	}
+}
+
+country_event = {
+	id = 300003
+	title = "cch.deria-dowlat-diplo-denied.name"
+	desc = "cch.deria-dowlat-diplo-denied.desc"
+	picture = "cch.capture-aden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.deria-dowlat-diplo-denied.opta"
+		war = {
+			target = FROM
+			call_ally = yes
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+		}
+		ai_chance = {
+			factor = 0.99
+		}
+	}
+	option = {
+		name = "cch.deria-dowlat-diplo-denied.optb"
+		FROM = {
+			add_casus_belli = {
+				target = ENG
+				type = establish_protectorate_casus_belli
+				months = 50
+			}
+		}
+		ai_chance = {
+			factor = 0.01
+		}
+	}
+}
+
+country_event = {
+	id = 300004
+	title = "cch.raid-aden.name"
+	desc = "cch.raid-aden.desc"
+	picture = "cch.lahej-sultanate-palace"
+	
+	trigger = {
+		tag = FDL
+		owns = 1176                                     #Bayda
+		war = no
+		total_amount_of_divisions = 1
+		NOT = {
+			civilization_progress = 0.5
+			civilized = yes
+			owns = 1412
+			has_country_flag = cch.fadhli-punished
+		}
+		1412 = {
+			NOT = { has_province_modifier = cch.fadhli-raids }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	#It needs to repeat if the province changes hands because the modifier clears
+	option = {
+		name = "cch.raid-aden.opta"
+		add_country_modifier = {
+			name = cch.raiding-aden
+			duration = -1
+		}
+		1412 = { 
+			owner = {
+				country_event = { id = 300005 days = 0 }
+				relation = {
+					who = FDL
+					value = -100
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300005
+	title = "cch.raids-from-fadhli.name"
+	desc = "cch.raids-from-fadhli.desc"
+	picture = "cch.lahej-sultanate-palace"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.raids-from-fadhli.opta"
+		1412 = {
+			add_province_modifier = {
+				name = cch.fadhli-raids
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300006
+	title = "cch.raids-from-fadhli-stop.name"
+	desc = "cch.raids-from-fadhli-stop.desc"
+	picture = "cch.lahej-sultanate-palace"
+	
+	trigger = {
+		THIS = {
+			owns = 1412
+		}
+		FDL = {
+			war = no
+			OR = {
+				exists = no
+				civilized = yes
+				is_vassal = yes
+				NOT = {
+					total_amount_of_divisions = 1
+				}
+			}
+		}
+		1412 = {
+			has_province_modifier = cch.fadhli-raids
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = "cch.raids-from-fadhli-stop.opta"
+		1412 = {
+			remove_province_modifier = cch.fadhli-raids
+		}
+	}
+}
+
+country_event = {
+	id = 300007
+	title = "cch.kathiri-quaiti-conflict.name"
+	desc = "cch.kathiri-quaiti-conflict.desc"
+	picture = "cch.quaiti-royal-family"
+	
+	trigger = {
+		OR = {
+			tag = KTH
+			tag = YEM
+		}
+		OR = {
+			KTH = {
+				exists = yes
+				civilized = no
+				NOT = {
+					num_of_cities = 2
+				}
+			}
+			YEM = {
+				is_vassal = yes
+				exists = yes
+				civilized = no
+			}
+		}
+		year = 1857
+		1173 = {
+			NOT = {
+				has_province_modifier = cch.kathiri-quaiti-conflict
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "cch.kathiri-quaiti-conflict.opta"
+		1173 = {                                     #Mukalla
+			add_province_modifier = {
+				name = cch.kathiri-quaiti-conflict
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300008
+	title = "cch.agree-informal-protection.name"
+	desc = "cch.agree-informal-protection.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.agree-informal-protection.opta"
+			FROM = { 
+				diplomatic_influence = { who = THIS value = 400 }
+				country_event = { id = 300009 days = 0 }
+			}
+			THIS = { set_country_flag = cch.accepted-yemen }
+			
+		ai_chance = {
+			factor = 0.99
+		}
+	}
+	option = {
+		name = "cch.agree-informal-protection.optb"
+		THIS = {
+			add_casus_belli = {
+				target = FROM
+				type = add_to_sphere
+				months = 50
+			}
+			set_country_flag = cch.rejected-yemen
+		}
+		FROM = { country_event = { id = 300010 days = 0 } }
+		ai_chance = {
+			factor = 0.01
+		}
+	}
+}
+
+country_event = {
+	id = 300009
+	title = "cch.informal-protection-yes.name"
+	desc = "cch.informal-protection-yes.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.yemen-agreement.opta"
+		clr_country_flag = cch.pestered-yemen
+	}
+}
+
+country_event = {
+	id = 300010
+	title = "cch.informal-protection-no.name"
+	desc = "cch.informal-protection-no.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.informal-protection-no.opta"
+		clr_country_flag = cch.pestered-yemen
+	}
+}
+
+country_event = {
+	id = 300011
+	title = "cch.negotiate-aden-protectorate.name"
+	desc = "cch.negotiate-aden-protectorate.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.negotiate-aden-protectorate.opta"
+		FROM = { country_event = { id = 300012 days = 3 } }
+		set_country_flag = cch.accepted-yemen
+		ai_chance = {
+			factor = 0.99
+			modifier = {
+				factor = 0
+				THIS = {
+					NOT = {
+						relation = { who = FROM value = 1 }
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 0.99 }
+	}
+	option = {
+		name = "cch.negotiate-aden-protectorate.optb"
+		FROM = { country_event = { id = 300013 days = 4 } }
+		set_country_flag = cch.rejected-yemen
+		ai_chance = {
+			factor = 0.01
+		}
+		ai_chance = { factor = 0.01 }
+	}
+}
+
+country_event = {
+	id = 300012
+	title = "cch.yes-to-yemen.name"
+	desc = "cch.yes-to-yemen.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cch.yes-to-yemen.opta
+	}
+}
+
+country_event = {
+	id = 300013
+	title = "cch.no-to-yemen.name"
+	desc = "cch.no-to-yemen.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.no-to-yemen.opta"
+		
+	}
+}
+
+country_event = {
+	id = 300014
+	title = "cch.mahra-socotra-purchase.name"
+	desc = "cch.mahra-socotra-purchase.desc"
+	picture = "cch.tamara-socotra"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.socotra-purchase.opta"
+		treasury = 4000
+		FROM = {
+			relation = {
+				who = THIS
+				value = 150
+			}
+			treasury = -4000
+			country_event = { id = 300015 days = 3 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 0
+				NOT = { in_sphere = FROM }
+			}
+		}
+	}
+	
+	option = {
+		name = "cch.socotra-purchase.optb"
+		treasury = 500
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = 35
+			}
+			relation = {
+				who = THIS
+				value = 150
+			}
+			treasury = -500
+			country_event = { id = 300016 days = 3 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 1
+				NOT = { in_sphere = FROM }
+			}
+		}
+	}
+	
+	option = {
+		name = "cch.socotra-purchase.optc"
+		FROM = {
+			relation = {
+				who = THIS
+				value = -300
+			}
+			country_event = { id = 300017 days = 3 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 1
+				NOT = { in_sphere = FROM }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300015
+	title = "cch.mahra-socotra-purchase.name"
+	desc = "cch.mahra-socotra-purchase-yes.desc"
+	picture = "cch.tamara-socotra"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.mahra-socotra-purchase-yes.opta"
+		1177 = {                                     #Socotra
+			secede_province = THIS
+			any_pop = { literacy = -0.99 militancy = 3}
+		}
+	}
+}
+
+country_event = {
+	id = 300016
+	title = "cch.mahra-socotra-purchase.name"
+	desc = "cch.mahra-socotra-purchase-lease.desc"
+	picture = "cch.tamara-socotra"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.mahra-socotra-purchase-lease.opta"
+	}
+}
+
+country_event = {
+	id = 300017
+	title = "cch.mahra-socotra-purchase.name"
+	desc = "cch.mahra-socotra-purchase-no.desc"
+	picture = "cch.tamara-socotra"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.mahra-socotra-purchase-no.opta"
+		MHR = {
+			add_casus_belli = {
+				target = THIS
+				type = establish_protectorate_casus_belli
+				months = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 300018
+	title = "cch.kathiri-quaiti-conflict-ends.name"
+	desc = "cch.kathiri-quaiti-conflict-ends.desc"
+	picture = "cch.quaiti-royal-family"
+	
+	trigger = {
+		owns = 1173
+		war = no
+		num_of_revolts = 0
+		OR = {
+			AND = {
+				num_of_cities = 2
+				tag = KTH
+			}
+			year = 1918
+		}
+		1173 = {
+				has_province_modifier = cch.kathiri-quaiti-conflict
+		}
+	}
+	
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+	
+	option = {
+		name = "cch.kathiri-quaiti-conflict-ends.opta"
+		1173 = {
+			remove_province_modifier = cch.kathiri-quaiti-conflict
+		}
+	}
+}
+
+country_event = {
+	id = 300019
+	title = "cch.petition-yemen.name"
+	desc = "cch.petition-yemen.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.petition-yemen.opta"
+		THIS = { inherit = FROM }
+	}
+}
+
+country_event = {
+	id = 300020
+	title = "cch.gift-aden.name"
+	desc = "cch.gift-aden.desc"
+	picture = "cch.aden-port"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.gift-aden.opta"
+		LHJ = {
+			inherit = FDL
+			inherit = KTH
+			inherit = MHR
+		}
+	}
+}
+
+country_event = {
+	id = 300021
+	title = "cch.punishment-fadhli.name"
+	desc = "cch.punishment-fadhli.desc"
+	picture = "cch.lahej-sultanate-palace"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cch.punishment-fadhli.opta"
+		1412 = {
+			remove_province_modifier = cch.fadhli-raids
+		}
+		FDL = {
+			remove_country_modifier = cch.raiding-aden
+		}
+	}
+}

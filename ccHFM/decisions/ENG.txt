@@ -518,123 +518,121 @@ political_decisions = {
 		}
 	}
 	
-	aden_protectorate = {
-		picture = aden_protectorate
-		potential = {
-			NOT = { is_culture_group = arab }
-			OR = {
-				any_owned_province = { is_core = LHJ }
-				any_owned_province = { is_core = FDL }
-				any_owned_province = { is_core = KTH }
-				any_owned_province = { is_core = MHR }
-				is_sphere_leader_of = LHJ
-				is_sphere_leader_of = FDL
-				is_sphere_leader_of = KTH
-				is_sphere_leader_of = MHR
-			}
-			NOT = { has_global_flag = created_aden_protectorate }
-		}
-		
-		allow = {
-			war = no
-			OR = {
-				LHJ = { exists = no }
-				owns = 1412
-			}
-			1173 = {
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-					owner = { vassal_of = THIS }
-					KTH = { exists = no }
-				}
-			}
-			1175 = {
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-					owner = { vassal_of = THIS }
-					MHR = { exists = no }
-				}
-			}
-			1176 = {
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-					owner = { vassal_of = THIS }
-					FDL = { exists = no }
-				}
-			}
-			1177 = {
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-					owner = { vassal_of = THIS }
-					MHR = { exists = no }
-				}
-			}
-			YEM = { exists = no }
-		}
-		
-		effect = {
-			set_global_flag = created_aden_protectorate
-			badboy = -3
-			prestige = 10
-			any_country = {
-				limit = {
-					OR = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-					exists = yes
-					OR = {
-						tag = KTH
-						tag = LHJ
-						tag = FDL
-						tag = MHR
-					}
-					ai = yes
-				}
-				annex_to = THIS
-			}
-			LHJ = { all_core = { add_core = YEM remove_core = LHJ } }
-			FDL = { all_core = { add_core = YEM remove_core = FDL } }
-			KTH = { all_core = { add_core = YEM remove_core = KTH } }
-			MHR = { all_core = { add_core = YEM remove_core = MHR } }
-			1412 = { remove_core = NYE }
-			any_owned = { limit = { is_core = YEM } secede_province = YEM }
-			create_vassal = YEM
-			diplomatic_influence = { who = YEM value = 400 }
-			relation = { who = YEM value = 400 }
-			YEM = {
-				capital = 1176
-				money = 10000
-				research_points = 6000
-				government = absolute_monarchy
-				1412 = { secede_province = THIS }
-				tech_school = unciv_tech_school
-			}
-			random_owned = {
-				limit = { owner = { primary_culture = british } }
-				YEM = { 
-					government = colonial_company 
-					military_reform = yes_foreign_weapons
-					military_reform = yes_foreign_officers
-					military_reform = yes_foreign_naval_officers
-					military_reform = yes_foreign_artillery
-				}
-			}
-			random_owned = { limit = { exists = NEJ } owner = { diplomatic_influence = { who = NEJ value = 25 } } }
-			random_owned = { limit = { exists = HAL } owner = { diplomatic_influence = { who = HAL value = 25 } } }
-			random_owned = { limit = { exists = BHR } owner = { diplomatic_influence = { who = BHR value = 25 } } }
-			random_owned = { limit = { exists = QAT } owner = { diplomatic_influence = { who = QAT value = 25 } } }
-			random_owned = { limit = { exists = ABU } owner = { diplomatic_influence = { who = ABU value = 25 } } }
-			random_owned = { limit = { exists = KWT } owner = { diplomatic_influence = { who = KWT value = 25 } } }
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
+#	aden_protectorate = {
+#		picture = aden_protectorate
+#		potential = {
+#			NOT = { is_culture_group = arab }
+#			OR = {
+#				any_owned_province = { is_core = LHJ }
+#				any_owned_province = { is_core = FDL }
+#				any_owned_province = { is_core = KTH }
+#				any_owned_province = { is_core = MHR }
+#				is_sphere_leader_of = LHJ
+#				is_sphere_leader_of = FDL
+#				is_sphere_leader_of = KTH
+#				is_sphere_leader_of = MHR
+#			}
+#			NOT = { has_global_flag = created_aden_protectorate }
+#		}
+#		
+#		allow = {
+#			war = no
+#			1412 = { 
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#					owner = { vassal_of = THIS }
+#				}
+#			}
+#			1173 = {
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#					owner = { vassal_of = THIS }
+#				}
+#			}
+#			1175 = {
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#					owner = { vassal_of = THIS }
+#				}
+#			}
+#			1176 = {
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#					owner = { vassal_of = THIS }
+#				}
+#			}
+#			1177 = {
+#				OR = {
+#					owned_by = THIS
+#					owner = { in_sphere = THIS }
+#					owner = { vassal_of = THIS }
+#				}
+#			}
+#			YEM = { exists = no }
+#		}
+#		
+#		effect = {
+#			set_global_flag = created_aden_protectorate
+#			badboy = -3
+#			prestige = 10
+#			any_country = {
+#				limit = {
+#					OR = {
+#						in_sphere = THIS
+#						vassal_of = THIS
+#					}
+#					exists = yes
+#					OR = {
+#						tag = KTH
+#						tag = LHJ
+#						tag = FDL
+#						tag = MHR
+#					}
+#					ai = yes
+#				}
+#				annex_to = THIS
+#			}
+#			LHJ = { all_core = { add_core = YEM remove_core = LHJ } }
+#			FDL = { all_core = { add_core = YEM remove_core = FDL } }
+#			KTH = { all_core = { add_core = YEM remove_core = KTH } }
+#			MHR = { all_core = { add_core = YEM remove_core = MHR } }
+#			1412 = { remove_core = NYE }
+#			any_owned = { limit = { is_core = YEM } secede_province = YEM }
+#			create_vassal = YEM
+#			diplomatic_influence = { who = YEM value = 400 }
+#			relation = { who = YEM value = 400 }
+#			YEM = {
+#				capital = 1412
+#				money = 10000
+#				research_points = 6000
+#				government = absolute_monarchy
+#				tech_school = unciv_tech_school
+#			}
+#			random_owned = {
+#				limit = { owner = { primary_culture = british } }
+#				YEM = { 
+#					government = colonial_company 
+#					military_reform = yes_foreign_weapons
+#					military_reform = yes_foreign_officers
+#					military_reform = yes_foreign_naval_officers
+#					military_reform = yes_foreign_artillery
+#				}
+#			}
+#			random_owned = { limit = { exists = NEJ } owner = { diplomatic_influence = { who = NEJ value = 25 } } }
+#			random_owned = { limit = { exists = HAL } owner = { diplomatic_influence = { who = HAL value = 25 } } }
+#			random_owned = { limit = { exists = BHR } owner = { diplomatic_influence = { who = BHR value = 25 } } }
+#			random_owned = { limit = { exists = QAT } owner = { diplomatic_influence = { who = QAT value = 25 } } }
+#			random_owned = { limit = { exists = ABU } owner = { diplomatic_influence = { who = ABU value = 25 } } }
+#			random_owned = { limit = { exists = KWT } owner = { diplomatic_influence = { who = KWT value = 25 } } }
+#		}
+#		
+#		ai_will_do = { factor = 1 }
+#	}
+#	
 	gold_coast_treaty = {
 		picture = treaty_signing
 		potential = {

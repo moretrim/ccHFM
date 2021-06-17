@@ -2423,61 +2423,61 @@ country_event = {
 		}
 	}
 }
-
-
-country_event = {
-	id = 36967
-	title = "EVTNAME36967" #United Kingdom Seizes Aden!
-	desc = "EVTDESC36967"
-	picture = "uk_seizes_aden"
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ENG
-		war = no
-		NOT = { owns = 1412 }
-		year = 1839
-		LHJ = { exists = yes ai = yes }
-	}
-			
-	mean_time_to_happen = { months = 1 }
-	
-	option = {
-		name = "EVT36967OPTA"
-		badboy = 1
-		relation = { who = LHJ value = -400 }
-		diplomatic_influence = { who = LHJ value = -400 }
-		 casus_belli ={
-			target = LHJ
-			type = establish_protectorate_casus_belli
-			months = 50	
-		}
-		ai_chance = {
-			factor = 0.01
-			modifier = { factor = 100 war = yes }
-		}
-	}
-		
-	option = {
-		name = "EVT36967OPTB"
-		badboy = 1
-		relation = { who = LHJ value = -400 }
-		diplomatic_influence = { who = LHJ value = -400 }
-		casus_belli = { target = LHJ type = conquest_any months = 36 }
-		 war = {
-			target = LHJ
-			attacker_goal = { casus_belli = conquest_any }
-			defender_goal = { casus_belli = humiliate }
-			call_ally = no
-		}
-		random_country = { limit = { neighbour = LHJ NOT = { alliance_with = LHJ } } ENG = { military_access = THIS } }
-		ai_chance = {
-			factor = 0.99
-			modifier = { factor = 0 war = yes }
-		}
-	}
-}
+#
+#
+#country_event = {
+#	id = 36967
+#	title = "EVTNAME36967" #United Kingdom Seizes Aden!
+#	desc = "EVTDESC36967"
+#	picture = "uk_seizes_aden"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = ENG
+#		war = no
+#		NOT = { owns = 1412 }
+#		year = 1839
+#		LHJ = { exists = yes ai = yes }
+#	}
+#			
+#	mean_time_to_happen = { months = 1 }
+#	
+#	option = {
+#		name = "EVT36967OPTA"
+#		badboy = 1
+#		relation = { who = LHJ value = -400 }
+#		diplomatic_influence = { who = LHJ value = -400 }
+#		 casus_belli ={
+#			target = LHJ
+#			type = establish_protectorate_casus_belli
+#			months = 50	
+#		}
+#		ai_chance = {
+#			factor = 0.01
+#			modifier = { factor = 100 war = yes }
+#		}
+#	}
+#		
+#	option = {
+#		name = "EVT36967OPTB"
+#		badboy = 1
+#		relation = { who = LHJ value = -400 }
+#		diplomatic_influence = { who = LHJ value = -400 }
+#		casus_belli = { target = LHJ type = conquest_any months = 36 }
+#		 war = {
+#			target = LHJ
+#			attacker_goal = { casus_belli = conquest_any }
+#			defender_goal = { casus_belli = humiliate }
+#			call_ally = no
+#		}
+#		random_country = { limit = { neighbour = LHJ NOT = { alliance_with = LHJ } } ENG = { military_access = THIS } }
+#		ai_chance = {
+#			factor = 0.99
+#			modifier = { factor = 0 war = yes }
+#		}
+#	}
+#}
 	
 country_event = {
 	id = 3697000
