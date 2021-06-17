@@ -1,0 +1,644 @@
+political_decisions = {
+
+	cch.punish-fadhli = {
+		picture = cch.fadhli-sultan-hussein
+		potential = {
+			year = 1866
+			civilized = yes
+			is_greater_power = yes
+			FDL = {
+				civilized = no
+				owns = 1176                                     #Bayda
+				exists = yes
+				is_vassal = no
+				OR = { 
+					part_of_sphere = no
+					in_sphere = THIS
+				}
+				NOT = { has_country_flag = cch.fadhli-punished }
+				NOT = { owns = 1412 }
+			}
+			OR = {
+				owns = 1412                                     #Aden
+				1412 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1412 = {
+				has_province_modifier = cch.fadhli-raids
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+			NOT = { truce_with = FDL }
+		}
+		
+		effect = {
+			FDL = {
+				add_casus_belli = {
+					target = THIS
+					type = add_to_sphere
+					months = 12
+				}
+			}
+			FDL = {
+				set_country_flag = cch.fadhli-punished
+				country_event = { id = 300022 days = 0 }
+			}
+			# avoid ahistorical invasion of allied Nejd
+			FDL = { leave_alliance = NEJ }
+			war = {
+				target = FDL
+				attacker_goal = { casus_belli = add_to_sphere }
+				call_ally = no
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	cch.nice-fadhli = {
+		picture = cch.fadhli-sultan-hussein
+		potential = {
+			tag = FDL
+			OR = {
+				owns = 1176
+				civilized = no
+			}
+			1412 = {
+				has_province_modifier = cch.fadhli-raids
+			}
+		}
+		
+		allow = {
+			OR = {
+				civilization_progress = 0.5
+				civilized = yes
+			}
+			war = no
+		}
+		
+		effect = {
+			prestige = -5
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+			1412 = {
+				remove_province_modifier = cch.fadhli-raids
+			}
+			FDL = {
+				remove_country_modifier = cch.raiding-aden
+			}
+			random_country = {
+				limit = {
+					is_sphere_leader_of = FDL
+				}
+				relation = {
+					who = FDL value = 300
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 10
+				NOT = { military_score = 1 }
+			}
+		}
+	}
+	
+	cch.offer-informal-protection-yemeni = {
+		picture = cch.lahej-sultanate-palace
+		potential = {
+			NOT = {
+				has_country_flag = cch.pestered-yemen
+				has_global_flag = created_aden_protectorate
+			}
+			is_greater_power = yes
+			OR = { 
+				owns = 1412
+				1412 = {
+					owner = { in_sphere = THIS }
+				}
+			}
+			OR = { 
+				1176 = {                                     #Bayda
+					owner = {
+						civilized = no
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							tag = YEM
+						}
+					}
+				}
+				1175 = {                                     #Ghayda
+					owner = {
+						civilized = no
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							tag = YEM
+						}
+					}
+				}
+				1173 = {                                     #Mukalla
+					owner = {
+						civilized = no
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							tag = YEM
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			has_global_flag = suez_canal_built
+			OR = {
+				NYE = {
+					vassal_of = TUR
+				}
+				TUR = {
+					owns = 1178    #Sana'a
+				}
+			}
+			OR = {
+				1176 = {
+					owner = {
+						OR = { 
+							part_of_sphere = no
+							in_sphere = THIS
+						}
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							truce_with = THIS
+						}
+					}
+				}
+			}
+			OR = {
+				1173 = {
+					owner = {
+						OR = { 
+							part_of_sphere = no
+							in_sphere = THIS
+						}
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							truce_with = THIS
+						}
+					}
+				}
+				1175 = {
+					owner = {
+						OR = { 
+							part_of_sphere = no
+							in_sphere = THIS
+						}
+						NOT = {
+							has_country_flag = cch.accepted-yemen
+							has_country_flag = cch.rejected-yemen
+							truce_with = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = cch.pestered-yemen
+			set_country_flag = cch.attempted-yemen
+			1173 = {
+				owner = {
+					set_country_flag = cch.attempted-yemen
+				}
+			}
+			1175 = {
+				owner = {
+					set_country_flag = cch.attempted-yemen
+				}
+			}
+			1176 = {
+				owner = {
+					set_country_flag = cch.attempted-yemen
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	cch.socotra-purchase = {
+		picture = cch.socotra-local
+		potential = {
+			NOT = {
+				has_country_flag = cch.tried-socotra-purchase
+			}
+			civilized = yes
+			NOT = {
+				owns = 1412
+				1412 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			THIS = { 
+				OR = {
+					capital_scope = { continent = europe }
+					capital_scope = { continent = north_america }
+					capital_scope = { continent = south_america }
+				}
+			}
+			OR = {
+				owns = 1297                                     #Bombay
+				1297 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1177 = {                                     #Socotra
+				owner = {
+					civilized = no
+					OR = {
+						is_vassal = NO
+						vassal_of = THIS
+					}
+				}
+			}
+			year = 1840
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			money = 4000
+			year = 1845
+		}
+		
+		effect {
+			set_country_flag = cch.tried-socotra-purchase
+			prestige = 100
+			random_country = {
+				limit = {
+					owns = 1177
+					civilized = no
+				}
+				country_event = { id = 300015 days = 0 }
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	cch.finalize-aden-protectorate = {
+		picture = aden_protectorate
+		potential = {
+			NOT = { has_global_flag = created_aden_protectorate }
+			has_country_flag = cch.attempted-yemen
+			OR = {
+				LHJ = { civilized = no }
+				LHJ = { exists = no }
+			}
+			OR = {
+				FDL = { civilized = no }
+				FDL = { exists = no }
+			}
+			YEM = { exists = no }
+		}
+		
+		allow = {
+			year = 1888
+			war = no
+			LHJ = {
+				OR = {
+					war = no
+					exists = no
+				}
+			}
+			FDL = {
+				OR = {
+					war = no
+					exists = no
+				}
+			}
+			MHR = {
+				OR = {
+					war = no
+					exists = no
+				}
+			}
+			KTH = {
+				OR = {
+					war = no
+					exists = no
+				}
+			}
+			OR = { 
+				1412 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+						is_culture_group = arab
+					}
+				}
+				THIS = { OWNS = 1412 }
+			}
+			OR = {
+				1176 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+						is_culture_group = arab
+					}
+				}
+				THIS = { OWNS = 1176 }
+			}
+		}
+		
+		effect = {
+			set_global_flag = created_aden_protectorate
+			clear_country_flag = cch.attempted-yemen
+			badboy = -3
+			prestige = 10
+			1412 = {
+				secede_province = THIS
+			}
+			1176 = {
+				secede_province = THIS
+			}
+			any_country = {
+				limit = {
+					exists = yes
+					has_country_flag = cch.accepted-yemen
+					ai = yes
+					OR = {
+						tag = KTH
+						tag = MHR
+					}
+				}
+				annex_to = THIS
+			}
+			LHJ = { all_core = { add_core = YEM } }
+			FDL = { all_core = { add_core = YEM } }
+			KTH = { all_core = { add_core = YEM } }
+			MHR = { all_core = { add_core = YEM } }
+			any_owned = { limit = { is_core = YEM } secede_province = YEM }
+			create_vassal = YEM
+			1412 = {
+				secede_province = THIS
+			}
+			diplomatic_influence = { who = YEM value = 400 }
+			relation = { who = YEM value = 400 }
+			YEM = {
+				capital = 1176
+				money = 10000
+				research_points = 6000
+				tech_school = unciv_tech_school
+				military_reform = yes_foreign_weapons
+				military_reform = yes_foreign_officers
+				military_reform = yes_foreign_naval_officers
+				military_reform = yes_foreign_artillery
+			}
+			KTH = { clear_country_flag = cch.accepted-yemen }
+			MHR = { clear_country_flag = cch.accepted-yemen }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	cch.petition-for-yemen {
+		picture = aden_protectorate
+		potential = {
+			is_vassal = no
+			OR = {
+				tag = KTH
+				tag = MHR
+			}
+			ai = yes
+			YEM = { exists = yes }
+		}
+		
+		allow = {
+			war = no
+			civilized = no
+			year = 1895
+		}
+		
+		effect = {
+			YEM = { country_event = { id = 300020 days = 0 } }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				factor = 0
+				stronger_army_than = YEM
+			}
+			modifier = {
+				factor = 0
+				YEM = {
+					average_militancy = 6
+				}
+			}
+		}
+	}
+	
+	cch.yemen-take-this = {
+		picture = cch.lahej-sultanate-palace
+		potential = {
+			1412 = {
+				owner = {
+					in_sphere = THIS
+					civilized = yes
+					is_culture_group = arab
+				}
+			}
+			OR = {
+				LHJ = { owns = 1412 }
+				FDL = { owns = 1412 }
+				KTH = { owns = 1412 }
+				MHR = { owns = 1412 }
+			}
+			OR = {
+				1173 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+					}
+				}
+				1175 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+					}
+				}
+				1176 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+					}
+				}
+				1177 = {
+					owner = {
+						civilized = no
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		allow = {
+			1412 = {
+				owner = {
+					in_sphere = THIS
+					civilized = yes
+					is_culture_group = arab
+					alliance_with = THIS
+					war = no
+				}
+			}
+			war = no
+			1176 = {
+				owner = {
+					war = no
+				}
+			}
+			1177 = {
+				owner = {
+					war = no
+				}
+			}
+			1173 = {
+				owner = {
+					war = no
+				}
+			}
+			1175 = {
+				owner = {
+					war = no
+				}
+			}
+		}
+		
+		effect = {
+			1412 = {
+				owner = {
+					country_event = { id = 300021 days = 0 }
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	cch.greater-yemen = {
+		picture = cch.greater-yemen
+		potential = {
+			OR = {
+				tag = YEM
+				tag = NYE
+				tag = LHJ
+				tag = FDL
+				tag = KTH
+				tag = MHR
+			}
+			NOT = {
+				has_country_flag = cch.greater-yemen
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				AND = {
+					owns = 1412
+					owns = 1173
+					owns = 1175
+					owns = 1176
+					owns = 1177
+					owns = 1178
+				}
+			}
+			war = no
+		}
+		
+		effect = {     #southwest Sharurah should be part of this, but the province is too large in game
+			set_country_flag = cch.greater-yemen
+			add_accepted_culture = mashriqi
+			add_accepted_culture = bedouin
+			LHJ = { all_core = { add_core = THIS }}
+			YEM = { all_core = { add_core = THIS }}
+			NYE = { all_core = { add_core = THIS }}
+			HDJ = { all_core = { add_core = THIS }}
+			1174 = { add_core = THIS }      #Omani provinces but not Khasab
+			1172 = { add_core = THIS }
+			1171 = { add_core = THIS }
+			1170 = { add_core = THIS }
+			1166 = { add_core = THIS }
+			1169 = { add_core = THIS }
+		}
+	}
+	
+	cch.puppet-zaydi = {
+		picture = map_arabia
+		
+		potential = {
+			tag = TUR
+			war = no
+			is_disarmed= no
+			TUR = {
+				NOT = {
+					has_country_flag = cch.puppet-zaydi
+					has_country_flag = ottomans_to_turks
+				}
+			}
+			NOT = { has_global_flag = abandoned_holy_land }
+		}
+		
+		allow = {
+			has_global_flag = suez_canal_built
+			NYE = {
+				exists = yes
+				is_vassal = no
+				NOT = {
+					number_of_states = 3
+					part_of_sphere = yes
+				}
+			}
+		}
+		
+		effect = {
+			NYE = {
+				add_casus_belli = {
+					target = TUR
+					type = make_puppet
+					months = 100
+				}
+			}
+			war = {
+				target = NYE
+				attacker_goal = {
+					casus_belli = make_puppet
+				}
+			}
+			TUR = {
+				set_country_flag = cch.puppet-zaydi
+			}
+		}
+	}
+}

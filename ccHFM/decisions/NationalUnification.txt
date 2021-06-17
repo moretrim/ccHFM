@@ -1537,12 +1537,6 @@ political_decisions = {
 			FDL = { all_core = { add_core = YEM } }
 			KTH = { all_core = { add_core = YEM } }
 			MHR = { all_core = { add_core = YEM } }
-			any_owned = {
-				remove_core = LHJ
-				remove_core = FDL
-				remove_core = KTH
-				remove_core = MHR
-			}
 			
 			change_tag = YEM
 		}
