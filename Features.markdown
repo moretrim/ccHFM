@@ -53,7 +53,7 @@ Interface
       the post for defence, he should not be employed on the offence due to a disappointing -2
       attack
 
-    </figcaption
+    </figcaption>
   </figure>
 
   The leader stat summary consists of the following, with appropriate colour coding:
