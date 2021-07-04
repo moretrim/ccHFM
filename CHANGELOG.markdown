@@ -10,6 +10,10 @@ Releases are save compatible across patch releases for a given minor version. Fo
 
 #### 1.1.0-dev (in development)
 
+- Allow AI Deseret and AI United States to keep a theocratic government ([#109]).
+
+[#109]: https://github.com/moretrim/ccHFM/pull/109
+
 #### 1.0.0
 
 The first public release, it is based on [HFM 1.27I][]. It is **not** backward compatible with it.
