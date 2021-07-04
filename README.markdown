@@ -56,9 +56,13 @@ to your needs:
 [changelog]: CHANGELOG.markdown
 [editorial]: Editorial.markdown
 
-References
-----------
+Other resources
+---------------
 
-Having issues running Victoria II? Try this **[Troubleshooting Guide][]**.
+|  |  |
+|-:|:-|
+**[Troubleshooting Guide][]** | Having issues running Victoria II? Try our guide!
+**[The Country Workshop][]** | Collection of odd alternative starts and fantasy countries designed on a whip, provided as a submod.
 
 [Troubleshooting Guide]: https://github.com/moretrim/victoria2-troubleshooting
+[The Country Workshop]: https://github.com/moretrim/country-workshop
