@@ -2,8 +2,14 @@
 # Wars #;;;;;;;;;;;;;;
 NORMAL_WAR_CONQUEST_NAME;$ORDER$$FIRST$ Conquest of $SECOND_COUNTRY$;$ORDER$conquête $FIRST$ de $SECOND_COUNTRY$;$ORDER$$FIRST$ Eroberung von $SECOND_COUNTRY$;;$ORDER$$FIRST$ Conquista de $SECOND_COUNTRY$;;;;;;;;;
 AGRESSION_cch.call_allies_cb.name;$ORDER$$FIRST$ Call to Arms;;;;;;;;;;;;;
+NORMAL_cch.restore-america-annex.name;The $ORDER$$FIRST$-$SECOND$ War of American Reunification;;;;;;;;;;;;;
+AGRESSION_cch.restore-america-annex.name;The $ORDER$$FIRST$-$SECOND$ War of American Reunification;;;;;;;;;;;;;
 # Casus belli #;;;;;;;;;;;;;;
 call_allies_cb;Call Allies to Arms;;;;;;;;;;;;;
 call_allies_cb_desc;Call allies to join ongoing wars;;;;;;;;;;;;;
 call_allies_cb_setup;Call allies to join your ongoing wars;;;;;;;;;;;;;
 call_allies_cb_short;Call allies to join ongoing wars;;;;;;;;;;;;;
+cch.restore-america-annex;Restore American Order;;;;;;;;;;;;;
+cch.restore-america-annex_desc;Annex an §!American country§! to further the restoration of the §YUnion§!;;;;;;;;;;;;;
+cch.restore-america-annex_setup;Annex $RECIPIENT$ to restore the §YUnion§!;;;;;;;;;;;;;
+cch.restore-america-annex_short;Annex $RECIPIENT$;;;;;;;;;;;;;

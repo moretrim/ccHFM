@@ -65,11 +65,12 @@ acquire_all_cores
 acquire_core_state
 restore_austrian_empire
 colonial_reconquest_cb
-restore_america
 claim_holy_land
 restore_british_raj
+restore_america
 unification_casus_belli
 civil_war
+cch.restore-america-annex
 unification_annex_casus_belli
 annex_core_country
 unification_add_to_sphere
@@ -105,12 +106,15 @@ cut_down_to_size_boxer
 cut_down_to_size_taiping
 cb_sykes_picot
 cut_down_to_size_ottoman
+country-workshop.hanseatic-reconquest
+country-workshop.hanseatic-hegemony
 humiliate
 place_in_the_sun
 dismantle_forts
 china_acquire_state
 acquire_state
 acquire_any_state
+country-workshop.hanseatic-restoration
 acquire_substate_region
 acquire_substate_core_region
 colonial_conquest
@@ -743,89 +747,287 @@ colonial_reconquest_cb = {
 }
 
 restore_america = {
-	sprite_index = 21
-	is_triggered_only = yes
-	months = 12
-	
-	construction_speed = 0.8
+    sprite_index = 21
+    is_triggered_only = yes
+    months = 12
 
-	badboy_factor = 0
-	prestige_factor = 0
-	peace_cost_factor = 0.7
-	penalty_factor = 1
-	always = yes
+    construction_speed = 0.8
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
+    badboy_factor = 0
+    prestige_factor = 0
+    peace_cost_factor = 0.7
+    penalty_factor = 1
+    always = yes
 
-	can_use = {
-		war_policy = jingoism
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			OR = {
-				primary_culture = yankee
-				primary_culture = dixie
-				primary_culture = texan
-			}
-			NOT = { tag = USA }
-		}
-		OR = {
-			THIS = { has_global_flag = second_american_civil_war }
-			USA = { exists = no }
-		}
-		OR = {
-			THIS = { ai = no }
-			THIS = {
-				OR = {
-					war_policy = pro_military
-					war_policy = jingoism
-				}
-			}
-			war_with = THIS
-		}
-		is_vassal = no
-		neighbour = THIS
-		any_owned_province = {
-			OR = {
-				is_core = USA
-				is_core = CSA
-				is_core = FSA
-			}
-		}
-		NOT = { in_sphere = THIS }
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
-	}
-	
-	allowed_states = {
-		any_owned_province = {
-			OR = {
-				is_core = USA
-				is_core = CSA
-				is_core = FSA
-			}
-		}
-	}
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 48
 
-	po_demand_state = yes
-	
-	war_name = WAR_RESTORE_AMERICA_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        NOT = { truce_with = THIS }
+        is_vassal = no
+
+        THIS = {
+            is_culture_group = american_cultures
+            NOT = { tag = USA }
+        }
+
+        OR = {
+            has_global_flag = second_american_civil_war
+            USA = { exists = no }
+        }
+
+        OR = {
+            NOT = { has_global_flag = country-workshop.FSA-enabled }
+            AND = {
+                THIS = {
+                    check_variable = {
+                        which = country-workshop.american-restoration-CBs
+                        value = 1
+                    }
+                }
+            }
+            THIS = { mass_politics = 1 }
+        }
+
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = {
+                OR = {
+                    war_policy = pro_military
+                    war_policy = jingoism
+                }
+            }
+        }
+
+        number_of_states = 2
+        OR = {
+            AND = {
+                THIS = { any_owned_province = { port = yes } }
+                any_owned_province = { port = yes }
+            }
+            neighbour = THIS
+            war_with = THIS
+            any_neighbor_country = { OR = { vassal_of = THIS in_sphere = THIS } }
+        }
+        any_owned_province = {
+            OR = {
+                is_core = USA
+                is_core = CSA
+                is_core = FSA
+            }
+            # defer to acquire_core_state otherwise
+            NOT = { is_core = THIS }
+        }
+
+        NOT = { in_sphere = THIS }
+        NOT = { has_country_modifier = neutrality }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = neutrality } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = no_more_war } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+    }
+
+    allowed_states = {
+        any_owned_province = {
+            OR = {
+                is_core = USA
+                is_core = CSA
+                is_core = FSA
+            }
+            # defer to acquire_core_state otherwise
+            NOT = { is_core = THIS }
+        }
+        OR = {
+            AND = {
+                THIS = { any_owned_province = { port = yes } }
+                any_owned_province = { port = yes }
+            }
+            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+        }
+
+        #AI will not grab cores of allies/spherelings
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                any_owned_province = {
+                    any_core = {
+                        exists = yes
+                        OR = {
+                            alliance_with = THIS
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    po_demand_state = yes
+
+    war_name = WAR_RESTORE_AMERICA_NAME
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+
+        random_owned = {
+            limit = {
+                has_global_flag = country-workshop.FSA-enabled
+                mass_politics = 0
+            }
+
+            owner = {
+                change_variable = {
+                    which = country-workshop.american-restoration-CBs
+                    value = -1
+                }
+            }
+        }
+    }
+}
+
+cch.restore-america-annex = {
+    sprite_index = 5
+    is_triggered_only = yes
+    months = 12
+
+    construction_speed = 0.8
+
+    badboy_factor = 0
+    prestige_factor = 0
+    peace_cost_factor = 0.7
+    penalty_factor = 1
+    always = yes
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 48
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        NOT = { truce_with = THIS }
+        is_vassal = no
+
+        THIS = {
+            is_culture_group = american_cultures
+            NOT = { tag = USA }
+        }
+
+        OR = {
+            has_global_flag = second_american_civil_war
+            USA = { exists = no }
+        }
+
+        OR = {
+            NOT = { has_global_flag = country-workshop.FSA-enabled }
+            AND = {
+                THIS = {
+                    check_variable = {
+                        which = country-workshop.american-restoration-CBs
+                        value = 1
+                    }
+                }
+            }
+            THIS = { mass_politics = 1 }
+        }
+
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = {
+                OR = {
+                    war_policy = pro_military
+                    war_policy = jingoism
+                }
+            }
+        }
+
+        NOT = { number_of_states = 2 }
+        OR = {
+            AND = {
+                THIS = { any_owned_province = { port = yes } }
+                any_owned_province = { port = yes }
+            }
+            neighbour = THIS
+            war_with = THIS
+            any_neighbor_country = { OR = { vassal_of = THIS in_sphere = THIS } }
+        }
+        any_owned_province = {
+            OR = {
+                is_core = USA
+                is_core = CSA
+                is_core = FSA
+            }
+        }
+        # defer to annex_core_country otherwise
+        any_owned_province = {
+            NOT = { is_core = THIS }
+        }
+
+        NOT = { in_sphere = THIS }
+        NOT = { has_country_modifier = neutrality }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = neutrality } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = no_more_war } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+    }
+
+    po_annex = yes
+
+    war_name = cch.restore-america-annex.name
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+
+        random_owned = {
+            limit = {
+                has_global_flag = country-workshop.FSA-enabled
+                mass_politics = 0
+            }
+
+            owner = {
+                change_variable = {
+                    which = country-workshop.american-restoration-CBs
+                    value = -1
+                }
+            }
+        }
+    }
 }
 
 claim_holy_land = {
@@ -7125,3 +7327,560 @@ war_reparations = {
 	}
 }
 
+# Hanseatic port conquest
+country-workshop.hanseatic-reconquest = {
+    sprite_index      = 25
+    is_triggered_only = yes
+    months            = 12
+    crisis            = no
+
+    badboy_factor     = 0
+    prestige_factor   = 2
+    peace_cost_factor = 0.25 # quarter cost, because this (more or less) targets one province
+    penalty_factor    = 1
+    always            = yes
+
+    break_truce_prestige_factor  = 1
+    break_truce_infamy_factor    = 1
+    break_truce_militancy_factor = 1
+    truce_months                 = 108
+
+    good_relation_prestige_factor  = 1
+    good_relation_infamy_factor    = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        ## political rules
+        NOT = { truce_with = THIS }
+        is_vassal = no
+        NOT = { in_sphere = THIS }
+        NOT = { has_country_modifier = neutrality }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = neutrality } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = no_more_war } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+
+        ## geographical rules
+        # simplified because the Hanseatic ports are, well, ports
+        THIS = { any_owned_province = { port = yes } }
+
+        ## AI declaration trends
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = { government = fascist_dictatorship }
+            THIS = { government = proletarian_dictatorship }
+            NOT = { relation = { who = THIS value = 0 } }
+        }
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = {
+                OR = {
+                    war_policy = pro_military
+                    war_policy = jingoism
+                }
+            }
+        }
+
+        ## specific rules
+
+        THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+        # annex otherwise
+
+        OR = {
+            THIS = { NOT = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 } }
+
+            any_owned_province = {
+                NOT = { province_id = 353 } # Oesel
+                NOT = { province_id = 354 } # Riga
+            }
+        }
+
+        OR = {
+            THIS = { NOT = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 } }
+
+            any_owned_province = {
+                NOT = { province_id = 353 } # Oesel
+                NOT = { province_id = 354 } # Riga
+
+                NOT = { province_id = 695 } # Koenigsberg
+                NOT = { province_id = 690 } # Danzig
+                NOT = { province_id = 530 } # Luebeck
+                NOT = { province_id = 528 } # Hamburg
+                NOT = { province_id = 539 } # Bremen
+            }
+        }
+
+        OR = {
+            THIS = { NOT = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 } }
+
+            any_owned_province = {
+                NOT = { province_id = 353 } # Oesel
+                NOT = { province_id = 354 } # Riga
+
+                NOT = { province_id = 695 } # Koenigsberg
+                NOT = { province_id = 690 } # Danzig
+                NOT = { province_id = 530 } # Luebeck
+                NOT = { province_id = 528 } # Hamburg
+                NOT = { province_id = 539 } # Bremen
+
+                NOT = { province_id = 996 } # Luga
+                NOT = { province_id = 309 } # Bergen
+                NOT = { province_id = 388 } # Bruges
+                NOT = { province_id = 292 } # Ipswitch
+            }
+        }
+
+        # Hanseatic targets
+        OR = {
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+                OR = {
+                    owns = 353 # Oesel
+                    owns = 354 # Riga
+                }
+            }
+
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+
+                OR = {
+                    owns = 695 # Koenigsberg
+                    owns = 690 # Danzig
+                    owns = 530 # Luebeck
+                    owns = 528 # Hamburg
+                    owns = 539 # Bremen
+                }
+            }
+
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+
+                OR = {
+                    owns = 996 # Luga
+                    owns = 309 # Bergen
+                    owns = 388 # Bruges
+                    owns = 292 # Ipswitch
+                }
+            }
+        }
+    }
+
+    allowed_countries = {
+        tag = FROM
+    }
+
+    allowed_states = {
+        any_owned_province = {
+            OR = {
+                AND = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+                    OR = {
+                        province_id = 353 # Oesel
+                        province_id = 354 # Riga
+                    }
+                }
+
+                AND = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+
+                    OR = {
+                        province_id = 695 # Koenigsberg
+                        province_id = 690 # Danzig
+                        province_id = 530 # Luebeck
+                        province_id = 528 # Hamburg
+                        province_id = 539 # Bremen
+                    }
+                }
+
+                AND = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+
+                    OR = {
+                        province_id = 996 # Luga
+                        province_id = 309 # Bergen
+                        province_id = 388 # Bruges
+                        province_id = 292 # Ipswitch
+                    }
+                }
+            }
+        }
+    }
+
+    po_reparations = yes
+    po_transfer_provinces = yes
+
+    war_name = country-workshop.hanseatic-reconquest-war
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    on_po_accepted = {
+        any_owned = {
+            limit = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+                OR = {
+                    province_id = 353 # Oesel
+                    province_id = 354 # Riga
+                }
+            }
+
+            secede_province = THIS
+        }
+
+        any_owned = {
+            limit = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+
+                OR = {
+                    province_id = 695 # Koenigsberg
+                    province_id = 690 # Danzig
+                    province_id = 530 # Luebeck
+                    province_id = 528 # Hamburg
+                    province_id = 539 # Bremen
+                }
+            }
+
+            secede_province = THIS
+        }
+
+        any_owned = {
+            limit = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+
+                OR = {
+                    province_id = 996 # Luga
+                    province_id = 309 # Bergen
+                    province_id = 388 # Bruges
+                    province_id = 292 # Ipswitch
+                }
+            }
+
+            secede_province = THIS
+        }
+    }
+}
+
+# Hanseatic port annexation
+country-workshop.hanseatic-restoration = {
+    sprite_index      = 25
+    is_triggered_only = yes
+    months            = 12
+    crisis            = no
+
+    badboy_factor     = 0
+    prestige_factor   = 5
+    peace_cost_factor = 1
+    penalty_factor    = 1
+    always            = yes
+
+    break_truce_prestige_factor  = 1
+    break_truce_infamy_factor    = 1
+    break_truce_militancy_factor = 1
+    truce_months                 = 108
+
+    good_relation_prestige_factor  = 1
+    good_relation_infamy_factor    = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        ## political rules
+        NOT = { truce_with = THIS }
+        is_vassal = no
+        NOT = { in_sphere = THIS }
+        NOT = { has_country_modifier = neutrality }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = neutrality } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = no_more_war } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+
+        ## geographical rules
+        # simplified because the Hanseatic ports are, well, ports
+        THIS = { any_owned_province = { port = yes } }
+
+        ## AI declaration trends
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = { government = fascist_dictatorship }
+            THIS = { government = proletarian_dictatorship }
+            NOT = { relation = { who = THIS value = 0 } }
+        }
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = {
+                OR = {
+                    war_policy = pro_military
+                    war_policy = jingoism
+                }
+            }
+        }
+
+        ## specific rules
+
+        THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+        # defer to core CBs otherwise
+        # (relies on the fact that no one state can contain two valid targets)
+        any_owned_province = {
+            NOT = { has_core = THIS }
+        }
+
+        # owns nothing but Hansa targets
+        NOT = {
+            any_owned_province = {
+                NOT = { province_id = 353 } # Oesel
+                NOT = { province_id = 354 } # Riga
+
+                NOT = { province_id = 695 } # Koenigsberg
+                NOT = { province_id = 690 } # Danzig
+                NOT = { province_id = 530 } # Luebeck
+                NOT = { province_id = 528 } # Hamburg
+                NOT = { province_id = 539 } # Bremen
+
+                NOT = { province_id = 996 } # Luga
+                NOT = { province_id = 309 } # Bergen
+                NOT = { province_id = 388 } # Bruges
+                NOT = { province_id = 292 } # Ipswitch
+            }
+        }
+
+        # Hanseatic targets
+
+        OR = {
+            THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+            NOT = {
+                owns = 353 # Oesel
+                owns = 354 # Riga
+            }
+        }
+
+        OR = {
+            THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+
+            NOT = {
+                owns = 695 # Koenigsberg
+                owns = 690 # Danzig
+                owns = 530 # Luebeck
+                owns = 528 # Hamburg
+                owns = 539 # Bremen
+            }
+        }
+
+        OR = {
+            THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+
+            NOT = {
+                owns = 996 # Luga
+                owns = 309 # Bergen
+                owns = 388 # Bruges
+                owns = 292 # Ipswitch
+            }
+        }
+    }
+
+    po_annex = yes
+
+    war_name = country-workshop.hanseatic-restoration-war
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+}
+
+# stealing all Hanseatic port from puppets
+country-workshop.hanseatic-hegemony = {
+    sprite_index      = 25
+    is_triggered_only = yes
+    months            = 12
+    crisis            = no
+
+    badboy_factor     = 0
+    prestige_factor   = 1
+    peace_cost_factor = 30 # more expensive and more prestigious reparations
+    penalty_factor    = 1
+    always            = yes
+
+    break_truce_prestige_factor  = 1
+    break_truce_infamy_factor    = 1
+    break_truce_militancy_factor = 1
+    truce_months                 = 108
+
+    good_relation_prestige_factor  = 1
+    good_relation_infamy_factor    = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        ## political rules
+        NOT = { truce_with = THIS }
+        is_vassal = no
+        NOT = { in_sphere = THIS }
+        NOT = { has_country_modifier = neutrality }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = neutrality } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = no_more_war } }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+
+        ## geographical rules
+        OR = {
+            AND = {
+                THIS = { any_owned_province = { port = yes } }
+                any_owned_province = { port = yes }
+            }
+            neighbour = THIS
+            war_with = THIS
+            any_neighbor_country = { OR = { vassal_of = THIS in_sphere = THIS } }
+        }
+
+        ## AI declaration trends
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = { government = fascist_dictatorship }
+            THIS = { government = proletarian_dictatorship }
+            NOT = { relation = { who = THIS value = 0 } }
+        }
+        OR = {
+            THIS = { ai = no }
+            war_with = THIS
+            THIS = {
+                OR = {
+                    war_policy = pro_military
+                    war_policy = jingoism
+                }
+            }
+        }
+
+        ## specific rules
+
+        num_of_vassals = 1
+
+        # Hanseatic targets
+        OR = {
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+                has_country_flag = country-workshop.hanseatic-reconquest-overlord0
+            }
+
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+                has_country_flag = country-workshop.hanseatic-reconquest-overlord2
+            }
+
+            AND = {
+                THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+                has_country_flag = country-workshop.hanseatic-reconquest-overlord3
+            }
+        }
+    }
+
+    po_reparations = yes
+
+    tws_battle_factor = 2.0
+
+    war_name = country-workshop.hanseatic-hegemony-war
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    on_po_accepted = {
+        set_country_flag = country-workshop.from
+        any_country = {
+            limit = {
+                exists = yes
+                is_vassal = yes
+                overlord = { has_country_flag = country-workshop.from }
+            }
+
+            any_owned = {
+                limit = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage0 }
+
+                    OR = {
+                        province_id = 353 # Oesel
+                        province_id = 354 # Riga
+                    }
+                }
+
+                secede_province = THIS
+            }
+
+            any_owned = {
+                limit = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage2 }
+
+                    OR = {
+                        province_id = 695 # Koenigsberg
+                        province_id = 690 # Danzig
+                        province_id = 530 # Luebeck
+                        province_id = 528 # Hamburg
+                        province_id = 539 # Bremen
+                    }
+                }
+
+                secede_province = THIS
+            }
+
+            any_owned = {
+                limit = {
+                    THIS = { has_country_flag = country-workshop.hanseatic-reconquest-stage3 }
+
+                    OR = {
+                        province_id = 996 # Luga
+                        province_id = 309 # Bergen
+                        province_id = 388 # Bruges
+                        province_id = 292 # Ipswitch
+                    }
+                }
+
+                secede_province = THIS
+            }
+        }
+        clr_country_flag = country-workshop.from
+    }
+}

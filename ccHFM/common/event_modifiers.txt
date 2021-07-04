@@ -3303,8 +3303,34 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
-# CCH
+## CCH
 
 cch.recent-call-to-arms = {
     icon = 15
+}
+
+## Country Workshop
+
+country-workshop.hanseatic-tooltip0 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-tooltip2 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-tooltip3 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-challenger = {
+    icon = 15
+
+    war_exhaustion = -0.01
 }

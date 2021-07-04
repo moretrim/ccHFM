@@ -11,6 +11,9 @@ Releases are save compatible across patch releases for a given minor version. Fo
 #### 1.1.0-dev (in development)
 
 - Allow AI Deseret and AI United States to keep a theocratic government ([#109]).
+- Normalise the *Restore America* CB as it had too many quirks and was incomplete in some respects.
+  It now behaves more closely to a unification CB (without the requirement of being a Great Power).
+  This normalisation includes providing a separate CB for annexation purposes.
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
 
