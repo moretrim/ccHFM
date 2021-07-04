@@ -6540,7 +6540,7 @@ call_allies_cb = {
 
 	po_remove_prestige = yes
 	
-	war_name = CALL_TO_ARMS_NAME
+	war_name = cch.call_allies_cb.name
 	
 	on_add = {
 	}
