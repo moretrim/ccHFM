@@ -15,6 +15,10 @@ Releases are save compatible across patch releases for a given minor version. Fo
 - Normalise the *Restore America* CB as it had too many quirks and was incomplete in some respects.
   It now behaves more closely to a unification CB (without the requirement of being a Great Power).
   This normalisation includes providing a separate CB for annexation purposes.
+- Only allow the *Revoke Kurdish Autonomy* decision to be taken after the conclusion of *the Rise of
+  Bedr Khan* chain. This prevents the Ottoman Empire wrongly returning Persian cores it might have
+  acquired through other means. In addition, the decision now requires 50% Westernisation progress
+  instead of 25% (this matches the unfinished 1.28 HFM branch).
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
 
