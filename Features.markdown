@@ -30,13 +30,11 @@ Interface
 
   <figure>
 
-    [![Leader selection screen][leader-selection-screen]][leader-selection-picture]
+    ![Leader selection screen][leader-selection-screen]
 
     [leader-selection-screen]:
       media/leader-selection.png?raw=true
       "Selecting a general for Austria’s third army from among many candidates"
-    [leader-selection-picture]:
-      media/leader-selection.png?raw=true
 
     <figcaption>
 
