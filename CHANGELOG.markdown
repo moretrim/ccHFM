@@ -19,6 +19,9 @@ Releases are save compatible across patch releases for a given minor version. Fo
   Bedr Khan* chain. This prevents the Ottoman Empire wrongly returning Persian cores it might have
   acquired through other means. In addition, the decision now requires 50% Westernisation progress
   instead of 25% (this matches the unfinished 1.28 HFM branch).
+- Correct the transfer of Natalia cores at the conclusion of *the Battle of Blood River*. This
+  ensures the country makes an appearance in most playthroughs, and makes it playable without having
+  to jump through too many hoops.
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
 

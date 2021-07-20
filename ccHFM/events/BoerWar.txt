@@ -126,6 +126,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		2112 = { change_province_name = "Ladysmith" secede_province = THIS  }
+		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
+	}
+	
 	option = {
 		name = "EVT98206OPTA"
 		prestige = 5
@@ -145,8 +150,6 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
-		2112 = { change_province_name = "Ladysmith" secede_province = THIS  }
-		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = { state_scope = { change_region_name = "Natal" } }
 		ai_chance = { factor = 100 }
 	}
@@ -170,8 +173,6 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
-		2112 = { change_province_name = "Ladysmith" secede_province = THIS }
-		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = {
 			state_scope = {
 				change_region_name = "Natal"
@@ -200,8 +201,6 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
-		2112 = { change_province_name = "Ladysmith" secede_province = THIS }
-		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = { state_scope = { change_region_name = "Natal" is_slave = yes } }
 		change_tag_no_core_switch = NAL
 		ai_chance = { factor = 0 }
