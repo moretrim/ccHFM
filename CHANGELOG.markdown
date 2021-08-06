@@ -22,8 +22,11 @@ Releases are save compatible across patch releases for a given minor version. Fo
 - Correct the transfer of Natalia cores at the conclusion of *the Battle of Blood River*. This
   ensures the country makes an appearance in most playthroughs, and makes it playable without having
   to jump through too many hoops.
+- Restore missing international migration attraction during the *Witwatersrand Gold Rush* (part of
+  [#121]).
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
+[#121]: https://github.com/moretrim/ccHFM/issues/121
 
 #### 1.0.0
 
