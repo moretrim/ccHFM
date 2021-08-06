@@ -62,7 +62,7 @@ Other resources
 |  |  |
 |-:|:-|
 **[Troubleshooting Guide][]** | Having issues running Victoria II? Try our guide!
-**[The Country Workshop][]** | Collection of odd alternative starts and fantasy countries designed on a whim, provided as a submod.
+**[The Country Workshop][]** | Collection of odd alternative starts and fantasy countries designed on a whim, provided as a submod
 
-[Troubleshooting Guide]: https://github.com/moretrim/victoria2-troubleshooting
-[The Country Workshop]: https://github.com/moretrim/country-workshop
+[Troubleshooting Guide]: https://github.com/moretrim/victoria2-troubleshooting#readme
+[The Country Workshop]: https://github.com/moretrim/country-workshop#readme
