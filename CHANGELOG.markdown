@@ -26,8 +26,10 @@ Releases are save compatible across patch releases for a given minor version. Fo
   [#121]).
 - Restrict British dominion events to the United Kingdom and England ([#119]).
 - Prevent *A Polish State* from targeting colonial countries ([#125]).
+- Neuchâtel will not be annexed unless Switzerland is already around to receive it ([#116]).
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
+[#116]: https://github.com/moretrim/ccHFM/issues/116
 [#119]: https://github.com/moretrim/ccHFM/issues/119
 [#121]: https://github.com/moretrim/ccHFM/issues/121
 [#125]: https://github.com/moretrim/ccHFM/issues/125

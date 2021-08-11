@@ -120,6 +120,9 @@ political_decisions = {
                 exists = yes
                 ai = yes
             }
+            SWI = {
+                exists = yes
+            }
         }
 
         allow = {
