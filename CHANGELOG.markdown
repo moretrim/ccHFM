@@ -24,9 +24,10 @@ Releases are save compatible across patch releases for a given minor version. Fo
   to jump through too many hoops.
 - Restore missing international migration attraction during the *Witwatersrand Gold Rush* (part of
   [#121]).
-- Restrict British dominion events to the United Kingdom and England.
+- Restrict British dominion events to the United Kingdom and England ([#119]).
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
+[#119]: https://github.com/moretrim/ccHFM/issues/119
 [#121]: https://github.com/moretrim/ccHFM/issues/121
 
 #### 1.0.0
