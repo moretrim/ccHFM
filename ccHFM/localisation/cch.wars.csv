@@ -1,10 +1,13 @@
 ### Header (CP-1252 autodetection: “‘quotes’ in quotes”, „größer”, «ŒUF? —DÉÇU…») ###;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
 # Wars #;;;;;;;;;;;;;;
-NORMAL_WAR_CONQUEST_NAME;$ORDER$$FIRST$ Conquest of $SECOND_COUNTRY$;$ORDER$conquête $FIRST$ de $SECOND_COUNTRY$;$ORDER$$FIRST$ Eroberung von $SECOND_COUNTRY$;;$ORDER$$FIRST$ Conquista de $SECOND_COUNTRY$;;;;;;;;;
 AGRESSION_cch.call_allies_cb.name;$ORDER$$FIRST$ Call to Arms;;;;;;;;;;;;;
 NORMAL_cch.restore-america-annex.name;The $ORDER$$FIRST$-$SECOND$ War of American Reunification;;;;;;;;;;;;;
 AGRESSION_cch.restore-america-annex.name;The $ORDER$$FIRST$-$SECOND$ War of American Reunification;;;;;;;;;;;;;
 # Casus belli #;;;;;;;;;;;;;;
+restore_democracy;Restore Democracy;;;;;;;;;;;;;
+restore_democracy_desc;Reinstate a §Yfriendly democracy§W in the country’s capital to prevent a “Domino Effect” and strangle the red threat in its cradle.;;;;;;;;;;;;;
+restore_democracy_short;Reinstate a friendly democracy in $RECIPIENT$;;;;;;;;;;;;;
+restore_democracy_setup;Reinstate a friendly democracy in $RECIPIENT$;;;;;;;;;;;;;
 call_allies_cb;Call Allies to Arms;;;;;;;;;;;;;
 call_allies_cb_desc;Call allies to join ongoing wars;;;;;;;;;;;;;
 call_allies_cb_setup;Call allies to join your ongoing wars;;;;;;;;;;;;;
