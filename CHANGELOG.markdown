@@ -27,6 +27,8 @@ Releases are save compatible across patch releases for a given minor version. Fo
 - Restrict British dominion events to the United Kingdom and England ([#119]).
 - Prevent *A Polish State* from targeting colonial countries ([#125]).
 - Neuchâtel will not be annexed unless Switzerland is already around to receive it ([#116]).
+- Prevent the *Treaty of Managua* chain from resetting all tech progress for the Mosquito Kingdom or
+  giving a game-over to the player. 
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
 [#116]: https://github.com/moretrim/ccHFM/issues/116
