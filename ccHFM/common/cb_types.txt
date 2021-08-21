@@ -1167,26 +1167,43 @@ unification_casus_belli = {
 		NOT = { is_our_vassal = THIS }
 		NOT = { tag = PRU }
 		NOT = { tag = NGF }
-		THIS = { NOT = { tag = KUK } }
-		THIS = { NOT = { tag = DNB } }
-		THIS = { NOT = { tag = UBD } }
-		THIS = {
-			culture_has_union_tag = yes
-			nationalism_n_imperialism = 1
-			is_greater_power = yes
-			is_cultural_union = no
-			NOT = { has_country_modifier = neutrality }
-		}
+
+        THIS = {
+            NOT = {
+                tag = KUK
+                tag = DNB
+            }
+
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
+
+            culture_has_union_tag = yes
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            is_cultural_union = no
+            NOT = { has_country_modifier = neutrality }
+        }
+
 		OR = {
 			NOT = { is_culture_group = THIS }
-			AND = {
-				war_with = THIS
-				is_culture_group = THIS
-				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
-				THIS = { NOT = { tag = DNB } }
-				THIS = { NOT = { tag = UBD } }
+            AND = {
+                war_with = THIS
+                part_of_sphere = no
+                is_culture_group = THIS
+                THIS = {
+                    NOT = {
+                        tag = AUS
+                        tag = KUK
+                        tag = DNB
+                    }
+
+                    OR = {
+                        NOT = { tag = UBD }
+                        has_global_flag = cch.unrestricted-unification
+                    }
+                }
 			}
 		}	
 		number_of_states = 2
@@ -1319,10 +1336,18 @@ unification_annex_casus_belli = {
 				war_with = THIS
 				is_culture_group = THIS
 				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
-				THIS = { NOT = { tag = DNB } }
-				THIS = { NOT = { tag = UBD } }
+                THIS = {
+                    NOT = {
+                        tag = AUS
+                        tag = KUK
+                        tag = DNB
+                    }
+
+                    OR = {
+                        NOT = { tag = UBD }
+                        has_global_flag = cch.unrestricted-unification
+                    }
+                }
 			}
 		}
 		NOT = { number_of_states = 2 }
@@ -1516,8 +1541,11 @@ unification_humiliate_cb = {
 			is_greater_power = yes
 			NOT = { has_country_modifier = neutrality }
 			NOT = { tag = KUK }
-			NOT = { tag = UBD }
 			NOT = { tag = DNB }
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 		}
 		is_greater_power = yes
 		is_culture_group = THIS
@@ -1605,8 +1633,11 @@ unification_GP_humiliate = {
 			nationalism_n_imperialism = 1
 			NOT = { has_country_modifier = neutrality }
 			NOT = { tag = KUK }
-			NOT = { tag = UBD }
 			NOT = { tag = DNB }
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 		}
 		NOT = { has_country_modifier = neutrality }
 		is_vassal = no
@@ -1674,8 +1705,11 @@ unification_release_puppet_cb = {
 				has_country_modifier = neutrality
 			}
 			NOT = { tag = KUK }
-			NOT = { tag = UBD }
 			NOT = { tag = DNB }
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 		}
 		NOT = {
 			is_cultural_union = yes
@@ -1745,8 +1779,11 @@ unification_add_to_sphere = {
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
 			NOT = { tag = KUK }
-			NOT = { tag = UBD }
 			NOT = { tag = DNB }
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 			NOT = {
 				has_country_modifier = no_more_war
 				has_country_modifier = neutrality

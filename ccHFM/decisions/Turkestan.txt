@@ -235,7 +235,10 @@ political_decisions = {
 		potential = {
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
-			NOT = { has_country_flag = post_colonial_country }
+            OR = {
+                NOT = { has_country_flag = post_colonial_country }
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
 				primary_culture = turkmen
 				primary_culture = uzbek

@@ -694,19 +694,26 @@ country_event = {
 			tag = SIE
 			tag = BAN
 			tag = SMR
-			tag = LEG
 			AND = {
 				tag = RHI
 				is_culture_group = french
 			}
-			capital_scope = { continent = africa }
-			capital_scope = { continent = west_africa }
-			capital_scope = { continent = east_africa }
-			capital_scope = { continent = central_africa }
-			capital_scope = { continent = south_west_africa }
-			capital_scope = { continent = asia }
 		}
-		NOT = { has_country_flag = post_colonial_country }
+
+        OR = {
+            NOT = {
+                tag = LEG
+                capital_scope = { continent = africa }
+                capital_scope = { continent = west_africa }
+                capital_scope = { continent = east_africa }
+                capital_scope = { continent = central_africa }
+                capital_scope = { continent = south_west_africa }
+                capital_scope = { continent = asia }
+                has_country_flag = post_colonial_country
+            }
+
+            has_global_flag = cch.overseas-unification
+        }
 	}
 	
 	mean_time_to_happen = { months = 1 }

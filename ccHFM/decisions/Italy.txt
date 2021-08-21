@@ -502,7 +502,10 @@ political_decisions = {
 				limit = {
 					is_culture_group = THIS
 					NOT = { tag = SAR }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				any_owned = {
 					add_province_modifier = {
@@ -1054,7 +1057,10 @@ political_decisions = {
 				limit = {
 					is_culture_group = THIS
 					NOT = { tag = THIS }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				any_pop = {
 					limit = {

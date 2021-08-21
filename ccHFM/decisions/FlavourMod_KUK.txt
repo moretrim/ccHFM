@@ -243,7 +243,10 @@ political_decisions = {
 					NOT = { tag = PRU }
 					NOT = { tag = BAN }
 					NOT = { tag = UBD }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						all_core = { owned_by = THIS }
 						tag = NGF
@@ -297,7 +300,10 @@ political_decisions = {
 						vassal_of = THIS
 						vassal_of = PRU
 					}
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				country_event = 11101
 			}

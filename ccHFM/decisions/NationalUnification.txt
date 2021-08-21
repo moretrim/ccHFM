@@ -2,11 +2,17 @@ political_decisions = {
 	
 	form_south_german_confederation = {
 		potential = {
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			is_greater_power = yes
 			primary_culture = south_german
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = SGF
 				exists = GER
 				exists = GCF
@@ -64,7 +70,10 @@ political_decisions = {
 						exists = no
 						primary_culture = south_german
 						has_country_flag = wants_to_unify
-						NOT = { has_country_flag = post_colonial_country }
+                        OR = {
+                            NOT = { has_country_flag = post_colonial_country }
+                            has_global_flag = cch.overseas-unification
+                        }
 					}
 				}
 				add_core = SGF
@@ -87,13 +96,16 @@ political_decisions = {
 					primary_culture = south_german
 					in_sphere = THIS
 					NOT = {
-						has_country_flag = post_colonial_country
 						tag = THIS
 						tag = KUK
 						tag = AUS
 						tag = DNB
 						tag = BAN
 					}
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -218,7 +230,10 @@ political_decisions = {
 						is_core = AUS
 						is_core = KUK
 					}
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				add_core = SGF
 			}
@@ -242,14 +257,23 @@ political_decisions = {
 		potential = {
 			is_greater_power = yes
 			primary_culture = north_german
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = GER
 				exists = GCF
 				exists = NGF
-				tag = UBD
 			}
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 		}	
 		allow = {
 			war = no
@@ -299,7 +323,10 @@ political_decisions = {
 						exists = no
 						primary_culture = north_german
 						has_country_flag = wants_to_unify
-						NOT = { has_country_flag = post_colonial_country }
+                        OR = {
+                            NOT = { has_country_flag = post_colonial_country }
+                            has_global_flag = cch.overseas-unification
+                        }
 					}
 				}
 				add_core = NGF
@@ -317,7 +344,10 @@ political_decisions = {
 					}
 					in_sphere = THIS 
 					NOT = { tag = THIS }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -346,7 +376,6 @@ political_decisions = {
 			culture_has_union_tag = yes
 			NOT = {
 				cultural_union = { exists = yes }
-				has_country_flag = post_colonial_country
 				is_culture_group = germanic
 				is_culture_group = scandinavian
 				is_culture_group = italian
@@ -357,6 +386,10 @@ political_decisions = {
 				tag = CSA
 				tag = URP
 			}
+            OR = {
+                NOT = { has_country_flag = post_colonial_country }
+                has_global_flag = cch.overseas-unification
+            }
 		}
 		
 		allow = {
@@ -387,7 +420,10 @@ political_decisions = {
 			any_country = {
 				limit = {
 					NOT = { is_greater_power = yes }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					NOT = { tag = SMR }
 					is_culture_group = THIS
 					in_sphere = THIS
@@ -411,8 +447,14 @@ political_decisions = {
 		news_desc_medium = "form_germany_NEWS_MEDIUM"
 		news_desc_short = "form_germany_NEWS_SHORT"
 		potential = {
-			capital_scope = { continent = europe }
-			NOT = { has_country_flag = post_colonial_country }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			OR = {
 				tag = NGF
 				tag = SGF
@@ -634,7 +676,10 @@ political_decisions = {
 					NOT = { tag = PRU }
 					NOT = { tag = BAN }
 					NOT = { tag = UBD }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						all_core = { owned_by = THIS }
 						tag = NGF
@@ -712,18 +757,24 @@ political_decisions = {
 						tag = LIE
 						tag = VLG
 						tag = SIE
-						capital_scope = { continent = africa }
-						capital_scope = { continent = west_africa }
-						capital_scope = { continent = central_africa }
-						capital_scope = { continent = east_africa }
-						capital_scope = { continent = south_west_africa }
-						capital_scope = { continent = asia }
 					}
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = {
+                            capital_scope = { continent = africa }
+                            capital_scope = { continent = west_africa }
+                            capital_scope = { continent = central_africa }
+                            capital_scope = { continent = east_africa }
+                            capital_scope = { continent = south_west_africa }
+                            capital_scope = { continent = asia }
+                            has_country_flag = post_colonial_country
+                        }
+
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				country_event = 11101
 			}
@@ -835,7 +886,10 @@ political_decisions = {
 					NOT = { tag = PRU }
 					NOT = { tag = BAN }
 					NOT = { tag = UBD }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						all_core = { owned_by = THIS }
 						tag = NGF
@@ -873,18 +927,24 @@ political_decisions = {
 						tag = LIE
 						tag = SIE
 						tag = GCF
-						capital_scope = { continent = africa }
-						capital_scope = { continent = central_africa }
-						capital_scope = { continent = west_africa }
-						capital_scope = { continent = east_africa }
-						capital_scope = { continent = south_west_africa }
-						capital_scope = { continent = asia }
 					}
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = {
+                            capital_scope = { continent = africa }
+                            capital_scope = { continent = west_africa }
+                            capital_scope = { continent = central_africa }
+                            capital_scope = { continent = east_africa }
+                            capital_scope = { continent = south_west_africa }
+                            capital_scope = { continent = asia }
+                            has_country_flag = post_colonial_country
+                        }
+
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				country_event = 11101
 			}
@@ -950,9 +1010,15 @@ political_decisions = {
 		news_desc_short = "form_italy_NEWS_SHORT"
 		potential = {
 			is_culture_group = italian
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = ITA
 			}
 		}
@@ -1009,7 +1075,10 @@ political_decisions = {
 				limit = {
 					is_culture_group = italian
 					in_sphere = THIS
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					NOT = { tag = SMR }
 				}
 				country_event = 11101
@@ -1053,8 +1122,11 @@ political_decisions = {
 			NOT = { tag = MUG }
 			NOT = { tag = NEP }
 			NOT = { has_country_flag = mughal_reborn }
+            OR = {
+                NOT = { has_country_flag = post_colonial_country }
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = HND
 			}
 		}
@@ -1121,7 +1193,10 @@ political_decisions = {
 					NOT = { is_greater_power = yes }
 					is_culture_group = south_asian
 					in_sphere = THIS
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -1215,14 +1290,23 @@ political_decisions = {
 		potential = {
 			is_greater_power = yes
 			primary_culture = north_german
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = GER
 				exists = GCF
 				exists = NGF
-				tag = UBD
 			}
+            OR = {
+                NOT = { tag = UBD }
+                has_global_flag = cch.unrestricted-unification
+            }
 			revolution_n_counterrevolution = 1
 		}	
 		allow = {
@@ -1268,7 +1352,10 @@ political_decisions = {
 						exists = no
 						primary_culture = north_german
 						has_country_flag = wants_to_unify
-						NOT = { has_country_flag = post_colonial_country }
+                        OR = {
+                            NOT = { has_country_flag = post_colonial_country }
+                            has_global_flag = cch.overseas-unification
+                        }
 					}
 				}
 				add_core = NGF
@@ -1284,7 +1371,10 @@ political_decisions = {
 					in_sphere = THIS 
 					NOT = { tag = THIS }
 					NOT = { tag = UBD }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -1307,9 +1397,15 @@ political_decisions = {
 		potential = {
 			is_greater_power = yes
 			primary_culture = south_german
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = SGF
 				exists = GER
 				exists = GCF
@@ -1363,7 +1459,10 @@ political_decisions = {
 						exists = no
 						primary_culture = south_german
 						has_country_flag = wants_to_unify
-						NOT = { has_country_flag = post_colonial_country }
+                        OR = {
+                            NOT = { has_country_flag = post_colonial_country }
+                            has_global_flag = cch.overseas-unification
+                        }
 					}
 				}
 				add_core = SGF
@@ -1378,7 +1477,10 @@ political_decisions = {
 					NOT = { tag = KUK }
 					NOT = { tag = DNB }
 					NOT = { tag = BAN }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 					NOT = {
 						AND = {
 							tag = AUS

@@ -9,12 +9,24 @@ country_event = {
 	trigger = {
 		war = no
 		has_country_flag = crown_from_the_gutter
-		NOT = { tag = LIE }
-		NOT = { tag = VLG }
-		NOT = { tag = SIE }
-		NOT = { tag = BAN }
-		NOT = { tag = SMR }
-		NOT = { has_country_flag = post_colonial_country }
+
+        OR = {
+            NOT = {
+                tag = LIE
+                tag = VLG
+                tag = SIE
+                tag = BAN
+                tag = SMR
+            }
+
+            has_global_flag = cch.unrestricted-unification
+        }
+
+        OR = {
+            NOT = { has_country_flag = post_colonial_country }
+            has_global_flag = cch.overseas-unification
+        }
+
 		NOT = {
 			cultural_union = { exists = yes }
 			is_culture_group = germanic
@@ -84,7 +96,10 @@ country_event = {
 				NOT = { tag = THIS }
 				NOT = { tag = UBD }
 				NOT = { tag = SMR }
-				NOT = { has_country_flag = post_colonial_country }
+                OR = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    has_global_flag = cch.overseas-unification
+                }
 				is_culture_group = THIS
 				is_greater_power = no
 				OR = {
@@ -424,7 +439,10 @@ country_event = {
 					tag = PAP
 					tag = SMR
 				}
-				NOT = { has_country_flag = post_colonial_country }
+                OR = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    has_global_flag = cch.overseas-unification
+                }
 				is_culture_group = THIS
 				is_greater_power = no
 				num_of_cities = 1
@@ -720,20 +738,34 @@ country_event = {
 	
 	trigger = {
 		war = no
-		NOT = { tag = UBD }
-		NOT = { tag = LIE }
-		NOT = { tag = VLG }
-		NOT = { tag = GCF }
-		NOT = { tag = SIE }
-		NOT = { tag = BAN }
-		NOT = { 
-			capital_scope = { continent = africa }
-			capital_scope = { continent = west_africa }
-			capital_scope = { continent = east_africa }
-			capital_scope = { continent = central_africa }
-			capital_scope = { continent = south_west_africa }
-			capital_scope = { continent = asia }
-		}
+
+        NOT = { tag = GCF }
+
+        OR = {
+            NOT = {
+                tag = UBD
+                tag = LIE
+                tag = VLG
+                tag = SIE
+                tag = BAN
+            }
+
+            has_country_flag = cch.unrestricted-unification
+        }
+
+        OR = {
+            NOT = {
+                capital_scope = { continent = africa }
+                capital_scope = { continent = west_africa }
+                capital_scope = { continent = east_africa }
+                capital_scope = { continent = central_africa }
+                capital_scope = { continent = south_west_africa }
+                capital_scope = { continent = asia }
+            }
+
+            has_country_flag = cch.overseas-unification
+        }
+
 		has_country_flag = crown_from_the_gutter
 		is_culture_group = germanic
 		is_greater_power = yes
@@ -856,7 +888,10 @@ country_event = {
 				NOT = { tag = PRU }
 				NOT = { tag = UBD }
 				NOT = { tag = BAN }
-				NOT = { has_country_flag = post_colonial_country }
+                OR = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    has_global_flag = cch.overseas-unification
+                }
 				OR = {
 					all_core = { owned_by = THIS }
 					tag = NGF
@@ -908,7 +943,10 @@ country_event = {
 					tag = DNB
 					tag = UBD
 				}
-				NOT = { has_country_flag = post_colonial_country }
+                OR = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    has_global_flag = cch.overseas-unification
+                }
 			}
 			country_event = 11101
 		}
@@ -1085,9 +1123,12 @@ country_event = {
 				primary_culture = north_german 
 				NOT = {
 					tag = THIS
-					has_country_flag = post_colonial_country
 					is_cultural_union = no
 				}
+                OR = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    has_global_flag = cch.overseas-unification
+                }
 			}
 			all_core = { add_core = NGF }
 		}
@@ -1648,10 +1689,13 @@ country_event = {
 		}
 		NOT = {
 			has_country_flag = does_not_want_to_unify
-			has_country_flag = post_colonial_country
 			tag = ALB
 			tag = BUL
 		}
+        OR = {
+            NOT = { has_country_flag = post_colonial_country }
+            has_global_flag = cch.overseas-unification
+        }
 	}
 	
 	mean_time_to_happen = {

@@ -550,7 +550,10 @@ country_event = {
 	trigger = {
 		ai = yes
 		NOT = { has_country_flag = polish_integration_asked }
-        NOT = { has_country_flag = post_colonial_country }
+        OR = {
+            NOT = { has_country_flag = post_colonial_country }
+            has_global_flag = cch.overseas-unification
+        }
 		is_greater_power = no
 		primary_culture = polish
 		war = no

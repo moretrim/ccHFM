@@ -121,8 +121,14 @@ political_decisions = {
 			NOT = { exists = SCA }
 			has_country_modifier = leader_of_kalmar
 			has_global_flag = scandinavian_political_union
-			NOT = { has_country_flag = post_colonial_country }
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    capital_scope = { continent = europe }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			OR = {
 				AND = {
 					NOT = { tag = SWE }
@@ -189,7 +195,10 @@ political_decisions = {
 				limit = {
 					is_culture_group = scandinavian
 					NOT = { primary_culture = finnish }
-					NOT = { has_country_flag = post_colonial_country }
+                    OR = {
+                        NOT = { has_country_flag = post_colonial_country }
+                        has_global_flag = cch.overseas-unification
+                    }
 				}
 				all_core = { add_core = SCA }
 			}
@@ -223,12 +232,18 @@ political_decisions = {
 	reform_kalmar = {
 		potential = {
 			is_culture_group = scandinavian
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    capital_scope = { continent = europe }
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = { exists = SCA }
 			NOT = { primary_culture = finnish }
 			NOT = { has_global_flag = kalmar_reformed }
 			NOT = { has_country_flag = greater_finland }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 		
 		allow = {
@@ -271,8 +286,14 @@ political_decisions = {
 					}
 					NOT = { primary_culture = finnish }
 					NOT = { tag = THIS }
-					NOT = { has_country_flag = post_colonial_country }
-					capital_scope = { continent = europe }
+                    OR = {
+                        AND = {
+                            NOT = { has_country_flag = post_colonial_country }
+                            capital_scope = { continent = europe }
+                        }
+
+                        has_global_flag = cch.overseas-unification
+                    }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -308,7 +329,10 @@ political_decisions = {
 		potential = {
 			NOT = { exists = SCA }
 			has_global_flag = kalmar_reformed
-			capital_scope = { continent = europe }
+            OR = {
+                capital_scope = { continent = europe }
+                has_global_flag = cch.overseas-unification
+            }
 			has_country_modifier = leader_of_kalmar
 			not = { has_global_flag = scandinavian_customs_union }
 			OR = {
@@ -371,7 +395,10 @@ political_decisions = {
 		potential = {
 			NOT = { exists = SCA }
 			has_global_flag = scandinavian_customs_union
-			capital_scope = { continent = europe }
+            OR = {
+                capital_scope = { continent = europe }
+                has_global_flag = cch.overseas-unification
+            }
 			has_country_modifier = leader_of_kalmar
 			not = { has_global_flag = scandinavian_political_union }
 			OR = {
@@ -435,7 +462,10 @@ political_decisions = {
 		picture = reform_kalmar
 		potential = {
 			has_country_modifier = kalmar_union
-			capital_scope = { continent = europe }
+            OR = {
+                capital_scope = { continent = europe }
+                has_global_flag = cch.overseas-unification
+            }
 			NOT = { exists = SCA }
 			OR = { 
 				DEN = { 
@@ -490,8 +520,14 @@ political_decisions = {
 			is_greater_power = no
 			NOT = { has_country_modifier = kalmar_union }
 			NOT = { has_country_flag = refused_kalmar_union }
-			NOT = { has_country_flag = post_colonial_country }
-			capital_scope = { continent = europe }
+            OR = {
+                AND = {
+                    NOT = { has_country_flag = post_colonial_country }
+                    capital_scope = { continent = europe }
+                }
+
+                has_global_flag = cch.overseas-unification
+            }
 			any_greater_power = {
 				has_country_modifier = leader_of_kalmar
 			}

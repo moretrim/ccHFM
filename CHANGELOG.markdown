@@ -32,6 +32,31 @@ Releases are save compatible across patch releases for a given minor version. Fo
 - Correct overly lax requirements on a couple colonial decisions. This was most visible for the
   *Show 'Organize Colony' Decisions* declutter decision, which in some cases was available even
   when no organisation decision was actually up for consideration.
+- Add a new option: *Enable Unrestricted Unification*. It allows some countries to lead cultural
+  unification, that would otherwise be prohibited from doing such.
+
+  The option does **not** lift the restriction that makes it harder for these countries to join
+  their cultural union (or that outright prohibits it). If you feel like this option would benefit
+  from a finer grained approach, let us know.
+
+  Countries allowed to lead cultural unification are: Liechtenstein, Volgaland, Transylvania /
+  Siebenbürgen, Banat, the United Baltic Duchy, San Marino.
+
+  If you can make a case for adding another country, let us know.
+- Add a new option: *Enable Overseas Unification*. It allows colonial countries access to
+  unification mechanics, that would otherwise exclude them. The countries in question are either:
+  - countries set up by a colonial organisation decision (or more rarely through event) e.g. Nigeria
+  - pre-existing countries that have been taken over and organised by a colonial power (which can
+    happen by decision or event) e.g. Morocco
+  These countries have access to the following mechanics when the option is enabled:
+  - cultural unification (either when leading, or when joining their union whether peacefully or
+    forcefully)
+  - country formation e.g. becoming Yugoslavia or the United Baltic Duchy
+
+TODO:
+- spoils of dismantlement fixes? don't forget `events/CleanUp.txt`
+- review, look for `capital_scope` around `post_colonial_country`
+- review option names
 
 [#109]: https://github.com/moretrim/ccHFM/pull/109
 [#116]: https://github.com/moretrim/ccHFM/issues/116
