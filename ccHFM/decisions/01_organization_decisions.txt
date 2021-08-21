@@ -250,21 +250,19 @@ political_decisions = {
                 AND = {
                     NOT = {
                         has_global_flag = nigeria_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     OR = {
                         owns = 1934
-                            owns = 1928
-                            owns = 1945
-                            owns = 1923
-                            owns = 1941
-                            owns = 1943
+                        owns = 1928
+                        owns = 1945
+                        owns = 1923
+                        owns = 1941
+                        owns = 1943
                     }
                 }
                 AND = {
@@ -278,26 +276,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = nigeria_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Togo
                 AND = {
                     NOT = {
                         has_global_flag = togo_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1914
                 }
@@ -310,26 +304,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = togo_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Ivory Coast
                 AND = {
                     NOT = {
                         has_global_flag = ivory_coast_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -347,26 +337,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = ivc_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Sierra Leone
                 AND = {
                     NOT = {
                         has_global_flag = sierra_leone_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1884 }
                 }
@@ -379,26 +365,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = sierra_leone_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Guinea
                 AND = {
                     NOT = {
                         has_global_flag = guinea_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1883 }
                 }
@@ -411,26 +393,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = guinea_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Senegal
                 AND = {
                     NOT = {
                         has_global_flag = senegal_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -448,26 +426,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = senegal_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Niger
                 AND = {
                     NOT = {
                         has_global_flag = niger_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -486,26 +460,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = niger_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Chad
                 AND = {
                     NOT = {
                         has_global_flag = chad_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -523,26 +493,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = chad_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Cameroon
                 AND = {
                     NOT = {
                         has_global_flag = cameroon_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -560,26 +526,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = cameroon_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Gabon
                 AND = {
                     NOT = {
                         has_global_flag = gabon_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1972 }
                 }
@@ -592,26 +554,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = gabon_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Congo
                 AND = {
                     NOT = {
                         has_global_flag = congo_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1978 }
                 }
@@ -624,26 +582,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = congo_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Zaire
                 AND = {
                     NOT = {
                         has_global_flag = zaire_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     NOT = { has_country_flag = not_congo_primary_culture }
                     any_owned_province = {
@@ -668,13 +622,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = zaire_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     NOT = { has_country_flag = not_congo_primary_culture }
                     year = 1900
@@ -684,13 +636,11 @@ political_decisions = {
                     NOT = {
                         has_global_flag = zambia_organized
                         has_country_flag = ian_would_be_proud
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -708,13 +658,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = zambia_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                         has_country_flag = ian_would_be_proud
                     }
                 }
@@ -722,13 +670,11 @@ political_decisions = {
                 AND = {
                     NOT = {
                         has_global_flag = kenya_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -746,26 +692,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = kenya_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Tanzania
                 AND = {
                     NOT = {
                         has_global_flag = tanzania_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -784,26 +726,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = tanzania_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Mali
                 AND = {
                     NOT = {
                         has_global_flag = mali_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     2609 = { empty = no }
                     any_owned_province = {
@@ -823,13 +761,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = mali_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Libya
@@ -837,13 +773,11 @@ political_decisions = {
                     NOT = {
                         tag = TUR
                         has_global_flag = libya_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1731
                 }
@@ -851,13 +785,11 @@ political_decisions = {
                 AND = {
                     NOT = {
                         has_global_flag = CAR_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1965
                 }
@@ -870,26 +802,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = CAR_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Malawi
                 AND = {
                     NOT = {
                         has_global_flag = malawi_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2067
                 }
@@ -902,26 +830,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = malawi_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Gambia
                 AND = {
                     NOT = {
                         has_global_flag = gambia_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1785
                 }
@@ -934,26 +858,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = gambia_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Angola
                 AND = {
                     NOT = {
                         has_global_flag = angola_created
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -972,26 +892,22 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = angola_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Mozambique
                 AND = {
                     NOT = {
                         has_global_flag = mozambique_created
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -1011,13 +927,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = mozambique_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Algeria
@@ -1025,13 +939,11 @@ political_decisions = {
                     NOT = {
                         exists = ALD
                         has_global_flag = algeria_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                         OR = {
                             primary_culture = french
                             # Paris
@@ -1045,13 +957,11 @@ political_decisions = {
                     NOT = {
                         exists = BUG
                         has_global_flag = uganda_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2019
                 }
@@ -1064,13 +974,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = uganda_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Botswana
@@ -1078,13 +986,11 @@ political_decisions = {
                     NOT = {
                         exists = TSW
                         has_global_flag = botswana_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2074
                 }
@@ -1097,13 +1003,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = botswana_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Zanzibar
@@ -1112,13 +1016,11 @@ political_decisions = {
                         owns = 2044
                         exists = ZAN
                         has_global_flag = zanzibar_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2048
                 }
@@ -1127,13 +1029,11 @@ political_decisions = {
                     NOT = {
                         exists = SUD
                         has_global_flag = sudan_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                         OR = {
                             tag = EGY
                             1827 = { is_core = EGY }
@@ -1150,13 +1050,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = sudan_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Ghana
@@ -1164,13 +1062,11 @@ political_decisions = {
                     NOT = {
                         exists = GHN
                         has_global_flag = ghana_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = {
                         OR = {
@@ -1188,13 +1084,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = ghana_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Burkina Faso
@@ -1202,13 +1096,11 @@ political_decisions = {
                     NOT = {
                         exists = BKF
                         has_global_flag = burkina_faso_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1901 }
                 }
@@ -1221,13 +1113,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = burkina_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Mauritania
@@ -1235,13 +1125,11 @@ political_decisions = {
                     NOT = {
                         exists = TRZ
                         has_global_flag = mauretania_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1775
                 }
@@ -1250,13 +1138,11 @@ political_decisions = {
                     NOT = {
                         exists = DAH
                         has_global_flag = dahomey_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 1920
                 }
@@ -1269,13 +1155,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = dahomey_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Indonesia
@@ -1302,13 +1186,11 @@ political_decisions = {
                     NOT = {
                         exists = SOM
                         has_global_flag = somalia_united
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     nationalism_n_imperialism = 1
                     owns = 1868
@@ -1333,13 +1215,11 @@ political_decisions = {
                     NOT = {
                         exists = NMB
                         has_global_flag = namibia_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2078
                 }
@@ -1352,13 +1232,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = namibia_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Lebanon
@@ -1390,13 +1268,11 @@ political_decisions = {
                     NOT = {
                         exists = GBU
                         has_global_flag = guine_bissau_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     any_owned_province = { region = FRA_1878 }
                 }
@@ -1409,13 +1285,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = guine_bissau_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Madagascar
@@ -1423,13 +1297,11 @@ political_decisions = {
                     NOT = {
                         exists = MAD
                         has_global_flag = madagascar_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     owns = 2115
                 }
@@ -1442,13 +1314,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = madagascar_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
                 #Zimbabwe
@@ -1456,13 +1326,11 @@ political_decisions = {
                     NOT = {
                         exists = ZBW
                         has_global_flag = zimbabwe_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                         primary_culture = british
                     }
                     owns = 2068
@@ -1477,13 +1345,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = zimbabwe_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     NOT = { has_country_flag = ian_would_be_proud }
                 }
@@ -1493,13 +1359,11 @@ political_decisions = {
                         exists = BRD
                         exists = RWA
                         has_global_flag = rwanda_burundi_organized
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                     OR = {
                         owns = 2034
@@ -1526,13 +1390,11 @@ political_decisions = {
                     }
                     NOT = {
                         has_country_flag = rwanda_burundi_master
-                        capital_scope = {
-                            continent = africa
-                            continent = west_africa
-                            continent = central_africa
-                            continent = east_africa
-                            continent = south_west_africa
-                        }
+                        capital_scope = { continent = africa }
+                        capital_scope = { continent = west_africa }
+                        capital_scope = { continent = central_africa }
+                        capital_scope = { continent = east_africa }
+                        capital_scope = { continent = south_west_africa }
                     }
                 }
             }
