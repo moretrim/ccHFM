@@ -307,11 +307,26 @@ country_event = {
 		set_global_flag = italy_fights_turk
 		diplomatic_influence = { who = TUR value = -400 }
 		relation = { who = TUR value = -400 }
-		CYR = { all_core = { add_core = LBY remove_core = CYR } }
-		TRI = { all_core = { add_core = LBY remove_core = TRI } }
+		any_country = { limit = { tag = CYR exists = no } all_core = { add_core = LBY remove_core = CYR } }
+		any_country = { limit = { tag = TRI exists = no } all_core = { add_core = LBY remove_core = TRI } }
+		TUR = {
+			add_casus_belli = {
+				target = ITA
+				type = place_in_the_sun
+				months = 12
+			}
+		}
+		TUR = {
+			add_casus_belli = {
+				target = ITA
+				type = place_in_the_sun
+				months = 12
+			}
+		}
 		war = {
 			target = TUR
-			attacker_goal = { casus_belli = liberate_country country = LBY }
+			attacker_goal = { casus_belli = place_in_the_sun state_province_id = 1735 }
+			attacker_goal = { casus_belli = place_in_the_sun state_province_id = 1731 }
 		}
 		
 		ai_chance = {
