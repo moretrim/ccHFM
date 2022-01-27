@@ -353,10 +353,29 @@ political_decisions = {
 				add_accepted_culture = boer
 				set_country_flag = post_colonial_country
 			}
-			any_owned = {
-				limit = { region = TRN_2108 }
-				remove_core = MAT
-				remove_core = GAZ
+			any_country = {
+				limit = {
+					tag = MAT
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SAF
+					}
+					remove_core = MAT
+				}
+			}
+			any_country = {
+				limit = {
+					tag = GAZ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SAF
+					}
+					remove_core = GAZ
+				}
 			}
 			any_pop = {
 				limit = { location = { is_core = SAF } }

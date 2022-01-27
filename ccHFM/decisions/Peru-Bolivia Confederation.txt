@@ -253,7 +253,18 @@ political_decisions = {
 				limit = { owner = { NOT = { has_country_flag = end_of_the_confederation } } }
 				PEU = { all_core = { add_core = PBC } }
 				SPU = { all_core = { add_core = PBC } }
-				SPU = { all_core = { remove_core = SPU } }
+			}
+			any_country = {
+				limit = {
+					tag = SPU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = PBC
+					}
+					remove_core = SPU
+				}
 			}
 			BOL = { all_core = { add_core = PBC } }
 		}
@@ -496,7 +507,18 @@ political_decisions = {
 		}
 	
 		effect = {
-			any_owned = { remove_core = SPU }
+			any_country = {
+				limit = {
+					tag = SPU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = PEU
+					}
+					remove_core = SPU
+				}
+			}
 		}
 
 		ai_will_do = {

@@ -980,7 +980,30 @@ country_event = {
 			}
 		money = 50000
 		}
-		SUD = { all_core = { remove_core = DAR remove_core = SHK } }
+		any_country = {
+			limit = {
+				tag = DAR
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = SUD
+				}
+				remove_core = DAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SHK
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = SUD
+				}
+				remove_core = SHK
+			}
+		}
 		inherit = SUD
 		relation = { who = EGY value = 100 }
 	}
@@ -1000,7 +1023,30 @@ country_event = {
 		relation = { who = FROM value = -400 }
 		diplomatic_influence = { who = FROM value = -400 }
 		FROM = { any_owned = { limit = {  OR = { is_core = SUD  is_core = ETH } } secede_province = SUD } }
-		SUD = { all_core = { remove_core = DAR remove_core = SHK } }
+		any_country = {
+			limit = {
+				tag = DAR
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = SUD
+				}
+				remove_core = DAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SHK
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = SUD
+				}
+				remove_core = SHK
+			}
+		}
 		SUD = {
 			civilized = no
 			government = theocracy

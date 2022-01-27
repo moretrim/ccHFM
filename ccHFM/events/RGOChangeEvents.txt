@@ -2536,6 +2536,7 @@ country_event = {
 		1936 = { trade_goods = coffee } #Nsukka
 		1945 = { trade_goods = tobacco } #Kano
 		
+		
 		ai_chance = { factor = 70 }
 	}
 	#Oil Production #Sources: COAL PRODUCTION AND UTILIZATION TRENDS IN NIGERIA by Olayinka I. Ogunsola 

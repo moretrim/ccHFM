@@ -507,13 +507,90 @@ political_decisions = {
 			1998 = { change_province_name = "Ango" life_rating = 25 }
 			1988 = { change_province_name = "Kolwezi" life_rating = 25 }
 			any_owned = { limit = { OR = { province_id = 1990 province_id = 1986 } } life_rating = 25 }
-			CNG = { all_core = { remove_core = KON } }
-			CNG = { all_core = { remove_core = KUB } }
-			CNG = { all_core = { remove_core = KZB } }
-			CNG = { all_core = { remove_core = LBA } }
-			CNG = { all_core = { remove_core = LUN } }
-			CNG = { all_core = { remove_core = AZA } }
-			CNG = { all_core = { remove_core = MNG } }
+			any_country = {
+				limit = {
+					tag = KON
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = KON
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KUB
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = KUB
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KZB
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = KZB
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LBA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = LBA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LUN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = LUN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = AZA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = AZA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MNG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = CNG
+					}
+					remove_core = MNG
+				}
+			}
 		}
 
 		ai_will_do = { factor = 1 }

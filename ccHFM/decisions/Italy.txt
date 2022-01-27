@@ -574,21 +574,186 @@ political_decisions = {
 					}
 				}
 				add_core = ITA
-				remove_core = SAR
-				remove_core = SVY
-				remove_core = SRD
-				remove_core = SIC
-				remove_core = MOD
-				remove_core = TUS
-				remove_core = LUC
-				remove_core = PAR
-				remove_core = PAP
-				remove_core = VEN
-				remove_core = LOM
-				remove_core = RMG
-				remove_core = SYC
-				remove_core = TST
-				remove_core = GEN
+			}
+			any_country = {
+				limit = {
+					tag = SAR
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SAR
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SVY
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SVY
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SRD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SRD
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SIC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SIC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MOD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = MOD
+				}
+			}
+			any_country = {
+				limit = {
+					tag = TUS
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = TUS
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LUC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = LUC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PAR
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = PAR
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PAP
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = PAP
+				}
+			}
+			any_country = {
+				limit = {
+					tag = VEN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = VEN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LOM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = LOM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = RMG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = RMG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SYC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SYC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = TST
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = TST
+				}
+			}
+			any_country = {
+				limit = {
+					tag = GEN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = GEN
+				}
 			}
 		}
 		
@@ -765,7 +930,7 @@ political_decisions = {
                 owner = {
                     set_global_flag = italian_claimed_south_tirol
 
-                    AUS_734 = { add_core = ITA remove_core = TST }
+                    AUS_734 = { add_core = ITA }
                     AUS_736 = { add_core = ITA }
                 }
             }
@@ -1288,6 +1453,17 @@ political_decisions = {
 			SRD = { 
 				all_core = {
 					any_pop = { consciousness = 3 militancy = -9 }
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SRD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SAR
+					}
 					remove_core = SRD
 				}
 			}
@@ -1562,19 +1738,186 @@ political_decisions = {
 					}
 				}
 				add_core = ITA
-				remove_core = SAR
-				remove_core = SVY
-				remove_core = SRD
-				remove_core = SIC
-				remove_core = MOD
-				remove_core = TUS
-				remove_core = LUC
-				remove_core = PAR
-				remove_core = PAP
-				remove_core = VEN
-				remove_core = LOM
-				remove_core = RMG
-				remove_core = SYC
+			}
+			any_country = {
+				limit = {
+					tag = SAR
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SAR
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SVY
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SVY
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SRD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SRD
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SIC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SIC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MOD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = MOD
+				}
+			}
+			any_country = {
+				limit = {
+					tag = TUS
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = TUS
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LUC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = LUC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PAR
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = PAR
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PAP
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = PAP
+				}
+			}
+			any_country = {
+				limit = {
+					tag = VEN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = VEN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LOM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = LOM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = RMG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = RMG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SYC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SYC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = TST
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = TST
+				}
+			}
+			any_country = {
+				limit = {
+					tag = GEN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = GEN
+				}
 			}
 		}
 		ai_will_do = {

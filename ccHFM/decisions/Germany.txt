@@ -445,8 +445,19 @@ political_decisions = {
 			533 = {
 				add_core = THIS # Heligoland is my last territorial demand!
 				add_core = ENG
-				remove_core = HGL
 				change_province_name = "Helgoland"
+			}
+			any_country = {
+				limit = {
+					tag = HGL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ENG
+					}
+					remove_core = HGL
+				}
 			}
 			set_country_flag = has_questioned_heligoland
 		}

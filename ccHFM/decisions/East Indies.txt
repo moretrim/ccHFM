@@ -198,21 +198,162 @@ political_decisions = {
 				}
 				country_event = 95255
 			}
-			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
+			any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
+				limit = {
+					tag = JAV
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = JAV
-					remove_core = DJA 
-					remove_core = SAK 
-					remove_core = ATJ 
-					remove_core = BAL 
+				}
+			}
+			any_country = {
+				limit = {
+					tag = DJA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = DJA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SAK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SAK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = ATJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = ATJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLW
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = SLW
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = MAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = LAN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
 					remove_core = BRU
 				}
+			}
+			any_country = {
+				limit = {
+					tag = PPG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = PPG
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -318,19 +459,137 @@ political_decisions = {
 				}
 				country_event = 95255
 			}
-			any_owned = {
-				limit = { is_core = MLY NOT = { province_id = 1393 } }
-				remove_core = SWK
-				remove_core = SUL
-				remove_core = BRU
-				remove_core = KTI
-				remove_core = JOH
-				remove_core = PRK
-				remove_core = SLG
-				remove_core = PHG
-				remove_core = SIA
-				remove_core = KLM
-				remove_core = LAN
+			any_country = {
+				limit = {
+					tag = SWK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SWK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = BRU
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = JOH
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = JOH
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PRK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PRK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SLG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PHG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PHG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SIA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SIA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = LAN
+				}
 			}
 		}
 
@@ -464,6 +723,10 @@ political_decisions = {
 		effect = {
 			set_global_flag = malaya_formed
 			prestige = 20
+			random_owned = {
+				limit = { province_id = 1384 }
+				remove_core = JOH
+			}
 			random_country = {
 				limit = {
 					tag = JOH
@@ -518,30 +781,6 @@ political_decisions = {
 					secede_province = THIS
 				}
 			}
-			JOH = {
-				all_core = {
-					add_core = MLY
-					remove_core = JOH
-				}
-			}
-			SLG = {
-				all_core = {
-					add_core = MLY
-					remove_core = SLG
-				}
-			}
-			PHG = {
-				all_core = {
-					add_core = MLY
-					remove_core = PHG
-				}
-			}
-			PRK = {
-				all_core = {
-					add_core = MLY
-					remove_core = PRK
-				}
-			}
 			any_country = {
 				limit = {
 					OR = {
@@ -581,6 +820,7 @@ political_decisions = {
 						is_core = PHG
 						is_core = PRK
 						is_core = SLG
+						is_core = JOH
 					}
 				}
 				add_core = MLY
@@ -598,22 +838,187 @@ political_decisions = {
 			}
 			MLY = { tech_school = unciv_tech_school }
 			SGP = { tech_school = unciv_tech_school }
-			any_owned = {
-				limit = { is_core = MLY NOT = { province_id = 1393 } }
-				remove_core = SWK
-				remove_core = SUL
-				remove_core = BRU
-				remove_core = KTI
-				remove_core = KLM
-				remove_core = LAN
-				remove_core = SAK
-				remove_core = ATJ
-				remove_core = DJA
-				remove_core = PHG
-				remove_core = PRK
-				remove_core = SLG
-			}
 			random_owned = { limit = { province_id = 2576 } add_core = MLY }
+			any_country = {
+				limit = {
+					tag = SWK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SWK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = BRU
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PRK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PRK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SLG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PHG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PHG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = LAN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = ATJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = ATJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = DJA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = DJA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = JOH
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = JOH
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = SLG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PHG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PHG
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PRK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = MLY
+					}
+					remove_core = PRK
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1141,18 +1546,51 @@ political_decisions = {
 			LUA = {
 				all_core = {
 					add_core = LXA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LUA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
 					remove_core = LUA
 				}
 			}
 			WIA = {
 				all_core = {
 					add_core = LXA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = WIA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
 					remove_core = WIA
 				}
 			}
 			CHK = {
 				all_core = {
 					add_core = LXA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = CHK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
 					remove_core = CHK
 				}
 			}
@@ -1167,8 +1605,19 @@ political_decisions = {
 				set_country_flag = Luangprabang
 				government = democracy
 				political_reform = landed_voting
-				all_core = { remove_core = SIA }
 				tech_school = unciv_tech_school
+			}
+			any_country = {
+				limit = {
+					tag = SIA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
+					remove_core = SIA
+				}
 			}
 		}
 		ai_will_do = { factor = 1 }
@@ -1267,14 +1716,44 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = laos_formed
-			any_owned = {
-				limit = { OR = { is_core = LUA is_core = CHK is_core = WIA } }
-				remove_core = LUA
-				remove_core = CHK
-				remove_core = WIA
-			}
 			LUA_1356 = { add_core = LXA }
 			random_owned = { limit = { owner = { ai = no } } owner = { 1358 = { add_core = LXA } 1359 = { add_core = LXA } } }
+			any_country = {
+				limit = {
+					tag = LUA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
+					remove_core = LUA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = CHK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
+					remove_core = CHK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = WIA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = LXA
+					}
+					remove_core = WIA
+				}
+			}
 			prestige = 10
 			change_tag = LXA
 			any_country = {
