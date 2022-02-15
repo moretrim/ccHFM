@@ -14,7 +14,10 @@ country_event = {
 		war = no
 		year = 1867
 		any_owned_province = { is_core = FCA }
-		NOT = { exists = FCA }
+		NOT = {
+			exists = FCA
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		AND = {
 			has_country_flag = acadia_organized 
 			has_country_flag = canada_organized
@@ -114,6 +117,10 @@ country_event = {
 	option = {
 		name = "EVT99802OPTB"
 		set_country_flag = FCA_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = FCA }
 			any_pop = {
@@ -206,7 +213,10 @@ country_event = {
 		war = no
 		year = 1890
 		any_owned_province = { is_core = NZF }
-		NOT = { exists = NZF }
+		NOT = {
+			exists = NZF
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		has_global_flag = french_nzl
 		is_possible_vassal = NZF
 	}
@@ -318,6 +328,10 @@ country_event = {
 	option = {
 		name = "EVT99802OPTB"
 		set_country_flag = NZF_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = NZF }
 			any_pop = {
@@ -408,7 +422,10 @@ country_event = {
 		war = no
 		year = 1870
 		any_owned_province = { is_core = ULA }
-		NOT = { exists = ULA }
+		NOT = {
+			exists = ULA
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		has_country_flag = louisiana_organized
 		ULA = {
 			all_core = {
@@ -535,6 +552,10 @@ country_event = {
 	option = {
 		name = "EVT99802OPTB"
 		set_country_flag = ULA_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = ULA }
 			any_pop = {
