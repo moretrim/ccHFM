@@ -593,6 +593,8 @@ country_event = {
 	news_desc_short = "EVTDESC85020_NEWS_SHORT"
 	picture = "tonghak_rebellion"
 	
+	fire_only_once = yes
+	
 	trigger = {
 		tag = KOR
 		OR = { 
@@ -600,7 +602,10 @@ country_event = {
 				civilized = no
 				civilization_progress = 0.7
 			}
-			year = 1894	
+			AND = {
+				year = 1894
+				civilized = no
+			}
 		}
 		government = absolute_monarchy
 		OR = {
@@ -654,7 +659,7 @@ country_event = {
 		}
 	}
 	
-	option = {
+	option = { #historical Korea asks Qing for help which may lead to Sino-Japanese War
 		name = "EVT85020OPTA"
 		set_country_flag = tonghak_rebellion_happened
 		prestige = -10
@@ -677,6 +682,76 @@ country_event = {
 		}
 		any_greater_power = {
 			diplomatic_influence = { who = THIS value = -200 }
+		}
+		ai_chance = {
+			modifier = {
+				factor = 0
+				KOR = {
+					OR = {
+						truce_with = QNG
+						has_recently_lost_war = no
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				KOR = { vassal_of = QNG }
+			}
+			modifier = {
+				factor = 2
+				KOR = { in_sphere = JAP }
+			}
+		}
+	}
+	
+	option = { #non-historical mainly intended for player protection and ai unicorns
+		name = "EVT85020OPTB"
+		prestige = -10
+		any_owned = {
+			limit = {
+				region = KOR_1624
+			}
+			add_province_modifier = {
+				name = peasant_revolt
+				duration = 1460
+			}
+		}
+		poor_strata = {
+			limit = {
+				is_primary_culture = yes
+				location = { is_core = KOR }
+			}
+			militancy = 5
+			consciousness = 5
+		}
+		KOR = {
+			add_casus_belli = {
+				target = QNG
+				type = make_puppet
+				months = 64
+			}
+		}
+		KOR = {
+			add_casus_belli = {
+				target = JAP
+				type = make_puppet
+				months = 64
+			}
+		}
+		ai_chance = {
+			modifier = {
+				factor = 2
+				KOR = {
+					AND = {
+						truce_with = QNG
+						has_recently_lost_war = no
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				KOR = { is_vassal = yes }
+			}
 		}
 	}
 }
