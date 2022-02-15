@@ -1181,6 +1181,10 @@ cuirassier_activation = {
 			factor = -2
 			not = { civilized = yes }
 		}
+		modifier = {
+			factor = 98
+			civilized = yes
+		}
 	}
 	effect = {
 		activate_unit = cuirassier
@@ -1194,6 +1198,10 @@ dragoon_activation = {
 			factor = -2
 			not = { civilized = yes }
 		}
+		modifier = {
+			factor = 98
+			civilized = yes
+		}
 	}
 	effect = {
 		activate_unit = dragoon
@@ -1206,6 +1214,10 @@ hussar_activation = {
 		modifier = {
 			factor = -2
 			not = { civilized = yes }
+		}
+		modifier = {
+			factor = 98
+			civilized = yes
 		}
 	}
 	effect = {
