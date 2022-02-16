@@ -1,0 +1,12 @@
+country_event { #notify Afghanistan that 99101 occurred
+	id = 4000000
+	title = "EVTNAME99101"
+	desc = "EVTDESC99101"
+	picture = "graveyard_of_empires"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA500061" #Excellent
+	}
+}

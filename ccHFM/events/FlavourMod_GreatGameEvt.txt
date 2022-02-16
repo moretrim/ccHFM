@@ -80,7 +80,6 @@ country_event = {
 		tag = ENG
 		AFG = {
 			vassal_of = ENG
-			ai = yes
 		}
 		NOT = { has_global_flag = graveyard_of_empires }
 	}
@@ -115,6 +114,8 @@ country_event = {
 			}
 			militancy = 0.5
 			consciousness = 2.5
+		}
+		AFG = { country_event = 4000000 }
 		}
 		ai_chance = {
 			factor = 100
