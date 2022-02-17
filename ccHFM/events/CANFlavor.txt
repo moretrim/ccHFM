@@ -325,20 +325,19 @@ country_event = {
 			tag = ENL
 		}
 		war = no
-		year = 1867
+		year = 1865
 		any_owned_province = { is_core = CAN }
-		NOT = { exists = CAN }
+		NOT = {
+			exists = CAN
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = CAN
 	}
 
 	mean_time_to_happen = {
 		months = 6
 		modifier = {
-			factor = 15
-			has_country_flag = CAN_independence_refused
-		}
-		modifier = {
-			factor = 3
+			factor = 1.5
 			NOT = { has_country_flag = charlottetown_conference }
 		}
 		modifier = {
@@ -349,9 +348,17 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
-			year = 1870
-			NOT = { has_country_flag = CAN_independence_refused }
+			factor = 0.1
+			OR = {
+				has_global_flag = american_civil_war_has_happened
+				has_global_flag = alt_american_civil_war_has_happened
+			}
+			USA = {
+				trade_policy = protectionism
+				war = no
+				has_recently_lost_war = no
+				has_country_flag = hasmanifestdestiny
+			}
 		}
 	}
 
@@ -442,18 +449,30 @@ country_event = {
 				factor = 1.2
 				militancy = 5
 			}
-			
+			modifier = {
+				factor = 2
+				OR = {
+					has_global_flag = american_civil_war_has_happened
+					has_global_flag = alt_american_civil_war_has_happened
+				}
+				USA = {
+					trade_policy = protectionism
+					war = no
+					has_recently_lost_war = no
+					has_country_flag = hasmanifestdestiny
+				}
+			}
 		}	
 	}
 	option = {
 		name = "EVT44315OPTB"
 		set_country_flag = CAN_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = CAN }
-			add_province_modifier = {
-				name = nationalist_agitation
-				duration = 1095
-			}
 			any_pop = {
 				limit = { has_pop_culture = anglo_canadian }
 				militancy = 3
@@ -559,16 +578,15 @@ country_event = {
 			}
 		}
 		any_owned_province = { is_core = QUE }
-		NOT = { exists = QUE }
+		NOT = {
+			exists = QUE
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = QUE
 	}
 
 	mean_time_to_happen = {
-		months = 12
-		modifier = {
-			factor = 10
-			has_country_flag = QUE_independence_refused
-		}
+		months = 6
 		modifier = {
 			factor = 0.8
 			any_state = {
@@ -665,6 +683,10 @@ country_event = {
 	option = {
 		name = "EVT44315OPTB"
 		set_country_flag = QUE_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = QUE }
 			add_province_modifier = {
@@ -779,7 +801,10 @@ country_event = {
 			}
 		}
 		any_owned_province = { is_core = MRU }
-		NOT = { exists = MRU }
+		NOT = {
+			exists = MRU
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = MRU
 	}
 
@@ -890,6 +915,10 @@ country_event = {
 	option = {
 		name = "EVT44315OPTB"
 		set_country_flag = MRU_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = MRU }
 			add_province_modifier = {
@@ -898,8 +927,8 @@ country_event = {
 			}
 			any_pop = {
 				limit = { has_pop_culture = anglo_canadian }
-				militancy = 6
-				consciousness = 6
+				militancy = 3
+				consciousness = 5
 			}
 		}
 		ai_chance = {
@@ -1018,11 +1047,14 @@ country_event = {
 				}
 			}
 		}
-		NOT = { exists = COL }
+		NOT = {
+			exists = COL
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 	}
 
 	mean_time_to_happen = {
-		months = 36
+		months = 24
 		modifier = {
 			factor = 10
 			has_country_flag = COL_independence_refused
@@ -1141,6 +1173,10 @@ country_event = {
 	option = {
 		name = "EVT44315OPTB"
 		set_country_flag = COL_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = COL }
 			add_province_modifier = {
@@ -1149,8 +1185,8 @@ country_event = {
 			}
 			any_pop = {
 				limit = { has_pop_culture = anglo_canadian }
-				militancy = 6
-				consciousness = 6
+				militancy = 3
+				consciousness = 5
 			}
 		}
 		ai_chance = {

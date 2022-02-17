@@ -3309,6 +3309,10 @@ cch.recent-call-to-arms = {
     icon = 15
 }
 
+cch.colonial-conference-cooldown = {
+	icon = 5
+}
+
 ## Country Workshop
 
 country-workshop.hanseatic-tooltip0 = {
