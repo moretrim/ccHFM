@@ -87,6 +87,13 @@ country_event = {
 
 	option = {
 		name = "EVT97642OPTA"
+		THIS = {
+			add_casus_belli = {
+				target = FROM
+				type = establish_protectorate_casus_belli
+				months = 12
+			}
+		}
 		FROM = {
 			war = {
 				target = THIS

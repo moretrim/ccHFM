@@ -1524,7 +1524,7 @@ political_decisions = {
 						AND = { owns = 120 NOT = { has_global_flag = french_renamed_south_dakota } }
 						AND = { owns = 117 NOT = { has_global_flag = french_renamed_north_dakota } }
 						AND = { owns = 112 NOT = { has_global_flag = french_renamed_wyoming } }
-						AND = { owns = 78 NOT = { has_global_flag = french_renamed_washington } }
+						AND = { owns = 116 NOT = { has_global_flag = french_renamed_montana } }
 						AND = { owns = 81 NOT = { has_global_flag = french_renamed_oregon } }
 						AND = { owns = 91 NOT = { has_global_flag = french_renamed_idaho } }
 					}
@@ -1543,7 +1543,7 @@ political_decisions = {
 						AND = { owns = 120 has_global_flag = french_renamed_south_dakota }
 						AND = { owns = 117 has_global_flag = french_renamed_north_dakota }
 						AND = { owns = 112 has_global_flag = french_renamed_wyoming }
-						AND = { owns = 78 has_global_flag = french_renamed_washington }
+						AND = { owns = 116 has_global_flag = french_renamed_montana }
 						AND = { owns = 81 has_global_flag = french_renamed_oregon }
 						AND = { owns = 91 has_global_flag = french_renamed_idaho }
 					}
