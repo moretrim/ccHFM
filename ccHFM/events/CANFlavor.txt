@@ -117,7 +117,20 @@ country_event = {
 		prestige = -10
 		CAN_58 = {
 			add_core = CAN
-			remove_core = RPL
+		}
+		any_country = {
+			limit = {
+				tag = RPL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 58
+					}
+				}
+				remove_core = RPL
+			}
 		}
 		any_pop = {
 			limit = {
@@ -594,7 +607,20 @@ country_event = {
 		}
 		CAN_60 = {
 			add_core = QUE
-			remove_core = RPL
+		}
+		any_country = {
+			limit = {
+				tag = RPL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 60
+					}
+				}
+				remove_core = RPL
+			}
 		}
 		QUE = {
 			all_core = {
@@ -725,7 +751,20 @@ country_event = {
 		}
 		CAN_60 = {
 			add_core = QUE
-			remove_core = RPL
+		}
+		any_country = {
+			limit = {
+				tag = RPL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 60
+					}
+				}
+				remove_core = RPL
+			}
 		}
 		QUE = {
 			all_core = {
@@ -1442,15 +1481,6 @@ country_event = {
 			limit = {
 				tag = RPL
 				exists = yes
-				vassal_of = FROM
-			}
-			all_core = { remove_core = RPL }
-			annex_to = CAN
-		}
-		random_country = {
-			limit = {
-				tag = RPL
-				exists = yes
 				NOT = { vassal_of = FROM }
 			}
 			any_owned = {
@@ -1479,6 +1509,26 @@ country_event = {
 				any_pop = { militancy = -6 }
 				secede_province = CAN
 			}
+		}
+		random_country = {
+			limit = {
+				tag = RPL
+				vassal_of = FROM
+				ai = no
+			}
+			all_core = { remove_core = RPL }
+			change_tag = CAN
+		}
+		random_country = {
+			limit = {
+				tag = RPL
+				vassal_of = FROM
+				ai = yes
+			}
+			all_core = { remove_core = RPL }
+		}
+		CAN = {
+			inherit = RPL
 		}
 		ai_chance = {
 			factor = 100
@@ -2118,8 +2168,17 @@ country_event = {
 	option = {
 		name = "EVT44303OPTA"
 		set_country_flag = metis_pacification
-		MTC = {
-			all_core = { remove_core = MTC }
+		any_country = {
+			limit = {
+				tag = MTC
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = CAN
+				}
+				remove_core = MTC
+			}
 		}
 		any_pop = {
 			ideology = {

@@ -47,17 +47,21 @@ political_decisions = {
 			capital = 65
 			small_arms = 50
 			regular_clothes = 50
-			CAN_60 = {
-				add_core = QUE
-				remove_core = RPL
-			}
-			2625 = {
-				add_core = QUE
-				remove_core = RPL
-			}
-			76 = {
-				add_core = QUE
-				remove_core = RPL
+			any_country = {
+				limit = {
+					tag = RPL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						OR = {
+							province_id = 60
+							province_id = 2625
+							province_id = 76
+						}
+					}
+					remove_core = RPL
+				}
 			}
 			58 = { state_scope = { change_region_name = "Québec" } }
 		}
@@ -112,8 +116,21 @@ political_decisions = {
 			CAN_13 = {
 				add_core = COL
 				add_core = CAN
-				remove_core = RPL
-			}	
+			}
+			any_country = {
+				limit = {
+					tag = RPL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						OR = {
+							province_id = 13
+						}
+					}
+					remove_core = RPL
+				}
+			}
 			#Remove RPL & USA Cores, if owned
 			RPL = {			
 				any_owned = {
@@ -139,6 +156,18 @@ political_decisions = {
 					}
 				}
 				all_core = { remove_core = ENG }
+			}
+			any_country = {
+				limit = {
+					tag = RPL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = COL
+					}
+					remove_core = RPL
+				}
 			}
 		}
 		ai_will_do = {

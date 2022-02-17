@@ -172,7 +172,18 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = abolish_volga_region
-			VLG = { all_core = { remove_core = VLG } }
+			any_country = {
+				limit = {
+					tag = VLG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = RUS
+					}
+					remove_core = VLG
+				}
+			}
 			war_exhaustion = -5
 		}
 		
@@ -582,7 +593,18 @@ political_decisions = {
 				all_core = { add_core = RUS }
 				annex_to = RUS
 			}
-			SVA = { all_core = { remove_core = SVA } }
+			any_country = {
+				limit = {
+					tag = SVA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = RUS
+					}
+					remove_core = SVA
+				}
+			}
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -643,7 +665,18 @@ political_decisions = {
 				all_core = { add_core = RUS }
 				annex_to = RUS
 			}
-			MIG = { all_core = { remove_core = MIG } }
+			any_country = {
+				limit = {
+					tag = MIG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = RUS
+					}
+					remove_core = MIG
+				}
+			}
 		}
 		ai_will_do = { factor = 1 }
 	}

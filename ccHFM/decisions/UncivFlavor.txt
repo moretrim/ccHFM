@@ -284,9 +284,42 @@ political_decisions = {
 				life_rating = 5
 			}
 			capital = 1859
-			GON = { all_core = { remove_core = GON } }
-			SHW = { all_core = { remove_core = SHW } }
-			TIG = { all_core = { remove_core = TIG } }
+			any_country = {
+				limit = {
+					tag = GON
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ETH
+					}
+					remove_core = GON
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SHW
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ETH
+					}
+					remove_core = SHW
+				}
+			}
+			any_country = {
+				limit = {
+					tag = TIG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ETH
+					}
+					remove_core = TIG
+				}
+			}
 			ENG_1848 = { add_core = TIG }
 		}
 		
@@ -352,10 +385,54 @@ political_decisions = {
 			set_global_flag = somalia_united
 			prestige = 5
 			all_core = { add_core = SOM }
-			HBY = { all_core = { remove_core = HBY } }
-			GEL = { all_core = { remove_core = GEL } }
-			MAJ = { all_core = { remove_core = MAJ } }
-			WRL = { all_core = { remove_core = WRL } }
+			any_country = {
+				limit = {
+					tag = HBY
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SOM
+					}
+					remove_core = HBY
+				}
+			}
+			any_country = {
+				limit = {
+					tag = GEL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SOM
+					}
+					remove_core = GEL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MAJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SOM
+					}
+					remove_core = MAJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = WRL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = SOM
+					}
+					remove_core = WRL
+				}
+			}
 			1875 = { add_core = SOM }
 			1864 = { add_core = SOM }
 			1866 = { add_core = SOM }

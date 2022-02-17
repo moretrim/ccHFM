@@ -76,8 +76,37 @@ country_event = {
 		BOR = { remove_accepted_culture = french_canadian remove_accepted_culture = cajun }
 		badboy = -2
 		NEN = { remove_accepted_culture = french_canadian }
-		ULA = { all_core = { remove_core = ULA } }
-		ACA = { all_core = { remove_core = ACA } }
+		any_country = {
+			limit = {
+				tag = ULA
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						is_core = USA
+						is_core = CSA
+					}
+				}
+				remove_core = ULA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ACA
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						is_core = USA
+						is_core = MRU
+						is_core = CAN
+					}
+				}
+				remove_core = ACA
+			}
+		}
 		
 		ai_chance = { factor = 1 }
 	}
@@ -177,8 +206,37 @@ country_event = {
 		set_country_flag = no_french_america
 		FRA = { remove_accepted_culture = french_canadian remove_accepted_culture = cajun }
 		BOR = { remove_accepted_culture = french_canadian remove_accepted_culture = cajun }
-		ACA = { all_core = { remove_core = ACA } }
-		ULA = { all_core = { remove_core = ULA } }
+		any_country = {
+			limit = {
+				tag = ULA
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						is_core = USA
+						is_core = CSA
+					}
+				}
+				remove_core = ULA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ACA
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						is_core = USA
+						is_core = MRU
+						is_core = CAN
+					}
+				}
+				remove_core = ACA
+			}
+		}
 	}
 }
 
@@ -221,9 +279,20 @@ country_event = {
 			all_core = {
 				remove_core = THIS 
 				remove_core = CAN 
-				remove_core = RPL
 				remove_core = NEW
 			} 
+		}
+		any_country = {
+			limit = {
+				tag = RPL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = QUE
+				}
+				remove_core = RPL
+			}
 		}
 		
 		any_pop = {

@@ -128,10 +128,43 @@ country_event = {
 		capital = 1853
 		1853 = { change_province_name = "Magdala" }
 		change_tag = ETH
-		GON = { all_core = { remove_core = GON } }
-		SHW = { all_core = { remove_core = SHW } }
-		TIG = { all_core = { remove_core = TIG } }
 		ENG_1848 = { add_core = TIG }
+		any_country = {
+			limit = {
+				tag = GON
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = ETH
+				}
+				remove_core = GON
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SHW
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = ETH
+				}
+				remove_core = SHW
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TIG
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = ETH
+				}
+				remove_core = TIG
+			}
+		}
 		any_pop = { limit = { OR = { is_primary_culture = yes is_accepted_culture = yes } } militancy = -4 }
 	}
 }

@@ -285,6 +285,12 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		DAH = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -449,6 +455,12 @@ province_event = {
 		NOT = {
 			is_core = IVC
 		}
+		ASH = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -502,6 +514,12 @@ province_event = {
 		}
 		NOT = {
 			is_core = IVC
+		}
+		ASH = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
 		}
 	}
 	
@@ -683,6 +701,12 @@ province_event = {
 			IVC = {
 				vassal_of = THIS
 				is_culture_group = THIS
+			}
+		}
+		ASH = {
+			OR = {
+				exists = no
+				is_vassal = yes
 			}
 		}
 	}
@@ -1544,6 +1568,18 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		TRI = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
+		CYR = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1611,6 +1647,12 @@ province_event = {
 			GAB = {
 				vassal_of = THIS
 				is_culture_group = THIS
+			}
+		}
+		GAB = {
+			OR = {
+				exists = no
+				is_vassal = yes
 			}
 		}
 	}
@@ -2999,6 +3041,12 @@ province_event = {
 		NOT = {
 			is_core = KNY
 		}
+		ZAN = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3162,6 +3210,12 @@ province_event = {
 		NOT = {
 			is_core = TNZ
 		}
+		ZAN = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3216,6 +3270,12 @@ province_event = {
 		}
 		NOT = {
 			is_core = TNZ
+		}
+		ZAN = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
 		}
 	}
 	
@@ -3625,6 +3685,18 @@ province_event = {
 		NOT = {
 			is_core = LBY
 		}
+		TRI = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
+		CYR = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3934,6 +4006,12 @@ province_event = {
 				has_global_flag = zanzibar_organized
 			}
 		}
+		ZAN = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3994,6 +4072,12 @@ province_event = {
 				vassal_of = THIS
 			}
 		}
+		MOR = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4052,6 +4136,12 @@ province_event = {
 		}
 		NOT = {
 			is_core = MOR
+		}
+		TRZ = {
+			OR = {
+				exists = no
+				is_vassal = yes
+			}
 		}
 	}
 	

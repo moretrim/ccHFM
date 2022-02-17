@@ -618,7 +618,6 @@ country_event = {
 		}
 		2102 = {
 			secede_province = THIS
-			remove_core = MAT
 			add_core = ORA
 			add_core = SAF
 			change_province_name = "Winburg"
@@ -713,11 +712,22 @@ country_event = {
 		}
 		2102 = {
 			secede_province = THIS
-			remove_core = MAT
 			add_core = ORA
 			add_core = SAF
 			change_province_name = "Winburg"
 			state_scope = { change_region_name = "Vrystaat" }
+		}
+		any_country = {
+			limit = {
+				tag = MAT
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					province_id = 2102
+				}
+				remove_core = MAT
+			}
 		}
 		2103 = {
 			change_province_name = "Philippolis"
@@ -875,7 +885,6 @@ country_event = {
 	
 		2105 = {
 			secede_province = THIS
-			remove_core = BSH
 			add_core = TRN
 			add_core = SAF
 			change_province_name = "Pretoria"
@@ -884,9 +893,23 @@ country_event = {
 		2106 = {
 			change_province_name = "Witwatersrand"
 			secede_province = THIS
-			remove_core = BSH
 			add_core = TRN
 			add_core = SAF
+		}
+		any_country = {
+			limit = {
+				tag = BSH
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 2105
+						province_id = 2106
+					}
+				}
+				remove_core = BSH
+			}
 		}
 		2107 = {
 			change_province_name = "Klerksdorp"
@@ -908,9 +931,22 @@ country_event = {
 		2110 = { 
 			#change_province_name = "Hoedspruit"
 			#secede_province = THIS
-			remove_core = GAZ
 			add_core = TRN
 			add_core = SAF
+		}
+		any_country = {
+			limit = {
+				tag = GAZ
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 2110
+					}
+				}
+				remove_core = BSH
+			}
 		}
 		3273 = {
 			change_province_name = "Hoedspruit"
@@ -1020,7 +1056,6 @@ country_event = {
 	
 		2105 = {
 			secede_province = THIS
-			remove_core = BSH
 			add_core = TRN
 			add_core = SAF
 			change_province_name = "Pretoria"
@@ -1029,9 +1064,23 @@ country_event = {
 		2106 = {
 			change_province_name = "Witwatersrand"
 			secede_province = THIS
-			remove_core = BSH
 			add_core = TRN
 			add_core = SAF
+		}
+		any_country = {
+			limit = {
+				tag = BSH
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					OR = {
+						province_id = 2105
+						province_id = 2106
+					}
+				}
+				remove_core = BSH
+			}
 		}
 		2107 = {
 			change_province_name = "Klerksdorp"

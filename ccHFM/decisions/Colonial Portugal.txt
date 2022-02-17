@@ -328,10 +328,31 @@ political_decisions = {
 			any_owned = {
 				limit = { OR = { state_id = 1999 state_id = 2003 state_id = 2006 province_id = 2000 } }
 					add_core = ANG
-					remove_core = KON
-					remove_core = LUN
 			}
-			
+			any_country = {
+				limit = {
+					tag = KON
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ANG
+					}
+					remove_core = KON
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LUN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ANG
+					}
+					remove_core = LUN
+				}
+			}
 			random_owned = { limit = { owner = { primary_culture = portuguese owns = 2003 } } 2003 = { change_province_name = "Lobito" } }
 			random_owned = { limit = { owner = { primary_culture = portuguese owns = 2005 } } 2005 = { change_province_name = "New Lisbon" } }
 			random_owned = { limit = { owner = { primary_culture = portuguese owns = 2008 } } 2008 = { change_province_name = "Namakunde" } }

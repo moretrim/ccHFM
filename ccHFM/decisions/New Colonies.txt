@@ -395,19 +395,126 @@ political_decisions = {
             SOK_1937 = { add_core = NGR }
             FRA_1927 = { add_core = NGR }
             SOK_1945 = { add_core = NGR }
-
-            any_owned = {
-                limit = { is_core = NGR }
-                remove_core = NIG
-                remove_core = SOK
-                remove_core = DND
-                remove_core = TOU
-                remove_core = OYO
-                remove_core = BEN
-                remove_core = ARO
-                remove_core = CLA
-                remove_core = WRI
-                remove_core = KBO
+            
+            any_country = {
+                limit = {
+                   tag = NIG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = NIG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SOK
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = SOK
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = OYO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = OYO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BEN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = BEN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ARO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = ARO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = CLA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = CLA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WRI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = WRI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KBO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = KBO
+                }
             }
 
             SOK_1934 = { add_core = ARO }
@@ -557,15 +664,126 @@ political_decisions = {
                     }
                 }
                 add_core = NGR
-                remove_core = SOK
-                remove_core = DND
-                remove_core = TOU
-                remove_core = OYO
-                remove_core = BEN
-                remove_core = ARO
-                remove_core = CLA
-                remove_core = WRI
-                remove_core = KBO
+            }
+            any_country = {
+                limit = {
+                   tag = NIG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = NIG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SOK
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = SOK
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = OYO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = OYO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BEN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = BEN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ARO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = ARO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = CLA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = CLA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WRI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = WRI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KBO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NGR
+                    }
+                    remove_core = KBO
+                }
             }
             NGR = {
                 primary_culture = THIS
@@ -871,11 +1089,41 @@ political_decisions = {
             1892 = { change_province_name = "Abidjan" }
             FRA_1892 = { add_core = IVC }
             FRA_1893 = { add_core = IVC }
-            any_owned = {
-                limit = { is_core = IVC }
-                remove_core = KNG
-                remove_core = ASH
-                remove_core = MOS
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = KNG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ASH
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = ASH
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = MOS
+                }
             }
             random_owned = { limit = { owner = { primary_culture = french } } IVC = { government = colonial_company } }
             IVC = {
@@ -971,9 +1219,42 @@ political_decisions = {
                     }
                 }
                 add_core = IVC
-                remove_core = KNG
-                remove_core = ASH
-                remove_core = MOS
+            }
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = KNG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ASH
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = ASH
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = IVC
+                    }
+                    remove_core = MOS
+                }
             }
             IVC = {
                 primary_culture = THIS
@@ -1221,10 +1502,29 @@ political_decisions = {
             country_event = 199042
             1879 = { change_province_name = "Conakry" }
             FRA_1883 = { add_core = GNE }
-            any_owned = {
-                limit = { is_core = GNE }
-                remove_core = JAL
-                remove_core = GBU
+            any_country = {
+                limit = {
+                   tag = JAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GNE
+                    }
+                    remove_core = JAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = GBU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GNE
+                    }
+                    remove_core = GBU
+                }
             }
             GNE = {
                 primary_culture = THIS
@@ -1314,8 +1614,30 @@ political_decisions = {
             any_owned = {
                 limit = { region = FRA_1883 }
                 add_core = GNE
-                remove_core = JAL
-                remove_core = GBU
+            }
+            any_country = {
+                limit = {
+                   tag = JAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GNE
+                    }
+                    remove_core = JAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = GBU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GNE
+                    }
+                    remove_core = GBU
+                }
             }
 
             GNE = {
@@ -1414,12 +1736,53 @@ political_decisions = {
             1788 = { trade_goods = cotton }
             FRA_1783 = { add_core = SNG }
             FRA_1788 = { add_core = SNG }
-            any_owned = {
-                limit = { is_core = SNG }
-                remove_core = TOO
-                remove_core = WOL
-                remove_core = SEG
-                remove_core = TOU
+            any_country = {
+                limit = {
+                   tag = TOO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = TOO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WOL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = WOL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = TOU
+                }
             }
             SNG = {
                 primary_culture = THIS
@@ -1478,10 +1841,54 @@ political_decisions = {
                     }
                 }
                 add_core = SNG
-                remove_core = TOO
-                remove_core = WOL
-                remove_core = SEG
-                remove_core = TOU
+            }
+            any_country = {
+                limit = {
+                   tag = TOO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = TOO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WOL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = WOL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SNG
+                    }
+                    remove_core = TOU
+                }
             }
 
             SNG = { primary_culture = THIS }
@@ -1533,13 +1940,65 @@ political_decisions = {
             FRA_1813 = { add_core = NIG }
             FRA_1808 = { add_core = NIG }
 
-            any_owned = {
-                limit = { is_core = NIG }
-                remove_core = DND
-                remove_core = TOU
-                remove_core = MAS
-                remove_core = DAM
-                remove_core = KBO
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DAM
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = DAM
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KBO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = KBO
+                }
             }
             NIG = {
                 primary_culture = THIS
@@ -1597,13 +2056,67 @@ political_decisions = {
                     }
                 }
                 add_core = NIG
-                remove_core = DND
-                remove_core = TOU
-                remove_core = MAS
-                remove_core = DAM
-                remove_core = KBO
             }
-
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DAM
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = DAM
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KBO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = NIG
+                    }
+                    remove_core = KBO
+                }
+            }
             NIG = {
                 primary_culture = THIS
 
@@ -2096,7 +2609,18 @@ political_decisions = {
                 clr_country_flag = shinto_country
                 clr_country_flag = sikh_country
                 clr_country_flag = animist_country
-                all_core = { remove_core = EQG }
+            }
+            any_country = {
+                limit = {
+                   tag = EQG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GAB
+                    }
+                    remove_core = EQG
+                }
             }
 
             random_owned = { limit = { owner = { has_country_flag = catholic_country } } GAB = { religion = catholic set_country_flag = catholic_country } }
@@ -2180,6 +2704,18 @@ political_decisions = {
                 clr_country_flag = sikh_country
                 clr_country_flag = animist_country
             }
+            any_country = {
+                limit = {
+                   tag = EQG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GAB
+                    }
+                    remove_core = EQG
+                }
+            }
 
             random_owned = { limit = { owner = { has_country_flag = catholic_country } } GAB = { religion = catholic set_country_flag = catholic_country } }
             random_owned = {
@@ -2261,7 +2797,18 @@ political_decisions = {
 
             any_owned = { limit = { is_core = CGO NOT = {life_rating = 12 } } life_rating = 25 }
 
-            any_owned = { limit = { is_core = CGO } remove_core = LOA }
+            any_country = {
+                limit = {
+                   tag = LOA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CGO
+                    }
+                    remove_core = LOA
+                }
+            }
             CGO = {
                 primary_culture = THIS
                 add_accepted_culture = bakongo
@@ -2359,7 +2906,18 @@ political_decisions = {
                 }
                 life_rating = 25
             }
-            any_owned = { limit = { is_core = CGO } remove_core = LOA }
+            any_country = {
+                limit = {
+                   tag = LOA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CGO
+                    }
+                    remove_core = LOA
+                }
+            }
             CGO = {
                 primary_culture = THIS
                 clr_country_flag = sunni_country
@@ -2478,23 +3036,77 @@ political_decisions = {
             BEL_1987 = { add_core = CNG }
             BEL_1990 = { add_core = CNG }
             BEL_1996 = { add_core = CNG }
-            any_owned = {
+            any_country = {
                 limit = {
-                    OR = {
-                        region = BEL_1977
-                        region = BEL_1984
-                        region = BEL_1992
-                        region = BEL_1987
-                        region = BEL_1990
-                        region = BEL_1996
-                    }
+                   tag = CGO
+                   exists = no 
                 }
-                remove_core = CGO
-                remove_core = LUN
-                remove_core = LOA
-                remove_core = AZA
-                remove_core = KZB
-                remove_core = KON
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = CGO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LUN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = LUN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LOA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = LOA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = AZA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = AZA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KZB
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = KZB
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KON
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = KON
+                }
             }
             any_owned = {
                 limit = {
@@ -2613,12 +3225,78 @@ political_decisions = {
                     }
                 }
                 add_core = CNG
-                remove_core = CGO
-                remove_core = LUN
-                remove_core = LOA
-                remove_core = AZA
-                remove_core = KZB
-                remove_core = KON
+            }
+            any_country = {
+                limit = {
+                   tag = CGO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = CGO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LUN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = LUN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LOA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = LOA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = AZA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = AZA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KZB
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = KZB
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KON
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CNG
+                    }
+                    remove_core = KON
+                }
             }
             any_owned = {
                 limit = {
@@ -2731,10 +3409,29 @@ political_decisions = {
             ENG_2014 = { add_core = ZAM }
             ENG_2016 = { add_core = ZAM }
 
-            any_owned = {
-                limit = { is_core = ZAM }
-                remove_core = KZB
-                remove_core = LUN
+            any_country = {
+                limit = {
+                   tag = KZB
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ZAM
+                    }
+                    remove_core = KZB
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LUN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ZAM
+                    }
+                    remove_core = LUN
+                }
             }
             any_owned = {
                 limit = {
@@ -2849,8 +3546,30 @@ political_decisions = {
                     }
                 }
                 add_core = ZAM
-                remove_core = KZB
-                remove_core = LUN
+            }
+            any_country = {
+                limit = {
+                   tag = KZB
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ZAM
+                    }
+                    remove_core = KZB
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LUN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ZAM
+                    }
+                    remove_core = LUN
+                }
             }
             random_owned = {
                 limit = { province_id = 2015 owner = { primary_culture = british } }
@@ -2955,9 +3674,17 @@ political_decisions = {
             ENG_2026 = { add_core = KNY }
             ENG_2024 = { add_core = KNY }
 
-            any_owned = {
-                limit = { is_core = KNY }
-                remove_core = ZAN
+            any_country = {
+                limit = {
+                   tag = ZAN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = KNY
+                    }
+                    remove_core = ZAN
+                }
             }
 
             any_owned = {
@@ -3069,7 +3796,18 @@ political_decisions = {
                     }
                 }
                 add_core = KNY
-                remove_core = ZAN
+            }
+            any_country = {
+                limit = {
+                   tag = ZAN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = KNY
+                    }
+                    remove_core = ZAN
+                }
             }
             any_owned = {
                 limit = {
@@ -3175,13 +3913,18 @@ political_decisions = {
             ENG_2044 = { add_core = TNZ }
             ENG_2039 = { add_core = TNZ }
 
-            any_owned = {
+            any_country = {
                 limit = {
-                    is_core = TNZ
-                    # Zanzibar
-                    NOT = { province_id = 2048 }
+                   tag = ZAN
+                   exists = no 
                 }
-                remove_core = ZAN
+                all_core = {
+                    limit = {
+                        is_core = TNZ
+                        NOT = { province_id = 2048 }
+                    }
+                    remove_core = ZAN
+                }
             }
 
             any_owned = {
@@ -3299,6 +4042,19 @@ political_decisions = {
                 }
                 add_core = TNZ
             }
+            any_country = {
+                limit = {
+                   tag = ZAN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = TNZ
+                        NOT = { province_id = 2048 }
+                    }
+                    remove_core = ZAN
+                }
+            }
             any_owned = {
                 limit = {
                     OR = {
@@ -3406,14 +4162,77 @@ political_decisions = {
             FRA_1801 = { add_core = MLI }
             FRA_1798 = { add_core = MLI }
 
-            any_owned = {
-                limit = { is_core = MLI }
-                remove_core = TOU
-                remove_core = SEG
-                remove_core = MAS
-                remove_core = MOS
-                remove_core = DND
-                remove_core = BKF
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BKF
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = BKF
+                }
             }
 
             MLI = {
@@ -3517,12 +4336,78 @@ political_decisions = {
                     }
                 }
                 add_core = MLI
-                remove_core = TOU
-                remove_core = SEG
-                remove_core = MAS
-                remove_core = MOS
-                remove_core = DND
-                remove_core = BKF
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DND
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = DND
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BKF
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLI
+                    }
+                    remove_core = BKF
+                }
             }
 
             MLI = {
@@ -3609,8 +4494,30 @@ political_decisions = {
                     }
                 }
                 add_core = LBY
-                remove_core = TRI
-                remove_core = CYR
+            }
+            any_country = {
+                limit = {
+                   tag = TRI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = LBY
+                    }
+                    remove_core = TRI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = CYR
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = LBY
+                    }
+                    remove_core = CYR
+                }
             }
             LBY = { tech_school = unciv_tech_school }
 
@@ -3649,8 +4556,30 @@ political_decisions = {
                     }
                 }
                 add_core = LBY
-                remove_core = TRI
-                remove_core = CYR
+            }
+            any_country = {
+                limit = {
+                   tag = TRI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = LBY
+                    }
+                    remove_core = TRI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = CYR
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = LBY
+                    }
+                    remove_core = CYR
+                }
             }
             LBY = { tech_school = unciv_tech_school }
         }
@@ -3692,8 +4621,19 @@ political_decisions = {
             any_owned = {
                 limit = { region = FRA_1965 }
                 add_core = CAR
-                remove_core = AZA
                 #remove_core = DAR
+            }
+            any_country = {
+                limit = {
+                   tag = AZA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CAR
+                    }
+                    remove_core = AZA
+                }
             }
             any_owned = {
                 limit = {
@@ -3793,8 +4733,19 @@ political_decisions = {
                     region = FRA_1965
                 }
                 add_core = CAR
-                remove_core = AZA
                 #remove_core = DAR
+            }
+            any_country = {
+                limit = {
+                   tag = AZA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = CAR
+                    }
+                    remove_core = AZA
+                }
             }
             any_owned = {
                 limit = {
@@ -3881,13 +4832,23 @@ political_decisions = {
 
             2067 = {
                 add_core = MLW
-                remove_core = KZB
                 life_rating = 25
             }
             2066 = {
                 add_core = MLW
-                remove_core = KZB
                 life_rating = 25
+            }
+            any_country = {
+                limit = {
+                   tag = KZB
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MLW
+                    }
+                    remove_core = KZB
+                }
             }
             MLW = {
                 primary_culture = THIS
@@ -4059,12 +5020,65 @@ political_decisions = {
 
             1785 = { add_core = GMB }
 
-            any_owned = {
-                limit = { is_core = GMB }
-                remove_core = TOO
-                remove_core = WOL
-                remove_core = SEG
-                remove_core = TOU
+            any_country = {
+                limit = {
+                   tag = TOO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GMB
+                    }
+                    remove_core = TOO
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WOL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GMB
+                    }
+                    remove_core = WOL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GMB
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GMB
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = GBU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GMB
+                    }
+                    remove_core = GBU
+                }
             }
 
             GMB = {
@@ -4268,9 +5282,17 @@ political_decisions = {
             POR_2006 = { add_core = ANG }
             POR_1999 = { add_core = ANG }
 
-            any_owned = {
-                limit = { is_core = ANG }
-                remove_core = KON
+            any_country = {
+                limit = {
+                   tag = KON
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ANG
+                    }
+                    remove_core = KON
+                }
             }
 
             random_owned = {
@@ -4473,11 +5495,51 @@ political_decisions = {
             POR_2054 = { add_core = MOZ }
             POR_2049 = { add_core = MOZ }
 
-            MOZ = {
+            any_country = {
+                limit = {
+                   tag = GAZ
+                   exists = no 
+                }
                 all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
                     remove_core = GAZ
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = AGC
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
                     remove_core = AGC
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ZUL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
                     remove_core = ZUL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SHO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
                     remove_core = SHO
                 }
             }
@@ -4611,10 +5673,54 @@ political_decisions = {
                     }
                 }
                 add_core = MOZ
-                remove_core = GAZ
-                remove_core = AGC
-                remove_core = ZUL
-                remove_core = SHO
+            }
+            any_country = {
+                limit = {
+                   tag = GAZ
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
+                    remove_core = GAZ
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = AGC
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
+                    remove_core = AGC
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ZUL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
+                    remove_core = ZUL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SHO
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = MOZ
+                    }
+                    remove_core = SHO
+                }
             }
             MOZ = {
                 primary_culture = THIS
@@ -4940,8 +6046,19 @@ political_decisions = {
                 clr_country_flag = shinto_country
                 clr_country_flag = sikh_country
                 clr_country_flag = animist_country
-                all_core = { remove_core = MAT }
                 any_pop = { limit = { has_pop_religion = animist } literacy = -0.99 }
+            }
+            any_country = {
+                limit = {
+                   tag = MAT
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = TSW
+                    }
+                    remove_core = MAT
+                }
             }
 
             random_owned = { limit = { owner = { has_country_flag = catholic_country } } TSW = { religion = catholic set_country_flag = catholic_country } }
@@ -5006,10 +6123,19 @@ political_decisions = {
             set_country_flag = botswana_master
             country_event = 199059
 
-            any_owned = {
-                limit = { is_core = TSW }
-                remove_core = MAT
+            any_country = {
+                limit = {
+                   tag = MAT
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = TSW
+                    }
+                    remove_core = MAT
+                }
             }
+
             TSW = {
                 primary_culture = THIS
                 clr_country_flag = sunni_country
@@ -5170,6 +6296,54 @@ political_decisions = {
                 political_reform = landed_voting
                 tech_school = unciv_tech_school
             }
+            any_country = {
+                limit = {
+                   tag = EGY
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SUD
+                    }
+                    remove_core = EGY
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SHK
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SUD
+                    }
+                    remove_core = SHK
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DAR
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SUD
+                    }
+                    remove_core = DAR
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = AZA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SUD
+                    }
+                    remove_core = AZA
+                }
+            }
         }
     }
 
@@ -5248,6 +6422,7 @@ political_decisions = {
             war = no
             machine_guns = 1
             market_regulations = 1
+            1911 = { owned_by = THIS }
             OR = {
                 ASH_1909 = { owned_by = THIS }
                 FRA_1907 = { owned_by = THIS }
@@ -5262,8 +6437,42 @@ political_decisions = {
             ASH = {
                 all_core = {
                     add_core = GHN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
                     remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ASH
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
                     remove_core = ASH
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
+                    remove_core = KNG
                 }
             }
 
@@ -5355,10 +6564,43 @@ political_decisions = {
             set_country_flag = ghana_master
             country_event = 199061
 
-            any_owned = {
-                limit = { is_core = GHN }
-                remove_core = MOS
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
+                    remove_core = MOS
+                }
             }
+            any_country = {
+                limit = {
+                   tag = ASH
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
+                    remove_core = ASH
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = GHN
+                    }
+                    remove_core = KNG
+                }
+            }
+
             GHN = {
                 primary_culture = THIS
                 clr_country_flag = sunni_country
@@ -5438,11 +6680,66 @@ political_decisions = {
             random_owned = { limit = { owner = { primary_culture = french } } 1901 = { change_province_name = "Ouagadougou" } }
             FRA_1901 = {
                 add_core = BKF
-                remove_core = SEG
-                remove_core = TOU
-                remove_core = MAS
-                remove_core = MOS
-                remove_core = KNG
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = KNG
+                }
             }
 
             BKF = {
@@ -5535,11 +6832,66 @@ political_decisions = {
 
             any_owned = {
                 limit = { is_core = BKF }
-                remove_core = SEG
-                remove_core = TOU
-                remove_core = MAS
-                remove_core = MOS
-                remove_core = KNG
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = SEG
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KNG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = BKF
+                    }
+                    remove_core = KNG
+                }
             }
             BKF = {
                 primary_culture = THIS
@@ -5666,8 +7018,54 @@ political_decisions = {
 
             FRA_1919 = {
                 add_core = DAH
-                remove_core = TOU
-                remove_core = MAS
+            }
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = SEG
+                }
             }
             1919 = { change_province_name = Porto-Novo }
             DAH = {
@@ -5759,12 +7157,53 @@ political_decisions = {
             set_country_flag = dahomey_master
             country_event = 199063
 
-            any_owned = {
-                limit = { is_core = DAH }
-                remove_core = SEG
-                remove_core = TOU
-                remove_core = MAS
-                remove_core = MOS
+            any_country = {
+                limit = {
+                   tag = TOU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = TOU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = MAS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MOS
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = MOS
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SEG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = DAH
+                    }
+                    remove_core = SEG
+                }
             }
             DAH = {
                 primary_culture = THIS
@@ -5862,24 +7301,161 @@ political_decisions = {
                 add_core = INO
             }
 
-            any_owned = {
+            any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
                 limit = {
-                    is_core = INO
-                    NOT = { province_id = 1446 province_id = 2647 }
+                   tag = JAV
+                   exists = no 
                 }
-                remove_core = JAV
-                remove_core = DJA
-                remove_core = SAK
-                remove_core = ATJ
-                remove_core = BAL
-                remove_core = SLW
-                remove_core = MAL
-                remove_core = KLM
-                remove_core = LAN
-                remove_core = KTI
-                remove_core = SUL
-                remove_core = BRU
-                remove_core = PPG
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = JAV
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DJA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = DJA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SAK
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SAK
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ATJ
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = ATJ
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = BAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SLW
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SLW
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = MAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KLM
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = KLM
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LAN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = LAN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KTI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = KTI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SUL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SUL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BRU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = BRU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = PPG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = PPG
+                }
             }
 
             INO = {
@@ -5928,24 +7504,161 @@ political_decisions = {
             set_country_flag = indonesia_master
             country_event = 199064
 
-            any_owned = {
+            any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
                 limit = {
-                    is_core = INO
-                    NOT = { province_id = 1446 province_id = 2647 }
+                   tag = JAV
+                   exists = no 
                 }
-                remove_core = JAV
-                remove_core = DJA
-                remove_core = SAK
-                remove_core = ATJ
-                remove_core = BAL
-                remove_core = SLW
-                remove_core = MAL
-                remove_core = KLM
-                remove_core = LAN
-                remove_core = KTI
-                remove_core = SUL
-                remove_core = BRU
-                remove_core = PPG
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = JAV
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = DJA
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = DJA
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SAK
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SAK
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = ATJ
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = ATJ
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = BAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SLW
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SLW
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = MAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KLM
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = KLM
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = LAN
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = LAN
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = KTI
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = KTI
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = SUL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = SUL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = BRU
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = BRU
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = PPG
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = INO
+                    }
+                    remove_core = PPG
+                }
             }
         }
     }
@@ -6014,6 +7727,54 @@ political_decisions = {
                 set_country_flag = post_colonial_country
                 tech_school = unciv_tech_school
                 nationalvalue = nv_tradition
+            }
+            any_country = {
+                limit = {
+                   tag = HBY
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SOM
+                    }
+                    remove_core = HBY
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = GEL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SOM
+                    }
+                    remove_core = GEL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAJ
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SOM
+                    }
+                    remove_core = MAJ
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = WRL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = SOM
+                    }
+                    remove_core = WRL
+                }
             }
         }
     }
@@ -6145,10 +7906,29 @@ political_decisions = {
                 clr_country_flag = sikh_country
                 clr_country_flag = animist_country
             }
-            any_owned = {
-                limit = { is_core = TMR }
-                remove_core = BAL
-                remove_core = MAL
+            any_country = {
+                limit = {
+                   tag = BAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = TMR
+                    }
+                    remove_core = BAL
+                }
+            }
+            any_country = {
+                limit = {
+                   tag = MAL
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = TMR
+                    }
+                    remove_core = MAL
+                }
             }
             random_owned = { limit = { owner = { has_country_flag = catholic_country } } TMR = { religion = catholic set_country_flag = catholic_country } }
             random_owned = {
@@ -6601,8 +8381,15 @@ political_decisions = {
             country_event = 199065
 
             FRA_1878 = { add_core = GBU }
-            GBU = {
+            any_country = {
+                limit = {
+                   tag = JAL
+                   exists = no 
+                }
                 all_core = {
+                    limit = {
+                        is_core = GBU
+                    }
                     remove_core = JAL
                 }
             }
@@ -6950,7 +8737,18 @@ political_decisions = {
             set_country_flag = zimbabwe_master
             country_event = 199067
 
-            ZBW = { all_core = { remove_core = MAT } }
+            any_country = {
+                limit = {
+                   tag = MAT
+                   exists = no 
+                }
+                all_core = {
+                    limit = {
+                        is_core = ZBW
+                    }
+                    remove_core = MAT
+                }
+            }
             ZBW = {
                 set_country_flag = post_colonial_country
                 primary_culture = THIS

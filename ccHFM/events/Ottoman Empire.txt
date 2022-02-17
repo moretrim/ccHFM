@@ -2247,12 +2247,78 @@ country_event = {
 			
 		any_owned = { limit = { OR = { is_core = RDL is_core = MKN } } secede_province = PER }
 		
-		BTL = { all_core = { remove_core = BTL } }
-		BDN = { all_core = { remove_core = BDN } }
-		BHT = { all_core = { remove_core = BHT } }
-		BNB = { all_core = { remove_core = BNB } }
-		SRN = { all_core = { remove_core = SRN } }
-		RDL = { all_core = { remove_core = RDL } }
+		any_country = {
+			limit = {
+				tag = BTL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = BTL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BDN
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = BDN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BHT
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = BHT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BNB
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = BNB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SRN
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = SRN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = RDL
+				exists = no 
+			}
+			all_core = {
+				limit = {
+					is_core = KDS
+				}
+				remove_core = RDL
+			}
+		}
 		MKN = { all_core = { remove_core = MKN } }	
 	}
 }

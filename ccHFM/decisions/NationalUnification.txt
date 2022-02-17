@@ -1002,9 +1002,42 @@ political_decisions = {
 			random_owned = { limit = { owner = { accepted_culture = french } } owner = { remove_accepted_culture = french } }
 			random_owned = { limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german } }
 			random_owned = { limit = { owner = { accepted_culture = british } } owner = { remove_accepted_culture = british } }
-			any_owned = { limit = { is_core = SYC } remove_core = SYC }
-			any_owned = { limit = { is_core = SRD } remove_core = SRD }
-			any_owned = { limit = { is_core = RMG } remove_core = RMG }
+			any_country = {
+				limit = {
+					tag = SYC
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SYC
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SRD
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = SRD
+				}
+			}
+			any_country = {
+				limit = {
+					tag = RMG
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = ITA
+					}
+					remove_core = RMG
+				}
+			}
 			any_country = {
 				limit = {
 					is_culture_group = italian
@@ -1537,12 +1570,6 @@ political_decisions = {
 			FDL = { all_core = { add_core = YEM } }
 			KTH = { all_core = { add_core = YEM } }
 			MHR = { all_core = { add_core = YEM } }
-			any_owned = {
-				remove_core = LHJ
-				remove_core = FDL
-				remove_core = KTH
-				remove_core = MHR
-			}
 			
 			change_tag = YEM
 		}

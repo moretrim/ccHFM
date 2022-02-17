@@ -1,6 +1,6 @@
 #####################################################
 #													#
-#            East Indies Events						#
+#			East Indies Events						#
 #													#
 #####################################################
 
@@ -604,23 +604,150 @@ province_event = {
 			}
 		}
 		INO = { add_accepted_culture = malay }
-		state_scope = {
-			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
-				remove_core = JAV
-				remove_core = DJA 
-				remove_core = SAK 
-				remove_core = ATJ 
-				remove_core = BAL 
-				remove_core = SLW
-				remove_core = MAL
-				remove_core = KLM
-				remove_core = LAN
-				remove_core = KTI
-				remove_core = SUL
-				remove_core = BRU
+			any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
+				limit = {
+					tag = JAV
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = JAV
+				}
 			}
-		}
+			any_country = {
+				limit = {
+					tag = DJA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = DJA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SAK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SAK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = ATJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = ATJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLW
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SLW
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = MAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = LAN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BRU
+				}
+			}
 	}
 }
 
@@ -679,23 +806,150 @@ province_event = {
 			}
 		}
 		INO = { add_accepted_culture = moluccan }
-		state_scope = {
-			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
-				remove_core = JAV
-				remove_core = DJA 
-				remove_core = SAK 
-				remove_core = ATJ 
-				remove_core = BAL 
-				remove_core = SLW
-				remove_core = MAL
-				remove_core = KLM
-				remove_core = LAN
-				remove_core = KTI
-				remove_core = SUL
-				remove_core = BRU
+			any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
+				limit = {
+					tag = JAV
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = JAV
+				}
 			}
-		}
+			any_country = {
+				limit = {
+					tag = DJA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = DJA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SAK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SAK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = ATJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = ATJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLW
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SLW
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = MAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = LAN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BRU
+				}
+			}
 	}
 }
 
@@ -754,23 +1008,150 @@ province_event = {
 			}
 		}
 		INO = { add_accepted_culture = melanesian }
-		state_scope = {
-			any_owned = {
-				limit = { is_core = INO NOT = { province_id = 1446 } }
-				remove_core = JAV
-				remove_core = DJA 
-				remove_core = SAK 
-				remove_core = ATJ 
-				remove_core = BAL 
-				remove_core = SLW
-				remove_core = MAL
-				remove_core = KLM
-				remove_core = LAN
-				remove_core = KTI
-				remove_core = SUL
-				remove_core = BRU
+			any_country = { #1446 and 2647 do not need any of this, since their (TMR) cores are not removed at all
+				limit = {
+					tag = JAV
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = JAV
+				}
 			}
-		}
+			any_country = {
+				limit = {
+					tag = DJA
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = DJA
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SAK
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SAK
+				}
+			}
+			any_country = {
+				limit = {
+					tag = ATJ
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = ATJ
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SLW
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SLW
+				}
+			}
+			any_country = {
+				limit = {
+					tag = MAL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = MAL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KLM
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KLM
+				}
+			}
+			any_country = {
+				limit = {
+					tag = LAN
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = LAN
+				}
+			}
+			any_country = {
+				limit = {
+					tag = KTI
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = KTI
+				}
+			}
+			any_country = {
+				limit = {
+					tag = SUL
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = SUL
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BRU
+					exists = no 
+				}
+				all_core = {
+					limit = {
+						is_core = INO
+					}
+					remove_core = BRU
+				}
+			}
 	}
 }
 
@@ -934,9 +1315,9 @@ country_event = {
 				owner = { NOT = { has_global_flag = malaya_formed } }
 			}
 			owner = {
-				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PRK }
-				1388 = { remove_core = THIS remove_core = JOH add_core = PRK }
-				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = PHG }
+				1389 = { secede_province = FROM remove_core = THIS }
+				1388 = { remove_core = THIS }
+				1391 = { secede_province = FROM remove_core = THIS }
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
 			}
@@ -947,9 +1328,9 @@ country_event = {
 				owner = { has_global_flag = malaya_formed }
 			}
 			owner = {
-				1389 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY }
-				1388 = { remove_core = THIS remove_core = JOH add_core = MLY }
-				1391 = { secede_province = FROM remove_core = THIS remove_core = JOH add_core = MLY }
+				1389 = { secede_province = FROM remove_core = THIS add_core = MLY }
+				1388 = { remove_core = THIS add_core = MLY }
+				1391 = { secede_province = FROM remove_core = THIS add_core = MLY }
 				1390 = { remove_core = THIS }
 				2575 = { remove_core = THIS }
 			}
@@ -1064,7 +1445,7 @@ country_event = {
 	option = {
 		name = "EVT971204OPTA"
 		prestige = -5
-		1408 = { secede_province = NET remove_core = ATJ }
-		1411 = { secede_province = NET remove_core = ATJ }
+		1408 = { secede_province = NET }
+		1411 = { secede_province = NET }
 	}
 }
