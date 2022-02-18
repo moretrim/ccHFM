@@ -1246,6 +1246,7 @@ political_decisions = {
 				truce_with = THIS
 			}
 			truce_with = QNG
+			has_country_flag = cch.annex-hqj
 			NOT = { exists = DAI }
 			NOT = { has_global_flag = treaty_of_tientsin_france }
 		}
@@ -1256,6 +1257,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = treaty_of_tientsin_france
+			clr_country_flag = cch.annex-hqj
 			prestige = 5
 			badboy = 1
 			QNG = {
