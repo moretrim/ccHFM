@@ -260,6 +260,7 @@ country_event = {
 		1371 = { add_core = HQJ }
 		1372 = { add_core = HQJ }
 		casus_belli = { target = QNG type = release_puppet months = 36 }
+		set_country_flag = cch.annex-hqj
 		release = HQJ
 		HQJ = {
 			define_general = {
