@@ -1,0 +1,480 @@
+political_decisions = {
+	
+	#allow formation of a union if it no longer exists and related decisions
+	cch.yugoslavia-no-more = {
+		picture = "form_yugoslavia"
+		potential = {
+			is_culture_group = south_slavic
+			has_global_flag = yugoslavia_formed
+			NOT = { tag = YUG }
+		}
+		allow = {
+			YUG = { exists = no }
+			war = no
+		}
+		effect = {
+			clr_global_flag = yugoslavia_formed
+		}
+	}
+	
+	#If Scandinavia is reduced to being only Denmark, only Sweden, or neither, it can revert to being its home tag. I cover ai possibilities here
+	cch.scandinavia-reduced-sweden = {
+		potential = {
+			tag = SCA
+			OR = {
+				owns = 322
+			}
+			NOT = {
+				owns = 372
+				owns = 313
+				has_country_modifier = being_dismantled
+			}
+		}
+		allow = {
+			is_greater_power = no
+			war = no
+		}
+		effect = { #must add cores since forming SCA removes the cores of whoever formed it Also remove Schleswig-Holstein SCA cores to make reforming SCA fair
+			SWE_322 = { add_core = SWE }
+			SWE_329 = { add_core = SWE }
+			SWE_318 = { add_core = SWE }
+			DEN_367 = { add_core = DEN }
+			DEN_372 = { add_core = DEN }
+			DEN_251 = { add_core = DEN }
+			SWE_309 = { add_core = NOR }
+			SWE_308 = { add_core = NOR }
+			SWE_313 = { add_core = NOR }
+			SCH_370 = { remove_core = SCA }
+			HOL_369 = { remove_core = SCA }
+			change_tag = SWE
+			capital = 322
+			remove_accepted_culture = finnish
+			remove_accepted_culture = danish
+			remove_accepted_culture = norwegian
+		}
+	}
+	
+	cch.scandinavia-reduced-denmark = {
+		potential = {
+			tag = SCA
+			OR = {
+				owns = 372
+			}
+			NOT = {
+				owns = 322
+				owns = 313
+				has_country_modifier = being_dismantled
+			}
+		}
+		allow = {
+			is_greater_power = no
+			war = no
+		}
+		effect = { #must add cores since forming SCA removes the cores of whoever formed it Also remove Schleswig-Holstein SCA cores to make reforming SCA fair
+			SWE_322 = { add_core = SWE }
+			SWE_329 = { add_core = SWE }
+			SWE_318 = { add_core = SWE }
+			DEN_367 = { add_core = DEN }
+			DEN_372 = { add_core = DEN }
+			DEN_251 = { add_core = DEN }
+			SWE_309 = { add_core = NOR }
+			SWE_308 = { add_core = NOR }
+			SWE_313 = { add_core = NOR }
+			SCH_370 = { remove_core = SCA }
+			HOL_369 = { remove_core = SCA }
+			change_tag = DEN
+			capital = 372
+			remove_accepted_culture = finnish
+			remove_accepted_culture = swedish
+			remove_accepted_culture = norwegian
+		}
+	}
+	
+	cch.scandinavia-reduced-norway = {
+		potential = {
+			tag = SCA
+			OR = {
+				owns = 313
+			}
+			NOT = {
+				owns = 322
+				owns = 372
+				has_country_modifier = being_dismantled
+			}
+		}
+		allow = {
+			is_greater_power = no
+			war = no
+		}
+		effect = { #must add cores since forming SCA removes the cores of whoever formed it Also remove Schleswig-Holstein SCA cores to make reforming SCA fair
+			SWE_322 = { add_core = SWE }
+			SWE_329 = { add_core = SWE }
+			SWE_318 = { add_core = SWE }
+			DEN_367 = { add_core = DEN }
+			DEN_372 = { add_core = DEN }
+			DEN_251 = { add_core = DEN }
+			SWE_309 = { add_core = NOR }
+			SWE_308 = { add_core = NOR }
+			SWE_313 = { add_core = NOR }
+			SCH_370 = { remove_core = SCA }
+			HOL_369 = { remove_core = SCA }
+			change_tag = NOR
+			capital = 313
+			remove_accepted_culture = finnish
+			remove_accepted_culture = danish
+			remove_accepted_culture = swedish
+		}
+	}
+	
+	cch.scandinavia-reduced-islands = {
+		potential = {
+			tag = SCA
+			NOT = {
+				owns = 322
+				owns = 313
+				owns = 372
+				owns = 370
+				has_country_modifier = being_dismantled
+			}
+			OR = {
+				owns = 251
+				owns = 252
+				owns = 253
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			SWE_322 = { add_core = SWE }
+			SWE_329 = { add_core = SWE }
+			SWE_318 = { add_core = SWE }
+			DEN_367 = { add_core = DEN }
+			DEN_372 = { add_core = DEN }
+			DEN_251 = { add_core = DEN }
+			SWE_309 = { add_core = NOR }
+			SWE_308 = { add_core = NOR }
+			SWE_313 = { add_core = NOR }
+			SCH_370 = { remove_core = SCA }
+			HOL_369 = { remove_core = SCA }
+			any_owned = {
+				limit = {
+					province_id = 251
+				}
+				secede_province = GRN
+			}
+			any_owned = {
+				limit = {
+					province_id = 2636
+				}
+				secede_province = GRN
+			}
+			any_owned = {
+				limit = {
+					province_id = 252
+				}
+				secede_province = ICL
+			}
+			any_owned = {
+				limit = {
+					province_id = 253
+				}
+				secede_province = FRO
+			}
+		}
+	}
+
+	
+	cch.scandinavia-no-more = { #This will temporarily remove SCA cores from Schleswig-Holstein but they return when you form Scandinavia again
+		potential = {
+			NOT = { tag = SCA }
+			ai = no
+			is_culture_group = scandinavian
+			has_global_flag = scandinavian_political_union
+			NOT = {
+				tag = FIN
+				has_country_flag = greater_finland
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			SCA = { exists = no }
+			NOT = {
+				has_country_modifier = leader_of_kalmar
+			}
+			war = no
+		}
+		effect = {
+			SCA = { all_core = { remove_core = SCA } }
+			remove_accepted_culture = finnish
+			add_country_modifier = {
+				name = leader_of_kalmar
+				duration = -1
+			}
+			SWE_334 = { add_core = SWE } #I envision only the player doing this to an a.i. Scandinavia and therefore the smaller tags will not need to have cores returned
+			SWE_322 = { add_core = SWE }
+			SWE_329 = { add_core = SWE }
+			SWE_318 = { add_core = SWE }
+			DEN_367 = { add_core = DEN }
+			DEN_372 = { add_core = DEN }
+			DEN_251 = { add_core = DEN }
+			SWE_309 = { add_core = NOR }
+			SWE_308 = { add_core = NOR }
+			SWE_313 = { add_core = NOR }
+			SCH_370 = { remove_core = SCA }
+			HOL_369 = { remove_core = SCA }
+		}
+	}
+	
+	cch.form-indonesia-after-organized = {
+		potential = {
+			is_culture_group = southeast_asian
+			OR = {
+				tag = DJA
+				tag = KLM
+				tag = KTI
+				tag = MAL
+				tag = SLW
+				tag = SAK
+				tag = JAV
+				tag = BAL
+				tag = ATJ
+				tag = JOH
+				tag = SWK
+				tag = BRU
+				tag = MLY
+			}
+			has_global_flag = indonesia_organized
+		}
+		allow = {
+			INO = { exists = no }
+			prestige = 45
+			state_n_government = 1
+			war = no
+			OR = {
+				tag = DJA
+				AND = {
+					exists = DJA
+					DJA = { war = no }
+					relation = {
+						who = DJA
+						value = 50
+					}
+				}
+				DJA = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = SAK
+				AND = {
+					exists = SAK
+					SAK = { war = no }
+					relation = {
+						who = SAK
+						value = 50
+					}
+				}
+				SAK = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = ATJ
+				AND = {
+					exists = ATJ
+					ATJ = { war = no }
+					relation = {
+						who = ATJ
+						value = 50
+					}
+				}
+				ATJ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = SLW
+				AND = {
+					exists = SLW
+					SLW = { war = no }
+					relation = {
+						who = SLW
+						value = 50
+					}
+				}
+				SLW = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = JAV
+				AND = {
+					exists = JAV
+					JAV = { war = no }
+					relation = {
+						who = JAV
+						value = 50
+					}
+				}
+				JAV = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = BAL
+				AND = {
+					exists = BAL
+					BAL = { war = no }
+					relation = {
+						who = BAL
+						value = 50
+					}
+				}
+				BAL = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = indonesia_formed
+			clr_country_flag = post_colonial_country
+			prestige = 20
+			INO = { tech_school = traditional_academic }
+						all_core = {
+				remove_core = THIS
+				add_core = INO
+			}
+			change_tag = INO
+			add_accepted_culture = javan
+			add_accepted_culture = malay
+			add_accepted_culture = moluccan
+			TMR = { all_core = { add_core = INO } }
+			DJA = { all_core = { add_core = INO } }
+			KLM = { all_core = { add_core = INO } }
+			KTI = { all_core = { add_core = INO } }
+			MAL = { all_core = { add_core = INO } }
+			SLW = { all_core = { add_core = INO } }
+			SAK = { all_core = { add_core = INO } }
+			JAV = { all_core = { add_core = INO } }
+			BAL = { all_core = { add_core = INO } }
+			ATJ = { all_core = { add_core = INO } }
+			BAL_1438 = { add_core = INO }
+			1452 = { add_core = INO }
+			1453 = { add_core = INO }
+			1454 = { add_core = INO }
+			1560 = { add_core = INO }
+			any_country = {
+				limit = {
+					OR = {
+						tag = DJA
+						tag = KLM
+						tag = KTI
+						tag = MAL
+						tag = SLW
+						tag = SAK
+						tag = JAV
+						tag = BAL
+						tag = ATJ
+					}
+					NOT = { tag = THIS }
+					war = no
+					OR = {
+						in_sphere = THIS
+						relation = {
+							who = THIS
+							value = 50
+						}
+					}
+				}
+				country_event = 95255
+			}
+			any_owned = {
+				limit = { is_core = INO NOT = { province_id = 1446 } }
+					remove_core = JAV
+					remove_core = DJA 
+					remove_core = SAK 
+					remove_core = ATJ 
+					remove_core = BAL 
+					remove_core = SLW
+					remove_core = MAL
+					remove_core = KLM
+					remove_core = LAN
+					remove_core = KTI
+					remove_core = SUL
+					remove_core = BRU
+			}
+		}
+	}
+	
+	cch.transcaucasia-no-more = {
+		potential = {
+			OR = {
+				tag = GEO
+				tag = AZB
+				tag = ARM
+			}
+			NOT = { tag = TCA }
+			has_global_flag = transcaucasia_formed
+		}
+		allow = {
+			TCA = { exists = no }
+			war = no
+		}
+		effect = {
+			clr_global_flag = transcaucasia_formed
+		}
+	}
+	
+	cch.turkestan-no-more = {
+		potential = {
+			OR = {
+				tag = TKM
+				tag = UZB
+				tag = TAJ
+				tag = KYR
+				tag = UYG
+				tag = KAZ
+			}
+			NOT = { tag = TKS }
+			has_global_flag = turkestan_created
+		}
+		allow = {
+			TKS = { exists = no }
+			war = no
+		}
+		effect = {
+			clr_global_flag = turkestan_created
+		}
+	}
+}
