@@ -1091,6 +1091,10 @@ country_event = {
 			owner = { capital = 619 }
 		}
 	}
+	option = {
+		name = "EVT99814OPTB"
+		set_country_flag = fokker
+	}
 }
 
 #Brother's War Cleanup
