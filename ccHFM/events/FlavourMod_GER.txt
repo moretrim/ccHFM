@@ -1090,6 +1090,16 @@ country_event = {
 			}
 			owner = { capital = 619 }
 		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+	option = {
+		name = "EVT99814OPTB"
+		set_country_flag = fokker
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
