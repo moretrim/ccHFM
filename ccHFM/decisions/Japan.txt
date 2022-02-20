@@ -1246,18 +1246,8 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = QNG
-				AND = {
-					tag = JAP
-					has_country_modifier = fukoku_kyohei
-					OR = {
-						has_country_flag = taiwan_line_of_advantage
-						revolution_n_counterrevolution = 1
-					}
-				}
-				AND = {
-					tag = TKG
-					has_country_modifier = fukoku_kyohei
-				}
+				tag = JAP
+				tag = TKG
 			}
 			exists = RYU
 			NOT = { has_global_flag = ryukyu_inherited }
@@ -1271,6 +1261,21 @@ political_decisions = {
 			OR = {
 				RYU = { part_of_sphere = no }
 				RYU = { in_sphere = THIS }
+			}
+			OR = {
+				tag = QNG
+				AND = {
+					tag = JAP
+					has_country_modifier = fukoku_kyohei
+					OR = {
+						has_country_flag = taiwan_line_of_advantage
+						revolution_n_counterrevolution = 1
+					}
+				}
+				AND = {
+					tag = TKG
+					has_country_modifier = fukoku_kyohei
+				}
 			}
 		}
 
