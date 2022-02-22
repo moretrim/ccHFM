@@ -18,7 +18,17 @@ army = {
 		type = irregular
 		home = 1176
 	}
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1176
+	}
 
 }
-
-
+leader = {
+	name = "Ahmad ibn `Abd Allah al-Fadli"
+	date = 1836.1.1
+	type = land
+	personality = unit_personality
+	background = aggressivexexpert_raider
+}

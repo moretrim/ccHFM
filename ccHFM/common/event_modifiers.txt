@@ -3309,6 +3309,24 @@ cch.recent-call-to-arms = {
     icon = 15
 }
 
+cch.fadhli-raids = {
+	local_RGO_output = -0.1
+	pop_militancy_modifier = 0.1
+	import_cost = 0.1
+	icon = 18
+}
+
+cch.raiding-aden = {
+	supply_consumption = -0.1
+	import_cost = -0.1
+	icon = 17
+}
+
+cch.kathiri-quaiti-conflict = {
+	pop_militancy_modifier = 0.3
+	icon = 18
+}
+
 ## Country Workshop
 
 country-workshop.hanseatic-tooltip0 = {
