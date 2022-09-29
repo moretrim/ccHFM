@@ -409,7 +409,6 @@ political_decisions = {
 				tag = DAM
 				tag = SOK
 			}
-			NOT = { has_global_flag = toucouleur_created }
 		}
 
 		allow = {
@@ -420,7 +419,8 @@ political_decisions = {
 			}
 			owns = 1800
 			owns = 1804
-			owns = 1808	
+			owns = 1808
+			NOT = { exists = TOU }
 		}
 
 		effect = {
